@@ -213,3 +213,1103 @@
 {"body":{"phoneNumber":"+918927473643","rideId":"3552c1e0-876f-46bd-af5e-5b78aed87029"},"error":"Phone number must be a 10-digit number","level":"error","message":"[xy09tl7kz2] Error in booking","stack":"ApiError: Phone number must be a 10-digit number\n    at exports.booking (D:\\Travel_Earn\\Backend\\Backend\\user\\controller\\TraveldetailsController.js:382:13)\n    at Layer.handle [as handle_request] (D:\\Travel_Earn\\Backend\\Backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (D:\\Travel_Earn\\Backend\\Backend\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at Route.dispatch (D:\\Travel_Earn\\Backend\\Backend\\node_modules\\express\\lib\\router\\route.js:119:3)\n    at Layer.handle [as handle_request] (D:\\Travel_Earn\\Backend\\Backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at D:\\Travel_Earn\\Backend\\Backend\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (D:\\Travel_Earn\\Backend\\Backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (D:\\Travel_Earn\\Backend\\Backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (D:\\Travel_Earn\\Backend\\Backend\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (D:\\Travel_Earn\\Backend\\Backend\\node_modules\\express\\lib\\router\\index.js:47:12)","timestamp":"2025-05-03T09:40:02.508Z"}
 {"body":{"phoneNumber":"+918927473643","rideId":"3552c1e0-876f-46bd-af5e-5b78aed87029"},"level":"warn","message":"[dirugw4hh6d] Validation error: Phone number must be a 10-digit number","timestamp":"2025-05-03T09:40:19.256Z"}
 {"body":{"phoneNumber":"+918927473643","rideId":"3552c1e0-876f-46bd-af5e-5b78aed87029"},"error":"Phone number must be a 10-digit number","level":"error","message":"[dirugw4hh6d] Error in booking","stack":"ApiError: Phone number must be a 10-digit number\n    at exports.booking (D:\\Travel_Earn\\Backend\\Backend\\user\\controller\\TraveldetailsController.js:382:13)\n    at Layer.handle [as handle_request] (D:\\Travel_Earn\\Backend\\Backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (D:\\Travel_Earn\\Backend\\Backend\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at Route.dispatch (D:\\Travel_Earn\\Backend\\Backend\\node_modules\\express\\lib\\router\\route.js:119:3)\n    at Layer.handle [as handle_request] (D:\\Travel_Earn\\Backend\\Backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at D:\\Travel_Earn\\Backend\\Backend\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (D:\\Travel_Earn\\Backend\\Backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (D:\\Travel_Earn\\Backend\\Backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (D:\\Travel_Earn\\Backend\\Backend\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (D:\\Travel_Earn\\Backend\\Backend\\node_modules\\express\\lib\\router\\index.js:47:12)","timestamp":"2025-05-03T09:40:19.257Z"}
+2025-05-13T10:10:24.203Z info: Server is running on port 5002
+2025-05-13T10:10:24.205Z info: Socket.IO connection status: Connected
+2025-05-13T10:10:24.479Z info: MongoDB connected
+2025-05-13T10:22:53.063Z info: GET / - 200
+2025-05-13T10:42:46.334Z info: GET /robots.txt - 200
+2025-05-13T10:48:00.841Z info: GET /.env - 200
+2025-05-13T10:48:01.297Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T11:23:27.761Z info: GET / - 200
+2025-05-13T11:23:27.926Z info: GET / - 200
+2025-05-13T11:23:28.097Z info: GET /wp-includes/wlwmanifest.xml - 200
+2025-05-13T11:23:28.253Z info: GET /xmlrpc.php?rsd - 200
+2025-05-13T11:23:28.405Z info: GET / - 200
+2025-05-13T11:23:28.557Z info: GET /blog/wp-includes/wlwmanifest.xml - 200
+2025-05-13T11:23:28.712Z info: GET /web/wp-includes/wlwmanifest.xml - 200
+2025-05-13T11:23:28.863Z info: GET /wordpress/wp-includes/wlwmanifest.xml - 200
+2025-05-13T11:23:29.014Z info: GET /website/wp-includes/wlwmanifest.xml - 200
+2025-05-13T11:23:29.167Z info: GET /wp/wp-includes/wlwmanifest.xml - 200
+2025-05-13T11:23:29.319Z info: GET /news/wp-includes/wlwmanifest.xml - 200
+2025-05-13T11:23:29.479Z info: GET /2018/wp-includes/wlwmanifest.xml - 200
+2025-05-13T11:23:29.630Z info: GET /2019/wp-includes/wlwmanifest.xml - 200
+2025-05-13T11:23:29.782Z info: GET /shop/wp-includes/wlwmanifest.xml - 200
+2025-05-13T11:23:29.934Z info: GET /wp1/wp-includes/wlwmanifest.xml - 200
+2025-05-13T11:23:30.086Z info: GET /test/wp-includes/wlwmanifest.xml - 200
+2025-05-13T11:23:30.240Z info: GET /media/wp-includes/wlwmanifest.xml - 200
+2025-05-13T11:23:30.389Z info: GET /wp2/wp-includes/wlwmanifest.xml - 200
+2025-05-13T11:23:30.552Z info: GET /site/wp-includes/wlwmanifest.xml - 200
+2025-05-13T11:23:30.705Z info: GET /cms/wp-includes/wlwmanifest.xml - 200
+2025-05-13T11:23:30.856Z info: GET /sito/wp-includes/wlwmanifest.xml - 200
+2025-05-13T11:36:59.274Z info: GET /.env - 200
+2025-05-13T11:36:59.720Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T11:50:53.864Z info: GET / - 200
+2025-05-13T11:57:42.810Z info: GET /wp-sitemap-taxonomies-category-1.xml - 200
+2025-05-13T11:57:46.732Z info: GET /wp-sitemap-users-1.xml - 200
+2025-05-13T12:00:54.325Z info: GET / - 200
+2025-05-13T12:01:36.132Z info: GET / - 200
+2025-05-13T12:02:49.323Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T12:03:36.897Z info: GET / - 200
+2025-05-13T12:04:36.310Z info: POST /xmlrpc.php - 200
+2025-05-13T12:08:54.241Z info: GET /.env - 200
+2025-05-13T12:19:19.494Z info: GET /.env - 200
+2025-05-13T12:19:19.998Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T12:23:38.332Z info: GET / - 200
+2025-05-13T12:31:15.532Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T12:35:11.311Z info: HEAD / - 200
+2025-05-13T12:37:52.839Z info: GET /.env - 200
+2025-05-13T12:37:53.281Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T12:49:01.489Z info: GET / - 200
+2025-05-13T12:54:33.781Z info: GET / - 200
+2025-05-13T13:23:48.518Z info: GET /.env - 200
+2025-05-13T13:23:49.038Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T13:48:22.315Z info: GET / - 200
+2025-05-13T13:51:26.675Z info: GET / - 200
+2025-05-13T14:18:00.372Z info: GET /boaform/admin/formLogin?username=ec8&psd=ec8 - 200
+2025-05-13T14:18:25.249Z info: GET / - 200
+2025-05-13T14:23:51.688Z info: GET / - 200
+2025-05-13T14:23:51.953Z info: GET / - 200
+2025-05-13T14:23:52.220Z info: GET /wp-includes/wlwmanifest.xml - 200
+2025-05-13T14:23:52.525Z info: GET /xmlrpc.php?rsd - 200
+2025-05-13T14:23:52.806Z info: GET / - 200
+2025-05-13T14:23:53.100Z info: GET /blog/wp-includes/wlwmanifest.xml - 200
+2025-05-13T14:23:53.395Z info: GET /web/wp-includes/wlwmanifest.xml - 200
+2025-05-13T14:23:53.709Z info: GET /wordpress/wp-includes/wlwmanifest.xml - 200
+2025-05-13T14:23:54.011Z info: GET /website/wp-includes/wlwmanifest.xml - 200
+2025-05-13T14:23:54.300Z info: GET /wp/wp-includes/wlwmanifest.xml - 200
+2025-05-13T14:23:54.561Z info: GET /news/wp-includes/wlwmanifest.xml - 200
+2025-05-13T14:23:54.828Z info: GET /2018/wp-includes/wlwmanifest.xml - 200
+2025-05-13T14:23:55.111Z info: GET /2019/wp-includes/wlwmanifest.xml - 200
+2025-05-13T14:23:55.404Z info: GET /shop/wp-includes/wlwmanifest.xml - 200
+2025-05-13T14:23:55.712Z info: GET /wp1/wp-includes/wlwmanifest.xml - 200
+2025-05-13T14:23:56.000Z info: GET /test/wp-includes/wlwmanifest.xml - 200
+2025-05-13T14:23:56.314Z info: GET /media/wp-includes/wlwmanifest.xml - 200
+2025-05-13T14:23:56.607Z info: GET /wp2/wp-includes/wlwmanifest.xml - 200
+2025-05-13T14:23:56.929Z info: GET /site/wp-includes/wlwmanifest.xml - 200
+2025-05-13T14:23:57.220Z info: GET /cms/wp-includes/wlwmanifest.xml - 200
+2025-05-13T14:23:57.510Z info: GET /sito/wp-includes/wlwmanifest.xml - 200
+2025-05-13T14:30:53.073Z info: GET / - 200
+2025-05-13T14:40:57.113Z info: GET / - 200
+2025-05-13T14:40:57.547Z info: GET /aspera/faspex/ - 200
+2025-05-13T14:42:57.623Z info: GET /dist/app.js - 200
+2025-05-13T14:42:57.638Z info: GET /js/vendor.js - 200
+2025-05-13T14:42:57.647Z info: GET /api/app.js - 200
+2025-05-13T14:42:57.649Z info: GET /config/.env - 200
+2025-05-13T14:42:57.651Z info: GET /scripts/main.js - 200
+2025-05-13T14:42:57.655Z info: GET /.env - 200
+2025-05-13T14:42:57.661Z info: GET /api/.env - 200
+2025-05-13T14:42:57.664Z info: GET /server/.env - 200
+2025-05-13T14:42:57.666Z info: GET /scripts/app.js - 200
+2025-05-13T14:42:57.668Z info: GET /static/app.js - 200
+2025-05-13T14:42:57.669Z info: GET /app/.env - 200
+2025-05-13T14:42:57.672Z info: GET /client/main.js - 200
+2025-05-13T14:42:57.679Z info: GET /.env.production - 200
+2025-05-13T14:42:57.681Z info: GET /settings/.env - 200
+2025-05-13T14:42:57.683Z info: GET /resources/js/app.js - 200
+2025-05-13T14:42:57.684Z info: GET /index.php - 200
+2025-05-13T14:42:57.686Z info: GET /api/index.php - 200
+2025-05-13T14:42:57.687Z info: GET /public/.env - 200
+2025-05-13T14:42:57.690Z info: GET /js/main.js - 200
+2025-05-13T14:42:57.720Z info: GET /config.php - 200
+2025-05-13T14:42:57.738Z info: GET /vendor/autoload.php - 200
+2025-05-13T14:42:57.875Z info: GET /server.php - 200
+2025-05-13T14:42:57.883Z info: GET /connect.php - 200
+2025-05-13T14:43:01.690Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T14:43:01.693Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T14:43:01.704Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T14:43:01.707Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T14:43:01.709Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T14:43:01.711Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T14:43:01.713Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T14:43:01.721Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T14:43:01.723Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T14:43:01.725Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T14:43:01.753Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T14:43:01.761Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T14:43:02.963Z info: GET /js/script.js - 200
+2025-05-13T14:46:56.218Z info: GET /portal/redlion - 200
+2025-05-13T14:55:01.794Z info: GET / - 200
+2025-05-13T14:55:02.246Z info: GET /showLogin.cc - 200
+2025-05-13T15:03:03.057Z info: GET /.env - 200
+2025-05-13T15:03:03.551Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T15:18:24.317Z info: GET / - 200
+2025-05-13T15:35:48.350Z info: GET /assets/js/main.js - 200
+2025-05-13T15:35:48.357Z info: GET /static/app.js - 200
+2025-05-13T15:35:48.362Z info: GET /js/vendor.js - 200
+2025-05-13T15:35:48.381Z info: GET /js/script.js - 200
+2025-05-13T15:35:48.390Z info: GET /.env - 200
+2025-05-13T15:35:48.394Z info: GET /js/main.js - 200
+2025-05-13T15:35:48.395Z info: GET /app/assets/javascripts/application.js - 200
+2025-05-13T15:35:48.403Z info: GET /api/app.js - 200
+2025-05-13T15:35:48.622Z info: GET /app/.env - 200
+2025-05-13T15:35:48.638Z info: GET /settings/.env - 200
+2025-05-13T15:35:48.648Z info: GET /.env.local - 200
+2025-05-13T15:35:48.657Z info: GET /.env.production - 200
+2025-05-13T15:35:48.768Z info: GET /env/.env - 200
+2025-05-13T15:35:48.800Z info: GET /backend/.env - 200
+2025-05-13T15:35:48.879Z info: GET /frontend/.env - 200
+2025-05-13T15:35:48.900Z info: GET /resources/.env - 200
+2025-05-13T15:35:49.033Z info: GET /api/index.php - 200
+2025-05-13T15:35:49.050Z info: GET /admin/index.php - 200
+2025-05-13T15:35:49.124Z info: GET /config.php - 200
+2025-05-13T15:35:49.180Z info: GET /admin/config.php - 200
+2025-05-13T15:35:49.383Z info: GET /vendor/autoload.php - 200
+2025-05-13T15:35:49.419Z info: GET /app/init.php - 200
+2025-05-13T15:35:49.526Z info: GET /scripts/config.php - 200
+2025-05-13T15:35:49.596Z info: GET /bootstrap.php - 200
+2025-05-13T15:35:50.324Z info: GET / - 200
+2025-05-13T15:35:50.335Z info: GET /public/js/app.js - 200
+2025-05-13T15:35:52.096Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T15:35:52.105Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T15:35:52.113Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T15:35:52.115Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T15:35:52.117Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T15:35:52.119Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T15:35:52.120Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T15:35:52.122Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T15:35:52.123Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T15:36:13.582Z info: GET / - 200
+2025-05-13T15:41:20.104Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T15:41:41.518Z info: POST /api/auth/send-otp - 200
+2025-05-13T15:41:51.780Z info: POST /api/auth/verify-otp - 200
+2025-05-13T15:41:52.279Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-13T15:41:57.944Z info: GET /api/location?going=Kolkata - 200
+2025-05-13T15:41:59.725Z info: GET /api/location?going=Kolkata,+West+Bengal,+India - 200
+2025-05-13T15:42:12.309Z info: GET /api/location?going=Kolkata,+West+Bengal,+India - 200
+2025-05-13T15:43:44.181Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-13T15:43:45.920Z info: GET /t/travelhistory/+918927473643 - 200
+2025-05-13T15:43:56.434Z info: GET /map/getdistanceandcoordinate?origin=Kolkata,%20West%20Bengal,%20India&destination=Delhi,%20India - 200
+2025-05-13T15:44:25.811Z info: GET /api/history/+918927473643 - 200
+2025-05-13T15:44:28.096Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-13T15:44:28.832Z info: GET /editp/consignment-collected-status/phoneNumber=+918927473643?consignmentId=0124a96e-7ddf-436f-af92-0a11123063e9 - 200
+2025-05-13T15:44:34.191Z info: GET /editp/consignment-collected-status/phoneNumber=+918927473643?consignmentId=0124a96e-7ddf-436f-af92-0a11123063e9 - 200
+2025-05-13T15:44:34.437Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T15:44:34.569Z info: GET /map/getdistanceandcoordinate?origin=Barasat%2C%20Kolkata%2C%20West%20Bengal%2C%20India&destination=Dumdum%2C%20Kolkata%2C%20West%20Bengal%2C%20India - 200
+2025-05-13T15:44:34.649Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-13T15:44:44.573Z info: GET /map/getdistanceandcoordinate?origin=Kolkata%2C%20West%20Bengal%2C%20India&destination=Delhi%2C%20India - 200
+2025-05-13T15:44:44.685Z info: GET /editp/consignment-collected-status/phoneNumber=+918927473643?consignmentId=264ccb05-99cb-41fc-8660-dafcc96954d1 - 200
+2025-05-13T15:44:44.934Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-13T15:46:35.331Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T15:47:37.229Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T15:49:36.716Z info: GET / - 200
+2025-05-13T15:53:57.279Z info: GET /.env - 200
+2025-05-13T15:53:57.746Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T15:57:33.577Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T15:57:48.515Z info: GET /t/travelhistory/+918927473643 - 200
+2025-05-13T15:58:36.687Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T16:00:02.344Z info: GET /admin/config.php - 200
+2025-05-13T16:00:23.189Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-13T16:00:23.392Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-13T16:02:18.046Z info: GET /api/location?leaving=Delh - 200
+2025-05-13T16:02:33.063Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T16:02:33.648Z info: GET /api/location?leaving=Delhi,+India - 200
+2025-05-13T16:02:35.722Z info: GET /api/location?going=Kolkata&leaving=Delhi,+India - 200
+2025-05-13T16:02:37.889Z info: GET /t/search-rides?leavingLocation=Kolkata,+West+Bengal,+India&goingLocation=Delhi,+India&date=2025-05-13&travelMode=train - 200
+2025-05-13T16:02:37.929Z info: GET /t/search-rides?leavingLocation=Kolkata,+West+Bengal,+India&goingLocation=Delhi,+India&date=2025-05-13&travelMode=train - 200
+2025-05-13T16:02:37.965Z info: GET /t/search-rides?leavingLocation=Kolkata,+West+Bengal,+India&goingLocation=Delhi,+India&date=2025-05-13&travelMode=train - 200
+2025-05-13T16:02:41.494Z info: GET /t/search-rides?leavingLocation=Kolkata,+West+Bengal,+India&goingLocation=Delhi,+India&date=2025-05-13&travelMode=car - 200
+2025-05-13T16:02:41.496Z info: GET /t/search-rides?leavingLocation=Kolkata,+West+Bengal,+India&goingLocation=Delhi,+India&date=2025-05-13&travelMode=car - 200
+2025-05-13T16:02:50.533Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-13T16:02:50.861Z info: GET /t/search-rides?leavingLocation=Kolkata,+West+Bengal,+India&goingLocation=Delhi,+India&date=2025-05-14&travelMode=car - 200
+2025-05-13T16:02:52.379Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-13T16:02:56.618Z info: GET /api/location?going=Koljata - 200
+2025-05-13T16:03:07.574Z info: GET /api/location?going=Kolkata,+West+Bengal,+India&leaving=Delhi - 200
+2025-05-13T16:03:38.194Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T16:04:43.522Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T16:05:47.023Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T16:06:01.167Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-13T16:06:17.581Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-13T16:07:36.037Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-13T16:07:37.149Z info: GET /uploads/1740387783757-Image1-(4).jpg - 200
+2025-05-13T16:07:47.364Z info: GET /earn/earning?phoneNumber=%2B918927473643 - 200
+2025-05-13T16:08:11.060Z info: GET /earn/earning?phoneNumber=%2B918927473643 - 200
+2025-05-13T16:08:13.028Z info: GET /address/getaddress/+918927473643 - 200
+2025-05-13T16:08:21.707Z info: GET /t/travelhistory/+918927473643 - 200
+2025-05-13T16:08:24.724Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-13T16:08:24.821Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-13T16:08:29.267Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-13T16:08:29.749Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-13T16:08:30.644Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-13T16:08:31.801Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-13T16:08:33.000Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-13T16:08:33.272Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-13T16:09:02.156Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-13T16:09:07.237Z info: GET /.env - 200
+2025-05-13T16:09:07.679Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T16:09:35.006Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T16:11:35.763Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T16:12:36.664Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T16:13:38.475Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T16:13:55.874Z info: GET / - 200
+2025-05-13T16:15:38.036Z info: GET / - 200
+2025-05-13T16:16:35.047Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T16:20:36.642Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T16:20:45.234Z info: GET /api/location?going=Koljata - 200
+2025-05-13T16:20:46.911Z info: GET /api/location?going=Kolkata,+West+Bengal,+India - 200
+2025-05-13T16:20:49.188Z info: GET /api/location?going=Kolkata,+West+Bengal,+India&leaving=Noida - 200
+2025-05-13T16:20:55.598Z info: GET /map/getdistanceandcoordinate?origin=Kolkata,%20West%20Bengal,%20India&destination=Noida,%20Uttar%20Pradesh,%20India - 200
+2025-05-13T16:21:02.943Z info: GET /map/getdistanceandcoordinate?origin=Kolkata,%20West%20Bengal,%20India&destination=Noida,%20Uttar%20Pradesh,%20India - 200
+2025-05-13T16:21:13.480Z info: POST /t/creates?Leavinglocation=Kolkata,%20West%20Bengal,%20India&Goinglocation=Noida,%20Uttar%20Pradesh,%20India - 200
+2025-05-13T16:21:17.143Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-13T16:21:23.143Z info: GET /api/location?going=Koljata - 200
+2025-05-13T16:21:24.828Z info: GET /api/location?going=Kolkata,+West+Bengal,+India - 200
+2025-05-13T16:21:26.704Z info: GET /api/location?going=Kolkata,+West+Bengal,+India&leaving=Noida - 200
+2025-05-13T16:21:31.300Z info: GET /map/getdistanceandcoordinate?origin=Kolkata,%20West%20Bengal,%20India&destination=Noida,%20Uttar%20Pradesh,%20India - 200
+2025-05-13T16:21:37.772Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T16:21:54.201Z info: GET /map/getdistanceandcoordinate?origin=Kolkata,%20West%20Bengal,%20India&destination=Noida,%20Uttar%20Pradesh,%20India - 200
+2025-05-13T16:21:55.865Z info: POST /api/consignment - 200
+2025-05-13T16:21:59.131Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-13T16:21:59.266Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-13T16:22:21.399Z info: GET /api/location?going=Kolkata&leaving=Noida - 200
+2025-05-13T16:22:33.395Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-13T16:22:33.920Z info: GET /uploads/1740387783757-Image1-(4).jpg - 200
+2025-05-13T16:22:37.503Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-13T16:22:39.382Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=undefined-undefined-undefined-undefined-2025-05-13 - 200
+2025-05-13T16:22:39.427Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-13 - 200
+2025-05-13T16:22:40.780Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-13 - 200
+2025-05-13T16:22:42.317Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-14 - 200
+2025-05-13T16:22:46.897Z info: POST /api/getearning - 200
+2025-05-13T16:22:56.287Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-13T16:22:59.701Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-13T16:23:04.314Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-13T16:23:05.661Z info: GET /api/riderequest/+918927473643 - 200
+2025-05-13T16:23:14.824Z info: POST /api/decline-consignment - 200
+2025-05-13T16:24:32.551Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T16:25:42.850Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-13T16:25:45.003Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-13T16:25:46.563Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-13T16:25:46.628Z info: GET /uploads/1740387783757-Image1-(4).jpg - 200
+2025-05-13T16:25:46.708Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-13T16:25:49.701Z info: GET /uploads/1740387783757-Image1-(4).jpg - 200
+2025-05-13T16:26:33.713Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T16:28:01.270Z info: GET / - 200
+2025-05-13T16:30:00.047Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T16:30:08.549Z info: GET /wp-sitemap-posts-page-1.xml - 200
+2025-05-13T16:39:22.263Z info: A new client connected: On6_-waKfsLHHT0tAAAB
+2025-05-13T16:39:22.263Z warn: No phoneNumber provided for socket On6_-waKfsLHHT0tAAAB
+2025-05-13T16:41:34.349Z info: Client disconnected: On6_-waKfsLHHT0tAAAB
+2025-05-13T16:42:33.522Z info: GET / - 200
+2025-05-13T16:42:33.610Z info: POST /api/auth/send-otp - 200
+2025-05-13T16:42:36.759Z info: GET / - 200
+2025-05-13T16:42:38.350Z info: GET / - 200
+2025-05-13T16:43:35.625Z info: GET / - 200
+2025-05-13T16:43:36.742Z info: GET / - 200
+2025-05-13T16:44:19.100Z info: A new client connected: 89p8U3k4DkOjhZwqAAAD
+2025-05-13T16:44:19.116Z info: Socket ID 89p8U3k4DkOjhZwqAAAD associated with phoneNumber +918927473643
+2025-05-13T16:44:33.768Z info: Client disconnected: 89p8U3k4DkOjhZwqAAAD
+2025-05-13T16:44:33.776Z info: Socket ID cleared for phoneNumber +918927473643
+2025-05-13T16:44:55.658Z info: A new client connected: SEwujPRMHNDbIkl2AAAF
+2025-05-13T16:44:55.665Z info: Socket ID SEwujPRMHNDbIkl2AAAF associated with phoneNumber +918927473643
+2025-05-13T16:45:01.425Z info: POST /api/auth/send-otp - 200
+2025-05-13T16:45:59.788Z info: GET / - 200
+2025-05-13T16:46:49.599Z info: Client disconnected: SEwujPRMHNDbIkl2AAAF
+2025-05-13T16:46:49.616Z info: Socket ID cleared for phoneNumber +918927473643
+2025-05-13T16:47:14.433Z info: A new client connected: bwMkh5Tbak26SzF6AAAH
+2025-05-13T16:47:14.442Z info: Socket ID bwMkh5Tbak26SzF6AAAH associated with phoneNumber +918927473643
+2025-05-13T16:47:23.709Z info: POST /api/auth/send-otp - 200
+2025-05-13T16:47:31.791Z info: POST /api/auth/verify-otp - 200
+2025-05-13T16:47:32.233Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-13T16:47:32.401Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-13T16:47:34.383Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-13T16:47:35.634Z info: GET /api/riderequest/+918927473643 - 200
+2025-05-13T16:47:39.096Z info: POST /order/respond?travelId=215666230&consignmentId=cdca547f-00f3-489b-819f-03bedff6a198 - 200
+2025-05-13T16:47:39.776Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-13T16:47:53.843Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-13T16:47:53.943Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-13T16:47:55.255Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-13T16:47:55.305Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-13T16:47:55.491Z info: GET /uploads/1740387783757-Image1-(4).jpg - 200
+2025-05-13T16:47:57.602Z info: GET /earn/earning?phoneNumber=%2B918927473643 - 200
+2025-05-13T16:49:24.421Z info: GET /t/travelhistory/+918927473643 - 200
+2025-05-13T16:49:30.297Z info: GET /map/getdistanceandcoordinate?origin=Kolkata,%20West%20Bengal,%20India&destination=Noida,%20Uttar%20Pradesh,%20India - 200
+2025-05-13T16:49:33.830Z info: POST /t/start-ride/215666230 - 200
+2025-05-13T16:49:42.409Z info: GET /order/consignmenttocarry/215666230 - 200
+2025-05-13T16:49:42.445Z info: GET /order/consignmenttocarry/215666230 - 200
+2025-05-13T16:49:43.687Z info: GET /editp/consignment-collected-status/phoneNumber=+918927473643?consignmentId=cdca547f-00f3-489b-819f-03bedff6a198 - 200
+2025-05-13T16:49:47.197Z info: GET /order/get-ride/215666230 - 200
+2025-05-13T16:50:03.539Z info: POST /editp/pickupconsignment?travelId=215666230&consignmentId=cdca547f-00f3-489b-819f-03bedff6a198 - 200
+2025-05-13T16:50:05.541Z info: GET /editp/consignment-collected-status/phoneNumber=+918927473643?consignmentId=cdca547f-00f3-489b-819f-03bedff6a198 - 200
+2025-05-13T16:50:05.682Z info: GET /editp/consignment-collected-status/phoneNumber=+918927473643?consignmentId=cdca547f-00f3-489b-819f-03bedff6a198 - 200
+2025-05-13T16:50:08.969Z info: GET /order/consignmenttocarry/215666230 - 200
+2025-05-13T16:50:15.543Z info: GET /api/history/+918927473643 - 200
+2025-05-13T16:50:17.480Z info: GET /map/getdistanceandcoordinate?origin=Kolkata%2C%20West%20Bengal%2C%20India&destination=Noida%2C%20Uttar%20Pradesh%2C%20India - 200
+2025-05-13T16:50:17.558Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-13T16:50:17.560Z info: GET /editp/consignment-collected-status/phoneNumber=+918927473643?consignmentId=cdca547f-00f3-489b-819f-03bedff6a198 - 200
+2025-05-13T16:51:15.364Z info: GET /uploads/1740387783757-Image1-(4).jpg - 200
+2025-05-13T16:51:15.370Z info: GET /api/getall/+918927473643 - 200
+2025-05-13T16:51:31.951Z info: PUT /api/update/+918927473643 - 200
+2025-05-13T16:51:37.278Z info: PUT /api/update/+918927473643 - 200
+2025-05-13T16:51:37.283Z info: GET /api/getall/+918927473643 - 200
+2025-05-13T16:51:49.719Z info: GET /api/getall/+918927473643 - 200
+2025-05-13T16:52:00.474Z info: GET /address/getaddress/+918927473643 - 200
+2025-05-13T16:52:03.334Z info: GET /earn/earning?phoneNumber=%2B918927473643 - 200
+2025-05-13T16:52:21.240Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-13T16:52:21.459Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-13T16:52:23.168Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-13T16:52:24.323Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-13T16:54:39.949Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-13T16:54:41.744Z info: GET /map/getdistanceandcoordinate?origin=Kolkata,%20West%20Bengal,%20India&destination=Noida,%20Uttar%20Pradesh,%20India - 200
+2025-05-13T16:54:47.756Z info: POST /p/create-order - 200
+2025-05-13T16:55:22.166Z info: POST /p/verify-payment - 200
+2025-05-13T16:59:37.603Z info: Client disconnected: bwMkh5Tbak26SzF6AAAH
+2025-05-13T16:59:37.620Z info: Socket ID cleared for phoneNumber +918927473643
+2025-05-13T17:02:10.206Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-13T17:02:10.409Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-13T17:02:10.419Z info: A new client connected: cs3o0R1SDiWYN5TlAAAJ
+2025-05-13T17:02:10.435Z info: Socket ID cs3o0R1SDiWYN5TlAAAJ associated with phoneNumber +918927473643
+2025-05-13T17:02:54.573Z info: Client disconnected: cs3o0R1SDiWYN5TlAAAJ
+2025-05-13T17:02:54.581Z info: Socket ID cleared for phoneNumber +918927473643
+2025-05-13T17:04:47.387Z info: GET / - 200
+2025-05-13T17:15:25.760Z info: GET / - 200
+2025-05-13T17:26:54.130Z info: GET / - 200
+2025-05-13T17:37:28.217Z info: GET /.env - 200
+2025-05-13T17:37:28.676Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T17:40:13.340Z info: GET /.env - 200
+2025-05-13T17:40:13.833Z info: GET /.git/config - 200
+2025-05-13T17:46:41.430Z info: GET / - 200
+2025-05-13T17:47:10.258Z info: GET / - 200
+2025-05-13T17:47:11.523Z info: GET /favicon.ico - 200
+2025-05-13T17:50:49.193Z info: GET / - 200
+2025-05-13T17:52:35.177Z info: GET /n/getnotification/travel/+917003855041 - 200
+2025-05-13T17:52:35.485Z info: A new client connected: vUntGmX_hmQdbw07AAAL
+2025-05-13T17:52:35.503Z info: Socket ID vUntGmX_hmQdbw07AAAL associated with phoneNumber +917003855041
+2025-05-13T17:52:35.856Z info: GET /n/getnotification/consignment/+917003855041 - 200
+2025-05-13T17:52:39.872Z info: GET /api/getall/+917003855041?phoneNumber=%2B917003855041 - 200
+2025-05-13T17:52:40.075Z info: GET /api/getall/+917003855041?phoneNumber=%2B917003855041 - 200
+2025-05-13T17:52:41.456Z info: GET /n/getnotification/travel/+917003855041 - 200
+2025-05-13T17:52:41.905Z info: GET /n/getnotification/consignment/+917003855041 - 200
+2025-05-13T17:52:43.792Z info: GET /t/travelhistory/+917003855041 - 200
+2025-05-13T17:52:53.190Z info: Client disconnected: vUntGmX_hmQdbw07AAAL
+2025-05-13T17:52:53.198Z info: Socket ID cleared for phoneNumber +917003855041
+2025-05-13T17:53:05.716Z info: A new client connected: tQROfWAk4yjlyLE1AAAN
+2025-05-13T17:53:05.724Z info: Socket ID tQROfWAk4yjlyLE1AAAN associated with phoneNumber +917003855041
+2025-05-13T17:53:07.093Z info: GET /n/getnotification/travel/+917003855041 - 200
+2025-05-13T17:53:07.499Z info: GET /n/getnotification/consignment/+917003855041 - 200
+2025-05-13T17:53:15.265Z info: GET /n/getnotification/travel/+917003855041 - 200
+2025-05-13T17:53:15.664Z info: GET /n/getnotification/consignment/+917003855041 - 200
+2025-05-13T17:53:18.869Z info: GET /t/travelhistory/+917003855041 - 200
+2025-05-13T17:53:22.735Z info: GET /map/getdistanceandcoordinate?origin=Jabalpur,%20Madhya%20Pradesh,%20India&destination=Bhopal,%20Madhya%20Pradesh,%20India - 200
+2025-05-13T17:53:25.669Z info: GET /map/getdistanceandcoordinate?origin=Mosat,%20West%20Bengal,%20India&destination=Howrah,%20West%20Bengal,%20India - 200
+2025-05-13T17:53:26.728Z info: GET /order/consignmenttocarry/774616989 - 200
+2025-05-13T17:53:26.913Z info: GET /order/consignmenttocarry/774616989 - 200
+2025-05-13T17:53:28.474Z info: GET /editp/consignment-collected-status/phoneNumber=+917003855041?consignmentId=68364783-572c-4c0c-8419-fd51d24ac12e - 200
+2025-05-13T17:53:41.851Z info: GET /order/consignmenttocarry/774616989 - 200
+2025-05-13T17:53:51.564Z info: GET /api/location?going=Dum - 200
+2025-05-13T17:53:52.709Z info: GET /api/location?going=Dumdum - 200
+2025-05-13T17:53:55.455Z info: GET /api/location?going=Dumdumi,+West+Bengal,+India - 200
+2025-05-13T17:53:58.324Z info: GET /api/location?going=Dumdu - 200
+2025-05-13T17:53:58.994Z info: GET /api/location?going=Dumdum - 200
+2025-05-13T17:54:04.618Z info: GET /api/location?going=DUMDUM+METRO+STATION,+Satpukur,+Kolkata,+West+Bengal,+India - 200
+2025-05-13T17:54:10.774Z info: GET /api/location?going=Espa - 200
+2025-05-13T17:54:11.803Z info: GET /api/location?going=Espla - 200
+2025-05-13T17:54:12.385Z info: GET /api/location?going=Esplanade+ - 200
+2025-05-13T17:54:13.652Z info: GET /api/location?going=Esplanade+Bus+Stand+Road,+Maidan,+Esplanade,+Kolkata,+West+Bengal,+India - 200
+2025-05-13T17:54:16.828Z info: GET /api/location?going=Esplanade+Bus+Stand+Road,+Maidan,+Esplanade,+Kolkata,+West+Bengal,+India&leaving=Kalyan - 200
+2025-05-13T17:54:17.610Z info: GET /api/location?going=Esplanade+Bus+Stand+Road,+Maidan,+Esplanade,+Kolkata,+West+Bengal,+India&leaving=Kalyani+ - 200
+2025-05-13T17:54:24.470Z info: GET /map/getdistanceandcoordinate?origin=Esplanade%20Bus%20Stand%20Road,%20Maidan,%20Esplanade,%20Kolkata,%20West%20Bengal,%20India&destination=Kalyani,%20West%20Bengal,%20India - 200
+2025-05-13T17:54:25.834Z info: GET /map/getdistanceandcoordinate?origin=Esplanade%20Bus%20Stand%20Road,%20Maidan,%20Esplanade,%20Kolkata,%20West%20Bengal,%20India&destination=Kalyani,%20West%20Bengal,%20India - 200
+2025-05-13T17:54:47.691Z info: GET /map/getdistanceandcoordinate?origin=Esplanade%20Bus%20Stand%20Road,%20Maidan,%20Esplanade,%20Kolkata,%20West%20Bengal,%20India&destination=Kalyani,%20West%20Bengal,%20India - 200
+2025-05-13T17:54:49.270Z info: POST /api/consignment - 200
+2025-05-13T17:54:52.369Z info: GET /n/getnotification/travel/+917003855041 - 200
+2025-05-13T17:54:52.773Z info: GET /n/getnotification/consignment/+917003855041 - 200
+2025-05-13T17:54:55.669Z info: GET /api/getall/+917003855041?phoneNumber=%2B917003855041 - 200
+2025-05-13T17:54:55.856Z info: GET /api/getall/+917003855041?phoneNumber=%2B917003855041 - 200
+2025-05-13T17:55:15.495Z info: GET /api/location?going=Es - 200
+2025-05-13T17:55:15.973Z info: GET /api/location?going=Esp - 200
+2025-05-13T17:55:18.491Z info: GET /api/location?going=Esplan - 200
+2025-05-13T17:55:18.980Z info: GET /api/location?going=Esplanade+ - 200
+2025-05-13T17:55:20.563Z info: GET /api/location?going=Esplanade+Bus+Stand+Road,+Maidan,+Esplanade,+Kolkata,+West+Bengal,+India - 200
+2025-05-13T17:55:22.269Z info: GET /api/location?going=Esplanade+Bus+Stand+Road,+Maidan,+Esplanade,+Kolkata,+West+Bengal,+India&leaving=Kalya - 200
+2025-05-13T17:55:29.676Z info: GET /map/getdistanceandcoordinate?origin=Esplanade%20Bus%20Stand%20Road,%20Maidan,%20Esplanade,%20Kolkata,%20West%20Bengal,%20India&destination=Kalyani,%20West%20Bengal,%20India - 200
+2025-05-13T17:59:01.176Z info: Client disconnected: tQROfWAk4yjlyLE1AAAN
+2025-05-13T17:59:01.193Z info: Socket ID cleared for phoneNumber +917003855041
+2025-05-13T17:59:28.389Z info: GET /n/getnotification/travel/+917003855041 - 200
+2025-05-13T17:59:28.786Z info: A new client connected: lblARHv6rS2FsJjeAAAP
+2025-05-13T17:59:28.796Z info: Socket ID lblARHv6rS2FsJjeAAAP associated with phoneNumber +917003855041
+2025-05-13T17:59:28.823Z info: GET /n/getnotification/consignment/+917003855041 - 200
+2025-05-13T17:59:33.851Z info: GET /n/getnotification/travel/+917003855041 - 200
+2025-05-13T17:59:34.280Z info: GET /n/getnotification/consignment/+917003855041 - 200
+2025-05-13T17:59:38.403Z info: GET /api/location?going=Esp - 200
+2025-05-13T17:59:39.243Z info: GET /api/location?going=Esplanade+ - 200
+2025-05-13T17:59:40.749Z info: GET /api/location?going=Esplanade+Bus+Stand+Road,+Maidan,+Esplanade,+Kolkata,+West+Bengal,+India - 200
+2025-05-13T17:59:42.664Z info: GET /api/location?going=Esplanade+Bus+Stand+Road,+Maidan,+Esplanade,+Kolkata,+West+Bengal,+India&leaving=Jalya - 200
+2025-05-13T17:59:43.764Z info: GET /api/location?going=Esplanade+Bus+Stand+Road,+Maidan,+Esplanade,+Kolkata,+West+Bengal,+India&leaving=Kalyan - 200
+2025-05-13T17:59:48.369Z info: GET /api/getdetails?leavingLocation=Esplanade%20Bus%20Stand%20Road,%20Maidan,%20Esplanade,%20Kolkata,%20West%20Bengal,%20India&goingLocation=Kalyani,%20West%20Bengal,%20India&date=undefined-undefined-undefined-undefined-2025-05-17 - 200
+2025-05-13T17:59:48.704Z info: GET /api/getdetails?leavingLocation=Esplanade%20Bus%20Stand%20Road,%20Maidan,%20Esplanade,%20Kolkata,%20West%20Bengal,%20India&goingLocation=Kalyani,%20West%20Bengal,%20India&date=2025-05-17 - 200
+2025-05-13T17:59:51.684Z info: GET /api/getdetails?leavingLocation=Esplanade%20Bus%20Stand%20Road,%20Maidan,%20Esplanade,%20Kolkata,%20West%20Bengal,%20India&goingLocation=Kalyani,%20West%20Bengal,%20India&date=2025-05-17 - 200
+2025-05-13T17:59:52.708Z info: GET /n/getnotification/travel/+917003855041 - 200
+2025-05-13T17:59:53.120Z info: GET /n/getnotification/consignment/+917003855041 - 200
+2025-05-13T17:59:57.763Z info: GET /api/location?going=E - 200
+2025-05-13T18:00:00.008Z info: GET /api/location?going=Kol - 200
+2025-05-13T18:00:01.518Z info: GET /api/location?going=Kolkata,+West+Bengal,+India - 200
+2025-05-13T18:00:02.923Z info: GET /api/location?going=Kolkata,+West+Bengal,+India&leaving=Delhi - 200
+2025-05-13T18:01:03.743Z info: GET / - 200
+2025-05-13T18:02:51.227Z info: GET / - 200
+2025-05-13T18:03:12.656Z info: GET /static/historypage.js - 200
+2025-05-13T18:03:43.325Z info: Client disconnected: lblARHv6rS2FsJjeAAAP
+2025-05-13T18:03:43.344Z info: Socket ID cleared for phoneNumber +917003855041
+2025-05-13T18:04:10.076Z info: GET /n/getnotification/travel/+917003855041 - 200
+2025-05-13T18:04:10.479Z info: A new client connected: naKLUmgQABZkB6YmAAAR
+2025-05-13T18:04:10.482Z info: GET /n/getnotification/consignment/+917003855041 - 200
+2025-05-13T18:04:10.501Z info: Socket ID naKLUmgQABZkB6YmAAAR associated with phoneNumber +917003855041
+2025-05-13T18:04:16.553Z info: GET /api/location?going=Esl - 200
+2025-05-13T18:04:18.248Z info: GET /api/location?going=Elhi - 200
+2025-05-13T18:04:19.620Z info: GET /api/location?going=Delhi,+India - 200
+2025-05-13T18:04:21.287Z info: GET /api/location?going=Delhi,+India&leaving=Kol - 200
+2025-05-13T18:08:17.460Z info: Client disconnected: naKLUmgQABZkB6YmAAAR
+2025-05-13T18:08:17.477Z info: Socket ID cleared for phoneNumber +917003855041
+2025-05-13T18:08:19.537Z info: A new client connected: nXyn52JuV3QkpSlrAAAT
+2025-05-13T18:08:19.545Z info: Socket ID nXyn52JuV3QkpSlrAAAT associated with phoneNumber +917003855041
+2025-05-13T18:09:47.213Z info: Client disconnected: nXyn52JuV3QkpSlrAAAT
+2025-05-13T18:09:47.224Z info: Socket ID cleared for phoneNumber +917003855041
+2025-05-13T18:10:14.413Z info: GET /n/getnotification/travel/+917003855041 - 200
+2025-05-13T18:10:14.830Z info: A new client connected: akZ6rxhCyUfMbkUlAAAV
+2025-05-13T18:10:14.838Z info: Socket ID akZ6rxhCyUfMbkUlAAAV associated with phoneNumber +917003855041
+2025-05-13T18:10:15.282Z info: GET /n/getnotification/consignment/+917003855041 - 200
+2025-05-13T18:10:18.627Z info: GET /api/location?going=Delhi - 200
+2025-05-13T18:10:20.246Z info: GET /api/location?going=Delhi,+India - 200
+2025-05-13T18:10:22.150Z info: GET /api/location?going=Delhi,+India&leaving=Jami - 200
+2025-05-13T18:13:10.822Z info: Client disconnected: akZ6rxhCyUfMbkUlAAAV
+2025-05-13T18:13:10.841Z info: Socket ID cleared for phoneNumber +917003855041
+2025-05-13T18:13:14.816Z info: A new client connected: E_LNtxJRKj8AXDjXAAAX
+2025-05-13T18:13:14.831Z info: Socket ID E_LNtxJRKj8AXDjXAAAX associated with phoneNumber +917003855041
+2025-05-13T18:14:07.520Z info: GET /api/getall/+917003855041?phoneNumber=%2B917003855041 - 200
+2025-05-13T18:14:07.945Z info: GET /address/getaddress/+917003855041 - 200
+2025-05-13T18:14:12.069Z info: GET /address/getaddress/+917003855041 - 200
+2025-05-13T18:14:14.333Z info: GET /api/getall/+917003855041?phoneNumber=%2B917003855041 - 200
+2025-05-13T18:17:44.465Z info: Client disconnected: E_LNtxJRKj8AXDjXAAAX
+2025-05-13T18:17:44.482Z info: Socket ID cleared for phoneNumber +917003855041
+2025-05-13T18:17:56.923Z info: A new client connected: GnQ-4vnKJqqdvNBaAAAZ
+2025-05-13T18:17:56.931Z info: Socket ID GnQ-4vnKJqqdvNBaAAAZ associated with phoneNumber +917003855041
+2025-05-13T18:17:58.053Z info: GET /map/getdistanceandcoordinate?origin=Delhi,%20India&destination=Jamia%20Millia%20Islamia,%20Jamia%20Nagar,%20Okhla,%20New%20Delhi,%20Delhi,%20India - 200
+2025-05-13T18:18:00.628Z info: GET /map/getdistanceandcoordinate?origin=Delhi,%20India&destination=Jamia%20Millia%20Islamia,%20Jamia%20Nagar,%20Okhla,%20New%20Delhi,%20Delhi,%20India - 200
+2025-05-13T18:18:01.391Z info: GET /map/getdistanceandcoordinate?origin=Delhi,%20India&destination=Jamia%20Millia%20Islamia,%20Jamia%20Nagar,%20Okhla,%20New%20Delhi,%20Delhi,%20India - 200
+2025-05-13T18:18:26.448Z info: GET /map/getdistanceandcoordinate?origin=Delhi,%20India&destination=Jamia%20Millia%20Islamia,%20Jamia%20Nagar,%20Okhla,%20New%20Delhi,%20Delhi,%20India - 200
+2025-05-13T18:18:32.773Z info: POST /api/consignment - 200
+2025-05-13T18:18:36.416Z info: GET /n/getnotification/travel/+917003855041 - 200
+2025-05-13T18:18:36.851Z info: GET /n/getnotification/consignment/+917003855041 - 200
+2025-05-13T18:18:43.067Z info: GET /api/getall/+917003855041?phoneNumber=%2B917003855041 - 200
+2025-05-13T18:18:43.327Z info: GET /api/getall/+917003855041?phoneNumber=%2B917003855041 - 200
+2025-05-13T18:19:33.828Z info: GET /n/getnotification/travel/+917003855041 - 200
+2025-05-13T18:19:34.246Z info: GET /n/getnotification/consignment/+917003855041 - 200
+2025-05-13T18:20:03.008Z info: GET /n/getnotification/travel/+917003855041 - 200
+2025-05-13T18:20:03.430Z info: GET /n/getnotification/consignment/+917003855041 - 200
+2025-05-13T18:20:07.118Z info: GET /api/location?going=Kol - 200
+2025-05-13T18:20:08.866Z info: GET /api/location?going=Kolkata,+West+Bengal,+India - 200
+2025-05-13T18:20:10.491Z info: GET /api/location?going=Kolkata,+West+Bengal,+India&leaving=Delhi - 200
+2025-05-13T18:20:19.179Z info: GET /api/location?going=Kolkata,+West+Bengal,+India&leaving=Delhi - 200
+2025-05-13T18:20:27.291Z info: GET /map/getdistanceandcoordinate?origin=Kolkata,%20West%20Bengal,%20India&destination=Delhi,%20India - 200
+2025-05-13T18:20:29.081Z info: GET /map/getdistanceandcoordinate?origin=Kolkata,%20West%20Bengal,%20India&destination=Delhi,%20India - 200
+2025-05-13T18:20:45.359Z info: Client disconnected: GnQ-4vnKJqqdvNBaAAAZ
+2025-05-13T18:20:45.374Z info: Socket ID cleared for phoneNumber +917003855041
+2025-05-13T18:20:51.206Z info: A new client connected: DaQNvxMbN-KcDTsxAAAb
+2025-05-13T18:20:51.214Z info: Socket ID DaQNvxMbN-KcDTsxAAAb associated with phoneNumber +917003855041
+2025-05-13T18:21:01.680Z info: GET /map/getdistanceandcoordinate?origin=Kolkata,%20West%20Bengal,%20India&destination=Delhi,%20India - 200
+2025-05-13T18:21:02.311Z info: POST /api/consignment - 200
+2025-05-13T18:21:06.107Z info: GET /n/getnotification/travel/+917003855041 - 200
+2025-05-13T18:21:06.519Z info: GET /n/getnotification/consignment/+917003855041 - 200
+2025-05-13T18:21:08.442Z info: GET /api/location?going=K - 200
+2025-05-13T18:21:09.283Z info: GET /api/location?going=Kol - 200
+2025-05-13T18:21:11.006Z info: GET /api/location?going=Kolkata,+West+Bengal,+India - 200
+2025-05-13T18:21:12.764Z info: GET /api/location?going=Kolkata,+West+Bengal,+India&leaving=Delhi - 200
+2025-05-13T18:21:17.161Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Delhi,%20India&date=undefined-undefined-undefined-undefined-2025-05-17 - 200
+2025-05-13T18:21:17.439Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Delhi,%20India&date=2025-05-17 - 200
+2025-05-13T18:21:18.520Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Delhi,%20India&date=2025-05-17 - 200
+2025-05-13T18:21:21.321Z info: POST /api/request-for-consignment - 200
+2025-05-13T18:21:31.868Z info: POST /api/getearning - 200
+2025-05-13T18:21:35.211Z info: GET /n/getnotification/travel/+917003855041 - 200
+2025-05-13T18:21:35.756Z info: GET /n/getnotification/consignment/+917003855041 - 200
+2025-05-13T18:21:36.588Z info: GET /.hg/ - 200
+2025-05-13T18:21:36.726Z info: GET /.htaccess - 200
+2025-05-13T18:21:36.864Z info: GET /.idea/.env - 200
+2025-05-13T18:21:37.001Z info: GET /.local - 200
+2025-05-13T18:21:37.139Z info: GET /.next/ - 200
+2025-05-13T18:21:37.277Z info: GET /.npmrc - 200
+2025-05-13T18:21:37.414Z info: GET /.nuxt/ - 200
+2025-05-13T18:21:37.552Z info: GET /.output/ - 200
+2025-05-13T18:21:37.689Z info: GET /.phpinfo - 200
+2025-05-13T18:21:37.827Z info: GET /.production - 200
+2025-05-13T18:21:37.859Z info: GET /n/getnotification/travel/+917003855041 - 200
+2025-05-13T18:21:37.969Z info: GET /.pypirc - 200
+2025-05-13T18:21:38.108Z info: GET /.remote - 200
+2025-05-13T18:21:38.245Z info: GET /.ssh/id_rsa - 200
+2025-05-13T18:21:38.383Z info: GET /.ssh/id_rsa.pub - 200
+2025-05-13T18:21:38.521Z info: GET /.svn/ - 200
+2025-05-13T18:21:38.659Z info: GET /.travis.yml - 200
+2025-05-13T18:21:38.796Z info: GET /.vite/ - 200
+2025-05-13T18:21:38.934Z info: GET /.vscode/settings.json - 200
+2025-05-13T18:21:39.071Z info: GET /.well-known/openid-configuration - 200
+2025-05-13T18:21:39.209Z info: GET /.well-known/security.txt - 200
+2025-05-13T18:21:39.346Z info: GET /07-accessing-data/begin/vue-heroes/.env - 200
+2025-05-13T18:21:39.484Z info: GET /07-accessing-data/end/vue-heroes/.env - 200
+2025-05-13T18:21:39.621Z info: GET /08-routing/begin/vue-heroes/.env - 200
+2025-05-13T18:21:39.759Z info: GET /08-routing/end/vue-heroes/.env - 200
+2025-05-13T18:21:39.897Z info: GET /09-managing-state/begin/vue-heroes/.env - 200
+2025-05-13T18:21:40.034Z info: GET /09-managing-state/end/vue-heroes/.env - 200
+2025-05-13T18:21:40.172Z info: GET /123.php - 200
+2025-05-13T18:21:40.310Z info: GET /3-sequelize/final/.env - 200
+2025-05-13T18:21:40.447Z info: GET /31_structure_tests/.env - 200
+2025-05-13T18:21:40.522Z info: GET /n/getnotification/consignment/+917003855041 - 200
+2025-05-13T18:21:40.585Z info: GET /?p=info - 200
+2025-05-13T18:21:40.722Z info: GET /?p=php - 200
+2025-05-13T18:21:40.860Z info: GET /?phpinfo - 200
+2025-05-13T18:21:40.998Z info: GET /?phpinfo.php - 200
+2025-05-13T18:21:41.135Z info: GET /?phpinfo=1 - 200
+2025-05-13T18:21:41.273Z info: GET /?q=info - 200
+2025-05-13T18:21:41.410Z info: GET /__debug__ - 200
+2025-05-13T18:21:41.548Z info: GET /__debugbar - 200
+2025-05-13T18:21:41.686Z info: GET /__tests__/test-become/.env - 200
+2025-05-13T18:21:41.899Z info: GET /_astro/[chunk-name].[hash].js - 200
+2025-05-13T18:21:42.036Z info: GET /_dev - 200
+2025-05-13T18:21:42.174Z info: GET /_ignition/ - 200
+2025-05-13T18:21:42.311Z info: GET /_next/static/chunks/945-34f67d7c0866cf61b970.js - 200
+2025-05-13T18:21:42.449Z info: GET /_next/static/chunks/app/%5B...not-found%5D/page-63e952e68a371605.js - 200
+2025-05-13T18:21:42.587Z info: GET /_next/static/chunks/app/error.js - 200
+2025-05-13T18:21:42.724Z info: GET /_next/static/chunks/app/global-error.js - 200
+2025-05-13T18:21:42.862Z info: GET /_next/static/chunks/app/layout-a908fe02173ed4b1.js - 200
+2025-05-13T18:21:43.000Z info: GET /_next/static/chunks/framework-[hash].js - 200
+2025-05-13T18:21:43.138Z info: GET /_next/static/chunks/main-app-[hash].js - 200
+2025-05-13T18:21:43.275Z info: GET /_next/static/chunks/pages/_app-a9fba37d935ce3f3.js - 200
+2025-05-13T18:21:43.413Z info: GET /_next/static/chunks/pages/_app-d1b5411bacd03f02.js - 200
+2025-05-13T18:21:43.441Z info: GET /n/getnotification/travel/+917003855041 - 200
+2025-05-13T18:21:43.550Z info: GET /_next/static/chunks/pages/_app-d25b242610000153a081.js - 200
+2025-05-13T18:21:43.688Z info: GET /_next/static/chunks/webpack-[hash].js - 200
+2025-05-13T18:21:43.826Z info: GET /_static/.env - 200
+2025-05-13T18:21:43.963Z info: GET /a.php - 200
+2025-05-13T18:21:44.101Z info: GET /acme-challenge/.env - 200
+2025-05-13T18:21:44.240Z info: GET /acme/.env - 200
+2025-05-13T18:21:44.377Z info: GET /acme_challenges/.env - 200
+2025-05-13T18:21:44.515Z info: GET /actions-server/.env - 200
+2025-05-13T18:21:44.653Z info: GET /actuator/ - 200
+2025-05-13T18:21:44.790Z info: GET /admin-api/ - 200
+2025-05-13T18:21:44.928Z info: GET /admin-app/.env - 200
+2025-05-13T18:21:45.065Z info: GET /admin-panel/.env - 200
+2025-05-13T18:21:45.203Z info: GET /admin.php - 200
+2025-05-13T18:24:38.451Z info: Client disconnected: DaQNvxMbN-KcDTsxAAAb
+2025-05-13T18:24:38.473Z info: Socket ID cleared for phoneNumber +917003855041
+2025-05-13T18:25:07.028Z info: A new client connected: EXp1ZJ4CXZoRdaeBAAAd
+2025-05-13T18:25:07.037Z info: Socket ID EXp1ZJ4CXZoRdaeBAAAd associated with phoneNumber +917003855041
+2025-05-13T18:30:09.825Z info: Client disconnected: EXp1ZJ4CXZoRdaeBAAAd
+2025-05-13T18:30:09.844Z info: Socket ID cleared for phoneNumber +917003855041
+2025-05-13T18:30:44.755Z info: A new client connected: 2QPRog5Me35U7tHVAAAf
+2025-05-13T18:30:44.766Z info: Socket ID 2QPRog5Me35U7tHVAAAf associated with phoneNumber +917003855041

@@ -209,3 +209,575 @@
 {"body":{"phoneNumber":"+918927473643","rideId":"3552c1e0-876f-46bd-af5e-5b78aed87029"},"error":"Phone number must be a 10-digit number","level":"error","message":"[inm159g5iae] Error in booking","stack":"ApiError: Phone number must be a 10-digit number\n    at exports.booking (D:\\Travel_Earn\\Backend\\Backend\\user\\controller\\TraveldetailsController.js:382:13)\n    at Layer.handle [as handle_request] (D:\\Travel_Earn\\Backend\\Backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (D:\\Travel_Earn\\Backend\\Backend\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at Route.dispatch (D:\\Travel_Earn\\Backend\\Backend\\node_modules\\express\\lib\\router\\route.js:119:3)\n    at Layer.handle [as handle_request] (D:\\Travel_Earn\\Backend\\Backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at D:\\Travel_Earn\\Backend\\Backend\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (D:\\Travel_Earn\\Backend\\Backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (D:\\Travel_Earn\\Backend\\Backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (D:\\Travel_Earn\\Backend\\Backend\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (D:\\Travel_Earn\\Backend\\Backend\\node_modules\\express\\lib\\router\\index.js:47:12)","timestamp":"2025-05-03T09:37:06.148Z"}
 {"body":{"phoneNumber":"+918927473643","rideId":"3552c1e0-876f-46bd-af5e-5b78aed87029"},"error":"Phone number must be a 10-digit number","level":"error","message":"[xy09tl7kz2] Error in booking","stack":"ApiError: Phone number must be a 10-digit number\n    at exports.booking (D:\\Travel_Earn\\Backend\\Backend\\user\\controller\\TraveldetailsController.js:382:13)\n    at Layer.handle [as handle_request] (D:\\Travel_Earn\\Backend\\Backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (D:\\Travel_Earn\\Backend\\Backend\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at Route.dispatch (D:\\Travel_Earn\\Backend\\Backend\\node_modules\\express\\lib\\router\\route.js:119:3)\n    at Layer.handle [as handle_request] (D:\\Travel_Earn\\Backend\\Backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at D:\\Travel_Earn\\Backend\\Backend\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (D:\\Travel_Earn\\Backend\\Backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (D:\\Travel_Earn\\Backend\\Backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (D:\\Travel_Earn\\Backend\\Backend\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (D:\\Travel_Earn\\Backend\\Backend\\node_modules\\express\\lib\\router\\index.js:47:12)","timestamp":"2025-05-03T09:40:02.508Z"}
 {"body":{"phoneNumber":"+918927473643","rideId":"3552c1e0-876f-46bd-af5e-5b78aed87029"},"error":"Phone number must be a 10-digit number","level":"error","message":"[dirugw4hh6d] Error in booking","stack":"ApiError: Phone number must be a 10-digit number\n    at exports.booking (D:\\Travel_Earn\\Backend\\Backend\\user\\controller\\TraveldetailsController.js:382:13)\n    at Layer.handle [as handle_request] (D:\\Travel_Earn\\Backend\\Backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (D:\\Travel_Earn\\Backend\\Backend\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at Route.dispatch (D:\\Travel_Earn\\Backend\\Backend\\node_modules\\express\\lib\\router\\route.js:119:3)\n    at Layer.handle [as handle_request] (D:\\Travel_Earn\\Backend\\Backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at D:\\Travel_Earn\\Backend\\Backend\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (D:\\Travel_Earn\\Backend\\Backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (D:\\Travel_Earn\\Backend\\Backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (D:\\Travel_Earn\\Backend\\Backend\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (D:\\Travel_Earn\\Backend\\Backend\\node_modules\\express\\lib\\router\\index.js:47:12)","timestamp":"2025-05-03T09:40:19.257Z"}
+2025-05-13T10:48:01.297Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T11:36:59.720Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T12:02:49.323Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T12:19:19.998Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T12:31:15.532Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T12:37:53.281Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T13:23:49.038Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T14:43:01.690Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T14:43:01.693Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T14:43:01.704Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T14:43:01.707Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T14:43:01.709Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T14:43:01.711Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T14:43:01.713Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T14:43:01.721Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T14:43:01.723Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T14:43:01.725Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T14:43:01.753Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T14:43:01.761Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T15:03:03.551Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T15:35:52.096Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T15:35:52.105Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T15:35:52.113Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T15:35:52.115Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T15:35:52.117Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T15:35:52.119Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T15:35:52.120Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T15:35:52.122Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T15:35:52.123Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T15:41:20.104Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T15:44:34.437Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T15:46:35.331Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T15:47:37.229Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T15:53:57.746Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T15:57:33.577Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T15:58:36.687Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T16:02:33.063Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T16:03:38.194Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T16:04:43.522Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T16:05:47.023Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T16:09:07.679Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T16:09:35.006Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T16:11:35.763Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T16:12:36.664Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T16:13:38.475Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T16:16:35.047Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T16:20:36.642Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T16:21:37.772Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T16:24:32.551Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T16:26:33.713Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T16:30:00.047Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
+2025-05-13T17:37:28.676Z error: InternalServerError: stream is not readable
+    at readStream (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:185:17)
+    at getRawBody (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/raw-body/index.js:116:12)
+    at read (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/read.js:79:3)
+    at urlencodedParser (/home/ubuntu/Travel_-earn/node_modules/express/node_modules/body-parser/lib/types/urlencoded.js:119:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:328:13)
+    at /home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/ubuntu/Travel_-earn/node_modules/express/lib/router/index.js:280:10)
+    at /home/ubuntu/Travel_-earn/node_modules/body-parser/lib/read.js:132:5
