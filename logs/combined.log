@@ -1313,3 +1313,16 @@
 2025-05-13T18:30:09.844Z info: Socket ID cleared for phoneNumber +917003855041
 2025-05-13T18:30:44.755Z info: A new client connected: 2QPRog5Me35U7tHVAAAf
 2025-05-13T18:30:44.766Z info: Socket ID 2QPRog5Me35U7tHVAAAf associated with phoneNumber +917003855041
+2025-05-13T18:32:59.105Z info: Client disconnected: 2QPRog5Me35U7tHVAAAf
+2025-05-13T18:32:59.133Z info: Socket ID cleared for phoneNumber +917003855041
+2025-05-13T18:33:20.074Z info: A new client connected: C4axURt8IJPB5a1QAAAh
+2025-05-13T18:33:20.082Z info: Socket ID C4axURt8IJPB5a1QAAAh associated with phoneNumber +917003855041
+2025-05-13T18:33:25.772Z info: Client disconnected: C4axURt8IJPB5a1QAAAh
+2025-05-13T18:33:25.782Z info: Socket ID cleared for phoneNumber +917003855041
+2025-05-13T18:34:14.781Z info: GET /n/getnotification/travel/+917003855041 - 200
+2025-05-13T18:34:15.283Z info: A new client connected: P8Iuy0bJ6AEtFLeMAAAj
+2025-05-13T18:34:15.290Z info: Socket ID P8Iuy0bJ6AEtFLeMAAAj associated with phoneNumber +917003855041
+2025-05-13T18:34:15.343Z info: GET /n/getnotification/consignment/+917003855041 - 200
+2025-05-13T18:34:21.603Z info: GET /api/location?going=Delhi - 200
+2025-05-13T18:34:23.417Z info: GET /api/location?going=Delhi+cantt+railway+Junction,+Kirby+Place,+Delhi+Cantonment,+New+Delhi,+Delhi,+India - 200
+2025-05-13T18:34:27.092Z info: GET /api/location?going=Delhi+cantt+railway+Junction,+Kirby+Place,+Delhi+Cantonmen - 200
