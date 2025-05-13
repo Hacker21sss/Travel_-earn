@@ -89,8 +89,8 @@ module.exports.respondToRideRequest = async (req, res) => {
     if (response.toLowerCase() === "accept") {
       const senderOtp = Math.floor(100000 + Math.random() * 900000).toString();
       const receiverOtp = Math.floor(100000 + Math.random() * 900000).toString();
-      const message = `Please use OTP ${senderOtp} to Collect the Consignment from the Traveler after checking the Package. Do not share the OTP over phone. Regards, Timestrings System Pvt. Ltd`;
-      const message1 = `Please use OTP ${receiverOtp} to accept the Consignment from the Sender after checking the Package. Do not share the OTP over phone. Regards, Timestrings System Pvt. Ltd.`;
+      const message =`Please use OTP ${senderOtp} to Collect the Consignment from the Traveler after checking the Package. Do not share the OTP over phone. Regards, Timestrings System Pvt. Ltd`;
+      const message1=`Please use OTP ${receiverOtp} to accept the Consignment from the Sender after checking the Package. Do not share the OTP over phone. Regards, Timestrings System Pvt. Ltd.`;
 
      try {
 const [smsResponse, smsResponse1] = await Promise.all([
