@@ -59,7 +59,7 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 const corsOptions = {
-    origin: process.env.FRONTEND_URI || 'https://timestringssystem.com',
+    origin: process.env.FRONTEND_URI || 'https://www.timestringssystem.com',
     methods: ['POST', 'GET'],
     allowedHeaders: ['Content-Type', 'Access-Control-Allow-Origin'],
     exposedHeaders: ['Content-Type', 'Access-Control-Allow-Origin'],
