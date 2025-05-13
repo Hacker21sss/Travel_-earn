@@ -75,8 +75,7 @@ const verifyOrder = async (req, res) => {
       return res.status(400).json({ success: false, message: "Amount must be a positive number." });
     }
 
-    // if (!/^\d{10}$/.test(phoneNumber)) {
-    if(!phoneNumber){
+    if (!phoneNumber) {
       console.error("Invalid phoneNumber:", phoneNumber);
       return res.status(400).json({ success: false, message: "Invalid phone number format." });
     }
@@ -137,7 +136,7 @@ const verifyOrder = async (req, res) => {
 
     res.status(200).json({
       success: true,
-      message: "Payment verified and earning marked completed"
+      message: "Payment successful"
     });
   } catch (error) {
     await session.abortTransaction();
