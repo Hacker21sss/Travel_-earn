@@ -59,7 +59,7 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 const corsOptions = {
-    origin: process.env.FRONTEND_URI || 'https://timestringssystem.com',
+    origin: process.env.FRONTEND_URI || 'https://www.timestringssystem.com',
     methods: ['POST', 'GET'],
     allowedHeaders: ['Content-Type', 'Access-Control-Allow-Origin'],
     exposedHeaders: ['Content-Type', 'Access-Control-Allow-Origin'],
@@ -75,10 +75,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.urlencoded({ extended: true }));
 
 const limiter = rateLimit({
-    windowMs: 15 * 60 * 1000,
-    max: 100
+    windowMs: 60000,
+    max: 200
 });
 app.use(limiter);
+
+
 
 app.use((req, res, next) => {
     logger.info(`${req.method} ${req.url} - ${res.statusCode}`);

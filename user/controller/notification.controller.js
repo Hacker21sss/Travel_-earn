@@ -57,6 +57,8 @@ module.exports.getNotifications = async (req, res) => {
             time: moment(notif.createdAt).format("h:mm A"),
             consignmentId: notif.consignmentId,
             travelId: notif.travelId,
+            requestedby:notif.requestto,
+requestto:notif.requestto,
           };
         } else if (notif.notificationType === "ride_request") {
           notificationData = {
@@ -67,6 +69,8 @@ module.exports.getNotifications = async (req, res) => {
             time: moment(notif.createdAt).format("h:mm A"),
             consignmentId: notif.consignmentId,
             travelId: notif.travelId,
+            requestedby:notif.requestto,
+requestto:notif.requestto,
           };
         }
 
@@ -147,12 +151,7 @@ exports.getUserNotifications = async (req, res) => {
           let title, subtitle, notificationType, notificationFormat;
 
           switch (notif.notificationType) {
-            // case "ride_request":
-            //   title = "New Ride Request";
-            //   subtitle = `${receiver.username} sent you a ride request for your consignment`;
-            //   notificationType = "Ride_request";
-            //   notificationFormat = "Ride";
-            //   break;
+           
 
             case "ride_accept":
               title = "Ride Approved";
@@ -200,6 +199,8 @@ exports.getUserNotifications = async (req, res) => {
             consignmentId: notif.consignmentId || null,
             pickup: notif.pickup,
             dropoff: notif.dropoff,
+requestedby:notif.requestto,
+requestto:notif.requestto,
 
             travelmode: notif.travelmode,
 

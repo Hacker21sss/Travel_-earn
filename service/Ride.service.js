@@ -89,8 +89,8 @@ module.exports.respondToRideRequest = async (req, res) => {
     if (response.toLowerCase() === "accept") {
       const senderOtp = Math.floor(100000 + Math.random() * 900000).toString();
       const receiverOtp = Math.floor(100000 + Math.random() * 900000).toString();
-      const message = `Please use OTP ${senderOtp} to Collect the Consignment from the Traveler after checking the Package. Do not share the OTP over phone. Regards, Timestrings System Pvt. Ltd`;
-      const message1 = `Please use OTP ${receiverOtp} to accept the Consignment from the Sender after checking the Package. Do not share the OTP over phone. Regards, Timestrings System Pvt. Ltd.`;
+      const message =`Please use OTP ${senderOtp} to Collect the Consignment from the Traveler after checking the Package. Do not share the OTP over phone. Regards, Timestrings System Pvt. Ltd`;
+      const message1=`Please use OTP ${receiverOtp} to accept the Consignment from the Sender after checking the Package. Do not share the OTP over phone. Regards, Timestrings System Pvt. Ltd.`;
 
      try {
 const [smsResponse, smsResponse1] = await Promise.all([
@@ -132,7 +132,7 @@ const [smsResponse, smsResponse1] = await Promise.all([
     formData.append('msg', message1);
     formData.append('sendMethod', 'quick');
     formData.append('msgType', 'text');
-    formData.append('dltTemplateId', '1707173408029753777');
+    formData.append('dltTemplateId', '1707173408034076405');
     formData.append('output', 'json');
     formData.append('duplicatecheck', 'true');
     formData.append('dlr', '1');
@@ -201,6 +201,8 @@ console.log("SMS Sent Successfully:", smsResponse.data, smsResponse1.data);
                 rideId: rideRequest.rideId,
                 phoneNumber: rideRequest.phoneNumber,
                 timestamp: new Date().toISOString(),
+                rating:rideRequest.rating,
+                totalrating:rideRequest.totalrating
               },
             },
           },
@@ -246,24 +248,7 @@ durationAtEndPoint:consignment.durationAtEndPoint,
         dropofftime:rideRequest.expectedendtime
       });
       await notification.save();
-      // const notificationOwner = new Notification({
-      //   travelId: rideRequest.travelId,
-      //   amount:rideRequest.earning,
-      //   consignmentId:rideRequest.consignmentId,
-      //    requestedby: rideRequest.phoneNumber,
-      //   requestto:consignment.phoneNumber,
-      //   status: "Approved",
-      //   notificationType: "consignment_accept",
-      //   earning:rideRequest.earning,
-      //   createdAt: new Date(),
-      //   pickup: consignment.startinglocation,
-      //   dropoff: consignment.goinglocation,
-      //   travelmode: rideRequest.travelMode,
-      //   travellername: rideRequest.username,
-      //   // pickuptime: rideRequest.expectedstarttime,
-      //   dropofftime: rideRequest.expectedendtime,
-      // });
-      // await notificationOwner.save();
+    
 
       let io = getIO();
       io.emit("bookingAccepted", { travelId, consignmentId });
@@ -282,7 +267,8 @@ durationAtEndPoint:consignment.durationAtEndPoint,
 
       const notification = new Notification({
         travelId,
-        phoneNumber: travelDetails.phoneNumber,
+        consignmentId,
+        requestedby: rideRequest.phoneNumber,
         status: "Rejected",
         notificationType: "ride_reject",
         createdAt: new Date(),
@@ -354,43 +340,78 @@ module.exports.respondToConsignmentRequest = async (req, res) => {
       const senderMsg = `Please use OTP ${senderOtp} to Collect the Consignment from the Traveler after checking the Package. Do not share the OTP over phone. Regards, Timestrings System Pvt. Ltd`;
       const receiverMsg = `Please use OTP ${receiverOtp} to accept the Consignment from the Sender after checking the Package. Do not share the OTP over phone. Regards, Timestrings System Pvt. Ltd.`;
 
-      // Send OTP SMS
-      const sendSMS = async (mobile, msg) => {
-        const formData = new FormData();
-        formData.append('userid', 'timestrings');
-        formData.append('password', 'X82w2G4f');
-        formData.append('mobile', mobile);
-        formData.append('senderid', 'TMSSYS');
-        formData.append('dltEntityId', '1701173330327453584');
-        formData.append('msg', msg);
-        formData.append('sendMethod', 'quick');
-        formData.append('msgType', 'text');
-        formData.append('dltTemplateId', '1707173408029753777');
-        formData.append('output', 'json');
-        formData.append('duplicatecheck', 'true');
-        formData.append('dlr', '1');
+      try {
+const [smsResponse, smsResponse1] = await Promise.all([
+  (async () => {
+    const formData = new FormData();
+    formData.append('userid', 'timestrings');
+    formData.append('password', 'X82w2G4f');
+    formData.append('mobile', consignment.phoneNumber);
+    formData.append('senderid', 'TMSSYS');
+    formData.append('dltEntityId', '1701173330327453584');
+    formData.append('msg', senderMsg);
+    formData.append('sendMethod', 'quick');
+    formData.append('msgType', 'text');
+    formData.append('dltTemplateId', '1707173408029753777');
+    formData.append('output', 'json');
+    formData.append('duplicatecheck', 'true');
+    formData.append('dlr', '1');
 
-        const response = await axios({
-          method: 'post',
-          url: 'https://app.pingbix.com/SMSApi/send',
-          headers: { 'Cookie': 'SERVERID=webC1' },
-          data: formData,
-          maxBodyLength: Infinity,
-        });
+    const response = await axios({
+      method: 'post',
+      url: 'https://app.pingbix.com/SMSApi/send',
+      headers: {
+        'Cookie': 'SERVERID=webC1',
+      },
+      data: formData,
+      maxBodyLength: Infinity,
+    });
 
-        return response;
-      };
+    console.log("✅ API Response (smsResponse):", response.data);
+    return response;
+  })(),
+  (async () => {
+    const formData = new FormData();
+    formData.append('userid', 'timestrings');
+    formData.append('password', 'X82w2G4f');
+    formData.append('mobile', consignment.recieverphone);
+    formData.append('senderid', 'TMSSYS');
+    formData.append('dltEntityId', '1701173330327453584');
+    formData.append('msg', receiverMsg);
+    formData.append('sendMethod', 'quick');
+    formData.append('msgType', 'text');
+    formData.append('dltTemplateId', '1707173408034076405');
+    formData.append('output', 'json');
+    formData.append('duplicatecheck', 'true');
+    formData.append('dlr', '1');
 
-      const [smsResponse, smsResponse1] = await Promise.all([
-        sendSMS(consignment.phoneNumber, senderMsg),
-        sendSMS(consignment.recieverphone, receiverMsg),
-      ]);
+    const response = await axios({
+      method: 'post',
+      url: 'https://app.pingbix.com/SMSApi/send',
+      headers: {
+        'Cookie': 'SERVERID=webC1',
+      },
+      data: formData,
+      maxBodyLength: Infinity,
+    });
 
-      if (smsResponse.status !== 200 || smsResponse1.status !== 200) {
-        return res.status(500).json({
-          message: "Failed to send OTP via SMS. Please try again."
-        });
-      }
+    console.log("✅ API Response (smsResponse1):", response.data);
+    return response;
+  })(),
+]);
+
+if (smsResponse.status !== 200 || smsResponse1.status !== 200) {
+  return res
+    .status(500)
+    .json({ message: "Failed to send OTP via SMS. Please try again." });
+}
+console.log("SMS Sent Successfully:", smsResponse.data, smsResponse1.data);
+} catch (error) {
+  console.error("Failed to send OTP:", error.message);
+  return res
+    .status(500)
+    .json({ message: "Failed to send OTP via SMS", error: error.message });
+}
 
       // Save and update documents
       const results = await Promise.all([
@@ -510,7 +531,7 @@ module.exports.respondToConsignmentRequest = async (req, res) => {
         RequestForCarry.updateOne({ consignmentId, travelId }, { $set: { status: "Rejected" } }),
         new Notification({
           consignmentId,
-          phoneNumber: consignment.phoneNumber,
+          requestedby: consignment.phoneNumber,
           notificationType: "consignment_reject",
           status: "Rejected",
           createdAt: new Date(),

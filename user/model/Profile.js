@@ -16,8 +16,9 @@ const userSchema = new mongoose.Schema({
      // Links to Traveler data
     createdAt: { type: Date, default: Date.now },
     socketId:{type:String},
-    userrating:{type:String},
-    totalrating:{type:String},
+    userrating:{type:Number,default: 0},
+    totalrating:{type:Number,default: 0},
+    averageRating:{type:Number,default: 0},
     feedback:{type:String},
     
     otpTimestamp: { type: Number, default: 0 },

@@ -22,8 +22,10 @@ const ridetocarryrequestSchema = new mongoose.Schema({
     drop:{type:String},
     travelId:{type:String,ref:ride},
     earning:{type:String},
-    bookingId:{type:String}
-    
+    bookingId:{type:String},
+    rating:{type:String},
+    totalrating
+:{type:String}    
  
     
 });

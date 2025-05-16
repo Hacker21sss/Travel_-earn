@@ -1,6 +1,7 @@
 const Rating = require('../../user/model/Rating');
 const User = require('../../user/model/User');
 const Profile = require('../../user/model/Profile');
+const travel=require('../../user/model/traveldetails')
 
 const submitRating = async (req, res) => {
     const { phoneNumber } = req.params;
@@ -21,23 +22,33 @@ const submitRating = async (req, res) => {
 
         await newRating.save();
 
-    
         const profileUpdate = await Profile.findOneAndUpdate(
             { phoneNumber },
             { 
-                $push: { userrating: rate },
+                $push: { userrating: Number(rate) },
                 $inc: { totalrating: 1 }
             },
             { new: true, upsert: true }
         );
+        const travelupdate = await Travel.findOneAndUpdate(
+            { phoneNumber },
+            { 
+                $push: { rating: Number(rate) },
+                $inc: { totalrating: 1 }
+            },
+            { new: true, upsert: true }  
+        );
 
-       
         const ratings = profileUpdate.userrating;
+        const ratings1 = travelupdate.rating;
+
         const averageRating = ratings.length > 0 
             ? ratings.reduce((sum, rating) => sum + rating, 0) / ratings.length 
             : 0;
+        const averageRating1 = ratings1.length > 0 
+            ? ratings1.reduce((sum, rating) => sum + rating, 0) / ratings1.length 
+            : 0;
 
-       
         await Profile.updateOne(
             { phoneNumber },
             { 
@@ -46,7 +57,14 @@ const submitRating = async (req, res) => {
                 }
             }
         );
-
+await travel.updateOne(
+  { phoneNumber },
+            { 
+                $set: { 
+                    averageRating: Number(averageRating1.toFixed(2))
+                }
+            }
+)
         return res.status(201).json({ 
             message: "Rating submitted successfully", 
             newRating,
