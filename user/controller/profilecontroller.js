@@ -231,20 +231,25 @@ exports.registerAsTraveler = async (req, res) => {
 // };
 exports.getUserProfileByPhoneNumber = async (req, res) => {
   try {
-    const { phoneNumber } = req.params; // Assuming phoneNumber is passed as a query parameter
+    const { phoneNumber } = req.params;
 
     // Validate input
     if (!phoneNumber) {
       return res.status(400).json({ message: "Phone number is required." });
     }
 
-    // Sanitize and format phone number (if necessary)
-    const sanitizedPhoneNumber = phoneNumber.trim(); // Remove any leading/trailing whitespace
-    const formattedPhoneNumber = sanitizedPhoneNumber.startsWith("+")
-      ? sanitizedPhoneNumber
-      : `+${sanitizedPhoneNumber}`; // Add '+' if not already present (optional)
+    // Clean and validate phone number
+    const cleanedPhoneNumber = phoneNumber.replace(/[\s\-()]/g, '');
+    if (!/^\+?\d{7,}$/.test(cleanedPhoneNumber)) {
+      return res.status(400).json({ message: "Invalid phone number format" });
+    }
 
-    console.log("Received phoneNumber:", formattedPhoneNumber); // Debugging log
+    // Add '+' if not already present
+    const formattedPhoneNumber = cleanedPhoneNumber.startsWith("+")
+      ? cleanedPhoneNumber
+      : `+${cleanedPhoneNumber}`;
+
+    console.log("Received phoneNumber:", formattedPhoneNumber);
 
     // Fetch user profile by phone number
     const user = await userprofiles.findOne({

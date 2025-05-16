@@ -44,8 +44,12 @@ const createOrUpdateProfile = async (req, res) => {
     }
 
     // Validate phone number format if provided
-    if (req.body.phoneNumber && !/^\+?[1-9]\d{1,14}$/.test(req.body.phoneNumber)) {
-      return res.status(400).json({ message: "Invalid phone number format" });
+    if (req.body.phoneNumber) {
+      const cleanedPhoneNumber = req.body.phoneNumber.replace(/[\s\-()]/g, '');
+      if (!/^\+?\d{7,}$/.test(cleanedPhoneNumber)) {
+        return res.status(400).json({ message: "Invalid phone number format" });
+      }
+      req.body.phoneNumber = cleanedPhoneNumber; // Use the cleaned number
     }
 
     // Validate email format if provided
