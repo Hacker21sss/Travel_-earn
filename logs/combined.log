@@ -97,3 +97,69 @@
 2025-05-16T09:04:11.867Z info: GET /n/getnotification/consignment/+918927473643 - 200
 2025-05-16T09:04:15.247Z info: Client disconnected: sEwsNowAvG-eBlAyAAAB
 2025-05-16T09:04:15.255Z info: Socket ID cleared for phoneNumber +918927473643
+2025-05-16T17:34:34.253Z info: Server is running on port 5002
+2025-05-16T17:34:34.255Z info: Socket.IO connection status: Connected
+2025-05-16T17:34:34.806Z info: MongoDB connected
+2025-05-16T17:39:09.763Z info: Server is running on port 5002
+2025-05-16T17:39:09.766Z info: Socket.IO connection status: Connected
+2025-05-16T17:39:10.375Z info: MongoDB connected
+2025-05-16T17:42:43.666Z info: Server is running on port 5002
+2025-05-16T17:42:43.669Z info: Socket.IO connection status: Connected
+2025-05-16T17:42:44.844Z info: MongoDB connected
+2025-05-16T17:43:06.234Z info: GET /t/search-rides?leavingLocation=ahmedabad&goingLocation=kolkata&date=2025-03-19&travelMode=airplane&phoneNumber=+918927473643 - 200
+2025-05-16T17:43:35.933Z info: GET /t/search-rides?leavingLocation=ahmedabad&goingLocation=kolkata&date=2025-05-16&travelMode=airplane&phoneNumber=+918927473643 - 200
+2025-05-16T17:44:08.328Z info: Server is running on port 5002
+2025-05-16T17:44:08.330Z info: Socket.IO connection status: Connected
+2025-05-16T17:44:09.159Z info: MongoDB connected
+2025-05-16T17:44:10.998Z info: GET /t/search-rides?leavingLocation=ahmedabad&goingLocation=kolkata&date=2025-05-16&travelMode=airplane&phoneNumber=+918927473643 - 200
+2025-05-16T17:44:59.368Z info: POST /t/creates?Leavinglocation=mumbai&Goinglocation=delhi - 200
+2025-05-16T17:45:17.098Z info: POST /t/creates?Leavinglocation=mumbai&Goinglocation=delhi&date=16/05/2025 - 200
+2025-05-16T17:46:15.717Z info: POST /t/creates?Leavinglocation=mumbai&Goinglocation=delhi&date=2025-05-16 - 200
+2025-05-16T17:48:27.090Z info: POST /t/creates?Leavinglocation=mumbai&Goinglocation=delhi - 200
+2025-05-16T17:49:14.632Z info: GET /t/search-rides?leavingLocation=mumbai&goingLocation=delhi&date=2025-05-18&travelMode=airplane&phoneNumber=+918927473643 - 200
+2025-05-16T17:50:07.179Z info: GET /t/search-rides?leavingLocation=mumbai&goingLocation=delhi&date=2025-05-18&travelMode=train&phoneNumber=+918927473643 - 200
+2025-05-16T18:13:27.790Z info: Server is running on port 5002
+2025-05-16T18:13:27.793Z info: Socket.IO connection status: Connected
+2025-05-16T18:13:29.022Z info: MongoDB connected
+2025-05-16T18:15:28.067Z info: Server is running on port 5002
+2025-05-16T18:15:28.071Z info: Socket.IO connection status: Connected
+2025-05-16T18:15:29.127Z info: MongoDB connected
+2025-05-16T18:16:32.967Z info: Server is running on port 5002
+2025-05-16T18:16:32.969Z info: Socket.IO connection status: Connected
+2025-05-16T18:16:33.584Z info: MongoDB connected
+2025-05-16T18:18:22.882Z info: Server is running on port 5002
+2025-05-16T18:18:22.885Z info: Socket.IO connection status: Connected
+2025-05-16T18:18:24.027Z info: MongoDB connected
+2025-05-16T21:32:40.794Z info: Server is running on port 5002
+2025-05-16T21:32:40.795Z info: Socket.IO connection status: Connected
+2025-05-16T21:32:41.434Z info: MongoDB connected
+2025-05-16T21:40:01.396Z info: Server is running on port 5002
+2025-05-16T21:40:01.398Z info: Socket.IO connection status: Connected
+2025-05-16T21:40:02.361Z info: MongoDB connected
+2025-05-16T22:14:55.104Z info: Server is running on port 5002
+2025-05-16T22:14:55.105Z info: Socket.IO connection status: Connected
+2025-05-16T22:14:55.656Z info: MongoDB connected
+2025-05-16T22:22:49.276Z info: Server is running on port 5002
+2025-05-16T22:22:49.277Z info: Socket.IO connection status: Connected
+2025-05-16T22:22:49.769Z info: MongoDB connected
+2025-05-16T23:14:21.771Z info: Server is running on port 5002
+2025-05-16T23:14:21.772Z info: Socket.IO connection status: Connected
+2025-05-16T23:14:22.256Z info: MongoDB connected
+2025-05-16T23:15:40.974Z info: Server is running on port 5002
+2025-05-16T23:15:40.975Z info: Socket.IO connection status: Connected
+2025-05-16T23:15:41.468Z info: MongoDB connected
+2025-05-16T23:16:28.129Z info: Server is running on port 5002
+2025-05-16T23:16:28.130Z info: Socket.IO connection status: Connected
+2025-05-16T23:16:28.596Z info: MongoDB connected
+2025-05-16T23:18:04.157Z info: Server is running on port 5002
+2025-05-16T23:18:04.158Z info: Socket.IO connection status: Connected
+2025-05-16T23:18:04.643Z info: MongoDB connected
+2025-05-16T23:18:53.420Z info: Server is running on port 5002
+2025-05-16T23:18:53.421Z info: Socket.IO connection status: Connected
+2025-05-16T23:18:53.902Z info: MongoDB connected
+2025-05-16T23:21:04.073Z info: Server is running on port 5002
+2025-05-16T23:21:04.074Z info: Socket.IO connection status: Connected
+2025-05-16T23:21:04.625Z info: MongoDB connected
+2025-05-16T23:23:54.083Z info: Server is running on port 5002
+2025-05-16T23:23:54.084Z info: Socket.IO connection status: Connected
+2025-05-16T23:23:54.617Z info: MongoDB connected

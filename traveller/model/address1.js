@@ -10,7 +10,7 @@ const addressSchema = new mongoose.Schema({
   landmark: { type: String },
   city: { type: String, required: true },
   state: { type: String, required: true },
-  saveAs: { type: String, enum: ["Home", "Office", "work"], required: true },
+  saveAs: { type: String, enum: ["Home", "Others", "Work"], required: true },
   latitude: { type: Number },
   longitude: { type: Number},
 });

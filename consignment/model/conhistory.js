@@ -52,7 +52,8 @@ const ConsignmentRequestHistorySchema = new mongoose.Schema({
       
       profilePicture:{type:String,ref:User},
       rating:{type:String},
-      totalrating:{type:String}
+      totalrating:{type:String},
+      
     },
   ],
   createdAt: { type: Date, default: Date.now },

@@ -25,7 +25,8 @@ const ridetocarryrequestSchema = new mongoose.Schema({
     bookingId:{type:String},
     rating:{type:String},
     totalrating
-:{type:String}    
+:{type:String}  ,
+profilepicture:{type:String}  
  
     
 });
