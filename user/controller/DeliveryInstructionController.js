@@ -472,8 +472,11 @@ const setconsignmetstatus = async (req, res) => {
       return res.status(400).json({ message: "Missing phoneNumber or consignmentId" });
     }
 
-    // Validate phone number format
-    if (!/^\+?[1-9]\d{1,14}$/.test(phoneNumber)) {
+    // Clean the phone number - remove spaces, hyphens and other common separators
+    const cleanedPhoneNumber = phoneNumber.replace(/[\s\-()]/g, '');
+
+    // Basic phone number validation - allow + and digits, minimum 7 digits
+    if (!/^\+?\d{7,}$/.test(cleanedPhoneNumber)) {
       return res.status(400).json({ message: "Invalid phone number format" });
     }
 
