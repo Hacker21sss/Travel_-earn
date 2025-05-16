@@ -36,6 +36,15 @@ dotenv.config();
 
 const app = express();
 
+app.set('trust proxy', true);
+
+const limiter = rateLimit({
+    windowMs: 60000,
+    max: 200
+});
+app.use(limiter);
+
+
 const server = http.createServer(app);
 
 server.keepAliveTimeout = 2000;
@@ -74,11 +83,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.urlencoded({ extended: true }));
 
-const limiter = rateLimit({
-    windowMs: 60000,
-    max: 200
-});
-app.use(limiter);
+
 
 
 
