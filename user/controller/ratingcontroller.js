@@ -14,6 +14,10 @@ const submitRating = async (req, res) => {
             return res.status(404).json({ message: 'User not found' });
         }
 
+        if (!rate || typeof rate !== 'number') {
+            return res.status(400).json({ message: 'Valid rating is required' });
+        }
+
         const newRating = new Rating({
             phoneNumber,
             message,
@@ -39,14 +43,14 @@ const submitRating = async (req, res) => {
             { new: true, upsert: true }  
         );
 
-        const ratings = profileUpdate.userrating;
-        const ratings1 = travelupdate.rating;
+        const ratings = Array.isArray(profileUpdate.userrating) ? profileUpdate.userrating : [];
+        const ratings1 = Array.isArray(travelupdate.rating) ? travelupdate.rating : [];
 
         const averageRating = ratings.length > 0 
-            ? ratings.reduce((sum, rating) => sum + rating, 0) / ratings.length 
+            ? ratings.reduce((sum, rating) => sum + Number(rating), 0) / ratings.length 
             : 0;
         const averageRating1 = ratings1.length > 0 
-            ? ratings1.reduce((sum, rating) => sum + rating, 0) / ratings1.length 
+            ? ratings1.reduce((sum, rating) => sum + Number(rating), 0) / ratings1.length 
             : 0;
 
         await Profile.updateOne(
@@ -57,14 +61,15 @@ const submitRating = async (req, res) => {
                 }
             }
         );
-await travel.updateOne(
-  { phoneNumber },
+        await Travel.updateOne(
+            { phoneNumber },
             { 
                 $set: { 
                     averageRating: Number(averageRating1.toFixed(2))
                 }
             }
-)
+        );
+
         return res.status(201).json({ 
             message: "Rating submitted successfully", 
             newRating,
