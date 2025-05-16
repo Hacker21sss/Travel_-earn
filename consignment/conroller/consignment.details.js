@@ -551,7 +551,8 @@ module.exports.getearning = async (req, res) => {
       rideId: Ride.rideId,
       travelId:Ride.travelId,
       rating:Ride.userrating,
-      totalrating:Ride.totalrating
+      totalrating:Ride.totalrating,
+      profilepicture:user.profilePicture
 
       
     });

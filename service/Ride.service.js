@@ -90,7 +90,7 @@ module.exports.respondToRideRequest = async (req, res) => {
       const senderOtp = Math.floor(100000 + Math.random() * 900000).toString();
       const receiverOtp = Math.floor(100000 + Math.random() * 900000).toString();
       const message =`Please use OTP ${senderOtp} to Collect the Consignment from the Traveler after checking the Package. Do not share the OTP over phone. Regards, Timestrings System Pvt. Ltd`;
-      const message1=`Please use OTP ${receiverOtp} to accept the Consignment from the Sender after checking the Package. Do not share the OTP over phone. Regards, Timestrings System Pvt. Ltd.`;
+      const message1=`Please use OTP ${receiverOtp} to accept the Consignment from the Sender after checking the Package. Do not share the OTP over phone. Regards, Timestrings System Pvt. Ltd`;
 
      try {
 const [smsResponse, smsResponse1] = await Promise.all([
@@ -314,14 +314,14 @@ module.exports.respondToConsignmentRequest = async (req, res) => {
         travelId,
         "consignmentDetails.consignmentId": consignmentId,
       }),
-      TravelHistory.findOne({ travelId }),
+      Travel.findOne({ travelId }),
     ]);
 
     if (!book) return res.status(404).json({ message: "Request not found" });
     if (!consignment) return res.status(404).json({ message: "Consignment not found" });
     if (travelHistory) return res.status(400).json(["already accepted"]);
     if (!travelHistoryBasic)
-      return res.status(404).json({ message: "Travel history not found for the given travelId" });
+      return res.status(404).json({ message: "Travel  not found for the given travelId" });
 
     if (
       ["Accepted", "Rejected", "Expired"].includes(book.status) ||
@@ -338,7 +338,7 @@ module.exports.respondToConsignmentRequest = async (req, res) => {
       const receiverOtp = Math.floor(100000 + Math.random() * 900000).toString();
 
       const senderMsg = `Please use OTP ${senderOtp} to Collect the Consignment from the Traveler after checking the Package. Do not share the OTP over phone. Regards, Timestrings System Pvt. Ltd`;
-      const receiverMsg = `Please use OTP ${receiverOtp} to accept the Consignment from the Sender after checking the Package. Do not share the OTP over phone. Regards, Timestrings System Pvt. Ltd.`;
+      const receiverMsg = `Please use OTP ${receiverOtp} to accept the Consignment from the Sender after checking the Package. Do not share the OTP over phone. Regards, Timestrings System Pvt. Ltd`;
 
       try {
 const [smsResponse, smsResponse1] = await Promise.all([
@@ -457,16 +457,18 @@ console.log("SMS Sent Successfully:", smsResponse.data, smsResponse1.data);
               sotp: senderOtp,
               rotp: receiverOtp,
               consignmentpickuptime: travelHistoryBasic.expectedStartTime,
-              consignmentdelivertime: travelHistoryBasic.expectedendtime,
+              consignmentdelivertime: travelHistoryBasic.expectedEndTime,
             },
             $push: {
               traveldetails: {
                 travelId: book.travelId,
-                username: book.travellername || "Unknown",
+                username: travelHistoryBasic.username || "Unknown",
                 travelMode: book.travelmode,
                 rideId: book.rideId,
-                phoneNumber: book.phoneNumber,
+                phoneNumber:travelHistoryBasic.phoneNumber,
                 timestamp: new Date().toISOString(),
+                rating:travelHistoryBasic.rating,
+                totalrating:travelHistoryBasic.averageRating
               },
             },
           },

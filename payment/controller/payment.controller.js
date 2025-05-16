@@ -94,8 +94,8 @@ const verifyOrder = async (req, res) => {
     console.log("Adding in-progress transaction for:", phoneNumber, newTransaction);
 
     const updateResult = await Earning.updateOne(
-      { travelId },
-      { $push: { transactions: newTransaction } },
+      { phoneNumber },
+      { $push: { transactions: newTransaction ,travelId} },
       { upsert: true, session }
     );
     console.log("Inserted transaction:", updateResult);

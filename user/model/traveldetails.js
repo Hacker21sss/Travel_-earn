@@ -44,6 +44,7 @@ const TraveldetailsSchema = new mongoose.Schema({
   totalrating:{type:Number,default: 0},
   averageRating:{type:Number,default: 0},
   
+  
  
 }, { timestamps: true });
 

@@ -57,7 +57,7 @@ module.exports.getNotifications = async (req, res) => {
             time: moment(notif.createdAt).format("h:mm A"),
             consignmentId: notif.consignmentId,
             travelId: notif.travelId,
-            requestedby:notif.requestto,
+            requestedby:notif.requestedby,
 requestto:notif.requestto,
           };
         } else if (notif.notificationType === "ride_request") {
@@ -69,7 +69,20 @@ requestto:notif.requestto,
             time: moment(notif.createdAt).format("h:mm A"),
             consignmentId: notif.consignmentId,
             travelId: notif.travelId,
-            requestedby:notif.requestto,
+            requestedby:notif.requestedby,
+requestto:notif.requestto,
+          };
+        }
+        else if(notif.notificationType === "ride_accept"){
+          notificationData = {
+            title: " Ride Request accept",
+            subtitle: `you acceptrd the  Ride request`,
+            notificationType: "ride_accept",
+            notificationFormat: "ride",
+            time: moment(notif.createdAt).format("h:mm A"),
+            consignmentId: notif.consignmentId,
+            travelId: notif.travelId,
+            requestedby:notif.requestedby,
 requestto:notif.requestto,
           };
         }

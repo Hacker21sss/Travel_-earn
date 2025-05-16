@@ -139,8 +139,9 @@ exports.getAutoCompleteAndCreateBooking = async (req, res) => {
 
 exports.searchRides = async (req, res) => {
   try {
-    const { leavingLocation, goingLocation, date, travelMode } = req.query;
-    console.log("Received query:", { leavingLocation, goingLocation, date, travelMode });
+    const { leavingLocation, goingLocation, date, travelMode,phoneNumber } = req.query;
+    console.log("Received query:", { leavingLocation, goingLocation, date, travelMode,phoneNumber });
+    // const { phoneNumber } = req.user;
 
     if (!leavingLocation || !goingLocation || !date) {
       return res.status(400).json({ message: "Leaving location, going location, and date are required" });
@@ -189,7 +190,8 @@ exports.searchRides = async (req, res) => {
       "GoingCoordinates.ltd": goingCoords.ltd,
       "GoingCoordinates.lng": goingCoords.lng,
       travelDate: { $gte: startOfDay, $lt: endOfDay },
-      travelMode
+      travelMode,
+      phoneNumber: { $ne: phoneNumber }
     });
 
     if (!availableRides.length) {
@@ -284,7 +286,7 @@ module.exports.booking = async (req, res) => {
     const notification = new Notification({
       phoneNumber: phoneNumber,
       requestto: riderPhoneNumber,
-      requestedby: phoneNumber,
+      requestedby:con.phoneNumber ,
       consignmentId: con.consignmentId,
       earning: expectedEarning,
       travelId: ride.travelId,
