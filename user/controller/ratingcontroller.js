@@ -1,7 +1,7 @@
 const Rating = require('../../user/model/Rating');
 const User = require('../../user/model/User');
 const Profile = require('../../user/model/Profile');
-const travel=require('../../user/model/traveldetails')
+const Travel=require('../../user/model/traveldetails')
 
 const submitRating = async (req, res) => {
     const { phoneNumber } = req.params;
