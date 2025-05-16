@@ -42,7 +42,8 @@ const TraveldetailsSchema = new mongoose.Schema({
   reasonforcancellation:{type:String},
   selectedreason:{type:String},
   rating:{type:String},
-  totalrating:{type:String}
+  totalrating:{type:String},
+  averageRating:{type:String},
   
  
 }, { timestamps: true });

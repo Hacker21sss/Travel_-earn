@@ -7,7 +7,7 @@ module.exports.getEarnings = async (req, res) => {
     try {
         let { phoneNumber } = req.query;
 
-        // Decode phoneNumber to handle encoded "+" (e.g., %2B91892...)
+      
         phoneNumber = decodeURIComponent(phoneNumber || "").trim();
         if (!phoneNumber.startsWith("+")) {
             phoneNumber = `+${phoneNumber}`;

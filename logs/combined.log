@@ -219,3 +219,200 @@
 2025-05-13T16:10:56.177Z info: Server is running on port 5002
 2025-05-13T16:10:56.178Z info: Socket.IO connection status: Connected
 2025-05-13T16:10:56.904Z info: MongoDB connected
+2025-05-15T01:52:09.568Z info: Server is running on port 5002
+2025-05-15T01:52:09.571Z info: Socket.IO connection status: Connected
+2025-05-15T01:52:10.159Z info: MongoDB connected
+2025-05-15T01:52:19.084Z info: Server is running on port 5002
+2025-05-15T01:52:19.087Z info: Socket.IO connection status: Connected
+2025-05-15T01:52:19.716Z info: MongoDB connected
+2025-05-15T02:01:40.919Z info: Server is running on port 5002
+2025-05-15T02:01:40.922Z info: Socket.IO connection status: Connected
+2025-05-15T02:01:41.794Z info: MongoDB connected
+2025-05-15T02:09:43.376Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-15T02:09:43.433Z info: A new client connected: Z7HsJl-kfiIcRrdaAAAB
+2025-05-15T02:09:43.700Z info: Socket ID Z7HsJl-kfiIcRrdaAAAB associated with phoneNumber +918927473643
+2025-05-15T02:09:44.198Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-15T02:11:37.425Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-15T02:11:38.573Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-15T02:11:39.796Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-15T02:11:43.719Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-15T02:11:43.940Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-15T02:11:47.857Z info: GET /api/location?going=Naihati - 200
+2025-05-15T02:11:49.465Z info: GET /api/location?going=Naihati,+Kolkata,+West+Bengal,+I... - 200
+2025-05-15T02:11:51.794Z info: GET /api/location?going=Naihati,+Kolkata,+West+Bengal,+I...&leaving=Kalyani+ - 200
+2025-05-15T02:11:54.598Z info: GET /api/getdetails?leavingLocation=Naihati,%20Kolkata,%20West%20Bengal,%20India&goingLocation=Kalyani,%20West%20Bengal,%20India&date=undefined-undefined-undefined-undefined-2025-05-15 - 200
+2025-05-15T02:11:54.655Z info: GET /api/getdetails?leavingLocation=Naihati,%20Kolkata,%20West%20Bengal,%20India&goingLocation=Kalyani,%20West%20Bengal,%20India&date=2025-05-15 - 200
+2025-05-15T02:11:55.524Z info: GET /api/getdetails?leavingLocation=Naihati,%20Kolkata,%20West%20Bengal,%20India&goingLocation=Kalyani,%20West%20Bengal,%20India&date=2025-05-15 - 200
+2025-05-15T02:11:56.580Z info: GET /api/getdetails?leavingLocation=Naihati,%20Kolkata,%20West%20Bengal,%20India&goingLocation=Kalyani,%20West%20Bengal,%20India&date=2025-05-16 - 200
+2025-05-15T02:11:58.116Z info: POST /api/request-for-consignment - 200
+2025-05-15T02:11:59.810Z info: POST /api/getearning - 200
+2025-05-15T02:12:02.995Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-15T02:12:03.660Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-15T02:12:05.125Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-15T02:12:18.597Z info: GET /api/riderequest/+918927473643 - 200
+2025-05-15T02:12:47.309Z info: POST /order/respond?travelId=741048751&consignmentId=9f6e8178-4177-4d5d-85d4-5326f7c987a2 - 200
+2025-05-15T02:12:51.158Z info: POST /order/respond?travelId=741048751&consignmentId=9f6e8178-4177-4d5d-85d4-5326f7c987a2 - 200
+2025-05-15T02:13:09.860Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-15T02:13:11.055Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-15T02:13:11.299Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-15T02:13:15.066Z info: GET /api/location?going=%E0%A6%A8%E0%A6%93%E0%A6%97%E0%A6%BE%E0%A6%81 - 200
+2025-05-15T02:13:15.725Z info: GET /api/location?going=Naihati+ - 200
+2025-05-15T02:13:17.504Z info: GET /api/location?going=Naihati,+Kolkata,+West+Bengal,+I... - 200
+2025-05-15T02:13:20.318Z info: GET /api/location?going=Naihati,+Kolkata,+West+Bengal,+I...&leaving=Habra - 200
+2025-05-15T02:13:23.334Z info: GET /map/getdistanceandcoordinate?origin=Naihati,%20Kolkata,%20West%20Bengal,%20India&destination=Habra,%20West%20Bengal,%20India - 200
+2025-05-15T02:13:26.553Z info: GET /map/getdistanceandcoordinate?origin=Naihati,%20Kolkata,%20West%20Bengal,%20India&destination=Habra,%20West%20Bengal,%20India - 200
+2025-05-15T02:13:38.410Z info: GET /map/getdistanceandcoordinate?origin=Naihati,%20Kolkata,%20West%20Bengal,%20India&destination=Habra,%20West%20Bengal,%20India - 200
+2025-05-15T02:13:40.317Z info: POST /t/creates?Leavinglocation=Naihati,%20Kolkata,%20West%20Bengal,%20India&Goinglocation=Habra,%20West%20Bengal,%20India - 200
+2025-05-15T02:13:43.791Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-15T02:13:44.040Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-15T02:13:50.496Z info: GET /api/location?going=Naihati - 200
+2025-05-15T02:13:52.450Z info: GET /api/location?going=Naihati,+Kolkata,+West+Bengal,+I... - 200
+2025-05-15T02:13:54.499Z info: GET /api/location?going=Naihati,+Kolkata,+West+Bengal,+I...&leaving=Habra - 200
+2025-05-15T02:14:01.998Z info: GET /map/getdistanceandcoordinate?origin=Naihati,%20Kolkata,%20West%20Bengal,%20India&destination=Habra,%20West%20Bengal,%20India - 200
+2025-05-15T02:14:03.850Z info: GET /map/getdistanceandcoordinate?origin=Naihati,%20Kolkata,%20West%20Bengal,%20India&destination=Habra,%20West%20Bengal,%20India - 200
+2025-05-15T02:14:18.959Z info: GET /map/getdistanceandcoordinate?origin=Naihati,%20Kolkata,%20West%20Bengal,%20India&destination=Habra,%20West%20Bengal,%20India - 200
+2025-05-15T02:14:20.774Z info: POST /api/consignment - 200
+2025-05-15T02:14:24.583Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-15T02:14:25.171Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-15T02:14:26.941Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-15T02:14:27.441Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-15T02:14:32.166Z info: GET /api/location?going=Naihwti - 200
+2025-05-15T02:14:33.545Z info: GET /api/location?going=Naihati,+Kolkata,+West+Bengal,+I... - 200
+2025-05-15T02:14:34.726Z info: GET /api/location?going=Naihati,+Kolkata,+West+Bengal,+I...&leaving=H - 200
+2025-05-15T02:14:35.094Z info: GET /api/location?going=Naihati,+Kolkata,+West+Bengal,+I...&leaving=Ha - 200
+2025-05-15T02:14:35.386Z info: GET /api/location?going=Naihati,+Kolkata,+West+Bengal,+I...&leaving=Hab - 200
+2025-05-15T02:14:36.155Z info: GET /api/location?going=Naihati,+Kolkata,+West+Bengal,+I...&leaving=Habra - 200
+2025-05-15T02:14:38.361Z info: GET /api/getdetails?leavingLocation=Naihati,%20Kolkata,%20West%20Bengal,%20India&goingLocation=Habra,%20West%20Bengal,%20India&date=undefined-undefined-undefined-undefined-2025-05-15 - 200
+2025-05-15T02:14:38.406Z info: GET /api/getdetails?leavingLocation=Naihati,%20Kolkata,%20West%20Bengal,%20India&goingLocation=Habra,%20West%20Bengal,%20India&date=2025-05-15 - 200
+2025-05-15T02:14:39.261Z info: GET /api/getdetails?leavingLocation=Naihati,%20Kolkata,%20West%20Bengal,%20India&goingLocation=Habra,%20West%20Bengal,%20India&date=2025-05-15 - 200
+2025-05-15T02:14:40.333Z info: GET /api/getdetails?leavingLocation=Naihati,%20Kolkata,%20West%20Bengal,%20India&goingLocation=Habra,%20West%20Bengal,%20India&date=2025-05-16 - 200
+2025-05-15T02:14:41.731Z info: POST /api/request-for-consignment - 200
+2025-05-15T02:14:42.852Z info: POST /api/getearning - 200
+2025-05-15T02:14:46.214Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-15T02:14:47.395Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-15T02:14:47.425Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-15T02:14:50.624Z info: GET /api/riderequest/+918927473643 - 200
+2025-05-15T02:15:08.727Z info: POST /order/respond?travelId=773392116&consignmentId=7a687a8f-8a50-4549-b238-90e3792e3933 - 200
+2025-05-15T02:15:09.539Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-15T02:15:39.860Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-15T02:15:41.620Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-15T02:15:47.386Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-15T02:15:47.915Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-15T02:15:49.344Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-15T02:15:51.520Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-15T02:15:52.431Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-15T02:17:37.068Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-15T02:17:38.939Z info: GET /api/riderequest/+918927473643 - 200
+2025-05-15T02:17:42.532Z info: POST /order/respond?travelId=773392116&consignmentId=7a687a8f-8a50-4549-b238-90e3792e3933 - 200
+2025-05-15T02:17:43.370Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-15T02:17:47.273Z info: GET /api/riderequest/+918927473643 - 200
+2025-05-15T02:17:49.539Z info: POST /order/respond?travelId=773392116&consignmentId=7a687a8f-8a50-4549-b238-90e3792e3933 - 200
+2025-05-15T02:17:50.302Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-15T02:20:42.750Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-15T02:20:43.297Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-15T02:20:44.484Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-15T02:20:44.594Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-15T02:20:47.567Z info: GET /t/travelhistory/+918927473643 - 200
+2025-05-15T02:20:54.356Z info: GET /map/getdistanceandcoordinate?origin=Naihati,%20Kolkata,%20West%20Bengal,%20India&destination=Habra,%20West%20Bengal,%20India - 200
+2025-05-15T02:20:59.347Z info: GET /api/history/+918927473643 - 200
+2025-05-15T02:25:36.701Z info: Server is running on port 5002
+2025-05-15T02:25:36.703Z info: Socket.IO connection status: Connected
+2025-05-15T02:25:36.770Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-15T02:25:37.400Z info: A new client connected: cbqmn2wio5hglj9eAAAB
+2025-05-15T02:25:37.516Z info: MongoDB connected
+2025-05-15T02:25:37.609Z info: Socket ID cbqmn2wio5hglj9eAAAB associated with phoneNumber +918927473643
+2025-05-15T02:25:39.189Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-15T02:25:39.234Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-15T02:25:42.126Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-15T02:25:46.883Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-15T02:25:58.782Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-15T02:26:07.212Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-15T02:26:11.050Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-15T02:28:25.984Z info: Server is running on port 5002
+2025-05-15T02:28:25.986Z info: Socket.IO connection status: Connected
+2025-05-15T02:28:26.309Z info: A new client connected: nvBAUog11607cLuiAAAB
+2025-05-15T02:28:27.153Z info: MongoDB connected
+2025-05-15T02:28:27.227Z info: Socket ID nvBAUog11607cLuiAAAB associated with phoneNumber +918927473643
+2025-05-15T02:28:43.575Z info: Server is running on port 5002
+2025-05-15T02:28:43.577Z info: Socket.IO connection status: Connected
+2025-05-15T02:28:44.217Z info: MongoDB connected
+2025-05-15T02:28:45.588Z info: A new client connected: XKxUpA_dn7ALCHTyAAAB
+2025-05-15T02:28:45.657Z info: Socket ID XKxUpA_dn7ALCHTyAAAB associated with phoneNumber +918927473643
+2025-05-15T02:29:25.341Z info: Server is running on port 5002
+2025-05-15T02:29:25.343Z info: Socket.IO connection status: Connected
+2025-05-15T02:29:25.977Z info: MongoDB connected
+2025-05-15T02:29:27.349Z info: A new client connected: A51nbQRhUh3eP8pbAAAB
+2025-05-15T02:29:27.419Z info: Socket ID A51nbQRhUh3eP8pbAAAB associated with phoneNumber +918927473643
+2025-05-15T02:29:28.179Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-15T02:29:28.407Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-15T02:29:31.666Z info: GET /api/location?going=Naihati - 200
+2025-05-15T02:29:33.498Z info: GET /api/location?going=Naihati,+Kolkata,+West+Bengal,+I... - 200
+2025-05-15T02:29:35.740Z info: GET /api/location?going=Naihati,+Kolkata,+West+Bengal,+I...&leaving=Kalyani - 200
+2025-05-15T02:29:38.197Z info: GET /t/search-rides?leavingLocation=Naihati,+Kolkata,+West+Bengal,+India&goingLocation=Kalyani,+West+Bengal,+India&date=2025-05-15&travelMode=train - 200
+2025-05-15T02:29:38.290Z info: GET /t/search-rides?leavingLocation=Naihati,+Kolkata,+West+Bengal,+India&goingLocation=Kalyani,+West+Bengal,+India&date=2025-05-15&travelMode=train - 200
+2025-05-15T02:29:38.295Z info: GET /t/search-rides?leavingLocation=Naihati,+Kolkata,+West+Bengal,+India&goingLocation=Kalyani,+West+Bengal,+India&date=2025-05-15&travelMode=train - 200
+2025-05-15T02:29:40.617Z info: GET /t/search-rides?leavingLocation=Naihati,+Kolkata,+West+Bengal,+India&goingLocation=Kalyani,+West+Bengal,+India&date=2025-05-15&travelMode=car - 200
+2025-05-15T02:29:40.622Z info: GET /t/search-rides?leavingLocation=Naihati,+Kolkata,+West+Bengal,+India&goingLocation=Kalyani,+West+Bengal,+India&date=2025-05-15&travelMode=car - 200
+2025-05-15T02:29:40.624Z info: GET /t/search-rides?leavingLocation=Naihati,+Kolkata,+West+Bengal,+India&goingLocation=Kalyani,+West+Bengal,+India&date=2025-05-15&travelMode=car - 200
+2025-05-15T02:29:42.191Z info: GET /t/search-rides?leavingLocation=Naihati,+Kolkata,+West+Bengal,+India&goingLocation=Kalyani,+West+Bengal,+India&date=2025-05-16&travelMode=car - 200
+2025-05-15T02:29:44.010Z info: GET /map/getdistanceandcoordinate?origin=Naihati,%20Kolkata,%20West%20Bengal,%20India&destination=Kalyani,%20West%20Bengal,%20India - 200
+2025-05-15T02:29:46.573Z info: POST /t/booking-request - 200
+2025-05-15T02:29:49.979Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-15T02:29:50.329Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-15T02:29:51.205Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-15T02:31:17.345Z info: GET /t/request/+918927473643 - 200
+2025-05-15T02:31:26.116Z info: POST /order/respondto?travelId=741048751&consignmentId=9f6e8178-4177-4d5d-85d4-5326f7c987a2 - 200
+2025-05-15T02:32:33.810Z info: POST /order/respondto?travelId=741048751&consignmentId=9f6e8178-4177-4d5d-85d4-5326f7c987a2 - 200
+2025-05-15T02:32:54.348Z info: POST /order/respondto?travelId=741048751&consignmentId=7a687a8f-8a50-4549-b238-90e3792e3933 - 200
+2025-05-15T02:32:57.155Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-15T02:33:05.145Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-15T02:36:41.293Z info: Client disconnected: A51nbQRhUh3eP8pbAAAB
+2025-05-15T02:36:41.348Z info: Socket ID cleared for phoneNumber +918927473643
+2025-05-15T02:36:53.280Z info: A new client connected: SGX0VaxkxZdEiMO9AAAD
+2025-05-15T02:36:53.327Z info: Socket ID SGX0VaxkxZdEiMO9AAAD associated with phoneNumber +918927473643
+2025-05-15T02:37:57.932Z info: Server is running on port 5002
+2025-05-15T02:37:57.934Z info: Socket.IO connection status: Connected
+2025-05-15T02:37:58.532Z info: MongoDB connected
+2025-05-15T02:37:58.735Z info: A new client connected: 11MM7hNg__-LWgqiAAAB
+2025-05-15T02:37:59.200Z info: Socket ID 11MM7hNg__-LWgqiAAAB associated with phoneNumber +918927473643
+2025-05-15T02:38:18.264Z info: Server is running on port 5002
+2025-05-15T02:38:18.266Z info: Socket.IO connection status: Connected
+2025-05-15T02:38:18.981Z info: MongoDB connected
+2025-05-15T02:38:21.053Z info: A new client connected: liq08hwFHGwLTYeaAAAB
+2025-05-15T02:38:21.121Z info: Socket ID liq08hwFHGwLTYeaAAAB associated with phoneNumber +918927473643
+2025-05-15T23:03:20.435Z info: Server is running on port 5002
+2025-05-15T23:03:20.437Z info: Socket.IO connection status: Connected
+2025-05-15T23:03:21.365Z info: MongoDB connected
+2025-05-16T00:09:47.268Z info: Server is running on port 5002
+2025-05-16T00:09:47.280Z info: Socket.IO connection status: Connected
+2025-05-16T00:09:47.866Z info: MongoDB connected
+2025-05-16T00:17:14.674Z info: Server is running on port 5002
+2025-05-16T00:17:14.677Z info: Socket.IO connection status: Connected
+2025-05-16T00:17:15.251Z info: MongoDB connected
+2025-05-16T00:17:31.877Z info: Server is running on port 5002
+2025-05-16T00:17:31.880Z info: Socket.IO connection status: Connected
+2025-05-16T00:17:32.432Z info: MongoDB connected
+2025-05-16T00:19:49.328Z info: Server is running on port 5002
+2025-05-16T00:19:49.330Z info: Socket.IO connection status: Connected
+2025-05-16T00:19:49.857Z info: MongoDB connected
+2025-05-16T01:19:41.645Z info: Server is running on port 5002
+2025-05-16T01:19:41.648Z info: Socket.IO connection status: Connected
+2025-05-16T01:19:42.473Z info: MongoDB connected
+2025-05-16T01:21:54.800Z info: Server is running on port 5002
+2025-05-16T01:21:54.802Z info: Socket.IO connection status: Connected
+2025-05-16T01:21:55.336Z info: MongoDB connected
+2025-05-16T01:21:59.962Z info: Server is running on port 5002
+2025-05-16T01:21:59.965Z info: Socket.IO connection status: Connected
+2025-05-16T01:22:00.578Z info: MongoDB connected
+2025-05-16T01:24:50.223Z info: Server is running on port 5002
+2025-05-16T01:24:50.224Z info: Socket.IO connection status: Connected
+2025-05-16T01:24:50.698Z info: MongoDB connected
+2025-05-16T01:27:46.260Z info: Server is running on port 5002
+2025-05-16T01:27:46.261Z info: Socket.IO connection status: Connected
+2025-05-16T01:27:46.753Z info: MongoDB connected
+2025-05-16T01:28:10.680Z info: Server is running on port 5002
+2025-05-16T01:28:10.681Z info: Socket.IO connection status: Connected
+2025-05-16T01:28:11.159Z info: MongoDB connected
+2025-05-16T01:37:02.117Z info: Server is running on port 5002
+2025-05-16T01:37:02.118Z info: Socket.IO connection status: Connected
+2025-05-16T01:37:02.808Z info: MongoDB connected

@@ -201,6 +201,8 @@ console.log("SMS Sent Successfully:", smsResponse.data, smsResponse1.data);
                 rideId: rideRequest.rideId,
                 phoneNumber: rideRequest.phoneNumber,
                 timestamp: new Date().toISOString(),
+                rating:rideRequest.rating,
+                totalrating:rideRequest.totalrating
               },
             },
           },
@@ -246,24 +248,7 @@ durationAtEndPoint:consignment.durationAtEndPoint,
         dropofftime:rideRequest.expectedendtime
       });
       await notification.save();
-      // const notificationOwner = new Notification({
-      //   travelId: rideRequest.travelId,
-      //   amount:rideRequest.earning,
-      //   consignmentId:rideRequest.consignmentId,
-      //    requestedby: rideRequest.phoneNumber,
-      //   requestto:consignment.phoneNumber,
-      //   status: "Approved",
-      //   notificationType: "consignment_accept",
-      //   earning:rideRequest.earning,
-      //   createdAt: new Date(),
-      //   pickup: consignment.startinglocation,
-      //   dropoff: consignment.goinglocation,
-      //   travelmode: rideRequest.travelMode,
-      //   travellername: rideRequest.username,
-      //   // pickuptime: rideRequest.expectedstarttime,
-      //   dropofftime: rideRequest.expectedendtime,
-      // });
-      // await notificationOwner.save();
+    
 
       let io = getIO();
       io.emit("bookingAccepted", { travelId, consignmentId });
@@ -282,7 +267,8 @@ durationAtEndPoint:consignment.durationAtEndPoint,
 
       const notification = new Notification({
         travelId,
-        phoneNumber: travelDetails.phoneNumber,
+        consignmentId,
+        requestedby: rideRequest.phoneNumber,
         status: "Rejected",
         notificationType: "ride_reject",
         createdAt: new Date(),
@@ -545,7 +531,7 @@ console.log("SMS Sent Successfully:", smsResponse.data, smsResponse1.data);
         RequestForCarry.updateOne({ consignmentId, travelId }, { $set: { status: "Rejected" } }),
         new Notification({
           consignmentId,
-          phoneNumber: consignment.phoneNumber,
+          requestedby: consignment.phoneNumber,
           notificationType: "consignment_reject",
           status: "Rejected",
           createdAt: new Date(),

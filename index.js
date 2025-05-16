@@ -7,7 +7,7 @@ const dotenv = require('dotenv');
 const winston = require('winston');
 const helmet = require('helmet');
 const compression = require('compression');
-// const rateLimit = require('express-rate-limit');
+const rateLimit = require('express-rate-limit');
 const path = require('path');
 
 const authRoutes = require('./user/router/Userrouter');
@@ -74,11 +74,13 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.urlencoded({ extended: true }));
 
-// const limiter = rateLimit({
-//     windowMs: 30 * 60 * 1000,
-//     max: 200
-// });
-// app.use(limiter);
+const limiter = rateLimit({
+    windowMs: 60000,
+    max: 200
+});
+app.use(limiter);
+
+
 
 app.use((req, res, next) => {
     logger.info(`${req.method} ${req.url} - ${res.statusCode}`);

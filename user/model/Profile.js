@@ -18,6 +18,7 @@ const userSchema = new mongoose.Schema({
     socketId:{type:String},
     userrating:{type:String},
     totalrating:{type:String},
+    averageRating:{type:String},
     feedback:{type:String},
     
     otpTimestamp: { type: Number, default: 0 },

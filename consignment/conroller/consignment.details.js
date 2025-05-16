@@ -550,6 +550,9 @@ module.exports.getearning = async (req, res) => {
       earning:expectedEarning,
       rideId: Ride.rideId,
       travelId:Ride.travelId,
+      rating:Ride.userrating,
+      totalrating:Ride.totalrating
+
       
     });
 
