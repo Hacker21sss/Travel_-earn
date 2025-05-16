@@ -25,8 +25,7 @@ const TraveldetailsSchema = new mongoose.Schema({
   expectedEndTime: { type: String },
   rideId:{type:String},
   expectedearning:{type:String},
-  userrating:{type:String,ref:user},
-  totalrating:{type:String,ref:user},
+ 
   weight:{type:String},
   TE:{type:String},
   discount:{type:String},
