@@ -13,6 +13,7 @@
     "axios": "^1.4.0",
     "backend": "file:",
     "bcryptjs": "^2.4.3",
+    "body-parser": "^2.2.0",
     "cloudinary": "^2.5.1",
     "compression": "^1.8.0",
     "cors": "^2.8.5",

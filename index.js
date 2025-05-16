@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const http = require('http');
-const bodyParser = require('body-parser');
+//const bodyParser = require('body-parser');
 const cors = require('cors');
 const dotenv = require('dotenv');
 const winston = require('winston');
@@ -36,11 +36,14 @@ dotenv.config();
 
 const app = express();
 
-app.set('trust proxy', true);
+app.set('trust proxy', 1);
 
 const limiter = rateLimit({
-    windowMs: 60000,
-    max: 200
+  windowMs: 60000,
+  max: 200,
+  standardHeaders: true,
+  legacyHeaders: false,
+  validate: { trustProxy: true }
 });
 app.use(limiter);
 
@@ -79,8 +82,8 @@ app.use(cors(corsOptions));
 app.use(helmet());
 app.use(compression());
 app.use(express.json());
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+//app.use(bodyParser.json());
+//app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.urlencoded({ extended: true }));
 
 

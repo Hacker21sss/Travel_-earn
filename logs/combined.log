@@ -33,3 +33,67 @@
 2025-05-16T07:50:28.630Z info: Server is running on port 5002
 2025-05-16T07:50:28.632Z info: Socket.IO connection status: Connected
 2025-05-16T07:50:29.357Z info: MongoDB connected
+2025-05-16T08:40:17.510Z info: Server is running on port 5002
+2025-05-16T08:40:17.512Z info: Socket.IO connection status: Connected
+2025-05-16T08:40:17.746Z info: MongoDB connected
+2025-05-16T08:40:23.112Z info: A new client connected: LgU9xvcYIXvil3tuAAAB
+2025-05-16T08:40:23.146Z info: Socket ID LgU9xvcYIXvil3tuAAAB associated with phoneNumber +917003855041
+2025-05-16T08:40:53.179Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-16T08:40:53.559Z info: A new client connected: QQuo6LgcVX6CjLr7AAAD
+2025-05-16T08:40:53.568Z info: Socket ID QQuo6LgcVX6CjLr7AAAD associated with phoneNumber +918927473643
+2025-05-16T08:40:53.621Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-16T08:40:53.960Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-16T08:40:54.150Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-16T08:41:05.598Z info: Client disconnected: LgU9xvcYIXvil3tuAAAB
+2025-05-16T08:41:05.606Z info: Socket ID cleared for phoneNumber +917003855041
+2025-05-16T08:41:08.737Z info: GET /t/travelhistory/+918927473643 - 200
+2025-05-16T08:41:12.601Z info: GET /map/getdistanceandcoordinate?origin=Naihati,%20Kolkata,%20West%20Bengal,%20India&destination=Barasat,%20Kolkata,%20West%20Bengal,%20India - 200
+2025-05-16T08:41:14.579Z info: GET /order/consignmenttocarry/103765619 - 200
+2025-05-16T08:41:14.760Z info: GET /order/consignmenttocarry/103765619 - 200
+2025-05-16T08:41:20.663Z info: Server is running on port 5002
+2025-05-16T08:41:20.664Z info: Socket.IO connection status: Connected
+2025-05-16T08:41:20.909Z info: MongoDB connected
+2025-05-16T08:41:22.254Z info: A new client connected: XrJdqEziv1fTdCtLAAAB
+2025-05-16T08:41:22.277Z info: Socket ID XrJdqEziv1fTdCtLAAAB associated with phoneNumber +918927473643
+2025-05-16T08:41:24.151Z info: GET /earn/earning?phoneNumber=%2B918927473643 - 200
+2025-05-16T08:41:44.764Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-16T08:41:45.269Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-16T08:41:50.551Z info: Client disconnected: XrJdqEziv1fTdCtLAAAB
+2025-05-16T08:41:50.559Z info: Socket ID cleared for phoneNumber +918927473643
+2025-05-16T08:42:00.112Z info: Server is running on port 5002
+2025-05-16T08:42:00.113Z info: Socket.IO connection status: Connected
+2025-05-16T08:42:00.356Z info: MongoDB connected
+2025-05-16T08:43:15.634Z info: Server is running on port 5002
+2025-05-16T08:43:15.635Z info: Socket.IO connection status: Connected
+2025-05-16T08:43:15.878Z info: MongoDB connected
+2025-05-16T08:50:17.356Z info: Server is running on port 5002
+2025-05-16T08:50:17.358Z info: Socket.IO connection status: Connected
+2025-05-16T08:50:17.598Z info: MongoDB connected
+2025-05-16T08:51:20.953Z info: Server is running on port 5002
+2025-05-16T08:51:20.954Z info: Socket.IO connection status: Connected
+2025-05-16T08:51:21.192Z info: MongoDB connected
+2025-05-16T08:51:39.182Z info: GET /_profiler/phpinfo - 200
+2025-05-16T08:51:39.623Z info: GET /.env - 200
+2025-05-16T08:51:40.080Z info: POST / - 200
+2025-05-16T08:55:46.136Z info: Server is running on port 5002
+2025-05-16T08:55:46.150Z info: Socket.IO connection status: Connected
+2025-05-16T08:55:46.400Z info: MongoDB connected
+2025-05-16T08:56:10.285Z info: Server is running on port 5002
+2025-05-16T08:56:10.287Z info: Socket.IO connection status: Connected
+2025-05-16T08:56:10.534Z info: MongoDB connected
+2025-05-16T08:58:52.917Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-16T08:58:53.167Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-16T08:58:53.297Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-16T08:58:53.324Z info: A new client connected: sEwsNowAvG-eBlAyAAAB
+2025-05-16T08:58:53.335Z info: Socket ID sEwsNowAvG-eBlAyAAAB associated with phoneNumber +918927473643
+2025-05-16T08:58:53.406Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-16T08:58:56.087Z info: GET /earn/earning?phoneNumber=%2B918927473643 - 200
+2025-05-16T08:58:59.755Z info: GET /api/history/+918927473643 - 200
+2025-05-16T08:59:06.517Z info: GET /map/getdistanceandcoordinate?origin=Naihati%2C%20Kolkata%2C%20West%20Bengal%2C%20India&destination=Barasat%2C%20Kolkata%2C%20West%20Bengal%2C%20India - 200
+2025-05-16T08:59:06.694Z info: GET /editp/consignment-collected-status/phoneNumber=+918927473643?consignmentId=bbbbfe80-5737-4faa-8281-29eab65fea09 - 200
+2025-05-16T08:59:06.827Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-16T09:04:00.103Z info: POST /api/rating/+918927473643 - 200
+2025-05-16T09:04:11.446Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-16T09:04:11.867Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-16T09:04:15.247Z info: Client disconnected: sEwsNowAvG-eBlAyAAAB
+2025-05-16T09:04:15.255Z info: Socket ID cleared for phoneNumber +918927473643
