@@ -1,3 +1,4 @@
+
 const User1 = require("../model/User");
 require('dotenv').config();
 const profile=require('../../user/model/Profile');
@@ -19,27 +20,21 @@ exports.sendOtp = async (req, res) => {
       return res.status(400).json({ error: "Phone number is required" });
     }
 
-    // Clean and validate phone number
-    const cleanedPhoneNumber = phoneNumber.replace(/[\s\-()]/g, '');
-    if (!/^\+?\d{7,}$/.test(cleanedPhoneNumber)) {
-      return res.status(400).json({ error: "Invalid phone number format" });
-    }
-
     const otp = generateOtp();
     const expiresAt = Date.now() + 10 * 60 * 1000;
     let is_newuser = true;
 
-    let user = await User1.findOne({ phoneNumber: cleanedPhoneNumber });
+    let user = await User1.findOne({ phoneNumber });
 
     if (user) {
       is_newuser = false;
-      await User1.updateOne({ phoneNumber: cleanedPhoneNumber }, { otp, expiresAt });
+      await User1.updateOne({ phoneNumber }, { otp, expiresAt });
     } else {
-      user = new User1({ phoneNumber: cleanedPhoneNumber, otp, expiresAt });
+      user = new User1({ phoneNumber, otp, expiresAt });
       await user.save();
     }
 
-    console.log(`🔹 Generated OTP for ${cleanedPhoneNumber}: ${otp}`);
+    console.log(`🔹 Generated OTP for ${phoneNumber}: ${otp}`);
 
     const message = `${otp} is OTP to Login to Timestrings System App. Do not share with anyone.`;
 
@@ -47,7 +42,7 @@ exports.sendOtp = async (req, res) => {
     const formData = new FormData();
     formData.append('userid', 'timestrings');
     formData.append('password', 'X82w2G4f');
-    formData.append('mobile', cleanedPhoneNumber);
+    formData.append('mobile', phoneNumber);
     formData.append('senderid', 'TMSSYS');
     formData.append('dltEntityId', '1701173330327453584');
     formData.append('msg', message);

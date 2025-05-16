@@ -6,16 +6,10 @@ const mongoose = require('mongoose');
 const getProfileByUserId = async (req, res) => {
   try {
     const { userId } = req.params;
-    
-    // Validate userId format
-    if (!mongoose.Types.ObjectId.isValid(userId)) {
-      return res.status(400).json({ message: "Invalid userId format" });
-    }
-
-    console.log(`Received UserId: ${userId}`);
+    console.log(`Received UserId: ${userId}`); // Log the received UserId
 
     const profile = await EditProfile.findOne({ UserId: userId });
-    console.log(`Query Result: ${profile}`);
+    console.log(`Query Result: ${profile}`); // Log the result of the query
 
     if (!profile) {
       return res.status(404).json({ message: "Profile not found" });
@@ -23,7 +17,7 @@ const getProfileByUserId = async (req, res) => {
 
     res.status(200).json(profile);
   } catch (error) {
-    console.error(error.message);
+    console.error(error.message); // Log any errors
     res.status(500).json({ error: "Server Error", details: error.message });
   }
 };
@@ -32,11 +26,6 @@ const getProfileByUserId = async (req, res) => {
 const createOrUpdateProfile = async (req, res) => {
   try {
     const { userId } = req.params;
-
-    // Validate userId format
-    if (!mongoose.Types.ObjectId.isValid(userId)) {
-      return res.status(400).json({ message: "Invalid userId format" });
-    }
 
     // Validate required fields
     if (!userId) {
