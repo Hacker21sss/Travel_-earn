@@ -8,14 +8,17 @@ const submitRating = async (req, res) => {
     const { message, rate } = req.body;
 
     try {
+        
         const userExists = await User.findOne({ phoneNumber });
         if (!userExists) {
             return res.status(404).json({ message: 'User not found' });
         }
+
         
         if (!rate || typeof rate !== 'number' || rate < 0 || rate > 5) {
             return res.status(400).json({ message: 'Valid rating (0-5) is required' });
         }
+
         
         const newRating = new Rating({
             phoneNumber,
@@ -24,46 +27,33 @@ const submitRating = async (req, res) => {
         });
         await newRating.save();
 
-        // First get the current profiles to access current values
-        const currentProfile = await Profile.findOne({ phoneNumber });
-        const currentTravel = await Travel.findOne({ phoneNumber });
-        
-        // Initialize totalrating as a number if it doesn't exist or is a string
-        const profileTotalRating = currentProfile && currentProfile.totalrating ? 
-            (typeof currentProfile.totalrating === 'string' ? 
-                Number(currentProfile.totalrating) : currentProfile.totalrating) : 0;
-        
-        const travelTotalRating = currentTravel && currentTravel.totalrating ? 
-            (typeof currentTravel.totalrating === 'string' ? 
-                Number(currentTravel.totalrating) : currentTravel.totalrating) : 0;
-        
-        // Update Profile
+       
         const profileUpdate = await Profile.findOneAndUpdate(
             { phoneNumber },
             { 
                 $push: { userrating: Number(rate) },
+                $inc: { totalrating: 1 },
                 $set: {
-                    totalrating: profileTotalRating + 1,
                     averageRating: 0 
                 }
             },
             { new: true, upsert: true }
         );
 
-        // Update Travel
+        
         const travelUpdate = await Travel.findOneAndUpdate(
             { phoneNumber },
             { 
                 $push: { rating: Number(rate) },
+                $inc: { totalrating: 1 },
                 $set: {
-                    totalrating: travelTotalRating + 1,
                     averageRating: 0 
                 }
             },
             { new: true, upsert: true }  
         );
 
-        // Calculate ratings
+       
         const profileRatings = Array.isArray(profileUpdate.userrating) ? profileUpdate.userrating : [];
         const travelRatings = Array.isArray(travelUpdate.rating) ? travelUpdate.rating : [];
 
@@ -77,7 +67,7 @@ const submitRating = async (req, res) => {
         console.log(`Profile Ratings: ${profileRatings}, Average: ${profileAverageRating}`);
         console.log(`Travel Ratings: ${travelRatings}, Average: ${travelAverageRating}`);
 
-        // Update the average ratings
+       
         await Profile.updateOne(
             { phoneNumber },
             { 
@@ -87,6 +77,7 @@ const submitRating = async (req, res) => {
             }
         );
 
+       
         await Travel.updateOne(
             { phoneNumber },
             { 
