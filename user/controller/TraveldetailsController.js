@@ -247,6 +247,7 @@ module.exports.booking = async (req, res) => {
     if (!validModes.includes(travelMode)) {
       return res.status(400).json({ message: "Invalid Travel Mode! Please enter 'train' or 'airplane'." });
     }
+    
 
     const weight = con.weight ? parseFloat(con.weight.toString().replace(/[^\d.]/g, "")) : NaN;
     const distance = con.distance ? parseFloat(con.distance.toString().replace(/[^\d.]/g, "")) : NaN;

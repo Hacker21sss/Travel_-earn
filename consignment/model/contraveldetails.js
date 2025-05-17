@@ -20,6 +20,7 @@ const DriverSchema = new mongoose.Schema({
   recieverphone:{type:String},
   Description:{type:String},
   weight:{type:String},
+  dimensionalweight:{type:String},
   category:{type:String,enum:['document','nondocument']},
   subcategory:{type:String},
   dimensions: {

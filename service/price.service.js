@@ -17,7 +17,7 @@ module.exports.dimension = (length, height, breadth) => {
     }
 
     // Fixed dimensional factor (cm³/kg)
-    const dimensionalFactor = 6000;
+    const dimensionalFactor = 5000;
 
     // Calculate dimensional weight: (length * height * breadth) / dimensionalFactor
     const dimensionalWeight = (length * height * breadth) / dimensionalFactor;

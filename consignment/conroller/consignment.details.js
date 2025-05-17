@@ -97,18 +97,41 @@ module.exports = {
         return res.status(400).json({ message: 'Invalid distance received from map service' });
       }
 
-      
-    //   const calculateWeightFromDimensions = (length, width, height) => {
+    //  const calculateWeightFromDimensions = (length, width, height) => {
     //     if (!length || !width || !height) {
-    //         console.error("Dimensions are required");
-    //         return null;
+    //       console.error("Dimensions are required");
+    //       return null;
     //     }
     //     if (length < 0 || width < 0 || height < 0) {
-    //         console.error("Invalid dimensions provided");
-    //         return null;
+    //       console.error("Invalid dimensions provided");
+    //       return null;
     //     }
-    //     return (length * width * height) / 5000;
-    // };
+    //     const dimensional1Weight = (length * width * height) / 5000;
+    //     return dimensional1Weight;
+    //   };
+
+    //   // Ensure weight is a valid number
+    //   // let userWeight = parseFloat(weight) || 0;
+
+    //   // Calculate dimensional weight if dimensions are provided
+    //   let dimensionalWeight = 0;
+    //   if (dimensions && dimensions.breadth && dimensions.length && dimensions.height) {
+    //     const calculatedWeight = calculateWeightFromDimensions(
+    //       parseFloat(dimensions.length),
+    //       parseFloat(dimensions.width),
+    //       parseFloat(dimensions.height)
+    //     );
+    //     if (calculatedWeight !== null) {
+    //       dimensionalWeight = parseFloat(calculatedWeight.toFixed(2));
+    //     }
+    //   }
+
+    //   // Use the higher weight for fare calculation
+    //   const finalWeight = Math.max(userWeight, dimensionalWeight);
+    //   console.log("User Weight:", userWeight);
+    //   console.log("Dimensional Weight:", dimensionalWeight);
+    //   console.log("Final Weight:", finalWeight);
+
     
     // // Ensure weight is always a valid number
     // let finalWeight = parseFloat(weight) || 0; // Convert `weight` to a number
@@ -139,6 +162,7 @@ module.exports = {
     
     // console.log("Train Fare:", trainFare);
     // console.log("Airplane Fare:", airplaneFare);
+    
     
 
       
@@ -469,132 +493,124 @@ module.exports.getearning = async (req, res) => {
       return res.status(400).json({ message: "Phone number and consignment ID are required." });
     }
 
-    // Find user by phone number
+   
     const user = await userprofiles.findOne({ phoneNumber });
     if (!user) {
       return res.status(404).json({ message: "User not found" });
     }
 
-    // Find consignment details
+    
     const con = await Consignment.findOne({ consignmentId });
     if (!con) {
       return res.status(404).json({ message: "Consignment not found" });
     }
 
-    // Find the latest ride details for the driver
-    const Ride = await Traveldetails.findOne({ phoneNumber }).sort({  updatedAt: -1 });
+  
+    const Ride = await Traveldetails.findOne({ phoneNumber }).sort({ updatedAt: -1 });
 
     if (!Ride) {
       return res.status(404).json({ message: "Ride not found" });
     }
 
-    const validModes = ["train", "airplane","car"];
+    const validModes = ["train", "airplane", "car"];
     const travelMode = Ride.travelMode ? Ride.travelMode.toLowerCase().trim() : null;
 
     if (!validModes.includes(travelMode)) {
-      return res.status(400).json({ message: "Invalid Travel Mode! Please enter 'train' or 'airplane'." });
+      return res.status(400).json({ message: "Invalid Travel Mode! Please enter 'train', 'airplane', or 'car'." });
     }
 
-    const weight = parseFloat(con.weight?.toString().replace(/[^\d.]/g, ""));
+
+    const dimensionalWeightRaw = fare.dimension(con.dimensions.breadth, con.dimensions.length, con.dimensions.height);
+    console.log("Dimensional Weight Raw:", dimensionalWeightRaw);
+
+    
+    const dimensionalWeight = parseFloat(dimensionalWeightRaw?.toString().replace(/[^\d.]/g, ""));
+    const userWeight = parseFloat(con.weight?.toString().replace(/[^\d.]/g, ""));
     const distance = parseFloat(con.distance?.toString().replace(/[^\d.]/g, ""));
 
-    if (isNaN(weight) || isNaN(distance)) {
-      return res.status(400).json({ message: "Invalid Weight or Distance! Please provide valid numbers." });
+    if (isNaN(dimensionalWeight) || isNaN(userWeight) || isNaN(distance)) {
+      return res.status(400).json({ message: "Invalid Weight, Dimensional Weight, or Distance! Please provide valid numbers." });
     }
 
-    // Ensure fare.calculateFare function exists
+    
+    const Weight = Math.max(dimensionalWeight, userWeight);
+    console.log("User Weight:", userWeight);
+    console.log("Dimensional Weight:", dimensionalWeight);
+    console.log("Final Weight for Fare:", Weight);
+
+    
     if (typeof fare.calculateFare !== "function") {
       return res.status(500).json({ message: "Fare calculation function is missing or not defined." });
     }
 
-    const expectedEarning = fare.calculateFare(weight, distance, travelMode);
+    const expectedEarning = fare.calculateFare(Weight, distance, travelMode);
     const senderPhoneNumber = Ride.phoneNumber;
 
     if (!senderPhoneNumber) {
       return res.status(400).json({ message: "Consignment owner phone number not found." });
     }
-   
-
 
     const requestto = con.phoneNumber;
     console.log("Creating notification with requestto:", requestto);
     const notification = new Notification({
       phoneNumber: senderPhoneNumber,
-      ridername:Ride.username,
-      requestedby:senderPhoneNumber ,
+      ridername: Ride.username,
+      requestedby: senderPhoneNumber,
       requestto,
-
       travelId: Ride.travelId,
       earning: expectedEarning,
       consignmentId: con.consignmentId,
-      notificationType:"ride_request"
+      notificationType: "ride_request"
     });
 
     await notification.save();
     console.log("Notification sent to consignment owner:", requestto);
     console.log("Notification saved:", notification);
 
-    
     const rideRequestHistory = new riderequest({
       phoneNumber: con.phoneNumber,
       requestedby: Ride.phoneNumber,
-      consignmentId:consignmentId,
-      requestto:con.phoneNumber,
-      pickup:Ride.Leavinglocation,
-      drop:Ride.Goinglocation,
-      // bookingId,
-      expectedendtime:Ride.expectedStartTime,
-      expectedendtime:Ride.expectedEndTime,
-     rider:Ride.username,
+      consignmentId: consignmentId,
+      requestto: con.phoneNumber,
+      pickup: Ride.Leavinglocation,
+      drop: Ride.Goinglocation,
+      expectedendtime: Ride.expectedEndTime,
+      rider: Ride.username,
       travelMode: Ride.travelMode,
-      earning:expectedEarning,
+      earning: expectedEarning,
       rideId: Ride.rideId,
-      travelId:Ride.travelId,
-      rating:Ride.userrating,
-      totalrating:Ride.totalrating,
-      profilepicture:user.profilePicture
-
-      
+      travelId: Ride.travelId,
+      rating: user.averageRating,
+      totalrating: user.totalrating,
+      profilepicture: user.profilePicture
     });
 
     await rideRequestHistory.save();
     console.log("Consignment request history saved:", rideRequestHistory);
+
     const io = getIO();
+    const consignmentProfile = await userprofiles.findOne({ phoneNumber: senderPhoneNumber });
 
+    if (consignmentProfile && consignmentProfile.socketId) {
+      const socketId = consignmentProfile.socketId;
 
-const consignmentProfile = await userprofiles.findOne({ phoneNumber:senderPhoneNumber  });
+      sendMessageToSocketId(socketId, {
+        event: "newBookingRequest",
+        data: {
+          message: `New booking request from ${phoneNumber}.`,
+          phoneNumber,
+          RideId: Ride.rideId,
+          expectedEarning,
+        },
+      });
 
-if (consignmentProfile && consignmentProfile.socketId) {
-  const socketId = consignmentProfile.socketId;
-
-  sendMessageToSocketId(socketId, {
-    event: "newBookingRequest",
-    data: {
-      message: `New booking request from ${phoneNumber}.`,
-      
-      phoneNumber,
-      RideId:Ride.rideId,
-      expectedEarning,
-    },
-  });
-
-  console.log(`📢 Real-time notification sent to ${senderPhoneNumber } (socket: ${socketId})`);
-} else {
-  console.log(`⚠️ Rider ${senderPhoneNumber } is not connected to Socket.io.`);
-}
-
+      console.log(`📢 Real-time notification sent to ${senderPhoneNumber} (socket: ${socketId})`);
+    } else {
+      console.log(`⚠️ Rider ${senderPhoneNumber} is not connected to Socket.io.`);
+    }
 
     return res.status(200).json({
       message: "Success",
-      // notification: {
-      //   sentTo: ownerPhoneNumber,
-      //   message: notificationMessage,
-      //   travelMode,
-      //   requestedby: phoneNumber,
-      //   rideId: Ride.rideId,
-      //   consignmentId,
-      //   expectedEarning,
-      // },
     });
 
   } catch (error) {

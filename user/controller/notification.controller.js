@@ -76,7 +76,7 @@ requestto:notif.requestto,
         else if(notif.notificationType === "ride_accept"){
           notificationData = {
             title: " Ride Request accept",
-            subtitle: `you acceptrd the  Ride request`,
+            subtitle: `you accepted the  Ride request`,
             notificationType: "ride_accept",
             notificationFormat: "ride",
             time: moment(notif.createdAt).format("h:mm A"),

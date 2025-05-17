@@ -55,6 +55,9 @@ const NotificationSchema = new mongoose.Schema({
     travellername:{type:String},
     pickuptime:{type:String},
     dropofftime:{type:String},
+    paymentstatus:{type:String,
+      enum:["successful","failed"]
+    },
    
     
     isRead: { type: Boolean, default: false },

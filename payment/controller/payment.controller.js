@@ -1,6 +1,7 @@
 const razorpayInstance = require("../config/payment.config");
 const crypto = require("crypto");
-const Earning=require('../../traveller/model/Earning')
+const Earning=require('../../traveller/model/Earning');
+const notification=require('../../user/model/notification')
 
 
 
@@ -95,7 +96,7 @@ const verifyOrder = async (req, res) => {
 
     const updateResult = await Earning.updateOne(
       { phoneNumber },
-      { $push: { transactions: newTransaction ,travelId} },
+      { $push: { transactions: newTransaction } },
       { upsert: true, session }
     );
     console.log("Inserted transaction:", updateResult);
@@ -130,7 +131,13 @@ const verifyOrder = async (req, res) => {
       { session }
     );
     console.log("Marked transaction as Completed:", completedUpdate);
-
+    const note=await notification.updateOne(
+      {phoneNumber},
+      {
+        $set:{"paymentstatus":"successful"}
+      }
+    )
+console.log("Marked transaction :",note);
     await session.commitTransaction();
     console.log("Payment verified successfully for:", razorpay_payment_id);
 

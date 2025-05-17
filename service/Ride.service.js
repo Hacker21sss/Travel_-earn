@@ -1,4 +1,4 @@
-const User = require("../user/model/User");
+const User = require("../user/model/Profile");
 const Consignment = require("../consignment/model/contraveldetails");
 const TravelHistory = require("../user/model/travel.history");
 const Travel = require("../user/model/traveldetails");
@@ -164,7 +164,7 @@ console.log("SMS Sent Successfully:", smsResponse.data, smsResponse1.data);
     .status(500)
     .json({ message: "Failed to send OTP via SMS", error: error.message });
 }
-
+const userprofile=await User.findOne({phoneNumber: rideRequest.phoneNumber})
       await Promise.all([
         Travel.updateOne({ travelId }, { $set: { status: "Accepted" } }),
         Consignment.updateOne(
@@ -200,9 +200,11 @@ console.log("SMS Sent Successfully:", smsResponse.data, smsResponse1.data);
                 travelMode: rideRequest.travelMode,
                 rideId: rideRequest.rideId,
                 phoneNumber: rideRequest.phoneNumber,
+
                 timestamp: new Date().toISOString(),
-                rating:rideRequest.rating,
-                totalrating:rideRequest.totalrating
+                rating:userprofile.averageRating,
+                totalrating:userprofile.totalrating,
+                
               },
             },
           },
@@ -338,7 +340,7 @@ module.exports.respondToConsignmentRequest = async (req, res) => {
       const receiverOtp = Math.floor(100000 + Math.random() * 900000).toString();
 
       const senderMsg = `Please use OTP ${senderOtp} to Collect the Consignment from the Traveler after checking the Package. Do not share the OTP over phone. Regards, Timestrings System Pvt. Ltd`;
-      const receiverMsg = `Please use OTP ${receiverOtp} to accept the Consignment from the Sender after checking the Package. Do not share the OTP over phone. Regards, Timestrings System Pvt. Ltd`;
+      const receiverMsg = `Please use OTP ${receiverOtp} to accept the Consignment from the Sender after checking the Package. Do not share the OTP over phone. Regards, Timestrings System Pvt. Ltd.`;
 
       try {
 const [smsResponse, smsResponse1] = await Promise.all([
@@ -412,7 +414,7 @@ console.log("SMS Sent Successfully:", smsResponse.data, smsResponse1.data);
     .status(500)
     .json({ message: "Failed to send OTP via SMS", error: error.message });
 }
-
+const userprofile=await User.findOne({phoneNumber:travelHistoryBasic.phoneNumber});
       // Save and update documents
       const results = await Promise.all([
         new ConsignmentToCarry({
@@ -467,8 +469,8 @@ console.log("SMS Sent Successfully:", smsResponse.data, smsResponse1.data);
                 rideId: book.rideId,
                 phoneNumber:travelHistoryBasic.phoneNumber,
                 timestamp: new Date().toISOString(),
-                rating:travelHistoryBasic.rating,
-                totalrating:travelHistoryBasic.averageRating
+                rating:userprofile.averageRating,
+                totalrating:userprofile.totalrating
               },
             },
           },
