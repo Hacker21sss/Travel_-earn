@@ -57,11 +57,11 @@ const submitRating = async (req, res) => {
         const profileRatings = Array.isArray(profileUpdate.userrating) ? profileUpdate.userrating : [];
         const travelRatings = Array.isArray(travelUpdate.rating) ? travelUpdate.rating : [];
 
-        const profileAverageRating = profileRatings.length > 0 
-            ? Number((profileRatings.reduce((sum, rating) => sum + Number(rating), 0) / profileRatings.length).toFixed(2))
+        const profileAverageRating = profileRatings?.length > 0 
+            ? Number((profileRatings.reduce((sum, rating) => sum + Number(rating), 0) / profileRatings?.length).toFixed(2))
             : 0;
-        const travelAverageRating = travelRatings.length > 0 
-            ? Number((travelRatings.reduce((sum, rating) => sum + Number(rating), 0) / travelRatings.length).toFixed(2))
+        const travelAverageRating = travelRatings?.length > 0 
+            ? Number((travelRatings.reduce((sum, rating) => sum + Number(rating), 0) / travelRatings?.length).toFixed(2))
             : 0;
 
         console.log(`Profile Ratings: ${profileRatings}, Average: ${profileAverageRating}`);

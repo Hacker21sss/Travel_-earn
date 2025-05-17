@@ -2267,3 +2267,28 @@
 2025-05-17T06:01:52.519Z info: GET /favicon.ico - 200
 2025-05-17T06:01:55.667Z info: GET / - 200
 2025-05-17T06:02:09.446Z info: POST /api/rating/+917003855041 - 200
+2025-05-17T11:14:13.749Z info: Server is running on port 5002
+2025-05-17T11:14:13.751Z info: Socket.IO connection status: Connected
+2025-05-17T11:14:14.211Z info: MongoDB connected
+2025-05-17T11:19:33.415Z info: Server is running on port 5002
+2025-05-17T11:19:33.420Z info: Socket.IO connection status: Connected
+2025-05-17T11:19:33.927Z info: MongoDB connected
+2025-05-17T11:19:57.989Z info: Server is running on port 5002
+2025-05-17T11:19:57.992Z info: Socket.IO connection status: Connected
+2025-05-17T11:19:58.452Z info: MongoDB connected
+2025-05-17T11:21:50.830Z info: Server is running on port 5002
+2025-05-17T11:21:50.833Z info: Socket.IO connection status: Connected
+2025-05-17T11:21:51.290Z info: MongoDB connected
+2025-05-17T11:21:53.407Z info: Server is running on port 5002
+2025-05-17T11:21:53.410Z info: Socket.IO connection status: Connected
+2025-05-17T11:21:53.872Z info: MongoDB connected
+2025-05-17T11:22:12.036Z info: Server is running on port 5002
+2025-05-17T11:22:12.039Z info: Socket.IO connection status: Connected
+2025-05-17T11:22:12.546Z info: MongoDB connected
+2025-05-17T11:22:14.448Z info: Server is running on port 5002
+2025-05-17T11:22:14.450Z info: Socket.IO connection status: Connected
+2025-05-17T11:22:14.881Z info: MongoDB connected
+2025-05-17T11:22:47.174Z info: Server is running on port 5002
+2025-05-17T11:22:47.177Z info: Socket.IO connection status: Connected
+2025-05-17T11:22:47.588Z info: MongoDB connected
+2025-05-17T11:23:30.709Z info: POST /api/rating/+917003855041 - 200
