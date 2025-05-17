@@ -2292,3 +2292,31 @@
 2025-05-17T11:22:47.177Z info: Socket.IO connection status: Connected
 2025-05-17T11:22:47.588Z info: MongoDB connected
 2025-05-17T11:23:30.709Z info: POST /api/rating/+917003855041 - 200
+2025-05-17T12:36:13.563Z info: Server is running on port 5002
+2025-05-17T12:36:13.568Z info: Socket.IO connection status: Connected
+2025-05-17T12:36:15.292Z info: MongoDB connected
+2025-05-17T16:21:22.865Z info: Server is running on port 5002
+2025-05-17T16:21:22.868Z info: Socket.IO connection status: Connected
+2025-05-17T16:21:24.696Z info: MongoDB connected
+2025-05-17T16:22:27.245Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-05-17T16:23:26.218Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-05-17T16:33:07.656Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-05-17T16:38:32.750Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-05-17T16:40:00.541Z info: Server is running on port 5002
+2025-05-17T16:40:00.545Z info: Socket.IO connection status: Connected
+2025-05-17T16:40:01.850Z info: MongoDB connected
+2025-05-17T16:40:04.131Z info: Server is running on port 5002
+2025-05-17T16:40:04.135Z info: Socket.IO connection status: Connected
+2025-05-17T16:40:05.458Z info: MongoDB connected
+2025-05-17T16:40:23.043Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-05-17T16:41:31.594Z info: Server is running on port 5002
+2025-05-17T16:41:31.596Z info: Socket.IO connection status: Connected
+2025-05-17T16:41:32.651Z info: MongoDB connected
+2025-05-17T16:41:44.459Z info: Server is running on port 5002
+2025-05-17T16:41:44.467Z info: Socket.IO connection status: Connected
+2025-05-17T16:41:45.707Z info: MongoDB connected
+2025-05-17T16:41:55.036Z info: Server is running on port 5002
+2025-05-17T16:41:55.040Z info: Socket.IO connection status: Connected
+2025-05-17T16:41:56.997Z info: Server is running on port 5002
+2025-05-17T16:41:56.999Z info: Socket.IO connection status: Connected
+2025-05-17T16:41:58.151Z info: MongoDB connected

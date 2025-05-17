@@ -58,7 +58,9 @@ module.exports.getNotifications = async (req, res) => {
             consignmentId: notif.consignmentId,
             travelId: notif.travelId,
             requestedby:notif.requestedby,
-requestto:notif.requestto,
+            requestto:notif.requestto,
+            earning: notif.earning || "0",
+            travellername: notif.travellername,
           };
         } else if (notif.notificationType === "ride_request") {
           notificationData = {
@@ -70,7 +72,9 @@ requestto:notif.requestto,
             consignmentId: notif.consignmentId,
             travelId: notif.travelId,
             requestedby:notif.requestedby,
-requestto:notif.requestto,
+            requestto:notif.requestto,
+            earning: notif.earning || "0",
+            travellername: notif.travellername,
           };
         }
         else if(notif.notificationType === "ride_accept"){
@@ -83,7 +87,9 @@ requestto:notif.requestto,
             consignmentId: notif.consignmentId,
             travelId: notif.travelId,
             requestedby:notif.requestedby,
-requestto:notif.requestto,
+            requestto:notif.requestto,
+            earning: notif.earning || "0",
+            travellername: notif?.travellername,
           };
         }
 
