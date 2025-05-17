@@ -2260,3 +2260,10 @@
 2025-05-16T23:23:54.083Z info: Server is running on port 5002
 2025-05-16T23:23:54.084Z info: Socket.IO connection status: Connected
 2025-05-16T23:23:54.617Z info: MongoDB connected
+2025-05-17T06:01:31.238Z info: Server is running on port 5002
+2025-05-17T06:01:31.243Z info: Socket.IO connection status: Connected
+2025-05-17T06:01:32.396Z info: MongoDB connected
+2025-05-17T06:01:37.662Z info: GET / - 200
+2025-05-17T06:01:52.519Z info: GET /favicon.ico - 200
+2025-05-17T06:01:55.667Z info: GET / - 200
+2025-05-17T06:02:09.446Z info: POST /api/rating/+917003855041 - 200
