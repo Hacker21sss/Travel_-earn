@@ -50,7 +50,7 @@ const ConsignmentRequestHistorySchema = new mongoose.Schema({
       timestamp: { type: Date, default: Date.now },
       phoneNumber:{type:String,ref:TravelDetails},
       
-      profilePicture:{type:String,ref:User},
+      profilePicture:{type:String},
       rating:{type:String},
       totalrating:{type:String},
       

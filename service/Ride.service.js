@@ -200,7 +200,7 @@ const userprofile=await User.findOne({phoneNumber: rideRequest.phoneNumber})
                 travelMode: rideRequest.travelMode,
                 rideId: rideRequest.rideId,
                 phoneNumber: rideRequest.phoneNumber,
-
+profilePicture:userprofile.profilePicture,
                 timestamp: new Date().toISOString(),
                 rating:userprofile.averageRating,
                 totalrating:userprofile.totalrating,
