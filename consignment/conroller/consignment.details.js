@@ -566,7 +566,7 @@ module.exports.getearning = async (req, res) => {
     await notification.save();
     console.log("Notification sent to consignment owner:", requestto);
     console.log("Notification saved:", notification);
-
+const userprofile=await userprofiles.findOne({phoneNumber:Ride.phoneNumber});
     const rideRequestHistory = new riderequest({
       phoneNumber: con.phoneNumber,
       requestedby: Ride.phoneNumber,
@@ -582,7 +582,7 @@ module.exports.getearning = async (req, res) => {
       travelId: Ride.travelId,
       rating: user.averageRating,
       totalrating: user.totalrating,
-      profilepicture: user.profilePicture
+      profilepicture: userprofile.profilePicture
     });
 
     await rideRequestHistory.save();
