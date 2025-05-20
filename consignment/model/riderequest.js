@@ -26,8 +26,11 @@ const ridetocarryrequestSchema = new mongoose.Schema({
     rating:{type:String},
     totalrating
 :{type:String}  ,
-profilepicture:{type:String}  
- 
+profilepicture:{type:String}  ,
+status: {
+        type: String,
+        enum: ["Accepted", "Rejected"],
+    }
     
 });
 

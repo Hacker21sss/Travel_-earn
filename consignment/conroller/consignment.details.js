@@ -241,34 +241,29 @@ module.exports = {
     }
   },
 };
-
 module.exports.getConsignmentsByDate = async (req, res) => {
   try {
-    const { leavingLocation, goingLocation, date} = req.query;
+    const { leavingLocation, goingLocation, date, phoneNumber } = req.query;
 
-console.log('date comes',req.query.date)
+    console.log('date comes', req.query.date)
+    console.log('phoneNumber received', phoneNumber); // Debug log to verify phoneNumber
 
-
-    if (!leavingLocation || !goingLocation || !date ) {
+    if (!leavingLocation || !goingLocation || !date || !phoneNumber) {
       return res.status(400).json({ message: "Leaving location, going location, and date are required" });
     }
 
     const searchDate = new Date(date);
     const today = new Date();
  
-    console.log('searchdate',searchDate)
-
+    console.log('searchdate', searchDate)
 
     if (isNaN(searchDate.getTime())) {
       return res.status(400).json({ message: "Invalid date format. Use YYYY-MM-DD." });
     }
     if (searchDate < today.setHours(0, 0, 0, 0)) {
       return res.status(404).json({ message: "No consignments available the dates." });
-  }
+    }
     
-        
-
-
     // Fetch coordinates from mapservice
     const leavingCoords = await mapservice.getAddressCoordinate(leavingLocation);
     const goingCoords = await mapservice.getAddressCoordinate(goingLocation);
@@ -280,6 +275,10 @@ console.log('date comes',req.query.date)
     console.log("Leaving Coordinates:", leavingCoords);
     console.log("Going Coordinates:", goingCoords);
 
+    // Normalize phoneNumber: Ensure it matches the stored format (+918927473643)
+    const normalizedPhoneNumber = `+${String(phoneNumber).replace(/\D/g, '').trim()}`;
+    console.log('normalizedPhoneNumber', normalizedPhoneNumber); // Debug normalized phoneNumber
+
     // Query the database
     const availableRides = await Consignment.find({
       "LeavingCoordinates.latitude": leavingCoords.ltd, 
@@ -289,7 +288,8 @@ console.log('date comes',req.query.date)
       dateOfSending: {
         $gte: new Date(searchDate.setHours(0, 0, 0, 0)),
         $lt: new Date(searchDate.setHours(23, 59, 59, 999))
-      }
+      },
+      phoneNumber: { $ne: normalizedPhoneNumber }
     });
 
     if (!availableRides.length) {
@@ -307,8 +307,6 @@ console.log('date comes',req.query.date)
     res.status(500).json({ message: "Internal Server Error" });
   }
 };
-
-
 
 
 
@@ -493,23 +491,40 @@ module.exports.getearning = async (req, res) => {
       return res.status(400).json({ message: "Phone number and consignment ID are required." });
     }
 
-   
     const user = await userprofiles.findOne({ phoneNumber });
     if (!user) {
       return res.status(404).json({ message: "User not found" });
     }
 
-    
     const con = await Consignment.findOne({ consignmentId });
     if (!con) {
       return res.status(404).json({ message: "Consignment not found" });
     }
 
-  
     const Ride = await Traveldetails.findOne({ phoneNumber }).sort({ updatedAt: -1 });
-
     if (!Ride) {
       return res.status(404).json({ message: "Ride not found" });
+    }
+
+    
+    const consignmentDate = new Date(con.createdAt).toDateString();
+    const rideDate = new Date(Ride.createdAt).toDateString();
+    if (consignmentDate !== rideDate) {
+      return res.status(400).json({ message: "user need to publish travel on date." });
+    }
+
+    // Check if consignment destination matches ride destination
+    if (con.goinglocation !== Ride.Goinglocation) {
+      return res.status(400).json({ message: "Consignment destination does not match ride destination." });
+    }
+
+    // Check if consignment is already accepted by another traveler
+    const existingRequest = await riderequest.findOne({
+      consignmentId,
+      status: "Accepted",
+    });
+    if (existingRequest) {
+      return res.status(400).json({ message: "Consignment has already been accepted by another traveler." });
     }
 
     const validModes = ["train", "airplane", "car"];
@@ -519,11 +534,9 @@ module.exports.getearning = async (req, res) => {
       return res.status(400).json({ message: "Invalid Travel Mode! Please enter 'train', 'airplane', or 'car'." });
     }
 
-
     const dimensionalWeightRaw = fare.dimension(con.dimensions.breadth, con.dimensions.length, con.dimensions.height);
     console.log("Dimensional Weight Raw:", dimensionalWeightRaw);
 
-    
     const dimensionalWeight = parseFloat(dimensionalWeightRaw?.toString().replace(/[^\d.]/g, ""));
     const userWeight = parseFloat(con.weight?.toString().replace(/[^\d.]/g, ""));
     const distance = parseFloat(con.distance?.toString().replace(/[^\d.]/g, ""));
@@ -532,13 +545,11 @@ module.exports.getearning = async (req, res) => {
       return res.status(400).json({ message: "Invalid Weight, Dimensional Weight, or Distance! Please provide valid numbers." });
     }
 
-    
     const Weight = Math.max(dimensionalWeight, userWeight);
     console.log("User Weight:", userWeight);
     console.log("Dimensional Weight:", dimensionalWeight);
     console.log("Final Weight for Fare:", Weight);
 
-    
     if (typeof fare.calculateFare !== "function") {
       return res.status(500).json({ message: "Fare calculation function is missing or not defined." });
     }
@@ -560,13 +571,14 @@ module.exports.getearning = async (req, res) => {
       travelId: Ride.travelId,
       earning: expectedEarning,
       consignmentId: con.consignmentId,
-      notificationType: "ride_request"
+      notificationType: "ride_request",
     });
 
     await notification.save();
     console.log("Notification sent to consignment owner:", requestto);
     console.log("Notification saved:", notification);
-const userprofile=await userprofiles.findOne({phoneNumber:Ride.phoneNumber});
+
+    const userprofile = await userprofiles.findOne({ phoneNumber: Ride.phoneNumber });
     const rideRequestHistory = new riderequest({
       phoneNumber: con.phoneNumber,
       requestedby: Ride.phoneNumber,
@@ -582,7 +594,8 @@ const userprofile=await userprofiles.findOne({phoneNumber:Ride.phoneNumber});
       travelId: Ride.travelId,
       rating: user.averageRating,
       totalrating: user.totalrating,
-      profilepicture: userprofile.profilePicture
+      profilepicture: userprofile.profilePicture,
+      status: "pending", // Explicitly set status to pending
     });
 
     await rideRequestHistory.save();
@@ -597,7 +610,7 @@ const userprofile=await userprofiles.findOne({phoneNumber:Ride.phoneNumber});
       sendMessageToSocketId(socketId, {
         event: "newBookingRequest",
         data: {
-          message: `New booking request from ${phoneNumber}.`,
+          message:` New booking request from ${phoneNumber}`,
           phoneNumber,
           RideId: Ride.rideId,
           expectedEarning,
@@ -606,17 +619,16 @@ const userprofile=await userprofiles.findOne({phoneNumber:Ride.phoneNumber});
 
       console.log(`📢 Real-time notification sent to ${senderPhoneNumber} (socket: ${socketId})`);
     } else {
-      console.log(`⚠️ Rider ${senderPhoneNumber} is not connected to Socket.io.`);
+      console.log(`⚠ Rider ${senderPhoneNumber} is not connected to Socket.io.`);
     }
 
     return res.status(200).json({
       message: "Success",
     });
-
   } catch (error) {
     console.error("Error:", error.message);
-    return res.status(500).json({ message: "Internal server error", error: error.message });
-  }
+    return res.status(500).json({ message: "Internal server error", error: error.message });
+  }
 };
 
 module.exports.getRideRequests = async (req, res) => {

@@ -120,8 +120,14 @@ const verifyOrder = async (req, res) => {
       await session.commitTransaction();
       return res.status(400).json({ success: false, message: "Invalid payment signature" });
     }
+    const note=await notification.updateOne(
+      {travelId},
+      {
+        $set:{"paymentstatus":"successful"}
+      }
+    )
 
-    // Update transaction to "Completed" and increment total earnings
+    console.log(note);
     const completedUpdate = await Earning.updateOne(
       { phoneNumber, "transactions.paymentId": razorpay_payment_id },
       {
@@ -131,12 +137,7 @@ const verifyOrder = async (req, res) => {
       { session }
     );
     console.log("Marked transaction as Completed:", completedUpdate);
-    const note=await notification.updateOne(
-      {phoneNumber},
-      {
-        $set:{"paymentstatus":"successful"}
-      }
-    )
+    
 console.log("Marked transaction :",note);
     await session.commitTransaction();
     console.log("Payment verified successfully for:", razorpay_payment_id);

@@ -210,6 +210,10 @@ profilePicture:userprofile.profilePicture,
           },
           { upsert: true }
         ),
+        rideRequest.updateOne(
+          { consignmentId, travelId },
+          { $set: { status: "Accepted" } }
+        ),
         TravelHistory.updateOne(
           { travelId: rideRequest.travelId },
           {
@@ -232,7 +236,7 @@ profilePicture:userprofile.profilePicture,
       const notification = new Notification({
         travelId: rideRequest.travelId,
         consignmentId:rideRequest.consignmentId,
-        requestedby: rideRequest.phoneNumber,
+        requestedby:rideRequest.requestedby ,
         requestto:consignment.phoneNumber,
         status: "Accepted",
         notificationType: "ride_accept",
@@ -253,7 +257,7 @@ profilePicture:userprofile.profilePicture,
       const notification1 = new Notification({
         travelId: rideRequest.travelId,
         consignmentId:rideRequest.consignmentId,
-        requestedby: rideRequest.phoneNumber,
+        requestedby: rideRequest.requestedby,
         requestto:consignment.phoneNumber,
         status: "Accepted",
         notificationType: "ride_accept",
@@ -301,6 +305,11 @@ profilePicture:userprofile.profilePicture,
         Travel.updateOne({ travelId }, { $set: { status: "Rejected" } }),
         notification.save(),
       ]);
+      
+      await rideRequest.updateOne(
+          { consignmentId, travelId },
+          { $set: { status: "Rejected" } }
+      );
 
       let io = getIO();
       io.emit("bookingrejected", { travelId, consignmentId });
@@ -491,7 +500,8 @@ const userprofile=await User.findOne({phoneNumber:travelHistoryBasic.phoneNumber
                 phoneNumber:travelHistoryBasic.phoneNumber,
                 timestamp: new Date().toISOString(),
                 rating:userprofile.averageRating,
-                totalrating:userprofile.totalrating
+                totalrating:userprofile.totalrating,
+                profilePicture:userprofile.profilePicture
               },
             },
           },

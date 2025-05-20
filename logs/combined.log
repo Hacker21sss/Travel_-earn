@@ -3911,3 +3911,412 @@
 2025-05-19T00:51:25.641Z info: POST / - 200
 2025-05-19T01:00:15.503Z info: GET / - 200
 2025-05-19T01:59:56.628Z info: GET / - 200
+2025-05-19T18:59:01.555Z info: Server is running on port 5002
+2025-05-19T18:59:01.557Z info: Socket.IO connection status: Connected
+2025-05-19T18:59:02.464Z info: MongoDB connected
+2025-05-19T20:35:13.194Z info: Server is running on port 5002
+2025-05-19T20:35:13.195Z info: Socket.IO connection status: Connected
+2025-05-19T20:35:13.682Z info: MongoDB connected
+2025-05-19T20:38:45.831Z info: Server is running on port 5002
+2025-05-19T20:38:45.833Z info: Socket.IO connection status: Connected
+2025-05-19T20:38:46.417Z info: MongoDB connected
+2025-05-19T20:45:31.255Z info: Server is running on port 5002
+2025-05-19T20:45:31.256Z info: Socket.IO connection status: Connected
+2025-05-19T20:45:31.807Z info: MongoDB connected
+2025-05-19T21:13:15.956Z info: Server is running on port 5002
+2025-05-19T21:13:15.957Z info: Socket.IO connection status: Connected
+2025-05-19T21:13:16.477Z info: MongoDB connected
+2025-05-19T21:17:47.815Z info: Server is running on port 5002
+2025-05-19T21:17:47.816Z info: Socket.IO connection status: Connected
+2025-05-19T21:17:48.641Z info: MongoDB connected
+2025-05-19T21:18:44.177Z info: Server is running on port 5002
+2025-05-19T21:18:44.178Z info: Socket.IO connection status: Connected
+2025-05-19T21:18:44.677Z info: MongoDB connected
+2025-05-19T21:21:35.184Z info: POST /api/getearning - 200
+2025-05-19T21:22:50.565Z info: POST /api/getearning - 200
+2025-05-19T21:26:21.441Z info: Server is running on port 5002
+2025-05-19T21:26:21.443Z info: Socket.IO connection status: Connected
+2025-05-19T21:26:22.177Z info: MongoDB connected
+2025-05-19T21:33:38.607Z info: Server is running on port 5002
+2025-05-19T21:33:38.608Z info: Socket.IO connection status: Connected
+2025-05-19T21:33:39.575Z info: MongoDB connected
+2025-05-19T21:37:36.898Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=undefined-undefined-undefined-undefined-2025-05-20 - 200
+2025-05-19T21:37:36.923Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-20 - 200
+2025-05-19T21:37:38.719Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-20 - 200
+2025-05-19T21:37:40.001Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-21 - 200
+2025-05-19T21:39:22.969Z info: Server is running on port 5002
+2025-05-19T21:39:22.970Z info: Socket.IO connection status: Connected
+2025-05-19T21:39:24.056Z info: MongoDB connected
+2025-05-19T21:41:50.456Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-21 - 200
+2025-05-19T21:41:50.464Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-20 - 200
+2025-05-19T21:43:27.107Z info: Server is running on port 5002
+2025-05-19T21:43:27.108Z info: Socket.IO connection status: Connected
+2025-05-19T21:43:27.593Z info: MongoDB connected
+2025-05-19T21:46:03.699Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-20&phoneNumber=+918927473643 - 200
+2025-05-19T21:46:13.211Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-21&phoneNumber=+918927473643 - 200
+2025-05-19T21:49:21.299Z info: Server is running on port 5002
+2025-05-19T21:49:21.300Z info: Socket.IO connection status: Connected
+2025-05-19T21:49:21.828Z info: MongoDB connected
+2025-05-19T21:49:21.971Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-20&phoneNumber=+918927473643 - 200
+2025-05-19T21:49:25.237Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-21&phoneNumber=+918927473643 - 200
+2025-05-19T21:49:26.654Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-20&phoneNumber=+918927473643 - 200
+2025-05-19T21:49:36.007Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-20&phoneNumber=+918927473643 - 200
+2025-05-19T21:49:36.014Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=undefined-undefined-undefined-undefined-2025-05-20&phoneNumber=+918927473643 - 200
+2025-05-19T21:49:38.083Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-20&phoneNumber=+918927473643 - 200
+2025-05-19T21:49:39.347Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-21&phoneNumber=+918927473643 - 200
+2025-05-19T21:52:11.130Z info: Server is running on port 5002
+2025-05-19T21:52:11.131Z info: Socket.IO connection status: Connected
+2025-05-19T21:52:11.659Z info: MongoDB connected
+2025-05-19T21:52:15.137Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-20&phoneNumber=+918927473643 - 200
+2025-05-19T21:52:19.456Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=undefined-undefined-undefined-undefined-2025-05-20&phoneNumber=+918927473643 - 200
+2025-05-19T21:52:19.493Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-20&phoneNumber=+918927473643 - 200
+2025-05-19T21:52:22.939Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-20&phoneNumber=+918927473643 - 200
+2025-05-19T21:52:25.293Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-21&phoneNumber=+918927473643 - 200
+2025-05-19T21:54:04.084Z info: Server is running on port 5002
+2025-05-19T21:54:04.085Z info: Socket.IO connection status: Connected
+2025-05-19T21:54:04.628Z info: MongoDB connected
+2025-05-19T21:55:08.831Z info: GET /api/getdetails?leavingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&goingLocation=Khirpai,%20West%20Bengal,%20India&date=2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T21:55:08.836Z info: GET /api/getdetails?leavingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&goingLocation=Khirpai,%20West%20Bengal,%20India&date=undefined-undefined-undefined-undefined-2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T21:55:10.397Z info: GET /api/getdetails?leavingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&goingLocation=Khirpai,%20West%20Bengal,%20India&date=2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T21:55:12.909Z info: GET /api/getdetails?leavingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&goingLocation=Khirpai,%20West%20Bengal,%20India&date=2025-05-20&phoneNumber=+918927473643 - 200
+2025-05-19T21:55:16.966Z info: GET /api/getdetails?leavingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&goingLocation=Khirpai,%20West%20Bengal,%20India&date=2025-05-21&phoneNumber=+918927473643 - 200
+2025-05-19T21:55:20.384Z info: GET /api/getdetails?leavingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&goingLocation=Khirpai,%20West%20Bengal,%20India&date=2025-05-22&phoneNumber=+918927473643 - 200
+2025-05-19T21:55:22.919Z info: GET /api/getdetails?leavingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&goingLocation=Khirpai,%20West%20Bengal,%20India&date=2025-05-23&phoneNumber=+918927473643 - 200
+2025-05-19T21:56:00.038Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=undefined-undefined-undefined-undefined-2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T21:56:00.055Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T21:56:01.092Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T21:56:02.513Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-20&phoneNumber=+918927473643 - 200
+2025-05-19T21:56:04.502Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-21&phoneNumber=+918927473643 - 200
+2025-05-19T21:57:54.919Z info: Server is running on port 5002
+2025-05-19T21:57:54.920Z info: Socket.IO connection status: Connected
+2025-05-19T21:57:55.441Z info: MongoDB connected
+2025-05-19T21:58:00.198Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=undefined-undefined-undefined-undefined-2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T21:58:00.204Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T21:58:01.742Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T21:58:03.270Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-20&phoneNumber=+918927473643 - 200
+2025-05-19T21:58:06.223Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-21&phoneNumber=+918927473643 - 200
+2025-05-19T22:00:47.139Z info: Server is running on port 5002
+2025-05-19T22:00:47.140Z info: Socket.IO connection status: Connected
+2025-05-19T22:00:47.671Z info: MongoDB connected
+2025-05-19T22:00:58.518Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=undefined-undefined-undefined-undefined-2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:00:58.526Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:00:59.423Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:01:00.868Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-20&phoneNumber=+918927473643 - 200
+2025-05-19T22:01:02.243Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-21&phoneNumber=+918927473643 - 200
+2025-05-19T22:02:47.793Z info: Server is running on port 5002
+2025-05-19T22:02:47.794Z info: Socket.IO connection status: Connected
+2025-05-19T22:02:48.345Z info: MongoDB connected
+2025-05-19T22:02:50.439Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-22&phoneNumber=+918927473643 - 200
+2025-05-19T22:02:52.460Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-20&phoneNumber=+918927473643 - 200
+2025-05-19T22:03:09.657Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:03:15.057Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:03:15.062Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=undefined-undefined-undefined-undefined-2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:03:16.348Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:03:21.481Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-21&phoneNumber=+918927473643 - 200
+2025-05-19T22:05:10.709Z info: Server is running on port 5002
+2025-05-19T22:05:10.710Z info: Socket.IO connection status: Connected
+2025-05-19T22:05:11.253Z info: MongoDB connected
+2025-05-19T22:05:16.658Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:05:16.660Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=undefined-undefined-undefined-undefined-2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:05:17.883Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:05:18.638Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-20&phoneNumber=+918927473643 - 200
+2025-05-19T22:05:20.093Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-21&phoneNumber=+918927473643 - 200
+2025-05-19T22:05:30.045Z info: Server is running on port 5002
+2025-05-19T22:05:30.046Z info: Socket.IO connection status: Connected
+2025-05-19T22:05:30.574Z info: MongoDB connected
+2025-05-19T22:05:35.327Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=undefined-undefined-undefined-undefined-2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:05:35.333Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:05:36.398Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:05:37.561Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-20&phoneNumber=+918927473643 - 200
+2025-05-19T22:06:07.999Z info: Server is running on port 5002
+2025-05-19T22:06:08.000Z info: Socket.IO connection status: Connected
+2025-05-19T22:06:08.482Z info: MongoDB connected
+2025-05-19T22:06:11.409Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:06:21.379Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-20&phoneNumber=+918927473643 - 200
+2025-05-19T22:06:27.698Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-21&phoneNumber=+918927473643 - 200
+2025-05-19T22:07:30.569Z info: Server is running on port 5002
+2025-05-19T22:07:30.570Z info: Socket.IO connection status: Connected
+2025-05-19T22:07:32.240Z info: MongoDB connected
+2025-05-19T22:07:32.796Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-20&phoneNumber=+918927473643 - 200
+2025-05-19T22:07:35.922Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=undefined-undefined-undefined-undefined-2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:07:35.936Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:07:37.039Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:07:39.330Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-20&phoneNumber=+918927473643 - 200
+2025-05-19T22:07:41.894Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-21&phoneNumber=+918927473643 - 200
+2025-05-19T22:08:49.739Z info: GET /api/getdetails?leavingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&goingLocation=Khirpai,%20West%20Bengal,%20India&date=undefined-undefined-undefined-undefined-2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:08:49.743Z info: GET /api/getdetails?leavingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&goingLocation=Khirpai,%20West%20Bengal,%20India&date=2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:08:51.705Z info: GET /api/getdetails?leavingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&goingLocation=Khirpai,%20West%20Bengal,%20India&date=2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:08:53.071Z info: GET /api/getdetails?leavingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&goingLocation=Khirpai,%20West%20Bengal,%20India&date=2025-05-20&phoneNumber=+918927473643 - 200
+2025-05-19T22:09:04.187Z info: GET /api/getdetails?leavingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&goingLocation=Khirpai,%20West%20Bengal,%20India&date=2025-05-21&phoneNumber=+918927473643 - 200
+2025-05-19T22:09:05.939Z info: GET /api/getdetails?leavingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&goingLocation=Khirpai,%20West%20Bengal,%20India&date=2025-05-22&phoneNumber=+918927473643 - 200
+2025-05-19T22:09:07.507Z info: GET /api/getdetails?leavingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&goingLocation=Khirpai,%20West%20Bengal,%20India&date=2025-05-21&phoneNumber=+918927473643 - 200
+2025-05-19T22:09:08.393Z info: GET /api/getdetails?leavingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&goingLocation=Khirpai,%20West%20Bengal,%20India&date=2025-05-20&phoneNumber=+918927473643 - 200
+2025-05-19T22:11:01.247Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Pune,%20Maharashtra,%20India&date=undefined-undefined-undefined-undefined-2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:11:01.254Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Pune,%20Maharashtra,%20India&date=2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:11:02.532Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Pune,%20Maharashtra,%20India&date=2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:11:03.753Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Pune,%20Maharashtra,%20India&date=2025-05-20&phoneNumber=+918927473643 - 200
+2025-05-19T22:11:07.584Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Pune,%20Maharashtra,%20India&date=2025-05-21&phoneNumber=+918927473643 - 200
+2025-05-19T22:11:11.294Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Pune,%20Maharashtra,%20India&date=2025-05-22&phoneNumber=+918927473643 - 200
+2025-05-19T22:11:13.040Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Pune,%20Maharashtra,%20India&date=2025-05-21&phoneNumber=+918927473643 - 200
+2025-05-19T22:11:14.084Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Pune,%20Maharashtra,%20India&date=2025-05-20&phoneNumber=+918927473643 - 200
+2025-05-19T22:11:22.786Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Pune,%20Maharashtra,%20India&date=2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:11:27.561Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Pune,%20Maharashtra,%20India&date=2025-05-20&phoneNumber=+918927473643 - 200
+2025-05-19T22:11:37.437Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Pune,%20Maharashtra,%20India&date=2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:11:39.780Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Pune,%20Maharashtra,%20India&date=2025-05-21&phoneNumber=+918927473643 - 200
+2025-05-19T22:11:46.474Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Pune,%20Maharashtra,%20India&date=2025-05-22&phoneNumber=+918927473643 - 200
+2025-05-19T22:11:52.802Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Pune,%20Maharashtra,%20India&date=2025-05-23&phoneNumber=+918927473643 - 200
+2025-05-19T22:11:55.143Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Pune,%20Maharashtra,%20India&date=2025-05-22&phoneNumber=+918927473643 - 200
+2025-05-19T22:11:56.049Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Pune,%20Maharashtra,%20India&date=2025-05-21&phoneNumber=+918927473643 - 200
+2025-05-19T22:11:57.685Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Pune,%20Maharashtra,%20India&date=2025-05-20&phoneNumber=+918927473643 - 200
+2025-05-19T22:12:38.550Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Pune,%20Maharashtra,%20India&date=2025-05-21&phoneNumber=+918927473643 - 200
+2025-05-19T22:15:32.116Z info: GET /api/getdetails?leavingLocation=kolkata,west%20bengal,india&goingLocation=pune,maharastra,india&date=2025-05-21&phoneNumber=+918927473643 - 200
+2025-05-19T22:16:27.703Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Pune,%20Maharashtra,%20India&date=2025-05-21&phoneNumber=[object%20Object] - 200
+2025-05-19T22:16:27.709Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Pune,%20Maharashtra,%20India&date=2025-05-19&phoneNumber=[object%20Object] - 200
+2025-05-19T22:16:35.268Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Pune,%20Maharashtra,%20India&date=2025-05-20&phoneNumber=[object%20Object] - 200
+2025-05-19T22:16:40.314Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Pune,%20Maharashtra,%20India&date=2025-05-21&phoneNumber=[object%20Object] - 200
+2025-05-19T22:22:20.789Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Pune,%20Maharashtra,%20India&date=19/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:22:20.792Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Pune,%20Maharashtra,%20India&date=2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:22:22.228Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Pune,%20Maharashtra,%20India&date=2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:22:24.221Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Pune,%20Maharashtra,%20India&date=20/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:22:24.230Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Pune,%20Maharashtra,%20India&date=2025-05-20&phoneNumber=+918927473643 - 200
+2025-05-19T22:22:27.516Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Pune,%20Maharashtra,%20India&date=2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:22:27.519Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Pune,%20Maharashtra,%20India&date=19/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:22:30.221Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Pune,%20Maharashtra,%20India&date=20/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:22:30.221Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Pune,%20Maharashtra,%20India&date=2025-05-20&phoneNumber=+918927473643 - 200
+2025-05-19T22:22:31.964Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Pune,%20Maharashtra,%20India&date=21/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:22:31.964Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Pune,%20Maharashtra,%20India&date=2025-05-21&phoneNumber=+918927473643 - 200
+2025-05-19T22:22:33.631Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Pune,%20Maharashtra,%20India&date=22/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:22:33.652Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Pune,%20Maharashtra,%20India&date=2025-05-22&phoneNumber=+918927473643 - 200
+2025-05-19T22:22:35.221Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Pune,%20Maharashtra,%20India&date=23/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:22:35.222Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Pune,%20Maharashtra,%20India&date=2025-05-23&phoneNumber=+918927473643 - 200
+2025-05-19T22:22:36.249Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Pune,%20Maharashtra,%20India&date=21/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:22:36.250Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Pune,%20Maharashtra,%20India&date=2025-05-21&phoneNumber=+918927473643 - 200
+2025-05-19T22:22:37.817Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Pune,%20Maharashtra,%20India&date=20/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:22:37.820Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Pune,%20Maharashtra,%20India&date=2025-05-20&phoneNumber=+918927473643 - 200
+2025-05-19T22:22:46.307Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Pune,%20Maharashtra,%20India&date=2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:22:46.310Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Pune,%20Maharashtra,%20India&date=19/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:23:03.784Z info: GET /api/getdetails?leavingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&goingLocation=Khirpai,%20West%20Bengal,%20India&date=2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:23:03.795Z info: GET /api/getdetails?leavingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&goingLocation=Khirpai,%20West%20Bengal,%20India&date=19/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:23:04.685Z info: GET /api/getdetails?leavingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&goingLocation=Khirpai,%20West%20Bengal,%20India&date=2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:23:05.949Z info: GET /api/getdetails?leavingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&goingLocation=Khirpai,%20West%20Bengal,%20India&date=20/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:23:05.951Z info: GET /api/getdetails?leavingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&goingLocation=Khirpai,%20West%20Bengal,%20India&date=2025-05-20&phoneNumber=+918927473643 - 200
+2025-05-19T22:23:08.020Z info: GET /api/getdetails?leavingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&goingLocation=Khirpai,%20West%20Bengal,%20India&date=21/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:23:08.025Z info: GET /api/getdetails?leavingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&goingLocation=Khirpai,%20West%20Bengal,%20India&date=2025-05-21&phoneNumber=+918927473643 - 200
+2025-05-19T22:23:09.422Z info: GET /api/getdetails?leavingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&goingLocation=Khirpai,%20West%20Bengal,%20India&date=22/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:23:09.424Z info: GET /api/getdetails?leavingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&goingLocation=Khirpai,%20West%20Bengal,%20India&date=2025-05-22&phoneNumber=+918927473643 - 200
+2025-05-19T22:23:40.516Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=19/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:23:40.517Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:23:41.610Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:23:42.492Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=20/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:23:42.494Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-20&phoneNumber=+918927473643 - 200
+2025-05-19T22:23:45.801Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=19/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:23:45.854Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:23:47.692Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=20/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:23:47.693Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-20&phoneNumber=+918927473643 - 200
+2025-05-19T22:23:49.354Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=21/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:23:49.357Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-21&phoneNumber=+918927473643 - 200
+2025-05-19T22:23:51.635Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=22/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:23:51.636Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-22&phoneNumber=+918927473643 - 200
+2025-05-19T22:23:53.430Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=23/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:23:53.430Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-23&phoneNumber=+918927473643 - 200
+2025-05-19T22:23:55.499Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=22/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:23:55.534Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-22&phoneNumber=+918927473643 - 200
+2025-05-19T22:24:31.109Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=22/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:24:31.113Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-22&phoneNumber=+918927473643 - 200
+2025-05-19T22:24:31.119Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:24:31.122Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=19/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:24:34.232Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=20/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:24:34.239Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-20&phoneNumber=+918927473643 - 200
+2025-05-19T22:24:36.570Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=19/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:24:36.573Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:24:37.922Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=20/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:24:37.925Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-20&phoneNumber=+918927473643 - 200
+2025-05-19T22:24:46.068Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=20/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:24:46.084Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=19/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:24:46.087Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-20&phoneNumber=+918927473643 - 200
+2025-05-19T22:24:46.089Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:24:54.694Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-20&phoneNumber=+918927473643 - 200
+2025-05-19T22:24:54.701Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=20/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:24:56.232Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=19/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:24:56.233Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:25:00.015Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-21&phoneNumber=+918927473643 - 200
+2025-05-19T22:25:00.018Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=21/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:25:05.112Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:25:05.115Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=19/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:25:06.450Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:25:07.662Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=20/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:25:07.666Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-20&phoneNumber=+918927473643 - 200
+2025-05-19T22:27:42.840Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=20/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:27:42.843Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-20&phoneNumber=+918927473643 - 200
+2025-05-19T22:27:42.844Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=19/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:27:42.849Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:27:48.947Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-20&phoneNumber=+918927473643 - 200
+2025-05-19T22:27:48.951Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=20/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:27:50.525Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=19/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:27:50.525Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:27:53.834Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=21/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:27:53.836Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-21&phoneNumber=+918927473643 - 200
+2025-05-19T22:27:55.111Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=22/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:27:55.115Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-22&phoneNumber=+918927473643 - 200
+2025-05-19T22:27:56.928Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=19/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:27:56.929Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:27:57.820Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:27:59.248Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=20/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:27:59.249Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-20&phoneNumber=+918927473643 - 200
+2025-05-19T22:28:01.336Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=19/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:28:01.337Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:28:02.114Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=20/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:28:02.115Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-20&phoneNumber=+918927473643 - 200
+2025-05-19T22:28:03.671Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=21/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:28:03.672Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-21&phoneNumber=+918927473643 - 200
+2025-05-19T22:28:04.895Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=20/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:28:04.899Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-20&phoneNumber=+918927473643 - 200
+2025-05-19T22:28:10.576Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:28:10.579Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=19/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:28:11.397Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=20/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:28:11.409Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-20&phoneNumber=+918927473643 - 200
+2025-05-19T22:28:19.588Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=19/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:28:19.596Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:28:21.434Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:28:23.591Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=20/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:28:23.594Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-20&phoneNumber=+918927473643 - 200
+2025-05-19T22:28:59.033Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=19/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:28:59.034Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:29:01.747Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=21/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:29:01.748Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-21&phoneNumber=+918927473643 - 200
+2025-05-19T22:29:04.058Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=22/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:29:04.059Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-22&phoneNumber=+918927473643 - 200
+2025-05-19T22:29:04.452Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=23/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:29:04.455Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-23&phoneNumber=+918927473643 - 200
+2025-05-19T22:29:11.774Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=30/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:29:11.776Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-30&phoneNumber=+918927473643 - 200
+2025-05-19T22:29:13.292Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-30&phoneNumber=+918927473643 - 200
+2025-05-19T22:29:14.606Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=31/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:29:14.609Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-31&phoneNumber=+918927473643 - 200
+2025-05-19T22:29:15.177Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=01/06/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:29:15.208Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-06-01&phoneNumber=+918927473643 - 200
+2025-05-19T22:29:16.281Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=02/06/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:29:16.281Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-06-02&phoneNumber=+918927473643 - 200
+2025-05-19T22:29:17.090Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=03/06/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:29:17.091Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-06-03&phoneNumber=+918927473643 - 200
+2025-05-19T22:29:22.428Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=20/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:29:22.430Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-20&phoneNumber=+918927473643 - 200
+2025-05-19T22:29:23.727Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-20&phoneNumber=+918927473643 - 200
+2025-05-19T22:29:28.289Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-21&phoneNumber=+918927473643 - 200
+2025-05-19T22:29:28.291Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=21/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:29:29.104Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=22/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:29:29.104Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-22&phoneNumber=+918927473643 - 200
+2025-05-19T22:36:12.800Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=20/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:36:12.803Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-20&phoneNumber=+918927473643 - 200
+2025-05-19T22:36:14.754Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-20&phoneNumber=+918927473643 - 200
+2025-05-19T22:36:17.386Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=21/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:36:17.433Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-21&phoneNumber=+918927473643 - 200
+2025-05-19T22:36:18.315Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=22/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:36:18.321Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-22&phoneNumber=+918927473643 - 200
+2025-05-19T22:36:24.109Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=23/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:36:24.111Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-23&phoneNumber=+918927473643 - 200
+2025-05-19T22:36:25.056Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-23&phoneNumber=+918927473643 - 200
+2025-05-19T22:36:26.381Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=24/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:36:26.385Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-24&phoneNumber=+918927473643 - 200
+2025-05-19T22:36:27.151Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=25/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:36:27.152Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-25&phoneNumber=+918927473643 - 200
+2025-05-19T22:36:27.693Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=26/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:36:27.696Z info: GET /api/getdetails?leavingLocation=Jabalpur,%20Madhya%20Pradesh,%20India&goingLocation=Noida,%20Uttar%20Pradesh,%20India&date=2025-05-26&phoneNumber=+918927473643 - 200
+2025-05-19T22:37:31.070Z info: Server is running on port 5002
+2025-05-19T22:37:31.071Z info: Socket.IO connection status: Connected
+2025-05-19T22:37:31.631Z info: MongoDB connected
+2025-05-19T22:42:46.083Z info: GET /t/search-rides?leavingLocation=Howrah+Railway+Station,+Howrah,+West+Bengal,+India&goingLocation=Khirpai,+West+Bengal,+India&date=2025-05-19&travelMode=train - 200
+2025-05-19T22:42:46.099Z info: GET /t/search-rides?leavingLocation=Howrah+Railway+Station,+Howrah,+West+Bengal,+India&goingLocation=Khirpai,+West+Bengal,+India&date=2025-05-19&travelMode=train - 200
+2025-05-19T22:42:46.101Z info: GET /t/search-rides?leavingLocation=Howrah+Railway+Station,+Howrah,+West+Bengal,+India&goingLocation=Khirpai,+West+Bengal,+India&date=2025-05-19&travelMode=train&phoneNumber=%2B918927473643 - 200
+2025-05-19T22:42:49.479Z info: GET /t/search-rides?leavingLocation=Howrah+Railway+Station,+Howrah,+West+Bengal,+India&goingLocation=Khirpai,+West+Bengal,+India&date=2025-05-19&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-19T22:42:49.611Z info: GET /t/search-rides?leavingLocation=Howrah+Railway+Station,+Howrah,+West+Bengal,+India&goingLocation=Khirpai,+West+Bengal,+India&date=2025-05-19&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-19T22:42:49.625Z info: GET /t/search-rides?leavingLocation=Howrah+Railway+Station,+Howrah,+West+Bengal,+India&goingLocation=Khirpai,+West+Bengal,+India&date=2025-05-19&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-19T22:42:51.813Z info: GET /t/search-rides?leavingLocation=Howrah+Railway+Station,+Howrah,+West+Bengal,+India&goingLocation=Khirpai,+West+Bengal,+India&date=2025-05-20&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-19T22:43:09.920Z info: GET /t/search-rides?leavingLocation=Howrah+Railway+Station,+Howrah,+West+Bengal,+India&goingLocation=Khirpai,+West+Bengal,+India&date=2025-05-21&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-19T22:43:12.524Z info: GET /t/search-rides?leavingLocation=Howrah+Railway+Station,+Howrah,+West+Bengal,+India&goingLocation=Khirpai,+West+Bengal,+India&date=2025-05-22&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-19T22:43:14.248Z info: GET /t/search-rides?leavingLocation=Howrah+Railway+Station,+Howrah,+West+Bengal,+India&goingLocation=Khirpai,+West+Bengal,+India&date=2025-05-20&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-19T22:44:20.866Z info: GET /t/search-rides?leavingLocation=Kolkata,+West+Bengal,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-28&travelMode=train - 200
+2025-05-19T22:44:20.880Z info: GET /t/search-rides?leavingLocation=Kolkata,+West+Bengal,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-28&travelMode=train - 200
+2025-05-19T22:44:20.888Z info: GET /t/search-rides?leavingLocation=Kolkata,+West+Bengal,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-28&travelMode=train&phoneNumber=%2B918927473643 - 200
+2025-05-19T22:44:23.320Z info: GET /t/search-rides?leavingLocation=Kolkata,+West+Bengal,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-28&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-19T22:44:23.453Z info: GET /t/search-rides?leavingLocation=Kolkata,+West+Bengal,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-28&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-19T22:44:23.459Z info: GET /t/search-rides?leavingLocation=Kolkata,+West+Bengal,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-28&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-19T22:44:25.195Z info: GET /t/search-rides?leavingLocation=Kolkata,+West+Bengal,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-29&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-19T22:44:27.238Z info: GET /t/search-rides?leavingLocation=Kolkata,+West+Bengal,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-28&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-19T22:44:27.861Z info: GET /t/search-rides?leavingLocation=Kolkata,+West+Bengal,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-29&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-19T22:44:28.611Z info: GET /t/search-rides?leavingLocation=Kolkata,+West+Bengal,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-30&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-19T22:44:45.047Z info: GET /t/search-rides?leavingLocation=Kolkata,+West+Bengal,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-27&travelMode=train - 200
+2025-05-19T22:44:45.052Z info: GET /t/search-rides?leavingLocation=Kolkata,+West+Bengal,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-27&travelMode=train&phoneNumber=%2B918927473643 - 200
+2025-05-19T22:44:45.058Z info: GET /t/search-rides?leavingLocation=Kolkata,+West+Bengal,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-27&travelMode=train - 200
+2025-05-19T22:44:47.461Z info: GET /t/search-rides?leavingLocation=Kolkata,+West+Bengal,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-27&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-19T22:44:47.464Z info: GET /t/search-rides?leavingLocation=Kolkata,+West+Bengal,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-27&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-19T22:44:47.466Z info: GET /t/search-rides?leavingLocation=Kolkata,+West+Bengal,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-27&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-19T22:44:49.289Z info: GET /t/search-rides?leavingLocation=Kolkata,+West+Bengal,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-28&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-19T22:44:51.060Z info: GET /t/search-rides?leavingLocation=Kolkata,+West+Bengal,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-29&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-19T22:45:15.955Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-30&travelMode=train - 200
+2025-05-19T22:45:15.984Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-30&travelMode=train - 200
+2025-05-19T22:45:16.025Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-30&travelMode=train&phoneNumber=%2B918927473643 - 200
+2025-05-19T22:45:18.296Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-30&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-19T22:45:18.421Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-30&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-19T22:45:18.429Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-30&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-19T22:45:19.885Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-31&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-19T22:45:27.449Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-30&travelMode=train - 200
+2025-05-19T22:45:27.459Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-30&travelMode=train - 200
+2025-05-19T22:45:27.471Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-30&travelMode=train&phoneNumber=%2B918927473643 - 200
+2025-05-19T22:45:30.134Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-30&travelMode=train&phoneNumber=%2B918927473643 - 200
+2025-05-19T22:45:30.138Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-30&travelMode=train&phoneNumber=%2B918927473643 - 200
+2025-05-19T22:45:30.167Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-30&travelMode=train&phoneNumber=%2B918927473643 - 200
+2025-05-19T22:45:31.742Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-31&travelMode=train&phoneNumber=%2B918927473643 - 200
+2025-05-19T22:46:48.184Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-30&travelMode=train - 200
+2025-05-19T22:46:48.186Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-30&travelMode=train - 200
+2025-05-19T22:46:48.236Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-30&travelMode=train&phoneNumber=%2B918927473643 - 200
+2025-05-19T22:46:51.392Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-30&travelMode=train&phoneNumber=%2B918927473643 - 200
+2025-05-19T22:46:51.536Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-30&travelMode=train&phoneNumber=%2B918927473643 - 200
+2025-05-19T22:46:51.541Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-30&travelMode=train&phoneNumber=%2B918927473643 - 200
+2025-05-19T22:46:53.276Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-31&travelMode=train&phoneNumber=%2B918927473643 - 200
+2025-05-19T22:48:03.079Z info: GET /t/search-rides?leavingLocation=Kolkata,+West+Bengal,+India&goingLocation=Howrah+Railway+Station,+Howrah,+West+Bengal,+India&date=2025-05-19&travelMode=train - 200
+2025-05-19T22:48:03.101Z info: GET /t/search-rides?leavingLocation=Kolkata,+West+Bengal,+India&goingLocation=Howrah+Railway+Station,+Howrah,+West+Bengal,+India&date=2025-05-19&travelMode=train - 200
+2025-05-19T22:48:03.143Z info: GET /t/search-rides?leavingLocation=Kolkata,+West+Bengal,+India&goingLocation=Howrah+Railway+Station,+Howrah,+West+Bengal,+India&date=2025-05-19&travelMode=train&phoneNumber=%2B918927473643 - 200
+2025-05-19T22:48:05.189Z info: GET /t/search-rides?leavingLocation=Kolkata,+West+Bengal,+India&goingLocation=Howrah+Railway+Station,+Howrah,+West+Bengal,+India&date=2025-05-19&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-19T22:48:05.325Z info: GET /t/search-rides?leavingLocation=Kolkata,+West+Bengal,+India&goingLocation=Howrah+Railway+Station,+Howrah,+West+Bengal,+India&date=2025-05-19&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-19T22:48:05.327Z info: GET /t/search-rides?leavingLocation=Kolkata,+West+Bengal,+India&goingLocation=Howrah+Railway+Station,+Howrah,+West+Bengal,+India&date=2025-05-19&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-19T22:48:06.873Z info: GET /t/search-rides?leavingLocation=Kolkata,+West+Bengal,+India&goingLocation=Howrah+Railway+Station,+Howrah,+West+Bengal,+India&date=2025-05-20&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-19T22:48:08.516Z info: GET /t/search-rides?leavingLocation=Kolkata,+West+Bengal,+India&goingLocation=Howrah+Railway+Station,+Howrah,+West+Bengal,+India&date=2025-05-21&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-19T22:48:10.691Z info: GET /t/search-rides?leavingLocation=Kolkata,+West+Bengal,+India&goingLocation=Howrah+Railway+Station,+Howrah,+West+Bengal,+India&date=2025-05-22&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-19T22:48:12.306Z info: GET /t/search-rides?leavingLocation=Kolkata,+West+Bengal,+India&goingLocation=Howrah+Railway+Station,+Howrah,+West+Bengal,+India&date=2025-05-23&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-19T22:49:58.395Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:49:58.399Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=19/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:49:59.858Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-19&phoneNumber=+918927473643 - 200
+2025-05-19T22:50:01.064Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=20/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:50:01.065Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-20&phoneNumber=+918927473643 - 200
+2025-05-19T22:50:02.094Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=21/05/2025&phoneNumber=+918927473643 - 200
+2025-05-19T22:50:02.097Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&date=2025-05-21&phoneNumber=+918927473643 - 200
+2025-05-19T23:48:31.724Z info: Server is running on port 5002
+2025-05-19T23:48:31.726Z info: Socket.IO connection status: Connected
+2025-05-19T23:48:32.270Z info: MongoDB connected
+2025-05-19T23:51:18.263Z info: POST /p/verify-payment - 200
+2025-05-19T23:55:36.537Z info: Server is running on port 5002
+2025-05-19T23:55:36.539Z info: Socket.IO connection status: Connected
+2025-05-19T23:55:37.454Z info: MongoDB connected
+2025-05-19T23:56:12.443Z info: POST /p/verify-payment - 200
+2025-05-20T00:39:55.757Z info: Server is running on port 5002
+2025-05-20T00:39:55.758Z info: Socket.IO connection status: Connected
+2025-05-20T00:39:56.312Z info: MongoDB connected
+2025-05-20T00:50:19.555Z info: Server is running on port 5002
+2025-05-20T00:50:19.556Z info: Socket.IO connection status: Connected
+2025-05-20T00:50:20.124Z info: MongoDB connected
+2025-05-20T01:00:00.032Z info: Server is running on port 5002
+2025-05-20T01:00:00.033Z info: Socket.IO connection status: Connected
+2025-05-20T01:00:00.537Z info: MongoDB connected
+2025-05-20T01:11:33.255Z info: Server is running on port 5002
+2025-05-20T01:11:33.256Z info: Socket.IO connection status: Connected
+2025-05-20T01:11:34.162Z info: MongoDB connected
+2025-05-20T01:13:47.205Z info: Server is running on port 5002
+2025-05-20T01:13:47.206Z info: Socket.IO connection status: Connected
+2025-05-20T01:13:48.127Z info: MongoDB connected
+2025-05-20T01:55:38.493Z info: Server is running on port 5002
+2025-05-20T01:55:38.496Z info: Socket.IO connection status: Connected
+2025-05-20T01:55:39.078Z info: MongoDB connected
+2025-05-20T01:56:04.449Z info: Server is running on port 5002
+2025-05-20T01:56:04.451Z info: Socket.IO connection status: Connected
+2025-05-20T01:56:04.998Z info: MongoDB connected

@@ -3,7 +3,8 @@ const Feedback = require('../model/feedback');
 // Submit feedback
 exports.submitFeedback = async (req, res) => {
   try {
-    const {phoneNumber, subject, feedbackmessage } = req.body;
+    const {phoneNumber}=req.params;
+    const { subject, feedbackmessage } = req.body;
 
     // Create and save the new feedback
     const newFeedback = new Feedback({phoneNumber, feedbackmessage, subject });

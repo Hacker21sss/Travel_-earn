@@ -611,27 +611,52 @@ module.exports. driverstatuslocationupdate=async(req,res)=>{
 };
 
 
-module.exports. trackRiderLiveLocation = async (req, res) => {
+module.exports.trackRiderLiveLocation = async (req, res, io) => {
   try {
-    const { travelId,phoneNumber } = req.params;
-
-    const driver = await Traveldetails.findOne({travelId});
-    if (!driver) return res.status(404).json({ message: "Driver not found" });
-    const user=await userprofiles.findOne({phoneNumber});
-    if(!user) return res.status(404).json({ message: "Driver not found" });
-
-    const [longitude, latitude] = driver.currentLocation.coordinates;
-
+    const { travelId, phoneNumber } = req.params;
+    console.log(`Received request to track rider - travelId: ${travelId}, phoneNumber: ${phoneNumber}`);
+    const driver = await travelhistory.findOne({ travelId });
+    if (!driver) {
+      console.log(`Driver not found for travelId: ${travelId}`);
+      return res.status(404).json({ message: "Driver not found" });
+    }
+    console.log(`Driver found: ${JSON.stringify(driver)}`);
+    const user = await userprofiles.findOne({ phoneNumber });
+    if (!user) {
+      console.log(`User not found for phoneNumber: ${phoneNumber}`);
+      return res.status(404).json({ message: "User not found" });
+    }
+    console.log(`User found: ${JSON.stringify(user)}`);
+    const { lat, lng, timestamp } = driver.liveLocation;
+    if (!lat || !lng) {
+      console.log(`Invalid liveLocation data for travelId: ${travelId}`);
+      return res.status(400).json({ message: "Invalid location data" });
+    }
+    const coordinates = [lng, lat];
+    console.log(`Converted coordinates - longitude: ${lng}, latitude: ${lat}`);
+    const locationData = {
+      travelId,
+      phoneNumber,
+      longitude: lng,
+      latitude: lat,
+      lastUpdated: timestamp,
+    };
+    console.log(`Emitting riderLocationUpdate event to room ${travelId} with data: ${JSON.stringify(locationData)}`);
+    const io = require('../../socket').getIO();
+    io.to(travelId).emit('riderLocationUpdate', locationData);
+    console.log('Sending success response to client');
     return res.status(200).json({
-      longitude,
-      latitude,
-      lastUpdated: driver.lastUpdated,
+      message: "Location update emitted successfully",
+      longitude: lng,
+      latitude: lat,
+      lastUpdated: timestamp,
+      coordinates,
     });
   } catch (err) {
+    console.error(`Error in trackRiderLiveLocation: ${err.message}`);
     return res.status(500).json({ message: "Internal Server Error", error: err.message });
   }
 };
-
 
 
 
