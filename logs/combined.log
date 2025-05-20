@@ -3911,3 +3911,666 @@
 2025-05-19T00:51:25.641Z info: POST / - 200
 2025-05-19T01:00:15.503Z info: GET / - 200
 2025-05-19T01:59:56.628Z info: GET / - 200
+2025-05-19T13:25:25.987Z info: Server is running on port 5002
+2025-05-19T13:25:26.051Z info: Server is running on port 5002
+2025-05-19T13:25:26.243Z info: Server is running on port 5002
+2025-05-19T13:25:25.999Z info: Socket.IO connection status: Connected
+2025-05-19T13:25:26.068Z info: Socket.IO connection status: Connected
+2025-05-19T13:25:26.449Z info: Server is running on port 5002
+2025-05-19T13:25:26.251Z info: Socket.IO connection status: Connected
+2025-05-19T13:25:26.465Z info: Socket.IO connection status: Connected
+2025-05-19T13:25:26.711Z info: MongoDB connected
+2025-05-19T13:25:26.737Z info: MongoDB connected
+2025-05-19T13:25:26.856Z info: MongoDB connected
+2025-05-19T13:25:26.939Z info: MongoDB connected
+2025-05-19T13:26:01.635Z info: GET / - 200
+2025-05-19T13:26:04.466Z info: GET / - 200
+2025-05-19T13:27:48.491Z info: GET / - 200
+2025-05-19T13:28:27.278Z info: A new client connected: qF2J37ozduBZvyBUAAAB
+2025-05-19T13:28:27.281Z warn: No phoneNumber provided for socket qF2J37ozduBZvyBUAAAB
+2025-05-19T13:29:16.871Z info: Client disconnected: qF2J37ozduBZvyBUAAAB
+2025-05-19T13:29:27.897Z info: GET / - 200
+2025-05-19T13:31:15.003Z info: GET / - 200
+2025-05-19T13:31:22.299Z info: POST / - 200
+2025-05-19T13:31:40.573Z info: A new client connected: ZJUF54MTbUc2Z6fOAAAD
+2025-05-19T13:31:40.573Z warn: No phoneNumber provided for socket ZJUF54MTbUc2Z6fOAAAD
+2025-05-19T13:39:33.070Z info: Client disconnected: ZJUF54MTbUc2Z6fOAAAD
+2025-05-19T13:40:25.920Z info: GET / - 200
+2025-05-19T13:54:32.692Z info: POST /boaform/admin/formLogin - 200
+2025-05-19T13:59:38.673Z info: GET / - 200
+2025-05-19T14:00:41.170Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T14:00:41.683Z info: A new client connected: lfMdeyFU3FMdTpBRAAAB
+2025-05-19T14:00:41.723Z info: Socket ID lfMdeyFU3FMdTpBRAAAB associated with phoneNumber +918927473643
+2025-05-19T14:00:42.318Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T14:00:44.432Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-19T14:00:44.649Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-19T14:00:48.988Z info: GET /address/getaddress/+918927473643 - 200
+2025-05-19T14:01:03.708Z info: GET /earn/earning?phoneNumber=%2B918927473643 - 200
+2025-05-19T14:01:07.629Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T14:01:08.061Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T14:01:08.781Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T14:01:11.414Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T14:01:13.488Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T14:01:13.927Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T14:01:14.728Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T14:01:16.287Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T14:01:24.638Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T14:01:25.088Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T14:01:34.161Z info: GET /api/getall/+918927473643 - 200
+2025-05-19T14:02:29.638Z info: PUT /api//update/+918927473643 - 200
+2025-05-19T14:02:39.891Z info: GET /api/getall/+918927473643 - 200
+2025-05-19T14:03:12.798Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T14:03:13.209Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T14:03:14.632Z info: Client disconnected: lfMdeyFU3FMdTpBRAAAB
+2025-05-19T14:03:14.647Z info: Socket ID cleared for phoneNumber +918927473643
+2025-05-19T14:03:16.536Z info: GET / - 200
+2025-05-19T14:07:53.259Z info: GET /.env - 200
+2025-05-19T14:07:54.242Z info: POST / - 200
+2025-05-19T14:11:23.568Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T14:11:23.758Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-19T14:11:23.767Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-19T14:11:23.915Z info: A new client connected: 27qrmmNs4xBkPXmYAAAD
+2025-05-19T14:11:23.932Z info: Socket ID 27qrmmNs4xBkPXmYAAAD associated with phoneNumber +918927473643
+2025-05-19T14:11:24.056Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T14:11:27.472Z info: GET /t/travelhistory/+918927473643 - 200
+2025-05-19T14:11:30.315Z info: GET /map/getdistanceandcoordinate?origin=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&destination=Kolkata,%20West%20Bengal,%20India - 200
+2025-05-19T14:11:34.716Z info: GET /api/history/+918927473643 - 200
+2025-05-19T14:11:36.654Z info: GET /map/getdistanceandcoordinate?origin=Howrah%20Railway%20Station%2C%20Howrah%2C%20West%20Bengal%2C%20India&destination=Kolkata%2C%20West%20Bengal%2C%20India - 200
+2025-05-19T14:11:37.027Z info: GET /editp/consignment-collected-status/phoneNumber=+918927473643?consignmentId=027e68c6-a62c-4bb9-b313-9e0dec02dae0 - 200
+2025-05-19T14:11:37.028Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-19T14:11:51.751Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-19T14:11:51.973Z info: GET /editp/consignment-collected-status/phoneNumber=+918927473643?consignmentId=947d5fb8-ab2d-45b0-8ee7-2248a9e1bf04 - 200
+2025-05-19T14:11:51.976Z info: GET /map/getdistanceandcoordinate?origin=Howrah%20Railway%20Station%2C%20Howrah%2C%20West%20Bengal%2C%20India&destination=Khirpai%2C%20West%20Bengal%2C%20India - 200
+2025-05-19T14:12:10.142Z info: GET /map/getdistanceandcoordinate?origin=Kolkata%2C%20West%20Bengal%2C%20India&destination=Sealdah%20Station%2C%20Sealdah%2C%20Raja%20Bazar%2C%20Kolkata%2C%20West%20Bengal%2C%20India - 200
+2025-05-19T14:12:12.151Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-19T14:12:12.154Z info: GET /editp/consignment-collected-status/phoneNumber=+918927473643?consignmentId=1b8ea805-7338-4f51-9f69-014ed69fdb76 - 200
+2025-05-19T14:12:49.948Z info: GET /editp/consignment-collected-status/phoneNumber=+918927473643?consignmentId=8418d621-b708-4cf4-9c60-5ea31881c105 - 200
+2025-05-19T14:12:49.952Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-19T14:12:49.951Z info: GET /map/getdistanceandcoordinate?origin=Balasore%2C%20Odisha%2C%20India&destination=Noida%2C%20Uttar%20Pradesh%2C%20India - 200
+2025-05-19T14:13:13.687Z info: GET /map/getdistanceandcoordinate?origin=Kolkata%2C%20West%20Bengal%2C%20India&destination=Delhi%2C%20India - 200
+2025-05-19T14:13:14.971Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-19T14:13:14.971Z info: GET /editp/consignment-collected-status/phoneNumber=+918927473643?consignmentId=2a232f62-115b-4299-bf43-c5aba5472d16 - 200
+2025-05-19T14:18:14.367Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T14:18:14.954Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T14:18:48.999Z info: GET /api/history/+918927473643 - 200
+2025-05-19T14:18:50.818Z info: GET /earn/earning?phoneNumber=%2B918927473643 - 200
+2025-05-19T14:18:55.134Z info: Client disconnected: 27qrmmNs4xBkPXmYAAAD
+2025-05-19T14:18:55.149Z info: Socket ID cleared for phoneNumber +918927473643
+2025-05-19T14:23:19.601Z info: GET / - 200
+2025-05-19T14:23:37.859Z info: GET /favicon.ico - 200
+2025-05-19T14:23:38.114Z info: GET /robots.txt - 200
+2025-05-19T14:23:38.369Z info: GET /sitemap.xml - 200
+2025-05-19T14:23:38.624Z info: GET /config.json - 200
+2025-05-19T15:22:02.202Z info: GET / - 200
+2025-05-19T15:38:17.664Z info: POST /boaform/admin/formLogin - 200
+2025-05-19T16:12:58.570Z info: GET /.env - 200
+2025-05-19T16:12:59.430Z info: POST / - 200
+2025-05-19T16:19:46.204Z info: GET /.git/config - 200
+2025-05-19T16:21:10.385Z info: GET /.git/config - 200
+2025-05-19T16:50:48.690Z info: GET / - 200
+2025-05-19T17:28:50.041Z info: A new client connected: l2MyfJgM4HKNAGNwAAAF
+2025-05-19T17:28:50.145Z info: Socket ID l2MyfJgM4HKNAGNwAAAF associated with phoneNumber +919853292719
+2025-05-19T17:29:19.526Z info: POST /api/auth/send-otp - 200
+2025-05-19T17:30:05.436Z info: POST /api/auth/verify-otp - 200
+2025-05-19T17:30:05.808Z info: GET /n/getnotification/travel/+919853292719 - 200
+2025-05-19T17:30:06.088Z info: GET /n/getnotification/consignment/+919853292719 - 200
+2025-05-19T17:38:35.055Z info: Client disconnected: l2MyfJgM4HKNAGNwAAAF
+2025-05-19T17:38:35.083Z info: Socket ID cleared for phoneNumber +919853292719
+2025-05-19T18:09:18.284Z info: POST /hello.world?%ADd+allow_url_include%3d1+%ADd+auto_prepend_file%3dphp://input - 200
+2025-05-19T18:09:18.468Z info: GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-19T18:09:18.740Z info: GET /vendor/phpunit/phpunit/Util/PHP/eval-stdin.php - 200
+2025-05-19T18:09:19.051Z info: GET /vendor/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-19T18:09:19.272Z info: GET /vendor/phpunit/Util/PHP/eval-stdin.php - 200
+2025-05-19T18:09:19.646Z info: GET /vendor/phpunit/phpunit/LICENSE/eval-stdin.php - 200
+2025-05-19T18:09:19.918Z info: GET /vendor/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-19T18:09:20.270Z info: GET /phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-19T18:09:20.486Z info: GET /phpunit/phpunit/Util/PHP/eval-stdin.php - 200
+2025-05-19T18:09:20.790Z info: GET /phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-19T18:09:21.023Z info: GET /phpunit/Util/PHP/eval-stdin.php - 200
+2025-05-19T18:09:21.334Z info: GET /lib/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-19T18:09:21.537Z info: GET /lib/phpunit/phpunit/Util/PHP/eval-stdin.php - 200
+2025-05-19T18:09:21.750Z info: GET /lib/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-19T18:09:22.078Z info: GET /lib/phpunit/Util/PHP/eval-stdin.php - 200
+2025-05-19T18:09:22.287Z info: GET /lib/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-19T18:09:22.507Z info: GET /laravel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-19T18:09:22.732Z info: GET /www/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-19T18:09:23.091Z info: GET /ws/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-19T18:09:23.351Z info: GET /yii/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-19T18:09:23.557Z info: GET /zend/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-19T18:09:23.795Z info: GET /ws/ec/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-19T18:09:24.047Z info: GET /V2/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-19T18:09:24.265Z info: GET /tests/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-19T18:09:24.487Z info: GET /test/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-19T18:09:24.798Z info: GET /testing/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-19T18:09:24.988Z info: GET /api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-19T18:09:25.189Z info: GET /demo/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-19T18:09:25.404Z info: GET /cms/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-19T18:09:25.610Z info: GET /crm/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-19T18:09:25.867Z info: GET /admin/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-19T18:09:26.099Z info: GET /backup/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-19T18:09:26.317Z info: GET /blog/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-19T18:09:26.558Z info: GET /workspace/drupal/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-19T18:09:26.810Z info: GET /panel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-19T18:09:27.089Z info: GET /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-19T18:09:27.314Z info: GET /apps/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-19T18:09:27.516Z info: GET /app/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-19T18:09:27.744Z info: GET /index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello - 200
+2025-05-19T18:09:27.985Z info: GET /public/index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello - 200
+2025-05-19T18:09:28.254Z info: GET /index.php?lang=../../../../../../../../usr/local/lib/php/pearcmd&+config-create+/&/<?echo(md5("hi"));?>+/tmp/index1.php - 200
+2025-05-19T18:09:28.449Z info: GET /index.php?lang=../../../../../../../../tmp/index1 - 200
+2025-05-19T18:09:28.670Z info: GET /containers/json - 200
+2025-05-19T18:11:13.227Z info: GET / - 200
+2025-05-19T18:17:33.038Z info: GET / - 200
+2025-05-19T18:18:24.844Z info: GET / - 200
+2025-05-19T18:18:25.334Z info: GET /favicon.ico - 200
+2025-05-19T18:21:17.685Z info: GET / - 200
+2025-05-19T18:33:19.019Z info: GET / - 200
+2025-05-19T18:53:59.400Z info: A new client connected: VQC6c9atCrl_b70fAAAB
+2025-05-19T18:53:59.418Z info: Socket ID VQC6c9atCrl_b70fAAAB associated with phoneNumber +919853292719
+2025-05-19T18:54:15.006Z info: Client disconnected: VQC6c9atCrl_b70fAAAB
+2025-05-19T18:54:15.013Z info: Socket ID cleared for phoneNumber +919853292719
+2025-05-19T19:02:44.744Z info: GET /.env - 200
+2025-05-19T19:02:46.038Z info: POST / - 200
+2025-05-19T20:13:36.587Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T20:13:36.748Z info: A new client connected: jGRR78uBmDZauWFuAAAD
+2025-05-19T20:13:36.808Z info: Socket ID jGRR78uBmDZauWFuAAAD associated with phoneNumber +918927473643
+2025-05-19T20:13:36.880Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T20:13:41.202Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-19T20:13:41.273Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-19T20:13:45.894Z info: GET /api/history/+918927473643 - 200
+2025-05-19T20:14:04.850Z info: GET /map/getdistanceandcoordinate?origin=Howrah%20Railway%20Station%2C%20Howrah%2C%20West%20Bengal%2C%20India&destination=Kolkata%2C%20West%20Bengal%2C%20India - 200
+2025-05-19T20:14:04.928Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-19T20:14:04.931Z info: GET /editp/consignment-collected-status/phoneNumber=+918927473643?consignmentId=027e68c6-a62c-4bb9-b313-9e0dec02dae0 - 200
+2025-05-19T20:15:25.836Z info: GET /.env - 200
+2025-05-19T20:17:18.219Z info: GET /map/getdistanceandcoordinate?origin=Howrah%20Railway%20Station%2C%20Howrah%2C%20West%20Bengal%2C%20India&destination=Khirpai%2C%20West%20Bengal%2C%20India - 200
+2025-05-19T20:17:18.294Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-19T20:17:18.295Z info: GET /editp/consignment-collected-status/phoneNumber=+918927473643?consignmentId=947d5fb8-ab2d-45b0-8ee7-2248a9e1bf04 - 200
+2025-05-19T20:20:35.789Z info: GET /map/getdistanceandcoordinate?origin=Howrah%20Railway%20Station%2C%20Howrah%2C%20West%20Bengal%2C%20India&destination=Khirpai%2C%20West%20Bengal%2C%20India - 200
+2025-05-19T20:20:35.878Z info: GET /editp/consignment-collected-status/phoneNumber=+918927473643?consignmentId=947d5fb8-ab2d-45b0-8ee7-2248a9e1bf04 - 200
+2025-05-19T20:20:35.879Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-19T20:21:39.434Z info: GET /map/getdistanceandcoordinate?origin=Howrah%20Railway%20Station%2C%20Howrah%2C%20West%20Bengal%2C%20India&destination=Khirpai%2C%20West%20Bengal%2C%20India - 200
+2025-05-19T20:21:39.508Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-19T20:21:39.510Z info: GET /editp/consignment-collected-status/phoneNumber=+918927473643?consignmentId=947d5fb8-ab2d-45b0-8ee7-2248a9e1bf04 - 200
+2025-05-19T20:23:27.952Z info: GET /.env - 200
+2025-05-19T20:23:29.001Z info: POST / - 200
+2025-05-19T20:31:09.271Z info: GET /editp/consignment-collected-status/phoneNumber=+918927473643?consignmentId=1b8ea805-7338-4f51-9f69-014ed69fdb76 - 200
+2025-05-19T20:31:09.269Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-19T20:31:09.270Z info: GET /map/getdistanceandcoordinate?origin=Kolkata%2C%20West%20Bengal%2C%20India&destination=Sealdah%20Station%2C%20Sealdah%2C%20Raja%20Bazar%2C%20Kolkata%2C%20West%20Bengal%2C%20India - 200
+2025-05-19T20:47:15.389Z info: GET / - 200
+2025-05-19T21:18:32.602Z info: GET /portal/redlion - 200
+2025-05-19T21:21:12.554Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T21:21:12.761Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T21:21:18.258Z info: GET /api/location?going=Howrah - 200
+2025-05-19T21:21:19.948Z info: GET /api/location?going=Howrah+Railway+Station,+Howrah,+... - 200
+2025-05-19T21:21:22.608Z info: GET /api/location?going=Howrah+Railway+Station,+Howrah,+...&leaving=Khirpai - 200
+2025-05-19T21:21:25.607Z info: GET /api/getdetails?leavingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&goingLocation=Khirpai,%20West%20Bengal,%20India&date=undefined-undefined-undefined-undefined-2025-05-19 - 200
+2025-05-19T21:21:25.677Z info: GET /api/getdetails?leavingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&goingLocation=Khirpai,%20West%20Bengal,%20India&date=2025-05-19 - 200
+2025-05-19T21:21:26.915Z info: GET /api/getdetails?leavingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&goingLocation=Khirpai,%20West%20Bengal,%20India&date=2025-05-19 - 200
+2025-05-19T21:21:28.039Z info: GET /api/getdetails?leavingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&goingLocation=Khirpai,%20West%20Bengal,%20India&date=2025-05-20 - 200
+2025-05-19T21:21:29.781Z info: POST /api/request-for-consignment - 200
+2025-05-19T21:21:58.631Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T21:21:58.870Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T21:22:06.382Z info: GET /api/location?going=Howta - 200
+2025-05-19T21:22:07.081Z info: GET /api/location?going=How - 200
+2025-05-19T21:22:08.041Z info: GET /api/location?going=Howrah - 200
+2025-05-19T21:22:09.618Z info: GET /api/location?going=Howrah+Railway+Station,+Howrah,+... - 200
+2025-05-19T21:22:12.236Z info: GET /api/location?going=Howrah+Railway+Station,+Howrah,+...&leaving=Khirpai - 200
+2025-05-19T21:22:14.145Z info: GET /address/getaddress/+918927473643 - 200
+2025-05-19T21:22:22.512Z info: GET /address/getaddress/+918927473643 - 200
+2025-05-19T21:22:25.653Z info: GET /map/getdistanceandcoordinate?origin=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&destination=Khirpai,%20West%20Bengal,%20India - 200
+2025-05-19T21:22:26.998Z info: GET /map/getdistanceandcoordinate?origin=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&destination=Khirpai,%20West%20Bengal,%20India - 200
+2025-05-19T21:22:30.613Z info: GET /map/getdistanceandcoordinate?origin=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&destination=Khirpai,%20West%20Bengal,%20India - 200
+2025-05-19T21:22:30.755Z info: GET /api/getall/+918927473643 - 200
+2025-05-19T21:22:32.343Z info: POST /t/creates?Leavinglocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&Goinglocation=Khirpai,%20West%20Bengal,%20India - 200
+2025-05-19T21:22:35.508Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T21:22:35.759Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T21:22:39.255Z info: GET /api/location?going=Ho - 200
+2025-05-19T21:22:40.483Z info: GET /api/location?going=Howrah - 200
+2025-05-19T21:22:41.957Z info: GET /api/location?going=Howrah+Railway+Station,+Howrah,+... - 200
+2025-05-19T21:22:44.275Z info: GET /api/location?going=Howrah+Railway+Station,+Howrah,+...&leaving=Khirpai - 200
+2025-05-19T21:22:46.350Z info: GET /api/getdetails?leavingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&goingLocation=Khirpai,%20West%20Bengal,%20India&date=undefined-undefined-undefined-undefined-2025-05-19 - 200
+2025-05-19T21:22:46.393Z info: GET /api/getdetails?leavingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&goingLocation=Khirpai,%20West%20Bengal,%20India&date=2025-05-19 - 200
+2025-05-19T21:22:47.342Z info: GET /api/getdetails?leavingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&goingLocation=Khirpai,%20West%20Bengal,%20India&date=2025-05-19 - 200
+2025-05-19T21:22:48.510Z info: GET /api/getdetails?leavingLocation=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India&goingLocation=Khirpai,%20West%20Bengal,%20India&date=2025-05-20 - 200
+2025-05-19T21:22:49.788Z info: POST /api/request-for-consignment - 200
+2025-05-19T21:23:31.699Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T21:23:31.909Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T21:36:37.314Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-19T21:36:37.316Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-19T21:36:38.200Z info: GET /api/history/+918927473643 - 200
+2025-05-19T21:36:50.246Z info: GET /api/location?going=Kolkata - 200
+2025-05-19T21:36:51.765Z info: GET /api/location?going=Kolkata,+West+Bengal,+India - 200
+2025-05-19T21:36:54.303Z info: GET /api/location?going=Kolkata,+West+Bengal,+India&leaving=Ho - 200
+2025-05-19T21:36:55.169Z info: GET /api/location?going=Kolkata,+West+Bengal,+India&leaving=Howrah - 200
+2025-05-19T21:36:57.062Z info: GET /address/getaddress/+918927473643 - 200
+2025-05-19T21:36:59.913Z info: GET /map/getdistanceandcoordinate?origin=Kolkata,%20West%20Bengal,%20India&destination=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India - 200
+2025-05-19T21:37:02.160Z info: GET /map/getdistanceandcoordinate?origin=Kolkata,%20West%20Bengal,%20India&destination=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India - 200
+2025-05-19T21:37:16.848Z info: GET /map/getdistanceandcoordinate?origin=Kolkata,%20West%20Bengal,%20India&destination=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India - 200
+2025-05-19T21:37:18.348Z info: POST /api/consignment - 200
+2025-05-19T21:37:21.731Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T21:37:21.926Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T21:37:27.780Z info: GET /api/location?going=Kolkata - 200
+2025-05-19T21:37:28.899Z info: GET /api/location?going=Kolkata,+West+Bengal,+India - 200
+2025-05-19T21:37:30.263Z info: GET /api/location?going=Kolkata,+West+Bengal,+India&leaving=Ho - 200
+2025-05-19T21:37:30.810Z info: GET /api/location?going=Kolkata,+West+Bengal,+India&leaving=How - 200
+2025-05-19T21:37:31.446Z info: GET /api/location?going=Kolkata,+West+Bengal,+India&leaving=Howrah - 200
+2025-05-19T21:41:11.285Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T21:41:11.422Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T21:44:31.724Z info: GET / - 200
+2025-05-19T21:49:34.792Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T21:49:35.006Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T21:52:18.555Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T21:52:18.695Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T21:54:40.275Z info: Client disconnected: jGRR78uBmDZauWFuAAAD
+2025-05-19T21:54:40.282Z info: Socket ID cleared for phoneNumber +918927473643
+2025-05-19T21:54:54.390Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T21:54:54.487Z info: A new client connected: RvACG8Sz7oozKs9UAAAB
+2025-05-19T21:54:54.499Z info: Socket ID RvACG8Sz7oozKs9UAAAB associated with phoneNumber +918927473643
+2025-05-19T21:54:54.591Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T21:54:59.874Z info: GET /api/location?going=Ho - 200
+2025-05-19T21:55:00.254Z info: GET /api/location?going=How - 200
+2025-05-19T21:55:00.870Z info: GET /api/location?going=Howra - 200
+2025-05-19T21:55:01.213Z info: GET /api/location?going=Howrah - 200
+2025-05-19T21:55:02.453Z info: GET /api/location?going=Howrah+Railway+Station,+Howrah,+... - 200
+2025-05-19T21:55:06.268Z info: GET /api/location?going=Howrah+Railway+Station,+Howrah,+...&leaving=Khirp - 200
+2025-05-19T21:55:06.681Z info: GET /api/location?going=Howrah+Railway+Station,+Howrah,+...&leaving=Khirpa - 200
+2025-05-19T21:55:07.005Z info: GET /api/location?going=Howrah+Railway+Station,+Howrah,+...&leaving=Khirpai - 200
+2025-05-19T21:55:25.870Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T21:55:25.993Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T21:55:27.006Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-19T21:55:27.099Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-19T21:55:28.195Z info: GET /api/history/+918927473643 - 200
+2025-05-19T21:55:33.681Z info: GET /api/history/+918927473643 - 200
+2025-05-19T21:55:41.901Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T21:55:42.028Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T21:55:46.819Z info: GET /api/location?leaving=Khirpai,+West+Bengal,+India - 200
+2025-05-19T21:55:53.087Z info: GET /api/location?going=Kolk - 200
+2025-05-19T21:55:53.794Z info: GET /api/location?going=Kolkat - 200
+2025-05-19T21:55:54.125Z info: GET /api/location?going=Kolkata - 200
+2025-05-19T21:55:55.291Z info: GET /api/location?going=Kolkata,+West+Bengal,+India - 200
+2025-05-19T21:55:56.794Z info: GET /api/location?going=Kolkata,+West+Bengal,+India&leaving=Ho - 200
+2025-05-19T21:55:57.500Z info: GET /api/location?going=Kolkata,+West+Bengal,+India&leaving=Howr - 200
+2025-05-19T21:55:57.827Z info: GET /api/location?going=Kolkata,+West+Bengal,+India&leaving=Howra - 200
+2025-05-19T21:55:58.223Z info: GET /api/location?going=Kolkata,+West+Bengal,+India&leaving=Howrah - 200
+2025-05-19T21:57:59.395Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T21:57:59.524Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T22:00:57.957Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T22:00:58.077Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T22:03:14.668Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T22:03:14.780Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T22:05:15.451Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T22:05:15.703Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T22:05:32.928Z info: POST /api/request-for-consignment - 200
+2025-05-19T22:05:34.577Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T22:05:34.709Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T22:07:35.294Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T22:07:35.411Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T22:08:29.477Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T22:08:29.599Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T22:08:33.195Z info: GET /api/location?going=Kolkata,+West+Bengal,+Indial&leaving=Howrah+Railway+Station,+Howrah,+... - 200
+2025-05-19T22:08:35.184Z info: GET /api/location?leaving=Howrah+Railway+Station,+Howrah,+... - 200
+2025-05-19T22:08:35.990Z info: GET /api/location?going=Ho&leaving=Howrah+Railway+Station,+Howrah,+... - 200
+2025-05-19T22:08:37.036Z info: GET /api/location?going=Howrah&leaving=Howrah+Railway+Station,+Howrah,+... - 200
+2025-05-19T22:08:44.029Z info: GET /api/location?going=Howrah+Railway+Station,+Howrah,+...&leaving=Howrah+Railway+S... - 200
+2025-05-19T22:08:46.156Z info: GET /api/location?going=Howrah+Railway+Station,+Howrah,+... - 200
+2025-05-19T22:08:48.003Z info: GET /api/location?going=Howrah+Railway+Station,+Howrah,+...&leaving=Khirpai - 200
+2025-05-19T22:09:26.132Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T22:09:26.251Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T22:09:27.929Z info: GET /api/history/+918927473643 - 200
+2025-05-19T22:09:49.134Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T22:09:49.277Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T22:09:54.403Z info: GET /api/location?leaving=Khirpai,+West+Bengal,+India - 200
+2025-05-19T22:10:49.906Z info: GET /api/location?going=L&leaving=Khirpai,+West+Bengal,+India - 200
+2025-05-19T22:10:51.657Z info: GET /api/location?going=Koljata&leaving=Khirpai,+West+Bengal,+India - 200
+2025-05-19T22:10:56.202Z info: GET /api/location?going=Kolkata,+West+Bengal,+India - 200
+2025-05-19T22:10:57.172Z info: GET /api/location?going=Kolkata,+West+Bengal,+India&leaving=P - 200
+2025-05-19T22:10:57.997Z info: GET /api/location?going=Kolkata,+West+Bengal,+India&leaving=Pune - 200
+2025-05-19T22:11:24.621Z info: POST /api/request-for-consignment - 200
+2025-05-19T22:11:29.506Z info: POST /api/request-for-consignment - 200
+2025-05-19T22:11:38.637Z info: POST /api/request-for-consignment - 200
+2025-05-19T22:11:41.738Z info: POST /api/request-for-consignment - 200
+2025-05-19T22:11:48.304Z info: POST /api/request-for-consignment - 200
+2025-05-19T22:20:43.576Z info: Client disconnected: RvACG8Sz7oozKs9UAAAB
+2025-05-19T22:20:43.597Z info: Socket ID cleared for phoneNumber +918927473643
+2025-05-19T22:21:55.306Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T22:21:55.424Z info: A new client connected: yh2UcnLj0tGiTlR4AAAF
+2025-05-19T22:21:55.434Z info: Socket ID yh2UcnLj0tGiTlR4AAAF associated with phoneNumber +918927473643
+2025-05-19T22:21:55.455Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T22:22:13.878Z info: GET /api/location?going=Ko - 200
+2025-05-19T22:22:15.035Z info: GET /api/location?going=Kolkata - 200
+2025-05-19T22:22:16.435Z info: GET /api/location?going=Kolkata,+West+Bengal,+India - 200
+2025-05-19T22:22:18.122Z info: GET /api/location?going=Kolkata,+West+Bengal,+India&leaving=P - 200
+2025-05-19T22:22:19.045Z info: GET /api/location?going=Kolkata,+West+Bengal,+India&leaving=Pune+ - 200
+2025-05-19T22:22:39.843Z info: POST /api/request-for-consignment - 200
+2025-05-19T22:22:47.746Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T22:22:47.931Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T22:22:52.220Z info: GET /api/location?leaving=Pune,+Maharashtra,+India - 200
+2025-05-19T22:22:55.668Z info: GET /api/location?going=Howrah&leaving=Pune,+Maharashtra,+India - 200
+2025-05-19T22:23:00.030Z info: GET /api/location?going=Howrah+Railway+Station,+Howrah,+... - 200
+2025-05-19T22:23:01.348Z info: GET /api/location?going=Howrah+Railway+Station,+Howrah,+...&leaving=Khir - 200
+2025-05-19T22:23:01.881Z info: GET /api/location?going=Howrah+Railway+Station,+Howrah,+...&leaving=Khirpai - 200
+2025-05-19T22:23:11.040Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T22:23:11.164Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T22:23:29.005Z info: GET /api/location?leaving=Khirpai,+West+Bengal,+India - 200
+2025-05-19T22:23:31.014Z info: GET /api/location?going=Jabbalpu&leaving=Khirpai,+West+Bengal,+India - 200
+2025-05-19T22:23:31.470Z info: GET /api/location?going=Jabbalpur&leaving=Khirpai,+West+Bengal,+India - 200
+2025-05-19T22:23:35.921Z info: GET /api/location?going=Jabalpur,+Madhya+Pradesh,+India - 200
+2025-05-19T22:23:38.982Z info: GET /api/location?going=Jabalpur,+Madhya+Pradesh,+India&leaving=Noida - 200
+2025-05-19T22:24:50.890Z info: POST /api/request-for-consignment - 200
+2025-05-19T22:25:04.590Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T22:25:04.707Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T22:27:56.367Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T22:27:56.480Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T22:28:14.232Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T22:28:14.332Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T22:29:07.758Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T22:29:07.917Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T22:29:18.653Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T22:29:18.808Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T22:29:32.129Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T22:29:32.253Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T22:36:20.490Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T22:36:20.610Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T22:36:28.797Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T22:36:28.906Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T22:42:05.913Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-19T22:42:05.914Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-19T22:42:06.645Z info: GET /t/travelhistory/+918927473643 - 200
+2025-05-19T22:42:12.958Z info: GET /t/travelhistory/+918927473643 - 200
+2025-05-19T22:42:20.526Z info: GET /api/history/+918927473643 - 200
+2025-05-19T22:42:26.487Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T22:42:26.592Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T22:42:31.354Z info: GET /api/location?leaving=Noida,+Uttar+Pradesh,+India - 200
+2025-05-19T22:42:32.389Z info: GET /api/location?going=Ho&leaving=Noida,+Uttar+Pradesh,+India - 200
+2025-05-19T22:42:33.362Z info: GET /api/location?going=Howrah&leaving=Noida,+Uttar+Pradesh,+India - 200
+2025-05-19T22:42:37.853Z info: GET /api/location?going=Howrah+Railway+Station,+Howrah,+... - 200
+2025-05-19T22:42:38.913Z info: GET /api/location?going=Howrah+Railway+Station,+Howrah,+...&leaving=Khi - 200
+2025-05-19T22:42:39.268Z info: GET /api/location?going=Howrah+Railway+Station,+Howrah,+...&leaving=Khir - 200
+2025-05-19T22:42:39.843Z info: GET /api/location?going=Howrah+Railway+Station,+Howrah,+...&leaving=Khirpai - 200
+2025-05-19T22:43:18.994Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T22:43:19.107Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T22:43:21.365Z info: GET /t/travelhistory/+918927473643 - 200
+2025-05-19T22:43:47.749Z info: GET /api/location?going=Kolkata - 200
+2025-05-19T22:43:49.173Z info: GET /api/location?going=Kolkata,+West+Bengal,+India - 200
+2025-05-19T22:43:51.108Z info: GET /api/location?going=Kolkata,+West+Bengal,+India&leaving=Noida - 200
+2025-05-19T22:43:55.451Z info: GET /address/getaddress/+918927473643 - 200
+2025-05-19T22:43:56.750Z info: GET /map/getdistanceandcoordinate?origin=Kolkata,%20West%20Bengal,%20India&destination=Noida,%20Uttar%20Pradesh,%20India - 200
+2025-05-19T22:43:58.910Z info: GET /map/getdistanceandcoordinate?origin=Kolkata,%20West%20Bengal,%20India&destination=Noida,%20Uttar%20Pradesh,%20India - 200
+2025-05-19T22:44:03.461Z info: GET /map/getdistanceandcoordinate?origin=Kolkata,%20West%20Bengal,%20India&destination=Noida,%20Uttar%20Pradesh,%20India - 200
+2025-05-19T22:44:03.606Z info: GET /api/getall/+918927473643 - 200
+2025-05-19T22:44:05.275Z info: POST /t/creates?Leavinglocation=Kolkata,%20West%20Bengal,%20India&Goinglocation=Noida,%20Uttar%20Pradesh,%20India - 200
+2025-05-19T22:44:08.326Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T22:44:08.460Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T22:44:12.776Z info: GET /api/location?going=Koljata - 200
+2025-05-19T22:44:13.883Z info: GET /api/location?going=Kolkata,+West+Bengal,+India - 200
+2025-05-19T22:44:16.544Z info: GET /api/location?going=Kolkata,+West+Bengal,+India&leaving=Noida - 200
+2025-05-19T22:44:30.007Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T22:44:30.110Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T22:44:31.062Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-19T22:44:31.135Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-19T22:44:32.928Z info: GET /t/travelhistory/+918927473643 - 200
+2025-05-19T22:44:41.058Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T22:44:41.161Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T22:44:53.517Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T22:44:53.630Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T22:44:57.774Z info: GET /api/location?leaving=Noida,+Uttar+Pradesh,+India - 200
+2025-05-19T22:44:59.529Z info: GET /api/location?going=Balasore&leaving=Noida,+Uttar+Pradesh,+India - 200
+2025-05-19T22:45:03.889Z info: GET /api/location?going=Balasore,+Odisha,+India - 200
+2025-05-19T22:45:11.797Z info: GET /api/location?going=Balasore,+Odisha,+India&leaving=Noida - 200
+2025-05-19T22:45:23.654Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T22:45:23.754Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T22:45:45.877Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T22:45:45.972Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T22:46:55.553Z info: GET /map/getdistanceandcoordinate?origin=Balasore,%20Odisha,%20India&destination=Noida,%20Uttar%20Pradesh,%20India - 200
+2025-05-19T22:47:09.495Z info: POST /t/booking-request - 200
+2025-05-19T22:47:31.487Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T22:47:31.596Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T22:47:33.931Z info: GET /api/history/+918927473643 - 200
+2025-05-19T22:47:41.987Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T22:47:42.095Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T22:47:50.036Z info: GET /api/location?leaving=Noida,+Uttar+Pradesh,+India - 200
+2025-05-19T22:47:51.761Z info: GET /api/location?going=Kolkata&leaving=Noida,+Uttar+Pradesh,+India - 200
+2025-05-19T22:47:56.141Z info: GET /api/location?going=Kolkata,+West+Bengal,+India - 200
+2025-05-19T22:47:56.755Z info: GET /api/location?going=Kolkata,+West+Bengal,+India&leaving=J - 200
+2025-05-19T22:47:57.337Z info: GET /api/location?going=Kolkata,+West+Bengal,+India - 200
+2025-05-19T22:47:57.837Z info: GET /api/location?going=Kolkata,+West+Bengal,+India&leaving=Ho - 200
+2025-05-19T22:47:58.835Z info: GET /api/location?going=Kolkata,+West+Bengal,+India&leaving=Howrah - 200
+2025-05-19T22:48:15.281Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T22:48:15.380Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T22:48:20.869Z info: GET /api/history/+918927473643 - 200
+2025-05-19T22:48:31.589Z info: GET /earn/earning?phoneNumber=%2B918927473643 - 200
+2025-05-19T22:48:43.795Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T22:48:43.903Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T22:48:45.651Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T22:48:50.034Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T22:49:11.268Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T22:49:11.377Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T22:50:03.685Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T22:50:03.814Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T22:50:08.198Z info: GET /api/location?leaving=Howrah+Railway+Station,+Howrah,+... - 200
+2025-05-19T22:50:29.003Z info: GET /address/getaddress/+918927473643 - 200
+2025-05-19T22:50:35.137Z info: GET /address/getaddress/+918927473643 - 200
+2025-05-19T22:50:42.190Z info: GET /address/getaddress/+918927473643 - 200
+2025-05-19T22:50:52.182Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T22:50:52.287Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T22:50:55.700Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T22:50:57.402Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T22:50:57.531Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T22:51:13.709Z info: GET /address/getaddress/+918927473643 - 200
+2025-05-19T22:51:36.715Z info: GET /address/getaddress/+918927473643 - 200
+2025-05-19T23:06:59.973Z info: Client disconnected: yh2UcnLj0tGiTlR4AAAF
+2025-05-19T23:06:59.988Z info: Socket ID cleared for phoneNumber +918927473643
+2025-05-19T23:13:14.611Z info: A new client connected: 0LkU5D7DesYiohusAAAH
+2025-05-19T23:13:14.627Z info: Socket ID 0LkU5D7DesYiohusAAAH associated with phoneNumber +918927473643
+2025-05-19T23:13:14.733Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T23:13:14.907Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T23:13:15.295Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T23:13:24.739Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T23:13:24.847Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T23:13:33.580Z info: Client disconnected: 0LkU5D7DesYiohusAAAH
+2025-05-19T23:13:33.586Z info: Socket ID cleared for phoneNumber +918927473643
+2025-05-19T23:13:44.182Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T23:13:44.227Z info: A new client connected: xBYFRIpCOKpFFWjiAAAD
+2025-05-19T23:13:44.235Z info: Socket ID xBYFRIpCOKpFFWjiAAAD associated with phoneNumber +918927473643
+2025-05-19T23:13:44.296Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T23:13:48.191Z info: Client disconnected: xBYFRIpCOKpFFWjiAAAD
+2025-05-19T23:13:48.198Z info: Socket ID cleared for phoneNumber +918927473643
+2025-05-19T23:13:51.329Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T23:13:51.466Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T23:13:51.484Z info: A new client connected: wHzpRzhEm2EmdvpiAAAF
+2025-05-19T23:13:51.491Z info: Socket ID wHzpRzhEm2EmdvpiAAAF associated with phoneNumber +918927473643
+2025-05-19T23:13:52.569Z info: Client disconnected: wHzpRzhEm2EmdvpiAAAF
+2025-05-19T23:13:52.575Z info: Socket ID cleared for phoneNumber +918927473643
+2025-05-19T23:14:10.558Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T23:14:10.630Z info: A new client connected: kkubiq7GA0JNzai5AAAJ
+2025-05-19T23:14:10.636Z info: Socket ID kkubiq7GA0JNzai5AAAJ associated with phoneNumber +918927473643
+2025-05-19T23:14:10.694Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T23:14:16.200Z info: Client disconnected: kkubiq7GA0JNzai5AAAJ
+2025-05-19T23:14:16.207Z info: Socket ID cleared for phoneNumber +918927473643
+2025-05-19T23:14:30.358Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T23:14:30.453Z info: A new client connected: Pz9VHLuvPuEL7CHIAAAL
+2025-05-19T23:14:30.460Z info: Socket ID Pz9VHLuvPuEL7CHIAAAL associated with phoneNumber +918927473643
+2025-05-19T23:14:30.489Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T23:14:33.563Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T23:14:38.135Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T23:14:43.902Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T23:14:44.019Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T23:14:45.280Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T23:15:26.267Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T23:15:30.824Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T23:15:52.182Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T23:15:54.116Z info: GET /map/getdistanceandcoordinate?origin=Ssss%20Kolkata%20Naihati%20,%20Kolkata&destination=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India - 200
+2025-05-19T23:16:32.613Z info: GET /map/getdistanceandcoordinate?origin=Ssss%20Kolkata%20Naihati%20,%20Kolkata&destination=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India - 200
+2025-05-19T23:16:44.537Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T23:17:40.807Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T23:17:43.259Z info: GET /map/getdistanceandcoordinate?origin=Ssss%20Kolkata%20Naihati%20,%20Kolkata&destination=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India - 200
+2025-05-19T23:21:29.411Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T23:21:41.375Z info: GET /map/getdistanceandcoordinate?origin=Ssss%20Kolkata%20Naihati%20,%20Kolkata&destination=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India - 200
+2025-05-19T23:23:54.237Z info: GET /map/getdistanceandcoordinate?origin=Ssss%20Kolkata%20Naihati%20,%20Kolkata&destination=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India - 200
+2025-05-19T23:27:40.307Z info: GET /map/getdistanceandcoordinate?origin=Ssss%20Kolkata%20Naihati%20,%20Kolkata&destination=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India - 200
+2025-05-19T23:27:52.611Z info: POST /p/create-order - 200
+2025-05-19T23:28:36.786Z info: GET /map/getdistanceandcoordinate?origin=Ssss%20Kolkata%20Naihati%20,%20Kolkata&destination=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India - 200
+2025-05-19T23:28:44.922Z info: POST /p/create-order - 200
+2025-05-19T23:32:51.469Z info: GET / - 200
+2025-05-19T23:34:06.037Z info: GET /map/getdistanceandcoordinate?origin=Ssss%20Kolkata%20Naihati%20,%20Kolkata&destination=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India - 200
+2025-05-19T23:34:15.128Z info: GET /map/getdistanceandcoordinate?origin=Ssss%20Kolkata%20Naihati%20,%20Kolkata&destination=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India - 200
+2025-05-19T23:34:31.687Z info: GET /map/getdistanceandcoordinate?origin=Ssss%20Kolkata%20Naihati%20,%20Kolkata&destination=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India - 200
+2025-05-19T23:34:42.727Z info: POST /p/create-order - 200
+2025-05-19T23:35:36.704Z info: GET /map/getdistanceandcoordinate?origin=Ssss%20Kolkata%20Naihati%20,%20Kolkata&destination=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India - 200
+2025-05-19T23:35:50.901Z info: POST /p/create-order - 200
+2025-05-19T23:36:29.597Z info: GET /map/getdistanceandcoordinate?origin=Ssss%20Kolkata%20Naihati%20,%20Kolkata&destination=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India - 200
+2025-05-19T23:36:34.588Z info: POST /p/create-order - 200
+2025-05-19T23:36:42.856Z info: GET /map/getdistanceandcoordinate?origin=Ssss%20Kolkata%20Naihati%20,%20Kolkata&destination=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India - 200
+2025-05-19T23:38:00.734Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T23:38:47.743Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T23:38:55.540Z info: GET /map/getdistanceandcoordinate?origin=Ssss%20Kolkata%20Naihati%20,%20Kolkata&destination=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India - 200
+2025-05-19T23:39:09.462Z info: POST /p/create-order - 200
+2025-05-19T23:42:41.558Z info: GET /map/getdistanceandcoordinate?origin=Ssss%20Kolkata%20Naihati%20,%20Kolkata&destination=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India - 200
+2025-05-19T23:42:44.272Z info: POST /p/create-order - 200
+2025-05-19T23:44:25.713Z info: GET /map/getdistanceandcoordinate?origin=Ssss%20Kolkata%20Naihati%20,%20Kolkata&destination=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India - 200
+2025-05-19T23:44:33.622Z info: GET /map/getdistanceandcoordinate?origin=Ssss%20Kolkata%20Naihati%20,%20Kolkata&destination=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India - 200
+2025-05-19T23:45:01.827Z info: POST /p/create-order - 200
+2025-05-19T23:45:11.828Z info: GET /map/getdistanceandcoordinate?origin=Ssss%20Kolkata%20Naihati%20,%20Kolkata&destination=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India - 200
+2025-05-19T23:45:14.046Z info: POST /p/create-order - 200
+2025-05-19T23:50:25.198Z info: GET /.env - 200
+2025-05-19T23:50:26.424Z info: POST / - 200
+2025-05-19T23:51:51.815Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T23:51:53.254Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T23:51:53.358Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T23:51:54.853Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-19T23:51:54.911Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-19T23:51:57.413Z info: GET /earn/earning?phoneNumber=%2B918927473643 - 200
+2025-05-19T23:55:38.958Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T23:55:39.067Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T23:55:39.839Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-19T23:55:43.841Z info: GET /map/getdistanceandcoordinate?origin=Ssss%20Kolkata%20Naihati%20,%20Kolkata&destination=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India - 200
+2025-05-19T23:55:47.086Z info: GET /map/getdistanceandcoordinate?origin=Ssss%20Kolkata%20Naihati%20,%20Kolkata&destination=Howrah%20Railway%20Station,%20Howrah,%20West%20Bengal,%20India - 200
+2025-05-19T23:55:48.206Z info: POST /p/create-order - 200
+2025-05-19T23:57:22.686Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-19T23:57:23.959Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-20T00:21:25.120Z info: GET / - 200
+2025-05-20T00:25:35.311Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-20T00:25:36.963Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-20T00:25:38.205Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-20T00:25:38.285Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-20T00:25:48.507Z info: GET /api/history/+918927473643 - 200
+2025-05-20T00:25:54.105Z info: GET /map/getdistanceandcoordinate?origin=Howrah%20Railway%20Station%2C%20Howrah%2C%20West%20Bengal%2C%20India&destination=Khirpai%2C%20West%20Bengal%2C%20India - 200
+2025-05-20T00:25:54.190Z info: GET /editp/consignment-collected-status/phoneNumber=+918927473643?consignmentId=947d5fb8-ab2d-45b0-8ee7-2248a9e1bf04 - 200
+2025-05-20T00:25:54.189Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-20T00:26:30.116Z info: GET /map/getdistanceandcoordinate?origin=Kolkata%2C%20West%20Bengal%2C%20India&destination=Howrah%20Railway%20Station%2C%20Howrah%2C%20West%20Bengal%2C%20India - 200
+2025-05-20T00:26:30.195Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-20T00:26:30.196Z info: GET /editp/consignment-collected-status/phoneNumber=+918927473643?consignmentId=aeb9e633-2737-48fb-b753-cfb1e36e2834 - 200
+2025-05-20T00:40:13.846Z info: GET /.env - 200
+2025-05-20T00:40:14.526Z info: POST / - 200
+2025-05-20T00:58:41.013Z info: GET / - 200
+2025-05-20T01:02:31.855Z info: Client disconnected: Pz9VHLuvPuEL7CHIAAAL
+2025-05-20T01:02:31.872Z info: Socket ID cleared for phoneNumber +918927473643
+2025-05-20T01:18:46.665Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-20T01:18:46.777Z info: A new client connected: cVg2BuN2IAwUkYzDAAAN
+2025-05-20T01:18:46.791Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-20T01:18:46.792Z info: Socket ID cVg2BuN2IAwUkYzDAAAN associated with phoneNumber +918927473643
+2025-05-20T01:18:54.231Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-20T01:18:54.280Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-20T01:18:59.187Z info: GET /api/history/+918927473643 - 200
+2025-05-20T01:19:02.350Z info: GET /map/getdistanceandcoordinate?origin=Howrah%20Railway%20Station%2C%20Howrah%2C%20West%20Bengal%2C%20India&destination=Kolkata%2C%20West%20Bengal%2C%20India - 200
+2025-05-20T01:19:02.429Z info: GET /editp/consignment-collected-status/phoneNumber=+918927473643?consignmentId=027e68c6-a62c-4bb9-b313-9e0dec02dae0 - 200
+2025-05-20T01:19:02.428Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-20T01:19:32.648Z info: GET /map/getdistanceandcoordinate?origin=Howrah%20Railway%20Station%2C%20Howrah%2C%20West%20Bengal%2C%20India&destination=Khirpai%2C%20West%20Bengal%2C%20India - 200
+2025-05-20T01:19:32.724Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-20T01:19:32.725Z info: GET /editp/consignment-collected-status/phoneNumber=+918927473643?consignmentId=947d5fb8-ab2d-45b0-8ee7-2248a9e1bf04 - 200
+2025-05-20T01:19:49.016Z info: GET /map/getdistanceandcoordinate?origin=Howrah%20Railway%20Station%2C%20Howrah%2C%20West%20Bengal%2C%20India&destination=Kolkata%2C%20West%20Bengal%2C%20India - 200
+2025-05-20T01:19:49.092Z info: GET /editp/consignment-collected-status/phoneNumber=+918927473643?consignmentId=027e68c6-a62c-4bb9-b313-9e0dec02dae0 - 200
+2025-05-20T01:19:49.093Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-20T01:20:58.595Z info: Client disconnected: cVg2BuN2IAwUkYzDAAAN
+2025-05-20T01:20:58.611Z info: Socket ID cleared for phoneNumber +918927473643
+2025-05-20T01:21:11.955Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-20T01:21:12.022Z info: A new client connected: ObWmWYcgOJ0Omt2IAAAH
+2025-05-20T01:21:12.032Z info: Socket ID ObWmWYcgOJ0Omt2IAAAH associated with phoneNumber +918927473643
+2025-05-20T01:21:12.073Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-20T01:21:17.528Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-20T01:21:17.583Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-20T01:21:20.515Z info: GET /api/history/+918927473643 - 200
+2025-05-20T01:21:22.714Z info: GET /map/getdistanceandcoordinate?origin=Kolkata%2C%20West%20Bengal%2C%20India&destination=Howrah%20Railway%20Station%2C%20Howrah%2C%20West%20Bengal%2C%20India - 200
+2025-05-20T01:21:22.794Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-20T01:21:22.795Z info: GET /editp/consignment-collected-status/phoneNumber=+918927473643?consignmentId=aeb9e633-2737-48fb-b753-cfb1e36e2834 - 200
+2025-05-20T01:21:33.620Z info: GET /map/getdistanceandcoordinate?origin=Howrah%20Railway%20Station%2C%20Howrah%2C%20West%20Bengal%2C%20India&destination=Kolkata%2C%20West%20Bengal%2C%20India - 200
+2025-05-20T01:21:33.702Z info: GET /editp/consignment-collected-status/phoneNumber=+918927473643?consignmentId=027e68c6-a62c-4bb9-b313-9e0dec02dae0 - 200
+2025-05-20T01:21:33.701Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-20T01:22:25.420Z info: GET /.env - 200
+2025-05-20T01:22:25.559Z info: POST / - 200
+2025-05-20T01:23:01.526Z info: GET /map/getdistanceandcoordinate?origin=Howrah%20Railway%20Station%2C%20Howrah%2C%20West%20Bengal%2C%20India&destination=Kolkata%2C%20West%20Bengal%2C%20India - 200
+2025-05-20T01:23:01.605Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-20T01:23:01.606Z info: GET /editp/consignment-collected-status/phoneNumber=+918927473643?consignmentId=027e68c6-a62c-4bb9-b313-9e0dec02dae0 - 200
+2025-05-20T01:41:29.295Z info: Client disconnected: ObWmWYcgOJ0Omt2IAAAH
+2025-05-20T01:41:29.310Z info: Socket ID cleared for phoneNumber +918927473643
+2025-05-20T01:42:03.989Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-20T01:42:04.083Z info: A new client connected: VBYKRSoQKXFICy_yAAAP
+2025-05-20T01:42:04.089Z info: Socket ID VBYKRSoQKXFICy_yAAAP associated with phoneNumber +918927473643
+2025-05-20T01:42:04.095Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-20T01:42:05.863Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-20T01:42:05.953Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-20T01:42:10.480Z info: GET /api/history/+918927473643 - 200
+2025-05-20T01:42:14.067Z info: GET /map/getdistanceandcoordinate?origin=Howrah%20Railway%20Station%2C%20Howrah%2C%20West%20Bengal%2C%20India&destination=Kolkata%2C%20West%20Bengal%2C%20India - 200
+2025-05-20T01:42:14.144Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-20T01:42:14.149Z info: GET /editp/consignment-collected-status/phoneNumber=+918927473643?consignmentId=027e68c6-a62c-4bb9-b313-9e0dec02dae0 - 200
+2025-05-20T01:50:35.341Z info: Client disconnected: VBYKRSoQKXFICy_yAAAP
+2025-05-20T01:50:35.356Z info: Socket ID cleared for phoneNumber +918927473643
+2025-05-20T01:52:33.123Z info: POST /hello.world?%ADd+allow_url_include%3d1+%ADd+auto_prepend_file%3dphp://input - 200
+2025-05-20T01:52:33.561Z info: GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-20T01:52:33.947Z info: GET /vendor/phpunit/phpunit/Util/PHP/eval-stdin.php - 200
+2025-05-20T01:52:34.428Z info: GET /vendor/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-20T01:52:34.903Z info: GET /vendor/phpunit/Util/PHP/eval-stdin.php - 200
+2025-05-20T01:52:35.400Z info: GET /vendor/phpunit/phpunit/LICENSE/eval-stdin.php - 200
+2025-05-20T01:52:36.156Z info: GET /vendor/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-20T01:52:36.883Z info: GET /phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-20T01:52:37.296Z info: GET /phpunit/phpunit/Util/PHP/eval-stdin.php - 200
+2025-05-20T01:52:37.685Z info: GET /phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-20T01:52:38.057Z info: GET /phpunit/Util/PHP/eval-stdin.php - 200
+2025-05-20T01:52:38.496Z info: GET /lib/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-20T01:52:39.221Z info: GET /lib/phpunit/phpunit/Util/PHP/eval-stdin.php - 200
+2025-05-20T01:52:39.629Z info: GET /lib/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-20T01:52:40.067Z info: GET /lib/phpunit/Util/PHP/eval-stdin.php - 200
+2025-05-20T01:52:40.536Z info: GET /lib/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-20T01:52:41.034Z info: GET /laravel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-20T01:52:41.526Z info: GET /www/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-20T01:52:42.019Z info: GET /ws/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-20T01:52:42.814Z info: GET /yii/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-20T01:52:43.213Z info: GET /zend/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-20T01:52:43.630Z info: GET /ws/ec/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-20T01:52:44.030Z info: GET /V2/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-20T01:52:44.821Z info: GET /tests/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-20T01:52:45.219Z info: GET /test/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-20T01:52:45.595Z info: GET /testing/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-20T01:52:45.966Z info: GET /api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-20T01:52:46.355Z info: GET /demo/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-20T01:52:46.764Z info: GET /cms/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-20T01:52:47.464Z info: GET /crm/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-20T01:52:47.860Z info: GET /admin/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-20T01:52:48.613Z info: GET /backup/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-20T01:52:49.107Z info: GET /blog/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-20T01:52:49.496Z info: GET /workspace/drupal/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-20T01:52:51.190Z info: GET /panel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-20T01:52:51.620Z info: GET /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-20T01:52:51.978Z info: GET /apps/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-20T01:52:52.326Z info: GET /app/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php - 200
+2025-05-20T01:52:52.677Z info: GET /index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello - 200
+2025-05-20T01:52:53.019Z info: GET /public/index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello - 200
+2025-05-20T01:52:53.931Z info: GET /index.php?lang=../../../../../../../../usr/local/lib/php/pearcmd&+config-create+/&/<?echo(md5("hi"));?>+/tmp/index1.php - 200
+2025-05-20T01:52:54.355Z info: GET /index.php?lang=../../../../../../../../tmp/index1 - 200
+2025-05-20T01:52:54.694Z info: GET /containers/json - 200
+2025-05-20T02:05:55.585Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-20T02:05:55.673Z info: A new client connected: rb4C4nWfMafxYm-vAAAR
+2025-05-20T02:05:55.692Z info: Socket ID rb4C4nWfMafxYm-vAAAR associated with phoneNumber +918927473643
+2025-05-20T02:05:55.698Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-20T02:05:59.813Z info: Client disconnected: rb4C4nWfMafxYm-vAAAR
+2025-05-20T02:05:59.818Z info: Socket ID cleared for phoneNumber +918927473643
+2025-05-20T02:06:17.647Z info: GET /n/getnotification/travel/+918927473643 - 200
+2025-05-20T02:06:17.728Z info: A new client connected: aiFGM9MuCxftvItCAAAJ
+2025-05-20T02:06:17.735Z info: Socket ID aiFGM9MuCxftvItCAAAJ associated with phoneNumber +918927473643
+2025-05-20T02:06:17.771Z info: GET /n/getnotification/consignment/+918927473643 - 200
+2025-05-20T02:06:19.149Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-20T02:06:19.352Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-20T02:06:20.987Z info: GET /api/history/+918927473643 - 200
+2025-05-20T02:06:23.567Z info: GET /map/getdistanceandcoordinate?origin=Howrah%20Railway%20Station%2C%20Howrah%2C%20West%20Bengal%2C%20India&destination=Kolkata%2C%20West%20Bengal%2C%20India - 200
+2025-05-20T02:06:23.647Z info: GET /api/getall/+918927473643?phoneNumber=%2B918927473643 - 200
+2025-05-20T02:06:23.647Z info: GET /editp/consignment-collected-status/phoneNumber=+918927473643?consignmentId=027e68c6-a62c-4bb9-b313-9e0dec02dae0 - 200
