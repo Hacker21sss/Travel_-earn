@@ -276,8 +276,13 @@ module.exports.getConsignmentsByDate = async (req, res) => {
     console.log("Going Coordinates:", goingCoords);
 
     // Normalize phoneNumber: Ensure it matches the stored format (+918927473643)
-    const normalizedPhoneNumber = `+${String(phoneNumber).replace(/\D/g, '').trim()}`;
-    console.log('normalizedPhoneNumber', normalizedPhoneNumber); // Debug normalized phoneNumber
+   let cleaned = String(phoneNumber).replace(/\D/g, "").trim(); 
+    if (cleaned.length === 10) {
+      cleaned = +91${cleaned}; 
+    } else {
+      cleaned = +${cleaned};
+    }
+    const normalizedPhoneNumber = cleaned
 
     // Query the database
     const availableRides = await Consignment.find({
