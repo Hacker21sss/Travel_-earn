@@ -278,9 +278,9 @@ module.exports.getConsignmentsByDate = async (req, res) => {
     // Normalize phoneNumber: Ensure it matches the stored format (+918927473643)
    let cleaned = String(phoneNumber).replace(/\D/g, "").trim(); 
     if (cleaned.length === 10) {
-      cleaned = +91${cleaned}; 
+      cleaned = `+91${cleaned}`; 
     } else {
-      cleaned = +${cleaned};
+      cleaned = `+${cleaned}`;
     }
     const normalizedPhoneNumber = cleaned
 
