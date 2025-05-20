@@ -31,6 +31,7 @@ const line = require('./user/router/rating.route');
 const location = require('./user/router/locationroute');
 const rideroute = require('./traveller/router/ride.route');
 const { initializationsocket, getIO } = require('./socket');
+const trackRiderLiveLocation=require('./user/controller/TraveldetailsController')
 
 dotenv.config();
 
@@ -151,6 +152,9 @@ app.use('/n', notification);
 app.use('/p', payment);
 app.use('/order', rideroute, orderhistory);
 app.use('/api', consignmentdetail, location);
+app.get('/track-rider/:travelId/:phoneNumber', (req, res) => {
+  trackRiderLiveLocation.trackRiderLiveLocation(req, res, io);
+});
 
 app.get('/', (req, res) => {
     res.send('Welcome to the server!');

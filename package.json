@@ -43,5 +43,15 @@
     "uuid4": "^2.0.3",
     "winston": "^3.11.0"
   },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hacker21sss/Travel_-earn.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Hacker21sss/Travel_-earn/issues"
+  },
+  "homepage": "https://github.com/Hacker21sss/Travel_-earn#readme",
   "description": ""
 }
