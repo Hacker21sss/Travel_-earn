@@ -8,7 +8,8 @@ module.exports. consignmenttocarry=async(req,res)=>{
 
 
     try{
-        const consige=await consignmenttocarry.findOne({travelId});
+       const consige = await consignmenttocarry.find({ travelId });
+
         if(!consige){
             return res.status(404).json({message:'no request available '});
         } 
