@@ -9,6 +9,7 @@ router.get('/getnotification/consignment/:phoneNumber',notify.getUserNotificatio
 // router.get('/get-notify-rider/:phoneNumber',notify.getnotificationforrider);
 router.get('/getnotification/travel/:phoneNumber',notify.getNotifications);
 router.post('/cancel-ride/:phoneNumber/:travelId',notify.cancelride);
+router.post('/update-all-notifications', notify.updateAllNotifications);
 // router.get('/ride-notification/:phoneNumber',notify.getRideNotifications);
 // router.get('/consignment-notification/:phoneNumber',notify.getConsignmentNotifications); 
 

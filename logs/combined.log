@@ -198,3 +198,40 @@
 2025-05-23T10:18:54.422Z info: Socket.IO connection status: Connected
 2025-05-23T10:18:55.307Z info: MongoDB connected
 2025-05-23T10:18:56.950Z info: GET /n/getnotification/travel/+917003855041 - 200
+2025-05-23T11:05:17.510Z info: Server is running on port 5002
+2025-05-23T11:05:17.513Z info: Socket.IO connection status: Connected
+2025-05-23T11:05:19.075Z info: MongoDB connected
+2025-05-23T11:05:21.341Z info: GET /n/getnotification/travel/+917003855041 - 200
+2025-05-23T11:12:19.546Z info: Server is running on port 5002
+2025-05-23T11:12:19.549Z info: Socket.IO connection status: Connected
+2025-05-23T11:12:20.266Z info: MongoDB connected
+2025-05-23T11:12:32.297Z info: Server is running on port 5002
+2025-05-23T11:12:32.300Z info: Socket.IO connection status: Connected
+2025-05-23T11:12:33.627Z info: MongoDB connected
+2025-05-23T11:13:20.969Z info: Server is running on port 5002
+2025-05-23T11:13:20.971Z info: Socket.IO connection status: Connected
+2025-05-23T11:13:21.922Z info: MongoDB connected
+2025-05-23T11:13:24.816Z info: Server is running on port 5002
+2025-05-23T11:13:24.819Z info: Socket.IO connection status: Connected
+2025-05-23T11:13:26.062Z info: MongoDB connected
+2025-05-23T11:13:52.678Z info: POST /n/update-existing-notification - 200
+2025-05-23T11:13:59.940Z info: POST /n/update-existing-notifications - 200
+2025-05-23T11:14:17.831Z info: GET /n/getnotification/travel/+917003855041 - 200
+2025-05-23T11:14:40.140Z info: Server is running on port 5002
+2025-05-23T11:14:40.142Z info: Socket.IO connection status: Connected
+2025-05-23T11:14:41.326Z info: MongoDB connected
+2025-05-23T11:14:46.819Z info: Server is running on port 5002
+2025-05-23T11:14:46.822Z info: Socket.IO connection status: Connected
+2025-05-23T11:14:47.856Z info: MongoDB connected
+2025-05-23T11:15:37.709Z info: Server is running on port 5002
+2025-05-23T11:15:37.711Z info: Socket.IO connection status: Connected
+2025-05-23T11:15:39.048Z info: MongoDB connected
+2025-05-23T11:15:40.591Z info: Server is running on port 5002
+2025-05-23T11:15:40.593Z info: Socket.IO connection status: Connected
+2025-05-23T11:15:41.515Z info: MongoDB connected
+2025-05-23T11:18:18.959Z info: Server is running on port 5002
+2025-05-23T11:18:18.962Z info: Socket.IO connection status: Connected
+2025-05-23T11:18:20.694Z info: MongoDB connected
+2025-05-23T11:18:30.588Z info: Server is running on port 5002
+2025-05-23T11:18:30.591Z info: Socket.IO connection status: Connected
+2025-05-23T11:18:31.884Z info: MongoDB connected

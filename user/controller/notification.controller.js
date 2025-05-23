@@ -419,3 +419,31 @@ module.exports.consignmenttocarryrequest = async (req, res) => {
 //     res.status(500).json({ message: "Internal server error" });
 //   }
 // };
+
+module.exports.updateAllNotifications = async (req, res) => {
+  try {
+    console.log("Starting to update all notifications...");
+    
+    // Update notifications where paymentstatus doesn't exist
+    const result = await Notification.updateMany(
+      { paymentstatus: { $exists: false } },
+      { $set: { paymentstatus: "pending" } }
+    );
+
+    console.log("Update result:", result);
+    
+    return res.status(200).json({
+      status: "success",
+      message: "Successfully updated existing notifications",
+      modifiedCount: result.modifiedCount
+    });
+  } catch (error) {
+    console.error("Error updating notifications:", error);
+    return res.status(500).json({
+      status: "error",
+      message: "Failed to update notifications",
+      error: error.message
+    });
+  }
+};
+
