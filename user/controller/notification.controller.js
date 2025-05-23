@@ -4,7 +4,7 @@ const earn = require("../../consignment/conroller/consignment.details");
 const travel = require("../../user/model/traveldetails");
 const notification = require("../../user/model/notification");
 const user = require("../../user/model/Profile");
-const travelhistory=require("../../user/model/travel.history")
+const travelhistory = require("../../user/model/travel.history")
 
 const moment = require("moment");
 
@@ -48,7 +48,7 @@ module.exports.getNotifications = async (req, res) => {
         const consignment = await Consignment.findOne({
           consignmentId: notif.consignmentId,
         });
-           
+
 
         if (notif.notificationType === "consignment_request") {
           notificationData = {
@@ -59,10 +59,10 @@ module.exports.getNotifications = async (req, res) => {
             time: moment(notif.createdAt).format("h:mm A"),
             consignmentId: notif.consignmentId,
             travelId: notif.travelId,
-            requestedby:notif.requestedby,
-            requestto:notif.requestto,
+            requestedby: notif.requestedby,
+            requestto: notif.requestto,
             earning: notif.earning || "0",
-            travellername: notif.travellername,
+            travellername: notif.travellername
           };
         } else if (notif.notificationType === "ride_request") {
           notificationData = {
@@ -73,13 +73,13 @@ module.exports.getNotifications = async (req, res) => {
             time: moment(notif.createdAt).format("h:mm A"),
             consignmentId: notif.consignmentId,
             travelId: notif.travelId,
-            requestedby:notif.requestedby,
-            requestto:notif.requestto,
+            requestedby: notif.requestedby,
+            requestto: notif.requestto,
             earning: notif.earning || "0",
-            travellername: notif.travellername,
+            travellername: notif.travellername
           };
         }
-        else if(notif.notificationType === "ride_accept"){
+        else if (notif.notificationType === "ride_accept") {
           notificationData = {
             title: " Ride Request accept",
             subtitle: `you accepted the  Ride request`,
@@ -88,11 +88,12 @@ module.exports.getNotifications = async (req, res) => {
             time: moment(notif.createdAt).format("h:mm A"),
             consignmentId: notif.consignmentId,
             travelId: notif.travelId,
-            requestedby:notif.requestedby,
-            requestto:notif.requestto,
+            requestedby: notif.requestedby,
+            requestto: notif.requestto,
             earning: notif.earning || "0",
             travellername: notif?.travellername,
-            profilepicture:sender.profilePicture
+            profilepicture: sender.profilePicture,
+            paymentstatus: notif.paymentstatus || "pending"
           };
         }
 
@@ -131,7 +132,7 @@ exports.getUserNotifications = async (req, res) => {
 
     // Fetch notifications for the user from today
     const notifications = await Notification.find({
-      requestedby:phoneNumber,
+      requestedby: phoneNumber,
       createdAt: { $gte: today },
     })
       .sort({ createdAt: -1 })
@@ -157,11 +158,11 @@ exports.getUserNotifications = async (req, res) => {
               : null,
             notif.consignmentId
               ? Consignment.findOne({
-                  consignmentId: notif.consignmentId,
-                }).lean()
+                consignmentId: notif.consignmentId,
+              }).lean()
               : null,
           ]);
-       const userprofile = await user.findOne({ phoneNumber: notif.requestedby }).lean();
+          const userprofile = await user.findOne({ phoneNumber: notif.requestedby }).lean();
 
 
           // Fetch sender and receiver names
@@ -175,7 +176,7 @@ exports.getUserNotifications = async (req, res) => {
           let title, subtitle, notificationType, notificationFormat;
 
           switch (notif.notificationType) {
-           
+
 
             case "ride_accept":
               title = "Ride Approved";
@@ -223,8 +224,8 @@ exports.getUserNotifications = async (req, res) => {
             consignmentId: notif.consignmentId || null,
             pickup: notif.pickup,
             dropoff: notif.dropoff,
-requestedby:notif.requestto,
-requestto:notif.requestto,
+            requestedby: notif.requestto,
+            requestto: notif.requestto,
 
             travelmode: notif.travelmode,
 
@@ -233,7 +234,8 @@ requestto:notif.requestto,
             pickuptime: notif.pickuptime,
 
             dropofftime: notif.dropofftime,
-            profilepicture:userprofile.profilePicture
+            profilepicture: userprofile.profilePicture,
+            paymentstatus: notif.paymentstatus || "pending"
           };
         } catch (error) {
           console.error("Error processing notification:", error.message);
