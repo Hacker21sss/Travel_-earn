@@ -21,7 +21,7 @@ router.post('/end-ride/:travelId',travelController.endtravel);
 router.get('/travelhistory/:phoneNumber',travelController.getTravelHistory);
 router.get('/request/:phoneNumber',travelController.consignmentcarryrequest);
 router.post('/update-current-location/:phoneNumber',travelController.driverstatuslocationupdate);
-router.get('/get-current-location/:phoneNumber',travelController.trackRiderLiveLocation)
+router.get('/get-current-location/:phoneNumber/:travelId',travelController.trackRiderLiveLocation)
 
 
 module.exports = router;
