@@ -235,3 +235,18 @@
 2025-05-23T11:18:30.588Z info: Server is running on port 5002
 2025-05-23T11:18:30.591Z info: Socket.IO connection status: Connected
 2025-05-23T11:18:31.884Z info: MongoDB connected
+2025-05-23T12:12:37.035Z info: Server is running on port 5002
+2025-05-23T12:12:37.039Z info: Socket.IO connection status: Connected
+2025-05-23T12:12:37.998Z info: MongoDB connected
+2025-05-23T12:13:03.553Z info: GET /n/getnotification/consignmnet/+917003855041 - 200
+2025-05-23T12:13:13.394Z info: GET /n/getnotification/consignment/+917003855041 - 200
+2025-05-23T12:14:08.890Z info: Server is running on port 5002
+2025-05-23T12:14:08.892Z info: Socket.IO connection status: Connected
+2025-05-23T12:14:09.992Z info: MongoDB connected
+2025-05-23T12:14:19.745Z info: Server is running on port 5002
+2025-05-23T12:14:19.747Z info: Socket.IO connection status: Connected
+2025-05-23T12:14:20.571Z info: MongoDB connected
+2025-05-23T12:14:22.041Z info: Server is running on port 5002
+2025-05-23T12:14:22.043Z info: Socket.IO connection status: Connected
+2025-05-23T12:14:23.175Z info: MongoDB connected
+2025-05-23T12:14:24.617Z info: GET /n/getnotification/consignment/+917003855041 - 200

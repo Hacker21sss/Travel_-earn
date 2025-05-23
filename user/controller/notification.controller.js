@@ -164,7 +164,7 @@ exports.getUserNotifications = async (req, res) => {
               }).lean()
               : null,
           ]);
-          const userprofile = await user.findOne({ phoneNumber: notif.requestedby }).lean();
+          const userprofile = await user.findOne({ phoneNumber: notif.requestto }).lean();
 
 
           // Fetch sender and receiver names
@@ -236,7 +236,7 @@ exports.getUserNotifications = async (req, res) => {
             pickuptime: notif.pickuptime,
 
             dropofftime: notif.dropofftime,
-            profilepicture: sender?.profilePicture,
+            profilepicture: userprofile?.profilePicture,
             paymentstatus: notif.paymentstatus || "pending"
           };
         } catch (error) {
