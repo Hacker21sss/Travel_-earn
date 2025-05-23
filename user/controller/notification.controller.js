@@ -62,7 +62,8 @@ module.exports.getNotifications = async (req, res) => {
             requestedby: notif.requestedby,
             requestto: notif.requestto,
             earning: notif.earning || "0",
-            travellername: notif.travellername
+            travellername: notif.travellername,
+            profilepicture: sender?.profilePicture
           };
         } else if (notif.notificationType === "ride_request") {
           notificationData = {
@@ -76,7 +77,8 @@ module.exports.getNotifications = async (req, res) => {
             requestedby: notif.requestedby,
             requestto: notif.requestto,
             earning: notif.earning || "0",
-            travellername: notif.travellername
+            travellername: notif.travellername,
+            profilepicture: sender?.profilePicture
           };
         }
         else if (notif.notificationType === "ride_accept") {
@@ -92,7 +94,7 @@ module.exports.getNotifications = async (req, res) => {
             requestto: notif.requestto,
             earning: notif.earning || "0",
             travellername: notif?.travellername,
-            profilepicture: sender.profilePicture,
+            profilepicture: sender?.profilePicture,
             paymentstatus: notif.paymentstatus || "pending"
           };
         }
