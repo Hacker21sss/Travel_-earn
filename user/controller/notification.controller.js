@@ -236,7 +236,7 @@ exports.getUserNotifications = async (req, res) => {
             pickuptime: notif.pickuptime,
 
             dropofftime: notif.dropofftime,
-            profilepicture: userprofile.profilePicture,
+            profilepicture: sender?.profilePicture,
             paymentstatus: notif.paymentstatus || "pending"
           };
         } catch (error) {

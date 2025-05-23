@@ -126,7 +126,7 @@ const verifyOrder = async (req, res) => {
         $set:{"paymentstatus":"successful"}
       }
     )
-
+    
     console.log(note);
     const completedUpdate = await Earning.updateOne(
       { phoneNumber, "transactions.paymentId": razorpay_payment_id },
