@@ -161,7 +161,8 @@ exports.getUserNotifications = async (req, res) => {
                 }).lean()
               : null,
           ]);
-          const userprofile=await user.findOne({notif.requestedby:phoneNumber});
+       const userprofile = await user.findOne({ phoneNumber: notif.requestedby }).lean();
+
 
           // Fetch sender and receiver names
           const sender = consignmentData
