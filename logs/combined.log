@@ -1,0 +1,132 @@
+2025-05-22T23:38:19.781Z info: Server is running on port 5002
+2025-05-22T23:38:19.783Z info: Socket.IO connection status: Connected
+2025-05-22T23:38:20.672Z info: MongoDB connected
+2025-05-22T23:38:34.479Z info: Server is running on port 5002
+2025-05-22T23:38:34.483Z info: Socket.IO connection status: Connected
+2025-05-22T23:38:35.019Z info: MongoDB connected
+2025-05-23T00:02:29.644Z info: POST /t/booking-request - 200
+2025-05-23T00:52:15.102Z info: Server is running on port 5002
+2025-05-23T00:52:15.104Z info: Socket.IO connection status: Connected
+2025-05-23T00:52:16.089Z info: MongoDB connected
+2025-05-23T01:08:02.714Z info: Server is running on port 5002
+2025-05-23T01:08:02.716Z info: Socket.IO connection status: Connected
+2025-05-23T01:08:03.572Z info: MongoDB connected
+2025-05-23T01:09:44.994Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-31&travelMode=train - 200
+2025-05-23T01:09:45.012Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-31&travelMode=train - 200
+2025-05-23T01:09:45.044Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-31&travelMode=train&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:09:47.567Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-31&travelMode=train&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:09:47.717Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-31&travelMode=train&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:09:47.723Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-31&travelMode=train&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:12:51.506Z info: Server is running on port 5002
+2025-05-23T01:12:51.509Z info: Socket.IO connection status: Connected
+2025-05-23T01:12:52.445Z info: MongoDB connected
+2025-05-23T01:12:58.242Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-31&travelMode=train - 200
+2025-05-23T01:12:58.258Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-31&travelMode=train - 200
+2025-05-23T01:12:58.264Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-31&travelMode=train&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:13:10.212Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-31&travelMode=train&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:13:10.339Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-31&travelMode=train&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:13:10.350Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-31&travelMode=train&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:14:00.900Z info: Server is running on port 5002
+2025-05-23T01:14:00.903Z info: Socket.IO connection status: Connected
+2025-05-23T01:14:01.994Z info: MongoDB connected
+2025-05-23T01:14:02.007Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-31&travelMode=train - 200
+2025-05-23T01:14:02.024Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-31&travelMode=train - 200
+2025-05-23T01:14:02.034Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-31&travelMode=train&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:14:04.857Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-31&travelMode=train&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:14:04.996Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-31&travelMode=train&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:14:05.001Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-31&travelMode=train&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:14:32.126Z info: Server is running on port 5002
+2025-05-23T01:14:32.128Z info: Socket.IO connection status: Connected
+2025-05-23T01:14:32.685Z info: MongoDB connected
+2025-05-23T01:14:36.463Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-31&travelMode=train - 200
+2025-05-23T01:14:36.476Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-31&travelMode=train&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:14:36.481Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-31&travelMode=train - 200
+2025-05-23T01:14:39.691Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-31&travelMode=train&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:14:39.826Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-31&travelMode=train&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:14:39.830Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-31&travelMode=train&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:25:56.505Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-31&travelMode=train - 200
+2025-05-23T01:25:56.511Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-31&travelMode=train&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:25:56.537Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-31&travelMode=train - 200
+2025-05-23T01:26:00.359Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-31&travelMode=train&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:26:00.464Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-31&travelMode=train&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:26:00.476Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-31&travelMode=train&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:28:03.044Z info: Server is running on port 5002
+2025-05-23T01:28:03.047Z info: Socket.IO connection status: Connected
+2025-05-23T01:28:03.823Z info: MongoDB connected
+2025-05-23T01:28:05.600Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-31&travelMode=train - 200
+2025-05-23T01:28:05.617Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-31&travelMode=train - 200
+2025-05-23T01:28:05.626Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-31&travelMode=train&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:28:08.532Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-31&travelMode=train&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:28:08.583Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-31&travelMode=train&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:28:08.591Z info: GET /t/search-rides?leavingLocation=Balasore,+Odisha,+India&goingLocation=Noida,+Uttar+Pradesh,+India&date=2025-05-31&travelMode=train&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:34:06.527Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-27&travelMode=train - 200
+2025-05-23T01:34:06.609Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-27&travelMode=train - 200
+2025-05-23T01:34:06.615Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-27&travelMode=train&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:34:08.739Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-27&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:34:08.745Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-27&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:34:08.759Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-27&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:34:34.209Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:38:26.786Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-27&travelMode=train - 200
+2025-05-23T01:38:26.793Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-27&travelMode=train - 200
+2025-05-23T01:38:26.812Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-27&travelMode=train&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:38:28.844Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-27&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:38:28.846Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-27&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:38:28.849Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-27&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:38:41.241Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:39:38.601Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=train - 200
+2025-05-23T01:39:38.608Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=train - 200
+2025-05-23T01:39:38.676Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=train&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:39:40.965Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:39:40.969Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:39:40.971Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:40:59.981Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=train - 200
+2025-05-23T01:40:59.986Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=train - 200
+2025-05-23T01:41:00.008Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=train&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:41:02.359Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:41:02.363Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:41:02.365Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:41:38.938Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=train&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:41:38.944Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=train - 200
+2025-05-23T01:41:38.957Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=train - 200
+2025-05-23T01:41:41.308Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:41:41.361Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:41:41.376Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:45:33.172Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=train - 200
+2025-05-23T01:45:33.179Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=train&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:45:33.205Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=train - 200
+2025-05-23T01:45:35.031Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:45:35.172Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:45:35.185Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:46:43.746Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:46:51.271Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=train - 200
+2025-05-23T01:46:51.276Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=train - 200
+2025-05-23T01:46:51.280Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=train&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:46:53.511Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:46:53.517Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:46:53.528Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:47:51.339Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:53:20.304Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=train - 200
+2025-05-23T01:53:20.309Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=train - 200
+2025-05-23T01:53:20.332Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=train&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:53:24.241Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:53:24.245Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:53:24.268Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:53:56.890Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:53:59.309Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=train - 200
+2025-05-23T01:53:59.316Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=train&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:53:59.326Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=train - 200
+2025-05-23T01:54:01.254Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:54:01.376Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:54:01.404Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:59:33.364Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=train&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:59:35.924Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:59:35.938Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-23T01:59:36.945Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-23T02:00:12.911Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=train&phoneNumber=%2B918927473643 - 200
+2025-05-23T02:00:16.148Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-23T02:00:16.153Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-23T02:00:16.206Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-23T02:00:54.782Z info: GET /t/search-rides?leavingLocation=Punjab,+India&goingLocation=Mumbai,+Maharashtra,+India&date=2025-05-30&travelMode=car&phoneNumber=%2B918927473643 - 200
+2025-05-23T02:34:42.218Z info: Server is running on port 5002
+2025-05-23T02:34:42.220Z info: Socket.IO connection status: Connected
+2025-05-23T02:34:45.056Z info: MongoDB connected

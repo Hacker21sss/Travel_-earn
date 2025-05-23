@@ -197,8 +197,22 @@ exports.searchRides = async (req, res) => {
     if (!availableRides.length) {
       return res.status(200).json();
     }
+    const ridesWithProfile = await Promise.all(
+      availableRides.map(async (ride) => {
+        const userProfile = await userprofiles.findOne(
+          { phoneNumber: ride.phoneNumber },
+         { profilePicture: 1, totalrating: 1, averageRating: 1 }
+        ).lean();
+        return {
+          ...ride,
+          profilePicture: userProfile?.profilePicture || null,
+          rating: userProfile?.totalrating || null,
+          aveargerating:userProfile?.averageRating||6
+        };
+      })
+    );
 
-    res.status(200).json({ availableRides, estimatedfare });
+    res.status(200).json({ availableRides, estimatedfare,ridesWithProfile });
   } catch (error) {
     console.error("Error in searchRides:", error.stack);
     res.status(500).json({ message: "Internal Server Error" });
@@ -212,14 +226,22 @@ module.exports.booking = async (req, res) => {
   try {
     const now = new Date();
     now.setHours(0, 0, 0, 0);
-// createdAt: { $gte: now }
+    const endOfDay = new Date(now);
+    endOfDay.setHours(23, 59, 59, 999);
+
+    // Check for consignment created on the current date
     const con = await consignmentData
-      .findOne({ phoneNumber })
+      .findOne({
+        phoneNumber,
+        createdAt: { $gte: now, $lte: endOfDay }
+      })
       .sort({ createdAt: -1 })
       .exec();
 
-    if (!con) {
-      return res.status(404).json({ message: "Consignment not found or expired" });
+   if (!con) {
+      return res.status(404).json({ 
+        message: "No consignment found for today. Please publish a consignment first."
+      });
     }
 
     const ride = await Traveldetails.findOne({ rideId });
@@ -227,7 +249,7 @@ module.exports.booking = async (req, res) => {
       return res.status(404).json({ message: "Ride not found" });
     }
 
-    const locationThreshold = 5.07;
+    const locationThreshold = 10.00;
 
     const isStartLocationClose =
       Math.abs(ride.LeavingCoordinates.ltd - con.LeavingCoordinates.latitude) <= locationThreshold &&

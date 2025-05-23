@@ -37,6 +37,7 @@ module.exports.getNotifications = async (req, res) => {
       return res.status(200).json({ status: "success", notifications: [] });
     }
 
+
     const formattedNotifications = await Promise.all(
       notifications.map(async (notif) => {
         let notificationData = {};
@@ -47,6 +48,7 @@ module.exports.getNotifications = async (req, res) => {
         const consignment = await Consignment.findOne({
           consignmentId: notif.consignmentId,
         });
+           
 
         if (notif.notificationType === "consignment_request") {
           notificationData = {
@@ -90,6 +92,7 @@ module.exports.getNotifications = async (req, res) => {
             requestto:notif.requestto,
             earning: notif.earning || "0",
             travellername: notif?.travellername,
+            profilepicture:sender.profilePicture
           };
         }
 
@@ -158,6 +161,7 @@ exports.getUserNotifications = async (req, res) => {
                 }).lean()
               : null,
           ]);
+          const userprofile=await user.findOne({requestedby:phoneNumber});
 
           // Fetch sender and receiver names
           const sender = consignmentData
@@ -228,6 +232,7 @@ requestto:notif.requestto,
             pickuptime: notif.pickuptime,
 
             dropofftime: notif.dropofftime,
+            profilepicture:userprofile.profilePicture
           };
         } catch (error) {
           console.error("Error processing notification:", error.message);
