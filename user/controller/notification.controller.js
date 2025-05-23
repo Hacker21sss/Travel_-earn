@@ -297,7 +297,7 @@ module.exports.cancelride = async (req, res) => {
       { new: true }
     );
 
-    await notification.findOneAndUpdate(
+    await notification.updateMany(
       { travelId },
       {
         $set: {
