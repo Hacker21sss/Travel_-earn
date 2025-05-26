@@ -164,7 +164,7 @@ console.log("SMS Sent Successfully:", smsResponse.data, smsResponse1.data);
     .status(500)
     .json({ message: "Failed to send OTP via SMS", error: error.message });
 }
-const userprofile=await User.findOne({phoneNumber: rideRequest.phoneNumber})
+const userprofile=await User.findOne({phoneNumber: rideRequest.requestedby})
       await Promise.all([
         Travel.updateOne({ travelId }, { $set: { status: "Accepted" } }),
         Consignment.updateOne(
@@ -199,8 +199,8 @@ const userprofile=await User.findOne({phoneNumber: rideRequest.phoneNumber})
                 travelId: rideRequest.travelId,
                 travelMode: rideRequest.travelMode,
                 rideId: rideRequest.rideId,
-                phoneNumber: rideRequest.phoneNumber,
-profilePicture:userprofile.profilePicture,
+                phoneNumber: rideRequest.requestedby,
+                profilePicture:userprofile.profilePicture,
                 timestamp: new Date().toISOString(),
                 rating:userprofile.averageRating,
                 totalrating:userprofile.totalrating,
