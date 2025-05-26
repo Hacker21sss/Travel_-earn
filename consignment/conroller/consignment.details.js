@@ -12,7 +12,8 @@ const { v4: uuidv4 } = require('uuid');
 const {getIO, sendMessageToSocketId}=require('../../socket');
 
 const Notification=require('../../user/model/notification');
-const ConsignmentRequestHistory=require('../../consignment/model/conhistory')
+const ConsignmentRequestHistory=require('../../consignment/model/conhistory');
+const notification = require('../../user/model/notification');
 
 
 
@@ -678,6 +679,53 @@ module.exports.getRideRequests = async (req, res) => {
     return res.status(500).json({ message: "Internal server error", error: error.message });
   }
 };
+
+module.exports.declinePaymentRequest = async (req, res) => {
+  const { phoneNumber } = req.params;
+  const { travelId, consignmentId, response } = req.body;
+
+  
+  if (!phoneNumber || !travelId || !consignmentId || !response) {
+    return res.status(400).json({ message: 'Missing required fields' });
+  }
+
+  try {
+    
+    const notificationData = await Notification.findOne({ travelId, consignmentId });
+
+    if (!notificationData) {
+      return res.status(404).json({ message: 'Notification not found' });
+    }
+
+    
+    if (response.toLowerCase() !== 'decline') {
+      return res.status(400).json({ message: 'Invalid response value. Expected "decline"' });
+    }
+
+    
+    await Notification.updateOne(
+      { travelId, consignmentId },
+      { $set: { paymentStatus: 'declined' } }
+    );
+
+ 
+    const updateResult = {
+      travelId,
+      consignmentId,
+      status: 'declined',
+      message: 'Request declined successfully',
+    };
+
+    console.log('Decline result:', updateResult);
+
+  
+    return res.status(200).json(updateResult);
+  } catch (error) {
+    console.error('Error declining payment request:', error);
+    return res.status(500).json({ message: 'Internal server error' });
+  }
+};
+
 
 
 

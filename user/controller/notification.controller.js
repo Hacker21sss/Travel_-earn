@@ -98,6 +98,16 @@ module.exports.getNotifications = async (req, res) => {
             paymentstatus: notif.paymentstatus || "pending"
           };
         }
+        else if(notif.notificationType=="consignment_accept"&&notif.paymentstatus=="declined"){
+          notificationData = {
+            title: " payment declined",
+            subtitle: `payment request has been declined`,
+            notificationType: "consignment_accept",
+            notificationFormat: "consignment",
+            time: moment(notif.createdAt).format("h:mm A"),
+            paymentstatus: notif.paymentstatus || "pending"
+          };
+        }
 
         return notificationData.title ? notificationData : null;
       })

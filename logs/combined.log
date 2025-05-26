@@ -250,3 +250,24 @@
 2025-05-23T12:14:22.043Z info: Socket.IO connection status: Connected
 2025-05-23T12:14:23.175Z info: MongoDB connected
 2025-05-23T12:14:24.617Z info: GET /n/getnotification/consignment/+917003855041 - 200
+2025-05-25T09:21:26.089Z info: Server is running on port 5002
+2025-05-25T09:21:26.092Z info: Socket.IO connection status: Connected
+2025-05-25T09:21:27.039Z info: MongoDB connected
+2025-05-26T01:13:47.516Z info: Server is running on port 5002
+2025-05-26T01:13:47.517Z info: Socket.IO connection status: Connected
+2025-05-26T01:13:48.431Z info: MongoDB connected
+2025-05-26T02:12:15.296Z info: Server is running on port 5002
+2025-05-26T02:12:15.298Z info: Socket.IO connection status: Connected
+2025-05-26T02:12:16.322Z info: MongoDB connected
+2025-05-26T02:15:50.088Z info: Server is running on port 5002
+2025-05-26T02:15:50.090Z info: Socket.IO connection status: Connected
+2025-05-26T02:15:51.223Z info: MongoDB connected
+2025-05-26T02:16:42.024Z info: Server is running on port 5002
+2025-05-26T02:16:42.026Z info: Socket.IO connection status: Connected
+2025-05-26T02:16:42.624Z info: MongoDB connected
+2025-05-26T02:19:55.609Z info: Server is running on port 5002
+2025-05-26T02:19:55.618Z info: Socket.IO connection status: Connected
+2025-05-26T02:19:56.767Z info: MongoDB connected
+2025-05-26T02:26:29.662Z info: Server is running on port 5002
+2025-05-26T02:26:29.665Z info: Socket.IO connection status: Connected
+2025-05-26T02:26:29.686Z error: MongoDB connection error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.i288h.mongodb.net

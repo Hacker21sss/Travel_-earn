@@ -56,7 +56,7 @@ const NotificationSchema = new mongoose.Schema({
     pickuptime:{type:String},
     dropofftime:{type:String},
     paymentstatus:{type:String,
-      enum:["successful","failed","pending"],
+      enum:["successful","failed","pending","declined"],
       default:"pending",
     },
    

@@ -21,6 +21,7 @@ router.get('/get-consignment/:phoneNumber',consignment.getallconsignment);
  router.post('/getearning',consignment.getearning);
  router.get('/history/:PhoneNumber',history.getConsignmentHistory);
  router.get('/riderequest/:phoneNumber',consignment.getRideRequests);
+router.post('/decline-consignment/:phoneNumber',consignment.declinePaymentRequest)
 
 // // PUT route to update an existing consignment
 // router.put('/:id', (req, res) => {
