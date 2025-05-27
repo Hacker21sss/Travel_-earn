@@ -40,7 +40,7 @@ const TraveldetailsSchema = new mongoose.Schema({
   endedat:{type:Object,default:null},
   reasonforcancellation:{type:String},
   selectedreason:{type:String},
-  rating:{type:Number,default: 0},
+  userrating:{type:[Number],default: []},
   totalrating:{type:Number,default: 0},
   averageRating:{type:Number,default: 0},
   
