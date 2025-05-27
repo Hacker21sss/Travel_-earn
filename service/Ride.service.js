@@ -351,7 +351,7 @@ module.exports.respondToConsignmentRequest = async (req, res) => {
 
     if (!book) return res.status(404).json({ message: "Request not found" });
     if (!consignment) return res.status(404).json({ message: "Consignment not found" });
-    if (travelHistory) return res.status(400).json(["already accepted"]);
+    if (travelHistory) return res.status(400).json({message:" consignment is already accepted"});
     if (!travelHistoryBasic)
       return res.status(404).json({ message: "Travel  not found for the given travelId" });
 

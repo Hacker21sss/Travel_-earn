@@ -271,3 +271,60 @@
 2025-05-26T02:26:29.662Z info: Server is running on port 5002
 2025-05-26T02:26:29.665Z info: Socket.IO connection status: Connected
 2025-05-26T02:26:29.686Z error: MongoDB connection error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.i288h.mongodb.net
+2025-05-26T21:10:16.803Z info: Server is running on port 5002
+2025-05-26T21:10:16.805Z info: Socket.IO connection status: Connected
+2025-05-26T21:10:17.849Z info: MongoDB connected
+2025-05-26T22:52:24.937Z info: Server is running on port 5002
+2025-05-26T22:52:24.939Z info: Socket.IO connection status: Connected
+2025-05-26T22:52:25.779Z info: MongoDB connected
+2025-05-26T23:11:44.075Z info: Server is running on port 5002
+2025-05-26T23:11:44.077Z info: Socket.IO connection status: Connected
+2025-05-26T23:11:45.104Z info: MongoDB connected
+2025-05-26T23:46:53.383Z info: Server is running on port 5002
+2025-05-26T23:46:53.385Z info: Socket.IO connection status: Connected
+2025-05-26T23:46:54.305Z info: MongoDB connected
+2025-05-27T00:50:10.219Z info: Server is running on port 5002
+2025-05-27T00:50:10.221Z info: Socket.IO connection status: Connected
+2025-05-27T00:50:11.141Z info: MongoDB connected
+2025-05-27T01:36:06.085Z info: Server is running on port 5002
+2025-05-27T01:36:06.088Z info: Socket.IO connection status: Connected
+2025-05-27T01:36:06.854Z info: MongoDB connected
+2025-05-27T01:36:57.175Z info: POST /api/rating/+918927473643 - 200
+2025-05-27T01:40:41.917Z info: Server is running on port 5002
+2025-05-27T01:40:41.919Z info: Socket.IO connection status: Connected
+2025-05-27T01:40:42.709Z info: MongoDB connected
+2025-05-27T01:41:22.075Z info: POST /api/rating/+918927473643 - 200
+2025-05-27T01:44:14.463Z info: Server is running on port 5002
+2025-05-27T01:44:14.465Z info: Socket.IO connection status: Connected
+2025-05-27T01:44:15.555Z info: MongoDB connected
+2025-05-27T01:44:20.152Z info: POST /api/rating/+918927473643 - 200
+2025-05-27T01:44:39.274Z info: POST /api/rating/+918927473643 - 200
+2025-05-27T01:46:04.540Z info: Server is running on port 5002
+2025-05-27T01:46:04.542Z info: Socket.IO connection status: Connected
+2025-05-27T01:46:05.524Z info: MongoDB connected
+2025-05-27T01:46:11.154Z info: POST /api/rating/+918927473643 - 200
+2025-05-27T01:51:38.022Z info: Server is running on port 5002
+2025-05-27T01:51:38.025Z info: Socket.IO connection status: Connected
+2025-05-27T01:51:38.901Z info: MongoDB connected
+2025-05-27T01:52:44.167Z info: Server is running on port 5002
+2025-05-27T01:52:44.169Z info: Socket.IO connection status: Connected
+2025-05-27T01:52:46.563Z info: MongoDB connected
+2025-05-27T01:53:10.613Z info: Server is running on port 5002
+2025-05-27T01:53:10.620Z info: Socket.IO connection status: Connected
+2025-05-27T01:53:11.176Z info: MongoDB connected
+2025-05-27T01:53:24.792Z info: POST /api/rating/+918927473643 - 200
+2025-05-27T01:54:25.447Z info: Server is running on port 5002
+2025-05-27T01:54:25.449Z info: Socket.IO connection status: Connected
+2025-05-27T01:54:26.367Z info: MongoDB connected
+2025-05-27T01:54:34.571Z info: Server is running on port 5002
+2025-05-27T01:54:34.573Z info: Socket.IO connection status: Connected
+2025-05-27T01:54:35.169Z info: MongoDB connected
+2025-05-27T01:54:39.253Z info: POST /api/rating/+918927473643 - 200
+2025-05-27T01:56:55.485Z info: Server is running on port 5002
+2025-05-27T01:56:55.487Z info: Socket.IO connection status: Connected
+2025-05-27T01:56:56.284Z info: MongoDB connected
+2025-05-27T01:57:11.180Z info: POST /api/rating/+918927473643 - 200
+2025-05-27T01:59:52.087Z info: Server is running on port 5002
+2025-05-27T01:59:52.089Z info: Socket.IO connection status: Connected
+2025-05-27T01:59:52.886Z info: MongoDB connected
+2025-05-27T02:00:01.305Z info: POST /api/rating/+918927473643 - 200
