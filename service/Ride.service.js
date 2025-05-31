@@ -563,7 +563,7 @@ const userprofile=await User.findOne({phoneNumber:travelHistoryBasic.phoneNumber
     } else if (response.toLowerCase() === "reject") {
       await Promise.all([
         Consignment.updateOne({ consignmentId }, { $set: { status: "Rejected" } }),
-        RequestForCarry.updateOne({ consignmentId, travelId }, { $set: { status: "Rejected" } }),
+        RequestForCarry.updateOne({ consignmentId}, { $set: { status: "Rejected" } }),
         new Notification({
           consignmentId,
           requestedby: consignment.phoneNumber,
