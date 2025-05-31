@@ -8,7 +8,7 @@ const Request = require('../../user/model/requestforcarry');
 const travelhistory = require("../../user/model/travel.history");
 const moment = require("moment");
 const { getIO, sendMessageToSocketId } = require('../../socket');
-const Notification=require('../../user/model/notification')
+const Notification = require('../../user/model/notification')
 const datetime = require('../../service/getcurrentdatetime')
 const User = require('../model/User');
 
@@ -79,7 +79,7 @@ exports.getAutoCompleteAndCreateBooking = async (req, res) => {
       duration: durationText,
       userrating,
       totalrating,
-      
+
       price,
       rideId,
       TE: price.TE,
@@ -105,9 +105,9 @@ exports.getAutoCompleteAndCreateBooking = async (req, res) => {
     const history = new travelhistory({
       phoneNumber,
       travelId: travelId,
-      travelMode:travelMode,
+      travelMode: travelMode,
       username: username,
-      travelmode_number:travelmode_number,
+      travelmode_number: travelmode_number,
       pickup: Leavinglocation,
       drop: Goinglocation,
       expectedStartTime: expectedStart,
@@ -237,11 +237,92 @@ exports.getAutoCompleteAndCreateBooking = async (req, res) => {
 //     res.status(500).json({ message: "Internal Server Error" });
 //   }
 // };
+// exports.searchRides = async (req, res) => {
+//   try {
+//     const { leavingLocation, goingLocation, date, travelMode,phoneNumber } = req.query;
+//     console.log("Received query:", { leavingLocation, goingLocation, date, travelMode,phoneNumber });
+//     // const { phoneNumber } = req.user;
+
+//     if (!leavingLocation || !goingLocation || !date) {
+//       return res.status(400).json({ message: "Leaving location, going location, and date are required" });
+//     }
+
+//     const dateRegex = /^\d{4}-\d{2}-\d{2}$/;
+//     if (!dateRegex.test(date)) {
+//       return res.status(400).json({ message: "Invalid date format. Use YYYY-MM-DD." });
+//     }
+
+//     const searchDate = new Date(date);
+//     const startOfDay = new Date(searchDate.setHours(0, 0, 0, 0));
+//     const endOfDay = new Date(searchDate.setHours(23, 59, 59, 999));
+
+//     const { distance } = await mapservice.getDistanceTime(leavingLocation, goingLocation);
+//     if (!distance || !distance.text) {
+//       return res.status(400).json({ message: "Unable to calculate distance. Please check the locations." });
+//     }
+
+//     const distanceText = distance.text;
+//     const distanceValue = parseFloat(distanceText.replace(/[^\d.]/g, ""));
+//     console.log("Distance value:", distanceValue);
+
+//     // Default to "train" if travelMode is undefined
+//     const safeTravelMode = travelMode || "train";
+//     const estimatedfare = fare.calculateFarewithoutweight(distanceValue, safeTravelMode);
+//     console.log("Estimated fare:", estimatedfare);
+
+//     if (typeof estimatedfare === "undefined") {
+//       return res.status(500).json({ message: "Error calculating estimated fare." });
+//     }
+
+//     const leavingCoords = await mapservice.getAddressCoordinate(leavingLocation);
+//     const goingCoords = await mapservice.getAddressCoordinate(goingLocation);
+
+//     if (!leavingCoords || !goingCoords) {
+//       return res.status(400).json({ message: "Invalid location input. Please enter a valid city or address." });
+//     }
+
+//     console.log("Leaving Coordinates:", leavingCoords);
+//     console.log("Going Coordinates:", goingCoords);
+
+//     const availableRides = await Traveldetails.find({
+//       "LeavingCoordinates.ltd": leavingCoords.ltd,
+//       "LeavingCoordinates.lng": leavingCoords.lng,
+//       "GoingCoordinates.ltd": goingCoords.ltd,
+//       "GoingCoordinates.lng": goingCoords.lng,
+//       travelDate: { $gte: startOfDay, $lt: endOfDay },
+//       travelMode,
+//       phoneNumber: { $ne: phoneNumber }
+//     });
+
+//     if (!availableRides.length) {
+//       return res.status(200).json();
+//     }
+//     const ridesWithProfile = await Promise.all(
+//       availableRides.map(async (ride) => {
+//         const userProfile = await userprofiles.findOne(
+//           { phoneNumber: ride.phoneNumber },
+//          { profilePicture: 1, totalrating: 1, averageRating: 1 }
+//         ).lean();
+//         return {
+//           ...ride,
+//           profilePicture: userProfile?.profilePicture || null,
+//           rating: userProfile?.totalrating || null,
+//           aveargerating:userProfile?.averageRating||6
+//         };
+//       })
+//     );
+
+//     res.status(200).json({ availableRides, estimatedfare,ridesWithProfile });
+//   } catch (error) {
+//     console.error("Error in searchRides:", error.stack);
+//     res.status(500).json({ message: "Internal Server Error" });
+//   }
+// };
+
 exports.searchRides = async (req, res) => {
   try {
-    const { leavingLocation, goingLocation, date, travelMode,phoneNumber } = req.query;
-    console.log("Received query:", { leavingLocation, goingLocation, date, travelMode,phoneNumber });
-    // const { phoneNumber } = req.user;
+    const { leavingLocation, goingLocation, date, travelMode, phoneNumber } = req.query;
+    console.log("Received query:", { leavingLocation, goingLocation, date, travelMode, phoneNumber });
 
     if (!leavingLocation || !goingLocation || !date) {
       return res.status(400).json({ message: "Leaving location, going location, and date are required" });
@@ -265,15 +346,6 @@ exports.searchRides = async (req, res) => {
     const distanceValue = parseFloat(distanceText.replace(/[^\d.]/g, ""));
     console.log("Distance value:", distanceValue);
 
-    // Default to "train" if travelMode is undefined
-    const safeTravelMode = travelMode || "train";
-    const estimatedfare = fare.calculateFarewithoutweight(distanceValue, safeTravelMode);
-    console.log("Estimated fare:", estimatedfare);
-
-    if (typeof estimatedfare === "undefined") {
-      return res.status(500).json({ message: "Error calculating estimated fare." });
-    }
-
     const leavingCoords = await mapservice.getAddressCoordinate(leavingLocation);
     const goingCoords = await mapservice.getAddressCoordinate(goingLocation);
 
@@ -284,35 +356,77 @@ exports.searchRides = async (req, res) => {
     console.log("Leaving Coordinates:", leavingCoords);
     console.log("Going Coordinates:", goingCoords);
 
-    const availableRides = await Traveldetails.find({
-      "LeavingCoordinates.ltd": leavingCoords.ltd,
-      "LeavingCoordinates.lng": leavingCoords.lng,
-      "GoingCoordinates.ltd": goingCoords.ltd,
-      "GoingCoordinates.lng": goingCoords.lng,
+    const query = {
+      $or: [
+        {
+          "LeavingCoordinates.ltd": leavingCoords.ltd,
+          "LeavingCoordinates.lng": leavingCoords.lng,
+          "GoingCoordinates.ltd": goingCoords.ltd,
+          "GoingCoordinates.lng": goingCoords.lng
+        },
+        {
+          intermediateStops: {
+            $elemMatch: {
+              "ltd": { $in: [leavingCoords.ltd, goingCoords.ltd] },
+              "lng": { $in: [leavingCoords.lng, goingCoords.lng] }
+            }
+          }
+        }
+      ],
       travelDate: { $gte: startOfDay, $lt: endOfDay },
-      travelMode,
       phoneNumber: { $ne: phoneNumber }
-    });
+    };
+
+    if (travelMode && travelMode.trim() !== "") {
+      query.travelMode = travelMode;
+    }
+
+    const availableRides = await Traveldetails.find(query);
+
+    const allTravelModes = ["train", "airplane", "car"];
+    let availableTravelModes = travelMode && travelMode.trim() !== "" ? [travelMode] : allTravelModes;
+
+    const estimatedFares = availableTravelModes.reduce((acc, mode) => {
+      const faree = fare.calculateFarewithoutweight(distanceValue, mode);
+      if (typeof faree !== "undefined") {
+        acc[mode] = faree;
+      }
+      return acc;
+    }, {});
+
+    if (Object.keys(estimatedFares).length === 0) {
+      return res.status(500).json({ message: "Error calculating estimated fares." });
+    }
 
     if (!availableRides.length) {
-      return res.status(200).json();
+      return res.status(200).json({ availableRides: [], estimatedFares, availableTravelModes });
     }
+
     const ridesWithProfile = await Promise.all(
       availableRides.map(async (ride) => {
         const userProfile = await userprofiles.findOne(
           { phoneNumber: ride.phoneNumber },
-         { profilePicture: 1, totalrating: 1, averageRating: 1 }
+          { profilePicture: 1, totalrating: 1, averageRating: 1 }
         ).lean();
         return {
-          ...ride,
+          ...ride.toObject(),
           profilePicture: userProfile?.profilePicture || null,
           rating: userProfile?.totalrating || null,
-          aveargerating:userProfile?.averageRating||6
+          averageRating: userProfile?.averageRating || 6
         };
       })
     );
 
-    res.status(200).json({ availableRides, estimatedfare,ridesWithProfile });
+    if (!travelMode || travelMode.trim() === "") {
+      const foundTravelModes = [...new Set(availableRides.map(ride => ride.travelMode))];
+      availableTravelModes = allTravelModes.filter(mode => foundTravelModes.includes(mode) || estimatedFares[mode]);
+    }
+
+    res.status(200).json({
+      availableRides: ridesWithProfile,
+      estimatedFares,
+      availableTravelModes
+    });
   } catch (error) {
     console.error("Error in searchRides:", error.stack);
     res.status(500).json({ message: "Internal Server Error" });
@@ -337,8 +451,8 @@ module.exports.booking = async (req, res) => {
       .sort({ createdAt: -1 })
       .exec();
 
-   if (!con) {
-      return res.status(404).json({ 
+    if (!con) {
+      return res.status(404).json({
         message: "No consignment found for today. Please publish a consignment first."
       });
     }
@@ -368,7 +482,7 @@ module.exports.booking = async (req, res) => {
     if (!validModes.includes(travelMode)) {
       return res.status(400).json({ message: "Invalid Travel Mode! Please enter 'train' or 'airplane'." });
     }
-    
+
 
     const weight = con.weight ? parseFloat(con.weight.toString().replace(/[^\d.]/g, "")) : NaN;
     const distance = con.distance ? parseFloat(con.distance.toString().replace(/[^\d.]/g, "")) : NaN;
@@ -408,7 +522,7 @@ module.exports.booking = async (req, res) => {
     const notification = new Notification({
       phoneNumber: phoneNumber,
       requestto: riderPhoneNumber,
-      requestedby:con.phoneNumber ,
+      requestedby: con.phoneNumber,
       consignmentId: con.consignmentId,
       earning: expectedEarning,
       travelId: ride.travelId,
@@ -420,30 +534,30 @@ module.exports.booking = async (req, res) => {
     const riderProfile = await userprofiles.findOne({ phoneNumber: riderPhoneNumber });
     if (riderProfile && riderProfile.socketId) {
       // io.to(riderProfile.socketId).emit("newBookingRequest", {
-        io.emit("sendnotification", {
-        
-          notification: {
-            message: `New booking request sent to ${riderPhoneNumber}.`,
-            travelId: request.travelId,
-            consignmentId: con.consignmentId,
-            notificationType: "booking",
-            createdAt: new Date(),
-            requestedby: riderPhoneNumber,
-          },
-         
-        });
-    
+      io.emit("sendnotification", {
 
-    return res.status(200).json({
-      message: "Success",
-      booking: {
-        phoneNumber,
-        rideId,
-        expectedEarning,
-        travelId: ride.travelId
-      },
-    });
-  }
+        notification: {
+          message: `New booking request sent to ${riderPhoneNumber}.`,
+          travelId: request.travelId,
+          consignmentId: con.consignmentId,
+          notificationType: "booking",
+          createdAt: new Date(),
+          requestedby: riderPhoneNumber,
+        },
+
+      });
+
+
+      return res.status(200).json({
+        message: "Success",
+        booking: {
+          phoneNumber,
+          rideId,
+          expectedEarning,
+          travelId: ride.travelId
+        },
+      });
+    }
 
   } catch (error) {
     return res.status(500).json({ message: "Internal server error", error: error.message });
@@ -451,7 +565,7 @@ module.exports.booking = async (req, res) => {
 
 };
 module.exports.getAllRides = async (req, res) => {
-  const { phoneNumber } = req.params; 
+  const { phoneNumber } = req.params;
 
   try {
 
@@ -569,43 +683,43 @@ exports.getTravelHistory = async (req, res) => {
 
 
 module.exports.starttravel = async (req, res) => {
-  const {  travelId } = req.params;
+  const { travelId } = req.params;
   const { status } = req.body;
 
   try {
-   
+
     if (!status) {
       return res.status(400).json({ message: "Missing status " });
     }
-    if( !travelId){
+    if (!travelId) {
       return res.status(400).json({ message: "Missing  travel ID" });
     }
 
-   
 
-    
+
+
     const travel = await Traveldetails.findOne({ travelId });
     if (!travel) {
       return res.status(404).json({ message: "Travel not found" });
     }
 
-  
+
     // if (travel.status === "started") {
     //   return res.status(400).json({ message: "Travel already started" });
     // }
 
-  
+
     const startTime = datetime.getCurrentDateTime();
-   
+
     const updateResult = await travelhistory.updateOne(
       { travelId },
       { $set: { status: "started", startedat: startTime } }
     );
-    const updateResult1= await Traveldetails.updateOne(
+    const updateResult1 = await Traveldetails.updateOne(
       { travelId },
       { $set: { status: "started", startedat: startTime } }
     );
-  
+
 
     if (updateResult.modifiedCount === 0 && updateResult1.modifiedCount === 0) {
       return res.status(400).json({ message: "Failed to update travel status" });
@@ -615,7 +729,7 @@ module.exports.starttravel = async (req, res) => {
     return res.status(200).json({
       message: "Travel started successfully",
       startTime,
-      
+
     });
 
   } catch (error) {
@@ -628,7 +742,7 @@ module.exports.endtravel = async (req, res) => {
   const { travelId } = req.params;
   const { status } = req.body;
 
-  if(!status){
+  if (!status) {
     return res.status(400).json({ message: "Status is required" });
   }
   try {
@@ -657,7 +771,7 @@ module.exports.endtravel = async (req, res) => {
     );
 
     console.log("Update result:", updateResult);
-    console.log("updated1:",updateResult1)
+    console.log("updated1:", updateResult1)
 
     if (updateResult.modifiedCount === 0 && updateResult1.modifiedCount === 0) {
       return res.status(400).json({ message: "Failed to update travel status" });
@@ -690,32 +804,32 @@ module.exports.traveldetailsusingtravelid = async (req, res) => {
   }
 }
 
-module.exports. driverstatuslocationupdate=async(req,res)=>{
-  try{
-  const{phoneNumber}=req.params;
-  const {longitude,latitude}=req.body;
-  if (!longitude || !latitude) {
-    return res.status(400).json({ message: "Longitude and latitude are required" });
-  }
-  const updatedlocation = await userprofiles.findOneAndUpdate(
-    { phoneNumber },
-    {
-      $set: {
-        currentLocation: {
-          type: "Point",
-          coordinates: [longitude, latitude],
+module.exports.driverstatuslocationupdate = async (req, res) => {
+  try {
+    const { phoneNumber } = req.params;
+    const { longitude, latitude } = req.body;
+    if (!longitude || !latitude) {
+      return res.status(400).json({ message: "Longitude and latitude are required" });
+    }
+    const updatedlocation = await userprofiles.findOneAndUpdate(
+      { phoneNumber },
+      {
+        $set: {
+          currentLocation: {
+            type: "Point",
+            coordinates: [longitude, latitude],
+          },
+          lastUpdated: new Date(),
         },
-        lastUpdated: new Date(),
       },
-    },
-    { new: true }
-  );
+      { new: true }
+    );
 
-  if (!updatedlocation) {
-    return res.status(404).json({ message: "Driver not found" });
-  }
+    if (!updatedlocation) {
+      return res.status(404).json({ message: "Driver not found" });
+    }
 
-  const io = getIO();
+    const io = getIO();
     io.to(`travel-${travelId}`).emit("locationUpdate", {
       phoneNumber,
       travelId,
