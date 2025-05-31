@@ -136,12 +136,10 @@ exports.getAutoCompleteAndCreateBooking = async (req, res) => {
 };
 
 
-
 exports.searchRides = async (req, res) => {
   try {
-    const { leavingLocation, goingLocation, date, travelMode,phoneNumber } = req.query;
-    console.log("Received query:", { leavingLocation, goingLocation, date, travelMode,phoneNumber });
-    // const { phoneNumber } = req.user;
+    const { leavingLocation, goingLocation, date, travelMode, phoneNumber } = req.query;
+    console.log("Received query:", { leavingLocation, goingLocation, date, travelMode, phoneNumber });
 
     if (!leavingLocation || !goingLocation || !date) {
       return res.status(400).json({ message: "Leaving location, going location, and date are required" });
@@ -165,12 +163,11 @@ exports.searchRides = async (req, res) => {
     const distanceValue = parseFloat(distanceText.replace(/[^\d.]/g, ""));
     console.log("Distance value:", distanceValue);
 
-    // Default to "train" if travelMode is undefined
-    const safeTravelMode = travelMode || "train";
-    const estimatedfare = fare.calculateFarewithoutweight(distanceValue, safeTravelMode);
-    console.log("Estimated fare:", estimatedfare);
+    const safeTravelMode = travelMode ;
+    const estimatedFare = fare.calculateFarewithoutweight(distanceValue, safeTravelMode);
+    console.log("Estimated fare:", estimatedFare);
 
-    if (typeof estimatedfare === "undefined") {
+    if (typeof estimatedFare === "undefined") {
       return res.status(500).json({ message: "Error calculating estimated fare." });
     }
 
@@ -184,35 +181,50 @@ exports.searchRides = async (req, res) => {
     console.log("Leaving Coordinates:", leavingCoords);
     console.log("Going Coordinates:", goingCoords);
 
-    const availableRides = await Traveldetails.find({
+    const query = {
       "LeavingCoordinates.ltd": leavingCoords.ltd,
       "LeavingCoordinates.lng": leavingCoords.lng,
       "GoingCoordinates.ltd": goingCoords.ltd,
       "GoingCoordinates.lng": goingCoords.lng,
       travelDate: { $gte: startOfDay, $lt: endOfDay },
-      travelMode,
       phoneNumber: { $ne: phoneNumber }
-    });
+    };
+
+    if (travelMode && travelMode.trim() !== "") {
+      query.travelMode = travelMode;
+    }
+
+    const availableRides = await Traveldetails.find(query);
 
     if (!availableRides.length) {
-      return res.status(200).json();
+      return res.status(200).json({ availableRides: [], estimatedFare });
     }
+
     const ridesWithProfile = await Promise.all(
       availableRides.map(async (ride) => {
         const userProfile = await userprofiles.findOne(
           { phoneNumber: ride.phoneNumber },
-         { profilePicture: 1, totalrating: 1, averageRating: 1 }
+          { profilePicture: 1, totalrating: 1, averageRating: 1 }
         ).lean();
         return {
-          ...ride,
+          ...ride.toObject(),
           profilePicture: userProfile?.profilePicture || null,
           rating: userProfile?.totalrating || null,
-          aveargerating:userProfile?.averageRating||6
+          averageRating: userProfile?.averageRating || 6
         };
       })
     );
 
-    res.status(200).json({ availableRides, estimatedfare,ridesWithProfile });
+    let availableTravelModes = [safeTravelMode];
+    if (!travelMode || travelMode.trim() === "") {
+      availableTravelModes = [...new Set(availableRides.map(ride => ride.travelMode))];
+    }
+
+    res.status(200).json({
+      availableRides: ridesWithProfile,
+      estimatedFare,
+      availableTravelModes
+    });
   } catch (error) {
     console.error("Error in searchRides:", error.stack);
     res.status(500).json({ message: "Internal Server Error" });
