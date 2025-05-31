@@ -1441,3 +1441,10 @@
 2025-05-31T09:00:48.637Z info: Socket.IO connection status: Connected
 2025-05-31T09:00:49.330Z info: MongoDB connected
 2025-05-31T09:00:49.963Z info: GET /t/search-rides?leavingLocation=noida&goingLocation=kolkata&date=2025-06-02&travelMode=&phoneNumber=+918927473643 - 200
+2025-05-31T09:02:01.138Z info: Server is running on port 5002
+2025-05-31T09:02:01.141Z info: Socket.IO connection status: Connected
+2025-05-31T09:02:01.839Z info: MongoDB connected
+2025-05-31T09:02:02.161Z info: GET /t/search-rides?leavingLocation=noida&goingLocation=kolkata&date=2025-06-02&travelMode=car&phoneNumber=+918927473643 - 200
+2025-05-31T09:31:25.531Z info: Server is running on port 5002
+2025-05-31T09:31:25.534Z info: Socket.IO connection status: Connected
+2025-05-31T09:31:26.300Z info: MongoDB connected

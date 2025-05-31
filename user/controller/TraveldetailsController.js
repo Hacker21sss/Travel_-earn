@@ -136,10 +136,112 @@ exports.getAutoCompleteAndCreateBooking = async (req, res) => {
 };
 
 
+// exports.searchRides = async (req, res) => {
+//   try {
+//     const { leavingLocation, goingLocation, date, travelMode, phoneNumber } = req.query;
+//     console.log("Received query:", { leavingLocation, goingLocation, date, travelMode, phoneNumber });
+
+//     if (!leavingLocation || !goingLocation || !date) {
+//       return res.status(400).json({ message: "Leaving location, going location, and date are required" });
+//     }
+
+//     const dateRegex = /^\d{4}-\d{2}-\d{2}$/;
+//     if (!dateRegex.test(date)) {
+//       return res.status(400).json({ message: "Invalid date format. Use YYYY-MM-DD." });
+//     }
+
+//     const searchDate = new Date(date);
+//     const startOfDay = new Date(searchDate.setHours(0, 0, 0, 0));
+//     const endOfDay = new Date(searchDate.setHours(23, 59, 59, 999));
+
+//     const { distance } = await mapservice.getDistanceTime(leavingLocation, goingLocation);
+//     if (!distance || !distance.text) {
+//       return res.status(400).json({ message: "Unable to calculate distance. Please check the locations." });
+//     }
+
+//     const distanceText = distance.text;
+//     const distanceValue = parseFloat(distanceText.replace(/[^\d.]/g, ""));
+//     console.log("Distance value:", distanceValue);
+
+//     const leavingCoords = await mapservice.getAddressCoordinate(leavingLocation);
+//     const goingCoords = await mapservice.getAddressCoordinate(goingLocation);
+
+//     if (!leavingCoords || !goingCoords) {
+//       return res.status(400).json({ message: "Invalid location input. Please enter a valid city or address." });
+//     }
+
+//     console.log("Leaving Coordinates:", leavingCoords);
+//     console.log("Going Coordinates:", goingCoords);
+
+//     const query = {
+//       "LeavingCoordinates.ltd": leavingCoords.ltd,
+//       "LeavingCoordinates.lng": leavingCoords.lng,
+//       "GoingCoordinates.ltd": goingCoords.ltd,
+//       "GoingCoordinates.lng": goingCoords.lng,
+//       travelDate: { $gte: startOfDay, $lt: endOfDay },
+//       phoneNumber: { $ne: phoneNumber }
+//     };
+
+//     if (travelMode && travelMode.trim() !== "") {
+//       query.travelMode = travelMode;
+//     }
+
+//     const availableRides = await Traveldetails.find(query);
+
+//     const allTravelModes = ["train", "airplane", "car"];
+//     let availableTravelModes = travelMode && travelMode.trim() !== "" ? [travelMode] : allTravelModes;
+
+//     const estimatedFares = availableTravelModes.reduce((acc, mode) => {
+//       const faree = fare.calculateFarewithoutweight(distanceValue, mode);
+//       if (typeof faree !== "undefined") {
+//         acc[mode] = faree;
+//       }
+//       return acc;
+//     }, {});
+
+//     if (Object.keys(estimatedFares).length === 0) {
+//       return res.status(500).json({ message: "Error calculating estimated fares." });
+//     }
+
+//     if (!availableRides.length) {
+//       return res.status(200).json({ availableRides: [], estimatedFares, availableTravelModes });
+//     }
+
+//     const ridesWithProfile = await Promise.all(
+//       availableRides.map(async (ride) => {
+//         const userProfile = await userprofiles.findOne(
+//           { phoneNumber: ride.phoneNumber },
+//           { profilePicture: 1, totalrating: 1, averageRating: 1 }
+//         ).lean();
+//         return {
+//           ...ride.toObject(),
+//           profilePicture: userProfile?.profilePicture || null,
+//           rating: userProfile?.totalrating || null,
+//           averageRating: userProfile?.averageRating || 6
+//         };
+//       })
+//     );
+
+//     if (!travelMode || travelMode.trim() === "") {
+//       const foundTravelModes = [...new Set(availableRides.map(ride => ride.travelMode))];
+//       availableTravelModes = allTravelModes.filter(mode => foundTravelModes.includes(mode) || estimatedFares[mode]);
+//     }
+
+//     res.status(200).json({
+//       availableRides: ridesWithProfile,
+//       estimatedFares,
+//       availableTravelModes
+//     });
+//   } catch (error) {
+//     console.error("Error in searchRides:", error.stack);
+//     res.status(500).json({ message: "Internal Server Error" });
+//   }
+// };
 exports.searchRides = async (req, res) => {
   try {
-    const { leavingLocation, goingLocation, date, travelMode, phoneNumber } = req.query;
-    console.log("Received query:", { leavingLocation, goingLocation, date, travelMode, phoneNumber });
+    const { leavingLocation, goingLocation, date, travelMode,phoneNumber } = req.query;
+    console.log("Received query:", { leavingLocation, goingLocation, date, travelMode,phoneNumber });
+    // const { phoneNumber } = req.user;
 
     if (!leavingLocation || !goingLocation || !date) {
       return res.status(400).json({ message: "Leaving location, going location, and date are required" });
@@ -163,6 +265,15 @@ exports.searchRides = async (req, res) => {
     const distanceValue = parseFloat(distanceText.replace(/[^\d.]/g, ""));
     console.log("Distance value:", distanceValue);
 
+    // Default to "train" if travelMode is undefined
+    const safeTravelMode = travelMode || "train";
+    const estimatedfare = fare.calculateFarewithoutweight(distanceValue, safeTravelMode);
+    console.log("Estimated fare:", estimatedfare);
+
+    if (typeof estimatedfare === "undefined") {
+      return res.status(500).json({ message: "Error calculating estimated fare." });
+    }
+
     const leavingCoords = await mapservice.getAddressCoordinate(leavingLocation);
     const goingCoords = await mapservice.getAddressCoordinate(goingLocation);
 
@@ -173,71 +284,40 @@ exports.searchRides = async (req, res) => {
     console.log("Leaving Coordinates:", leavingCoords);
     console.log("Going Coordinates:", goingCoords);
 
-    const query = {
+    const availableRides = await Traveldetails.find({
       "LeavingCoordinates.ltd": leavingCoords.ltd,
       "LeavingCoordinates.lng": leavingCoords.lng,
       "GoingCoordinates.ltd": goingCoords.ltd,
       "GoingCoordinates.lng": goingCoords.lng,
       travelDate: { $gte: startOfDay, $lt: endOfDay },
+      travelMode,
       phoneNumber: { $ne: phoneNumber }
-    };
-
-    if (travelMode && travelMode.trim() !== "") {
-      query.travelMode = travelMode;
-    }
-
-    const availableRides = await Traveldetails.find(query);
-
-    const allTravelModes = ["train", "airplane", "car"];
-    let availableTravelModes = travelMode && travelMode.trim() !== "" ? [travelMode] : allTravelModes;
-
-    const estimatedFares = availableTravelModes.reduce((acc, mode) => {
-      const faree = fare.calculateFarewithoutweight(distanceValue, mode);
-      if (typeof faree !== "undefined") {
-        acc[mode] = faree;
-      }
-      return acc;
-    }, {});
-
-    if (Object.keys(estimatedFares).length === 0) {
-      return res.status(500).json({ message: "Error calculating estimated fares." });
-    }
+    });
 
     if (!availableRides.length) {
-      return res.status(200).json({ availableRides: [], estimatedFares, availableTravelModes });
+      return res.status(200).json();
     }
-
     const ridesWithProfile = await Promise.all(
       availableRides.map(async (ride) => {
         const userProfile = await userprofiles.findOne(
           { phoneNumber: ride.phoneNumber },
-          { profilePicture: 1, totalrating: 1, averageRating: 1 }
+         { profilePicture: 1, totalrating: 1, averageRating: 1 }
         ).lean();
         return {
-          ...ride.toObject(),
+          ...ride,
           profilePicture: userProfile?.profilePicture || null,
           rating: userProfile?.totalrating || null,
-          averageRating: userProfile?.averageRating || 6
+          aveargerating:userProfile?.averageRating||6
         };
       })
     );
 
-    if (!travelMode || travelMode.trim() === "") {
-      const foundTravelModes = [...new Set(availableRides.map(ride => ride.travelMode))];
-      availableTravelModes = allTravelModes.filter(mode => foundTravelModes.includes(mode) || estimatedFares[mode]);
-    }
-
-    res.status(200).json({
-      availableRides: ridesWithProfile,
-      estimatedFares,
-      availableTravelModes
-    });
+    res.status(200).json({ availableRides, estimatedfare,ridesWithProfile });
   } catch (error) {
     console.error("Error in searchRides:", error.stack);
     res.status(500).json({ message: "Internal Server Error" });
   }
 };
-
 
 
 module.exports.booking = async (req, res) => {
