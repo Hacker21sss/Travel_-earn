@@ -1433,3 +1433,11 @@
 2025-05-27T01:59:52.886Z info: MongoDB connected
 2025-05-27T02:00:01.305Z info: POST /api/rating/+918927473643 - 200
 >>>>>>> e832b3820d37cf03ec6d3ad7e8ba5e72dd765b66
+2025-05-31T08:58:26.431Z info: Server is running on port 5002
+2025-05-31T08:58:26.434Z info: Socket.IO connection status: Connected
+2025-05-31T08:58:27.486Z info: MongoDB connected
+2025-05-31T08:58:42.718Z info: GET /t/search-rides?leavingLocation=noida&goingLocation=kolkata&date=2025-06-02&travelMode=&phoneNumber=+918927473643 - 200
+2025-05-31T09:00:48.635Z info: Server is running on port 5002
+2025-05-31T09:00:48.637Z info: Socket.IO connection status: Connected
+2025-05-31T09:00:49.330Z info: MongoDB connected
+2025-05-31T09:00:49.963Z info: GET /t/search-rides?leavingLocation=noida&goingLocation=kolkata&date=2025-06-02&travelMode=&phoneNumber=+918927473643 - 200

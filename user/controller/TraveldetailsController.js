@@ -163,14 +163,6 @@ exports.searchRides = async (req, res) => {
     const distanceValue = parseFloat(distanceText.replace(/[^\d.]/g, ""));
     console.log("Distance value:", distanceValue);
 
-    const safeTravelMode = travelMode ;
-    const estimatedFare = fare.calculateFarewithoutweight(distanceValue, safeTravelMode);
-    console.log("Estimated fare:", estimatedFare);
-
-    if (typeof estimatedFare === "undefined") {
-      return res.status(500).json({ message: "Error calculating estimated fare." });
-    }
-
     const leavingCoords = await mapservice.getAddressCoordinate(leavingLocation);
     const goingCoords = await mapservice.getAddressCoordinate(goingLocation);
 
@@ -196,8 +188,23 @@ exports.searchRides = async (req, res) => {
 
     const availableRides = await Traveldetails.find(query);
 
+    const allTravelModes = ["train", "airplane", "car"];
+    let availableTravelModes = travelMode && travelMode.trim() !== "" ? [travelMode] : allTravelModes;
+
+    const estimatedFares = availableTravelModes.reduce((acc, mode) => {
+      const faree = fare.calculateFarewithoutweight(distanceValue, mode);
+      if (typeof faree !== "undefined") {
+        acc[mode] = faree;
+      }
+      return acc;
+    }, {});
+
+    if (Object.keys(estimatedFares).length === 0) {
+      return res.status(500).json({ message: "Error calculating estimated fares." });
+    }
+
     if (!availableRides.length) {
-      return res.status(200).json({ availableRides: [], estimatedFare });
+      return res.status(200).json({ availableRides: [], estimatedFares, availableTravelModes });
     }
 
     const ridesWithProfile = await Promise.all(
@@ -215,14 +222,14 @@ exports.searchRides = async (req, res) => {
       })
     );
 
-    let availableTravelModes = [safeTravelMode];
     if (!travelMode || travelMode.trim() === "") {
-      availableTravelModes = [...new Set(availableRides.map(ride => ride.travelMode))];
+      const foundTravelModes = [...new Set(availableRides.map(ride => ride.travelMode))];
+      availableTravelModes = allTravelModes.filter(mode => foundTravelModes.includes(mode) || estimatedFares[mode]);
     }
 
     res.status(200).json({
       availableRides: ridesWithProfile,
-      estimatedFare,
+      estimatedFares,
       availableTravelModes
     });
   } catch (error) {
