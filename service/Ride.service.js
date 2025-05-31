@@ -211,7 +211,7 @@ const userprofile=await User.findOne({phoneNumber: rideRequest.requestedby})
           { upsert: true }
         ),
         rideRequest.updateOne(
-          { consignmentId, travelId },
+          { consignmentId },
           { $set: { status: "Accepted" } }
         ),
         TravelHistory.updateOne(
@@ -307,7 +307,7 @@ const userprofile=await User.findOne({phoneNumber: rideRequest.requestedby})
       ]);
       
       await rideRequest.updateOne(
-          { consignmentId, travelId },
+          { consignmentId },
           { $set: { status: "Rejected" } }
       );
 
@@ -477,7 +477,7 @@ const userprofile=await User.findOne({phoneNumber:travelHistoryBasic.phoneNumber
         ),
 
         RequestForCarry.updateOne(
-          { consignmentId, travelId },
+          { consignmentId },
           { $set: { status: "Accepted" } }
         ),
 
