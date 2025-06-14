@@ -104,7 +104,6 @@ const io = initializationsocket(server);
 if (io) {
     io.on("connection", (socket) => {
         logger.info(`A new client connected: ${socket.id}`);
-
         const phoneNumber = socket.handshake.query.phoneNumber;
         if (phoneNumber) {
             mongoose.model('userprofiles').findOneAndUpdate(

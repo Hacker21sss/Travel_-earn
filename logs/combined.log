@@ -1448,3 +1448,76 @@
 2025-05-31T09:31:25.531Z info: Server is running on port 5002
 2025-05-31T09:31:25.534Z info: Socket.IO connection status: Connected
 2025-05-31T09:31:26.300Z info: MongoDB connected
+2025-06-14T13:57:07.898Z info: Server is running on port 5002
+2025-06-14T13:57:07.900Z info: Socket.IO connection status: Connected
+2025-06-14T13:57:08.393Z info: MongoDB connected
+2025-06-14T14:08:13.227Z info: A new client connected: eo5i1j2a1DYKkZf9AAAB
+2025-06-14T14:08:13.305Z info: Socket ID eo5i1j2a1DYKkZf9AAAB associated with phoneNumber 1234567890
+2025-06-14T14:11:38.801Z info: Client disconnected: eo5i1j2a1DYKkZf9AAAB
+2025-06-14T14:11:38.839Z info: Socket ID cleared for phoneNumber 1234567890
+2025-06-14T14:11:50.749Z info: A new client connected: l4pOy7icH36I0e1uAAAD
+2025-06-14T14:11:50.788Z info: Socket ID l4pOy7icH36I0e1uAAAD associated with phoneNumber +918295525360
+2025-06-14T14:17:14.372Z info: Server is running on port 5002
+2025-06-14T14:17:14.374Z info: Socket.IO connection status: Connected
+2025-06-14T14:17:14.848Z info: MongoDB connected
+2025-06-14T14:17:16.902Z info: A new client connected: 7lcllvV7sW0P3FKiAAAB
+2025-06-14T14:17:16.958Z info: Socket ID 7lcllvV7sW0P3FKiAAAB associated with phoneNumber +918295525360
+2025-06-14T14:17:33.654Z info: Server is running on port 5002
+2025-06-14T14:17:33.656Z info: Socket.IO connection status: Connected
+2025-06-14T14:17:34.073Z info: MongoDB connected
+2025-06-14T14:17:34.099Z info: A new client connected: 7DFqIJD-wQCdGLyvAAAB
+2025-06-14T14:17:34.646Z info: Socket ID 7DFqIJD-wQCdGLyvAAAB associated with phoneNumber +918295525360
+2025-06-14T14:20:23.905Z info: Client disconnected: 7DFqIJD-wQCdGLyvAAAB
+2025-06-14T14:20:23.971Z info: Socket ID cleared for phoneNumber +918295525360
+2025-06-14T14:20:37.610Z info: A new client connected: z0pb8eTQtZzEhg6aAAAD
+2025-06-14T14:20:37.648Z info: Socket ID z0pb8eTQtZzEhg6aAAAD associated with phoneNumber +918295525360
+2025-06-14T14:21:19.232Z info: Client disconnected: z0pb8eTQtZzEhg6aAAAD
+2025-06-14T14:21:19.269Z info: Socket ID cleared for phoneNumber +918295525360
+2025-06-14T14:24:24.252Z info: Server is running on port 5002
+2025-06-14T14:24:24.255Z info: Socket.IO connection status: Connected
+2025-06-14T14:24:24.733Z info: MongoDB connected
+2025-06-14T14:24:29.744Z info: Server is running on port 5002
+2025-06-14T14:24:29.747Z info: Socket.IO connection status: Connected
+2025-06-14T14:24:30.210Z info: MongoDB connected
+2025-06-14T14:24:54.594Z info: A new client connected: UZGciQXnF19o8bGXAAAB
+2025-06-14T14:24:54.644Z info: Socket ID UZGciQXnF19o8bGXAAAB associated with phoneNumber +918295525360
+2025-06-14T14:29:16.701Z info: Server is running on port 5002
+2025-06-14T14:29:16.703Z info: Socket.IO connection status: Connected
+2025-06-14T14:29:16.812Z info: A new client connected: J6dCLfEtzuvG9xFIAAAB
+2025-06-14T14:29:17.288Z info: MongoDB connected
+2025-06-14T14:29:17.688Z info: Socket ID J6dCLfEtzuvG9xFIAAAB associated with phoneNumber +918295525360
+2025-06-14T14:29:39.566Z info: Server is running on port 5002
+2025-06-14T14:29:39.569Z info: Socket.IO connection status: Connected
+2025-06-14T14:29:39.700Z info: A new client connected: Wixn3m6WeK7ZRBRYAAAB
+2025-06-14T14:29:40.061Z info: MongoDB connected
+2025-06-14T14:29:40.448Z info: Socket ID Wixn3m6WeK7ZRBRYAAAB associated with phoneNumber +918295525360
+2025-06-14T14:30:09.983Z info: Server is running on port 5002
+2025-06-14T14:30:09.985Z info: Socket.IO connection status: Connected
+2025-06-14T14:30:10.447Z info: MongoDB connected
+2025-06-14T14:30:10.664Z info: A new client connected: N4YnLzmssg15tA8fAAAB
+2025-06-14T14:30:11.078Z info: Socket ID N4YnLzmssg15tA8fAAAB associated with phoneNumber +918295525360
+2025-06-14T14:30:14.685Z info: Server is running on port 5002
+2025-06-14T14:30:14.689Z info: Socket.IO connection status: Connected
+2025-06-14T14:30:15.169Z info: MongoDB connected
+2025-06-14T14:30:15.465Z info: A new client connected: Q6ysp8Eq20dV8lRKAAAB
+2025-06-14T14:30:15.636Z info: Socket ID Q6ysp8Eq20dV8lRKAAAB associated with phoneNumber +918295525360
+2025-06-14T14:30:18.829Z info: Server is running on port 5002
+2025-06-14T14:30:18.832Z info: Socket.IO connection status: Connected
+2025-06-14T14:30:19.105Z info: A new client connected: rz-hHcarT0uNc45WAAAB
+2025-06-14T14:30:19.281Z info: MongoDB connected
+2025-06-14T14:30:19.672Z info: Socket ID rz-hHcarT0uNc45WAAAB associated with phoneNumber +918295525360
+2025-06-14T14:31:10.789Z info: Server is running on port 5002
+2025-06-14T14:31:10.792Z info: Socket.IO connection status: Connected
+2025-06-14T14:31:11.242Z info: MongoDB connected
+2025-06-14T14:31:11.462Z info: A new client connected: rslNxiU2nQFWJppMAAAB
+2025-06-14T14:31:11.847Z info: Socket ID rslNxiU2nQFWJppMAAAB associated with phoneNumber +918295525360
+2025-06-14T14:31:13.891Z info: Server is running on port 5002
+2025-06-14T14:31:13.893Z info: Socket.IO connection status: Connected
+2025-06-14T14:31:14.002Z info: A new client connected: XE1_oC5xsPWiTB8EAAAB
+2025-06-14T14:31:14.364Z info: MongoDB connected
+2025-06-14T14:31:14.756Z info: Socket ID XE1_oC5xsPWiTB8EAAAB associated with phoneNumber +918295525360
+2025-06-14T14:31:24.235Z info: Server is running on port 5002
+2025-06-14T14:31:24.240Z info: Socket.IO connection status: Connected
+2025-06-14T14:31:24.645Z info: A new client connected: OYkIE9QBALT5IpEWAAAB
+2025-06-14T14:31:24.712Z info: MongoDB connected
+2025-06-14T14:31:25.110Z info: Socket ID OYkIE9QBALT5IpEWAAAB associated with phoneNumber +918295525360

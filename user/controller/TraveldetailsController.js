@@ -297,6 +297,7 @@ exports.searchRides = async (req, res) => {
     if (!availableRides.length) {
       return res.status(200).json();
     }
+    console.log(!availableRides)
     const ridesWithProfile = await Promise.all(
       availableRides.map(async (ride) => {
         const userProfile = await userprofiles.findOne(
