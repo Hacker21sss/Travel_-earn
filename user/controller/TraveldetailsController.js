@@ -12,20 +12,20 @@ const Notification = require('../../user/model/notification')
 const datetime = require('../../service/getcurrentdatetime')
 const User = require('../model/User');
 
-const geolib = require("geolib");
+// const geolib = require("geolib");
 
-/**
- * Returns bounding box for a center point and radius in meters
- */
-function getBoundingBox(center, radiusInMeters) {
-  const bounds = geolib.getBoundsOfDistance(center, radiusInMeters);
-  return {
-    minLat: bounds[0].latitude,
-    maxLat: bounds[1].latitude,
-    minLng: bounds[0].longitude,
-    maxLng: bounds[1].longitude,
-  };
-}
+// /**
+//  * Returns bounding box for a center point and radius in meters
+//  */
+// function getBoundingBox(center, radiusInMeters) {
+//   const bounds = geolib.getBoundsOfDistance(center, radiusInMeters);
+//   return {
+//     minLat: bounds[0].latitude,
+//     maxLat: bounds[1].latitude,
+//     minLng: bounds[0].longitude,
+//     maxLng: bounds[1].longitude,
+//   };
+// }
 
 
 exports.getAutoCompleteAndCreateBooking = async (req, res) => {
@@ -302,44 +302,44 @@ exports.searchRides = async (req, res) => {
     console.log("Going Coordinates:", goingCoords);
 
 
-    const radiusInMeters = 3000;
+    // const radiusInMeters = 3000;
 
-    // Step 1: Get bounding box
-    const boundingBox = getBoundingBox(
-      { latitude: leavingCoords.ltd, longitude: leavingCoords.lng },
-      radiusInMeters
-    );
+    // // Step 1: Get bounding box
+    // const boundingBox = getBoundingBox(
+    //   { latitude: leavingCoords.ltd, longitude: leavingCoords.lng },
+    //   radiusInMeters
+    // );
 
-    // Step 2: Query rides within bounding box
-    const nearbyCandidates = await Traveldetails.find({
-      "LeavingCoordinates.ltd": { $gte: boundingBox.minLat, $lte: boundingBox.maxLat },
-      "LeavingCoordinates.lng": { $gte: boundingBox.minLng, $lte: boundingBox.maxLng },
-      "GoingCoordinates.ltd": goingCoords.ltd,
-      "GoingCoordinates.lng": goingCoords.lng,
-      travelDate: { $gte: startOfDay, $lt: endOfDay },
-      travelMode,
-      phoneNumber: { $ne: phoneNumber }
-    });
-
-    // Step 3: Apply precise radius filter
-    const availableRides = nearbyCandidates.filter((ride) => {
-      const distance = geolib.getDistance(
-        { latitude: leavingCoords.ltd, longitude: leavingCoords.lng },
-        { latitude: ride.LeavingCoordinates.ltd, longitude: ride.LeavingCoordinates.lng }
-      );
-      return distance <= radiusInMeters;
-    });
-
-
-    // const availableRides = await Traveldetails.find({
-    //   "LeavingCoordinates.ltd": leavingCoords.ltd,
-    //   "LeavingCoordinates.lng": leavingCoords.lng,
+    // // Step 2: Query rides within bounding box
+    // const nearbyCandidates = await Traveldetails.find({
+    //   "LeavingCoordinates.ltd": { $gte: boundingBox.minLat, $lte: boundingBox.maxLat },
+    //   "LeavingCoordinates.lng": { $gte: boundingBox.minLng, $lte: boundingBox.maxLng },
     //   "GoingCoordinates.ltd": goingCoords.ltd,
     //   "GoingCoordinates.lng": goingCoords.lng,
     //   travelDate: { $gte: startOfDay, $lt: endOfDay },
     //   travelMode,
     //   phoneNumber: { $ne: phoneNumber }
     // });
+
+    // // Step 3: Apply precise radius filter
+    // const availableRides = nearbyCandidates.filter((ride) => {
+    //   const distance = geolib.getDistance(
+    //     { latitude: leavingCoords.ltd, longitude: leavingCoords.lng },
+    //     { latitude: ride.LeavingCoordinates.ltd, longitude: ride.LeavingCoordinates.lng }
+    //   );
+    //   return distance <= radiusInMeters;
+    // });
+
+
+    const availableRides = await Traveldetails.find({
+      "LeavingCoordinates.ltd": leavingCoords.ltd,
+      "LeavingCoordinates.lng": leavingCoords.lng,
+      "GoingCoordinates.ltd": goingCoords.ltd,
+      "GoingCoordinates.lng": goingCoords.lng,
+      travelDate: { $gte: startOfDay, $lt: endOfDay },
+      travelMode,
+      phoneNumber: { $ne: phoneNumber }
+    });
 
     if (!availableRides.length) {
       return res.status(200).json();
