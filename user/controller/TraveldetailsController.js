@@ -12,6 +12,22 @@ const Notification = require('../../user/model/notification')
 const datetime = require('../../service/getcurrentdatetime')
 const User = require('../model/User');
 
+const geolib = require("geolib");
+
+/**
+ * Returns bounding box for a center point and radius in meters
+ */
+function getBoundingBox(center, radiusInMeters) {
+  const bounds = geolib.getBoundsOfDistance(center, radiusInMeters);
+  return {
+    minLat: bounds[0].latitude,
+    maxLat: bounds[1].latitude,
+    minLng: bounds[0].longitude,
+    maxLng: bounds[1].longitude,
+  };
+}
+
+
 exports.getAutoCompleteAndCreateBooking = async (req, res) => {
   const { phoneNumber, travelDate, travelmode_number, travelMode, expectedStartTime, expectedEndTime, weight } = req.body;
   const { Leavinglocation, Goinglocation } = req.query;
@@ -237,10 +253,11 @@ exports.getAutoCompleteAndCreateBooking = async (req, res) => {
 //     res.status(500).json({ message: "Internal Server Error" });
 //   }
 // };
+
 exports.searchRides = async (req, res) => {
   try {
-    const { leavingLocation, goingLocation, date, travelMode,phoneNumber } = req.query;
-    console.log("Received query:", { leavingLocation, goingLocation, date, travelMode,phoneNumber });
+    const { leavingLocation, goingLocation, date, travelMode, phoneNumber } = req.query;
+    console.log("Received query:", { leavingLocation, goingLocation, date, travelMode, phoneNumber });
     // const { phoneNumber } = req.user;
 
     if (!leavingLocation || !goingLocation || !date) {
@@ -284,15 +301,45 @@ exports.searchRides = async (req, res) => {
     console.log("Leaving Coordinates:", leavingCoords);
     console.log("Going Coordinates:", goingCoords);
 
-    const availableRides = await Traveldetails.find({
-      "LeavingCoordinates.ltd": leavingCoords.ltd,
-      "LeavingCoordinates.lng": leavingCoords.lng,
+
+    const radiusInMeters = 3000;
+
+    // Step 1: Get bounding box
+    const boundingBox = getBoundingBox(
+      { latitude: leavingCoords.ltd, longitude: leavingCoords.lng },
+      radiusInMeters
+    );
+
+    // Step 2: Query rides within bounding box
+    const nearbyCandidates = await Traveldetails.find({
+      "LeavingCoordinates.ltd": { $gte: boundingBox.minLat, $lte: boundingBox.maxLat },
+      "LeavingCoordinates.lng": { $gte: boundingBox.minLng, $lte: boundingBox.maxLng },
       "GoingCoordinates.ltd": goingCoords.ltd,
       "GoingCoordinates.lng": goingCoords.lng,
       travelDate: { $gte: startOfDay, $lt: endOfDay },
       travelMode,
       phoneNumber: { $ne: phoneNumber }
     });
+
+    // Step 3: Apply precise radius filter
+    const availableRides = nearbyCandidates.filter((ride) => {
+      const distance = geolib.getDistance(
+        { latitude: leavingCoords.ltd, longitude: leavingCoords.lng },
+        { latitude: ride.LeavingCoordinates.ltd, longitude: ride.LeavingCoordinates.lng }
+      );
+      return distance <= radiusInMeters;
+    });
+
+
+    // const availableRides = await Traveldetails.find({
+    //   "LeavingCoordinates.ltd": leavingCoords.ltd,
+    //   "LeavingCoordinates.lng": leavingCoords.lng,
+    //   "GoingCoordinates.ltd": goingCoords.ltd,
+    //   "GoingCoordinates.lng": goingCoords.lng,
+    //   travelDate: { $gte: startOfDay, $lt: endOfDay },
+    //   travelMode,
+    //   phoneNumber: { $ne: phoneNumber }
+    // });
 
     if (!availableRides.length) {
       return res.status(200).json();
@@ -302,18 +349,18 @@ exports.searchRides = async (req, res) => {
       availableRides.map(async (ride) => {
         const userProfile = await userprofiles.findOne(
           { phoneNumber: ride.phoneNumber },
-         { profilePicture: 1, totalrating: 1, averageRating: 1 }
+          { profilePicture: 1, totalrating: 1, averageRating: 1 }
         ).lean();
         return {
           ...ride,
           profilePicture: userProfile?.profilePicture || null,
           rating: userProfile?.totalrating || null,
-          aveargerating:userProfile?.averageRating||6
+          aveargerating: userProfile?.averageRating || 6
         };
       })
     );
 
-    res.status(200).json({ availableRides, estimatedfare,ridesWithProfile });
+    res.status(200).json({ availableRides, estimatedfare, ridesWithProfile });
   } catch (error) {
     console.error("Error in searchRides:", error.stack);
     res.status(500).json({ message: "Internal Server Error" });
