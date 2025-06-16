@@ -110,6 +110,7 @@ exports.getAutoCompleteAndCreateBooking = async (req, res) => {
         lng: GoingCoordinates.lng
       }
     };
+    console.log("travelDetails",travelDetails);
 
     const travelRecord = await Traveldetails.create(travelDetails);
 
