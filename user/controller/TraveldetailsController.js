@@ -323,8 +323,8 @@ exports.searchRides = async (req, res) => {
       "LeavingCoordinates.lng": { $gte: leavingBoundingBox.minLng, $lte: leavingBoundingBox.maxLng },
       "GoingCoordinates.ltd": { $gte: goingBoundingBox.minLat, $lte: goingBoundingBox.maxLat },
       "GoingCoordinates.lng": { $gte: goingBoundingBox.minLng, $lte: goingBoundingBox.maxLng },
-      travelMode,
-      // phoneNumber: { $ne: phoneNumber }
+      travelDate: { $gte: startOfDay, $lt: endOfDay },
+      phoneNumber: { $ne: phoneNumber }
     });
 
     console.log("Found nearby candidates:", nearbyCandidates.length);
