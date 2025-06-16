@@ -357,18 +357,17 @@ exports.searchRides = async (req, res) => {
     });
 
     // Build the search query
-    const query = {
+    const baseQuery = {
       "LeavingCoordinates.ltd": { $gte: leavingBoundingBox.minLat, $lte: leavingBoundingBox.maxLat },
       "LeavingCoordinates.lng": { $gte: leavingBoundingBox.minLng, $lte: leavingBoundingBox.maxLng },
       "GoingCoordinates.ltd": { $gte: goingBoundingBox.minLat, $lte: goingBoundingBox.maxLat },
       "GoingCoordinates.lng": { $gte: goingBoundingBox.minLng, $lte: goingBoundingBox.maxLng },
-      travelDate: { $gte: startOfDay, $lt: endOfDay },
-      // phoneNumber: { $ne: phoneNumber }
+      travelDate: { $gte: startOfDay, $lt: endOfDay }
     };
 
-    if (travelMode && travelMode.trim() !== "") {
-      query.travelMode = travelMode;
-    }
+    const query = travelMode && travelMode.trim() !== "" 
+      ? { ...baseQuery, travelMode }
+      : baseQuery;
 
     console.log("Search query:", JSON.stringify(query, null, 2));
 
