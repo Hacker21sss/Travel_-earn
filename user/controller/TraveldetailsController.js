@@ -95,20 +95,23 @@ exports.getAutoCompleteAndCreateBooking = async (req, res) => {
       duration: durationText,
       userrating,
       totalrating,
-
       price,
       rideId,
       TE: price.TE,
       discount: price.discount,
       payableAmount: price.payableAmount,
       travelId,
+      LeavingCoordinates: {
+        ltd: LeavingCoordinates.ltd,
+        lng: LeavingCoordinates.lng
+      },
+      GoingCoordinates: {
+        ltd: GoingCoordinates.ltd,
+        lng: GoingCoordinates.lng
+      }
     };
 
-    const travelRecord = await Traveldetails.create({
-      ...travelDetails,
-      LeavingCoordinates: LeavingCoordinates,
-      GoingCoordinates: GoingCoordinates,
-    });
+    const travelRecord = await Traveldetails.create(travelDetails);
 
     const now = moment();
     let Status = "UPCOMING";
@@ -128,7 +131,14 @@ exports.getAutoCompleteAndCreateBooking = async (req, res) => {
       drop: Goinglocation,
       expectedStartTime: expectedStart,
       expectedendtime: expectedEnd,
-
+      LeavingCoordinates: {
+        ltd: LeavingCoordinates.ltd,
+        lng: LeavingCoordinates.lng
+      },
+      GoingCoordinates: {
+        ltd: GoingCoordinates.ltd,
+        lng: GoingCoordinates.lng
+      }
     });
 
     await history.save();
@@ -144,7 +154,6 @@ exports.getAutoCompleteAndCreateBooking = async (req, res) => {
         payableAmount: price.payableAmount,
         travelId,
       },
-
     });
   } catch (error) {
     return res.status(500).json({ message: "Internal server error", error: error.message });
