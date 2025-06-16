@@ -339,7 +339,7 @@ exports.searchRides = async (req, res) => {
         going: allRides[0].GoingCoordinates,
         travelMode: allRides[0].travelMode,
         travelDate: allRides[0].travelDate,
-        Sample : allRides[0]
+        Sample : allRides[100]
       });
     }
 
