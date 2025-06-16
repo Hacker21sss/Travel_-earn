@@ -12,20 +12,20 @@ const Notification = require('../../user/model/notification')
 const datetime = require('../../service/getcurrentdatetime')
 const User = require('../model/User');
 
-// const geolib = require("geolib");
+const geolib = require("geolib");
 
-// /**
-//  * Returns bounding box for a center point and radius in meters
-//  */
-// function getBoundingBox(center, radiusInMeters) {
-//   const bounds = geolib.getBoundsOfDistance(center, radiusInMeters);
-//   return {
-//     minLat: bounds[0].latitude,
-//     maxLat: bounds[1].latitude,
-//     minLng: bounds[0].longitude,
-//     maxLng: bounds[1].longitude,
-//   };
-// }
+/**
+ * Returns bounding box for a center point and radius in meters
+ */
+function getBoundingBox(center, radiusInMeters) {
+  const bounds = geolib.getBoundsOfDistance(center, radiusInMeters);
+  return {
+    minLat: bounds[0].latitude,
+    maxLat: bounds[1].latitude,
+    minLng: bounds[0].longitude,
+    maxLng: bounds[1].longitude,
+  };
+}
 
 
 exports.getAutoCompleteAndCreateBooking = async (req, res) => {
@@ -284,10 +284,10 @@ exports.searchRides = async (req, res) => {
 
     // Default to "train" if travelMode is undefined
     const safeTravelMode = travelMode || "train";
-    const estimatedfare = fare.calculateFarewithoutweight(distanceValue, safeTravelMode);
+    const estimatedfare = await fare.calculateFarewithoutweight(distanceValue, safeTravelMode);
     console.log("Estimated fare:", estimatedfare);
 
-    if (typeof estimatedfare === "undefined") {
+    if (!estimatedfare) {
       return res.status(500).json({ message: "Error calculating estimated fare." });
     }
 
@@ -301,48 +301,53 @@ exports.searchRides = async (req, res) => {
     console.log("Leaving Coordinates:", leavingCoords);
     console.log("Going Coordinates:", goingCoords);
 
+    const radiusInMeters = 3*1000;
 
-    // const radiusInMeters = 3000;
+    // Step 1: Get bounding boxes for both locations
+    const leavingBoundingBox = getBoundingBox(
+      { latitude: leavingCoords.ltd, longitude: leavingCoords.lng },
+      radiusInMeters
+    );
 
-    // // Step 1: Get bounding box
-    // const boundingBox = getBoundingBox(
-    //   { latitude: leavingCoords.ltd, longitude: leavingCoords.lng },
-    //   radiusInMeters
-    // );
+    const goingBoundingBox = getBoundingBox(
+      { latitude: goingCoords.ltd, longitude: goingCoords.lng },
+      radiusInMeters
+    );
 
-    // // Step 2: Query rides within bounding box
-    // const nearbyCandidates = await Traveldetails.find({
-    //   "LeavingCoordinates.ltd": { $gte: boundingBox.minLat, $lte: boundingBox.maxLat },
-    //   "LeavingCoordinates.lng": { $gte: boundingBox.minLng, $lte: boundingBox.maxLng },
-    //   "GoingCoordinates.ltd": goingCoords.ltd,
-    //   "GoingCoordinates.lng": goingCoords.lng,
-    //   travelDate: { $gte: startOfDay, $lt: endOfDay },
-    //   travelMode,
-    //   phoneNumber: { $ne: phoneNumber }
-    // });
+    console.log("Leaving Bounding Box:", leavingBoundingBox);
+    console.log("Going Bounding Box:", goingBoundingBox);
 
-    // // Step 3: Apply precise radius filter
-    // const availableRides = nearbyCandidates.filter((ride) => {
-    //   const distance = geolib.getDistance(
-    //     { latitude: leavingCoords.ltd, longitude: leavingCoords.lng },
-    //     { latitude: ride.LeavingCoordinates.ltd, longitude: ride.LeavingCoordinates.lng }
-    //   );
-    //   return distance <= radiusInMeters;
-    // });
-
-
-    const availableRides = await Traveldetails.find({
-      "LeavingCoordinates.ltd": leavingCoords.ltd,
-      "LeavingCoordinates.lng": leavingCoords.lng,
-      "GoingCoordinates.ltd": goingCoords.ltd,
-      "GoingCoordinates.lng": goingCoords.lng,
-      travelDate: { $gte: startOfDay, $lt: endOfDay },
+    // Step 2: Query rides within both bounding boxes
+    const nearbyCandidates = await Traveldetails.find({
+      "LeavingCoordinates.ltd": { $gte: leavingBoundingBox.minLat, $lte: leavingBoundingBox.maxLat },
+      "LeavingCoordinates.lng": { $gte: leavingBoundingBox.minLng, $lte: leavingBoundingBox.maxLng },
+      "GoingCoordinates.ltd": { $gte: goingBoundingBox.minLat, $lte: goingBoundingBox.maxLat },
+      "GoingCoordinates.lng": { $gte: goingBoundingBox.minLng, $lte: goingBoundingBox.maxLng },
       travelMode,
-      phoneNumber: { $ne: phoneNumber }
+      // phoneNumber: { $ne: phoneNumber }
     });
 
+    console.log("Found nearby candidates:", nearbyCandidates.length);
+
+    // Step 3: Apply precise radius filter for both locations
+    const availableRides = nearbyCandidates.filter((ride) => {
+      const leavingDistance = geolib.getDistance(
+        { latitude: leavingCoords.ltd, longitude: leavingCoords.lng },
+        { latitude: ride.LeavingCoordinates.ltd, longitude: ride.LeavingCoordinates.lng }
+      );
+
+      const goingDistance = geolib.getDistance(
+        { latitude: goingCoords.ltd, longitude: goingCoords.lng },
+        { latitude: ride.GoingCoordinates.ltd, longitude: ride.GoingCoordinates.lng }
+      );
+
+      return leavingDistance <= radiusInMeters && goingDistance <= radiusInMeters;
+    });
+
+    console.log("Available Rides after filtering:", availableRides.length);
+    console.log("Available Rides:", availableRides);
     if (!availableRides.length) {
-      return res.status(200).json();
+      return res.status(200).json({message:"No rides found", estimatedfare});
     }
     console.log(!availableRides)
     const ridesWithProfile = await Promise.all(
@@ -359,8 +364,8 @@ exports.searchRides = async (req, res) => {
         };
       })
     );
-
-    res.status(200).json({ availableRides, estimatedfare, ridesWithProfile });
+    console.log("rides with profile " ,ridesWithProfile);
+    res.status(200).json({ availableRides, ridesWithProfile, estimatedfare });
   } catch (error) {
     console.error("Error in searchRides:", error.stack);
     res.status(500).json({ message: "Internal Server Error" });

@@ -195,8 +195,71 @@ const handleRazorpayResponse = async (req, res) => {
   }
 };
 
+const declinePayment = async (req, res) => {
+  const session = await Earning.startSession();
+  session.startTransaction();
+
+  try {
+    const {
+      razorpay_order_id,
+      razorpay_payment_id,
+      phoneNumber,
+      amount,
+      travelId,
+      reason = "Payment declined by user"
+    } = req.body;
+
+    // Input Validation
+    if (!razorpay_order_id || !razorpay_payment_id) {
+      console.error("Missing required fields:", req.body);
+      return res.status(400).json({ success: false, message: "Missing required payment data" });
+    }
+
+    if (!phoneNumber) {
+      console.error("Invalid phoneNumber:", phoneNumber);
+      return res.status(400).json({ success: false, message: "Invalid phone number format." });
+    }
+
+    // Update transaction status to Declined
+    const updateResult = await Earning.updateOne(
+      { phoneNumber, "transactions.paymentId": razorpay_payment_id },
+      { 
+        $set: { 
+          "transactions.$.status": "Declined",
+          "transactions.$.declineReason": reason
+        } 
+      },
+      { session }
+    );
+
+    // Update notification status
+    if (travelId) {
+      await notification.updateOne(
+        { travelId },
+        { $set: { "paymentstatus": "declined" } },
+        { session }
+      );
+    }
+
+    await session.commitTransaction();
+    console.log("Payment declined successfully for:", razorpay_payment_id);
+
+    res.status(200).json({
+      success: true,
+      message: "Payment declined successfully"
+    });
+  } catch (error) {
+    await session.abortTransaction();
+    console.error("Error declining payment:", error.message, error.stack);
+    res.status(500).json({ success: false, message: "Something went wrong", error: error.message });
+  } finally {
+    session.endSession();
+  }
+};
+
 module.exports = {
   createOrder,
   verifyOrder,
   handleRazorpayResponse,
+  declinePayment
 };

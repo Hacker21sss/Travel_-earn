@@ -1521,3 +1521,112 @@
 2025-06-14T14:31:24.645Z info: A new client connected: OYkIE9QBALT5IpEWAAAB
 2025-06-14T14:31:24.712Z info: MongoDB connected
 2025-06-14T14:31:25.110Z info: Socket ID OYkIE9QBALT5IpEWAAAB associated with phoneNumber +918295525360
+2025-06-16T13:12:20.214Z info: Server is running on port 5002
+2025-06-16T13:12:20.216Z info: Socket.IO connection status: Connected
+2025-06-16T13:12:21.257Z info: MongoDB connected
+2025-06-16T13:16:03.133Z info: GET / - 200
+2025-06-16T13:19:03.390Z info: GET /t/search-rides?leavingLocation=Mumbai,%20India&goingLocation=Delhi,%20India&date=2025-06-20&travelMode=car&phoneNumber=+918295525360 - 200
+2025-06-16T13:19:21.770Z info: Server is running on port 5002
+2025-06-16T13:19:21.774Z info: Socket.IO connection status: Connected
+2025-06-16T13:19:21.939Z info: GET /t/search-rides?leavingLocation=Mumbai,%20India&goingLocation=Delhi,%20India&date=2025-06-20&travelMode=car&phoneNumber=+918295525360 - 200
+2025-06-16T13:19:22.834Z info: MongoDB connected
+2025-06-16T13:21:50.683Z info: Server is running on port 5002
+2025-06-16T13:21:50.686Z info: Socket.IO connection status: Connected
+2025-06-16T13:21:51.385Z info: MongoDB connected
+2025-06-16T13:21:54.042Z info: Server is running on port 5002
+2025-06-16T13:21:54.044Z info: Socket.IO connection status: Connected
+2025-06-16T13:21:54.646Z info: MongoDB connected
+2025-06-16T13:21:57.956Z info: Server is running on port 5002
+2025-06-16T13:21:57.960Z info: Socket.IO connection status: Connected
+2025-06-16T13:22:00.141Z info: Server is running on port 5002
+2025-06-16T13:22:00.144Z info: Socket.IO connection status: Connected
+2025-06-16T13:22:00.923Z info: MongoDB connected
+2025-06-16T13:22:15.265Z info: Server is running on port 5002
+2025-06-16T13:22:15.273Z info: Socket.IO connection status: Connected
+2025-06-16T13:22:16.069Z info: MongoDB connected
+2025-06-16T13:22:30.013Z info: Server is running on port 5002
+2025-06-16T13:22:30.015Z info: Socket.IO connection status: Connected
+2025-06-16T13:22:30.824Z info: MongoDB connected
+2025-06-16T13:22:32.526Z info: Server is running on port 5002
+2025-06-16T13:22:32.529Z info: Socket.IO connection status: Connected
+2025-06-16T13:22:33.316Z info: MongoDB connected
+2025-06-16T13:22:33.384Z info: GET /t/search-rides?leavingLocation=Mumbai,%20India&goingLocation=Delhi,%20India&date=2025-06-20&travelMode=car&phoneNumber=+918295525360 - 200
+2025-06-16T13:27:30.505Z info: Server is running on port 5002
+2025-06-16T13:27:30.509Z info: Socket.IO connection status: Connected
+2025-06-16T13:27:31.307Z info: MongoDB connected
+2025-06-16T13:27:53.941Z info: Server is running on port 5002
+2025-06-16T13:27:53.943Z info: Socket.IO connection status: Connected
+2025-06-16T13:27:54.468Z info: MongoDB connected
+2025-06-16T13:28:10.817Z info: Server is running on port 5002
+2025-06-16T13:28:10.820Z info: Socket.IO connection status: Connected
+2025-06-16T13:28:11.660Z info: MongoDB connected
+2025-06-16T13:28:15.289Z info: GET /t/search-rides?leavingLocation=Mumbai,%20India&goingLocation=Delhi,%20India&date=2025-06-20&travelMode=car&phoneNumber=+918295525360 - 200
+2025-06-16T13:28:25.589Z info: Server is running on port 5002
+2025-06-16T13:28:25.592Z info: Socket.IO connection status: Connected
+2025-06-16T13:28:26.330Z info: MongoDB connected
+2025-06-16T13:28:33.386Z info: Server is running on port 5002
+2025-06-16T13:28:33.389Z info: Socket.IO connection status: Connected
+2025-06-16T13:28:34.200Z info: MongoDB connected
+2025-06-16T13:28:36.956Z info: GET /t/search-rides?leavingLocation=Mumbai,%20India&goingLocation=Delhi,%20India&date=2025-06-20&travelMode=car&phoneNumber=+918295525360 - 200
+2025-06-16T13:29:37.208Z info: Server is running on port 5002
+2025-06-16T13:29:37.212Z info: Socket.IO connection status: Connected
+2025-06-16T13:29:37.935Z info: MongoDB connected
+2025-06-16T13:29:52.711Z info: GET /t/search-rides?leavingLocation=Mumbai,%20India&goingLocation=Delhi,%20India&date=2025-06-20&travelMode=car&phoneNumber=+918295525360 - 200
+2025-06-16T13:30:04.799Z info: Server is running on port 5002
+2025-06-16T13:30:04.803Z info: Socket.IO connection status: Connected
+2025-06-16T13:30:05.554Z info: MongoDB connected
+2025-06-16T13:30:14.145Z info: Server is running on port 5002
+2025-06-16T13:30:14.147Z info: Socket.IO connection status: Connected
+2025-06-16T13:30:14.709Z info: MongoDB connected
+2025-06-16T13:30:18.762Z info: Server is running on port 5002
+2025-06-16T13:30:18.765Z info: Socket.IO connection status: Connected
+2025-06-16T13:30:19.267Z info: MongoDB connected
+2025-06-16T13:30:37.101Z info: Server is running on port 5002
+2025-06-16T13:30:37.103Z info: Socket.IO connection status: Connected
+2025-06-16T13:30:37.346Z info: GET /t/search-rides?leavingLocation=Mumbai,%20India&goingLocation=Delhi,%20India&date=2025-06-20&travelMode=car&phoneNumber=+918295525360 - 200
+2025-06-16T13:30:37.879Z info: MongoDB connected
+2025-06-16T13:31:37.201Z info: Server is running on port 5002
+2025-06-16T13:31:37.203Z info: Socket.IO connection status: Connected
+2025-06-16T13:31:37.937Z info: MongoDB connected
+2025-06-16T13:31:39.978Z info: Server is running on port 5002
+2025-06-16T13:31:39.980Z info: Socket.IO connection status: Connected
+2025-06-16T13:31:40.619Z info: MongoDB connected
+2025-06-16T13:31:45.308Z info: Server is running on port 5002
+2025-06-16T13:31:45.311Z info: Socket.IO connection status: Connected
+2025-06-16T13:31:45.545Z info: GET /t/search-rides?leavingLocation=Mumbai,%20India&goingLocation=Delhi,%20India&date=2025-06-20&travelMode=car&phoneNumber=+918295525360 - 200
+2025-06-16T13:31:46.081Z info: MongoDB connected
+2025-06-16T13:33:07.200Z info: Server is running on port 5002
+2025-06-16T13:33:07.202Z info: Socket.IO connection status: Connected
+2025-06-16T13:33:07.880Z info: MongoDB connected
+2025-06-16T13:33:09.899Z info: Server is running on port 5002
+2025-06-16T13:33:09.901Z info: Socket.IO connection status: Connected
+2025-06-16T13:33:09.992Z info: GET /t/search-rides?leavingLocation=Mumbai,%20India&goingLocation=Delhi,%20India&date=2025-06-20&travelMode=car&phoneNumber=+918295525360 - 200
+2025-06-16T13:33:10.691Z info: MongoDB connected
+2025-06-16T13:34:47.446Z info: Server is running on port 5002
+2025-06-16T13:34:47.449Z info: Socket.IO connection status: Connected
+2025-06-16T13:34:49.822Z info: Server is running on port 5002
+2025-06-16T13:34:49.824Z info: Socket.IO connection status: Connected
+2025-06-16T13:34:51.954Z info: Server is running on port 5002
+2025-06-16T13:34:51.956Z info: Socket.IO connection status: Connected
+2025-06-16T13:34:52.321Z info: GET /t/search-rides?leavingLocation=Mumbai,%20India&goingLocation=Delhi,%20India&date=2025-06-20&travelMode=car&phoneNumber=+918295525360 - 200
+2025-06-16T13:34:52.612Z info: MongoDB connected
+2025-06-16T13:36:35.946Z info: Server is running on port 5002
+2025-06-16T13:36:35.950Z info: Socket.IO connection status: Connected
+2025-06-16T13:36:36.803Z info: MongoDB connected
+2025-06-16T13:36:42.610Z info: Server is running on port 5002
+2025-06-16T13:36:42.614Z info: Socket.IO connection status: Connected
+2025-06-16T13:36:43.230Z info: MongoDB connected
+2025-06-16T13:36:50.679Z info: GET /t/search-rides?leavingLocation=Mumbai,%20India&goingLocation=Delhi,%20India&date=2025-06-20&travelMode=car&phoneNumber=+918295525360 - 200
+2025-06-16T13:37:28.804Z info: Server is running on port 5002
+2025-06-16T13:37:28.810Z info: Socket.IO connection status: Connected
+2025-06-16T13:37:29.634Z info: MongoDB connected
+2025-06-16T13:37:58.571Z info: Server is running on port 5002
+2025-06-16T13:37:58.585Z info: Socket.IO connection status: Connected
+2025-06-16T13:37:59.485Z info: MongoDB connected
+2025-06-16T13:38:35.896Z info: Server is running on port 5002
+2025-06-16T13:38:35.900Z info: Socket.IO connection status: Connected
+2025-06-16T13:38:36.629Z info: MongoDB connected
+2025-06-16T13:38:46.346Z info: Server is running on port 5002
+2025-06-16T13:38:46.349Z info: Socket.IO connection status: Connected
+2025-06-16T13:38:47.100Z info: MongoDB connected
+2025-06-16T13:38:53.328Z info: GET /t/search-rides?leavingLocation=Mumbai,%20India&goingLocation=Delhi,%20India&date=2025-06-20&travelMode=car&phoneNumber=+918295525360 - 200
