@@ -269,9 +269,12 @@ exports.searchRides = async (req, res) => {
       return res.status(400).json({ message: "Invalid date format. Use YYYY-MM-DD." });
     }
 
+    // Convert the input date to start and end of day in ISO format
     const searchDate = new Date(date);
-    const startOfDay = new Date(searchDate.setHours(0, 0, 0, 0));
-    const endOfDay = new Date(searchDate.setHours(23, 59, 59, 999));
+    const startOfDay = new Date(searchDate.setHours(0, 0, 0, 0)).toISOString();
+    const endOfDay = new Date(searchDate.setHours(23, 59, 59, 999)).toISOString();
+
+    console.log("Date range for search:", { startOfDay, endOfDay });
 
     const { distance } = await mapservice.getDistanceTime(leavingLocation, goingLocation);
     if (!distance || !distance.text) {
@@ -317,16 +320,33 @@ exports.searchRides = async (req, res) => {
     console.log("Leaving Bounding Box:", leavingBoundingBox);
     console.log("Going Bounding Box:", goingBoundingBox);
 
+    // First, let's check what's in the database
+    const allRides = await Traveldetails.find({}).lean();
+    console.log("Total rides in database:", allRides.length);
+    if (allRides.length > 0) {
+      console.log("Sample ride coordinates from database:");
+      console.log({
+        leaving: allRides[0].LeavingCoordinates,
+        going: allRides[0].GoingCoordinates,
+        travelMode: allRides[0].travelMode,
+        travelDate: allRides[0].travelDate
+      });
+    }
+
     // Step 2: Query rides within both bounding boxes
-    const nearbyCandidates = await Traveldetails.find({
+    const query = {
       "LeavingCoordinates.ltd": { $gte: leavingBoundingBox.minLat, $lte: leavingBoundingBox.maxLat },
       "LeavingCoordinates.lng": { $gte: leavingBoundingBox.minLng, $lte: leavingBoundingBox.maxLng },
       "GoingCoordinates.ltd": { $gte: goingBoundingBox.minLat, $lte: goingBoundingBox.maxLat },
       "GoingCoordinates.lng": { $gte: goingBoundingBox.minLng, $lte: goingBoundingBox.maxLng },
       travelDate: { $gte: startOfDay, $lt: endOfDay },
+      travelMode: safeTravelMode,
       phoneNumber: { $ne: phoneNumber }
-    });
+    };
 
+    console.log("Search query:", JSON.stringify(query, null, 2));
+
+    const nearbyCandidates = await Traveldetails.find(query).lean();
     console.log("Found nearby candidates:", nearbyCandidates.length);
 
     // Step 3: Apply precise radius filter for both locations
@@ -340,6 +360,14 @@ exports.searchRides = async (req, res) => {
         { latitude: goingCoords.ltd, longitude: goingCoords.lng },
         { latitude: ride.GoingCoordinates.ltd, longitude: ride.GoingCoordinates.lng }
       );
+
+      console.log("Distance check for ride:", {
+        rideId: ride._id,
+        leavingDistance,
+        goingDistance,
+        leavingCoords: ride.LeavingCoordinates,
+        goingCoords: ride.GoingCoordinates
+      });
 
       return leavingDistance <= radiusInMeters && goingDistance <= radiusInMeters;
     });
