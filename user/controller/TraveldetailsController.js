@@ -113,6 +113,7 @@ exports.getAutoCompleteAndCreateBooking = async (req, res) => {
     console.log("travelDetails",travelDetails);
 
     const travelRecord = await Traveldetails.create(travelDetails);
+    console.log("Created travel record:", travelRecord);
 
     const now = moment();
     let Status = "UPCOMING";
@@ -139,11 +140,29 @@ exports.getAutoCompleteAndCreateBooking = async (req, res) => {
       GoingCoordinates: {
         ltd: GoingCoordinates.ltd,
         lng: GoingCoordinates.lng
-      }
+      },
+      status: Status
     });
 
     await history.save();
-    console.log(history);
+    console.log("Created history record:", history);
+
+    // Verify the data was stored correctly
+    const verifyTravel = await Traveldetails.findOne({ travelId });
+    const verifyHistory = await travelhistory.findOne({ travelId });
+    console.log("Verification - Travel Record:", {
+      leavingCoords: verifyTravel.LeavingCoordinates,
+      goingCoords: verifyTravel.GoingCoordinates,
+      travelMode: verifyTravel.travelMode,
+      travelDate: verifyTravel.travelDate
+    });
+    console.log("Verification - History Record:", {
+      leavingCoords: verifyHistory.LeavingCoordinates,
+      goingCoords: verifyHistory.GoingCoordinates,
+      travelMode: verifyHistory.travelMode,
+      travelDate: verifyHistory.expectedStartTime
+    });
+
     return res.status(201).json({
       message: "Travel detail created successfully",
       travelRecord: {
@@ -267,8 +286,7 @@ exports.getAutoCompleteAndCreateBooking = async (req, res) => {
 exports.searchRides = async (req, res) => {
   try {
     const { leavingLocation, goingLocation, date, travelMode, phoneNumber } = req.query;
-    console.log("Received query:", { leavingLocation, goingLocation, date, travelMode, phoneNumber });
-    // const { phoneNumber } = req.user;
+    console.log("Received search query:", { leavingLocation, goingLocation, date, travelMode, phoneNumber });
 
     if (!leavingLocation || !goingLocation || !date) {
       return res.status(400).json({ message: "Leaving location, going location, and date are required" });
@@ -279,10 +297,10 @@ exports.searchRides = async (req, res) => {
       return res.status(400).json({ message: "Invalid date format. Use YYYY-MM-DD." });
     }
 
-    // Convert the input date to start and end of day in ISO format
+    // Convert the input date to start and end of day
     const searchDate = new Date(date);
-    const startOfDay = new Date(searchDate.setHours(0, 0, 0, 0)).toISOString();
-    const endOfDay = new Date(searchDate.setHours(23, 59, 59, 999)).toISOString();
+    const startOfDay = new Date(searchDate.setHours(0, 0, 0, 0));
+    const endOfDay = new Date(searchDate.setHours(23, 59, 59, 999));
 
     console.log("Date range for search:", { startOfDay, endOfDay });
 
@@ -295,15 +313,6 @@ exports.searchRides = async (req, res) => {
     const distanceValue = parseFloat(distanceText.replace(/[^\d.]/g, ""));
     console.log("Distance value:", distanceValue);
 
-    // Default to "train" if travelMode is undefined
-    const safeTravelMode = travelMode || "train";
-    const estimatedfare = await fare.calculateFarewithoutweight(distanceValue, safeTravelMode);
-    console.log("Estimated fare:", estimatedfare);
-
-    if (!estimatedfare) {
-      return res.status(500).json({ message: "Error calculating estimated fare." });
-    }
-
     const leavingCoords = await mapservice.getAddressCoordinate(leavingLocation);
     const goingCoords = await mapservice.getAddressCoordinate(goingLocation);
 
@@ -311,12 +320,27 @@ exports.searchRides = async (req, res) => {
       return res.status(400).json({ message: "Invalid location input. Please enter a valid city or address." });
     }
 
-    console.log("Leaving Coordinates:", leavingCoords);
-    console.log("Going Coordinates:", goingCoords);
+    console.log("Search coordinates:", {
+      leaving: leavingCoords,
+      going: goingCoords
+    });
 
-    const radiusInMeters = 10*1000;
+    // First, let's check what's in the database
+    const allRides = await Traveldetails.find({}).lean();
+    console.log("Total rides in database:", allRides.length);
+    if (allRides.length > 0) {
+      console.log("Sample ride from database:", {
+        leaving: allRides[0].LeavingCoordinates,
+        going: allRides[0].GoingCoordinates,
+        travelMode: allRides[0].travelMode,
+        travelDate: allRides[0].travelDate
+      });
+    }
 
-    // Step 1: Get bounding boxes for both locations
+    // Increase search radius for better matching
+    const radiusInMeters = 50 * 1000; // 50km radius
+
+    // Get bounding boxes for both locations
     const leavingBoundingBox = getBoundingBox(
       { latitude: leavingCoords.ltd, longitude: leavingCoords.lng },
       radiusInMeters
@@ -327,41 +351,32 @@ exports.searchRides = async (req, res) => {
       radiusInMeters
     );
 
-    console.log("Leaving Bounding Box:", leavingBoundingBox);
-    console.log("Going Bounding Box:", goingBoundingBox);
+    console.log("Search bounding boxes:", {
+      leaving: leavingBoundingBox,
+      going: goingBoundingBox
+    });
 
-    // First, let's check what's in the database
-    const allRides = await Traveldetails.find({}).lean();
-    console.log("Total rides in database:", allRides.length);
-    if (allRides.length > 0) {
-      console.log("Sample ride coordinates from database:");
-      console.log({
-        leaving: allRides[0].LeavingCoordinates,
-        going: allRides[0].GoingCoordinates,
-        travelMode: allRides[0].travelMode,
-        travelDate: allRides[0].travelDate,
-        Sample : allRides[100]
-      });
-    }
-
-    // Step 2: Query rides within both bounding boxes
+    // Build the search query
     const query = {
       "LeavingCoordinates.ltd": { $gte: leavingBoundingBox.minLat, $lte: leavingBoundingBox.maxLat },
       "LeavingCoordinates.lng": { $gte: leavingBoundingBox.minLng, $lte: leavingBoundingBox.maxLng },
       "GoingCoordinates.ltd": { $gte: goingBoundingBox.minLat, $lte: goingBoundingBox.maxLat },
       "GoingCoordinates.lng": { $gte: goingBoundingBox.minLng, $lte: goingBoundingBox.maxLng },
       travelDate: { $gte: startOfDay, $lt: endOfDay },
-      travelMode: safeTravelMode,
       phoneNumber: { $ne: phoneNumber }
     };
 
+    if (travelMode && travelMode.trim() !== "") {
+      query.travelMode = travelMode;
+    }
+
     console.log("Search query:", JSON.stringify(query, null, 2));
 
-    const nearbyCandidates = await Traveldetails.find(query).lean();
-    console.log("Found nearby candidates:", nearbyCandidates.length);
+    const availableRides = await Traveldetails.find(query).lean();
+    console.log("Found rides before distance filtering:", availableRides.length);
 
-    // Step 3: Apply precise radius filter for both locations
-    const availableRides = nearbyCandidates.filter((ride) => {
+    // Apply precise distance filtering
+    const filteredRides = availableRides.filter(ride => {
       const leavingDistance = geolib.getDistance(
         { latitude: leavingCoords.ltd, longitude: leavingCoords.lng },
         { latitude: ride.LeavingCoordinates.ltd, longitude: ride.LeavingCoordinates.lng }
@@ -383,14 +398,24 @@ exports.searchRides = async (req, res) => {
       return leavingDistance <= radiusInMeters && goingDistance <= radiusInMeters;
     });
 
-    console.log("Available Rides after filtering:", availableRides.length);
-    console.log("Available Rides:", availableRides);
-    if (!availableRides.length) {
-      return res.status(200).json({message:"No rides found", estimatedfare});
+    console.log("Available rides after filtering:", filteredRides.length);
+
+    if (!filteredRides.length) {
+      return res.status(200).json({
+        message: "No rides found",
+        searchParams: {
+          leavingLocation,
+          goingLocation,
+          date,
+          travelMode,
+          leavingCoords,
+          goingCoords
+        }
+      });
     }
-    console.log(!availableRides)
+
     const ridesWithProfile = await Promise.all(
-      availableRides.map(async (ride) => {
+      filteredRides.map(async (ride) => {
         const userProfile = await userprofiles.findOne(
           { phoneNumber: ride.phoneNumber },
           { profilePicture: 1, totalrating: 1, averageRating: 1 }
@@ -399,12 +424,22 @@ exports.searchRides = async (req, res) => {
           ...ride,
           profilePicture: userProfile?.profilePicture || null,
           rating: userProfile?.totalrating || null,
-          aveargerating: userProfile?.averageRating || 6
+          averageRating: userProfile?.averageRating || 6
         };
       })
     );
-    console.log("rides with profile " ,ridesWithProfile);
-    res.status(200).json({ availableRides, ridesWithProfile, estimatedfare });
+
+    res.status(200).json({
+      availableRides: ridesWithProfile,
+      searchParams: {
+        leavingLocation,
+        goingLocation,
+        date,
+        travelMode,
+        leavingCoords,
+        goingCoords
+      }
+    });
   } catch (error) {
     console.error("Error in searchRides:", error.stack);
     res.status(500).json({ message: "Internal Server Error" });
