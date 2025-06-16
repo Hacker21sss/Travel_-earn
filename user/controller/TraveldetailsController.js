@@ -338,7 +338,7 @@ exports.searchRides = async (req, res) => {
     }
 
     // Increase search radius for better matching
-    const radiusInMeters = 50 * 1000; // 50km radius
+    const radiusInMeters = 5000 * 1000; // 50km radius
 
     // Get bounding boxes for both locations
     const leavingBoundingBox = getBoundingBox(
