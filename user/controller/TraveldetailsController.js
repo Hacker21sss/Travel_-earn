@@ -363,7 +363,7 @@ exports.searchRides = async (req, res) => {
       "GoingCoordinates.ltd": { $gte: goingBoundingBox.minLat, $lte: goingBoundingBox.maxLat },
       "GoingCoordinates.lng": { $gte: goingBoundingBox.minLng, $lte: goingBoundingBox.maxLng },
       travelDate: { $gte: startOfDay, $lt: endOfDay },
-      phoneNumber: { $ne: phoneNumber }
+      // phoneNumber: { $ne: phoneNumber }
     };
 
     if (travelMode && travelMode.trim() !== "") {
