@@ -369,7 +369,10 @@ exports.searchRides = async (req, res) => {
       ? { ...baseQuery, travelMode }
       : baseQuery;
 
+    // Remove phoneNumber from search params in logs
+    const { phoneNumber: _, ...searchParams } = req.query;
     console.log("Search query:", JSON.stringify(query, null, 2));
+    console.log("Search params:", searchParams);
 
     const availableRides = await Traveldetails.find(query).lean();
     console.log("Found rides before distance filtering:", availableRides.length);
