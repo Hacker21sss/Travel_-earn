@@ -301,7 +301,7 @@ exports.searchRides = async (req, res) => {
     console.log("Leaving Coordinates:", leavingCoords);
     console.log("Going Coordinates:", goingCoords);
 
-    const radiusInMeters = 3*1000;
+    const radiusInMeters = 10*1000;
 
     // Step 1: Get bounding boxes for both locations
     const leavingBoundingBox = getBoundingBox(
