@@ -633,11 +633,11 @@ module.exports.booking = async (req, res) => {
 
     // Calculate fare and await the result
     const fareResult = await fare.calculateFare(weight, distance, travelMode);
-    if (!fareResult || !fareResult.payableAmount) {
+    if (!fareResult) {
       return res.status(500).json({ message: "Error calculating fare amount." });
     }
 
-    const expectedEarning = fareResult.payableAmount.toString();
+    const expectedEarning = fareResult?.toString();
     const riderPhoneNumber = ride.phoneNumber;
 
     if (!riderPhoneNumber) {
