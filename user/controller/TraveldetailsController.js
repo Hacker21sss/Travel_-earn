@@ -620,7 +620,6 @@ module.exports.booking = async (req, res) => {
       return res.status(400).json({ message: "Invalid Travel Mode! Please enter 'train' or 'airplane'." });
     }
 
-
     const weight = con.weight ? parseFloat(con.weight.toString().replace(/[^\d.]/g, "")) : NaN;
     const distance = con.distance ? parseFloat(con.distance.toString().replace(/[^\d.]/g, "")) : NaN;
 
@@ -632,7 +631,13 @@ module.exports.booking = async (req, res) => {
       return res.status(500).json({ message: "Fare calculation function is missing or not defined." });
     }
 
-    const expectedEarning = fare.calculateFare(weight, distance, travelMode);
+    // Calculate fare and await the result
+    const fareResult = await fare.calculateFare(weight, distance, travelMode);
+    if (!fareResult || !fareResult.payableAmount) {
+      return res.status(500).json({ message: "Error calculating fare amount." });
+    }
+
+    const expectedEarning = fareResult.payableAmount.toString();
     const riderPhoneNumber = ride.phoneNumber;
 
     if (!riderPhoneNumber) {
@@ -670,9 +675,7 @@ module.exports.booking = async (req, res) => {
     const io = require('../../socket').getIO();
     const riderProfile = await userprofiles.findOne({ phoneNumber: riderPhoneNumber });
     if (riderProfile && riderProfile.socketId) {
-      // io.to(riderProfile.socketId).emit("newBookingRequest", {
       io.emit("sendnotification", {
-
         notification: {
           message: `New booking request sent to ${riderPhoneNumber}.`,
           travelId: request.travelId,
@@ -681,9 +684,7 @@ module.exports.booking = async (req, res) => {
           createdAt: new Date(),
           requestedby: riderPhoneNumber,
         },
-
       });
-
 
       return res.status(200).json({
         message: "Success",
@@ -697,9 +698,9 @@ module.exports.booking = async (req, res) => {
     }
 
   } catch (error) {
+    console.error("Booking error:", error);
     return res.status(500).json({ message: "Internal server error", error: error.message });
   }
-
 };
 module.exports.getAllRides = async (req, res) => {
   const { phoneNumber } = req.params;
