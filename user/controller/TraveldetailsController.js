@@ -326,16 +326,16 @@ exports.searchRides = async (req, res) => {
     });
 
     // First, let's check what's in the database
-    const allRides = await Traveldetails.find({}).lean();
-    console.log("Total rides in database:", allRides.length);
-    if (allRides.length > 0) {
-      console.log("Sample ride from database:", {
-        leaving: allRides[0].LeavingCoordinates,
-        going: allRides[0].GoingCoordinates,
-        travelMode: allRides[0].travelMode,
-        travelDate: allRides[0].travelDate
-      });
-    }
+    // const allRides = await Traveldetails.find({}).lean();
+    // console.log("Total rides in database:", allRides.length);
+    // if (allRides.length > 0) {
+    //   console.log("Sample ride from database:", {
+    //     leaving: allRides[0].LeavingCoordinates,
+    //     going: allRides[0].GoingCoordinates,
+    //     travelMode: allRides[0].travelMode,
+    //     travelDate: allRides[0].travelDate
+    //   });
+    // }
 
     // Increase search radius for better matching
     const radiusInMeters = 10* 1000; // 50km radius
@@ -431,8 +431,16 @@ exports.searchRides = async (req, res) => {
       })
     );
 
+    const estimatedFare = await fare.calculateFarewithoutweight(distanceValue, travelMode || "car");
+
+    if(estimatedFare === undefined){
+      return res.status(500).json({message: "Error calculating estimated fare."});
+    }
+    console.log("Estimated fare:", estimatedFare);
+      
     res.status(200).json({
       availableRides: ridesWithProfile,
+      estimatedFare,
       searchParams: {
         leavingLocation,
         goingLocation,

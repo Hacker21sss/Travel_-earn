@@ -1671,3 +1671,124 @@
 2025-06-16T13:42:32.295Z info: Server is running on port 5002
 2025-06-16T13:42:32.298Z info: Socket.IO connection status: Connected
 2025-06-16T13:42:33.169Z info: MongoDB connected
+2025-06-17T08:10:45.232Z info: Server is running on port 5002
+2025-06-17T08:10:45.234Z info: Socket.IO connection status: Connected
+2025-06-17T08:10:45.917Z info: MongoDB connected
+2025-06-17T08:11:16.762Z info: A new client connected: HS2JON0hI1wKQN0yAAAB
+2025-06-17T08:11:16.883Z info: Socket ID HS2JON0hI1wKQN0yAAAB associated with phoneNumber +918295525360
+2025-06-17T08:18:26.633Z info: Server is running on port 5002
+2025-06-17T08:18:26.639Z info: Socket.IO connection status: Connected
+2025-06-17T08:18:27.340Z info: MongoDB connected
+2025-06-17T08:18:27.355Z info: A new client connected: TNYcg69koXJwtK8DAAAB
+2025-06-17T08:18:28.009Z info: Socket ID TNYcg69koXJwtK8DAAAB associated with phoneNumber +918295525360
+2025-06-17T08:18:30.195Z info: Server is running on port 5002
+2025-06-17T08:18:30.198Z info: Socket.IO connection status: Connected
+2025-06-17T08:18:30.648Z info: A new client connected: Bo5Fkr-YVDLwnykFAAAB
+2025-06-17T08:18:31.041Z info: MongoDB connected
+2025-06-17T08:18:31.815Z info: Socket ID Bo5Fkr-YVDLwnykFAAAB associated with phoneNumber +918295525360
+2025-06-17T08:18:46.879Z info: Server is running on port 5002
+2025-06-17T08:18:46.884Z info: Socket.IO connection status: Connected
+2025-06-17T08:18:49.279Z info: Server is running on port 5002
+2025-06-17T08:18:49.282Z info: Socket.IO connection status: Connected
+2025-06-17T08:18:49.988Z info: MongoDB connected
+2025-06-17T08:19:08.141Z info: Server is running on port 5002
+2025-06-17T08:19:08.144Z info: Socket.IO connection status: Connected
+2025-06-17T08:19:08.812Z info: MongoDB connected
+2025-06-17T08:19:11.000Z info: Server is running on port 5002
+2025-06-17T08:19:11.003Z info: Socket.IO connection status: Connected
+2025-06-17T08:19:11.524Z info: A new client connected: EHKKM9Bs0I-GvDzRAAAB
+2025-06-17T08:19:11.929Z info: MongoDB connected
+2025-06-17T08:19:12.505Z info: Socket ID EHKKM9Bs0I-GvDzRAAAB associated with phoneNumber +918295525360
+2025-06-17T08:19:17.468Z info: Server is running on port 5002
+2025-06-17T08:19:17.470Z info: Socket.IO connection status: Connected
+2025-06-17T08:19:18.129Z info: MongoDB connected
+2025-06-17T08:19:18.223Z info: A new client connected: 0txJFgpBTFVXusI2AAAB
+2025-06-17T08:19:20.570Z info: Server is running on port 5002
+2025-06-17T08:19:20.575Z info: Socket.IO connection status: Connected
+2025-06-17T08:19:21.383Z info: MongoDB connected
+2025-06-17T08:19:22.597Z info: A new client connected: cawy56jTCRTzAyxKAAAB
+2025-06-17T08:19:22.709Z info: Socket ID cawy56jTCRTzAyxKAAAB associated with phoneNumber +918295525360
+2025-06-17T08:19:26.718Z info: Server is running on port 5002
+2025-06-17T08:19:26.720Z info: Socket.IO connection status: Connected
+2025-06-17T08:19:27.342Z info: MongoDB connected
+2025-06-17T08:19:28.405Z info: A new client connected: 1wNk0jupzvQlBaPLAAAB
+2025-06-17T08:19:28.479Z info: Socket ID 1wNk0jupzvQlBaPLAAAB associated with phoneNumber +918295525360
+2025-06-17T08:19:29.298Z info: Client disconnected: 1wNk0jupzvQlBaPLAAAB
+2025-06-17T08:19:29.342Z info: Socket ID cleared for phoneNumber +918295525360
+2025-06-17T08:19:41.248Z info: A new client connected: O87lqi7Rj_QrlU2ZAAAD
+2025-06-17T08:19:41.370Z info: Socket ID O87lqi7Rj_QrlU2ZAAAD associated with phoneNumber +918295525360
+2025-06-17T08:21:14.287Z info: Server is running on port 5002
+2025-06-17T08:21:14.289Z info: Socket.IO connection status: Connected
+2025-06-17T08:21:15.067Z info: MongoDB connected
+2025-06-17T08:21:25.107Z info: A new client connected: mNZGCYWDaAtKXcFBAAAC
+2025-06-17T08:21:25.221Z info: Socket ID mNZGCYWDaAtKXcFBAAAC associated with phoneNumber +918295525360
+2025-06-17T08:21:52.801Z info: GET /t/search-rides?leavingLocation=Delhi,+India&goingLocation=Pune,+Maharashtra,+India&date=2025-06-20&travelMode=train&phoneNumber=%2B918295525360 - 200
+2025-06-17T08:21:55.190Z info: GET /t/search-rides?leavingLocation=Delhi,+India&goingLocation=Pune,+Maharashtra,+India&date=2025-06-20&travelMode=car&phoneNumber=%2B918295525360 - 200
+2025-06-17T08:21:55.204Z info: GET /t/search-rides?leavingLocation=Delhi,+India&goingLocation=Pune,+Maharashtra,+India&date=2025-06-20&travelMode=car&phoneNumber=%2B918295525360 - 200
+2025-06-17T08:21:55.225Z info: GET /t/search-rides?leavingLocation=Delhi,+India&goingLocation=Pune,+Maharashtra,+India&date=2025-06-20&travelMode=car&phoneNumber=%2B918295525360 - 200
+2025-06-17T08:22:32.148Z info: Server is running on port 5002
+2025-06-17T08:22:32.153Z info: Socket.IO connection status: Connected
+2025-06-17T08:22:32.794Z info: A new client connected: hNjeNaRNuDc8VxPJAAAB
+2025-06-17T08:22:33.049Z info: MongoDB connected
+2025-06-17T08:22:33.789Z info: Socket ID hNjeNaRNuDc8VxPJAAAB associated with phoneNumber +918295525360
+2025-06-17T08:22:37.200Z info: Server is running on port 5002
+2025-06-17T08:22:37.203Z info: Socket.IO connection status: Connected
+2025-06-17T08:22:38.190Z info: A new client connected: YezZ_PAihMD83O9aAAAB
+2025-06-17T08:22:38.388Z info: MongoDB connected
+2025-06-17T08:22:39.299Z info: Socket ID YezZ_PAihMD83O9aAAAB associated with phoneNumber +918295525360
+2025-06-17T08:22:48.310Z info: Server is running on port 5002
+2025-06-17T08:22:48.314Z info: Socket.IO connection status: Connected
+2025-06-17T08:22:49.068Z info: MongoDB connected
+2025-06-17T08:23:02.284Z info: A new client connected: eeU1AINUf8e-GtmPAAAC
+2025-06-17T08:23:02.338Z info: Socket ID eeU1AINUf8e-GtmPAAAC associated with phoneNumber +918295525360
+2025-06-17T08:23:20.382Z info: GET /t/search-rides?leavingLocation=Delhi,+India&goingLocation=Pune,+Maharashtra,+India&date=2025-06-20&travelMode=train&phoneNumber=%2B918295525360 - 200
+2025-06-17T08:23:24.998Z info: GET /t/search-rides?leavingLocation=Delhi,+India&goingLocation=Pune,+Maharashtra,+India&date=2025-06-20&travelMode=car&phoneNumber=%2B918295525360 - 200
+2025-06-17T08:23:25.002Z info: GET /t/search-rides?leavingLocation=Delhi,+India&goingLocation=Pune,+Maharashtra,+India&date=2025-06-20&travelMode=car&phoneNumber=%2B918295525360 - 200
+2025-06-17T08:23:25.009Z info: GET /t/search-rides?leavingLocation=Delhi,+India&goingLocation=Pune,+Maharashtra,+India&date=2025-06-20&travelMode=car&phoneNumber=%2B918295525360 - 200
+2025-06-17T08:23:45.117Z info: Server is running on port 5002
+2025-06-17T08:23:45.121Z info: Socket.IO connection status: Connected
+2025-06-17T08:23:45.847Z info: MongoDB connected
+2025-06-17T08:23:46.912Z info: A new client connected: FPugVPeP6bX2ZTKtAAAB
+2025-06-17T08:23:47.123Z info: Socket ID FPugVPeP6bX2ZTKtAAAB associated with phoneNumber +918295525360
+2025-06-17T08:23:53.604Z info: GET /t/search-rides?leavingLocation=Delhi,+India&goingLocation=Pune,+Maharashtra,+India&date=2025-06-20&travelMode=train&phoneNumber=%2B918295525360 - 200
+2025-06-17T08:23:57.365Z info: GET /t/search-rides?leavingLocation=Delhi,+India&goingLocation=Pune,+Maharashtra,+India&date=2025-06-20&travelMode=car&phoneNumber=%2B918295525360 - 200
+2025-06-17T08:23:57.376Z info: GET /t/search-rides?leavingLocation=Delhi,+India&goingLocation=Pune,+Maharashtra,+India&date=2025-06-20&travelMode=car&phoneNumber=%2B918295525360 - 200
+2025-06-17T08:23:57.383Z info: GET /t/search-rides?leavingLocation=Delhi,+India&goingLocation=Pune,+Maharashtra,+India&date=2025-06-20&travelMode=car&phoneNumber=%2B918295525360 - 200
+2025-06-17T08:25:45.888Z info: GET /t/search-rides?leavingLocation=Delhi,+India&goingLocation=Pune,+Maharashtra,+India&date=2025-06-20&travelMode=car&phoneNumber=%2B918295525360 - 200
+2025-06-17T08:26:01.082Z info: Client disconnected: FPugVPeP6bX2ZTKtAAAB
+2025-06-17T08:26:01.167Z info: Socket ID cleared for phoneNumber +918295525360
+2025-06-17T08:26:05.166Z info: A new client connected: 0DfQNYlosMJxaMUZAAAD
+2025-06-17T08:26:05.210Z info: Socket ID 0DfQNYlosMJxaMUZAAAD associated with phoneNumber +918295525360
+2025-06-17T08:26:17.103Z info: Client disconnected: 0DfQNYlosMJxaMUZAAAD
+2025-06-17T08:26:17.141Z info: Socket ID cleared for phoneNumber +918295525360
+2025-06-17T08:26:26.557Z info: A new client connected: CMaoshrsghZIuhCzAAAF
+2025-06-17T08:26:26.624Z info: Socket ID CMaoshrsghZIuhCzAAAF associated with phoneNumber +918295525360
+2025-06-17T08:26:35.454Z info: GET /t/search-rides?leavingLocation=Delhi,+India&goingLocation=Pune,+Maharashtra,+India&date=2025-06-20&travelMode=train&phoneNumber=%2B918295525360 - 200
+2025-06-17T08:26:37.336Z info: GET /t/search-rides?leavingLocation=Delhi,+India&goingLocation=Pune,+Maharashtra,+India&date=2025-06-20&travelMode=car&phoneNumber=%2B918295525360 - 200
+2025-06-17T08:26:37.426Z info: GET /t/search-rides?leavingLocation=Delhi,+India&goingLocation=Pune,+Maharashtra,+India&date=2025-06-20&travelMode=car&phoneNumber=%2B918295525360 - 200
+2025-06-17T08:26:37.435Z info: GET /t/search-rides?leavingLocation=Delhi,+India&goingLocation=Pune,+Maharashtra,+India&date=2025-06-20&travelMode=car&phoneNumber=%2B918295525360 - 200
+2025-06-17T08:27:16.771Z info: GET /t/search-rides?leavingLocation=Delhi,+India&goingLocation=Pune,+Maharashtra,+India&date=2025-06-20&travelMode=car&phoneNumber=%2B918295525360 - 200
+2025-06-17T08:27:18.172Z info: GET /t/search-rides?leavingLocation=Delhi,+India&goingLocation=Pune,+Maharashtra,+India&date=2025-06-20&travelMode=car&phoneNumber=%2B918295525360 - 200
+2025-06-17T08:27:26.731Z info: GET /t/search-rides?leavingLocation=Delhi,+India&goingLocation=Pune,+Maharashtra,+India&date=2025-06-20&travelMode=car&phoneNumber=%2B918295525360 - 200
+2025-06-17T08:27:36.947Z info: Client disconnected: CMaoshrsghZIuhCzAAAF
+2025-06-17T08:27:36.984Z info: Socket ID cleared for phoneNumber +918295525360
+2025-06-17T08:27:50.203Z info: A new client connected: HAkMrk_QSet5HU1UAAAH
+2025-06-17T08:27:50.276Z info: Socket ID HAkMrk_QSet5HU1UAAAH associated with phoneNumber +918295525360
+2025-06-17T08:28:05.711Z info: GET /t/search-rides?leavingLocation=Delhi,+India&goingLocation=Pune,+Maharashtra,+India&date=2025-06-20&travelMode=train&phoneNumber=%2B918295525360 - 200
+2025-06-17T08:28:08.133Z info: GET /t/search-rides?leavingLocation=Delhi,+India&goingLocation=Pune,+Maharashtra,+India&date=2025-06-20&travelMode=car&phoneNumber=%2B918295525360 - 200
+2025-06-17T08:28:08.146Z info: GET /t/search-rides?leavingLocation=Delhi,+India&goingLocation=Pune,+Maharashtra,+India&date=2025-06-20&travelMode=car&phoneNumber=%2B918295525360 - 200
+2025-06-17T08:28:08.150Z info: GET /t/search-rides?leavingLocation=Delhi,+India&goingLocation=Pune,+Maharashtra,+India&date=2025-06-20&travelMode=car&phoneNumber=%2B918295525360 - 200
+2025-06-17T08:29:25.552Z info: GET /t/search-rides?leavingLocation=Delhi,+India&goingLocation=Pune,+Maharashtra,+India&date=2025-06-20&travelMode=car&phoneNumber=%2B918295525360 - 200
+2025-06-17T08:38:44.306Z info: Client disconnected: HAkMrk_QSet5HU1UAAAH
+2025-06-17T08:38:44.347Z info: Socket ID cleared for phoneNumber +918295525360
+2025-06-17T08:38:57.513Z info: A new client connected: 4p0vnsK9djKZUt1BAAAJ
+2025-06-17T08:38:57.554Z info: Socket ID 4p0vnsK9djKZUt1BAAAJ associated with phoneNumber +918295525360
+2025-06-17T08:39:08.076Z info: GET /t/search-rides?leavingLocation=Delhi,+India&goingLocation=Pune,+Maharashtra,+India&date=2025-06-20&travelMode=train&phoneNumber=%2B918295525360 - 200
+2025-06-17T08:39:10.265Z info: GET /t/search-rides?leavingLocation=Delhi,+India&goingLocation=Pune,+Maharashtra,+India&date=2025-06-20&travelMode=car&phoneNumber=%2B918295525360 - 200
+2025-06-17T08:39:10.272Z info: GET /t/search-rides?leavingLocation=Delhi,+India&goingLocation=Pune,+Maharashtra,+India&date=2025-06-20&travelMode=car&phoneNumber=%2B918295525360 - 200
+2025-06-17T08:39:10.277Z info: GET /t/search-rides?leavingLocation=Delhi,+India&goingLocation=Pune,+Maharashtra,+India&date=2025-06-20&travelMode=car&phoneNumber=%2B918295525360 - 200
+2025-06-17T08:41:15.323Z info: GET /t/search-rides?leavingLocation=Delhi,+India&goingLocation=Pune,+Maharashtra,+India&date=2025-06-20&travelMode=car&phoneNumber=%2B918295525360 - 200
+2025-06-17T08:41:40.279Z info: GET /t/search-rides?leavingLocation=Delhi,+India&goingLocation=Pune,+Maharashtra,+India&date=2025-06-20&travelMode=car&phoneNumber=%2B918295525360 - 200
+2025-06-17T08:41:55.517Z info: GET /t/search-rides?leavingLocation=Delhi,+India&goingLocation=Pune,+Maharashtra,+India&date=2025-06-20&travelMode=car&phoneNumber=%2B918295525360 - 200
+2025-06-17T08:41:58.181Z info: GET /t/search-rides?leavingLocation=Delhi,+India&goingLocation=Pune,+Maharashtra,+India&date=2025-06-20&travelMode=car&phoneNumber=%2B918295525360 - 200
+2025-06-17T08:42:11.316Z info: GET /t/search-rides?leavingLocation=Delhi,+India&goingLocation=Pune,+Maharashtra,+India&date=2025-06-20&travelMode=car&phoneNumber=%2B918295525360 - 200
