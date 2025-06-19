@@ -9,7 +9,4 @@ router.post("/create-order", paymentcontroller.createOrder);
 router.post("/verify-payment", paymentcontroller.verifyOrder);
 router.get('/webverify',paymentcontroller.handleRazorpayResponse)
 
-// Route to decline payment
-router.post("/decline-payment", paymentcontroller.declinePayment);
-
 module.exports = router;

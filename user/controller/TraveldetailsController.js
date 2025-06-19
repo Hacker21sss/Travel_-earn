@@ -745,7 +745,7 @@ module.exports.consignmentcarryrequest = async (req, res) => {
 
   try {
     // Fetch all requests for this phone number
-    const allRequests = await Request.find({ phoneNumber });
+    const allRequests = await Request.find({ phoneNumber }).sort({createdAt: -1});
 
     console.log("📦 All Requests (Full List):");
     allRequests.forEach((r, i) => {

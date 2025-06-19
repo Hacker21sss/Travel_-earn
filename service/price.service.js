@@ -226,24 +226,27 @@ module.exports.calculateFarewithoutweight = async (distance, TravelMode) => {
 
     console.log(`Distance Fare: ${distanceFare} rupees`);
 
-    if (distance > 300) {
-        discount = 0.05 * (distanceFare + TE);
-        console.log(`Applied Discount: ${discount.toFixed(2)} rupees`);
-    }
+    // We can apply discount logic here like this
 
-    const subtotal = distanceFare + TE + deliveryFee;
-    const totalWithMargin = (subtotal - discount) * (1 + margin);
+    // if (distance > 300) {
+    //     discount = 0.05 * (distanceFare + TE);
+    //     console.log(`Applied Discount: ${discount.toFixed(2)} rupees`);
+    // }
 
-    const result = {
-        senderTotalPay: totalWithMargin.toFixed(2),
-        TE: TE.toFixed(2),
-        deliveryFee: deliveryFee.toFixed(2),
-        discount: discount.toFixed(2),
-        baseFare: distanceFare.toFixed(2)
-    };
+    // const subtotal = distanceFare + TE + deliveryFee;
+    // const totalWithMargin = (subtotal - discount) * (1 + margin);
 
-    console.log("Fare Breakdown:", result);
-    return result;
+    // const result = {
+    //     senderTotalPay: totalWithMargin.toFixed(2),
+    //     TE: TE.toFixed(2),
+    //     deliveryFee: deliveryFee.toFixed(2),
+    //     discount: discount.toFixed(2),
+    //     baseFare: distanceFare.toFixed(2)
+    // };
+
+    // console.log("Fare Breakdown:", result);
+    // return result;
+    return distanceFare.toFixed(2);
 };
 
 
