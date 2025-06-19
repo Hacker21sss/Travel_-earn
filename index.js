@@ -32,6 +32,9 @@ const location = require('./user/router/locationroute');
 const rideroute = require('./traveller/router/ride.route');
 const { initializationsocket, getIO } = require('./socket');
 const trackRiderLiveLocation=require('./user/controller/TraveldetailsController')
+// Importing the consignment cron job
+const {startConsignmentCronJob} = require('./service/updateExpiredConsignments')
+
 
 dotenv.config();
 
@@ -165,6 +168,10 @@ app.use((err, req, res, next) => {
 });
 
 const PORT = process.env.PORT || 7755;
+
+// Starting the consignment job
+startConsignmentCronJob();
+
 server.listen(PORT, () => {
     logger.info(`Server is running on port ${PORT}`);
     const activeIO = getIO();

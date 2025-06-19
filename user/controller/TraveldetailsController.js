@@ -285,8 +285,8 @@ exports.getAutoCompleteAndCreateBooking = async (req, res) => {
 
 exports.searchRides = async (req, res) => {
   try {
-    const { leavingLocation, goingLocation, date, travelMode, phoneNumber } = req.query;
-    console.log("Received search query:", { leavingLocation, goingLocation, date, travelMode, phoneNumber });
+    const { leavingLocation, goingLocation, date, travelMode} = req.query;
+    console.log("Received search query:", { leavingLocation, goingLocation, date, travelMode});
 
     if (!leavingLocation || !goingLocation || !date) {
       return res.status(400).json({ message: "Leaving location, going location, and date are required" });
@@ -320,25 +320,13 @@ exports.searchRides = async (req, res) => {
       return res.status(400).json({ message: "Invalid location input. Please enter a valid city or address." });
     }
 
-    console.log("Search coordinates:", {
-      leaving: leavingCoords,
-      going: goingCoords
-    });
-
-    // First, let's check what's in the database
-    // const allRides = await Traveldetails.find({}).lean();
-    // console.log("Total rides in database:", allRides.length);
-    // if (allRides.length > 0) {
-    //   console.log("Sample ride from database:", {
-    //     leaving: allRides[0].LeavingCoordinates,
-    //     going: allRides[0].GoingCoordinates,
-    //     travelMode: allRides[0].travelMode,
-    //     travelDate: allRides[0].travelDate
-    //   });
-    // }
+    // console.log("Search coordinates:", {
+    //   leaving: leavingCoords,
+    //   going: goingCoords
+    // });
 
     // Increase search radius for better matching
-    const radiusInMeters = 10* 1000; // 50km radius
+    const radiusInMeters = 10* 1000;
 
     // Get bounding boxes for both locations
     const leavingBoundingBox = getBoundingBox(
@@ -351,10 +339,10 @@ exports.searchRides = async (req, res) => {
       radiusInMeters
     );
 
-    console.log("Search bounding boxes:", {
-      leaving: leavingBoundingBox,
-      going: goingBoundingBox
-    });
+    // console.log("Search bounding boxes:", {
+    //   leaving: leavingBoundingBox,
+    //   going: goingBoundingBox
+    // });
 
     // Build the search query
     const baseQuery = {

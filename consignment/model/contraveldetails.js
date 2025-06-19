@@ -57,7 +57,7 @@ const DriverSchema = new mongoose.Schema({
   
   status: { 
     type: String, 
-    enum: ["Pending", "Not Started", "In Progress", "Completed", "Rejected","Accepted"], 
+    enum: ["Pending", "Not Started", "In Progress", "Completed", "Rejected","Accepted", "Expired"], 
     default: "Pending" 
   },
   sotp:{type:String},
