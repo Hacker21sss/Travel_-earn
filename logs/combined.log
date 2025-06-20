@@ -4643,3 +4643,514 @@
 2025-06-20T17:26:32.247Z info: GET /n/getnotification/travel/+918295525360 - 200
 2025-06-20T17:26:32.399Z info: GET /n/getnotification/consignment/+918295525360 - 200
 2025-06-20T17:26:50.942Z info: GET /address/getaddress/+918295525360 - 200
+2025-06-20T18:39:59.443Z info: Server is running on port 5002
+2025-06-20T18:39:59.444Z info: Socket.IO connection status: Connected
+2025-06-20T18:39:59.870Z info: MongoDB connected
+2025-06-20T18:40:01.930Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T18:40:01.946Z info: A new client connected: fjw-4UlsVUaKWBM6AAAB
+2025-06-20T18:40:01.989Z info: Socket ID fjw-4UlsVUaKWBM6AAAB associated with phoneNumber +918295525360
+2025-06-20T18:40:02.011Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T18:40:25.318Z info: GET /api/history/+918295525360 - 200
+2025-06-20T18:40:29.309Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T18:40:29.358Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T18:40:39.617Z info: GET /api/getdetails?leavingLocation=Gwalior,%20Madhya%20Pradesh,%20India&goingLocation=Delhi,%20India&date=2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T18:40:39.632Z info: GET /api/getdetails?leavingLocation=Gwalior,%20Madhya%20Pradesh,%20India&goingLocation=Delhi,%20India&date=29/06/2025&phoneNumber=+918295525360 - 200
+2025-06-20T18:40:41.479Z info: GET /api/getdetails?leavingLocation=Gwalior,%20Madhya%20Pradesh,%20India&goingLocation=Delhi,%20India&date=2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T18:40:42.848Z info: GET /api/getdetails?leavingLocation=Gwalior,%20Madhya%20Pradesh,%20India&goingLocation=Delhi,%20India&date=30/06/2025&phoneNumber=+918295525360 - 200
+2025-06-20T18:40:42.860Z info: GET /api/getdetails?leavingLocation=Gwalior,%20Madhya%20Pradesh,%20India&goingLocation=Delhi,%20India&date=2025-06-30&phoneNumber=+918295525360 - 200
+2025-06-20T18:40:56.668Z info: GET /api/getdetails?leavingLocation=Gwalior,%20Madhya%20Pradesh,%20India&goingLocation=Delhi,%20India&date=2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T18:40:56.669Z info: GET /api/getdetails?leavingLocation=Gwalior,%20Madhya%20Pradesh,%20India&goingLocation=Delhi,%20India&date=29/06/2025&phoneNumber=+918295525360 - 200
+2025-06-20T18:40:57.267Z info: GET /api/getdetails?leavingLocation=Gwalior,%20Madhya%20Pradesh,%20India&goingLocation=Delhi,%20India&date=30/06/2025&phoneNumber=+918295525360 - 200
+2025-06-20T18:40:57.272Z info: GET /api/getdetails?leavingLocation=Gwalior,%20Madhya%20Pradesh,%20India&goingLocation=Delhi,%20India&date=2025-06-30&phoneNumber=+918295525360 - 200
+2025-06-20T18:41:13.886Z info: GET /api/getdetails?leavingLocation=Gwalior,%20Madhya%20Pradesh,%20India&goingLocation=Delhi,%20India&date=2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T18:41:13.891Z info: GET /api/getdetails?leavingLocation=Gwalior,%20Madhya%20Pradesh,%20India&goingLocation=Delhi,%20India&date=29/06/2025&phoneNumber=+918295525360 - 200
+2025-06-20T18:41:14.575Z info: GET /api/getdetails?leavingLocation=Gwalior,%20Madhya%20Pradesh,%20India&goingLocation=Delhi,%20India&date=30/06/2025&phoneNumber=+918295525360 - 200
+2025-06-20T18:41:14.577Z info: GET /api/getdetails?leavingLocation=Gwalior,%20Madhya%20Pradesh,%20India&goingLocation=Delhi,%20India&date=2025-06-30&phoneNumber=+918295525360 - 200
+2025-06-20T18:42:10.281Z info: GET /api/getdetails?leavingLocation=Gwalior,%20Madhya%20Pradesh,%20India&goingLocation=Delhi,%20India&date=2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T18:42:10.282Z info: GET /api/getdetails?leavingLocation=Gwalior,%20Madhya%20Pradesh,%20India&goingLocation=Delhi,%20India&date=29/06/2025&phoneNumber=+918295525360 - 200
+2025-06-20T18:42:12.981Z info: GET /api/getdetails?leavingLocation=Gwalior,%20Madhya%20Pradesh,%20India&goingLocation=Delhi,%20India&date=30/06/2025&phoneNumber=+918295525360 - 200
+2025-06-20T18:42:12.982Z info: GET /api/getdetails?leavingLocation=Gwalior,%20Madhya%20Pradesh,%20India&goingLocation=Delhi,%20India&date=2025-06-30&phoneNumber=+918295525360 - 200
+2025-06-20T18:44:19.666Z info: Client disconnected: fjw-4UlsVUaKWBM6AAAB
+2025-06-20T18:44:19.707Z info: Socket ID cleared for phoneNumber +918295525360
+2025-06-20T20:38:50.429Z info: Server is running on port 5002
+2025-06-20T20:38:50.430Z info: Socket.IO connection status: Connected
+2025-06-20T20:38:50.874Z info: MongoDB connected
+2025-06-20T20:38:51.212Z info: A new client connected: VgZzYs1ABGWOy4xMAAAB
+2025-06-20T20:38:51.418Z info: Client disconnected: VgZzYs1ABGWOy4xMAAAB
+2025-06-20T20:38:51.455Z info: Socket ID cleared for phoneNumber 1234567890
+2025-06-20T20:38:51.463Z info: Socket ID VgZzYs1ABGWOy4xMAAAB associated with phoneNumber 1234567890
+2025-06-20T20:38:56.928Z info: A new client connected: Ku0Os8KgmzXg8PC8AAAD
+2025-06-20T20:38:56.966Z info: Socket ID Ku0Os8KgmzXg8PC8AAAD associated with phoneNumber 1234567890
+2025-06-20T20:39:24.941Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T20:39:25.068Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T20:39:32.821Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T20:39:32.892Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T20:40:21.050Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T20:40:21.116Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T20:40:37.983Z info: GET /address/getaddress/+918295525360 - 200
+2025-06-20T20:41:12.292Z info: POST /t/creates?Leavinglocation=Delhi,%20India&Goinglocation=Chandigarh,%20India - 200
+2025-06-20T20:41:15.933Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T20:41:16.003Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T20:41:28.284Z info: GET /address/getaddress/+918295525360 - 200
+2025-06-20T20:41:28.287Z info: GET /map/get-coordinates?address=Chandigarh,+India - 200
+2025-06-20T20:41:32.913Z info: GET /map/getdistanceandcoordinate?origin=Delhi,%20India&destination=686,%20Sector%2018D,%20Sector%2018 - 200
+2025-06-20T20:48:47.423Z info: Client disconnected: Ku0Os8KgmzXg8PC8AAAD
+2025-06-20T20:48:47.472Z info: Socket ID cleared for phoneNumber 1234567890
+2025-06-20T21:09:20.720Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T21:09:20.730Z info: A new client connected: TOxFTueSiPLfgezWAAAF
+2025-06-20T21:09:20.773Z info: Socket ID TOxFTueSiPLfgezWAAAF associated with phoneNumber +918295525360
+2025-06-20T21:09:36.845Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T21:09:53.344Z info: GET /map/get-coordinates?address=Chandigarh,+India - 200
+2025-06-20T21:09:53.348Z info: GET /address/getaddress/+918295525360 - 200
+2025-06-20T21:09:56.115Z info: GET /map/getdistanceandcoordinate?origin=Delhi,%20India&destination=686,%20Sector%2018D,%20Sector%2018 - 200
+2025-06-20T21:11:16.720Z info: POST /api/consignment - 200
+2025-06-20T21:11:20.247Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T21:11:20.332Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T21:11:33.785Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:11:33.791Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=29/06/2025&phoneNumber=+918295525360 - 200
+2025-06-20T21:11:36.207Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:11:38.047Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-06-30&phoneNumber=+918295525360 - 200
+2025-06-20T21:11:38.052Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=30/06/2025&phoneNumber=+918295525360 - 200
+2025-06-20T21:12:34.775Z info: POST /api/getearning - 200
+2025-06-20T21:14:56.982Z info: POST /api/getearning - 200
+2025-06-20T21:17:41.744Z info: Server is running on port 5002
+2025-06-20T21:17:41.746Z info: Socket.IO connection status: Connected
+2025-06-20T21:17:42.136Z info: A new client connected: uRJFz5b9hIRxhqgmAAAB
+2025-06-20T21:17:42.186Z info: MongoDB connected
+2025-06-20T21:17:42.577Z info: Socket ID uRJFz5b9hIRxhqgmAAAB associated with phoneNumber +918295525360
+2025-06-20T21:17:57.172Z info: Server is running on port 5002
+2025-06-20T21:17:57.173Z info: Socket.IO connection status: Connected
+2025-06-20T21:17:57.595Z info: MongoDB connected
+2025-06-20T21:17:57.631Z info: A new client connected: XeY68zP4TD55KGirAAAB
+2025-06-20T21:17:57.915Z info: POST /api/getearning - 200
+2025-06-20T21:17:58.189Z info: Socket ID XeY68zP4TD55KGirAAAB associated with phoneNumber +918295525360
+2025-06-20T21:18:19.747Z info: Server is running on port 5002
+2025-06-20T21:18:19.748Z info: Socket.IO connection status: Connected
+2025-06-20T21:18:20.212Z info: MongoDB connected
+2025-06-20T21:18:21.823Z info: Server is running on port 5002
+2025-06-20T21:18:21.825Z info: Socket.IO connection status: Connected
+2025-06-20T21:18:22.271Z info: MongoDB connected
+2025-06-20T21:18:22.524Z info: A new client connected: iOAPz_hC7WdHQnzoAAAB
+2025-06-20T21:18:22.716Z info: Socket ID iOAPz_hC7WdHQnzoAAAB associated with phoneNumber +918295525360
+2025-06-20T21:18:26.532Z info: Server is running on port 5002
+2025-06-20T21:18:26.534Z info: Socket.IO connection status: Connected
+2025-06-20T21:18:28.254Z info: Server is running on port 5002
+2025-06-20T21:18:28.255Z info: Socket.IO connection status: Connected
+2025-06-20T21:18:28.691Z info: MongoDB connected
+2025-06-20T21:18:29.408Z info: A new client connected: qMQHUxCd9mc_sfrxAAAB
+2025-06-20T21:18:29.458Z info: Socket ID qMQHUxCd9mc_sfrxAAAB associated with phoneNumber +918295525360
+2025-06-20T21:18:31.770Z info: POST /api/getearning - 200
+2025-06-20T21:19:52.187Z info: Server is running on port 5002
+2025-06-20T21:19:52.188Z info: Socket.IO connection status: Connected
+2025-06-20T21:19:52.277Z info: A new client connected: SW9X9f0HVKDPQaiEAAAB
+2025-06-20T21:19:52.644Z info: MongoDB connected
+2025-06-20T21:19:53.026Z info: Socket ID SW9X9f0HVKDPQaiEAAAB associated with phoneNumber +918295525360
+2025-06-20T21:20:24.593Z info: Server is running on port 5002
+2025-06-20T21:20:24.595Z info: Socket.IO connection status: Connected
+2025-06-20T21:20:25.041Z info: MongoDB connected
+2025-06-20T21:20:25.243Z info: A new client connected: _MR0eNfHecP61Vm6AAAB
+2025-06-20T21:20:25.456Z info: Socket ID _MR0eNfHecP61Vm6AAAB associated with phoneNumber +918295525360
+2025-06-20T21:22:29.893Z info: Server is running on port 5002
+2025-06-20T21:22:29.895Z info: Socket.IO connection status: Connected
+2025-06-20T21:22:30.340Z info: MongoDB connected
+2025-06-20T21:22:34.194Z info: Server is running on port 5002
+2025-06-20T21:22:34.195Z info: Socket.IO connection status: Connected
+2025-06-20T21:22:34.641Z info: MongoDB connected
+2025-06-20T21:22:39.224Z info: Server is running on port 5002
+2025-06-20T21:22:39.225Z info: Socket.IO connection status: Connected
+2025-06-20T21:22:39.670Z info: MongoDB connected
+2025-06-20T21:22:39.697Z info: A new client connected: 7KjQuZRivVew9XuqAAAB
+2025-06-20T21:22:40.086Z info: Socket ID 7KjQuZRivVew9XuqAAAB associated with phoneNumber +918295525360
+2025-06-20T21:22:41.840Z info: Server is running on port 5002
+2025-06-20T21:22:41.842Z info: Socket.IO connection status: Connected
+2025-06-20T21:22:42.267Z info: MongoDB connected
+2025-06-20T21:22:42.322Z info: A new client connected: 31p8VRc77NnSMeskAAAB
+2025-06-20T21:22:42.654Z info: Socket ID 31p8VRc77NnSMeskAAAB associated with phoneNumber +918295525360
+2025-06-20T21:22:43.130Z info: POST /api/getearning - 200
+2025-06-20T21:25:19.014Z info: Server is running on port 5002
+2025-06-20T21:25:19.015Z info: Socket.IO connection status: Connected
+2025-06-20T21:25:19.462Z info: MongoDB connected
+2025-06-20T21:25:31.743Z info: Server is running on port 5002
+2025-06-20T21:25:31.745Z info: Socket.IO connection status: Connected
+2025-06-20T21:25:32.176Z info: MongoDB connected
+2025-06-20T21:25:36.291Z info: Server is running on port 5002
+2025-06-20T21:25:36.292Z info: Socket.IO connection status: Connected
+2025-06-20T21:25:36.727Z info: MongoDB connected
+2025-06-20T21:25:39.194Z info: Server is running on port 5002
+2025-06-20T21:25:39.195Z info: Socket.IO connection status: Connected
+2025-06-20T21:25:39.639Z info: MongoDB connected
+2025-06-20T21:25:42.423Z info: Server is running on port 5002
+2025-06-20T21:25:42.425Z info: Socket.IO connection status: Connected
+2025-06-20T21:25:42.871Z info: MongoDB connected
+2025-06-20T21:26:18.454Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T21:26:18.476Z info: A new client connected: jFK7-vQoYIjF9-V6AAAB
+2025-06-20T21:26:18.520Z info: Socket ID jFK7-vQoYIjF9-V6AAAB associated with phoneNumber +918295525360
+2025-06-20T21:26:18.535Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T21:26:32.734Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:26:32.736Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=29/06/2025&phoneNumber=+918295525360 - 200
+2025-06-20T21:26:33.868Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:26:55.755Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T21:26:55.758Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=29/06/2025&phoneNumber=+918295525360 - 200
+2025-06-20T21:26:55.759Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:26:55.827Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T21:26:57.140Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=29/06/2025&phoneNumber=+918295525360 - 200
+2025-06-20T21:26:57.143Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:27:02.486Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:27:09.495Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:27:09.500Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=29/06/2025&phoneNumber=+918295525360 - 200
+2025-06-20T21:28:23.063Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=undefined-undefined-2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:28:23.069Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:28:35.358Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=undefined-undefined-2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:28:35.362Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:28:42.381Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:28:42.386Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=undefined-undefined-2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:28:50.227Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=undefined-undefined-2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:28:50.228Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:28:57.652Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:28:57.659Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=29/06/2025&phoneNumber=+918295525360 - 200
+2025-06-20T21:28:57.668Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:28:58.487Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T21:28:58.549Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T21:29:01.033Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:29:01.037Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=undefined-undefined-2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:29:08.328Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:29:08.336Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=29/06/2025&phoneNumber=+918295525360 - 200
+2025-06-20T21:29:14.977Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:29:16.408Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=30/06/2025&phoneNumber=+918295525360 - 200
+2025-06-20T21:29:16.419Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-06-30&phoneNumber=+918295525360 - 200
+2025-06-20T21:29:20.110Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T21:29:20.169Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T21:29:48.975Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=undefined-undefined-2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:29:48.975Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:33:26.138Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=undefined-undefined-2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:33:26.721Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T21:33:26.784Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T21:33:28.074Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:33:28.077Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=undefined-undefined-2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:33:36.454Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:33:36.461Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:33:44.175Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:33:44.179Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:34:11.219Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:34:12.405Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T21:34:12.470Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T21:34:13.528Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:34:13.533Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:35:06.924Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:35:08.693Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T21:35:08.757Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T21:35:09.886Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:35:09.891Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:38:07.922Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:38:07.928Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:38:09.059Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:38:09.793Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T21:38:09.854Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T21:38:10.966Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:38:10.969Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:39:28.368Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:39:28.376Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:39:28.378Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=29/06/2025&phoneNumber=+918295525360 - 200
+2025-06-20T21:39:28.378Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=undefined-undefined-2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:40:01.930Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:40:02.492Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T21:40:02.566Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T21:42:19.391Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T21:42:19.453Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T21:42:28.255Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T21:42:28.324Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T21:42:33.573Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T21:42:33.643Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T21:42:36.387Z info: Client disconnected: jFK7-vQoYIjF9-V6AAAB
+2025-06-20T21:42:36.428Z info: Socket ID cleared for phoneNumber +918295525360
+2025-06-20T21:42:48.450Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T21:42:48.454Z info: A new client connected: LM3DDShp5kSZKtAUAAAD
+2025-06-20T21:42:48.485Z info: Socket ID LM3DDShp5kSZKtAUAAAD associated with phoneNumber +918295525360
+2025-06-20T21:42:48.515Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T21:42:52.189Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T21:42:52.248Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T21:42:56.759Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T21:42:56.851Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T21:42:58.792Z info: Client disconnected: LM3DDShp5kSZKtAUAAAD
+2025-06-20T21:42:58.825Z info: Socket ID cleared for phoneNumber +918295525360
+2025-06-20T21:44:00.815Z info: A new client connected: ZZKZjTQifnpE57lwAAAF
+2025-06-20T21:44:00.820Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T21:44:00.850Z info: Socket ID ZZKZjTQifnpE57lwAAAF associated with phoneNumber +918295525360
+2025-06-20T21:44:00.871Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T21:44:21.026Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T21:44:21.094Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T21:44:24.380Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T21:44:24.446Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T21:44:27.195Z info: Client disconnected: ZZKZjTQifnpE57lwAAAF
+2025-06-20T21:44:27.231Z info: Socket ID cleared for phoneNumber +918295525360
+2025-06-20T21:44:48.177Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T21:44:48.206Z info: A new client connected: E_uPG37RFKrvGGWFAAAH
+2025-06-20T21:44:48.238Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T21:44:48.246Z info: Socket ID E_uPG37RFKrvGGWFAAAH associated with phoneNumber +918295525360
+2025-06-20T21:44:51.860Z info: Client disconnected: E_uPG37RFKrvGGWFAAAH
+2025-06-20T21:44:51.893Z info: Socket ID cleared for phoneNumber +918295525360
+2025-06-20T21:44:58.843Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T21:44:58.862Z info: A new client connected: wGfoyBKlH7G4QZDAAAAJ
+2025-06-20T21:44:58.895Z info: Socket ID wGfoyBKlH7G4QZDAAAAJ associated with phoneNumber +918295525360
+2025-06-20T21:44:58.908Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T21:45:02.555Z info: Client disconnected: wGfoyBKlH7G4QZDAAAAJ
+2025-06-20T21:45:02.591Z info: Socket ID cleared for phoneNumber +918295525360
+2025-06-20T21:46:33.565Z info: A new client connected: qq12TVbEJdG0S6PmAAAL
+2025-06-20T21:46:33.571Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T21:46:33.602Z info: Socket ID qq12TVbEJdG0S6PmAAAL associated with phoneNumber +918295525360
+2025-06-20T21:46:33.664Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T21:46:35.500Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T21:46:35.575Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T21:47:07.119Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T21:47:07.188Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T21:47:11.554Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T21:47:11.634Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T21:47:12.677Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T21:47:12.737Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T21:47:19.797Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T21:47:19.861Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T21:47:28.799Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T21:47:28.866Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T21:47:29.745Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T21:47:29.803Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T21:47:31.830Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T21:47:31.885Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T21:47:47.716Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=29/06/2025&phoneNumber=+918295525360 - 200
+2025-06-20T21:47:47.718Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:49:28.547Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:49:29.075Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T21:49:29.144Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T21:49:35.756Z info: Client disconnected: qq12TVbEJdG0S6PmAAAL
+2025-06-20T21:49:35.795Z info: Socket ID cleared for phoneNumber +918295525360
+2025-06-20T21:49:40.223Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T21:49:40.252Z info: A new client connected: SPXa3bf9QRAN5QnnAAAN
+2025-06-20T21:49:40.284Z info: Socket ID SPXa3bf9QRAN5QnnAAAN associated with phoneNumber +918295525360
+2025-06-20T21:49:40.303Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T21:50:01.908Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T21:50:01.961Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T21:50:47.440Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T21:50:47.507Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T21:50:50.386Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T21:50:50.448Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T21:52:42.829Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:52:42.829Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=29/06/2025&phoneNumber=+918295525360 - 200
+2025-06-20T21:55:22.976Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:55:26.193Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=30/06/2025&phoneNumber=+918295525360 - 200
+2025-06-20T21:55:26.201Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-06-30&phoneNumber=+918295525360 - 200
+2025-06-20T21:55:46.023Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T21:55:46.084Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T21:55:47.647Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=29/06/2025&phoneNumber=+918295525360 - 200
+2025-06-20T21:55:47.659Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:56:12.379Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:56:12.966Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=30/06/2025&phoneNumber=+918295525360 - 200
+2025-06-20T21:56:12.967Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-06-30&phoneNumber=+918295525360 - 200
+2025-06-20T21:56:17.462Z info: POST /api/getearning - 200
+2025-06-20T21:56:56.304Z info: POST /api/getearning - 200
+2025-06-20T21:57:08.401Z info: Server is running on port 5002
+2025-06-20T21:57:08.403Z info: Socket.IO connection status: Connected
+2025-06-20T21:57:08.833Z info: MongoDB connected
+2025-06-20T21:57:10.232Z info: A new client connected: vSzFqZAM63OO-MOiAAAB
+2025-06-20T21:57:10.283Z info: Socket ID vSzFqZAM63OO-MOiAAAB associated with phoneNumber +918295525360
+2025-06-20T21:57:16.913Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T21:57:16.996Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T21:57:19.154Z info: Client disconnected: vSzFqZAM63OO-MOiAAAB
+2025-06-20T21:57:19.192Z info: Socket ID cleared for phoneNumber +918295525360
+2025-06-20T21:57:24.267Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T21:57:24.278Z info: A new client connected: Nkiihy92HbfupY5yAAAD
+2025-06-20T21:57:24.313Z info: Socket ID Nkiihy92HbfupY5yAAAD associated with phoneNumber +918295525360
+2025-06-20T21:57:24.340Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T21:57:38.563Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=29/06/2025&phoneNumber=+918295525360 - 200
+2025-06-20T21:57:38.569Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:57:41.705Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-06-29&phoneNumber=+918295525360 - 200
+2025-06-20T21:57:43.162Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=30/06/2025&phoneNumber=+918295525360 - 200
+2025-06-20T21:57:43.168Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-06-30&phoneNumber=+918295525360 - 200
+2025-06-20T21:57:45.347Z info: POST /api/getearning - 200
+2025-06-20T21:57:47.910Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T21:57:48.057Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T21:57:50.082Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T21:58:10.099Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T21:58:10.749Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T21:58:15.112Z info: POST /order/respond?travelId=707507664&consignmentId=a347acca-8af0-4e0d-8915-20f3273c0b2f - 200
+2025-06-20T21:58:15.758Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T21:58:19.644Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T21:58:26.514Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T21:58:43.882Z info: POST /order/respond?travelId=707507664&consignmentId=a347acca-8af0-4e0d-8915-20f3273c0b2f - 200
+2025-06-20T21:58:47.680Z info: POST /order/respond?travelId=707507664&consignmentId=a347acca-8af0-4e0d-8915-20f3273c0b2f - 200
+2025-06-20T21:58:56.450Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T21:58:56.614Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T21:58:58.155Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T21:59:00.630Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T21:59:00.788Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T21:59:20.336Z info: GET /api/history/+918295525360 - 200
+2025-06-20T21:59:53.056Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T21:59:53.219Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T21:59:54.630Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T21:59:56.262Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T21:59:57.091Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T21:59:57.251Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T22:00:20.599Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T22:00:20.767Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T22:00:23.768Z info: GET /api/history/+918295525360 - 200
+2025-06-20T22:01:13.569Z info: GET /api/history/+918295525360 - 200
+2025-06-20T22:01:42.643Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T22:01:42.803Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T22:02:01.971Z info: GET /map/get-coordinates?address=Agra,+Uttar+Pradesh,+India - 200
+2025-06-20T22:02:01.977Z info: GET /address/getaddress/+918295525360 - 200
+2025-06-20T22:02:34.036Z info: GET /map/getdistanceandcoordinate?origin=Delhi,%20India&destination=Mahatma%20Gandhi%20Rd,%20Chanderi,%20Panchkuian - 200
+2025-06-20T22:03:06.901Z info: POST /api/consignment - 200
+2025-06-20T22:03:10.493Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T22:03:10.653Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T22:03:24.069Z info: GET /address/getaddress/+918295525360 - 200
+2025-06-20T22:03:26.406Z info: GET /address/getaddress/+918295525360 - 200
+2025-06-20T22:03:39.381Z info: POST /t/creates?Leavinglocation=Delhi,%20India&Goinglocation=Agra,%20Uttar%20Pradesh,%20India - 200
+2025-06-20T22:03:43.121Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T22:03:43.276Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T22:04:01.704Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Agra,%20Uttar%20Pradesh,%20India&date=2025-06-21&phoneNumber=+918295525360 - 200
+2025-06-20T22:04:01.710Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Agra,%20Uttar%20Pradesh,%20India&date=21/06/2025&phoneNumber=+918295525360 - 200
+2025-06-20T22:04:02.872Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Agra,%20Uttar%20Pradesh,%20India&date=2025-06-21&phoneNumber=+918295525360 - 200
+2025-06-20T22:04:06.641Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Agra,%20Uttar%20Pradesh,%20India&date=2025-06-22&phoneNumber=+918295525360 - 200
+2025-06-20T22:04:06.643Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Agra,%20Uttar%20Pradesh,%20India&date=22/06/2025&phoneNumber=+918295525360 - 200
+2025-06-20T22:04:07.294Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Agra,%20Uttar%20Pradesh,%20India&date=21/06/2025&phoneNumber=+918295525360 - 200
+2025-06-20T22:04:07.294Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Agra,%20Uttar%20Pradesh,%20India&date=2025-06-21&phoneNumber=+918295525360 - 200
+2025-06-20T22:08:29.272Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Agra,%20Uttar%20Pradesh,%20India&date=22/06/2025&phoneNumber=+918295525360 - 200
+2025-06-20T22:08:29.273Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Agra,%20Uttar%20Pradesh,%20India&date=2025-06-22&phoneNumber=+918295525360 - 200
+2025-06-20T22:08:34.309Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Agra,%20Uttar%20Pradesh,%20India&date=2025-06-21&phoneNumber=+918295525360 - 200
+2025-06-20T22:08:34.310Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Agra,%20Uttar%20Pradesh,%20India&date=21/06/2025&phoneNumber=+918295525360 - 200
+2025-06-20T22:08:52.223Z info: Client disconnected: Nkiihy92HbfupY5yAAAD
+2025-06-20T22:08:52.266Z info: Socket ID cleared for phoneNumber +918295525360
+2025-06-20T22:08:57.378Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T22:08:57.382Z info: A new client connected: h-VHSBb7mdqPPhBkAAAF
+2025-06-20T22:08:57.415Z info: Socket ID h-VHSBb7mdqPPhBkAAAF associated with phoneNumber +918295525360
+2025-06-20T22:08:57.525Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T22:09:00.658Z info: GET /api/history/+918295525360 - 200
+2025-06-20T22:09:15.034Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T22:09:15.183Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T22:09:23.196Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Agra,%20Uttar%20Pradesh,%20India&date=2025-06-20&phoneNumber=+918295525360 - 200
+2025-06-20T22:09:23.199Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Agra,%20Uttar%20Pradesh,%20India&date=20/06/2025&phoneNumber=+918295525360 - 200
+2025-06-20T22:09:24.785Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Agra,%20Uttar%20Pradesh,%20India&date=2025-06-20&phoneNumber=+918295525360 - 200
+2025-06-20T22:09:25.334Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Agra,%20Uttar%20Pradesh,%20India&date=21/06/2025&phoneNumber=+918295525360 - 200
+2025-06-20T22:09:25.336Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Agra,%20Uttar%20Pradesh,%20India&date=2025-06-21&phoneNumber=+918295525360 - 200
+2025-06-20T22:09:27.277Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Agra,%20Uttar%20Pradesh,%20India&date=22/06/2025&phoneNumber=+918295525360 - 200
+2025-06-20T22:09:27.277Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Agra,%20Uttar%20Pradesh,%20India&date=2025-06-22&phoneNumber=+918295525360 - 200
+2025-06-20T22:09:34.240Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Agra,%20Uttar%20Pradesh,%20India&date=21/06/2025&phoneNumber=+918295525360 - 200
+2025-06-20T22:09:34.241Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Agra,%20Uttar%20Pradesh,%20India&date=2025-06-21&phoneNumber=+918295525360 - 200
+2025-06-20T22:13:27.223Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Agra,%20Uttar%20Pradesh,%20India&date=21/06/2025&phoneNumber=+918295525360 - 200
+2025-06-20T22:13:27.225Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Agra,%20Uttar%20Pradesh,%20India&date=2025-06-21&phoneNumber=+918295525360 - 200
+2025-06-20T22:13:27.231Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Agra,%20Uttar%20Pradesh,%20India&date=20/06/2025&phoneNumber=+918295525360 - 200
+2025-06-20T22:13:27.234Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Agra,%20Uttar%20Pradesh,%20India&date=2025-06-20&phoneNumber=+918295525360 - 200
+2025-06-20T22:13:28.065Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Agra,%20Uttar%20Pradesh,%20India&date=21/06/2025&phoneNumber=+918295525360 - 200
+2025-06-20T22:13:28.068Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Agra,%20Uttar%20Pradesh,%20India&date=2025-06-21&phoneNumber=+918295525360 - 200
+2025-06-20T22:18:07.547Z info: Client disconnected: h-VHSBb7mdqPPhBkAAAF
+2025-06-20T22:18:07.587Z info: Socket ID cleared for phoneNumber +918295525360
+2025-06-20T22:18:26.001Z info: Server is running on port 5002
+2025-06-20T22:18:26.002Z info: Socket.IO connection status: Connected
+2025-06-20T22:18:26.421Z info: MongoDB connected
+2025-06-20T22:18:50.702Z info: A new client connected: F_pget8Ytz06eXZeAAAB
+2025-06-20T22:18:50.735Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T22:18:50.760Z info: Socket ID F_pget8Ytz06eXZeAAAB associated with phoneNumber +918295525360
+2025-06-20T22:18:50.934Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T22:19:18.745Z info: GET /map/get-coordinates?address=Agra,+Uttar+Pradesh,+India - 200
+2025-06-20T22:19:18.758Z info: GET /address/getaddress/+918295525360 - 200
+2025-06-20T22:19:23.852Z info: GET /map/getdistanceandcoordinate?origin=Delhi,%20India&destination=Mahatma%20Gandhi%20Rd,%20Chanderi,%20Panchkuian - 200
+2025-06-20T22:20:30.442Z info: Server is running on port 5002
+2025-06-20T22:20:30.444Z info: Socket.IO connection status: Connected
+2025-06-20T22:20:30.877Z info: MongoDB connected
+2025-06-20T22:20:32.318Z info: A new client connected: DI1VsL2RGm8x3IHMAAAB
+2025-06-20T22:20:32.368Z info: Socket ID DI1VsL2RGm8x3IHMAAAB associated with phoneNumber +918295525360
+2025-06-20T22:20:34.633Z info: Server is running on port 5002
+2025-06-20T22:20:34.635Z info: Socket.IO connection status: Connected
+2025-06-20T22:20:34.745Z info: A new client connected: K55DtO2qBTtxYJ-gAAAB
+2025-06-20T22:20:35.088Z info: MongoDB connected
+2025-06-20T22:20:35.643Z info: Socket ID K55DtO2qBTtxYJ-gAAAB associated with phoneNumber +918295525360
+2025-06-20T22:20:48.176Z info: Server is running on port 5002
+2025-06-20T22:20:48.177Z info: Socket.IO connection status: Connected
+2025-06-20T22:20:48.602Z info: MongoDB connected
+2025-06-20T22:20:48.706Z info: A new client connected: iB2ZhfsM1_-tx39VAAAB
+2025-06-20T22:20:49.144Z info: Socket ID iB2ZhfsM1_-tx39VAAAB associated with phoneNumber +918295525360
+2025-06-20T22:21:04.978Z info: POST /api/consignment - 200
+2025-06-20T22:21:42.860Z info: Server is running on port 5002
+2025-06-20T22:21:42.861Z info: Socket.IO connection status: Connected
+2025-06-20T22:21:43.292Z info: MongoDB connected
+2025-06-20T22:21:44.215Z info: A new client connected: d0M8uqrc0d_0fhzRAAAB
+2025-06-20T22:21:46.116Z info: Server is running on port 5002
+2025-06-20T22:21:46.118Z info: Socket.IO connection status: Connected
+2025-06-20T22:21:46.376Z info: A new client connected: 2utVIKKMw2datFbYAAAB
+2025-06-20T22:21:46.557Z info: MongoDB connected
+2025-06-20T22:21:46.925Z info: Socket ID 2utVIKKMw2datFbYAAAB associated with phoneNumber +918295525360
+2025-06-20T22:21:57.518Z info: POST /api/consignment - 200
+2025-06-20T22:22:00.926Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T22:22:01.082Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T22:22:10.856Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Agra,%20Uttar%20Pradesh,%20India&date=2025-06-21&phoneNumber=+918295525360 - 200
+2025-06-20T22:22:10.863Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Agra,%20Uttar%20Pradesh,%20India&date=21/06/2025&phoneNumber=+918295525360 - 200
+2025-06-20T22:22:13.620Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Agra,%20Uttar%20Pradesh,%20India&date=2025-06-21&phoneNumber=+918295525360 - 200
+2025-06-20T22:22:24.824Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Agra,%20Uttar%20Pradesh,%20India&date=2025-06-22&phoneNumber=+918295525360 - 200
+2025-06-20T22:22:24.825Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Agra,%20Uttar%20Pradesh,%20India&date=22/06/2025&phoneNumber=+918295525360 - 200
+2025-06-20T22:23:14.742Z info: POST /api/getearning - 200
+2025-06-20T22:23:17.491Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T22:23:17.651Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T22:23:18.822Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T22:23:24.876Z info: POST /order/respond?travelId=532258904&consignmentId=f5a7a2c3-1807-42f6-80bd-13897de32248 - 200
+2025-06-20T22:23:25.331Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T22:23:27.427Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T22:23:31.526Z info: POST /order/respond?travelId=532258904&consignmentId=f5a7a2c3-1807-42f6-80bd-13897de32248 - 200
+2025-06-20T22:23:32.236Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T22:23:34.254Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T22:23:49.375Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T22:24:18.134Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T22:24:23.862Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T22:24:27.111Z info: POST /order/respond?travelId=532258904&consignmentId=f5a7a2c3-1807-42f6-80bd-13897de32248 - 200
+2025-06-20T22:27:33.508Z info: POST /order/respond?travelId=532258904&consignmentId=f5a7a2c3-1807-42f6-80bd-13897de32248 - 200
+2025-06-20T22:29:25.750Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T22:29:33.640Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T22:29:33.815Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T22:29:50.290Z info: GET /map/get-coordinates?address=Delhi,+India - 200
+2025-06-20T22:29:50.295Z info: GET /address/getaddress/+918295525360 - 200
+2025-06-20T22:29:55.796Z info: GET /map/getdistanceandcoordinate?origin=Agra,%20Uttar%20Pradesh,%20India&destination=987,%20Pocket%2025,%20Subhash%20Place - 200
+2025-06-20T22:30:25.365Z info: Client disconnected: 2utVIKKMw2datFbYAAAB
+2025-06-20T22:30:25.448Z info: Socket ID cleared for phoneNumber +918295525360
+2025-06-20T22:30:33.989Z info: A new client connected: uPCkXGeouV3ynWq3AAAD
+2025-06-20T22:30:34.012Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T22:30:34.024Z info: Socket ID uPCkXGeouV3ynWq3AAAD associated with phoneNumber +918295525360
+2025-06-20T22:30:34.190Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T22:30:46.654Z info: GET /map/get-coordinates?address=Delhi,+India - 200
+2025-06-20T22:30:46.660Z info: GET /address/getaddress/+918295525360 - 200
+2025-06-20T22:30:50.643Z info: GET /map/getdistanceandcoordinate?origin=Agra,%20Uttar%20Pradesh,%20India&destination=987,%20Pocket%2025,%20Subhash%20Place - 200
+2025-06-20T22:31:24.080Z info: POST /api/consignment - 200
+2025-06-20T22:31:27.673Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T22:31:27.818Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T22:31:40.007Z info: GET /address/getaddress/+918295525360 - 200
+2025-06-20T22:31:52.927Z info: POST /t/creates?Leavinglocation=Agra,%20Uttar%20Pradesh,%20India&Goinglocation=Delhi,%20India - 200
+2025-06-20T22:31:56.861Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T22:31:57.018Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T22:32:08.983Z info: GET /t/search-rides?leavingLocation=Agra,+Uttar+Pradesh,+India&goingLocation=Delhi,+India&date=2025-06-24&travelMode=train&phoneNumber=%2B918295525360 - 200
+2025-06-20T22:32:11.993Z info: GET /t/search-rides?leavingLocation=Agra,+Uttar+Pradesh,+India&goingLocation=Delhi,+India&date=2025-06-24&travelMode=airplane&phoneNumber=%2B918295525360 - 200
+2025-06-20T22:32:12.002Z info: GET /t/search-rides?leavingLocation=Agra,+Uttar+Pradesh,+India&goingLocation=Delhi,+India&date=2025-06-24&travelMode=airplane&phoneNumber=%2B918295525360 - 200
+2025-06-20T22:32:12.010Z info: GET /t/search-rides?leavingLocation=Agra,+Uttar+Pradesh,+India&goingLocation=Delhi,+India&date=2025-06-24&travelMode=airplane&phoneNumber=%2B918295525360 - 200
+2025-06-20T22:32:13.701Z info: GET /t/search-rides?leavingLocation=Agra,+Uttar+Pradesh,+India&goingLocation=Delhi,+India&date=2025-06-25&travelMode=airplane&phoneNumber=%2B918295525360 - 200
+2025-06-20T22:33:25.039Z info: POST /t/booking-request - 200
+2025-06-20T22:33:28.285Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T22:33:28.444Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T22:33:30.104Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T22:33:33.061Z info: GET /t/request/+918295525360 - 200
+2025-06-20T22:33:39.870Z info: POST /order/respondto?travelId=999086425&consignmentId=a57aefd7-976a-45bb-b00f-bf9567ff003d - 200
+2025-06-20T22:33:42.758Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T22:33:44.732Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T22:33:51.018Z info: POST /p/create-order - 200
+2025-06-20T22:34:22.503Z info: POST /p/verify-payment - 200
+2025-06-20T22:34:23.244Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T22:34:35.792Z info: Client disconnected: uPCkXGeouV3ynWq3AAAD
+2025-06-20T22:34:35.824Z info: Socket ID cleared for phoneNumber +918295525360
+2025-06-20T22:34:42.984Z info: A new client connected: eBce4nGiHjWzqOgQAAAF
+2025-06-20T22:34:42.995Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T22:34:43.017Z info: Socket ID eBce4nGiHjWzqOgQAAAF associated with phoneNumber +918295525360
+2025-06-20T22:34:43.166Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-20T22:35:02.209Z info: GET /api/history/+918295525360 - 200
+2025-06-20T22:35:42.554Z info: GET /api/history/+918295525360 - 200
+2025-06-20T22:36:30.962Z info: GET /api/history/+918295525360 - 200
+2025-06-20T22:38:49.501Z info: GET /api/history/+918295525360 - 200
+2025-06-20T22:44:20.915Z info: Client disconnected: eBce4nGiHjWzqOgQAAAF
+2025-06-20T22:44:20.957Z info: Socket ID cleared for phoneNumber +918295525360
+2025-06-20T22:44:33.009Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-20T22:44:33.045Z info: A new client connected: sE5afDP3F1VwGNHKAAAH
+2025-06-20T22:44:33.086Z info: Socket ID sE5afDP3F1VwGNHKAAAH associated with phoneNumber +918295525360
+2025-06-20T22:44:33.226Z info: GET /n/getnotification/consignment/+918295525360 - 200

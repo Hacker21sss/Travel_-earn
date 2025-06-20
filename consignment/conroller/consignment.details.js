@@ -217,7 +217,7 @@ module.exports = {
         distance: distance.text,
         duration: duration.text,
         images: image,
-        earning
+        earning: earning,
         // sotp,
         // rotp
 
@@ -246,7 +246,7 @@ module.exports = {
       });
       await consignmenthistory.save();
       console.log(consignmenthistory);
-
+      console.log(newConsignment)
 
       const savedConsignment = await newConsignment.save();
       res.status(201).json({
@@ -669,11 +669,42 @@ module.exports.getearning = async (req, res) => {
     if (consignmentDate !== rideDate) {
       return res.status(400).json({ message: "user need to publish travel on date." });
     }
+    console.log("Ride : ", Ride)
+    console.log("con : ", con)
+
+    if (
+      !Ride.LeavingCoordinates?.ltd || !Ride.LeavingCoordinates?.lng ||
+      !con.LeavingCoordinates?.latitude || !con.LeavingCoordinates?.longitude
+    ) {
+      return res.status(400).json({ message: "Missing coordinates for location comparison." });
+    }
+
+    const riderStartPoint = {
+      latitude: Ride.LeavingCoordinates.ltd,
+      longitude: Ride.LeavingCoordinates.lng,
+    };
+
+    const boundingBox = getBoundingBox(riderStartPoint, 10000); // 10 km
+
+    const pickup = con.LeavingCoordinates;
+
+    const isWithinBox =
+      pickup.latitude >= boundingBox.minLat &&
+      pickup.latitude <= boundingBox.maxLat &&
+      pickup.longitude >= boundingBox.minLng &&
+      pickup.longitude <= boundingBox.maxLng;
+
+    if (!isWithinBox) {
+      return res.status(400).json({
+        message: "Consignment pickup location is outside the 10 km radius of your starting location.",
+      });
+    }
+
 
     // Check if consignment destination matches ride destination
-    if (con.goinglocation !== Ride.Goinglocation) {
-      return res.status(400).json({ message: "Consignment destination does not match ride destination." });
-    }
+    // if (con.goinglocation !== Ride.Goinglocation) {
+    //   return res.status(400).json({ message: "Consignment destination does not match ride destination." });
+    // }
 
     // Check if consignment is already accepted by another traveler
     const existingRequest = await riderequest.findOne({
