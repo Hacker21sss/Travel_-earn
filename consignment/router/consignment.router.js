@@ -14,7 +14,7 @@ const upload=require('../../middleware/upload')
 // });
 
 // POST route to create a new consignment
-router.post('/consignment', consignment.createConsignment,consignment.validateConsignment)
+router.post('/consignment', consignment.createConsignment)
 router.get('/getdetails',consignment.getConsignmentsByDate);
 router.post('/request-for-consignment',consignment.getconsignment);
 router.get('/get-consignment/:phoneNumber',consignment.getallconsignment);

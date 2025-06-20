@@ -21,7 +21,7 @@ module.exports.respondToRideRequest = async (req, res) => {
   try {
     let { consignmentId, travelId } = req.query;
     const { response } = req.body;
-
+    console.log(req.body, req.query)
     if (!travelId || !response) {
       return res
         .status(400)
@@ -54,7 +54,7 @@ module.exports.respondToRideRequest = async (req, res) => {
     if (!rideRequest) {
       return res.status(404).json({ message: "Ride request not found" });
     }
-
+    console.log(rideRequest)
     if (
       rideRequest &&
       ["Accepted", "Rejected", "Expired"].includes(rideRequest.status)
@@ -63,7 +63,7 @@ module.exports.respondToRideRequest = async (req, res) => {
         .status(400)
         .json({ message: `Ride already ${rideRequest.status.toLowerCase()}` });
     }
-
+    console.log("passed")
     // Check if consignmentId already exists in TravelHistory
     const travelHistory = await TravelHistory.findOne({
       travelId,
@@ -75,16 +75,16 @@ module.exports.respondToRideRequest = async (req, res) => {
         .json({ message: "Consignment already accepted for this travelId" });
     }
 
-    if (moment().isAfter(moment(rideRequest.createdAt).add(369, "minutes"))) {
-      await Promise.all([
-        Travel.updateOne({ travelId }, { $set: { status: "Expired" } }),
-        Notification.updateOne(
-          { travelId },
-          { $set: { status: "Expired" } }
-        ),
-      ]);
-      return res.status(400).json({ message: "Ride request has expired." });
-    }
+    // if (moment().isAfter(moment(rideRequest.createdAt).add(369, "minutes"))) {
+    //   await Promise.all([
+    //     Travel.updateOne({ travelId }, { $set: { status: "Expired" } }),
+    //     Notification.updateOne(
+    //       { travelId },
+    //       { $set: { status: "Expired" } }
+    //     ),
+    //   ]);
+    //   return res.status(400).json({ message: "Ride request has expired." });
+    // }
 
     if (response.toLowerCase() === "accept") {
       const senderOtp = Math.floor(100000 + Math.random() * 900000).toString();
@@ -332,7 +332,7 @@ module.exports.respondToConsignmentRequest = async (req, res) => {
   try {
     const { travelId, consignmentId } = req.query;
     const { response } = req.body;
-
+    console.log(req.body, req.query)
     if (!travelId || !consignmentId || !response) {
       return res.status(400).json({
         message: "travelId, consignmentId, and response are required"

@@ -73,7 +73,7 @@ exports.getAutoCompleteAndCreateBooking = async (req, res) => {
       return res.status(400).json({ message: "Invalid distance received from map service" });
     }
 
-    const price = fare.calculateFare(weightValue, distanceValue, travelMode);
+    const price = await fare.calculateFare(weightValue, distanceValue, travelMode);
     const rideId = uuidv4();
     const travelId = Math.floor(100000000 + Math.random() * 900000000).toString();
 
@@ -90,16 +90,13 @@ exports.getAutoCompleteAndCreateBooking = async (req, res) => {
       travelMode,
       expectedStartTime: expectedStart,
       expectedEndTime: expectedEnd,
-      expectedearning: price.payableAmount,
+      expectedearning: price,
+      payableAmount: price,
       distance: distanceText,
       duration: durationText,
       userrating,
       totalrating,
-      price,
       rideId,
-      TE: price.TE,
-      discount: price.discount,
-      payableAmount: price.payableAmount,
       travelId,
       LeavingCoordinates: {
         ltd: LeavingCoordinates.ltd,
@@ -162,6 +159,7 @@ exports.getAutoCompleteAndCreateBooking = async (req, res) => {
       travelMode: verifyHistory.travelMode,
       travelDate: verifyHistory.expectedStartTime
     });
+    console.log("Verification done")
 
     return res.status(201).json({
       message: "Travel detail created successfully",
@@ -169,9 +167,7 @@ exports.getAutoCompleteAndCreateBooking = async (req, res) => {
         ...travelRecord._doc,
         distance,
         duration,
-        TE: price.TE,
-        discount: price.discount,
-        payableAmount: price.payableAmount,
+        payableAmount: price,
         travelId,
       },
     });
@@ -413,12 +409,12 @@ exports.searchRides = async (req, res) => {
         return {
           ...ride,
           profilePicture: userProfile?.profilePicture || null,
-          rating: userProfile?.totalrating || null,
-          averageRating: userProfile?.averageRating || 6
+          rating: userProfile?.totalrating || 0,
+          averageRating: userProfile?.averageRating || 0
         };
       })
     );
-
+    console.log("distance value: ", distanceValue)
     const estimatedFare = await fare.calculateFarewithoutweight(distanceValue, travelMode || "car");
 
     if(estimatedFare === undefined){

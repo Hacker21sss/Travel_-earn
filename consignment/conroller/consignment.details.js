@@ -13,7 +13,7 @@ const { getIO, sendMessageToSocketId } = require('../../socket');
 
 const Notification = require('../../user/model/notification');
 const ConsignmentRequestHistory = require('../../consignment/model/conhistory');
-const notification = require('../../user/model/notification');
+
 
 
 const geolib = require("geolib");
@@ -77,6 +77,7 @@ module.exports = {
         durationAtEndPoint,
 
       } = req.body;
+      console.log(req.body)
       const currentDate = new Date();
       const sendingDate = new Date(dateOfSending);
       if (sendingDate < currentDate.setHours(0, 0, 0, 0)) {
@@ -178,9 +179,9 @@ module.exports = {
       // console.log("Train Fare:", trainFare);
       // console.log("Airplane Fare:", airplaneFare);
 
-      const earning = await fare.calculateFare(weight, distance, travelMode, dimensions?.length, dimensions?.height, dimensions?.breadth)
+      const earning = await fare.calculateFare(weight, distanceValue, travelMode, dimensions?.length, dimensions?.height, dimensions?.breadth)
 
-      if(!earning){
+      if (!earning) {
         return res.status(400).json({ message: 'Unable to fetch fare' });
       }
       const consignmentId = uuidv4();
@@ -483,7 +484,7 @@ module.exports.getconsignment = async (req, res) => {
 
     if (!validModes.includes(travelMode)) {
       return res.status(400).json({ message: "Invalid Travel Mode! Please enter 'train' or 'airplane'." });
-    } 
+    }
     console.log(con.distance, con.weight)
     const weight = parseFloat(con.weight?.toString().replace(/[^\d.]/g, ""));
     const distance = parseFloat(con.distance?.toString().replace(/[^\d.]/g, ""));
@@ -497,12 +498,22 @@ module.exports.getconsignment = async (req, res) => {
       return res.status(500).json({ message: "Fare calculation function is missing or not defined." });
     }
 
-    const expectedEarning = fare.calculateFare(weight, distance, travelMode);
+    const expectedEarning = await fare.calculateFare(weight, distance, travelMode);
 
 
     console.log("E:", expectedEarning);
 
-
+    const notification = new Notification({
+      phoneNumber: phoneNumber,
+      requestto: con.phoneNumber,
+      requestedby: phoneNumber,
+      consignmentId: con.consignmentId,
+      earning: expectedEarning,
+      travelId: Ride.travelId,
+      notificationType: "ride_request"
+    });
+    console.log(notification)
+    await notification.save();
 
     // Convert weight and distance to float
 
@@ -512,11 +523,10 @@ module.exports.getconsignment = async (req, res) => {
       consignmentId,
       consignmentDetails: con,
       expectedEarning
-
-
     };
 
     return res.status(200).json({ message: "Request sent to user", booking });
+    // return res.status(200).json({ message: "Request sent to user"});
   } catch (error) {
     console.error("Error in booking:", error.message);
     return res.status(500).json({ message: "Internal server error", error: error.message });
@@ -701,7 +711,7 @@ module.exports.getearning = async (req, res) => {
       return res.status(500).json({ message: "Fare calculation function is missing or not defined." });
     }
 
-    const expectedEarning = fare.calculateFare(Weight, distance, travelMode);
+    const expectedEarning = await fare.calculateFare(Weight, distance, travelMode);
     const senderPhoneNumber = Ride.phoneNumber;
 
     if (!senderPhoneNumber) {

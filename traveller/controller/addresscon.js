@@ -55,6 +55,30 @@ const addAddress = async (req, res) => {
   }
 };
 
+const deleteAddress = async (req, res) => {
+  try {
+    const { addressId } = req.params;
+
+    // Validate addressId
+    if (!addressId) {
+      return res.status(400).json({ message: "Address ID is required" });
+    }
+
+    // Check if the address exists
+    const address = await Address.findById(addressId);
+    if (!address) {
+      return res.status(404).json({ message: "Address not found" });
+    }
+
+    // Delete the address
+    await Address.findByIdAndDelete(addressId);
+
+    res.status(200).json({ message: "Address deleted successfully" });
+  } catch (error) {
+    console.error("Error in deleteAddress:", error.stack);
+    res.status(500).json({ message: "Internal Server Error", error: error.message });
+  }
+};
 
 
 // Controller to get all addresses for a user
@@ -71,4 +95,5 @@ const getAddressesByUser = async (req, res) => {
 module.exports = {
   addAddress,
   getAddressesByUser,
+  deleteAddress
 };

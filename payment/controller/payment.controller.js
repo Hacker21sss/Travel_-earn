@@ -9,7 +9,7 @@ const notification=require('../../user/model/notification')
 const createOrder = async (req, res) => {
   try {
     const { amount, currency } = req.body;
-
+    
  
     if (!amount || !currency) {
       console.error("Missing amount or currency:", req.body);
@@ -30,7 +30,7 @@ const createOrder = async (req, res) => {
     }
 
     const options = {
-      amount: amountNum, 
+      amount: Math.round(amountNum), 
       currency,
       receipt: `receipt_${Date.now()}`,
       notes: {
@@ -45,7 +45,7 @@ const createOrder = async (req, res) => {
 
     res.status(200).json({ success: true, order });
   } catch (error) {
-    console.error("Error creating order:", error.message, error.stack);
+    console.error("Error creating order:", error);
     res.status(500).json({ success: false, message: "Failed to create order", error: error.message });
   }
 };

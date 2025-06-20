@@ -83,7 +83,7 @@ module.exports.getNotifications = async (req, res) => {
         }
         else if (notif.notificationType === "ride_accept") {
           notificationData = {
-            title: " Ride Request accept",
+            title: "Ride Request accept",
             subtitle: `you accepted the  Ride request`,
             notificationType: "ride_accept",
             notificationFormat: "ride",
@@ -202,14 +202,14 @@ exports.getUserNotifications = async (req, res) => {
 
             case "ride_accept":
               title = "Ride Approved";
-              subtitle = `Your ride request has been approved by ${sender.username}`;
+              subtitle = `Your ride request has been approved by ${sender?.username}`;
               notificationType = "ride_accept";
               notificationFormat = "Approval";
               break;
 
             case "ride_reject":
               title = "Ride Rejected";
-              subtitle = `Your ride request was rejected by ${sender.username}`;
+              subtitle = `Your ride request was rejected by ${sender?.username}`;
               notificationType = "ride_reject";
               notificationFormat = "Rejection";
               break;

@@ -104,6 +104,7 @@ module.exports.dimension = (length, height, breadth) => {
 
 
 module.exports.calculateFare = async (weight, distance, travelMode, length, height, breadth) => {
+    console.log(weight, distance, travelMode, length, height, breadth)
     if (!weight || !distance || isNaN(weight) || isNaN(distance) || weight <= 0 || distance <= 0) {
         console.log("Invalid weight or distance: Must be positive numbers.");
         return "Error: Invalid weight or distance";

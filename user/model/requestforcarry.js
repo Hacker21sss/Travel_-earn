@@ -23,7 +23,7 @@ const consignmenttocarryrequestSchema = new mongoose.Schema({
     bookingId:{type:String},
     status: {
         type: String,
-        enum: ["Accepted", "Rejected"],
+        enum: ["Accepted", "Rejected", "Expired"],
     }
     
     
