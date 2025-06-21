@@ -843,7 +843,7 @@ module.exports.getRideRequests = async (req, res) => {
         { requestedby: formattedNumber },
         { requestedby: alternativeNumber }
       ]
-    }).sort({ createdAt: -1 }).limit(1);
+    }).sort({ createdAt: -1 }).limit(1).lean();
 
     console.log("Ride requests found:", rideRequests);
 

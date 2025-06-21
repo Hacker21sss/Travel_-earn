@@ -14,48 +14,10 @@ module.exports.getConsignmentHistory = async (req, res) => {
         message: "No consignment history found for this phone number."
       });
     }
-
-    // 1. Collect all phoneNumbers from traveldetails arrays
-    const phoneSet = new Set();
-    history.forEach(item => {
-      (item.traveldetails || []).forEach(detail => {
-        if (detail.phoneNumber) phoneSet.add(detail.phoneNumber);
-      });
-    });
-
-    const allPhoneNumbers = Array.from(phoneSet);
-
-    // 2. Fetch ratings from Profile
-    const profiles = await Profile.find({ phoneNumber: { $in: allPhoneNumbers } }).lean();
-    const profileMap = {};
-    profiles.forEach(profile => {
-      profileMap[profile.phoneNumber] = {
-        averageRating: profile.averageRating || 0,
-        totalrating: profile.totalrating || 0
-      };
-    });
-
-    // 3. Add first rating found in traveldetails (if any) to the top level of each history item
-    const enrichedHistory = history.map(item => {
-      let ratingInfo = {
-        averageRating: 0,
-        totalrating: 0
-      };
-
-      const firstPhone = item.traveldetails?.[0]?.phoneNumber;
-      if (firstPhone && profileMap[firstPhone]) {
-        ratingInfo = profileMap[firstPhone];
-      }
-
-      return {
-        ...item,
-        ...ratingInfo // adds averageRating, totalrating at top level
-      };
-    });
-
+    console.log(history[0])
     return res.status(200).json({
       message: "Consignment history retrieved successfully",
-      history: enrichedHistory
+      history
     });
 
   } catch (error) {

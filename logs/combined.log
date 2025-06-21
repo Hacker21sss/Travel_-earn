@@ -7728,3 +7728,115 @@
 2025-06-21T19:06:16.420Z info: A new client connected: YTH9yfFBwqIr_9o6AAAJ
 2025-06-21T19:06:16.484Z info: Socket ID YTH9yfFBwqIr_9o6AAAJ associated with phoneNumber +918295525360
 2025-06-21T19:06:16.520Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-21T19:20:12.494Z info: Server is running on port 5002
+2025-06-21T19:20:12.496Z info: Socket.IO connection status: Connected
+2025-06-21T19:20:14.034Z info: MongoDB connected
+2025-06-21T19:20:16.318Z info: Server is running on port 5002
+2025-06-21T19:20:16.320Z info: Socket.IO connection status: Connected
+2025-06-21T19:20:16.800Z info: GET /api/riderequest/+918295525360 - 200
+2025-06-21T19:20:19.668Z info: Server is running on port 5002
+2025-06-21T19:20:19.670Z info: Socket.IO connection status: Connected
+2025-06-21T19:20:22.430Z info: MongoDB connected
+2025-06-21T19:20:23.893Z info: Server is running on port 5002
+2025-06-21T19:20:23.894Z info: Socket.IO connection status: Connected
+2025-06-21T19:20:28.538Z info: MongoDB connected
+2025-06-21T19:20:47.516Z info: Server is running on port 5002
+2025-06-21T19:20:47.517Z info: Socket.IO connection status: Connected
+2025-06-21T19:20:49.151Z info: Server is running on port 5002
+2025-06-21T19:20:49.153Z info: Socket.IO connection status: Connected
+2025-06-21T19:20:53.923Z info: MongoDB connected
+2025-06-21T19:20:57.226Z info: Server is running on port 5002
+2025-06-21T19:20:57.230Z info: Socket.IO connection status: Connected
+2025-06-21T19:21:03.902Z info: MongoDB connected
+2025-06-21T19:21:08.360Z info: GET /api/riderequest/+918295525360 - 200
+2025-06-21T19:21:38.614Z info: Server is running on port 5002
+2025-06-21T19:21:38.615Z info: Socket.IO connection status: Connected
+2025-06-21T19:21:42.107Z info: MongoDB connected
+2025-06-21T19:21:59.443Z info: Server is running on port 5002
+2025-06-21T19:21:59.445Z info: Socket.IO connection status: Connected
+2025-06-21T19:22:05.609Z info: MongoDB connected
+2025-06-21T19:22:08.800Z info: Server is running on port 5002
+2025-06-21T19:22:08.801Z info: Socket.IO connection status: Connected
+2025-06-21T19:22:10.717Z info: Server is running on port 5002
+2025-06-21T19:22:10.718Z info: Socket.IO connection status: Connected
+2025-06-21T19:22:16.673Z info: Server is running on port 5002
+2025-06-21T19:22:16.674Z info: Socket.IO connection status: Connected
+2025-06-21T19:22:17.401Z info: MongoDB connected
+2025-06-21T19:22:27.288Z info: Server is running on port 5002
+2025-06-21T19:22:27.289Z info: Socket.IO connection status: Connected
+2025-06-21T19:22:27.939Z info: GET /api/riderequest/+918295525360 - 200
+2025-06-21T19:22:30.363Z info: MongoDB connected
+2025-06-21T19:23:04.330Z info: Server is running on port 5002
+2025-06-21T19:23:04.331Z info: Socket.IO connection status: Connected
+2025-06-21T19:23:06.798Z info: GET /api/riderequest/+918295525360 - 200
+2025-06-21T19:23:11.220Z info: MongoDB connected
+2025-06-21T19:23:25.855Z info: Server is running on port 5002
+2025-06-21T19:23:25.857Z info: Socket.IO connection status: Connected
+2025-06-21T19:23:29.542Z info: GET /api/riderequest/+918295525360 - 200
+2025-06-21T19:23:31.863Z info: MongoDB connected
+2025-06-21T19:23:50.598Z info: Server is running on port 5002
+2025-06-21T19:23:50.600Z info: Socket.IO connection status: Connected
+2025-06-21T19:23:52.363Z info: Server is running on port 5002
+2025-06-21T19:23:52.365Z info: Socket.IO connection status: Connected
+2025-06-21T19:23:58.821Z info: Server is running on port 5002
+2025-06-21T19:23:58.822Z info: Socket.IO connection status: Connected
+2025-06-21T19:24:04.922Z info: GET /api/riderequest/+918295525360 - 200
+2025-06-21T19:24:05.192Z info: MongoDB connected
+2025-06-21T19:25:08.173Z info: Server is running on port 5002
+2025-06-21T19:25:08.174Z info: Socket.IO connection status: Connected
+2025-06-21T19:25:09.490Z info: GET /api/riderequest/+918295525360 - 200
+2025-06-21T19:25:09.772Z info: MongoDB connected
+2025-06-21T19:25:18.893Z info: Server is running on port 5002
+2025-06-21T19:25:18.895Z info: Socket.IO connection status: Connected
+2025-06-21T19:25:19.311Z info: GET /api/riderequest/+918295525360 - 200
+2025-06-21T19:25:20.071Z info: MongoDB connected
+2025-06-21T19:29:15.293Z info: Server is running on port 5002
+2025-06-21T19:29:15.296Z info: Socket.IO connection status: Connected
+2025-06-21T19:29:18.512Z info: GET /api/riderequest/+918295525360 - 200
+2025-06-21T19:29:19.181Z info: MongoDB connected
+2025-06-21T19:30:42.628Z info: Server is running on port 5002
+2025-06-21T19:30:42.629Z info: Socket.IO connection status: Connected
+2025-06-21T19:30:43.126Z info: GET /api/riderequest/+918295525360 - 200
+2025-06-21T19:30:45.664Z info: MongoDB connected
+2025-06-21T19:31:06.325Z info: Server is running on port 5002
+2025-06-21T19:31:06.326Z info: Socket.IO connection status: Connected
+2025-06-21T19:31:07.067Z info: MongoDB connected
+2025-06-21T19:31:07.188Z info: GET /api/riderequest/+918295525360 - 200
+2025-06-21T19:31:37.250Z info: GET /api/riderequest/+918295525360 - 200
+2025-06-21T19:31:38.449Z info: GET /api/riderequest/+918295525360 - 200
+2025-06-21T19:31:48.075Z info: GET /api/riderequest/+918295525360 - 200
+2025-06-21T19:32:35.307Z info: GET /api/riderequest/+918295525360 - 200
+2025-06-21T19:33:20.098Z info: GET /api/riderequest/+918295525360 - 200
+2025-06-21T19:33:28.577Z info: GET /api/riderequest/+918295525360 - 200
+2025-06-21T19:33:31.135Z info: GET /api/riderequest/+918295525360 - 200
+2025-06-21T19:33:37.267Z info: GET /api/riderequest/+918295525360 - 200
+2025-06-21T19:34:14.986Z info: GET /api/riderequest/+918295525360 - 200
+2025-06-21T19:35:02.479Z info: GET /api/riderequest/+918295525360 - 200
+2025-06-21T19:36:07.214Z info: Server is running on port 5002
+2025-06-21T19:36:07.216Z info: Socket.IO connection status: Connected
+2025-06-21T19:36:08.118Z info: MongoDB connected
+2025-06-21T19:36:12.453Z info: GET /api/riderequest/+918295525360 - 200
+2025-06-21T19:43:00.021Z info: Server is running on port 5002
+2025-06-21T19:43:00.023Z info: Socket.IO connection status: Connected
+2025-06-21T19:43:00.848Z info: GET /api/riderequest/+918295525360 - 200
+2025-06-21T19:43:01.000Z info: MongoDB connected
+2025-06-21T19:43:27.561Z info: Server is running on port 5002
+2025-06-21T19:43:27.563Z info: Socket.IO connection status: Connected
+2025-06-21T19:43:28.249Z info: MongoDB connected
+2025-06-21T19:43:52.490Z info: GET /api/riderequest/+918295525360 - 200
+2025-06-21T19:44:00.815Z info: GET /api/riderequest/+918295525360 - 200
+2025-06-21T19:44:34.022Z info: Server is running on port 5002
+2025-06-21T19:44:34.024Z info: Socket.IO connection status: Connected
+2025-06-21T19:44:34.930Z info: MongoDB connected
+2025-06-21T19:44:46.822Z info: Server is running on port 5002
+2025-06-21T19:44:46.823Z info: Socket.IO connection status: Connected
+2025-06-21T19:44:47.799Z info: MongoDB connected
+2025-06-21T19:45:48.186Z info: GET /api/history/+918295525360 - 200
+2025-06-21T19:45:51.728Z info: GET /api/history/+918295525360 - 200
+2025-06-21T19:47:10.005Z info: Server is running on port 5002
+2025-06-21T19:47:10.006Z info: Socket.IO connection status: Connected
+2025-06-21T19:47:10.965Z info: MongoDB connected
+2025-06-21T19:47:17.535Z info: Server is running on port 5002
+2025-06-21T19:47:17.536Z info: Socket.IO connection status: Connected
+2025-06-21T19:47:18.262Z info: MongoDB connected
+2025-06-21T19:47:38.550Z info: GET /api/riderequest/+918295525360 - 200
