@@ -233,6 +233,7 @@ exports.getUserProfileByPhoneNumber = async (req, res) => {
   try {
     const { phoneNumber } = req.params; // Assuming phoneNumber is passed as a query parameter
 
+    console.log(phoneNumber)
     // Validate input
     if (!phoneNumber) {
       return res.status(400).json({ message: "Phone number is required." });
@@ -306,6 +307,7 @@ exports.updateUserProfile = async (req, res) => {
       }
     }
 
+    console.log("updated fields : " ,updateFields)
     const updatedUser = await userprofiles.findOneAndUpdate(
       { phoneNumber },
       { $set: updateFields },

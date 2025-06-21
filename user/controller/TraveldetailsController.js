@@ -11,6 +11,7 @@ const { getIO, sendMessageToSocketId } = require('../../socket');
 const Notification = require('../../user/model/notification')
 const datetime = require('../../service/getcurrentdatetime')
 const User = require('../model/User');
+const con = require('../../consignment/model/conhistory')
 
 const geolib = require("geolib");
 
@@ -731,7 +732,8 @@ module.exports.getAllRides = async (req, res) => {
 
 module.exports.consignmentcarryrequest = async (req, res) => {
   const { phoneNumber } = req.params;
-
+  // const {consignmentId} = req.body.consignmentId;
+  console.log(req.body)
   // Set today's start time (00:00:00)
   const todayStart = new Date();
   todayStart.setHours(0, 0, 0, 0); // UTC 00:00
@@ -749,7 +751,7 @@ module.exports.consignmentcarryrequest = async (req, res) => {
     });
 
     // Filter only today's and future requests
-    const requests = allRequests.filter(req => new Date(req.createdAt) >= todayStart);
+    const requests = allRequests.filter(req => new Date(req.createdAt) >= todayStart && req.status != "Expired" && req.status != "Rejected");
 
     console.log(`✅ Filtered Requests (Today + Future): ${requests.length}`);
 
