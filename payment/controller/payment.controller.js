@@ -51,6 +51,7 @@ const createOrder = async (req, res) => {
 };
 const verifyOrder = async (req, res) => {
   const session = await Earning.startSession();
+  let committed = false;
   session.startTransaction();
 
   try {
@@ -140,6 +141,7 @@ const verifyOrder = async (req, res) => {
     
     console.log("Marked transaction :",note);
     await session.commitTransaction();
+    committed = true
     console.log("Payment verified successfully for:", razorpay_payment_id);
 
     const newNotification = new notification({
@@ -159,7 +161,9 @@ const verifyOrder = async (req, res) => {
       message: "Payment successful"
     });
   } catch (error) {
-    await session.abortTransaction();
+    if(!committed){
+      await session.abortTransaction();
+    }
     console.error("Error verifying payment:", error.message, error.stack);
     res.status(500).json({ success: false, message: "Something went wrong", error: error.message });
   } finally {
