@@ -250,7 +250,7 @@ const userprofile=await User.findOne({phoneNumber: rideRequest.requestedby})
         dropoff:consignment.goinglocation,
         travelmode:rideRequest.travelMode,
         travellername:rideRequest.rider,
-        pickuptime:travelHistory.expectedStartTime,
+        pickuptime:rideRequest.expectedstarttime,
         dropofftime:rideRequest.expectedendtime
       });
 
