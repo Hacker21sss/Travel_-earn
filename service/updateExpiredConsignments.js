@@ -8,8 +8,10 @@ const updateConsignments = async () => {
 
         const expiredConsignments = await consignment.find({
             dateOfSending: { $lt: now },
-            status: { $in: ['Pending', 'Not Started'] }
-        });
+            status: { $in: ['Pending', 'Not Started', "Rejected"] }
+        }); 
+
+        console.log("Expired consignments : ", expiredConsignments);
 
        
         const expiredConsignmentIds = expiredConsignments.map(c => c._id);
@@ -17,7 +19,7 @@ const updateConsignments = async () => {
         
         const [consignmentUpdateResult, historyUpdateResult] = await Promise.all([await consignment.updateMany(
             {
-                _id: { $in: expiredConsignmentIds }
+                consignmentId: { $in: expiredConsignmentIds }
             },
             {
                 $set: { status: 'Expired' }
@@ -42,7 +44,7 @@ const updateConsignments = async () => {
 }
 
 module.exports.startConsignmentCronJob = () => {
-    cron.schedule('0 0 0 * * *', async () => {
+    cron.schedule('0 * * * * *', async () => {
         console.log("Running cron job")
         await updateConsignments();
     })

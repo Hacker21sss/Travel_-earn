@@ -15,7 +15,7 @@ const ridetocarryrequestSchema = new mongoose.Schema({
     expectedstarttime:{type:String},
     expectedendtime:{type:String},
 
-      consignmentId:{type:String},
+    consignmentId:{type:String},
     
     createdAt: { type: Date, default: Date.now },
     pickup:{type:String},
