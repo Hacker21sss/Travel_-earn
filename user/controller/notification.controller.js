@@ -65,7 +65,7 @@ module.exports.getNotifications = async (req, res) => {
             earning: notif.earning || "0",
             travellername: notif.travellername,
             profilepicture: sender?.profilePicture,
-            createdAt : notif?.createdAt
+            createdAt: notif?.createdAt
           };
         } else if (notif.notificationType === "ride_request") {
           notificationData = {
@@ -82,28 +82,10 @@ module.exports.getNotifications = async (req, res) => {
             earning: notif.earning || "0",
             travellername: notif.travellername,
             profilepicture: sender?.profilePicture,
-            createdAt : notif?.createdAt
+            createdAt: notif?.createdAt
           };
         }
-        else if (notif.notificationType === "ride_accept") {
-          notificationData = {
-            title: "Ride Request accept",
-            subtitle: `you accepted the Ride request`,
-            notificationType: "ride_accept",
-            notificationFormat: "ride",
-            // time: moment(notif.createdAt).format("h:mm A"),
-            time: moment.utc(notif.createdAt).local().format("h:mm A"),
-            consignmentId: notif.consignmentId,
-            travelId: notif.travelId,
-            requestedby: notif.requestedby,
-            requestto: notif.requestto,
-            earning: notif.earning || "0",
-            travellername: notif?.travellername,
-            profilepicture: sender?.profilePicture,
-            paymentstatus: notif.paymentstatus || "pending",
-            createdAt : notif?.createdAt
-          };
-        }
+
         else if (notif.notificationType === "ride_accept" && notif.paymentstatus == "successful") {
           notificationData = {
             title: "Ride Request accept",
@@ -120,7 +102,7 @@ module.exports.getNotifications = async (req, res) => {
             // travellername: notif?.travellername,
             // profilepicture: sender?.profilePicture,
             paymentstatus: notif.paymentstatus || "pending",
-            createdAt : notif?.createdAt
+            createdAt: notif?.createdAt
           };
         }
         else if (notif.notificationType === "ride_accept" && notif.paymentstatus == "declined") {
@@ -139,7 +121,26 @@ module.exports.getNotifications = async (req, res) => {
             // travellername: notif?.travellername,
             // profilepicture: sender?.profilePicture,
             paymentstatus: notif.paymentstatus || "pending",
-            createdAt : notif?.createdAt
+            createdAt: notif?.createdAt
+          };
+        }
+        else if (notif.notificationType === "ride_accept") {
+          notificationData = {
+            title: "Ride Request accept",
+            subtitle: `you accepted the Ride request`,
+            notificationType: "ride_accept",
+            notificationFormat: "ride",
+            // time: moment(notif.createdAt).format("h:mm A"),
+            time: moment.utc(notif.createdAt).local().format("h:mm A"),
+            consignmentId: notif.consignmentId,
+            travelId: notif.travelId,
+            requestedby: notif.requestedby,
+            requestto: notif.requestto,
+            earning: notif.earning || "0",
+            travellername: notif?.travellername,
+            profilepicture: sender?.profilePicture,
+            paymentstatus: notif.paymentstatus || "pending",
+            createdAt: notif?.createdAt
           };
         }
         else if (notif.notificationType == "consignment_accept" && notif.paymentstatus == "declined") {
@@ -151,7 +152,7 @@ module.exports.getNotifications = async (req, res) => {
             // time: moment(notif.createdAt).format("h:mm A"),
             time: moment.utc(notif.createdAt).local().format("h:mm A"),
             paymentstatus: notif.paymentstatus || "pending",
-            createdAt : notif?.createdAt
+            createdAt: notif?.createdAt
           };
         }
         else if (notif.notificationType == "consignment_accept" && notif.paymentstatus == "successful") {
@@ -163,7 +164,7 @@ module.exports.getNotifications = async (req, res) => {
             // time: moment(notif.createdAt).format("h:mm A"),
             time: moment.utc(notif.createdAt).local().format("h:mm A"),
             paymentstatus: notif.paymentstatus || "pending",
-            createdAt : notif?.createdAt
+            createdAt: notif?.createdAt
           };
         }
         else if (notif.notificationType === "consignment_accept") {
@@ -182,11 +183,10 @@ module.exports.getNotifications = async (req, res) => {
             travellername: notif?.travellername,
             profilepicture: sender?.profilePicture,
             paymentstatus: notif.paymentstatus || "pending",
-            createdAt : notif?.createdAt
+            createdAt: notif?.createdAt
           };
         }
-        console.log("notif.createdAt (raw UTC):", notif.createdAt);
-        console.log("Local converted:", moment.utc(notif.createdAt).local().format("h:mm A"));
+        console.log("Notification data: ", notificationData)
 
 
         return notificationData.title ? notificationData : null;

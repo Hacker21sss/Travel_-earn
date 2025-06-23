@@ -142,7 +142,7 @@ const verifyOrder = async (req, res) => {
     await session.commitTransaction();
     console.log("Payment verified successfully for:", razorpay_payment_id);
 
-    const notification = new notification({
+    const newNotification = new notification({
           phoneNumber: phoneNumber,
           requestto: con.phoneNumber,
           requestedby: phoneNumber,
@@ -151,7 +151,8 @@ const verifyOrder = async (req, res) => {
           travelId: Ride.travelId,
           notificationType: "ride_request"
         });
-
+    
+    await newNotification.save(); 
 
     res.status(200).json({
       success: true,

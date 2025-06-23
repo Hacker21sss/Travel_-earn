@@ -7,7 +7,7 @@ const moment = require("moment");
 const RequestForCarry = require("../user/model/requestforcarry");
 const RideRequest = require("../consignment/model/riderequest");
 const ConsignmentHistory = require("../consignment/model/conhistory");
-const ConsignmentToCarry = require("../traveller/model/consignmenttocarry");
+const consignmentToCarry = require("../traveller/model/consignmenttocarry");
 const traveldetails = require("../user/model/traveldetails");
 const axios = require("axios");
 const { getIO } = require("../socket");
@@ -34,9 +34,9 @@ module.exports.respondToRideRequest = async (req, res) => {
         consignmentId = rideRequest.consignmentId;
       } else {
         const travel = await Travel.findOne({ travelId });
-        // if (travel && travel.consignmentId) {
-        //   consignmentId = travel.consignmentId;
-        // }
+        if (travel && travel.consignmentId) {
+          consignmentId = travel.consignmentId;
+        }
       }
       if (!consignmentId) {
         return res
@@ -63,7 +63,7 @@ module.exports.respondToRideRequest = async (req, res) => {
         .status(400)
         .json({ message: `Ride already ${rideRequest.status.toLowerCase()}` });
     }
-    console.log("passed")
+   
     // Check if consignmentId already exists in TravelHistory
     const travelHistory = await TravelHistory.findOne({
       travelId,
@@ -171,7 +171,7 @@ const userprofile=await User.findOne({phoneNumber: rideRequest.requestedby})
           { consignmentId },
           { $set: { sotp: senderOtp, rotp: receiverOtp } }
         ),
-        new ConsignmentToCarry({
+        new consignmentToCarry({
           phoneNumber: rideRequest.phoneNumber,
           consignmentId,
           travelId: rideRequest.travelId,
@@ -447,7 +447,7 @@ console.log("SMS Sent Successfully:", smsResponse.data, smsResponse1.data);
 const userprofile=await User.findOne({phoneNumber:travelHistoryBasic.phoneNumber});
       // Save and update documents
       const results = await Promise.all([
-        new ConsignmentToCarry({
+        new consignmentToCarry({
           phoneNumber: book.phoneNumber,
           consignmentId,
           travelId: book.travelId,

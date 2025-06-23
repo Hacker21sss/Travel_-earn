@@ -7915,3 +7915,38 @@
 2025-06-23T13:02:43.214Z info: MongoDB connected
 2025-06-23T13:04:43.853Z info: GET /n/getnotification/travel/+918295525360 - 200
 2025-06-23T13:04:55.240Z info: GET /n/getnotification/travel/+919996293360 - 200
+2025-06-23T13:28:27.933Z info: Server is running on port 5002
+2025-06-23T13:28:27.935Z info: Socket.IO connection status: Connected
+2025-06-23T13:28:28.366Z info: MongoDB connected
+2025-06-23T13:28:34.799Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-23T13:28:48.136Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-23T13:35:26.389Z info: Server is running on port 5002
+2025-06-23T13:35:26.391Z info: Socket.IO connection status: Connected
+2025-06-23T13:35:26.819Z info: MongoDB connected
+2025-06-23T13:35:30.881Z info: Server is running on port 5002
+2025-06-23T13:35:30.882Z info: Socket.IO connection status: Connected
+2025-06-23T13:35:31.330Z info: MongoDB connected
+2025-06-23T13:35:39.481Z info: Server is running on port 5002
+2025-06-23T13:35:39.484Z info: Socket.IO connection status: Connected
+2025-06-23T13:35:39.920Z info: MongoDB connected
+2025-06-23T13:36:38.291Z info: Server is running on port 5002
+2025-06-23T13:36:38.292Z info: Socket.IO connection status: Connected
+2025-06-23T13:36:38.728Z info: MongoDB connected
+2025-06-23T13:38:18.109Z info: Server is running on port 5002
+2025-06-23T13:38:18.110Z info: Socket.IO connection status: Connected
+2025-06-23T13:38:18.543Z info: MongoDB connected
+2025-06-23T13:38:27.267Z info: Server is running on port 5002
+2025-06-23T13:38:27.268Z info: Socket.IO connection status: Connected
+2025-06-23T13:38:27.694Z info: MongoDB connected
+2025-06-23T13:38:38.975Z info: Server is running on port 5002
+2025-06-23T13:38:38.977Z info: Socket.IO connection status: Connected
+2025-06-23T13:38:39.437Z info: MongoDB connected
+2025-06-23T13:38:44.968Z info: Server is running on port 5002
+2025-06-23T13:38:44.969Z info: Socket.IO connection status: Connected
+2025-06-23T13:38:45.404Z info: MongoDB connected
+2025-06-23T13:38:58.955Z info: Server is running on port 5002
+2025-06-23T13:38:58.956Z info: Socket.IO connection status: Connected
+2025-06-23T13:38:59.393Z info: MongoDB connected
+2025-06-23T13:39:04.673Z info: Server is running on port 5002
+2025-06-23T13:39:04.674Z info: Socket.IO connection status: Connected
+2025-06-23T13:39:05.100Z info: MongoDB connected
