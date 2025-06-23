@@ -64,7 +64,8 @@ module.exports.getNotifications = async (req, res) => {
             requestto: notif.requestto,
             earning: notif.earning || "0",
             travellername: notif.travellername,
-            profilepicture: sender?.profilePicture
+            profilepicture: sender?.profilePicture,
+            createdAt : createdAt
           };
         } else if (notif.notificationType === "ride_request") {
           notificationData = {
@@ -80,7 +81,8 @@ module.exports.getNotifications = async (req, res) => {
             requestto: notif.requestto,
             earning: notif.earning || "0",
             travellername: notif.travellername,
-            profilepicture: sender?.profilePicture
+            profilepicture: sender?.profilePicture,
+            createdAt : createdAt
           };
         }
         else if (notif.notificationType === "ride_accept") {
@@ -98,7 +100,8 @@ module.exports.getNotifications = async (req, res) => {
             earning: notif.earning || "0",
             travellername: notif?.travellername,
             profilepicture: sender?.profilePicture,
-            paymentstatus: notif.paymentstatus || "pending"
+            paymentstatus: notif.paymentstatus || "pending",
+            createdAt : createdAt
           };
         }
         else if (notif.notificationType === "ride_accept" && notif.paymentstatus == "successful") {
@@ -116,7 +119,8 @@ module.exports.getNotifications = async (req, res) => {
             // earning: notif.earning || "0",
             // travellername: notif?.travellername,
             // profilepicture: sender?.profilePicture,
-            paymentstatus: notif.paymentstatus || "pending"
+            paymentstatus: notif.paymentstatus || "pending",
+            createdAt : createdAt
           };
         }
         else if (notif.notificationType === "ride_accept" && notif.paymentstatus == "declined") {
@@ -134,7 +138,8 @@ module.exports.getNotifications = async (req, res) => {
             // earning: notif.earning || "0",
             // travellername: notif?.travellername,
             // profilepicture: sender?.profilePicture,
-            paymentstatus: notif.paymentstatus || "pending"
+            paymentstatus: notif.paymentstatus || "pending",
+            createdAt : createdAt
           };
         }
         else if (notif.notificationType == "consignment_accept" && notif.paymentstatus == "declined") {
@@ -145,7 +150,8 @@ module.exports.getNotifications = async (req, res) => {
             notificationFormat: "consignment",
             // time: moment(notif.createdAt).format("h:mm A"),
             time: moment.utc(notif.createdAt).local().format("h:mm A"),
-            paymentstatus: notif.paymentstatus || "pending"
+            paymentstatus: notif.paymentstatus || "pending",
+            createdAt : createdAt
           };
         }
         else if (notif.notificationType == "consignment_accept" && notif.paymentstatus == "successful") {
@@ -156,7 +162,8 @@ module.exports.getNotifications = async (req, res) => {
             notificationFormat: "consignment",
             // time: moment(notif.createdAt).format("h:mm A"),
             time: moment.utc(notif.createdAt).local().format("h:mm A"),
-            paymentstatus: notif.paymentstatus || "pending"
+            paymentstatus: notif.paymentstatus || "pending",
+            createdAt : createdAt
           };
         }
         else if (notif.notificationType === "consignment_accept") {
@@ -174,9 +181,13 @@ module.exports.getNotifications = async (req, res) => {
             earning: notif.earning || "0",
             travellername: notif?.travellername,
             profilepicture: sender?.profilePicture,
-            paymentstatus: notif.paymentstatus || "pending"
+            paymentstatus: notif.paymentstatus || "pending",
+            createdAt : createdAt
           };
         }
+        console.log("notif.createdAt (raw UTC):", notif.createdAt);
+        console.log("Local converted:", moment.utc(notif.createdAt).local().format("h:mm A"));
+
 
         return notificationData.title ? notificationData : null;
       })

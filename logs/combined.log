@@ -7907,3 +7907,11 @@
 2025-06-23T10:10:40.901Z info: Server is running on port 5002
 2025-06-23T10:10:40.903Z info: Socket.IO connection status: Connected
 2025-06-23T10:10:41.328Z info: MongoDB connected
+2025-06-23T13:01:00.788Z info: Server is running on port 5002
+2025-06-23T13:01:00.790Z info: Socket.IO connection status: Connected
+2025-06-23T13:01:01.270Z info: MongoDB connected
+2025-06-23T13:02:42.773Z info: Server is running on port 5002
+2025-06-23T13:02:42.774Z info: Socket.IO connection status: Connected
+2025-06-23T13:02:43.214Z info: MongoDB connected
+2025-06-23T13:04:43.853Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-23T13:04:55.240Z info: GET /n/getnotification/travel/+919996293360 - 200
