@@ -56,7 +56,8 @@ module.exports.getNotifications = async (req, res) => {
             subtitle: `${senderName || consignment?.username} sent you a consignment request`,
             notificationType: "consignment_request",
             notificationFormat: "consignment",
-            time: moment(notif.createdAt).format("h:mm A"),
+            // time: moment(notif.createdAt).format("h:mm A"),
+            time: moment.utc(notif.createdAt).local().format("h:mm A"),
             consignmentId: notif.consignmentId,
             travelId: notif.travelId,
             requestedby: notif.requestedby,
@@ -71,7 +72,8 @@ module.exports.getNotifications = async (req, res) => {
             subtitle: `${senderName} sent you a Ride request`,
             notificationType: "ride_request",
             notificationFormat: "ride",
-            time: moment(notif.createdAt).format("h:mm A"),
+            // time: moment(notif.createdAt).format("h:mm A"),
+            time: moment.utc(notif.createdAt).local().format("h:mm A"),
             consignmentId: notif.consignmentId,
             travelId: notif.travelId,
             requestedby: notif.requestedby,
@@ -84,10 +86,11 @@ module.exports.getNotifications = async (req, res) => {
         else if (notif.notificationType === "ride_accept") {
           notificationData = {
             title: "Ride Request accept",
-            subtitle: `you accepted the  Ride request`,
+            subtitle: `you accepted the Ride request`,
             notificationType: "ride_accept",
             notificationFormat: "ride",
-            time: moment(notif.createdAt).format("h:mm A"),
+            // time: moment(notif.createdAt).format("h:mm A"),
+            time: moment.utc(notif.createdAt).local().format("h:mm A"),
             consignmentId: notif.consignmentId,
             travelId: notif.travelId,
             requestedby: notif.requestedby,
@@ -98,23 +101,79 @@ module.exports.getNotifications = async (req, res) => {
             paymentstatus: notif.paymentstatus || "pending"
           };
         }
-        else if(notif.notificationType=="consignment_accept" && notif.paymentstatus=="declined"){
+        else if (notif.notificationType === "ride_accept" && notif.paymentstatus == "successful") {
+          notificationData = {
+            title: "Ride Request accept",
+            subtitle: `${senderName} has successfully completed the payment`,
+            notificationType: "ride_accept",
+            notificationFormat: "ride",
+            // time: moment(notif.createdAt).format("h:mm A"),
+            time: moment.utc(notif.createdAt).local().format("h:mm A"),
+            // consignmentId: notif.consignmentId,
+            // travelId: notif.travelId,
+            // requestedby: notif.requestedby,
+            // requestto: notif.requestto,
+            // earning: notif.earning || "0",
+            // travellername: notif?.travellername,
+            // profilepicture: sender?.profilePicture,
+            paymentstatus: notif.paymentstatus || "pending"
+          };
+        }
+        else if (notif.notificationType === "ride_accept" && notif.paymentstatus == "declined") {
+          notificationData = {
+            title: "Payment declined",
+            subtitle: `Payment request has been declined by ${senderName}`,
+            notificationType: "ride_accept",
+            notificationFormat: "ride",
+            // time: moment(notif.createdAt).format("h:mm A"),
+            time: moment.utc(notif.createdAt).local().format("h:mm A"),
+            // consignmentId: notif.consignmentId,
+            // travelId: notif.travelId,
+            // requestedby: notif.requestedby,
+            // requestto: notif.requestto,
+            // earning: notif.earning || "0",
+            // travellername: notif?.travellername,
+            // profilepicture: sender?.profilePicture,
+            paymentstatus: notif.paymentstatus || "pending"
+          };
+        }
+        else if (notif.notificationType == "consignment_accept" && notif.paymentstatus == "declined") {
           notificationData = {
             title: "Payment declined",
             subtitle: `Payment request has been declined by ${senderName}`,
             notificationType: "consignment_accept",
             notificationFormat: "consignment",
-            time: moment(notif.createdAt).format("h:mm A"),
+            // time: moment(notif.createdAt).format("h:mm A"),
+            time: moment.utc(notif.createdAt).local().format("h:mm A"),
             paymentstatus: notif.paymentstatus || "pending"
           };
         }
-        else if(notif.notificationType=="consignment_accept" && notif.paymentstatus=="successful"){
+        else if (notif.notificationType == "consignment_accept" && notif.paymentstatus == "successful") {
           notificationData = {
             title: "Payment Successful",
             subtitle: `${senderName} has successfully completed the payment`,
             notificationType: "consignment_accept",
             notificationFormat: "consignment",
-            time: moment(notif.createdAt).format("h:mm A"),
+            // time: moment(notif.createdAt).format("h:mm A"),
+            time: moment.utc(notif.createdAt).local().format("h:mm A"),
+            paymentstatus: notif.paymentstatus || "pending"
+          };
+        }
+        else if (notif.notificationType === "consignment_accept") {
+          notificationData = {
+            title: "Consignment Request accept",
+            subtitle: `you accepted the Ride request`,
+            notificationType: "ride_accept",
+            notificationFormat: "ride",
+            // time: moment(notif.createdAt).format("h:mm A"),
+            time: moment.utc(notif.createdAt).local().format("h:mm A"),
+            consignmentId: notif.consignmentId,
+            travelId: notif.travelId,
+            requestedby: notif.requestedby,
+            requestto: notif.requestto,
+            earning: notif.earning || "0",
+            travellername: notif?.travellername,
+            profilepicture: sender?.profilePicture,
             paymentstatus: notif.paymentstatus || "pending"
           };
         }
@@ -443,7 +502,7 @@ module.exports.consignmenttocarryrequest = async (req, res) => {
 module.exports.updateAllNotifications = async (req, res) => {
   try {
     console.log("Starting to update all notifications...");
-    
+
     // Update notifications where paymentstatus doesn't exist
     const result = await Notification.updateMany(
       { paymentstatus: { $exists: false } },
@@ -451,7 +510,7 @@ module.exports.updateAllNotifications = async (req, res) => {
     );
 
     console.log("Update result:", result);
-    
+
     return res.status(200).json({
       status: "success",
       message: "Successfully updated existing notifications",
