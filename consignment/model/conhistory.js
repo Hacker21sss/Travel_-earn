@@ -23,8 +23,8 @@ const ConsignmentRequestHistorySchema = new mongoose.Schema({
 
   status: {
     type: String,
-    enum: ["Cancelled", "Collected", "Completed", "Not Started","Delivered","Expired", "Yet to Collect", "collected", "on the way"]
-    
+    enum: ["Cancelled", "Collected", "Completed", "Upcoming", "Not Started","Delivered","Expired", "Yet to Collect", "collected", "on the way"],
+    default : "Upcoming"
   },
   sotp: {type:String},
               rotp: {type:String},
