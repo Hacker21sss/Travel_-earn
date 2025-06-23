@@ -282,9 +282,9 @@ exports.getAutoCompleteAndCreateBooking = async (req, res) => {
 
 exports.searchRides = async (req, res) => {
   try {
-    const { leavingLocation, goingLocation, date, travelMode} = req.query;
+    const { leavingLocation, goingLocation, date, travelMode, phoneNumber} = req.query;
     console.log("Received search query:", { leavingLocation, goingLocation, date, travelMode});
-
+    if(!travelMode) travelMode = "car";
     if (!leavingLocation || !goingLocation || !date) {
       return res.status(400).json({ message: "Leaving location, going location, and date are required" });
     }
@@ -347,7 +347,8 @@ exports.searchRides = async (req, res) => {
       "LeavingCoordinates.lng": { $gte: leavingBoundingBox.minLng, $lte: leavingBoundingBox.maxLng },
       "GoingCoordinates.ltd": { $gte: goingBoundingBox.minLat, $lte: goingBoundingBox.maxLat },
       "GoingCoordinates.lng": { $gte: goingBoundingBox.minLng, $lte: goingBoundingBox.maxLng },
-      travelDate: { $gte: startOfDay, $lt: endOfDay }
+      travelDate: { $gte: startOfDay, $lt: endOfDay },
+      phoneNumber: { $ne: phoneNumber }
     };
 
     const query = travelMode && travelMode.trim() !== "" 
@@ -355,9 +356,9 @@ exports.searchRides = async (req, res) => {
       : baseQuery;
 
     // Remove phoneNumber from search params in logs
-    const { phoneNumber: _, ...searchParams } = req.query;
-    console.log("Search query:", JSON.stringify(query, null, 2));
-    console.log("Search params:", searchParams);
+    // const { phoneNumber: _, ...searchParams } = req.query;
+    // console.log("Search query:", JSON.stringify(query, null, 2));
+    // console.log("Search params:", searchParams);
 
     const availableRides = await Traveldetails.find(query).lean();
     console.log("Found rides before distance filtering:", availableRides.length);

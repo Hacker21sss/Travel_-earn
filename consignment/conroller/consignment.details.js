@@ -437,7 +437,7 @@ module.exports.getConsignmentsByDate = async (req, res) => {
         $gte: new Date(searchDate.setHours(0, 0, 0, 0)),
         $lt: new Date(searchDate.setHours(23, 59, 59, 999))
       },
-      // phoneNumber: { $ne: normalizedPhoneNumber }
+      phoneNumber: { $ne: normalizedPhoneNumber }
     });
 
     if (!availableRides.length) {
@@ -716,7 +716,7 @@ module.exports.getearning = async (req, res) => {
     }
 
     const validModes = ["train", "airplane", "car"];
-    const travelMode = Ride.travelMode ? Ride.travelMode.toLowerCase().trim() : null;
+    const travelMode = Ride.travelMode ? Ride.travelMode.toLowerCase().trim() : "car";
 
     if (!validModes.includes(travelMode)) {
       return res.status(400).json({ message: "Invalid Travel Mode! Please enter 'train', 'airplane', or 'car'." });
