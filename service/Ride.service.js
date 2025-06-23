@@ -210,7 +210,7 @@ const userprofile=await User.findOne({phoneNumber: rideRequest.requestedby})
           },
           { upsert: true }
         ),
-        rideRequest.updateOne(
+        RideRequest.updateOne(
           { consignmentId },
           { $set: { status: "Accepted" } }
         ),
@@ -250,7 +250,7 @@ const userprofile=await User.findOne({phoneNumber: rideRequest.requestedby})
         dropoff:consignment.goinglocation,
         travelmode:rideRequest.travelMode,
         travellername:rideRequest.rider,
-        // pickuptime:travelHistory.expectedStartTime,
+        pickuptime:travelHistory.expectedStartTime,
         dropofftime:rideRequest.expectedendtime
       });
 
