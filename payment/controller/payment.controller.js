@@ -1,7 +1,7 @@
 const razorpayInstance = require("../config/payment.config");
 const crypto = require("crypto");
-const Earning=require('../../traveller/model/Earning');
-const notification=require('../../user/model/notification')
+const Earning = require('../../traveller/model/Earning');
+const notification = require('../../user/model/notification')
 
 
 
@@ -9,28 +9,28 @@ const notification=require('../../user/model/notification')
 const createOrder = async (req, res) => {
   try {
     const { amount, currency } = req.body;
-    
- 
+
+
     if (!amount || !currency) {
       console.error("Missing amount or currency:", req.body);
       return res.status(400).json({ success: false, message: "Amount and currency are required." });
     }
 
-    
+
     const amountNum = Number(amount);
     if (isNaN(amountNum) || amountNum <= 0) {
       console.error("Invalid amount:", amount);
       return res.status(400).json({ success: false, message: "Amount must be a positive number." });
     }
 
-  
+
     if (currency !== "INR") {
       console.error("Unsupported currency:", currency);
       return res.status(400).json({ success: false, message: "Only INR is supported." });
     }
 
     const options = {
-      amount: Math.round(amountNum), 
+      amount: Math.round(amountNum),
       currency,
       receipt: `receipt_${Date.now()}`,
       notes: {
@@ -122,12 +122,12 @@ const verifyOrder = async (req, res) => {
       return res.status(400).json({ success: false, message: "Invalid payment signature" });
     }
     const note = await notification.updateMany(
-      {travelId},
+      { travelId },
       {
-        $set:{"paymentstatus":"successful"}
+        $set: { "paymentstatus": "successful" }
       }
     )
-    
+
     console.log(note);
     const completedUpdate = await Earning.updateOne(
       { phoneNumber, "transactions.paymentId": razorpay_payment_id },
@@ -138,30 +138,30 @@ const verifyOrder = async (req, res) => {
       { session }
     );
     console.log("Marked transaction as Completed:", completedUpdate);
-    
-    console.log("Marked transaction :",note);
+
+    console.log("Marked transaction :", note);
     await session.commitTransaction();
     committed = true
     console.log("Payment verified successfully for:", razorpay_payment_id);
 
     const newNotification = new notification({
-          phoneNumber: phoneNumber,
-          requestto: con.phoneNumber,
-          requestedby: phoneNumber,
-          consignmentId: con.consignmentId,
-          earning: expectedEarning,
-          travelId: Ride.travelId,
-          notificationType: "ride_request"
-        });
-    
-    await newNotification.save(); 
+      phoneNumber,
+      requestto: (con && con.phoneNumber) || "unknown",
+      requestedby: phoneNumber,
+      consignmentId: (con && con.consignmentId) || "dummy-consignment-id",
+      earning: expectedEarning || 0,
+      travelId: (Ride && Ride.travelId) || travelId || "unknown-travel-id",
+      notificationType: "ride_request"
+    });
+
+    // await newNotification.save();
 
     res.status(200).json({
       success: true,
       message: "Payment successful"
     });
   } catch (error) {
-    if(!committed){
+    if (!committed) {
       await session.abortTransaction();
     }
     console.error("Error verifying payment:", error.message, error.stack);

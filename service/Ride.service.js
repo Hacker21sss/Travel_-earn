@@ -546,7 +546,7 @@ const userprofile=await User.findOne({phoneNumber:travelHistoryBasic.phoneNumber
         travelmode: book.travelmode,
         travellername: book.travellername,
         pickuptime: travelHistoryBasic.expectedStartTime,
-        dropofftime: travelHistoryBasic.expectedendtime,
+        dropofftime: travelHistoryBasic.expectedEndTime,
       });
 
       await notification.save();

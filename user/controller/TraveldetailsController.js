@@ -108,7 +108,7 @@ exports.getAutoCompleteAndCreateBooking = async (req, res) => {
         lng: GoingCoordinates.lng
       }
     };
-    console.log("travelDetails",travelDetails);
+    console.log("travelDetails", travelDetails);
 
     const travelRecord = await Traveldetails.create(travelDetails);
     console.log("Created travel record:", travelRecord);
@@ -282,9 +282,9 @@ exports.getAutoCompleteAndCreateBooking = async (req, res) => {
 
 exports.searchRides = async (req, res) => {
   try {
-    const { leavingLocation, goingLocation, date, travelMode, phoneNumber} = req.query;
-    console.log("Received search query:", { leavingLocation, goingLocation, date, travelMode});
-    if(!travelMode) travelMode = "car";
+    const { leavingLocation, goingLocation, date, travelMode, phoneNumber } = req.query;
+    console.log("Received search query:", { leavingLocation, goingLocation, date, travelMode });
+    if (!travelMode) travelMode = "car";
     if (!leavingLocation || !goingLocation || !date) {
       return res.status(400).json({ message: "Leaving location, going location, and date are required" });
     }
@@ -323,7 +323,7 @@ exports.searchRides = async (req, res) => {
     // });
 
     // Increase search radius for better matching
-    const radiusInMeters = 10* 1000;
+    const radiusInMeters = 10 * 1000;
 
     // Get bounding boxes for both locations
     const leavingBoundingBox = getBoundingBox(
@@ -351,7 +351,7 @@ exports.searchRides = async (req, res) => {
       phoneNumber: { $ne: phoneNumber }
     };
 
-    const query = travelMode && travelMode.trim() !== "" 
+    const query = travelMode && travelMode.trim() !== ""
       ? { ...baseQuery, travelMode }
       : baseQuery;
 
@@ -419,11 +419,11 @@ exports.searchRides = async (req, res) => {
     console.log("distance value: ", distanceValue)
     const estimatedFare = await fare.calculateFarewithoutweight(distanceValue, travelMode || "car");
 
-    if(estimatedFare === undefined){
-      return res.status(500).json({message: "Error calculating estimated fare."});
+    if (estimatedFare === undefined) {
+      return res.status(500).json({ message: "Error calculating estimated fare." });
     }
     console.log("Estimated fare:", estimatedFare);
-      
+
     res.status(200).json({
       availableRides: ridesWithProfile,
       estimatedFare,
@@ -744,7 +744,7 @@ module.exports.consignmentcarryrequest = async (req, res) => {
 
   try {
     // Fetch all requests for this phone number
-    const allRequests = await Request.find({ phoneNumber }).sort({createdAt: -1});
+    const allRequests = await Request.find({ phoneNumber }).sort({ createdAt: -1 });
 
     console.log("📦 All Requests (Full List):");
     allRequests.forEach((r, i) => {
@@ -754,15 +754,34 @@ module.exports.consignmentcarryrequest = async (req, res) => {
     // Filter only today's and future requests
     const requests = allRequests.filter(req => new Date(req.createdAt) >= todayStart && req.status != "Expired" && req.status != "Rejected");
 
+    const requestsWithDate = await Promise.all(requests.map(async (req) => {
+      let dateOfSending = null;
+
+      if (req.consignmentId) {
+       const consignment = await consignmentData.findOne({ consignmentId: req.consignmentId }).select('dateOfSending');
+        if (consignment) {
+          dateOfSending = consignment.dateOfSending;
+        }
+      }
+
+      return {
+        ...req.toObject(),  // convert Mongoose document to plain object
+        dateOfSending
+      };
+    }));
+
+
     console.log(`✅ Filtered Requests (Today + Future): ${requests.length}`);
 
-    if (!requests.length) {
+    if (!requestsWithDate.length) {
       return res.status(404).json({ message: "No consignment carry requests available." });
     }
-
+    console.log(
+      "requests with date ", requestsWithDate
+    )
     res.status(200).json({
       message: "Consignment carry requests",
-      requests
+      requests : requestsWithDate
     });
 
   } catch (error) {
