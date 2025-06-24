@@ -752,7 +752,8 @@ module.exports.consignmentcarryrequest = async (req, res) => {
     });
 
     // Filter only today's and future requests
-    const requests = allRequests.filter(req => new Date(req.createdAt) >= todayStart && req.status != "Expired" && req.status != "Rejected");
+    // const requests = allRequests.filter(req => new Date(req.createdAt) >= todayStart && req.status != "Expired" && req.status != "Rejected");
+    const requests = allRequests.filter(req => new Date(req.createdAt) >= todayStart);
 
     const requestsWithDate = await Promise.all(requests.map(async (req) => {
       let dateOfSending = null;
