@@ -144,15 +144,15 @@ const verifyOrder = async (req, res) => {
     committed = true
     console.log("Payment verified successfully for:", razorpay_payment_id);
 
-    const newNotification = new notification({
-      phoneNumber,
-      requestto: (con && con.phoneNumber) || "unknown",
-      requestedby: phoneNumber,
-      consignmentId: (con && con.consignmentId) || "dummy-consignment-id",
-      earning: expectedEarning || 0,
-      travelId: (Ride && Ride.travelId) || travelId || "unknown-travel-id",
-      notificationType: "ride_request"
-    });
+    // const newNotification = new notification({
+    //   phoneNumber,
+    //   requestto: (con && con.phoneNumber) || "unknown",
+    //   requestedby: phoneNumber,
+    //   consignmentId: (con && con.consignmentId) || "dummy-consignment-id",
+    //   earning: expectedEarning || 0,
+    //   travelId: (Ride && Ride.travelId) || travelId || "unknown-travel-id",
+    //   notificationType: "ride_request"
+    // });
 
     // await newNotification.save();
 

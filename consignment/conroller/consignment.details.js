@@ -774,6 +774,7 @@ module.exports.getearning = async (req, res) => {
       requestto: con.phoneNumber,
       pickup: Ride.Leavinglocation,
       drop: Ride.Goinglocation,
+      expectedstarttime: Ride.expectedStartTime,
       expectedendtime: Ride.expectedEndTime,
       rider: Ride.username,
       travelMode: Ride.travelMode,
