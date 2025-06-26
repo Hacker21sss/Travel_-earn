@@ -8211,3 +8211,299 @@
 2025-06-26T13:59:23.225Z info: Socket.IO connection status: Connected
 2025-06-26T13:59:23.972Z info: MongoDB connected
 2025-06-26T14:00:56.956Z info: POST /api/consignment - 200
+2025-06-26T15:41:08.017Z info: Server is running on port 5002
+2025-06-26T15:41:08.020Z info: Socket.IO connection status: Connected
+2025-06-26T15:41:08.471Z info: MongoDB connected
+2025-06-26T15:41:22.483Z info: GET /api/consignment/cabfac00-42b9-4c71-aaa6-e7a26b842e71 - 200
+2025-06-26T15:41:40.571Z info: GET /api/consignment/cabfac00-42b9-4c71-aaa6-e7a26b842e71 - 200
+2025-06-26T15:41:56.729Z info: GET /api/consignment/cabfac00-42b9-4c71-aaa6-e7a26b842e71 - 200
+2025-06-26T15:42:01.258Z info: GET /api/consignment/cabfac00-42b9-4c71-aaa6-e7a26b842e71 - 200
+2025-06-26T15:42:26.046Z info: Server is running on port 5002
+2025-06-26T15:42:26.048Z info: Socket.IO connection status: Connected
+2025-06-26T15:42:26.581Z info: MongoDB connected
+2025-06-26T15:42:30.735Z info: GET /api/consignment/cabfac00-42b9-4c71-aaa6-e7a26b842e71 - 200
+2025-06-26T15:42:59.086Z info: GET /api/consignment/cabfac00-42b9-4c71-aaa6-e7a26b842e71 - 200
+2025-06-26T15:43:03.194Z info: GET /api/consignment/cabfac00-42b9-4c71-aaa6-e7a26b842e71 - 200
+2025-06-26T15:43:12.461Z info: GET /api/consignment/cabfac00-42b9-4c71-aaa6-e7a26b842e71 - 200
+2025-06-26T15:43:42.215Z info: GET /api/consignment/cabfac00-42b9-4c71-aaa6-e7a26b842e71 - 200
+2025-06-26T15:45:18.459Z info: GET /api/consignment/cabfac00-42b9-4c71-aaa6-e7a26b842e71 - 200
+2025-06-26T15:45:19.568Z info: GET /api/consignment/cabfac00-42b9-4c71-aaa6-e7a26b842e71 - 200
+2025-06-26T15:45:20.574Z info: GET /api/consignment/cabfac00-42b9-4c71-aaa6-e7a26b842e71 - 200
+2025-06-26T15:45:32.919Z info: GET /api/consignment/cabfac00-42b9-4c71-aaa6-e7a26b842e71 - 200
+2025-06-26T15:45:35.429Z info: GET /api/consignment/cabfac00-42b9-4c71-aaa6-e7a26b842e71 - 200
+2025-06-26T15:45:50.793Z info: GET /api/consignment/cabfac00-42b9-4c71-aaa6-e7a26b842e71 - 200
+2025-06-26T15:46:03.453Z info: GET /api/consignment/cabfac00-42b9-4c71-aaa6-e7a26b842e71 - 200
+2025-06-26T15:47:14.119Z info: GET /api/consignment/cabfac00-42b9-4c71-aaa6-e7a26b842e71 - 200
+2025-06-26T15:47:17.959Z info: GET /api/consignment/cabfac00-42b9-4c71-aaa6-e7a26b842e71 - 200
+2025-06-26T15:47:19.583Z info: GET /api/consignment/cabfac00-42b9-4c71-aaa6-e7a26b842e71 - 200
+2025-06-26T15:47:21.387Z info: GET /api/consignment/cabfac00-42b9-4c71-aaa6-e7a26b842e71 - 200
+2025-06-26T15:47:27.668Z info: GET /api/consignment/cabfac00-42b9-4c71-aaa6-e7a26b842e71 - 200
+2025-06-26T15:47:43.259Z info: GET /api/consignment/cabfac00-42b9-4c71-aaa6-e7a26b842e71 - 200
+2025-06-26T15:49:58.420Z info: GET /api/consignment/cabfac00-42b9-4c71-aaa6-e7a26b842e71 - 200
+2025-06-26T15:50:13.306Z info: GET /api/consignment/cabfac00-42b9-4c71-aaa6-e7a26b842e71 - 200
+2025-06-26T15:51:06.493Z info: GET /api/consignment/cabfac00-42b9-4c71-aaa6-e7a26b842e71 - 200
+2025-06-26T15:51:19.000Z info: GET /api/consignment/cabfac00-42b9-4c71-aaa6-e7a26b842e71 - 200
+2025-06-26T15:51:43.878Z info: GET /api/consignment/cabfac00-42b9-4c71-aaa6-e7a26b842e71 - 200
+2025-06-26T15:51:56.530Z info: GET /api/consignment/cabfac00-42b9-4c71-aaa6-e7a26b842e71 - 200
+2025-06-26T15:52:09.988Z info: GET /api/consignment/cabfac00-42b9-4c71-aaa6-e7a26b842e71 - 200
+2025-06-26T15:52:12.892Z info: GET /api/consignment/cabfac00-42b9-4c71-aaa6-e7a26b842e71 - 200
+2025-06-26T15:52:42.616Z info: GET /api/consignment/cabfac00-42b9-4c71-aaa6-e7a26b842e71 - 200
+2025-06-26T15:52:44.117Z info: GET /api/consignment/cabfac00-42b9-4c71-aaa6-e7a26b842e71 - 200
+2025-06-26T15:52:50.528Z info: GET /api/consignment/cabfac00-42b9-4c71-aaa6-e7a26b842e71 - 200
+2025-06-26T15:52:55.731Z info: GET /api/consignment/cabfac00-42b9-4c71-aaa6-e7a26b842e71 - 200
+2025-06-26T15:53:19.895Z info: GET /api/consignment/cabfac00-42b9-4c71-aaa6-e7a26b842e71 - 200
+2025-06-26T15:53:25.976Z info: GET /api/consignment/cabfac00-42b9-4c71-aaa6-e7a26b842e71 - 200
+2025-06-26T15:53:31.846Z info: GET /api/consignment/cabfac00-42b9-4c71-aaa6-e7a26b842e71 - 200
+2025-06-26T15:53:47.259Z info: GET /api/consignment/cabfac00-42b9-4c71-aaa6-e7a26b842e71 - 200
+2025-06-26T15:54:04.055Z info: GET /api/consignment/cabfac00-42b9-4c71-aaa6-e7a26b842e71 - 200
+2025-06-26T15:54:31.030Z info: GET /api/consignment/51f2e7ff-c554-4ad7-93b0-ec610bb312c6 - 200
+2025-06-26T15:54:35.841Z info: GET /api/consignment/9ce74e62-9520-43a7-9133-f28b59a4441c - 200
+2025-06-26T15:54:46.789Z info: GET /api/consignment/ad1bd376-0d82-463a-b252-8525d4ec0806 - 200
+2025-06-26T15:57:03.993Z info: Server is running on port 5002
+2025-06-26T15:57:03.996Z info: Socket.IO connection status: Connected
+2025-06-26T15:57:05.773Z info: Server is running on port 5002
+2025-06-26T15:57:05.776Z info: Socket.IO connection status: Connected
+2025-06-26T15:57:06.207Z info: MongoDB connected
+2025-06-26T16:13:36.086Z info: GET /t/travel/929288226 - 200
+2025-06-26T16:13:55.274Z info: GET /t/travel/929288226 - 200
+2025-06-26T16:14:02.693Z info: GET /t/travel/929288226 - 200
+2025-06-26T16:14:04.277Z info: GET /t/travel/929288226 - 200
+2025-06-26T16:14:15.334Z info: GET /t/travel/929288226 - 200
+2025-06-26T16:16:34.815Z info: GET /t/travel/929288226 - 200
+2025-06-26T16:17:51.687Z info: GET /t/travel/929288226 - 200
+2025-06-26T17:25:44.665Z info: Server is running on port 5002
+2025-06-26T17:25:44.669Z info: Socket.IO connection status: Connected
+2025-06-26T17:25:45.110Z info: MongoDB connected
+2025-06-26T17:25:56.969Z info: GET /api/consignment/b73b7ad7-c7b1-4f6f-870b-7c3fd80ca6eb - 200
+2025-06-26T17:26:18.768Z info: GET /api/consignment/b73b7ad7-c7b1-4f6f-870b-7c3fd80ca6eb - 200
+2025-06-26T17:27:42.379Z info: GET /api/consignment/b73b7ad7-c7b1-4f6f-870b-7c3fd80ca6eb - 200
+2025-06-26T17:27:44.861Z info: GET /api/consignment/b73b7ad7-c7b1-4f6f-870b-7c3fd80ca6eb - 200
+2025-06-26T17:27:50.495Z info: GET /api/consignment/b73b7ad7-c7b1-4f6f-870b-7c3fd80ca6eb - 200
+2025-06-26T17:28:00.104Z info: GET /api/consignment/b73b7ad7-c7b1-4f6f-870b-7c3fd80ca6eb - 200
+2025-06-26T17:28:03.372Z info: GET /api/consignment/b73b7ad7-c7b1-4f6f-870b-7c3fd80ca6eb - 200
+2025-06-26T17:29:03.136Z info: GET /api/consignment/b73b7ad7-c7b1-4f6f-870b-7c3fd80ca6eb - 200
+2025-06-26T17:30:30.234Z info: GET /api/consignment/b73b7ad7-c7b1-4f6f-870b-7c3fd80ca6eb - 200
+2025-06-26T17:33:29.956Z info: GET /api/consignment/b73b7ad7-c7b1-4f6f-870b-7c3fd80ca6eb - 200
+2025-06-26T17:35:51.747Z info: GET /api/consignment/b73b7ad7-c7b1-4f6f-870b-7c3fd80ca6eb - 200
+2025-06-26T17:36:18.152Z info: GET /api/consignment/b73b7ad7-c7b1-4f6f-870b-7c3fd80ca6eb - 200
+2025-06-26T17:36:37.420Z info: GET /t/travel/432438478 - 200
+2025-06-26T17:37:08.370Z info: GET /t/travel/432438478 - 200
+2025-06-26T17:39:42.795Z info: GET /api/consignment/b73b7ad7-c7b1-4f6f-870b-7c3fd80ca6eb - 200
+2025-06-26T17:41:43.285Z info: GET /api/consignment/b73b7ad7-c7b1-4f6f-870b-7c3fd80ca6eb - 200
+2025-06-26T17:42:43.639Z info: GET /api/consignment/b73b7ad7-c7b1-4f6f-870b-7c3fd80ca6eb - 200
+2025-06-26T17:43:00.099Z info: GET /api/consignment/b73b7ad7-c7b1-4f6f-870b-7c3fd80ca6eb - 200
+2025-06-26T17:43:17.045Z info: GET /api/consignment/b73b7ad7-c7b1-4f6f-870b-7c3fd80ca6eb - 200
+2025-06-26T17:43:26.426Z info: GET /api/consignment/b73b7ad7-c7b1-4f6f-870b-7c3fd80ca6eb - 200
+2025-06-26T17:43:45.201Z info: GET /api/consignment/b73b7ad7-c7b1-4f6f-870b-7c3fd80ca6eb - 200
+2025-06-26T17:43:57.089Z info: GET /api/consignment/b73b7ad7-c7b1-4f6f-870b-7c3fd80ca6eb - 200
+2025-06-26T17:44:31.066Z info: GET /api/consignment/127a5b05-5b7d-4d4d-82c3-08cd06b1f23f - 200
+2025-06-26T17:44:43.904Z info: GET /api/consignment/b73b7ad7-c7b1-4f6f-870b-7c3fd80ca6eb - 200
+2025-06-26T17:57:54.830Z info: GET /api/consignment/b73b7ad7-c7b1-4f6f-870b-7c3fd80ca6eb - 200
+2025-06-26T17:57:58.231Z info: GET /api/consignment/127a5b05-5b7d-4d4d-82c3-08cd06b1f23f - 200
+2025-06-26T17:59:29.573Z info: GET /api/consignment/b73b7ad7-c7b1-4f6f-870b-7c3fd80ca6eb - 200
+2025-06-26T17:59:59.128Z info: GET /api/consignment/127a5b05-5b7d-4d4d-82c3-08cd06b1f23f - 200
+2025-06-26T18:02:37.386Z info: GET /api/consignment/127a5b05-5b7d-4d4d-82c3-08cd06b1f23f - 200
+2025-06-26T18:03:14.004Z info: Server is running on port 5002
+2025-06-26T18:03:14.007Z info: Socket.IO connection status: Connected
+2025-06-26T18:03:14.441Z info: MongoDB connected
+2025-06-26T18:04:16.830Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-26T18:04:16.916Z info: GET /n/getnotification/travel/+918920582438 - 200
+2025-06-26T18:04:26.689Z info: GET /api/consignment/127a5b05-5b7d-4d4d-82c3-08cd06b1f23f - 200
+2025-06-26T18:04:41.823Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-26T18:04:46.150Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-26T18:04:59.953Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-26T18:05:45.073Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-26T18:05:56.235Z info: GET /n/getnotification/consignment/+918920582438 - 200
+2025-06-26T18:05:57.100Z info: GET /n/getnotification/travel/+918920582438 - 200
+2025-06-26T18:10:35.574Z info: GET /n/getnotification/travel/+918920582438 - 200
+2025-06-26T18:10:41.236Z info: GET /api/consignment/1db1e32f-222f-437d-9b7e-69286f6d603c - 200
+2025-06-26T18:10:50.484Z info: GET /n/getnotification/travel/+918920582438 - 200
+2025-06-26T18:10:52.706Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-26T18:10:54.068Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-26T18:11:01.843Z info: GET /api/consignment/1db1e32f-222f-437d-9b7e-69286f6d603c - 200
+2025-06-26T18:11:07.411Z info: GET /api/consignment/1db1e32f-222f-437d-9b7e-69286f6d603c - 200
+2025-06-26T18:11:26.719Z info: GET /api/consignment/1db1e32f-222f-437d-9b7e-69286f6d603c - 200
+2025-06-26T18:11:41.812Z info: GET /api/consignment/127a5b05-5b7d-4d4d-82c3-08cd06b1f23f - 200
+2025-06-26T18:11:48.517Z info: GET /api/consignment/127a5b05-5b7d-4d4d-82c3-08cd06b1f23f - 200
+2025-06-26T18:11:55.583Z info: GET /api/consignment/cabfac00-42b9-4c71-aaa6-e7a26b842e71 - 200
+2025-06-26T18:11:59.408Z info: GET /api/consignment/51f2e7ff-c554-4ad7-93b0-ec610bb312c6 - 200
+2025-06-26T18:12:07.225Z info: GET /api/consignment/9437bea8-e368-4a55-a72c-72e9adb481f4 - 200
+2025-06-26T18:25:08.792Z info: GET /api/consignment/9b9d68b1-3812-4dec-b418-00fd53c55a41 - 200
+2025-06-26T18:27:07.525Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-26T18:29:27.206Z info: GET /n/getnotification/travel/+918920582438 - 200
+2025-06-26T18:29:29.243Z info: GET /n/getnotification/consignment/+918920582438 - 200
+2025-06-26T18:29:33.118Z info: GET /n/getnotification/travel/+918920582438 - 200
+2025-06-26T18:29:35.366Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-26T18:29:43.250Z info: GET /t/travel/505427523 - 200
+2025-06-26T18:30:53.004Z info: GET /t/travel/505427523 - 200
+2025-06-26T18:31:41.381Z info: GET /t/travel/505427523 - 200
+2025-06-26T18:32:06.588Z info: GET /t/travel/505427523 - 200
+2025-06-26T18:32:59.407Z info: GET /t/travel/505427523 - 200
+2025-06-26T18:33:06.601Z info: GET /t/travel/505427523 - 200
+2025-06-26T18:33:21.348Z info: GET /t/travel/505427523 - 200
+2025-06-26T18:33:34.998Z info: GET /n/getnotification/travel/+918920582438 - 200
+2025-06-26T18:33:36.245Z info: GET /n/getnotification/consignment/+918920582438 - 200
+2025-06-26T18:33:37.350Z info: GET /n/getnotification/travel/+918920582438 - 200
+2025-06-26T18:33:41.718Z info: GET /n/getnotification/travel/+918920582438 - 200
+2025-06-26T18:33:43.273Z info: GET /n/getnotification/consignment/+918920582438 - 200
+2025-06-26T18:34:04.264Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-26T18:34:12.787Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-26T18:34:19.686Z info: GET /n/getnotification/travel/+918920582438 - 200
+2025-06-26T18:34:20.798Z info: GET /n/getnotification/consignment/+918920582438 - 200
+2025-06-26T18:34:21.825Z info: GET /n/getnotification/travel/+918920582438 - 200
+2025-06-26T18:34:25.192Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-26T18:34:26.314Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-26T18:34:26.605Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-26T18:35:20.112Z info: Server is running on port 5002
+2025-06-26T18:35:20.115Z info: Socket.IO connection status: Connected
+2025-06-26T18:35:20.547Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-26T18:35:20.593Z info: MongoDB connected
+2025-06-26T18:35:35.081Z info: GET /n/getnotification/travel/+918920582438 - 200
+2025-06-26T18:35:50.990Z info: GET /n/getnotification/consignment/+918920582438 - 200
+2025-06-26T18:35:52.208Z info: GET /n/getnotification/travel/+918920582438 - 200
+2025-06-26T18:36:41.471Z info: Server is running on port 5002
+2025-06-26T18:36:41.474Z info: Socket.IO connection status: Connected
+2025-06-26T18:36:41.924Z info: MongoDB connected
+2025-06-26T18:36:52.186Z info: Server is running on port 5002
+2025-06-26T18:36:52.188Z info: Socket.IO connection status: Connected
+2025-06-26T18:36:52.622Z info: MongoDB connected
+2025-06-26T18:36:54.655Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-26T18:36:55.586Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-26T18:37:10.865Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-26T18:37:15.601Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-26T18:38:00.353Z info: Server is running on port 5002
+2025-06-26T18:38:00.355Z info: Socket.IO connection status: Connected
+2025-06-26T18:38:01.365Z info: MongoDB connected
+2025-06-26T18:38:07.399Z info: Server is running on port 5002
+2025-06-26T18:38:07.402Z info: Socket.IO connection status: Connected
+2025-06-26T18:38:07.572Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-26T18:38:07.868Z info: MongoDB connected
+2025-06-26T18:38:09.033Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-26T18:38:39.437Z info: GET /n/getnotification/consignment/+918920582438 - 200
+2025-06-26T18:39:01.581Z info: Server is running on port 5002
+2025-06-26T18:39:01.584Z info: Socket.IO connection status: Connected
+2025-06-26T18:39:01.999Z info: MongoDB connected
+2025-06-26T18:39:02.952Z info: GET /n/getnotification/travel/+918920582438 - 200
+2025-06-26T18:39:04.261Z info: GET /n/getnotification/consignment/+918920582438 - 200
+2025-06-26T18:39:58.328Z info: Server is running on port 5002
+2025-06-26T18:39:58.331Z info: Socket.IO connection status: Connected
+2025-06-26T18:39:58.761Z info: MongoDB connected
+2025-06-26T18:40:00.986Z info: Server is running on port 5002
+2025-06-26T18:40:00.988Z info: Socket.IO connection status: Connected
+2025-06-26T18:40:01.403Z info: MongoDB connected
+2025-06-26T18:40:44.822Z info: Server is running on port 5002
+2025-06-26T18:40:44.824Z info: Socket.IO connection status: Connected
+2025-06-26T18:40:45.309Z info: MongoDB connected
+2025-06-26T18:40:52.923Z info: Server is running on port 5002
+2025-06-26T18:40:52.926Z info: Socket.IO connection status: Connected
+2025-06-26T18:40:53.386Z info: MongoDB connected
+2025-06-26T18:41:36.919Z info: Server is running on port 5002
+2025-06-26T18:41:36.924Z info: Socket.IO connection status: Connected
+2025-06-26T18:41:37.410Z info: MongoDB connected
+2025-06-26T18:41:44.281Z info: GET /n/getnotification/travel/+918920582438 - 200
+2025-06-26T18:41:49.106Z info: GET /n/getnotification/consignment/+918920582438 - 200
+2025-06-26T18:42:00.245Z info: Server is running on port 5002
+2025-06-26T18:42:00.249Z info: Socket.IO connection status: Connected
+2025-06-26T18:42:00.709Z info: MongoDB connected
+2025-06-26T18:42:06.595Z info: Server is running on port 5002
+2025-06-26T18:42:06.598Z info: Socket.IO connection status: Connected
+2025-06-26T18:42:07.031Z info: MongoDB connected
+2025-06-26T18:42:07.134Z info: GET /n/getnotification/travel/+918920582438 - 200
+2025-06-26T18:42:08.496Z info: GET /n/getnotification/consignment/+918920582438 - 200
+2025-06-26T18:42:39.150Z info: Server is running on port 5002
+2025-06-26T18:42:39.152Z info: Socket.IO connection status: Connected
+2025-06-26T18:42:39.573Z info: MongoDB connected
+2025-06-26T18:42:43.306Z info: Server is running on port 5002
+2025-06-26T18:42:43.308Z info: Socket.IO connection status: Connected
+2025-06-26T18:42:45.039Z info: Server is running on port 5002
+2025-06-26T18:42:45.041Z info: Socket.IO connection status: Connected
+2025-06-26T18:42:45.479Z info: MongoDB connected
+2025-06-26T18:43:17.593Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-26T18:47:49.307Z info: GET /n/getnotification/travel/+918920582438 - 200
+2025-06-26T18:47:53.970Z info: GET /api/consignment/1db1e32f-222f-437d-9b7e-69286f6d603c - 200
+2025-06-26T18:48:03.920Z info: GET /api/consignment/127a5b05-5b7d-4d4d-82c3-08cd06b1f23f - 200
+2025-06-26T18:49:18.480Z info: GET /api/consignment/127a5b05-5b7d-4d4d-82c3-08cd06b1f23f - 200
+2025-06-26T18:51:09.682Z info: GET /api/consignment/9b9d68b1-3812-4dec-b418-00fd53c55a41 - 200
+2025-06-26T18:56:11.468Z info: GET /n/getnotification/consignment/+918920582438 - 200
+2025-06-26T18:56:14.765Z info: GET /n/getnotification/travel/+918920582438 - 200
+2025-06-26T19:06:04.732Z info: GET /api/consignment/fb3064e5-39c7-4463-988a-c2bc5531bbfa - 200
+2025-06-26T19:07:02.498Z info: GET /api/consignment/fb3064e5-39c7-4463-988a-c2bc5531bbfa - 200
+2025-06-26T19:10:01.644Z info: GET /api/consignment/9b9d68b1-3812-4dec-b418-00fd53c55a41 - 200
+2025-06-26T19:10:05.960Z info: GET /api/consignment/1db1e32f-222f-437d-9b7e-69286f6d603c - 200
+2025-06-26T19:10:36.523Z info: GET /api/consignment/fb3064e5-39c7-4463-988a-c2bc5531bbfa - 200
+2025-06-26T19:13:34.815Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-26T19:13:50.558Z info: GET /n/getnotification/travel/+918920582438 - 200
+2025-06-26T19:13:54.158Z info: GET /api/consignment/1db1e32f-222f-437d-9b7e-69286f6d603c - 200
+2025-06-26T19:15:47.995Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-26T19:15:58.721Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-26T19:16:05.785Z info: GET /n/getnotification/consignment/+918920582438 - 200
+2025-06-26T19:16:07.002Z info: GET /n/getnotification/travel/+918920582438 - 200
+2025-06-26T19:16:23.429Z info: GET /n/getnotification/consignment/+918920582438 - 200
+2025-06-26T19:16:27.488Z info: GET /n/getnotification/travel/+918920582438 - 200
+2025-06-26T19:16:34.490Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-26T19:18:05.607Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-26T19:20:27.717Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-26T19:21:14.537Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-26T19:21:16.792Z info: GET /n/getnotification/travel/+918920582438 - 200
+2025-06-26T19:21:19.981Z info: GET /n/getnotification/consignment/+918920582438 - 200
+2025-06-26T19:21:21.067Z info: GET /n/getnotification/travel/+918920582438 - 200
+2025-06-26T19:21:39.181Z info: Server is running on port 5002
+2025-06-26T19:21:39.187Z info: Socket.IO connection status: Connected
+2025-06-26T19:21:39.939Z info: MongoDB connected
+2025-06-26T19:21:50.797Z info: Server is running on port 5002
+2025-06-26T19:21:50.801Z info: Socket.IO connection status: Connected
+2025-06-26T19:21:52.293Z info: Server is running on port 5002
+2025-06-26T19:21:52.296Z info: Socket.IO connection status: Connected
+2025-06-26T19:21:52.714Z info: MongoDB connected
+2025-06-26T19:21:56.348Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-26T19:22:53.583Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-26T19:23:39.112Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-26T19:23:49.611Z info: Server is running on port 5002
+2025-06-26T19:23:49.613Z info: Socket.IO connection status: Connected
+2025-06-26T19:23:51.150Z info: Server is running on port 5002
+2025-06-26T19:23:51.153Z info: Socket.IO connection status: Connected
+2025-06-26T19:23:51.587Z info: MongoDB connected
+2025-06-26T19:24:23.350Z info: Server is running on port 5002
+2025-06-26T19:24:23.354Z info: Socket.IO connection status: Connected
+2025-06-26T19:24:27.100Z info: Server is running on port 5002
+2025-06-26T19:24:27.104Z info: Socket.IO connection status: Connected
+2025-06-26T19:24:27.627Z info: MongoDB connected
+2025-06-26T19:26:40.444Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-26T19:31:37.419Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-26T19:32:10.104Z info: GET /n/getnotification/consignment/+918920582438 - 200
+2025-06-26T19:32:13.932Z info: GET /n/getnotification/travel/+918920582438 - 200
+2025-06-26T19:32:14.514Z info: GET /n/getnotification/consignment/+918920582438 - 200
+2025-06-26T19:32:51.399Z info: Server is running on port 5002
+2025-06-26T19:32:51.402Z info: Socket.IO connection status: Connected
+2025-06-26T19:32:52.854Z info: Server is running on port 5002
+2025-06-26T19:32:52.857Z info: Socket.IO connection status: Connected
+2025-06-26T19:32:53.304Z info: MongoDB connected
+2025-06-26T19:32:53.685Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-26T19:33:16.008Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-26T19:33:21.227Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-26T19:33:36.448Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-26T19:36:20.169Z info: Server is running on port 5002
+2025-06-26T19:36:20.172Z info: Socket.IO connection status: Connected
+2025-06-26T19:36:20.595Z info: MongoDB connected
+2025-06-26T19:37:12.138Z info: Server is running on port 5002
+2025-06-26T19:37:12.141Z info: Socket.IO connection status: Connected
+2025-06-26T19:37:12.625Z info: MongoDB connected
+2025-06-26T19:37:37.788Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-26T19:40:41.211Z info: Server is running on port 5002
+2025-06-26T19:40:41.214Z info: Socket.IO connection status: Connected
+2025-06-26T19:40:41.669Z info: MongoDB connected
+2025-06-26T19:43:49.394Z info: Server is running on port 5002
+2025-06-26T19:43:49.397Z info: Socket.IO connection status: Connected
+2025-06-26T19:43:50.953Z info: Server is running on port 5002
+2025-06-26T19:43:50.956Z info: Socket.IO connection status: Connected
+2025-06-26T19:43:51.383Z info: MongoDB connected
+2025-06-26T19:44:24.805Z info: Server is running on port 5002
+2025-06-26T19:44:24.807Z info: Socket.IO connection status: Connected
+2025-06-26T19:44:25.224Z info: MongoDB connected
+2025-06-26T19:44:46.845Z info: Server is running on port 5002
+2025-06-26T19:44:46.847Z info: Socket.IO connection status: Connected
+2025-06-26T19:44:47.256Z info: MongoDB connected
+2025-06-26T19:52:02.025Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-26T19:52:04.365Z info: GET /n/getnotification/travel/+918920582438 - 200
+2025-06-26T19:52:05.320Z info: GET /n/getnotification/consignment/+918920582438 - 200
+2025-06-26T19:52:06.892Z info: GET /n/getnotification/travel/+918920582438 - 200

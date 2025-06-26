@@ -870,6 +870,33 @@ module.exports.declinePaymentRequest = async (req, res) => {
   }
 };
 
+module.exports. getConsignmentById = async (req, res) => {
+  try {
+    const { consignmentId } = req.params;
+
+    if (!consignmentId) {
+      return res.status(400).json({ message: "Consignment ID is required" });
+    }
+
+    console.log("Fetching consignment with ID:", consignmentId);
+
+    const consignment = await Consignment.findOne({ consignmentId }).lean();
+
+    if (!consignment) {
+      return res.status(404).json({ message: "Consignment not found" });
+    }
+    console.log(consignment)
+    return res.status(200).json({
+      message: "Consignment retrieved successfully",
+      consignment
+    });
+
+  } catch (error) {
+    console.error("Error fetching consignment by ID:", error.message);
+    return res.status(500).json({ message: "Internal server error", error: error.message });
+  }
+};
+
 
 
 

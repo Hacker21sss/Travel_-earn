@@ -28,6 +28,7 @@ module.exports.getNotifications = async (req, res) => {
     const notifications = await Notification.find({
       requestto: phoneNumber,
       createdAt: { $gte: startOfDay, $lte: endOfDay },
+      // createdAt: { $lte: endOfDay },
     })
       .sort({ createdAt: -1 })
       .lean();
@@ -93,7 +94,8 @@ module.exports.getNotifications = async (req, res) => {
         else if (notif.notificationType === "ride_accept" && notif.paymentstatus == "successful") {
           notificationData = {
             title: "Ride Request accept",
-            subtitle: `${senderName} has successfully completed the payment`,
+            // subtitle: `${senderName} has successfully completed the payment`,
+            subtitle: `you have successfully completed the payment`,
             notificationType: "ride_accept",
             notificationFormat: "ride",
             // time: moment(notif.createdAt).format("h:mm A"),
@@ -114,7 +116,8 @@ module.exports.getNotifications = async (req, res) => {
         else if (notif.notificationType === "ride_accept" && notif.paymentstatus == "declined") {
           notificationData = {
             title: "Payment declined",
-            subtitle: `Payment request has been declined by ${senderName}`,
+            // subtitle: `Payment request has been declined by ${senderName}`,
+            subtitle: `Payment request has been declined by you`,
             notificationType: "ride_accept",
             notificationFormat: "ride",
             // time: moment(notif.createdAt).format("h:mm A"),
@@ -184,7 +187,7 @@ module.exports.getNotifications = async (req, res) => {
         else if (notif.notificationType === "consignment_accept") {
           notificationData = {
             title: "Consignment Request accept",
-            subtitle: `you accepted the Ride request`,
+            subtitle: `you accepted the consignment request`,
             notificationType: "ride_accept",
             notificationFormat: "ride",
             // time: moment(notif.createdAt).format("h:mm A"),
@@ -287,10 +290,23 @@ exports.getUserNotifications = async (req, res) => {
 
 
             case "ride_accept":
+              if(notif.paymentstatus == "successful"){
+              title = "Ride Approved";
+              subtitle = `${sender?.username} has completed the payment`;
+              notificationType = "ride_accept";
+              notificationFormat = "Approval";
+            }else if(notif.paymentstatus == "declined"){
+              title = "Ride Approved";
+              subtitle = `${sender?.username} has declined the payment`;
+              notificationType = "ride_accept";
+              notificationFormat = "Approval";
+            }
+            else{
               title = "Ride Approved";
               subtitle = `Your ride request has been approved by ${sender?.username}`;
               notificationType = "ride_accept";
               notificationFormat = "Approval";
+            }
               break;
 
             case "ride_reject":

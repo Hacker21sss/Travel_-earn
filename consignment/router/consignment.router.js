@@ -22,9 +22,10 @@ router.post('/consignment',
 router.get('/getdetails',consignment.getConsignmentsByDate);
 router.post('/request-for-consignment',consignment.getconsignment);
 router.get('/get-consignment/:phoneNumber',consignment.getallconsignment);
- router.post('/getearning',consignment.getearning);
- router.get('/history/:PhoneNumber',history.getConsignmentHistory);
- router.get('/riderequest/:phoneNumber',consignment.getRideRequests);
+router.get('/consignment/:consignmentId',consignment.getConsignmentById);
+router.post('/getearning',consignment.getearning);
+router.get('/history/:PhoneNumber',history.getConsignmentHistory);
+router.get('/riderequest/:phoneNumber',consignment.getRideRequests);
 router.post('/decline-consignment/:phoneNumber',consignment.declinePaymentRequest)
 
 // // PUT route to update an existing consignment

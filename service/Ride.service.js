@@ -295,7 +295,8 @@ const userprofile=await User.findOne({phoneNumber: rideRequest.requestedby})
       const notification = new Notification({
         travelId,
         consignmentId,
-        requestedby: rideRequest.phoneNumber,
+        requestedby: rideRequest.requestedby,
+        // requestto:consignment.phoneNumber,
         status: "Rejected",
         notificationType: "ride_reject",
         createdAt: new Date(),
@@ -306,7 +307,7 @@ const userprofile=await User.findOne({phoneNumber: rideRequest.requestedby})
         notification.save(),
       ]);
       
-      await rideRequest.updateOne(
+      await RideRequest.updateOne(
           { consignmentId },
           { $set: { status: "Rejected" } }
       );
