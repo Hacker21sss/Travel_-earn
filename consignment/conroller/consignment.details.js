@@ -202,6 +202,7 @@ module.exports = {
         dimensions: JSON.stringify(parsedDimensions),
         consignmentId: consignmentId,
         distance: distance.text,
+        images: imageUrls,
       });
       
       await consignmenthistory.save();

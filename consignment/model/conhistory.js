@@ -20,7 +20,10 @@ const ConsignmentRequestHistorySchema = new mongoose.Schema({
   category: { type: String },
   // e.g., "10X10X12"
   distance: { type: String },
-
+  images: [{
+    type: String,
+    default: [] // Store array of image URLs
+  }],
   status: {
     type: String,
     enum: ["Cancelled", "Collected", "Completed", "Upcoming", "Not Started","Delivered","Expired", "Yet to Collect", "collected", "on the way"],
