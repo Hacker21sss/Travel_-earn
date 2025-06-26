@@ -8507,3 +8507,376 @@
 2025-06-26T19:52:04.365Z info: GET /n/getnotification/travel/+918920582438 - 200
 2025-06-26T19:52:05.320Z info: GET /n/getnotification/consignment/+918920582438 - 200
 2025-06-26T19:52:06.892Z info: GET /n/getnotification/travel/+918920582438 - 200
+2025-06-26T19:53:58.279Z info: Server is running on port 5002
+2025-06-26T19:53:58.282Z info: Socket.IO connection status: Connected
+2025-06-26T19:53:58.713Z info: MongoDB connected
+2025-06-26T19:54:01.527Z info: GET /n/getnotification/travel/+918920582438 - 200
+2025-06-26T19:54:02.955Z info: GET /n/getnotification/travel/+918920582438 - 200
+2025-06-26T19:54:04.336Z info: GET /n/getnotification/consignment/+918920582438 - 200
+2025-06-26T19:54:15.919Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-26T19:59:30.879Z info: Server is running on port 5002
+2025-06-26T19:59:30.881Z info: Socket.IO connection status: Connected
+2025-06-26T19:59:31.367Z info: MongoDB connected
+2025-06-26T20:01:13.466Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-26T20:01:34.427Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-26T20:02:04.926Z info: GET /address/getaddress/+918295525360 - 200
+2025-06-26T20:02:26.433Z info: Server is running on port 5002
+2025-06-26T20:02:26.436Z info: Socket.IO connection status: Connected
+2025-06-26T20:02:27.286Z info: MongoDB connected
+2025-06-26T20:03:02.461Z info: GET /n/getnotification/travel/+918920582438 - 200
+2025-06-26T20:03:04.459Z info: GET /n/getnotification/consignment/+918920582438 - 200
+2025-06-26T20:03:06.935Z info: GET /n/getnotification/travel/+918920582438 - 200
+2025-06-26T20:03:07.062Z info: GET /n/getnotification/consignment/+918920582438 - 200
+2025-06-26T20:03:57.807Z info: Server is running on port 5002
+2025-06-26T20:03:57.809Z info: Socket.IO connection status: Connected
+2025-06-26T20:03:58.709Z info: MongoDB connected
+2025-06-26T20:04:48.370Z info: POST /t/creates?Leavinglocation=Delhi,%20India&Goinglocation=Shimla,%20Himachal%20Pradesh,%20India - 200
+2025-06-26T20:05:12.023Z info: Server is running on port 5002
+2025-06-26T20:05:12.025Z info: Socket.IO connection status: Connected
+2025-06-26T20:05:12.440Z info: POST /t/creates?Leavinglocation=Delhi,%20India&Goinglocation=Shimla,%20Himachal%20Pradesh,%20India - 200
+2025-06-26T20:05:12.637Z info: MongoDB connected
+2025-06-26T20:11:28.062Z info: GET /address/getaddress/+918295525360 - 200
+2025-06-26T20:12:00.712Z info: GET /api/history/+918295525360 - 200
+2025-06-26T20:12:01.683Z info: GET /api/consignment/43a8e34a-dce9-4bab-8b78-ffe438043f5f - 200
+2025-06-26T20:12:01.692Z info: GET /api/getall/+918295525360?phoneNumber=%2B918295525360 - 200
+2025-06-26T20:12:03.661Z info: GET /api/consignment/43a8e34a-dce9-4bab-8b78-ffe438043f5f - 200
+2025-06-26T20:12:03.664Z info: GET /api/getall/+918295525360?phoneNumber=%2B918295525360 - 200
+2025-06-26T20:12:28.666Z info: GET /address/getaddress/+918920582438 - 200
+2025-06-26T20:12:28.668Z info: GET /map/get-coordinates?address=Dehradun,+Uttarakhand,+India - 200
+2025-06-26T20:12:35.083Z info: GET /n/getnotification/travel/+918920582438 - 200
+2025-06-26T20:12:35.249Z info: GET /n/getnotification/consignment/+918920582438 - 200
+2025-06-26T20:13:57.149Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-26T20:13:57.253Z info: A new client connected: oU5Ljwt3ODvL6l78AAAB
+2025-06-26T20:13:57.332Z info: Socket ID oU5Ljwt3ODvL6l78AAAB associated with phoneNumber +918295525360
+2025-06-26T20:13:57.436Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-26T20:13:58.981Z info: GET /n/getnotification/travel/+918920582438 - 200
+2025-06-26T20:13:58.991Z info: A new client connected: Kfdm-7vLtAzKb4ozAAAD
+2025-06-26T20:13:59.023Z info: Socket ID Kfdm-7vLtAzKb4ozAAAD associated with phoneNumber +918920582438
+2025-06-26T20:13:59.111Z info: GET /n/getnotification/consignment/+918920582438 - 200
+2025-06-26T20:14:58.782Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Dehradun,%20Uttarakhand,%20India&date=30/06/2025&phoneNumber=+918920582438 - 200
+2025-06-26T20:14:58.786Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Dehradun,%20Uttarakhand,%20India&date=2025-06-30&phoneNumber=+918920582438 - 200
+2025-06-26T20:15:05.948Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Dehradun,%20Uttarakhand,%20India&date=2025-06-30&phoneNumber=+918920582438 - 200
+2025-06-26T20:15:16.383Z info: GET /n/getnotification/travel/+918920582438 - 200
+2025-06-26T20:15:16.631Z info: GET /n/getnotification/consignment/+918920582438 - 200
+2025-06-26T20:15:19.679Z info: GET /api/history/+918295525360 - 200
+2025-06-26T20:15:21.107Z info: GET /api/consignment/43a8e34a-dce9-4bab-8b78-ffe438043f5f - 200
+2025-06-26T20:15:21.170Z info: GET /api/getall/+918295525360?phoneNumber=%2B918295525360 - 200
+2025-06-26T20:15:24.538Z info: GET /api/consignment/fb3064e5-39c7-4463-988a-c2bc5531bbfa - 200
+2025-06-26T20:15:28.163Z info: GET /n/getnotification/travel/+918920582438 - 200
+2025-06-26T20:15:28.207Z info: GET /n/getnotification/consignment/+918920582438 - 200
+2025-06-26T20:15:34.406Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Dehradun,%20Uttarakhand,%20India&date=2025-07-06&phoneNumber=+918920582438 - 200
+2025-06-26T20:15:34.412Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Dehradun,%20Uttarakhand,%20India&date=06/07/2025&phoneNumber=+918920582438 - 200
+2025-06-26T20:15:50.190Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Dehradun,%20Uttarakhand,%20India&date=2025-07-06&phoneNumber=+918920582438 - 200
+2025-06-26T20:15:50.744Z info: GET /n/getnotification/travel/+918920582438 - 200
+2025-06-26T20:15:50.851Z info: GET /n/getnotification/consignment/+918920582438 - 200
+2025-06-26T20:16:10.027Z info: GET /api/getdetails?leavingLocation=Gwalior,%20Madhya%20Pradesh,%20India&goingLocation=Hodal,%20Haryana,%20India&date=06/07/2025&phoneNumber=+918920582438 - 200
+2025-06-26T20:16:10.030Z info: GET /api/getdetails?leavingLocation=Gwalior,%20Madhya%20Pradesh,%20India&goingLocation=Hodal,%20Haryana,%20India&date=2025-07-06&phoneNumber=+918920582438 - 200
+2025-06-26T20:16:11.907Z info: GET /api/getdetails?leavingLocation=Gwalior,%20Madhya%20Pradesh,%20India&goingLocation=Hodal,%20Haryana,%20India&date=2025-07-06&phoneNumber=+918920582438 - 200
+2025-06-26T20:16:15.086Z info: GET /api/getdetails?leavingLocation=Gwalior,%20Madhya%20Pradesh,%20India&goingLocation=Hodal,%20Haryana,%20India&date=07/07/2025&phoneNumber=+918920582438 - 200
+2025-06-26T20:16:15.093Z info: GET /api/getdetails?leavingLocation=Gwalior,%20Madhya%20Pradesh,%20India&goingLocation=Hodal,%20Haryana,%20India&date=2025-07-07&phoneNumber=+918920582438 - 200
+2025-06-26T20:16:16.597Z info: GET /api/getdetails?leavingLocation=Gwalior,%20Madhya%20Pradesh,%20India&goingLocation=Hodal,%20Haryana,%20India&date=06/07/2025&phoneNumber=+918920582438 - 200
+2025-06-26T20:16:16.598Z info: GET /api/getdetails?leavingLocation=Gwalior,%20Madhya%20Pradesh,%20India&goingLocation=Hodal,%20Haryana,%20India&date=2025-07-06&phoneNumber=+918920582438 - 200
+2025-06-26T20:16:17.196Z info: GET /n/getnotification/travel/+918920582438 - 200
+2025-06-26T20:16:17.346Z info: GET /n/getnotification/consignment/+918920582438 - 200
+2025-06-26T20:16:22.284Z info: GET /api/consignment/1db1e32f-222f-437d-9b7e-69286f6d603c - 200
+2025-06-26T20:16:22.285Z info: GET /api/getall/+918295525360?phoneNumber=%2B918295525360 - 200
+2025-06-26T20:16:45.586Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=02/07/2025&phoneNumber=+918920582438 - 200
+2025-06-26T20:16:45.588Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-07-02&phoneNumber=+918920582438 - 200
+2025-06-26T20:16:49.175Z info: GET /api/getdetails?leavingLocation=Delhi,%20India&goingLocation=Chandigarh,%20India&date=2025-07-02&phoneNumber=+918920582438 - 200
+2025-06-26T20:16:59.649Z info: GET /n/getnotification/travel/+918920582438 - 200
+2025-06-26T20:16:59.757Z info: GET /n/getnotification/consignment/+918920582438 - 200
+2025-06-26T20:17:12.871Z info: GET /api/history/+918295525360 - 200
+2025-06-26T20:21:21.936Z info: Client disconnected: oU5Ljwt3ODvL6l78AAAB
+2025-06-26T20:21:21.984Z info: Socket ID cleared for phoneNumber +918295525360
+2025-06-26T20:21:24.574Z info: Client disconnected: Kfdm-7vLtAzKb4ozAAAD
+2025-06-26T20:21:24.661Z info: Socket ID cleared for phoneNumber +918920582438
+2025-06-26T20:21:33.597Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-26T20:21:33.658Z info: A new client connected: F9bmUmniuBUvx9N_AAAF
+2025-06-26T20:21:33.757Z info: Socket ID F9bmUmniuBUvx9N_AAAF associated with phoneNumber +918295525360
+2025-06-26T20:21:34.023Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-26T20:21:34.816Z info: GET /n/getnotification/travel/+918920582438 - 200
+2025-06-26T20:21:35.066Z info: A new client connected: -VsQerZaFDczGtUqAAAH
+2025-06-26T20:21:35.068Z info: GET /n/getnotification/consignment/+918920582438 - 200
+2025-06-26T20:21:35.140Z info: Socket ID -VsQerZaFDczGtUqAAAH associated with phoneNumber +918920582438
+2025-06-26T20:23:20.217Z info: Client disconnected: -VsQerZaFDczGtUqAAAH
+2025-06-26T20:23:20.340Z info: Socket ID cleared for phoneNumber +918920582438
+2025-06-26T20:24:01.559Z info: GET /n/getnotification/travel/+918920582438 - 200
+2025-06-26T20:24:01.622Z info: A new client connected: MTWJ5FCRDSYgp0SgAAAJ
+2025-06-26T20:24:01.668Z info: Socket ID MTWJ5FCRDSYgp0SgAAAJ associated with phoneNumber +918920582438
+2025-06-26T20:24:01.673Z info: GET /n/getnotification/consignment/+918920582438 - 200
+2025-06-26T20:27:06.777Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-26T20:27:15.516Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-26T20:28:16.987Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-26T20:28:17.257Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-26T20:28:18.408Z info: GET /api/history/+918295525360 - 200
+2025-06-26T20:28:26.035Z info: GET /api/consignment/fb3064e5-39c7-4463-988a-c2bc5531bbfa - 200
+2025-06-26T20:28:28.669Z info: GET /order/get-ride/612081994 - 200
+2025-06-26T20:28:39.205Z info: POST /editp/pickupconsignment?travelId=612081994&consignmentId=fb3064e5-39c7-4463-988a-c2bc5531bbfa - 200
+2025-06-26T20:28:50.713Z info: GET /order/get-ride/612081994 - 200
+2025-06-26T20:28:57.541Z info: POST /editp/pickupconsignment?travelId=612081994&consignmentId=fb3064e5-39c7-4463-988a-c2bc5531bbfa - 200
+2025-06-26T20:29:08.896Z info: GET /api/consignment/fb3064e5-39c7-4463-988a-c2bc5531bbfa - 200
+2025-06-26T20:29:16.103Z info: GET /api/history/+918295525360 - 200
+2025-06-26T20:29:18.342Z info: GET /api/consignment/fb3064e5-39c7-4463-988a-c2bc5531bbfa - 200
+2025-06-26T20:29:23.292Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:29:28.323Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:29:33.323Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:29:38.298Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:29:43.354Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:29:48.330Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:29:53.316Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:29:58.330Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:30:03.340Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:30:08.324Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:30:13.384Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:30:18.331Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:30:23.415Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:30:28.369Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:30:33.361Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:30:38.407Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:30:43.381Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:30:48.371Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:30:53.382Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:30:58.390Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:31:03.414Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:31:08.440Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:31:13.411Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:31:18.386Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:31:23.567Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:31:28.383Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:31:33.474Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:31:36.294Z info: GET /order/get-ride/612081994 - 200
+2025-06-26T20:31:38.392Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:31:43.409Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:31:44.470Z info: POST /editp/deliver?travelId=612081994&consignmentId=fb3064e5-39c7-4463-988a-c2bc5531bbfa - 200
+2025-06-26T20:31:48.428Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:31:53.402Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:31:55.408Z info: GET /api/history/+918295525360 - 200
+2025-06-26T20:31:56.973Z info: GET /api/consignment/fb3064e5-39c7-4463-988a-c2bc5531bbfa - 200
+2025-06-26T20:31:58.397Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:32:03.482Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:32:08.412Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:32:13.426Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:32:18.456Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:32:23.473Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:32:28.427Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:32:33.437Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:32:38.440Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:32:43.555Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:32:45.762Z info: GET /api/consignment/fb3064e5-39c7-4463-988a-c2bc5531bbfa - 200
+2025-06-26T20:32:48.477Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:32:51.380Z info: GET /api/consignment/fb3064e5-39c7-4463-988a-c2bc5531bbfa - 200
+2025-06-26T20:32:53.428Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:32:57.590Z info: GET /api/consignment/fb3064e5-39c7-4463-988a-c2bc5531bbfa - 200
+2025-06-26T20:32:58.429Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:33:03.460Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:33:08.480Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:33:13.492Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:33:18.515Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:33:23.468Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:33:28.505Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:33:33.485Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:33:38.456Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:33:43.520Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:33:48.461Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:33:53.480Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:33:58.498Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:34:03.517Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:34:08.469Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:34:13.489Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:34:18.481Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:34:23.486Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:34:28.529Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:34:33.500Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:34:33.939Z info: GET /api/consignment/fb3064e5-39c7-4463-988a-c2bc5531bbfa - 200
+2025-06-26T20:34:38.491Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:34:43.571Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:34:46.794Z info: GET /api/consignment/fb3064e5-39c7-4463-988a-c2bc5531bbfa - 200
+2025-06-26T20:34:48.488Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:34:53.548Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:34:53.683Z info: GET /api/consignment/fb3064e5-39c7-4463-988a-c2bc5531bbfa - 200
+2025-06-26T20:34:58.506Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:35:03.520Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:35:08.539Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:35:13.562Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:35:18.521Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:35:23.590Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:35:28.530Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:35:33.530Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:35:38.564Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:35:40.840Z info: GET /api/consignment/fb3064e5-39c7-4463-988a-c2bc5531bbfa - 200
+2025-06-26T20:35:43.523Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:35:48.535Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:35:53.613Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:35:58.556Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:35:59.500Z info: GET /api/consignment/fb3064e5-39c7-4463-988a-c2bc5531bbfa - 200
+2025-06-26T20:36:03.539Z info: GET /track-rider/612081994/+918295525360 - 200
+2025-06-26T20:36:04.812Z info: Client disconnected: F9bmUmniuBUvx9N_AAAF
+2025-06-26T20:36:04.870Z info: Socket ID cleared for phoneNumber +918295525360
+2025-06-26T20:36:04.894Z info: Client disconnected: MTWJ5FCRDSYgp0SgAAAJ
+2025-06-26T20:36:04.925Z info: Socket ID cleared for phoneNumber +918920582438
+2025-06-26T20:36:13.674Z info: GET /n/getnotification/travel/+918920582438 - 200
+2025-06-26T20:36:13.782Z info: A new client connected: kieJYZhmuPZKnsVuAAAL
+2025-06-26T20:36:13.799Z info: GET /n/getnotification/consignment/+918920582438 - 200
+2025-06-26T20:36:13.816Z info: Socket ID kieJYZhmuPZKnsVuAAAL associated with phoneNumber +918920582438
+2025-06-26T20:36:15.195Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-26T20:36:15.214Z info: A new client connected: 4N0roEOaRQwTELndAAAN
+2025-06-26T20:36:15.268Z info: Socket ID 4N0roEOaRQwTELndAAAN associated with phoneNumber +918295525360
+2025-06-26T20:36:15.346Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-26T20:36:16.639Z info: GET /api/history/+918295525360 - 200
+2025-06-26T20:36:18.122Z info: GET /api/consignment/fb3064e5-39c7-4463-988a-c2bc5531bbfa - 200
+2025-06-26T20:36:24.314Z info: GET /api/consignment/fb3064e5-39c7-4463-988a-c2bc5531bbfa - 200
+2025-06-26T20:36:54.090Z info: Client disconnected: 4N0roEOaRQwTELndAAAN
+2025-06-26T20:36:54.174Z info: Socket ID cleared for phoneNumber +918295525360
+2025-06-26T20:37:09.336Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-26T20:37:09.408Z info: A new client connected: v0cGsPxauqsNxLWKAAAP
+2025-06-26T20:37:09.444Z info: Socket ID v0cGsPxauqsNxLWKAAAP associated with phoneNumber +918295525360
+2025-06-26T20:37:09.546Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-26T20:37:11.176Z info: GET /api/history/+918295525360 - 200
+2025-06-26T20:37:12.373Z info: GET /api/consignment/fb3064e5-39c7-4463-988a-c2bc5531bbfa - 200
+2025-06-26T20:37:29.577Z info: GET /api/consignment/fb3064e5-39c7-4463-988a-c2bc5531bbfa - 200
+2025-06-26T20:37:39.159Z info: GET /api/consignment/fb3064e5-39c7-4463-988a-c2bc5531bbfa - 200
+2025-06-26T20:38:28.586Z info: GET /api/consignment/fb3064e5-39c7-4463-988a-c2bc5531bbfa - 200
+2025-06-26T20:38:30.039Z info: GET /api/consignment/fb3064e5-39c7-4463-988a-c2bc5531bbfa - 200
+2025-06-26T20:38:39.625Z info: GET /api/consignment/fb3064e5-39c7-4463-988a-c2bc5531bbfa - 200
+2025-06-26T20:38:41.104Z info: GET /api/consignment/fb3064e5-39c7-4463-988a-c2bc5531bbfa - 200
+2025-06-26T20:39:04.653Z info: GET /api/consignment/fb3064e5-39c7-4463-988a-c2bc5531bbfa - 200
+2025-06-26T20:39:10.291Z info: POST /api/rating/+918295525360 - 200
+2025-06-26T20:39:17.525Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-26T20:39:17.847Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-26T20:39:30.183Z info: GET /address/getaddress/+918920582438 - 200
+2025-06-26T20:39:39.568Z info: POST /t/creates?Leavinglocation=Hodal,%20Haryana,%20India&Goinglocation=Palwal,%20Haryana,%20India - 200
+2025-06-26T20:39:55.689Z info: POST /t/creates?Leavinglocation=Hodal,%20Haryana,%20India&Goinglocation=Palwal,%20Haryana,%20India - 200
+2025-06-26T20:40:59.493Z info: Server is running on port 5002
+2025-06-26T20:40:59.495Z info: Socket.IO connection status: Connected
+2025-06-26T20:40:59.739Z info: A new client connected: _x6zkH1n2QdP37mcAAAB
+2025-06-26T20:41:00.179Z info: MongoDB connected
+2025-06-26T20:41:00.485Z info: A new client connected: FJKQ7sDSae_y2yXWAAAD
+2025-06-26T20:41:00.894Z info: Socket ID _x6zkH1n2QdP37mcAAAB associated with phoneNumber +918295525360
+2025-06-26T20:41:01.272Z info: Socket ID FJKQ7sDSae_y2yXWAAAD associated with phoneNumber +918920582438
+2025-06-26T20:41:10.681Z info: Server is running on port 5002
+2025-06-26T20:41:10.683Z info: Socket.IO connection status: Connected
+2025-06-26T20:41:10.902Z info: A new client connected: nyY7TtFkv65_ik8vAAAB
+2025-06-26T20:41:11.551Z info: MongoDB connected
+2025-06-26T20:41:11.659Z info: A new client connected: FJMv4mdS_k2L6CNAAAAD
+2025-06-26T20:41:12.214Z info: Socket ID nyY7TtFkv65_ik8vAAAB associated with phoneNumber +918295525360
+2025-06-26T20:41:12.536Z info: Socket ID FJMv4mdS_k2L6CNAAAAD associated with phoneNumber +918920582438
+2025-06-26T20:41:13.556Z info: POST /t/creates?Leavinglocation=Hodal,%20Haryana,%20India&Goinglocation=Palwal,%20Haryana,%20India - 200
+2025-06-26T20:41:25.216Z info: POST /t/creates?Leavinglocation=Hodal,%20Haryana,%20India&Goinglocation=Palwal,%20Haryana,%20India - 200
+2025-06-26T20:41:36.424Z info: Client disconnected: nyY7TtFkv65_ik8vAAAB
+2025-06-26T20:41:36.460Z info: Socket ID cleared for phoneNumber +918295525360
+2025-06-26T20:41:36.642Z info: Client disconnected: FJMv4mdS_k2L6CNAAAAD
+2025-06-26T20:41:36.753Z info: Socket ID cleared for phoneNumber +918920582438
+2025-06-26T20:41:45.804Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-26T20:41:45.937Z info: A new client connected: hiWqhkB54m43WF3zAAAF
+2025-06-26T20:41:46.040Z info: Socket ID hiWqhkB54m43WF3zAAAF associated with phoneNumber +918295525360
+2025-06-26T20:41:46.262Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-26T20:41:52.051Z info: GET /n/getnotification/travel/+918920582438 - 200
+2025-06-26T20:41:52.072Z info: A new client connected: dbigxIDdnbfENa2SAAAH
+2025-06-26T20:41:52.191Z info: Socket ID dbigxIDdnbfENa2SAAAH associated with phoneNumber +918920582438
+2025-06-26T20:41:52.275Z info: GET /n/getnotification/consignment/+918920582438 - 200
+2025-06-26T20:42:05.149Z info: GET /address/getaddress/+918920582438 - 200
+2025-06-26T20:42:12.273Z info: POST /t/creates?Leavinglocation=Hodal,%20Haryana,%20India&Goinglocation=Palwal,%20Haryana,%20India - 200
+2025-06-26T20:44:13.462Z info: Server is running on port 5002
+2025-06-26T20:44:13.465Z info: Socket.IO connection status: Connected
+2025-06-26T20:44:13.680Z info: A new client connected: p2mPBp_Tgkjffl8cAAAB
+2025-06-26T20:44:13.805Z info: A new client connected: Iqxeh6SO6y_iGYjQAAAD
+2025-06-26T20:44:14.268Z info: MongoDB connected
+2025-06-26T20:44:14.948Z info: Socket ID p2mPBp_Tgkjffl8cAAAB associated with phoneNumber +918920582438
+2025-06-26T20:44:15.215Z info: Socket ID Iqxeh6SO6y_iGYjQAAAD associated with phoneNumber +918295525360
+2025-06-26T20:44:18.385Z info: POST /t/creates?Leavinglocation=Hodal,%20Haryana,%20India&Goinglocation=Palwal,%20Haryana,%20India - 200
+2025-06-26T20:44:54.807Z info: GET /address/getaddress/+918920582438 - 200
+2025-06-26T20:45:01.884Z info: POST /t/creates?Leavinglocation=Hodal,%20Haryana,%20India&Goinglocation=Palwal,%20Haryana,%20India - 200
+2025-06-26T20:46:09.057Z info: Server is running on port 5002
+2025-06-26T20:46:09.059Z info: Socket.IO connection status: Connected
+2025-06-26T20:46:09.384Z info: POST /t/creates?Leavinglocation=Hodal,%20Haryana,%20India&Goinglocation=Palwal,%20Haryana,%20India - 200
+2025-06-26T20:46:09.692Z info: A new client connected: mH3KITZNRp9j85jWAAAC
+2025-06-26T20:46:09.700Z info: A new client connected: 7tADET-HYXHwpsBJAAAD
+2025-06-26T20:46:09.927Z info: MongoDB connected
+2025-06-26T20:46:10.536Z info: Socket ID mH3KITZNRp9j85jWAAAC associated with phoneNumber +918920582438
+2025-06-26T20:46:10.921Z info: Socket ID 7tADET-HYXHwpsBJAAAD associated with phoneNumber +918295525360
+2025-06-26T20:47:06.556Z info: Server is running on port 5002
+2025-06-26T20:47:06.558Z info: Socket.IO connection status: Connected
+2025-06-26T20:47:06.925Z info: A new client connected: oLtgC4MiLoMqW9XfAAAB
+2025-06-26T20:47:07.186Z info: A new client connected: QXBmTLBZuXjLN0CHAAAD
+2025-06-26T20:47:07.345Z info: MongoDB connected
+2025-06-26T20:47:08.156Z info: Socket ID oLtgC4MiLoMqW9XfAAAB associated with phoneNumber +918295525360
+2025-06-26T20:47:08.563Z info: Socket ID QXBmTLBZuXjLN0CHAAAD associated with phoneNumber +918920582438
+2025-06-26T20:47:21.414Z info: POST /t/creates?Leavinglocation=Hodal,%20Haryana,%20India&Goinglocation=Palwal,%20Haryana,%20India - 200
+2025-06-26T20:47:25.014Z info: GET /n/getnotification/travel/+918920582438 - 200
+2025-06-26T20:47:25.133Z info: GET /n/getnotification/consignment/+918920582438 - 200
+2025-06-26T20:47:36.452Z info: GET /t/search-rides?leavingLocation=Hodal,+Haryana,+India&goingLocation=Palwal,+Haryana,+India&date=2025-06-27&travelMode=train&phoneNumber=%2B918295525360 - 200
+2025-06-26T20:47:38.589Z info: GET /t/search-rides?leavingLocation=Hodal,+Haryana,+India&goingLocation=Palwal,+Haryana,+India&date=2025-06-27&travelMode=car&phoneNumber=%2B918295525360 - 200
+2025-06-26T20:47:38.669Z info: GET /t/search-rides?leavingLocation=Hodal,+Haryana,+India&goingLocation=Palwal,+Haryana,+India&date=2025-06-27&travelMode=car&phoneNumber=%2B918295525360 - 200
+2025-06-26T20:47:38.676Z info: GET /t/search-rides?leavingLocation=Hodal,+Haryana,+India&goingLocation=Palwal,+Haryana,+India&date=2025-06-27&travelMode=car&phoneNumber=%2B918295525360 - 200
+2025-06-26T20:48:14.451Z info: Client disconnected: oLtgC4MiLoMqW9XfAAAB
+2025-06-26T20:48:14.618Z info: Socket ID cleared for phoneNumber +918295525360
+2025-06-26T20:48:14.620Z info: Client disconnected: QXBmTLBZuXjLN0CHAAAD
+2025-06-26T20:48:14.701Z info: Socket ID cleared for phoneNumber +918920582438
+2025-06-26T20:48:29.219Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-26T20:48:29.368Z info: A new client connected: B9uZndGhOz9PjOYbAAAF
+2025-06-26T20:48:29.450Z info: Socket ID B9uZndGhOz9PjOYbAAAF associated with phoneNumber +918295525360
+2025-06-26T20:48:29.668Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-26T20:48:30.683Z info: GET /n/getnotification/travel/+918920582438 - 200
+2025-06-26T20:48:30.686Z info: A new client connected: _dFqRSgROzBTu3ydAAAH
+2025-06-26T20:48:30.763Z info: Socket ID _dFqRSgROzBTu3ydAAAH associated with phoneNumber +918920582438
+2025-06-26T20:48:30.842Z info: GET /n/getnotification/consignment/+918920582438 - 200
+2025-06-26T20:48:39.174Z info: GET /t/search-rides?leavingLocation=Hodal,+Haryana,+India&goingLocation=Palwal,+Haryana,+India&date=2025-06-27&travelMode=train&phoneNumber=%2B918295525360 - 200
+2025-06-26T20:48:41.061Z info: GET /t/search-rides?leavingLocation=Hodal,+Haryana,+India&goingLocation=Palwal,+Haryana,+India&date=2025-06-27&travelMode=car&phoneNumber=%2B918295525360 - 200
+2025-06-26T20:48:41.067Z info: GET /t/search-rides?leavingLocation=Hodal,+Haryana,+India&goingLocation=Palwal,+Haryana,+India&date=2025-06-27&travelMode=car&phoneNumber=%2B918295525360 - 200
+2025-06-26T20:48:41.073Z info: GET /t/search-rides?leavingLocation=Hodal,+Haryana,+India&goingLocation=Palwal,+Haryana,+India&date=2025-06-27&travelMode=car&phoneNumber=%2B918295525360 - 200
+2025-06-26T20:48:44.849Z info: GET /map/getdistanceandcoordinate?origin=Hodal,%20Haryana,%20India&destination=Palwal,%20Haryana,%20India - 200
+2025-06-26T20:49:25.596Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-26T20:49:25.843Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-26T20:49:26.725Z info: GET /t/search-rides?leavingLocation=Hodal,+Haryana,+India&goingLocation=Palwal,+Haryana,+India&date=2025-06-27&travelMode=train&phoneNumber=%2B918295525360 - 200
+2025-06-26T20:49:35.280Z info: GET /t/search-rides?leavingLocation=Hodal,+Haryana,+India&goingLocation=Palwal,+Haryana,+India&date=2025-06-27&travelMode=car&phoneNumber=%2B918295525360 - 200
+2025-06-26T20:49:35.285Z info: GET /t/search-rides?leavingLocation=Hodal,+Haryana,+India&goingLocation=Palwal,+Haryana,+India&date=2025-06-27&travelMode=car&phoneNumber=%2B918295525360 - 200
+2025-06-26T20:49:35.290Z info: GET /t/search-rides?leavingLocation=Hodal,+Haryana,+India&goingLocation=Palwal,+Haryana,+India&date=2025-06-27&travelMode=car&phoneNumber=%2B918295525360 - 200
+2025-06-26T20:50:00.428Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-26T20:50:00.702Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-26T20:50:12.847Z info: GET /address/getaddress/+918295525360 - 200
+2025-06-26T20:50:19.564Z info: POST /t/creates?Leavinglocation=Delhi,%20India&Goinglocation=Goa,%20India - 200
+2025-06-26T20:50:23.111Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-26T20:50:23.275Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-26T20:50:51.424Z info: GET /n/getnotification/travel/+918920582438 - 200
+2025-06-26T20:50:51.717Z info: GET /n/getnotification/consignment/+918920582438 - 200
+2025-06-26T20:51:01.415Z info: GET /t/search-rides?leavingLocation=Delhi,+India&goingLocation=Goa,+India&date=2025-06-30&travelMode=train&phoneNumber=%2B918920582438 - 200
+2025-06-26T20:51:10.162Z info: GET /t/search-rides?leavingLocation=Delhi,+India&goingLocation=Goa,+India&date=2025-06-30&travelMode=car&phoneNumber=%2B918920582438 - 200
+2025-06-26T20:51:10.166Z info: GET /t/search-rides?leavingLocation=Delhi,+India&goingLocation=Goa,+India&date=2025-06-30&travelMode=car&phoneNumber=%2B918920582438 - 200
+2025-06-26T20:51:10.172Z info: GET /t/search-rides?leavingLocation=Delhi,+India&goingLocation=Goa,+India&date=2025-06-30&travelMode=car&phoneNumber=%2B918920582438 - 200
+2025-06-26T20:51:22.883Z info: GET /map/getdistanceandcoordinate?origin=Delhi,%20India&destination=Goa,%20India - 200
+2025-06-26T20:51:29.060Z info: GET /map/getdistanceandcoordinate?origin=Delhi,%20India&destination=Goa,%20India - 200
+2025-06-26T20:51:41.612Z info: GET /t/search-rides?leavingLocation=Hodal,+Haryana,+India&goingLocation=Palwal,+Haryana,+India&date=2025-06-27&travelMode=train&phoneNumber=%2B918295525360 - 200
+2025-06-26T20:51:43.795Z info: GET /t/search-rides?leavingLocation=Hodal,+Haryana,+India&goingLocation=Palwal,+Haryana,+India&date=2025-06-27&travelMode=car&phoneNumber=%2B918295525360 - 200
+2025-06-26T20:51:43.800Z info: GET /t/search-rides?leavingLocation=Hodal,+Haryana,+India&goingLocation=Palwal,+Haryana,+India&date=2025-06-27&travelMode=car&phoneNumber=%2B918295525360 - 200
+2025-06-26T20:51:43.805Z info: GET /t/search-rides?leavingLocation=Hodal,+Haryana,+India&goingLocation=Palwal,+Haryana,+India&date=2025-06-27&travelMode=car&phoneNumber=%2B918295525360 - 200
+2025-06-26T20:51:46.381Z info: GET /map/getdistanceandcoordinate?origin=Hodal,%20Haryana,%20India&destination=Palwal,%20Haryana,%20India - 200
+2025-06-26T20:51:49.090Z info: GET /map/getdistanceandcoordinate?origin=Hodal,%20Haryana,%20India&destination=Palwal,%20Haryana,%20India - 200
+2025-06-26T20:51:53.277Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-26T20:51:53.593Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-26T20:51:58.217Z info: Client disconnected: B9uZndGhOz9PjOYbAAAF
+2025-06-26T20:51:58.281Z info: Socket ID cleared for phoneNumber +918295525360
+2025-06-26T20:52:28.566Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-26T20:52:28.647Z info: A new client connected: zOkYULAcQmNO6EGqAAAJ
+2025-06-26T20:52:28.685Z info: Socket ID zOkYULAcQmNO6EGqAAAJ associated with phoneNumber +918295525360
+2025-06-26T20:52:28.894Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-26T20:52:32.351Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-26T20:52:32.598Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-26T20:52:40.450Z info: GET /t/search-rides?leavingLocation=Hodal,+Haryana,+India&goingLocation=Palwal,+Haryana,+India&date=2025-06-27&travelMode=train&phoneNumber=%2B918295525360 - 200
+2025-06-26T20:52:42.160Z info: GET /t/search-rides?leavingLocation=Hodal,+Haryana,+India&goingLocation=Palwal,+Haryana,+India&date=2025-06-27&travelMode=car&phoneNumber=%2B918295525360 - 200
+2025-06-26T20:52:42.165Z info: GET /t/search-rides?leavingLocation=Hodal,+Haryana,+India&goingLocation=Palwal,+Haryana,+India&date=2025-06-27&travelMode=car&phoneNumber=%2B918295525360 - 200
+2025-06-26T20:52:42.169Z info: GET /t/search-rides?leavingLocation=Hodal,+Haryana,+India&goingLocation=Palwal,+Haryana,+India&date=2025-06-27&travelMode=car&phoneNumber=%2B918295525360 - 200
+2025-06-26T20:52:47.347Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-26T20:52:47.683Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-26T20:53:03.248Z info: GET /address/getaddress/+918295525360 - 200
+2025-06-26T20:54:10.352Z info: POST /t/creates?Leavinglocation=Hodal,%20Haryana,%20India&Goinglocation=Palwal,%20Haryana,%20India - 200
+2025-06-26T20:54:13.124Z info: GET /n/getnotification/travel/+918920582438 - 200
+2025-06-26T20:54:13.315Z info: GET /n/getnotification/consignment/+918920582438 - 200
+2025-06-26T20:54:13.824Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-06-26T20:54:13.976Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-06-26T20:54:36.183Z info: GET /t/search-rides?leavingLocation=Hodal,+Haryana,+India&goingLocation=Palwal,+Haryana,+India&date=2025-06-27&travelMode=train&phoneNumber=%2B918920582438 - 200
+2025-06-26T20:54:38.282Z info: GET /t/search-rides?leavingLocation=Hodal,+Haryana,+India&goingLocation=Palwal,+Haryana,+India&date=2025-06-27&travelMode=car&phoneNumber=%2B918920582438 - 200
+2025-06-26T20:54:38.298Z info: GET /t/search-rides?leavingLocation=Hodal,+Haryana,+India&goingLocation=Palwal,+Haryana,+India&date=2025-06-27&travelMode=car&phoneNumber=%2B918920582438 - 200
+2025-06-26T20:54:38.302Z info: GET /t/search-rides?leavingLocation=Hodal,+Haryana,+India&goingLocation=Palwal,+Haryana,+India&date=2025-06-27&travelMode=car&phoneNumber=%2B918920582438 - 200
+2025-06-26T20:54:44.435Z info: GET /map/getdistanceandcoordinate?origin=Hodal,%20Haryana,%20India&destination=Palwal,%20Haryana,%20India - 200
+2025-06-26T20:54:48.443Z info: GET /n/getnotification/travel/+918920582438 - 200
+2025-06-26T20:54:48.562Z info: GET /n/getnotification/consignment/+918920582438 - 200

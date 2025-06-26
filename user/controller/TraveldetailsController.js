@@ -118,9 +118,9 @@ exports.getAutoCompleteAndCreateBooking = async (req, res) => {
     if (now.isBetween(moment(expectedStart), moment(expectedEnd))) {
       Status = "Ongoing";
     } else if (now.isAfter(moment(expectedEnd))) {
-      Status = "Expired";
+      Status = "EXPIRED";
     }
-
+    console.log("Status", Status)
     const history = new travelhistory({
       phoneNumber,
       travelId: travelId,
