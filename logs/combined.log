@@ -8043,3 +8043,171 @@
 2025-06-24T09:39:08.995Z info: Server is running on port 5002
 2025-06-24T09:39:08.996Z info: Socket.IO connection status: Connected
 2025-06-24T09:39:09.422Z info: MongoDB connected
+2025-06-26T13:12:19.360Z info: Server is running on port 5002
+2025-06-26T13:12:19.364Z info: Socket.IO connection status: Connected
+2025-06-26T13:12:20.681Z info: MongoDB connected
+2025-06-26T13:13:37.580Z info: Server is running on port 5002
+2025-06-26T13:13:37.587Z info: Socket.IO connection status: Connected
+2025-06-26T13:13:38.527Z info: MongoDB connected
+2025-06-26T13:15:04.277Z info: Server is running on port 5002
+2025-06-26T13:15:04.280Z info: Socket.IO connection status: Connected
+2025-06-26T13:15:04.982Z info: MongoDB connected
+2025-06-26T13:16:10.318Z info: Server is running on port 5002
+2025-06-26T13:16:10.324Z info: Socket.IO connection status: Connected
+2025-06-26T13:16:11.162Z info: MongoDB connected
+2025-06-26T13:22:36.981Z info: Server is running on port 5002
+2025-06-26T13:22:36.983Z info: Socket.IO connection status: Connected
+2025-06-26T13:22:37.769Z info: MongoDB connected
+2025-06-26T13:22:39.399Z info: Server is running on port 5002
+2025-06-26T13:22:39.401Z info: Socket.IO connection status: Connected
+2025-06-26T13:22:41.381Z info: Server is running on port 5002
+2025-06-26T13:22:41.383Z info: Socket.IO connection status: Connected
+2025-06-26T13:22:42.202Z info: MongoDB connected
+2025-06-26T13:22:47.006Z info: Server is running on port 5002
+2025-06-26T13:22:47.009Z info: Socket.IO connection status: Connected
+2025-06-26T13:22:47.625Z info: MongoDB connected
+2025-06-26T13:22:50.313Z info: Server is running on port 5002
+2025-06-26T13:22:50.315Z info: Socket.IO connection status: Connected
+2025-06-26T13:22:51.158Z info: MongoDB connected
+2025-06-26T13:26:13.383Z info: POST /api/consignment - 200
+2025-06-26T13:27:23.050Z info: Server is running on port 5002
+2025-06-26T13:27:23.054Z info: Socket.IO connection status: Connected
+2025-06-26T13:27:23.648Z info: MongoDB connected
+2025-06-26T13:27:24.723Z info: POST /api/consignment - 200
+2025-06-26T13:27:43.823Z info: Server is running on port 5002
+2025-06-26T13:27:43.826Z info: Socket.IO connection status: Connected
+2025-06-26T13:27:44.594Z info: MongoDB connected
+2025-06-26T13:27:47.892Z info: POST /api/consignment - 200
+2025-06-26T13:30:11.942Z info: POST /api/consignment - 200
+2025-06-26T13:31:52.113Z info: POST /api/consignment - 200
+2025-06-26T13:37:21.326Z info: Server is running on port 5002
+2025-06-26T13:37:21.329Z info: Socket.IO connection status: Connected
+2025-06-26T13:37:22.049Z info: MongoDB connected
+2025-06-26T13:37:29.948Z info: Server is running on port 5002
+2025-06-26T13:37:29.950Z info: Socket.IO connection status: Connected
+2025-06-26T13:37:30.761Z info: MongoDB connected
+2025-06-26T13:38:48.831Z info: Server is running on port 5002
+2025-06-26T13:38:48.833Z info: Socket.IO connection status: Connected
+2025-06-26T13:38:49.671Z info: MongoDB connected
+2025-06-26T13:40:05.080Z info: Server is running on port 5002
+2025-06-26T13:40:05.082Z info: Socket.IO connection status: Connected
+2025-06-26T13:40:05.737Z info: MongoDB connected
+2025-06-26T13:40:13.181Z info: Server is running on port 5002
+2025-06-26T13:40:13.183Z info: Socket.IO connection status: Connected
+2025-06-26T13:40:14.272Z info: MongoDB connected
+2025-06-26T13:41:03.204Z info: Server is running on port 5002
+2025-06-26T13:41:03.207Z info: Socket.IO connection status: Connected
+2025-06-26T13:41:03.932Z info: MongoDB connected
+2025-06-26T13:42:48.952Z info: Server is running on port 5002
+2025-06-26T13:42:48.955Z info: Socket.IO connection status: Connected
+2025-06-26T13:42:49.975Z info: MongoDB connected
+2025-06-26T13:42:52.162Z info: Server is running on port 5002
+2025-06-26T13:42:52.165Z info: Socket.IO connection status: Connected
+2025-06-26T13:42:52.966Z info: MongoDB connected
+2025-06-26T13:43:02.163Z info: Server is running on port 5002
+2025-06-26T13:43:02.165Z info: Socket.IO connection status: Connected
+2025-06-26T13:43:04.311Z info: Server is running on port 5002
+2025-06-26T13:43:04.313Z info: Socket.IO connection status: Connected
+2025-06-26T13:43:04.974Z info: MongoDB connected
+2025-06-26T13:44:59.949Z info: POST /api/consignment - 200
+2025-06-26T13:46:00.009Z info: Server is running on port 5002
+2025-06-26T13:46:00.012Z info: Socket.IO connection status: Connected
+2025-06-26T13:46:00.925Z info: MongoDB connected
+2025-06-26T13:46:15.750Z info: Server is running on port 5002
+2025-06-26T13:46:15.753Z info: Socket.IO connection status: Connected
+2025-06-26T13:46:16.549Z info: MongoDB connected
+2025-06-26T13:46:26.296Z info: Server is running on port 5002
+2025-06-26T13:46:26.298Z info: Socket.IO connection status: Connected
+2025-06-26T13:46:26.900Z info: MongoDB connected
+2025-06-26T13:46:41.066Z info: POST /api/consignment - 200
+2025-06-26T13:47:59.458Z info: Server is running on port 5002
+2025-06-26T13:47:59.460Z info: Socket.IO connection status: Connected
+2025-06-26T13:48:00.206Z info: MongoDB connected
+2025-06-26T13:48:02.695Z info: Server is running on port 5002
+2025-06-26T13:48:02.697Z info: Socket.IO connection status: Connected
+2025-06-26T13:48:03.427Z info: MongoDB connected
+2025-06-26T13:48:05.489Z info: POST /api/consignment - 200
+2025-06-26T13:48:38.984Z info: Server is running on port 5002
+2025-06-26T13:48:38.987Z info: Socket.IO connection status: Connected
+2025-06-26T13:48:39.327Z info: POST /api/consignment - 200
+2025-06-26T13:48:39.800Z info: MongoDB connected
+2025-06-26T13:48:57.883Z info: Server is running on port 5002
+2025-06-26T13:48:57.885Z info: Socket.IO connection status: Connected
+2025-06-26T13:49:00.342Z info: Server is running on port 5002
+2025-06-26T13:49:00.345Z info: Socket.IO connection status: Connected
+2025-06-26T13:49:01.367Z info: MongoDB connected
+2025-06-26T13:49:03.735Z info: Server is running on port 5002
+2025-06-26T13:49:03.738Z info: Socket.IO connection status: Connected
+2025-06-26T13:49:04.548Z info: MongoDB connected
+2025-06-26T13:49:06.443Z info: POST /api/consignment - 200
+2025-06-26T13:49:46.442Z info: Server is running on port 5002
+2025-06-26T13:49:46.449Z info: Socket.IO connection status: Connected
+2025-06-26T13:49:47.572Z info: MongoDB connected
+2025-06-26T13:49:52.221Z info: Server is running on port 5002
+2025-06-26T13:49:52.223Z info: Socket.IO connection status: Connected
+2025-06-26T13:49:53.006Z info: MongoDB connected
+2025-06-26T13:50:01.301Z info: POST /api/consignment - 200
+2025-06-26T13:52:01.399Z info: Server is running on port 5002
+2025-06-26T13:52:01.402Z info: Socket.IO connection status: Connected
+2025-06-26T13:52:02.891Z info: Server is running on port 5002
+2025-06-26T13:52:02.894Z info: Socket.IO connection status: Connected
+2025-06-26T13:52:03.638Z info: MongoDB connected
+2025-06-26T13:52:13.065Z info: Server is running on port 5002
+2025-06-26T13:52:13.068Z info: Socket.IO connection status: Connected
+2025-06-26T13:52:13.800Z info: MongoDB connected
+2025-06-26T13:52:39.312Z info: Server is running on port 5002
+2025-06-26T13:52:39.314Z info: Socket.IO connection status: Connected
+2025-06-26T13:52:40.387Z info: MongoDB connected
+2025-06-26T13:53:42.885Z info: POST /api/consignment - 200
+2025-06-26T13:53:55.459Z info: Server is running on port 5002
+2025-06-26T13:53:55.461Z info: Socket.IO connection status: Connected
+2025-06-26T13:53:56.449Z info: MongoDB connected
+2025-06-26T13:54:07.995Z info: Server is running on port 5002
+2025-06-26T13:54:07.998Z info: Socket.IO connection status: Connected
+2025-06-26T13:54:08.705Z info: MongoDB connected
+2025-06-26T13:54:19.662Z info: Server is running on port 5002
+2025-06-26T13:54:19.665Z info: Socket.IO connection status: Connected
+2025-06-26T13:54:20.913Z info: MongoDB connected
+2025-06-26T13:54:27.636Z info: Server is running on port 5002
+2025-06-26T13:54:27.639Z info: Socket.IO connection status: Connected
+2025-06-26T13:54:28.382Z info: MongoDB connected
+2025-06-26T13:54:37.484Z info: Server is running on port 5002
+2025-06-26T13:54:37.486Z info: Socket.IO connection status: Connected
+2025-06-26T13:54:38.657Z info: MongoDB connected
+2025-06-26T13:54:42.186Z info: Server is running on port 5002
+2025-06-26T13:54:42.189Z info: Socket.IO connection status: Connected
+2025-06-26T13:54:42.884Z info: MongoDB connected
+2025-06-26T13:54:46.840Z info: Server is running on port 5002
+2025-06-26T13:54:46.843Z info: Socket.IO connection status: Connected
+2025-06-26T13:54:47.625Z info: MongoDB connected
+2025-06-26T13:54:47.763Z info: POST /api/consignment - 200
+2025-06-26T13:55:27.405Z info: POST /api/consignment - 200
+2025-06-26T13:56:26.669Z info: Server is running on port 5002
+2025-06-26T13:56:26.672Z info: Socket.IO connection status: Connected
+2025-06-26T13:56:27.588Z info: MongoDB connected
+2025-06-26T13:56:30.198Z info: POST /api/consignment - 200
+2025-06-26T13:57:01.224Z info: Server is running on port 5002
+2025-06-26T13:57:01.228Z info: Socket.IO connection status: Connected
+2025-06-26T13:57:03.231Z info: Server is running on port 5002
+2025-06-26T13:57:03.233Z info: Socket.IO connection status: Connected
+2025-06-26T13:57:04.117Z info: POST /api/consignment - 200
+2025-06-26T13:57:04.170Z info: MongoDB connected
+2025-06-26T13:57:54.304Z info: Server is running on port 5002
+2025-06-26T13:57:54.307Z info: Socket.IO connection status: Connected
+2025-06-26T13:57:55.253Z info: MongoDB connected
+2025-06-26T13:58:05.694Z info: Server is running on port 5002
+2025-06-26T13:58:05.697Z info: Socket.IO connection status: Connected
+2025-06-26T13:58:07.493Z info: Server is running on port 5002
+2025-06-26T13:58:07.496Z info: Socket.IO connection status: Connected
+2025-06-26T13:58:08.936Z info: MongoDB connected
+2025-06-26T13:58:17.127Z info: Server is running on port 5002
+2025-06-26T13:58:17.129Z info: Socket.IO connection status: Connected
+2025-06-26T13:58:17.893Z info: MongoDB connected
+2025-06-26T13:58:20.730Z info: Server is running on port 5002
+2025-06-26T13:58:20.732Z info: Socket.IO connection status: Connected
+2025-06-26T13:58:21.430Z info: MongoDB connected
+2025-06-26T13:58:48.495Z info: POST /api/consignment - 200
+2025-06-26T13:59:23.222Z info: Server is running on port 5002
+2025-06-26T13:59:23.225Z info: Socket.IO connection status: Connected
+2025-06-26T13:59:23.972Z info: MongoDB connected
+2025-06-26T14:00:56.956Z info: POST /api/consignment - 200

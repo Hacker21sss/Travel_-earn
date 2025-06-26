@@ -2,6 +2,7 @@ const { body, validationResult } = require('express-validator');
 const Consignment = require('../../consignment/model/contraveldetails');
 const mapservice = require('../../service/mapservice');
 const userprofiles = require('../../user/model/Profile');
+const imagekit = require('../../user/controller/imagekit');
 
 const Traveldetails = require('../../user/model/traveldetails');
 const fare = require('../../service/price.service');
@@ -41,10 +42,6 @@ const validateConsignment = [
   body('Description').notEmpty().withMessage('Description is required'),
   body('weight').isNumeric().withMessage('Weight must be a number'),
   body('category').isIn(['document', 'nondocument']).withMessage('Category must be either "document" or "nondocument"'),
-  body('dimensions.length').isNumeric().withMessage('Length must be a number'),
-  body('dimensions.breadth').isNumeric().withMessage('Breadth must be a number'),
-  body('dimensions.height').isNumeric().withMessage('Height must be a number'),
-  body('dimensions.unit').isIn(['cm', 'inch']).withMessage('Unit must be either "cm" or "inch"'),
   body('dateOfSending').isISO8601().toDate().withMessage('Valid date of sending is required'),
   body('durationAtEndPoint').notEmpty().withMessage('Duration at end point is required'),
 ];
@@ -75,8 +72,10 @@ module.exports = {
         dimensions,
         dateOfSending,
         durationAtEndPoint,
-
+        handleWithCare,
+        specialRequest
       } = req.body;
+      
       console.log(req.body)
       const currentDate = new Date();
       const sendingDate = new Date(dateOfSending);
@@ -113,84 +112,52 @@ module.exports = {
         return res.status(400).json({ message: 'Invalid distance received from map service' });
       }
 
-      //  const calculateWeightFromDimensions = (length, width, height) => {
-      //     if (!length || !width || !height) {
-      //       console.error("Dimensions are required");
-      //       return null;
-      //     }
-      //     if (length < 0 || width < 0 || height < 0) {
-      //       console.error("Invalid dimensions provided");
-      //       return null;
-      //     }
-      //     const dimensional1Weight = (length * width * height) / 5000;
-      //     return dimensional1Weight;
-      //   };
-
-      //   // Ensure weight is a valid number
-      //   // let userWeight = parseFloat(weight) || 0;
-
-      //   // Calculate dimensional weight if dimensions are provided
-      //   let dimensionalWeight = 0;
-      //   if (dimensions && dimensions.breadth && dimensions.length && dimensions.height) {
-      //     const calculatedWeight = calculateWeightFromDimensions(
-      //       parseFloat(dimensions.length),
-      //       parseFloat(dimensions.width),
-      //       parseFloat(dimensions.height)
-      //     );
-      //     if (calculatedWeight !== null) {
-      //       dimensionalWeight = parseFloat(calculatedWeight.toFixed(2));
-      //     }
-      //   }
-
-      //   // Use the higher weight for fare calculation
-      //   const finalWeight = Math.max(userWeight, dimensionalWeight);
-      //   console.log("User Weight:", userWeight);
-      //   console.log("Dimensional Weight:", dimensionalWeight);
-      //   console.log("Final Weight:", finalWeight);
-
-
-      // // Ensure weight is always a valid number
-      // let finalWeight = parseFloat(weight) || 0; // Convert `weight` to a number
-
-      // // Check if dimensions exist before calculating weight
-      // if (dimensions && dimensions.length && dimensions.width && dimensions.height) {
-      //     const calculatedWeight = calculateWeightFromDimensions(
-      //         parseFloat(dimensions.length), 
-      //         parseFloat(dimensions.width), 
-      //         parseFloat(dimensions.height)
-      //     );
-
-      //     if (calculatedWeight !== null) {
-      //         finalWeight = parseFloat(calculatedWeight.toFixed(2)); // Ensure it's a valid number
-      //     }
-      // }
-
-      // console.log("Final Weight:", finalWeight);
-
-
-      // if (isNaN(finalWeight)) {
-      //     finalWeight = 0;  
-      // }
-
-
-      // const trainFare = fare.calculateFare(finalWeight, distanceValue, "Train");
-      // const airplaneFare = fare.calculateFare(finalWeight, distanceValue, "Aeroplane");
-
-      // console.log("Train Fare:", trainFare);
-      // console.log("Airplane Fare:", airplaneFare);
-
-      const earning = await fare.calculateFare(weight, distanceValue, travelMode, dimensions?.length, dimensions?.height, dimensions?.breadth)
+      const parsedDimensions = JSON.parse(dimensions);
+      console.log("Dimensions", parsedDimensions)
+      console.log("Dimensions:", parsedDimensions.length, parsedDimensions.height, parsedDimensions.breadth)
+      const earning = await fare.calculateFare(weight, distanceValue, travelMode, parsedDimensions?.length, parsedDimensions?.height, parsedDimensions?.breadth)
 
       if (!earning) {
         return res.status(400).json({ message: 'Unable to fetch fare' });
       }
+      
       const consignmentId = uuidv4();
-      let image = null;
-      if (req.file) {
-        image = `/uploads/${req.file.filename}`; // Relative path for accessing image
+      let imageUrls = [];
+
+      // Handle multiple image uploads
+      if (req.files && req.files.length > 0) {
+        try {
+          for (let i = 0; i < req.files.length; i++) {
+            const file = req.files[i];
+            
+            // Upload the image to ImageKit
+            const uploadResponse = await imagekit.upload({
+              file: file.buffer,
+              fileName: `${consignmentId}_parcel_image_${i}`,
+              useUniqueFileName: true,
+            });
+
+            imageUrls.push(uploadResponse.url);
+          }
+        } catch (uploadError) {
+          console.error("File upload error:", uploadError);
+          return res.status(400).json({
+            message: "Error uploading images",
+            error: uploadError.message,
+          });
+        }
       }
 
-
+      // Parse dimensions if it's a JSON string
+      // let parsedDimensions = dimensions;
+      // if (typeof dimensions === 'string') {
+      //   try {
+      //     parsedDimensions = JSON.parse(dimensions);
+      //   } catch (error) {
+      //     console.error("Error parsing dimensions:", error);
+      //     return res.status(400).json({ message: 'Invalid dimensions format' });
+      //   }
+      // }
 
       const newConsignment = new Consignment({
         phoneNumber,
@@ -210,40 +177,33 @@ module.exports = {
         Description,
         weight,
         category,
-        dimensions,
+        dimensions: parsedDimensions,
         dateOfSending,
         durationAtEndPoint,
         consignmentId,
         distance: distance.text,
         duration: duration.text,
-        images: image,
+        images: imageUrls,
         earning: earning,
-        // sotp,
-        // rotp
-
-        // trainfare: trainFare,
-        // aeroplanefare: airplaneFare,
+        handleWithCare: handleWithCare === 'true' || handleWithCare === true,
+        specialRequest: specialRequest || null,
       });
+      
       const consignmenthistory = new ConsignmentRequestHistory({
         ownerPhoneNumber: phoneNumber,
         senderName: username,
-
-
         senderAddress: startinglocation,
         receiverAddress: goinglocation,
-
         receiverName: recievername,
         receiverPhoneNumber: recieverphone,
         description: Description,
         weight: weight,
         category: category,
-        dimensions: JSON.stringify(dimensions),
-
+        dimensions: JSON.stringify(parsedDimensions),
         consignmentId: consignmentId,
         distance: distance.text,
-
-
       });
+      
       await consignmenthistory.save();
       console.log(consignmenthistory);
       console.log(newConsignment)

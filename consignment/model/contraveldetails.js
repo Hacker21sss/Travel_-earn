@@ -44,10 +44,10 @@ const DriverSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  images: {
+  images: [{
     type: String,
-    default:null // Store image URLs or file paths
-  },
+    default: [] // Store array of image URLs
+  }],
   consignmentId:{type:String},
   earning:{type:String},
   distance:{type:String},

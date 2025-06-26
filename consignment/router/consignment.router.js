@@ -13,8 +13,12 @@ const upload=require('../../middleware/upload')
 //     // Return the fetched consignment details as a response
 // });
 
-// POST route to create a new consignment
-router.post('/consignment', consignment.createConsignment)
+// POST route to create a new consignment with multiple image uploads
+router.post('/consignment', 
+  upload.array('images', 5), // Allow up to 5 images
+  consignment.validateConsignment,
+  consignment.createConsignment
+)
 router.get('/getdetails',consignment.getConsignmentsByDate);
 router.post('/request-for-consignment',consignment.getconsignment);
 router.get('/get-consignment/:phoneNumber',consignment.getallconsignment);
