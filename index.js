@@ -171,7 +171,7 @@ app.use((err, req, res, next) => {
 const PORT = process.env.PORT || 7755;
 
 // Starting the consignment job
-// startConsignmentCronJob();
+startConsignmentCronJob();
 
 server.listen(PORT, () => {
     logger.info(`Server is running on port ${PORT}`);

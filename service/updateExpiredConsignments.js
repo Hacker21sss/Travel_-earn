@@ -44,7 +44,7 @@ const updateConsignments = async () => {
 }
 
 module.exports.startConsignmentCronJob = () => {
-    cron.schedule('0 * * * * *', async () => {
+    cron.schedule('0 0 0 * * *', async () => {
         console.log("Running cron job")
         await updateConsignments();
     })
