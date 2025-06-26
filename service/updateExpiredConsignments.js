@@ -14,7 +14,7 @@ const updateConsignments = async () => {
         console.log("Expired consignments : ", expiredConsignments);
 
        
-        const expiredConsignmentIds = expiredConsignments.map(c => c._id);
+        const expiredConsignmentIds = expiredConsignments.map(c => c.consignmentId);
 
         
         const [consignmentUpdateResult, historyUpdateResult] = await Promise.all([await consignment.updateMany(
@@ -47,5 +47,7 @@ module.exports.startConsignmentCronJob = () => {
     cron.schedule('0 0 0 * * *', async () => {
         console.log("Running cron job")
         await updateConsignments();
+    },{
+        timezone: 'Asia/Kolkata'
     })
 }
