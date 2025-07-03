@@ -121,6 +121,7 @@ module.exports.calculateFare = async (weight, distance, travelMode, length, heig
         console.log("Fare configuration not found in database.");
         return "Error: Fare configuration not found";
     }
+    console.log(fareConfig);
 
     let weightFare = 0;
     let distanceFare = 0;

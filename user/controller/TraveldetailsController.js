@@ -672,16 +672,16 @@ module.exports.booking = async (req, res) => {
         },
       });
 
-      return res.status(200).json({
-        message: "Success",
-        booking: {
-          phoneNumber,
-          rideId,
-          expectedEarning,
-          travelId: ride.travelId
-        },
-      });
     }
+    return res.status(200).json({
+      message: "Success",
+      booking: {
+        phoneNumber,
+        rideId,
+        expectedEarning,
+        travelId: ride.travelId
+      },
+    });
 
   } catch (error) {
     console.error("Booking error:", error);

@@ -8880,3 +8880,114 @@
 2025-06-26T20:54:44.435Z info: GET /map/getdistanceandcoordinate?origin=Hodal,%20Haryana,%20India&destination=Palwal,%20Haryana,%20India - 200
 2025-06-26T20:54:48.443Z info: GET /n/getnotification/travel/+918920582438 - 200
 2025-06-26T20:54:48.562Z info: GET /n/getnotification/consignment/+918920582438 - 200
+2025-06-26T21:09:59.767Z info: Server is running on port 5002
+2025-06-26T21:09:59.768Z info: Socket.IO connection status: Connected
+2025-06-26T21:10:00.596Z info: MongoDB connected
+2025-06-26T21:10:07.440Z info: Server is running on port 5002
+2025-06-26T21:10:07.441Z info: Socket.IO connection status: Connected
+2025-06-26T21:10:08.072Z info: MongoDB connected
+2025-06-26T21:10:21.105Z info: Server is running on port 5002
+2025-06-26T21:10:21.106Z info: Socket.IO connection status: Connected
+2025-06-26T21:10:21.924Z info: MongoDB connected
+2025-06-26T21:11:37.442Z info: Server is running on port 5002
+2025-06-26T21:11:37.443Z info: Socket.IO connection status: Connected
+2025-06-26T21:11:38.311Z info: MongoDB connected
+2025-07-01T10:40:06.148Z info: Server is running on port 5002
+2025-07-01T10:40:06.149Z info: Socket.IO connection status: Connected
+2025-07-01T10:40:06.584Z info: MongoDB connected
+2025-07-01T10:42:35.518Z info: Server is running on port 5002
+2025-07-01T10:42:35.520Z info: Socket.IO connection status: Connected
+2025-07-01T10:42:35.961Z info: MongoDB connected
+2025-07-01T10:45:01.811Z info: Server is running on port 5002
+2025-07-01T10:45:01.813Z info: Socket.IO connection status: Connected
+2025-07-01T10:45:02.272Z info: MongoDB connected
+2025-07-01T10:45:09.926Z info: Server is running on port 5002
+2025-07-01T10:45:09.927Z info: Socket.IO connection status: Connected
+2025-07-01T10:45:10.682Z info: MongoDB connected
+2025-07-01T10:45:14.356Z info: Server is running on port 5002
+2025-07-01T10:45:14.358Z info: Socket.IO connection status: Connected
+2025-07-01T10:45:14.828Z info: MongoDB connected
+2025-07-01T10:45:18.098Z info: Server is running on port 5002
+2025-07-01T10:45:18.099Z info: Socket.IO connection status: Connected
+2025-07-01T10:45:19.970Z info: Server is running on port 5002
+2025-07-01T10:45:19.972Z info: Socket.IO connection status: Connected
+2025-07-01T10:45:20.465Z info: MongoDB connected
+2025-07-01T10:46:21.890Z info: GET /map/get-coordinates?address=Goa,+India - 200
+2025-07-01T10:46:21.911Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-01T10:46:25.011Z info: GET /map/getdistanceandcoordinate?origin=Delhi,%20India&destination=23,%20Bandoli,%20Goa%20403706,%20India - 200
+2025-07-01T10:47:34.002Z info: POST /api/consignment - 200
+2025-07-01T10:48:18.150Z info: POST /api/consignment - 200
+2025-07-01T10:50:15.448Z info: Server is running on port 5002
+2025-07-01T10:50:15.450Z info: Socket.IO connection status: Connected
+2025-07-01T10:50:15.982Z info: MongoDB connected
+2025-07-01T10:50:28.416Z info: GET /api/history/+918295525360 - 200
+2025-07-01T10:50:30.308Z info: GET /api/consignment/5eedfc9f-c2e6-4495-ae5f-b703d974c726 - 200
+2025-07-01T10:50:30.323Z info: GET /api/getall/+918295525360?phoneNumber=%2B918295525360 - 200
+2025-07-01T10:51:03.298Z info: GET /map/get-coordinates?address=Faridabad,+Haryana,+India - 200
+2025-07-01T10:51:03.315Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-01T10:51:05.537Z info: GET /map/getdistanceandcoordinate?origin=Hodal,%20Haryana,%20India&destination=467,%20ADB%20PWD%20Colony,%20Sector%2010%20Housing%20Board%20Colony,%20Faridabad,%20Haryana%20121002,%20India - 200
+2025-07-01T10:52:02.264Z info: POST /api/consignment - 200
+2025-07-01T10:52:05.386Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-07-01T10:52:05.450Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-07-01T10:54:58.367Z info: GET /n/getnotification/travel/+919996293360 - 200
+2025-07-01T10:54:58.392Z info: A new client connected: RmXNn-7IPEf66T0bAAAB
+2025-07-01T10:54:58.438Z info: Socket ID RmXNn-7IPEf66T0bAAAB associated with phoneNumber +919996293360
+2025-07-01T10:54:58.439Z info: GET /n/getnotification/consignment/+919996293360 - 200
+2025-07-01T10:55:03.218Z info: GET /n/getnotification/travel/+919996293360 - 200
+2025-07-01T10:55:03.294Z info: GET /n/getnotification/consignment/+919996293360 - 200
+2025-07-01T10:56:05.676Z info: Client disconnected: RmXNn-7IPEf66T0bAAAB
+2025-07-01T10:56:05.709Z info: Socket ID cleared for phoneNumber +919996293360
+2025-07-01T10:56:09.257Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Pune,%20Maharashtra,%20India&date=01/07/2025&phoneNumber=+918295525360 - 200
+2025-07-01T10:56:09.258Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Pune,%20Maharashtra,%20India&date=2025-07-01&phoneNumber=+918295525360 - 200
+2025-07-01T10:56:10.445Z info: GET /api/getdetails?leavingLocation=Kolkata,%20West%20Bengal,%20India&goingLocation=Pune,%20Maharashtra,%20India&date=2025-07-01&phoneNumber=+918295525360 - 200
+2025-07-01T10:57:38.695Z info: GET /n/getnotification/travel/+919996293360 - 200
+2025-07-01T10:57:38.718Z info: A new client connected: f8HXzeMJnClpf6-fAAAD
+2025-07-01T10:57:38.761Z info: Socket ID f8HXzeMJnClpf6-fAAAD associated with phoneNumber +919996293360
+2025-07-01T10:57:38.778Z info: GET /n/getnotification/consignment/+919996293360 - 200
+2025-07-01T10:57:50.683Z info: GET /api/getdetails?leavingLocation=Hodal,%20Haryana,%20India&goingLocation=Faridabad,%20Haryana,%20India&date=2025-07-01&phoneNumber=+919996293360 - 200
+2025-07-01T10:57:50.692Z info: GET /api/getdetails?leavingLocation=Hodal,%20Haryana,%20India&goingLocation=Faridabad,%20Haryana,%20India&date=01/07/2025&phoneNumber=+919996293360 - 200
+2025-07-01T10:57:52.269Z info: GET /api/getdetails?leavingLocation=Hodal,%20Haryana,%20India&goingLocation=Faridabad,%20Haryana,%20India&date=2025-07-01&phoneNumber=+919996293360 - 200
+2025-07-01T10:59:24.559Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-07-01T10:59:24.608Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-07-01T10:59:26.296Z info: GET /api/history/+918295525360 - 200
+2025-07-01T10:59:28.065Z info: GET /api/consignment/7c88cb2a-2e6c-4425-ad0c-61792777d6ea - 200
+2025-07-01T10:59:28.074Z info: GET /api/getall/+918295525360?phoneNumber=%2B918295525360 - 200
+2025-07-01T10:59:31.845Z info: GET /api/consignment/7c88cb2a-2e6c-4425-ad0c-61792777d6ea - 200
+2025-07-01T10:59:31.845Z info: GET /api/getall/+918295525360?phoneNumber=%2B918295525360 - 200
+2025-07-01T10:59:38.053Z info: GET /api/consignment/5eedfc9f-c2e6-4495-ae5f-b703d974c726 - 200
+2025-07-01T10:59:38.056Z info: GET /api/getall/+918295525360?phoneNumber=%2B918295525360 - 200
+2025-07-01T10:59:51.456Z info: GET /api/consignment/7c88cb2a-2e6c-4425-ad0c-61792777d6ea - 200
+2025-07-01T10:59:51.458Z info: GET /api/getall/+918295525360?phoneNumber=%2B918295525360 - 200
+2025-07-01T11:06:30.249Z info: Client disconnected: f8HXzeMJnClpf6-fAAAD
+2025-07-01T11:06:30.292Z info: Socket ID cleared for phoneNumber +919996293360
+2025-07-02T09:20:11.171Z info: Server is running on port 5002
+2025-07-02T09:20:11.172Z info: Socket.IO connection status: Connected
+2025-07-02T09:20:11.878Z info: MongoDB connected
+2025-07-02T09:21:58.651Z info: Server is running on port 5002
+2025-07-02T09:21:58.653Z info: Socket.IO connection status: Connected
+2025-07-02T09:21:59.383Z info: MongoDB connected
+2025-07-02T09:23:10.016Z info: Server is running on port 5002
+2025-07-02T09:23:10.017Z info: Socket.IO connection status: Connected
+2025-07-02T09:23:10.586Z info: MongoDB connected
+2025-07-02T09:26:33.397Z info: Server is running on port 5002
+2025-07-02T09:26:33.398Z info: Socket.IO connection status: Connected
+2025-07-02T09:26:33.942Z info: MongoDB connected
+2025-07-02T09:26:34.145Z info: POST /t/booking-request - 200
+2025-07-02T09:28:06.125Z info: Server is running on port 5002
+2025-07-02T09:28:06.127Z info: Socket.IO connection status: Connected
+2025-07-02T09:28:06.413Z info: POST /t/booking-request - 200
+2025-07-02T09:28:06.865Z info: MongoDB connected
+2025-07-02T09:28:36.741Z info: Server is running on port 5002
+2025-07-02T09:28:36.743Z info: Socket.IO connection status: Connected
+2025-07-02T09:28:38.060Z info: MongoDB connected
+2025-07-02T09:29:22.452Z info: Server is running on port 5002
+2025-07-02T09:29:22.453Z info: Socket.IO connection status: Connected
+2025-07-02T09:29:23.069Z info: MongoDB connected
+2025-07-02T09:29:41.727Z info: Server is running on port 5002
+2025-07-02T09:29:41.728Z info: Socket.IO connection status: Connected
+2025-07-02T09:29:42.411Z info: MongoDB connected
+2025-07-02T09:29:51.824Z info: Server is running on port 5002
+2025-07-02T09:29:51.826Z info: Socket.IO connection status: Connected
+2025-07-02T09:29:53.642Z info: Server is running on port 5002
+2025-07-02T09:29:53.643Z info: Socket.IO connection status: Connected
+2025-07-02T09:29:54.300Z info: MongoDB connected
