@@ -344,6 +344,21 @@ module.exports.getConsignmentsByDate = async (req, res) => {
       return res.status(400).json({ message: "Leaving location, going location, and date are required" });
     }
 
+     // Normalize phoneNumber: Ensure it matches the stored format (+918927473643)
+     let cleaned = String(phoneNumber).replace(/\D/g, "").trim();
+     if (cleaned.length === 10) {
+       cleaned = `+91${cleaned}`;
+     } else {
+       cleaned = `+${cleaned}`;
+     }
+     const normalizedPhoneNumber = cleaned
+
+    // First, find the user by phone number
+    const user = await userprofiles.findOne({ phoneNumber: normalizedPhoneNumber });
+    if (!user) {
+      return res.status(404).json({ message: "User not found" });
+    }
+
     const searchDate = new Date(date);
     const today = new Date();
 
@@ -354,6 +369,27 @@ module.exports.getConsignmentsByDate = async (req, res) => {
     }
     if (searchDate < today.setHours(0, 0, 0, 0)) {
       return res.status(404).json({ message: "No consignments available the dates." });
+    }
+
+    // Search for user's travel on the specified date
+    const userTravel = await Traveldetails.findOne({
+      phoneNumber: normalizedPhoneNumber,
+      travelDate: {
+        $gte: new Date(searchDate.setHours(0, 0, 0, 0)),
+        $lt: new Date(searchDate.setHours(23, 59, 59, 999))
+      }
+    }).sort({ updatedAt: -1 });
+
+    if (!userTravel) {
+      return res.status(404).json({ message: "No travel found for the specified date. Please publish your travel first." });
+    }
+
+    // Validate travel mode
+    const validModes = ["train", "airplane", "car"];
+    const travelMode = userTravel.travelMode ? userTravel.travelMode.toLowerCase().trim() : null;
+
+    if (!validModes.includes(travelMode)) {
+      return res.status(400).json({ message: "Invalid Travel Mode! Please enter 'train', 'airplane', or 'car'." });
     }
 
     // Fetch coordinates from mapservice
@@ -367,14 +403,7 @@ module.exports.getConsignmentsByDate = async (req, res) => {
     console.log("Leaving Coordinates:", leavingCoords);
     console.log("Going Coordinates:", goingCoords);
 
-    // Normalize phoneNumber: Ensure it matches the stored format (+918927473643)
-    let cleaned = String(phoneNumber).replace(/\D/g, "").trim();
-    if (cleaned.length === 10) {
-      cleaned = `+91${cleaned}`;
-    } else {
-      cleaned = `+${cleaned}`;
-    }
-    const normalizedPhoneNumber = cleaned
+   
 
     const radiusInMeters = 10 * 1000; // 10km
 
@@ -400,15 +429,69 @@ module.exports.getConsignmentsByDate = async (req, res) => {
       },
       phoneNumber: { $ne: normalizedPhoneNumber }
     });
-
+    console.log("availableRides", availableRides)
     if (!availableRides.length) {
       return res.status(404).json({ message: "No consignments found for the given date and locations." });
     }
 
-    // Return full consignment data without creating separate arrays
+    // Calculate actual price for each consignment using .map
+    const consignmentsWithPrice = await Promise.all(availableRides.map(async (consignment) => {
+      try {
+        // Extract weight and distance from consignment
+        const weight = parseFloat(consignment.weight?.toString().replace(/[^\d.]/g, ""));
+        const distance = parseFloat(consignment.distance?.toString().replace(/[^\d.]/g, ""));
+
+        if (isNaN(weight) || isNaN(distance)) {
+          console.log(`Invalid weight or distance for consignment ${consignment.consignmentId}`);
+          return {
+            ...consignment.toObject(),
+            calculatedPrice: null,
+            priceError: "Invalid weight or distance"
+          };
+        }
+
+        // Extract dimensions if available
+        const dimensions = consignment.dimensions;
+        const length = dimensions?.length;
+        const height = dimensions?.height;
+        const breadth = dimensions?.breadth;
+
+        // Calculate fare using the fare service
+        const calculatedPrice = await fare.calculateFare(
+          weight, 
+          distance, 
+          travelMode, 
+          length, 
+          height, 
+          breadth
+        );
+
+        return {
+          ...consignment.toObject(),
+          calculatedPrice: calculatedPrice,
+          userTravelMode: travelMode,
+          userTravelId: userTravel.travelId
+        };
+
+      } catch (error) {
+        console.error(`Error calculating price for consignment ${consignment.consignmentId}:`, error);
+        return {
+          ...consignment.toObject(),
+          calculatedPrice: null,
+          priceError: error.message
+        };
+      }
+    }));
+
+    // Return consignments with calculated prices
     res.status(200).json({
-      message: "Consignments found",
-      consignments: availableRides
+      message: "Consignments found with calculated prices",
+      consignments: consignmentsWithPrice,
+      userTravelDetails: {
+        travelMode: travelMode,
+        travelId: userTravel.travelId,
+        travelDate: userTravel.travelDate
+      }
     });
 
   } catch (error) {

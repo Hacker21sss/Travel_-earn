@@ -424,9 +424,81 @@ exports.searchRides = async (req, res) => {
     }
     console.log("Estimated fare:", estimatedFare);
 
+    // Search for user's consignment to calculate correct price
+    let userConsignment = null;
+    let calculatedPrice = null;
+    
+    if (phoneNumber) {
+      try {
+        // Search for consignment created on the given date
+        userConsignment = await consignmentData.findOne({
+          phoneNumber: phoneNumber,
+          dateOfSending: { $gte: startOfDay, $lt: endOfDay }
+        }).sort({ createdAt: -1 });
+
+        if (userConsignment) {
+          console.log("Found user consignment:", {
+            consignmentId: userConsignment?.consignmentId,
+            weight: userConsignment?.weight,
+            dimensions: userConsignment?.dimensions,
+            distance: userConsignment?.distance
+          });
+
+          // Extract weight and distance from consignment
+          const weight = parseFloat(userConsignment.weight?.toString().replace(/[^\d.]/g, ""));
+          const consignmentDistance = parseFloat(userConsignment.distance?.toString().replace(/[^\d.]/g, ""));
+
+          if (!isNaN(weight) && !isNaN(consignmentDistance)) {
+            // Extract dimensions if available
+            const dimensions = userConsignment.dimensions;
+            const length = dimensions?.length ? parseFloat(dimensions.length) : null;
+            const height = dimensions?.height ? parseFloat(dimensions.height) : null;
+            const breadth = dimensions?.breadth ? parseFloat(dimensions.breadth) : null;
+
+            // Calculate fare using the fare service with consignment data
+            calculatedPrice = await fare.calculateFare(
+              weight, 
+              consignmentDistance, 
+              travelMode || "car", 
+              length, 
+              height, 
+              breadth
+            );
+
+            console.log("Calculated price from consignment:", {
+              weight,
+              distance: consignmentDistance,
+              travelMode: travelMode || "car",
+              dimensions: { length, height, breadth },
+              calculatedPrice
+            });
+          } else {
+            console.log("Invalid weight or distance in consignment, using estimated fare");
+            calculatedPrice = estimatedFare;
+          }
+        } else {
+          console.log("No consignment found for user on the given date, using estimated fare");
+          calculatedPrice = estimatedFare;
+        }
+      } catch (error) {
+        console.error("Error calculating price from consignment:", error);
+        calculatedPrice = estimatedFare;
+      }
+    } else {
+      calculatedPrice = estimatedFare;
+    }
+
     res.status(200).json({
       availableRides: ridesWithProfile,
       estimatedFare,
+      calculatedPrice,
+      userConsignment: userConsignment ? {
+        consignmentId: userConsignment.consignmentId,
+        weight: userConsignment.weight,
+        dimensions: userConsignment.dimensions,
+        distance: userConsignment.distance,
+        dateOfSending: userConsignment.dateOfSending
+      } : null,
       searchParams: {
         leavingLocation,
         goingLocation,
