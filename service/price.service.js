@@ -181,7 +181,7 @@ module.exports.calculateFare = async (weight, distance, travelMode, length, heig
     let senderTotalPay = (totalFare + TE) * (1 + margin);
     console.log(`Final Amount (Sender Pays): ${senderTotalPay.toFixed(2)} rupees`);
 
-    return senderTotalPay.toFixed(2);
+    return {senderTotalPay: senderTotalPay.toFixed(2), totalFare: totalFare.toFixed(2)};
 };
 
 
