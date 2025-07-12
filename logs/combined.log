@@ -9873,3 +9873,226 @@
 2025-07-11T14:43:44.155Z info: GET /address/getaddress/+918295525360 - 200
 2025-07-11T14:43:52.611Z info: Client disconnected: lNh8UL4Z80tH4VFOAAAB
 2025-07-11T14:43:52.653Z info: Socket ID cleared for phoneNumber +918295525360
+2025-07-12T12:41:24.306Z info: Server is running on port 5002
+2025-07-12T12:41:24.309Z info: Socket.IO connection status: Connected
+2025-07-12T12:41:25.126Z info: MongoDB connected
+2025-07-12T12:42:13.334Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-07-12T12:42:13.352Z info: A new client connected: sRhB45igRAVpC2vYAAAB
+2025-07-12T12:42:13.410Z info: Socket ID sRhB45igRAVpC2vYAAAB associated with phoneNumber +918295525360
+2025-07-12T12:42:13.426Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-07-12T12:42:18.872Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T12:42:23.027Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T12:42:24.709Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T12:42:59.424Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T12:43:35.252Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T12:43:36.940Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T12:43:42.086Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T12:43:44.641Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T12:43:45.964Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T12:43:45.972Z info: GET /map/get-coordinates?address=35%2F8,+India+Gate,+West+,+Rajpath,+J67M%2B36V,+India+Gate,+New+Delhi,+Delhi+110001,+India%0ANew+Delhi,+Delhi - 200
+2025-07-12T12:44:37.743Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T12:44:41.656Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T12:44:47.005Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T12:44:49.186Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T12:44:49.190Z info: GET /map/get-coordinates?address=35%2F8+India+Gate+West++Rajpath,+J67M%2B36V,+India+Gate,+New+Delhi,+Delhi+110001,+India%0ANew+Delhi+Delhi - 200
+2025-07-12T12:48:15.904Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T12:48:18.534Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T12:50:30.406Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T12:50:35.532Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T12:51:32.562Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T12:53:27.108Z info: POST /address/address - 200
+2025-07-12T12:53:29.369Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T12:53:35.742Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T12:56:19.491Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T12:57:15.903Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T12:57:17.490Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T12:57:27.079Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T13:12:52.704Z info: POST /address/address - 200
+2025-07-12T13:12:54.840Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T13:13:15.188Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T13:16:09.009Z info: Client disconnected: sRhB45igRAVpC2vYAAAB
+2025-07-12T13:16:09.056Z info: Socket ID cleared for phoneNumber +918295525360
+2025-07-12T13:16:20.564Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-07-12T13:16:20.573Z info: A new client connected: dTw5ou6cuMv09YG5AAAD
+2025-07-12T13:16:20.604Z info: Socket ID dTw5ou6cuMv09YG5AAAD associated with phoneNumber +918295525360
+2025-07-12T13:16:20.649Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-07-12T13:16:24.070Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T13:16:41.840Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T13:17:29.432Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T13:17:57.115Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T13:19:41.351Z info: Client disconnected: dTw5ou6cuMv09YG5AAAD
+2025-07-12T13:19:41.396Z info: Socket ID cleared for phoneNumber +918295525360
+2025-07-12T13:19:43.487Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-07-12T13:19:43.509Z info: A new client connected: RvoPsxbTJqwQffzyAAAF
+2025-07-12T13:19:43.545Z info: Socket ID RvoPsxbTJqwQffzyAAAF associated with phoneNumber +918295525360
+2025-07-12T13:19:43.554Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-07-12T13:20:21.577Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T13:20:25.997Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T13:22:28.437Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T13:22:29.599Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T13:22:29.608Z info: GET /map/get-coordinates?address=35%2F8,+West+,+India+Gate,+New+Delhi,+Delhi+-+110001 - 200
+2025-07-12T13:22:52.872Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T13:22:52.874Z info: GET /map/get-coordinates?address=32%5C3,+Jangpura,+Pant+Nagar,+New+Delhi,+Delhi+110014,+India - 200
+2025-07-12T13:22:54.783Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T13:22:54.800Z info: GET /map/get-coordinates?address=32%5C3,+Jangpura,+Pant+Nagar,+New+Delhi,+Delhi+110014,+India - 200
+2025-07-12T13:40:12.806Z info: Client disconnected: RvoPsxbTJqwQffzyAAAF
+2025-07-12T13:40:12.857Z info: Socket ID cleared for phoneNumber +918295525360
+2025-07-12T13:40:19.513Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-07-12T13:40:19.526Z info: A new client connected: 3HYAYErj7RfhVN6HAAAH
+2025-07-12T13:40:19.561Z info: Socket ID 3HYAYErj7RfhVN6HAAAH associated with phoneNumber +918295525360
+2025-07-12T13:40:19.579Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-07-12T13:43:39.530Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T13:43:40.911Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T13:53:39.888Z info: Client disconnected: 3HYAYErj7RfhVN6HAAAH
+2025-07-12T13:53:39.932Z info: Socket ID cleared for phoneNumber +918295525360
+2025-07-12T13:53:48.477Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-07-12T13:53:48.489Z info: A new client connected: EPZJnB8Dsy2d-5IuAAAJ
+2025-07-12T13:53:48.523Z info: Socket ID EPZJnB8Dsy2d-5IuAAAJ associated with phoneNumber +918295525360
+2025-07-12T13:53:48.543Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-07-12T13:53:52.239Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T13:53:54.407Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T13:54:53.131Z info: Client disconnected: EPZJnB8Dsy2d-5IuAAAJ
+2025-07-12T13:54:53.168Z info: Socket ID cleared for phoneNumber +918295525360
+2025-07-12T13:54:54.310Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-07-12T13:54:54.369Z info: A new client connected: XPdWdgUiAozj7C5BAAAL
+2025-07-12T13:54:54.386Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-07-12T13:54:54.404Z info: Socket ID XPdWdgUiAozj7C5BAAAL associated with phoneNumber +918295525360
+2025-07-12T13:55:25.128Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T13:55:27.972Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T13:55:31.013Z info: Client disconnected: XPdWdgUiAozj7C5BAAAL
+2025-07-12T13:55:31.047Z info: Socket ID cleared for phoneNumber +918295525360
+2025-07-12T13:55:40.457Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-07-12T13:55:40.476Z info: A new client connected: ne1os8IzbcahVVxnAAAN
+2025-07-12T13:55:40.521Z info: Socket ID ne1os8IzbcahVVxnAAAN associated with phoneNumber +918295525360
+2025-07-12T13:55:40.522Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-07-12T13:55:42.768Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T13:55:44.506Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T14:00:43.682Z info: Client disconnected: ne1os8IzbcahVVxnAAAN
+2025-07-12T14:00:43.731Z info: Socket ID cleared for phoneNumber +918295525360
+2025-07-12T14:00:58.732Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-07-12T14:00:58.739Z info: A new client connected: Sm2P6fizfnN4dLriAAAP
+2025-07-12T14:00:58.771Z info: Socket ID Sm2P6fizfnN4dLriAAAP associated with phoneNumber +918295525360
+2025-07-12T14:00:58.800Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-07-12T14:01:00.810Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T14:01:02.960Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T14:06:57.183Z info: Client disconnected: Sm2P6fizfnN4dLriAAAP
+2025-07-12T14:06:57.225Z info: Socket ID cleared for phoneNumber +918295525360
+2025-07-12T14:07:03.481Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-07-12T14:07:03.485Z info: A new client connected: fiKVeO4SfH9CpKE3AAAR
+2025-07-12T14:07:03.516Z info: Socket ID fiKVeO4SfH9CpKE3AAAR associated with phoneNumber +918295525360
+2025-07-12T14:07:03.550Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-07-12T14:07:05.984Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T14:07:07.542Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T14:09:12.405Z info: Client disconnected: fiKVeO4SfH9CpKE3AAAR
+2025-07-12T14:09:12.452Z info: Socket ID cleared for phoneNumber +918295525360
+2025-07-12T14:13:03.985Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-07-12T14:13:04.000Z info: A new client connected: m7aKLWRjor6eHK09AAAT
+2025-07-12T14:13:04.044Z info: Socket ID m7aKLWRjor6eHK09AAAT associated with phoneNumber +918295525360
+2025-07-12T14:13:04.049Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-07-12T14:13:11.344Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T14:13:12.696Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T14:19:30.139Z info: Client disconnected: m7aKLWRjor6eHK09AAAT
+2025-07-12T14:19:30.191Z info: Socket ID cleared for phoneNumber +918295525360
+2025-07-12T14:19:35.207Z info: A new client connected: PpYSqH0B5w4Fr-XIAAAV
+2025-07-12T14:19:35.213Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-07-12T14:19:35.238Z info: Socket ID PpYSqH0B5w4Fr-XIAAAV associated with phoneNumber +918295525360
+2025-07-12T14:19:35.262Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-07-12T14:19:37.351Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T14:19:38.944Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T14:20:35.597Z info: Client disconnected: PpYSqH0B5w4Fr-XIAAAV
+2025-07-12T14:20:35.628Z info: Socket ID cleared for phoneNumber +918295525360
+2025-07-12T14:20:39.353Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-07-12T14:20:39.413Z info: A new client connected: zVe5RhFmT0q8rF3OAAAX
+2025-07-12T14:20:39.430Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-07-12T14:20:39.454Z info: Socket ID zVe5RhFmT0q8rF3OAAAX associated with phoneNumber +918295525360
+2025-07-12T14:20:41.856Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T14:20:43.597Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T14:24:34.881Z info: Client disconnected: zVe5RhFmT0q8rF3OAAAX
+2025-07-12T14:24:34.924Z info: Socket ID cleared for phoneNumber +918295525360
+2025-07-12T14:24:42.360Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-07-12T14:24:42.373Z info: A new client connected: jHV6O1Dq_GIDUZ0NAAAZ
+2025-07-12T14:24:42.416Z info: Socket ID jHV6O1Dq_GIDUZ0NAAAZ associated with phoneNumber +918295525360
+2025-07-12T14:24:42.420Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-07-12T14:25:59.140Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T14:26:00.641Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T14:32:32.005Z info: Client disconnected: jHV6O1Dq_GIDUZ0NAAAZ
+2025-07-12T14:32:32.046Z info: Socket ID cleared for phoneNumber +918295525360
+2025-07-12T14:32:53.855Z info: A new client connected: X8MXZMVuSA4XbdMbAAAb
+2025-07-12T14:32:53.862Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-07-12T14:32:53.889Z info: Socket ID X8MXZMVuSA4XbdMbAAAb associated with phoneNumber +918295525360
+2025-07-12T14:32:53.931Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-07-12T14:33:48.562Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T14:33:51.106Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T14:42:47.085Z info: Server is running on port 5002
+2025-07-12T14:42:47.086Z info: Socket.IO connection status: Connected
+2025-07-12T14:42:47.301Z info: A new client connected: CHDGkznE0T5P5RiqAAAB
+2025-07-12T14:42:47.522Z info: MongoDB connected
+2025-07-12T14:42:47.888Z info: Socket ID CHDGkznE0T5P5RiqAAAB associated with phoneNumber +918295525360
+2025-07-12T14:43:38.915Z info: Server is running on port 5002
+2025-07-12T14:43:38.915Z info: Socket.IO connection status: Connected
+2025-07-12T14:43:39.301Z info: MongoDB connected
+2025-07-12T14:43:39.420Z info: A new client connected: vu9YqIa3k18Kn8fLAAAB
+2025-07-12T14:43:39.690Z info: Socket ID vu9YqIa3k18Kn8fLAAAB associated with phoneNumber +918295525360
+2025-07-12T14:44:04.710Z info: Server is running on port 5002
+2025-07-12T14:44:04.711Z info: Socket.IO connection status: Connected
+2025-07-12T14:44:05.101Z info: MongoDB connected
+2025-07-12T14:44:06.404Z info: A new client connected: 5ZgUNhKw0biDrAeXAAAB
+2025-07-12T14:44:06.449Z info: Socket ID 5ZgUNhKw0biDrAeXAAAB associated with phoneNumber +918295525360
+2025-07-12T14:44:40.624Z info: Client disconnected: 5ZgUNhKw0biDrAeXAAAB
+2025-07-12T14:44:40.657Z info: Socket ID cleared for phoneNumber +918295525360
+2025-07-12T14:44:50.655Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-07-12T14:44:50.667Z info: A new client connected: LaC5GdycT5q_WI0VAAAD
+2025-07-12T14:44:50.701Z info: Socket ID LaC5GdycT5q_WI0VAAAD associated with phoneNumber +918295525360
+2025-07-12T14:44:50.736Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-07-12T14:44:58.037Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T14:45:00.641Z info: GET /address/getaddress/+918295525360 - 200
+2025-07-12T14:45:28.472Z info: POST /t/creates?Leavinglocation=V9VX+98,%20Hodal,%20Haryana%20-%20121106&Goinglocation=Rajpath,%20J67M+36V,%20India%20Gate,%20New%20Delhi,%20Delhi%20110001,%20India,%20110001,%20New%20Delhi,%20Delhi - 200
+2025-07-12T14:47:34.658Z info: POST /t/creates?Leavinglocation=V9VX+98,%20Hodal,%20Haryana%20-%20121106&Goinglocation=Rajpath,%20J67M+36V,%20India%20Gate,%20New%20Delhi,%20Delhi%20110001,%20India,%20110001,%20New%20Delhi,%20Delhi - 200
+2025-07-12T14:48:23.228Z info: Server is running on port 5002
+2025-07-12T14:48:23.229Z info: Socket.IO connection status: Connected
+2025-07-12T14:48:23.640Z info: MongoDB connected
+2025-07-12T14:48:24.123Z info: A new client connected: h0VzDFn-6TDRG3zkAAAB
+2025-07-12T14:48:24.170Z info: Socket ID h0VzDFn-6TDRG3zkAAAB associated with phoneNumber +918295525360
+2025-07-12T14:48:54.494Z info: Server is running on port 5002
+2025-07-12T14:48:54.495Z info: Socket.IO connection status: Connected
+2025-07-12T14:48:54.875Z info: MongoDB connected
+2025-07-12T14:48:54.946Z info: A new client connected: u6AFzCpo76pDNtbUAAAB
+2025-07-12T14:48:55.454Z info: Socket ID u6AFzCpo76pDNtbUAAAB associated with phoneNumber +918295525360
+2025-07-12T14:51:29.373Z info: Server is running on port 5002
+2025-07-12T14:51:29.375Z info: Socket.IO connection status: Connected
+2025-07-12T14:51:29.781Z info: MongoDB connected
+2025-07-12T14:51:30.471Z info: A new client connected: MIlGeBACVHQVyKTqAAAB
+2025-07-12T14:51:30.521Z info: Socket ID MIlGeBACVHQVyKTqAAAB associated with phoneNumber +918295525360
+2025-07-12T14:51:41.749Z info: Server is running on port 5002
+2025-07-12T14:51:41.750Z info: Socket.IO connection status: Connected
+2025-07-12T14:51:42.139Z info: MongoDB connected
+2025-07-12T14:51:43.195Z info: Server is running on port 5002
+2025-07-12T14:51:43.196Z info: Socket.IO connection status: Connected
+2025-07-12T14:51:43.592Z info: MongoDB connected
+2025-07-12T14:51:47.121Z info: A new client connected: saFdT6gfrNmWJpAlAAAB
+2025-07-12T14:51:47.173Z info: Socket ID saFdT6gfrNmWJpAlAAAB associated with phoneNumber +918295525360
+2025-07-12T14:52:02.234Z info: Server is running on port 5002
+2025-07-12T14:52:02.235Z info: Socket.IO connection status: Connected
+2025-07-12T14:52:02.619Z info: MongoDB connected
+2025-07-12T14:52:02.943Z info: A new client connected: 2cC9QsJd_CprZXUhAAAB
+2025-07-12T14:52:03.023Z info: Socket ID 2cC9QsJd_CprZXUhAAAB associated with phoneNumber +918295525360
+2025-07-12T14:52:03.585Z info: POST /t/creates?Leavinglocation=V9VX+98,%20Hodal,%20Haryana%20-%20121106&Goinglocation=Rajpath,%20J67M+36V,%20India%20Gate,%20New%20Delhi,%20Delhi%20110001,%20India,%20110001,%20New%20Delhi,%20Delhi - 200
+2025-07-12T14:52:07.236Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-07-12T14:52:07.317Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-07-12T14:54:37.076Z info: Server is running on port 5002
+2025-07-12T14:54:37.077Z info: Socket.IO connection status: Connected
+2025-07-12T14:54:37.480Z info: A new client connected: Kj6QbKSi7xBCW0IBAAAB
+2025-07-12T14:54:37.494Z info: MongoDB connected
+2025-07-12T14:54:38.054Z info: Socket ID Kj6QbKSi7xBCW0IBAAAB associated with phoneNumber +918295525360
+2025-07-12T14:54:42.585Z info: Server is running on port 5002
+2025-07-12T14:54:42.586Z info: Socket.IO connection status: Connected
+2025-07-12T14:54:43.602Z info: Server is running on port 5002
+2025-07-12T14:54:43.603Z info: Socket.IO connection status: Connected
+2025-07-12T14:54:43.920Z info: A new client connected: MLDZDbDWDSVSfY9CAAAB
+2025-07-12T14:54:44.007Z info: MongoDB connected
+2025-07-12T14:54:44.560Z info: Socket ID MLDZDbDWDSVSfY9CAAAB associated with phoneNumber +918295525360
+2025-07-12T14:55:18.061Z info: Server is running on port 5002
+2025-07-12T14:55:18.062Z info: Socket.IO connection status: Connected
+2025-07-12T14:55:18.480Z info: MongoDB connected
+2025-07-12T14:55:18.873Z info: A new client connected: 1MdM9N2ik7Tc661UAAAB
+2025-07-12T14:55:18.937Z info: Socket ID 1MdM9N2ik7Tc661UAAAB associated with phoneNumber +918295525360

@@ -30,7 +30,7 @@ function getBoundingBox(center, radiusInMeters) {
 
 
 exports.getAutoCompleteAndCreateBooking = async (req, res) => {
-  const { phoneNumber, travelDate, travelmode_number, travelMode, expectedStartTime, expectedEndTime, weight } = req.body;
+  const { phoneNumber, travelDate, travelmode_number, travelMode, expectedStartTime, expectedEndTime, weight, fullFrom, fullTo } = req.body;
   const { Leavinglocation, Goinglocation } = req.query;
   const user = await userprofiles.findOne({ phoneNumber });
   console.log("Fetched User:", user);
@@ -74,7 +74,7 @@ exports.getAutoCompleteAndCreateBooking = async (req, res) => {
       return res.status(400).json({ message: "Invalid distance received from map service" });
     }
 
-    const price = await fare.calculateFare(weightValue, distanceValue, travelMode);
+    // const price = await fare.calculateFare(weightValue, distanceValue, travelMode);
     const rideId = uuidv4();
     const travelId = Math.floor(100000000 + Math.random() * 900000000).toString();
 
@@ -86,13 +86,15 @@ exports.getAutoCompleteAndCreateBooking = async (req, res) => {
       username,
       Leavinglocation,
       Goinglocation,
+      fullFrom,
+      fullTo,
       travelDate,
       travelmode_number,
       travelMode,
       expectedStartTime: expectedStart,
       expectedEndTime: expectedEnd,
-      expectedearning: price,
-      payableAmount: price,
+      // expectedearning: price,
+      // payableAmount: price,
       distance: distanceText,
       duration: durationText,
       userrating,
@@ -127,18 +129,20 @@ exports.getAutoCompleteAndCreateBooking = async (req, res) => {
       travelMode: travelMode,
       username: username,
       travelmode_number: travelmode_number,
+      fullFrom: fullFrom,
+      fullTo: fullTo,
       pickup: Leavinglocation,
       drop: Goinglocation,
       expectedStartTime: expectedStart,
       expectedendtime: expectedEnd,
-      LeavingCoordinates: {
-        ltd: LeavingCoordinates.ltd,
-        lng: LeavingCoordinates.lng
-      },
-      GoingCoordinates: {
-        ltd: GoingCoordinates.ltd,
-        lng: GoingCoordinates.lng
-      },
+      // liveLocation: {
+      //   lat: LeavingCoordinates.ltd,
+      //   lng: LeavingCoordinates.lng
+      // },
+      // GoingCoordinates: {
+      //   ltd: GoingCoordinates.ltd,
+      //   lng: GoingCoordinates.lng
+      // },
       status: Status
     });
 
@@ -168,7 +172,7 @@ exports.getAutoCompleteAndCreateBooking = async (req, res) => {
         ...travelRecord._doc,
         distance,
         duration,
-        payableAmount: price,
+        // payableAmount: price,
         travelId,
       },
     });

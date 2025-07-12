@@ -8,6 +8,8 @@ const travelhistorySchema = new mongoose.Schema(
         phoneNumber: { type: String, ref: user },
         pickup: { type: String, ref: travel },
         drop: { type: String, ref: travel },
+        fullFrom: { type: String, ref: travel },
+        fullTo: { type: String, ref: travel },
         travelId: { type: String, ref: travel },
         travelMode: { type: String, ref: travel },
         travelmode_number:{type:String, ref:travel},

@@ -8,6 +8,8 @@ const TraveldetailsSchema = new mongoose.Schema({
   travellername:{type:String,ref:user},
   Leavinglocation: { type: String, required: true },
   Goinglocation: { type: String, required: true },
+  fullFrom:{type:String},
+  fullTo:{type:String},
   LeavingCoordinates: {
     ltd: { type: Number },
     lng: { type: Number }
