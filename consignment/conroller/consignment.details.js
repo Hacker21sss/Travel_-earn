@@ -37,6 +37,8 @@ const validateConsignment = [
 
   body('startinglocation').isString().withMessage("Starting location is required"),
   body('goinglocation').isString().withMessage("Going location is required"),
+  body('fullstartinglocation').isString().withMessage("Full going location is required"),
+  body('fullgoinglocation').isString().withMessage("Full going location is required"),
   body('recievername').notEmpty().withMessage('Receiver name is required'),
   body('recieverphone').isMobilePhone().withMessage('Valid receiver phone number is required'),
   body('Description').notEmpty().withMessage('Description is required'),
@@ -63,6 +65,8 @@ module.exports = {
         phoneNumber,
         startinglocation,
         goinglocation,
+        fullstartinglocation, 
+        fullgoinglocation,
         recievername,
         travelMode,
         recieverphone,
@@ -115,11 +119,11 @@ module.exports = {
       const parsedDimensions = JSON.parse(dimensions);
       console.log("Dimensions", parsedDimensions)
       console.log("Dimensions:", parsedDimensions.length, parsedDimensions.height, parsedDimensions.breadth)
-      const earning = await fare.calculateFare(weight, distanceValue, travelMode, parsedDimensions?.length, parsedDimensions?.height, parsedDimensions?.breadth)
+      // const earning = await fare.calculateFare(weight, distanceValue, travelMode, parsedDimensions?.length, parsedDimensions?.height, parsedDimensions?.breadth)
 
-      if (!earning) {
-        return res.status(400).json({ message: 'Unable to fetch fare' });
-      }
+      // if (!earning) {
+      //   return res.status(400).json({ message: 'Unable to fetch fare' });
+      // }
       
       const consignmentId = uuidv4();
       let imageUrls = [];
@@ -164,6 +168,8 @@ module.exports = {
         username,
         startinglocation,
         goinglocation,
+        fullstartinglocation,
+        fullgoinglocation,
         LeavingCoordinates: {
           longitude: startingCoordinates.lng,
           latitude: startingCoordinates.ltd,
@@ -184,7 +190,7 @@ module.exports = {
         distance: distance.text,
         duration: duration.text,
         images: imageUrls,
-        earning: earning,
+        // earning: earning,
         handleWithCare: handleWithCare === 'true' || handleWithCare === true,
         specialRequest: specialRequest || null,
       });
@@ -194,6 +200,8 @@ module.exports = {
         senderName: username,
         senderAddress: startinglocation,
         receiverAddress: goinglocation,
+        senderFullAddress: fullstartinglocation,
+        receiverFullAddress: fullgoinglocation,
         receiverName: recievername,
         receiverPhoneNumber: recieverphone,
         description: Description,
@@ -457,18 +465,22 @@ module.exports.getConsignmentsByDate = async (req, res) => {
         const breadth = dimensions?.breadth;
 
         // Calculate fare using the fare service
-        const calculatedPrice = await fare.calculateFare(
+        const {senderTotalPay, totalFare} = await fare.calculateFare(
           weight, 
           distance, 
           travelMode, 
           length, 
           height, 
           breadth
-        );
+        ) ?? {};
+
+        if(isNaN(senderTotalPay) || isNaN(totalFare)){
+          return res.json({message: "error in fare calculation"})
+        }
 
         return {
           ...consignment.toObject(),
-          calculatedPrice: calculatedPrice,
+          calculatedPrice: {senderTotalPay, totalFare},
           userTravelMode: travelMode,
           userTravelId: userTravel.travelId
         };

@@ -111,7 +111,7 @@ const deleteAddress = async (req, res) => {
     if (!address) {
       return res.status(404).json({ message: "Address not found" });
     }
-
+    console.log(address)
     // Delete the address
     await Address.findByIdAndDelete(addressId);
 

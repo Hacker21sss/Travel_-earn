@@ -13,9 +13,11 @@ const ConsignmentRequestHistorySchema = new mongoose.Schema({
   senderPhoneNumber: { type: String },
   senderAddress: { type: String },
   receiverName: { type: String },
+  senderFullAddress: {type: String},
+  receiverFullAddress: {type: String},
   receiverPhoneNumber: { type: String },
   description: { type: String, ref: ConsignmentDetails },
-  receiverAddress: { type: String },
+  receiverAddress: { type: String },  
    
   category: { type: String },
   // e.g., "10X10X12"

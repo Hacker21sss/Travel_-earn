@@ -8,6 +8,8 @@ const DriverSchema = new mongoose.Schema({
   
   startinglocation: { type: String, required: true },
   goinglocation: { type: String, required: true },
+  fullstartinglocation: {type: String},
+  fullgoinglocation: {type: String},
   LeavingCoordinates: {
     latitude: { type: Number },
     longitude: { type: Number }
