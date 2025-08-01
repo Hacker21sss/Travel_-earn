@@ -27,6 +27,10 @@ const TraveldetailsSchema = new mongoose.Schema({
   expectedEndTime: { type: String },
   rideId:{type:String},
   expectedearning:{type:String},
+  stayDays: {type: String},
+  stayHours: {type: String},
+  vehicleType: {type: String},
+  endDate: {type: Date, required: true},
  
   weight:{type:String},
   TE:{type:String},

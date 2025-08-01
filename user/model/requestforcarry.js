@@ -3,6 +3,11 @@ const Consignment=require('../../consignment/model/contraveldetails')
 const ride=require('../../user/model/traveldetails')
 const user=require('../../user/model/Profile')
 
+const earningSchema = new mongoose.Schema({
+  senderTotalPay: Number,
+  totalFare: Number,
+});
+
 
 const consignmenttocarryrequestSchema = new mongoose.Schema({
     phoneNumber: { type: String, required: true,ref:user },
@@ -19,7 +24,7 @@ const consignmenttocarryrequestSchema = new mongoose.Schema({
     pickup:{type:String},
     drop:{type:String},
     travelId:{type:String,ref:ride},
-    earning:{type:String},
+    earning:{type:earningSchema},
     bookingId:{type:String},
     status: {
         type: String,

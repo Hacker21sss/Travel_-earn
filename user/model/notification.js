@@ -4,6 +4,11 @@ const ride=require('../../user/model/traveldetails')
 const user=require('../../user/model/Profile')
 
 
+const earningSchema = new mongoose.Schema({
+  senderTotalPay: Number,
+  totalFare: Number,
+});
+
 const NotificationSchema = new mongoose.Schema({
     phoneNumber: { type: String,ref:user },
     consignmentId: { type: String, ref: Consignment},
@@ -38,7 +43,7 @@ const NotificationSchema = new mongoose.Schema({
   },
 
     
-    earning:{type:String},
+    earning:{type:earningSchema},
     status:{
         type: String,
         enum: ["Pending", "Accepted", "Rejected","Approved"],

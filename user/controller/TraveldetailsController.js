@@ -30,7 +30,7 @@ function getBoundingBox(center, radiusInMeters) {
 
 
 exports.getAutoCompleteAndCreateBooking = async (req, res) => {
-  const { phoneNumber, travelDate, travelmode_number, travelMode, expectedStartTime, expectedEndTime, weight, fullFrom, fullTo } = req.body;
+  const { phoneNumber, travelDate, vehicleType, stayDays, stayHours,endDate, travelmode_number, travelMode, expectedStartTime, expectedEndTime, weight, fullFrom, fullTo } = req.body;
   const { Leavinglocation, Goinglocation } = req.query;
   const user = await userprofiles.findOne({ phoneNumber });
   console.log("Fetched User:", user);
@@ -82,6 +82,10 @@ exports.getAutoCompleteAndCreateBooking = async (req, res) => {
     const expectedEnd = moment(`${travelDate} ${expectedEndTime}`, "YYYY-MM-DD hh:mm A").toISOString();
 
     let travelDetails = {
+      stayDays,
+      stayHours,
+      vehicleType,
+      endDate,
       phoneNumber,
       username,
       Leavinglocation,
@@ -356,7 +360,13 @@ exports.searchRides = async (req, res) => {
     };
 
     const query = travelMode && travelMode.trim() !== ""
-      ? { ...baseQuery, travelMode }
+      ? { 
+          ...baseQuery, 
+          $or: [
+            { travelMode },
+            { vehicleType: travelMode }
+          ]
+        }
       : baseQuery;
 
     // Remove phoneNumber from search params in logs
@@ -699,7 +709,7 @@ module.exports.booking = async (req, res) => {
       return res.status(500).json({ message: "Error calculating fare amount." });
     }
 
-    const expectedEarning = fareResult?.toString();
+    const expectedEarning = fareResult;
     const riderPhoneNumber = ride.phoneNumber;
 
     if (!riderPhoneNumber) {

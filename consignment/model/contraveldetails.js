@@ -44,7 +44,7 @@ const DriverSchema = new mongoose.Schema({
   },
   durationAtEndPoint: {
     type: String,
-    required: true,
+    // required: true,
   },
   images: [{
     type: String,

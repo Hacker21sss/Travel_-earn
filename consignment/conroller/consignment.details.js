@@ -45,7 +45,7 @@ const validateConsignment = [
   body('weight').isNumeric().withMessage('Weight must be a number'),
   body('category').isIn(['document', 'nondocument']).withMessage('Category must be either "document" or "nondocument"'),
   body('dateOfSending').isISO8601().toDate().withMessage('Valid date of sending is required'),
-  body('durationAtEndPoint').notEmpty().withMessage('Duration at end point is required'),
+  // body('durationAtEndPoint').notEmpty().withMessage('Duration at end point is required'),
 ];
 
 
@@ -73,9 +73,10 @@ module.exports = {
         Description,
         weight,
         category,
+        subCategory,
         dimensions,
         dateOfSending,
-        durationAtEndPoint,
+        // durationAtEndPoint,
         handleWithCare,
         specialRequest
       } = req.body;
@@ -183,9 +184,10 @@ module.exports = {
         Description,
         weight,
         category,
+        subCategory,
         dimensions: parsedDimensions,
         dateOfSending,
-        durationAtEndPoint,
+        // durationAtEndPoint,
         consignmentId,
         distance: distance.text,
         duration: duration.text,
