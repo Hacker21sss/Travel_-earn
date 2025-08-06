@@ -125,6 +125,7 @@ module.exports.calculateFare = async (weight, distance, travelMode, length, heig
 
     let weightFare = 0;
     let distanceFare = 0;
+    let totalFare = 0;
     const TE = fareConfig.TE || 0;
     const margin = fareConfig.margin || 0.2;
 
@@ -148,25 +149,44 @@ module.exports.calculateFare = async (weight, distance, travelMode, length, heig
     }
 
     if (travelMode === "train" || travelMode === "car") {
+        let baseFare = fareConfig.baseFareTrain;
+
         if (chargeableWeight > 1) {
             weightFare = (chargeableWeight - 1) * fareConfig.weightRateTrain;
         }
 
-        if (distance > 0 && distance <= 100) {
-            distanceFare = distance * fareConfig.distanceRateTrain.base;
-        } else if (distance > 100 && distance <= 500) {
-            distanceFare = 
-                100 * fareConfig.distanceRateTrain.base + 
-                (distance - 100) * fareConfig.distanceRateTrain.mid;
-        } else if (distance > 500) {
-            distanceFare = 
-                100 * fareConfig.distanceRateTrain.base + 
-                400 * fareConfig.distanceRateTrain.mid + 
-                (distance - 500) * fareConfig.distanceRateTrain.high;
+        if(distance > 200){
+            const distanceSlabs = Math.ceil((distance - 200)/300);
+            distanceFare = distanceSlabs*fareConfig.distanceRateTrain;
         }
+
+        totalFare = baseFare + distanceFare + weightFare;
+        // if (distance > 0 && distance <= 200) {
+        //     distanceFare = distance * fareConfig.distanceRateTrain.base;
+        // } else if (distance > 200 && distance <= 500) {
+        //     distanceFare = 
+        //         100 * fareConfig.distanceRateTrain.base + 
+        //         (distance - 100) * fareConfig.distanceRateTrain.mid;
+        // } else if (distance > 500) {
+        //     distanceFare = 
+        //         100 * fareConfig.distanceRateTrain.base + 
+        //         400 * fareConfig.distanceRateTrain.mid + 
+        //         (distance - 500) * fareConfig.distanceRateTrain.high;
+        // }
     } else if (travelMode === "airplane") {
-        distanceFare = distance * fareConfig.distanceRateAirplane;
-        weightFare = chargeableWeight * fareConfig.weightRateAirplane;
+        let baseFare = fareConfig.baseFareAirplane;
+        // distanceFare = distance * fareConfig.distanceRateAirplane;
+        // weightFare = chargeableWeight * fareConfig.weightRateAirplane;
+        if (chargeableWeight > 1) {
+            weightFare = (chargeableWeight - 1) * fareConfig.weightRateAirplane;
+        }
+
+        if(distance > 500){
+            const distanceSlabs = Math.ceil((distance - 500)/500);
+            distanceFare = distanceSlabs*fareConfig.distanceRateAirplane;
+        }
+
+        totalFare = baseFare + distanceFare + weightFare;
     } else {
         console.log("Invalid Travel Mode! Please enter 'train', 'car', or 'airplane'.");
         return "Error: Invalid Travel Mode";
@@ -175,7 +195,7 @@ module.exports.calculateFare = async (weight, distance, travelMode, length, heig
     console.log(`Weight Fare: ${weightFare} rupees`);
     console.log(`Distance Fare: ${distanceFare} rupees`);
 
-    let totalFare = distanceFare + weightFare;
+    // let totalFare = distanceFare + weightFare;
     console.log(`Total Fare Before Extra Charges: ${totalFare} rupees`);
 
     let senderTotalPay = (totalFare + TE) * (1 + margin);
