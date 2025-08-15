@@ -149,8 +149,9 @@ module.exports.calculateFare = async (weight, distance, travelMode, length, heig
     }
 
     if (travelMode === "train" || travelMode === "car") {
+        console.log(fareConfig.baseFareTrain)
         let baseFare = fareConfig.baseFareTrain;
-
+        console.log("Base Fare:", baseFare);
         if (chargeableWeight > 1) {
             weightFare = (chargeableWeight - 1) * fareConfig.weightRateTrain;
         }
@@ -159,7 +160,8 @@ module.exports.calculateFare = async (weight, distance, travelMode, length, heig
             const distanceSlabs = Math.ceil((distance - 200)/300);
             distanceFare = distanceSlabs*fareConfig.distanceRateTrain;
         }
-
+        console.log("Distance Fare:", distanceFare);
+        console.log("Weight Fare:", weightFare);
         totalFare = baseFare + distanceFare + weightFare;
         // if (distance > 0 && distance <= 200) {
         //     distanceFare = distance * fareConfig.distanceRateTrain.base;

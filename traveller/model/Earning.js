@@ -21,6 +21,8 @@ const EarningsSchema = new mongoose.Schema({
       title: { type: String, required: true },
       travelId: { type: String, default: "N/A",ref:travel },
       amount: { type: Number, required: true },
+      totalFare: { type: Number, default: 0 },
+      senderTotalPay: { type: Number, default: 0 },
       paymentMethod: { type: String, enum: ["Cash", "Online"], required: true },
       paymentId: { type: String, default: "Cash Payment" },
       status: { type: String, enum: ["In Progress", "Completed", "Failed"], default: "In Progress" },

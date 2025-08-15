@@ -6,12 +6,10 @@ const FareConfigSchema = new mongoose.Schema({
   margin: { type: Number, default: 0.2 }, // 20%
   weightRateTrain: { type: Number, default: 100 },
   weightRateAirplane: { type: Number, default: 200 },
-  distanceRateTrain: {
-    base: { type: Number, default: 0.6 },
-    mid: { type: Number, default: 0.1 },
-    high: { type: Number, default: 0.1 }
-  },
+  distanceRateTrain: {type : Number},
   distanceRateAirplane: { type: Number, default: 0.2 },
+  baseFareTrain: { type: Number},
+  baseFareAirplane: { type: Number},
 }, { timestamps: true });
 
 module.exports = mongoose.model('FareConfig', FareConfigSchema);

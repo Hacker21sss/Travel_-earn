@@ -12,6 +12,7 @@ const travelhistorySchema = new mongoose.Schema(
         fullTo: { type: String, ref: travel },
         travelId: { type: String, ref: travel },
         travelMode: { type: String, ref: travel },
+        vehicleType: {type:String, ref: travel},
         travelmode_number:{type:String, ref:travel},
         status: {
             type: String,

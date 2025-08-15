@@ -833,3 +833,6 @@
 2025-07-22T16:42:18.973Z error: MongoDB connection error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.i288h.mongodb.net
 2025-07-22T20:35:59.626Z error: Error clearing socketId for +918295525360: getaddrinfo ENOTFOUND cluster0-shard-00-00.i288h.mongodb.net
 2025-07-22T20:36:01.959Z error: Error updating socketId for +918295525360: getaddrinfo ENOTFOUND cluster0-shard-00-00.i288h.mongodb.net
+2025-08-12T11:02:31.068Z error: Error clearing socketId for +919798695233: getaddrinfo ENOTFOUND cluster0-shard-00-00.i288h.mongodb.net
+2025-08-12T12:08:18.916Z error: Error clearing socketId for +919798695233: connection 5 to 159.41.197.67:27017 closed
+2025-08-13T18:31:19.488Z error: Error clearing socketId for +918295525360: getaddrinfo ENOTFOUND cluster0-shard-00-00.i288h.mongodb.net

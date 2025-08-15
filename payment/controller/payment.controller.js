@@ -61,6 +61,8 @@ const verifyOrder = async (req, res) => {
       razorpay_signature,
       phoneNumber,
       amount,
+      totalFare,
+      senderTotalPay,
       travelId,
       title = "Ride Payment",
     } = req.body;
@@ -82,17 +84,45 @@ const verifyOrder = async (req, res) => {
       return res.status(400).json({ success: false, message: "Invalid phone number format." });
     }
 
-    // Create new transaction (matches schema)
+    // Validate fare breakdown if provided
+    if (totalFare !== undefined) {
+      const totalFareNum = Number(totalFare);
+      if (isNaN(totalFareNum) || totalFareNum < 0) {
+        console.error("Invalid totalFare:", totalFare);
+        return res.status(400).json({ success: false, message: "Total fare must be a non-negative number." });
+      }
+    }
+
+    if (senderTotalPay !== undefined) {
+      const senderTotalPayNum = Number(senderTotalPay);
+      if (isNaN(senderTotalPayNum) || senderTotalPayNum < 0) {
+        console.error("Invalid senderTotalPay:", senderTotalPay);
+        return res.status(400).json({ success: false, message: "Sender total pay must be a non-negative number." });
+      }
+    }
+
+    // Create new transaction with fare breakdown
     const newTransaction = {
       title,
       travelId: travelId || "N/A",
       amount: amountNum,
+      totalFare: totalFare ? Number(totalFare) : amountNum,
+      senderTotalPay: senderTotalPay ? Number(senderTotalPay) : amountNum,
       paymentMethod: "Online",
       paymentId: razorpay_payment_id,
       status: "In Progress",
       timestamp: new Date(),
     };
 
+    console.log("Payment verification request:", {
+      phoneNumber,
+      travelId,
+      amount: amountNum,
+      totalFare: totalFare ? Number(totalFare) : 'Not provided',
+      senderTotalPay: senderTotalPay ? Number(senderTotalPay) : 'Not provided',
+      paymentId: razorpay_payment_id
+    });
+    
     console.log("Adding in-progress transaction for:", phoneNumber, newTransaction);
 
     const updateResult = await Earning.updateOne(
@@ -158,7 +188,14 @@ const verifyOrder = async (req, res) => {
 
     res.status(200).json({
       success: true,
-      message: "Payment successful"
+      message: "Payment successful",
+      transaction: {
+        paymentId: razorpay_payment_id,
+        amount: amountNum,
+        totalFare: totalFare ? Number(totalFare) : amountNum,
+        senderTotalPay: senderTotalPay ? Number(senderTotalPay) : amountNum,
+        status: "Completed"
+      }
     });
   } catch (error) {
     if (!committed) {

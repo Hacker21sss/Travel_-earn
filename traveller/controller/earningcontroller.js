@@ -43,18 +43,18 @@ module.exports.getEarnings = async (req, res) => {
         
         const totalEarnings = completedTransactions.reduce(
             (sum, transactions) => {
-                const amount = parseFloat(transactions.amount);
+                const amount = parseFloat(transactions.totalFare);
                 return isNaN(amount) ? sum : sum + amount;
             },
             0
         );
-
+        console.log(completedTransactions)
         return res.status(200).json({
             status: "success",
             totalEarnings: totalEarnings.toFixed(2), // Ensure two decimal places
             data: completedTransactions.map(transaction => ({
                 date: transaction.timestamp.toISOString().split("T")[0],
-                amount: parseFloat(transaction.amount).toFixed(2), // Ensure two decimal places
+                amount: parseFloat(transaction.totalFare).toFixed(2), // Ensure two decimal places
                 paymentId: transaction.paymentId,
                 title: transaction.title,
                 travelId: transaction.travelId,

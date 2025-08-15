@@ -1,6 +1,11 @@
 const mongoose = require('mongoose');
 const user=require('../../user/model/Profile')
 
+const earningSchema = new mongoose.Schema({
+  senderTotalPay: Number,
+  totalFare: Number,
+});
+
 const TraveldetailsSchema = new mongoose.Schema({
   // userId: { type: String, ref: 'user', required: true },
   phoneNumber:{type:String,ref:user},
@@ -26,7 +31,7 @@ const TraveldetailsSchema = new mongoose.Schema({
   expectedStartTime: { type: String },
   expectedEndTime: { type: String },
   rideId:{type:String},
-  expectedearning:{type:String},
+  expectedearning:{type:earningSchema},
   stayDays: {type: String},
   stayHours: {type: String},
   vehicleType: {type: String},
