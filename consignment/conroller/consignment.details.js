@@ -78,12 +78,55 @@ module.exports = {
         dateOfSending,
         // durationAtEndPoint,
         handleWithCare,
-        specialRequest
+        specialRequest,
+        userTimezone,
+        timezoneOffset
       } = req.body;
       
       console.log(req.body)
+      
+      // Handle timezone-aware date parsing
+      let sendingDate;
+      if (userTimezone && timezoneOffset) {
+        // Check if dateOfSending is already a Date object (from validation middleware)
+        if (dateOfSending instanceof Date) {
+          // Use the Date object directly
+          sendingDate = new Date(dateOfSending);
+          
+          // Adjust for timezone offset
+          const offsetMinutes = parseInt(timezoneOffset);
+          sendingDate.setMinutes(sendingDate.getMinutes() - offsetMinutes);
+          
+          console.log('Timezone-aware date parsing (Date object):', {
+            originalDate: dateOfSending,
+            userTimezone,
+            timezoneOffset,
+            parsedDate: sendingDate,
+            parsedDateISO: sendingDate.toISOString()
+          });
+        } else {
+          // Handle string format
+          const [year, month, day] = dateOfSending.split('-').map(Number);
+          sendingDate = new Date(year, month - 1, day);
+          
+          // Adjust for timezone offset
+          const offsetMinutes = parseInt(timezoneOffset);
+          sendingDate.setMinutes(sendingDate.getMinutes() - offsetMinutes);
+          
+          console.log('Timezone-aware date parsing (string):', {
+            originalDate: dateOfSending,
+            userTimezone,
+            timezoneOffset,
+            parsedDate: sendingDate,
+            parsedDateISO: sendingDate.toISOString()
+          });
+        }
+      } else {
+        // Fallback to simple date parsing
+        sendingDate = new Date(dateOfSending);
+      }
+      
       const currentDate = new Date();
-      const sendingDate = new Date(dateOfSending);
       if (sendingDate < currentDate.setHours(0, 0, 0, 0)) {
         return res.status(400).json({ message: "please put the valid date " });
       }
@@ -345,10 +388,11 @@ module.exports = {
 
 module.exports.getConsignmentsByDate = async (req, res) => {
   try {
-    const { leavingLocation, goingLocation, date, phoneNumber } = req.query;
+    const { leavingLocation, goingLocation, date, phoneNumber, userTimezone, timezoneOffset } = req.query;
 
     console.log('date comes', req.query.date)
     console.log('phoneNumber received', phoneNumber); // Debug log to verify phoneNumber
+    console.log('timezone info:', { userTimezone, timezoneOffset });
 
     if (!leavingLocation || !goingLocation || !date || !phoneNumber) {
       return res.status(400).json({ message: "Leaving location, going location, and date are required" });
@@ -369,7 +413,29 @@ module.exports.getConsignmentsByDate = async (req, res) => {
       return res.status(404).json({ message: "User not found" });
     }
 
-    const searchDate = new Date(date);
+    // Handle timezone-aware date parsing for search
+    let searchDate;
+    if (userTimezone && timezoneOffset) {
+      // Create date in user's timezone
+      const [year, month, day] = date.split('-').map(Number);
+      searchDate = new Date(year, month - 1, day);
+      
+      // Adjust for timezone offset
+      const offsetMinutes = parseInt(timezoneOffset);
+      searchDate.setMinutes(searchDate.getMinutes() - offsetMinutes);
+      
+      console.log('Timezone-aware search date parsing:', {
+        originalDate: date,
+        userTimezone,
+        timezoneOffset,
+        parsedDate: searchDate,
+        parsedDateISO: searchDate.toISOString()
+      });
+    } else {
+      // Fallback to simple date parsing
+      searchDate = new Date(date);
+    }
+    
     const today = new Date();
 
     console.log('searchdate', searchDate)
@@ -444,34 +510,87 @@ module.exports.getConsignmentsByDate = async (req, res) => {
       radiusInMeters
     );
 
-    // Query the database
-    const availableRides = await Consignment.find({
+    // First try exact coordinate matching
+    const exactQuery = {
+      "LeavingCoordinates.latitude": leavingCoords.ltd,
+      "LeavingCoordinates.longitude": leavingCoords.lng,
+      "GoingCoordinates.latitude": goingCoords.ltd,
+      "GoingCoordinates.longitude": goingCoords.lng,
+      dateOfSending: { $gte: startOfDay, $lt: endOfDay },
+      phoneNumber: { $ne: normalizedPhoneNumber }
+    };
+
+    let exactConsignments = await Consignment.find(exactQuery).lean();
+    console.log("Found consignments with exact coordinate matching:", exactConsignments.length);
+
+    // If no exact matches, try 10km radius matching
+    if (exactConsignments.length === 0) {
+      const radiusQuery = {
+        dateOfSending: { $gte: startOfDay, $lt: endOfDay },
+        phoneNumber: { $ne: normalizedPhoneNumber }
+      };
+
+      const allConsignmentsForRadius = await Consignment.find(radiusQuery).lean();
+      
+      exactConsignments = allConsignmentsForRadius.filter(consignment => {
+        const leavingDistance = geolib.getDistance(
+          { latitude: leavingCoords.ltd, longitude: leavingCoords.lng },
+          { latitude: consignment.LeavingCoordinates.latitude, longitude: consignment.LeavingCoordinates.longitude }
+        );
+
+        const goingDistance = geolib.getDistance(
+          { latitude: goingCoords.ltd, longitude: goingCoords.lng },
+          { latitude: consignment.GoingCoordinates.latitude, longitude: consignment.GoingCoordinates.longitude }
+        );
+
+        const radiusInMeters = 10 * 1000; // 10km
+        return leavingDistance <= radiusInMeters && goingDistance <= radiusInMeters;
+      });
+      
+      console.log("Found consignments with 10km radius matching:", exactConsignments.length);
+    }
+
+    // If no exact matches, try bounding box approach
+    const baseQuery = {
       "LeavingCoordinates.latitude": { $gte: leavingBoundingBox.minLat, $lte: leavingBoundingBox.maxLat },
       "LeavingCoordinates.longitude": { $gte: leavingBoundingBox.minLng, $lte: leavingBoundingBox.maxLng },
       "GoingCoordinates.latitude": { $gte: goingBoundingBox.minLat, $lte: goingBoundingBox.maxLat },
       "GoingCoordinates.longitude": { $gte: goingBoundingBox.minLng, $lte: goingBoundingBox.maxLng },
-      dateOfSending: {
-        $gte: startOfDay,
-        $lt: endOfDay
-      },
+      dateOfSending: { $gte: startOfDay, $lt: endOfDay },
       phoneNumber: { $ne: normalizedPhoneNumber }
-    });
-    console.log("availableRides", availableRides)
-    console.log("Search query details:", {
-      leavingBoundingBox,
-      goingBoundingBox,
-      dateRange: {
-        start: startOfDay,
-        end: endOfDay
-      },
-      normalizedPhoneNumber,
-      totalConsignmentsInDB: await Consignment.countDocuments()
-    });
+    };
+
+    // Use exact consignments if found, otherwise use bounding box approach
+    let availableConsignments = exactConsignments;
     
-    // Apply distance filtering to ensure consignments are within reasonable distance
-    let filteredConsignments = availableRides;
-    if (availableRides.length > 0) {
-      filteredConsignments = availableRides.filter(consignment => {
+    if (exactConsignments.length === 0) {
+      availableConsignments = await Consignment.find(baseQuery).lean();
+    }
+    
+    console.log("Found consignments before distance filtering:", availableConsignments.length);
+    
+    // Debug: Check all consignments for the date without location filtering
+    const allConsignmentsForDate = await Consignment.find({
+      dateOfSending: { $gte: startOfDay, $lt: endOfDay },
+      phoneNumber: { $ne: normalizedPhoneNumber }
+    }).lean();
+    console.log("Total consignments for the date (without location filter):", allConsignmentsForDate.length);
+    
+    if (allConsignmentsForDate.length > 0) {
+      console.log("Sample consignments for the date:", allConsignmentsForDate.slice(0, 3).map(consignment => ({
+        consignmentId: consignment.consignmentId,
+        startingLocation: consignment.startinglocation,
+        goingLocation: consignment.goinglocation,
+        leavingCoords: consignment.LeavingCoordinates,
+        goingCoords: consignment.GoingCoordinates
+      })));
+    }
+
+    // Apply precise distance filtering (skip if we have exact matches)
+    let filteredConsignments = availableConsignments;
+    
+    if (exactConsignments.length === 0) {
+      filteredConsignments = availableConsignments.filter(consignment => {
         const leavingDistance = geolib.getDistance(
           { latitude: leavingCoords.ltd, longitude: leavingCoords.lng },
           { latitude: consignment.LeavingCoordinates.latitude, longitude: consignment.LeavingCoordinates.longitude }
@@ -492,17 +611,15 @@ module.exports.getConsignmentsByDate = async (req, res) => {
           searchGoingCoords: goingCoords
         });
 
-        // Use a reasonable radius for matching (10km to match earning validation)
+        // Use a reasonable radius for precise matching (10km)
         const preciseRadiusInMeters = 10 * 1000; // 10km
-        const withinRadius = leavingDistance <= preciseRadiusInMeters && goingDistance <= preciseRadiusInMeters;
-        
-        if (!withinRadius) {
-          console.log(`Consignment ${consignment.consignmentId} filtered out - outside 10km radius`);
-        }
-        
-        return withinRadius;
+        return leavingDistance <= preciseRadiusInMeters && goingDistance <= preciseRadiusInMeters;
       });
+    } else {
+      console.log("Using exact coordinate matches, skipping distance filtering");
     }
+
+    console.log("Available consignments after filtering:", filteredConsignments.length);
     
     console.log("Consignments after distance filtering:", filteredConsignments.length);
     
@@ -532,34 +649,46 @@ module.exports.getConsignmentsByDate = async (req, res) => {
       console.log("No consignments found with coordinate matching, trying location name matching...");
       
       const alternativeConsignments = allConsignmentsForDate.filter(consignment => {
-        // First check distance - if it's too far, don't even consider location name matching
-        const leavingDistance = geolib.getDistance(
-          { latitude: leavingCoords.ltd, longitude: leavingCoords.lng },
-          { latitude: consignment.LeavingCoordinates.latitude, longitude: consignment.LeavingCoordinates.longitude }
-        );
-        const goingDistance = geolib.getDistance(
-          { latitude: goingCoords.ltd, longitude: goingCoords.lng },
-          { latitude: consignment.GoingCoordinates.latitude, longitude: consignment.GoingCoordinates.longitude }
-        );
+        // Clean and normalize location strings for better matching
+        const normalizeLocation = (location) => {
+          return location.toLowerCase()
+            .replace(/[^a-z0-9\s]/g, ' ') // Remove special characters except spaces
+            .replace(/\s+/g, ' ') // Replace multiple spaces with single space
+            .trim();
+        };
         
-        const withinRadius = leavingDistance <= 10000 && goingDistance <= 10000; // 10km
+        const normalizedSearchLeaving = normalizeLocation(leavingLocation);
+        const normalizedSearchGoing = normalizeLocation(goingLocation);
+        const normalizedConsignmentStarting = normalizeLocation(consignment.startinglocation);
+        const normalizedConsignmentGoing = normalizeLocation(consignment.goinglocation);
         
-        // Only proceed with location name matching if within radius
-        if (!withinRadius) {
-          console.log("Alternative matching - Consignment outside radius:", {
-            consignmentId: consignment.consignmentId,
-            leavingDistance: Math.round(leavingDistance / 1000) + "km",
-            goingDistance: Math.round(goingDistance / 1000) + "km",
-            maxAllowed: "10km"
-          });
-          return false;
-        }
+        // Extract key location words (cities, states, etc.)
+        const extractKeyWords = (location) => {
+          const words = location.split(' ').filter(word => word.length > 2);
+          return words;
+        };
         
-        // More strict location name matching - check for exact city/state matches
-        const leavingMatch = consignment.startinglocation.toLowerCase().includes(leavingLocation.toLowerCase()) ||
-                           leavingLocation.toLowerCase().includes(consignment.startinglocation.toLowerCase());
-        const goingMatch = consignment.goinglocation.toLowerCase().includes(goingLocation.toLowerCase()) ||
-                          goingLocation.toLowerCase().includes(consignment.goinglocation.toLowerCase());
+        const searchLeavingWords = extractKeyWords(normalizedSearchLeaving);
+        const searchGoingWords = extractKeyWords(normalizedSearchGoing);
+        const consignmentStartingWords = extractKeyWords(normalizedConsignmentStarting);
+        const consignmentGoingWords = extractKeyWords(normalizedConsignmentGoing);
+        
+        // Check for word overlap (more flexible matching)
+        const hasWordOverlap = (words1, words2) => {
+          return words1.some(word1 => 
+            words2.some(word2 => 
+              word1.includes(word2) || word2.includes(word1)
+            )
+          );
+        };
+        
+        const leavingMatch = hasWordOverlap(searchLeavingWords, consignmentStartingWords) ||
+                           normalizedConsignmentStarting.includes(normalizedSearchLeaving) ||
+                           normalizedSearchLeaving.includes(normalizedConsignmentStarting);
+        
+        const goingMatch = hasWordOverlap(searchGoingWords, consignmentGoingWords) ||
+                          normalizedConsignmentGoing.includes(normalizedSearchGoing) ||
+                          normalizedSearchGoing.includes(normalizedConsignmentGoing);
         
         console.log("Alternative matching for consignment:", {
           consignmentId: consignment.consignmentId,
@@ -567,14 +696,19 @@ module.exports.getConsignmentsByDate = async (req, res) => {
           consignmentGoing: consignment.goinglocation,
           searchLeaving: leavingLocation,
           searchGoing: goingLocation,
+          normalizedConsignmentStarting,
+          normalizedConsignmentGoing,
+          normalizedSearchLeaving,
+          normalizedSearchGoing,
+          consignmentStartingWords,
+          consignmentGoingWords,
+          searchLeavingWords,
+          searchGoingWords,
           leavingMatch,
-          goingMatch,
-          leavingDistance: Math.round(leavingDistance / 1000) + "km",
-          goingDistance: Math.round(goingDistance / 1000) + "km",
-          withinRadius
+          goingMatch
         });
         
-        return leavingMatch && goingMatch && withinRadius;
+        return leavingMatch && goingMatch;
       });
       
       if (alternativeConsignments.length > 0) {
@@ -587,7 +721,7 @@ module.exports.getConsignmentsByDate = async (req, res) => {
 
             if (isNaN(weight) || isNaN(distance)) {
               return {
-                ...consignment.toObject(),
+                ...consignment,
                 calculatedPrice: null,
                 priceError: "Invalid weight or distance"
               };
@@ -612,7 +746,7 @@ module.exports.getConsignmentsByDate = async (req, res) => {
             }
 
             return {
-              ...consignment.toObject(),
+              ...consignment,
               calculatedPrice: {senderTotalPay, totalFare},
               userTravelMode: travelMode,
               priceCalculationMode: priceCalculationMode,
@@ -623,7 +757,7 @@ module.exports.getConsignmentsByDate = async (req, res) => {
           } catch (error) {
             console.error(`Error calculating price for consignment ${consignment.consignmentId}:`, error);
             return {
-              ...consignment.toObject(),
+              ...consignment,
               calculatedPrice: null,
               priceError: error.message
             };
@@ -667,7 +801,7 @@ module.exports.getConsignmentsByDate = async (req, res) => {
         if (isNaN(weight) || isNaN(distance)) {
           console.log(`Invalid weight or distance for consignment ${consignment.consignmentId}`);
           return {
-            ...consignment.toObject(),
+            ...consignment,
             calculatedPrice: null,
             priceError: "Invalid weight or distance"
           };
@@ -694,7 +828,7 @@ module.exports.getConsignmentsByDate = async (req, res) => {
         }
 
         return {
-          ...consignment.toObject(),
+          ...consignment,
           calculatedPrice: {senderTotalPay, totalFare},
           userTravelMode: travelMode,
           priceCalculationMode: priceCalculationMode,
@@ -704,7 +838,7 @@ module.exports.getConsignmentsByDate = async (req, res) => {
       } catch (error) {
         console.error(`Error calculating price for consignment ${consignment.consignmentId}:`, error);
         return {
-          ...consignment.toObject(),
+          ...consignment,
           calculatedPrice: null,
           priceError: error.message
         };

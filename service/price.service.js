@@ -213,64 +213,67 @@ module.exports.calculateFarewithoutweight = async (distance, TravelMode) => {
     console.log(`Travel Mode: ${travelMode}`);
     console.log(`Distance: ${distance} km`);
 
-    // Fetch fare configuration from DB
-    const fareConfig = await FareConfig.findOne();
-    if (!fareConfig) {
-        console.log("Fare configuration not found in database.");
-        return { error: "Fare configuration not found" };
+    // Validate distance input
+    if (isNaN(distance) || distance <= 0) {
+        console.log("Invalid distance value:", distance);
+        return { error: "Invalid distance value" };
     }
 
-    const TE = fareConfig.TE || 112;
-    const deliveryFee = fareConfig.deliveryFee || 0;
-    const margin = fareConfig.margin || 0.2;
+    // Fetch fare configuration from DB
+    let fareConfig = await FareConfig.findOne();
+    if (!fareConfig) {
+        console.log("Fare configuration not found in database. Creating default configuration...");
+        // Create default fare configuration
+        fareConfig = await FareConfig.create({
+            TE: 112,
+            deliveryFee: 0,
+            margin: 0.2,
+            weightRateTrain: 100,
+            weightRateAirplane: 200,
+            distanceRateTrain: 0.6,
+            distanceRateAirplane: 0.2,
+            baseFareTrain: 50,
+            baseFareAirplane: 100
+        });
+        console.log("Default fare configuration created:", fareConfig);
+    }
+
+    console.log(fareConfig);
 
     let distanceFare = 0;
-    let discount = 0;
+    let totalFare = 0;
 
     if (travelMode === "train" || travelMode === "car") {
-        const rate = fareConfig.distanceRateTrain;
-        if (distance > 0 && distance <= 100) {
-            distanceFare = distance * rate.base;
-        } else if (distance > 100 && distance <= 500) {
-            distanceFare = 
-                100 * rate.base + 
-                (distance - 100) * rate.mid;
-        } else if (distance > 500) {
-            distanceFare = 
-                100 * rate.base + 
-                400 * rate.mid + 
-                (distance - 500) * rate.high;
+        console.log(fareConfig.baseFareTrain)
+        let baseFare = fareConfig.baseFareTrain;
+        console.log("Base Fare:", baseFare);
+
+        if(distance > 200){
+            const distanceSlabs = Math.ceil((distance - 200)/300);
+            distanceFare = distanceSlabs*fareConfig.distanceRateTrain;
         }
+        console.log("Distance Fare:", distanceFare);
+        totalFare = baseFare + distanceFare;
     } else if (travelMode === "airplane") {
-        distanceFare = distance * fareConfig.distanceRateAirplane;
+        let baseFare = fareConfig.baseFareAirplane;
+
+        if(distance > 500){
+            const distanceSlabs = Math.ceil((distance - 500)/500);
+            distanceFare = distanceSlabs*fareConfig.distanceRateAirplane;
+        }
+
+        totalFare = baseFare + distanceFare;
     } else {
         console.log("Invalid Travel Mode! Please enter 'train', 'car' or 'airplane'.");
         return { error: "Invalid Travel Mode" };
     }
 
     console.log(`Distance Fare: ${distanceFare} rupees`);
-
-    // We can apply discount logic here like this
-
-    // if (distance > 300) {
-    //     discount = 0.05 * (distanceFare + TE);
-    //     console.log(`Applied Discount: ${discount.toFixed(2)} rupees`);
-    // }
-
-    // const subtotal = distanceFare + TE + deliveryFee;
-    // const totalWithMargin = (subtotal - discount) * (1 + margin);
-
-    // const result = {
-    //     senderTotalPay: totalWithMargin.toFixed(2),
-    //     TE: TE.toFixed(2),
-    //     deliveryFee: deliveryFee.toFixed(2),
-    //     discount: discount.toFixed(2),
-    //     baseFare: distanceFare.toFixed(2)
-    // };
-
-    // console.log("Fare Breakdown:", result);
-    // return result;
-    return distanceFare.toFixed(2);
+    console.log(`Total Fare: ${totalFare} rupees`);
+    
+    const result = totalFare.toFixed(2);
+    console.log(`Returning fare: ${result}`);
+    return result;
 };
 
 
