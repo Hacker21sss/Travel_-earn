@@ -19652,3 +19652,825 @@
 2025-08-16T11:07:50.077Z info: MongoDB connected
 2025-08-16T11:07:51.594Z info: A new client connected: rkw8-rr2X3-jpT5EAAAB
 2025-08-16T11:07:51.649Z info: Socket ID rkw8-rr2X3-jpT5EAAAB associated with phoneNumber +918295525360
+2025-08-16T13:00:08.680Z info: Server is running on port 5002
+2025-08-16T13:00:08.682Z info: Socket.IO connection status: Connected
+2025-08-16T13:00:09.336Z info: MongoDB connected
+2025-08-16T13:01:08.590Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-16T13:01:08.616Z info: A new client connected: GQZFAcc2WFHQHK1pAAAB
+2025-08-16T13:01:08.672Z info: Socket ID GQZFAcc2WFHQHK1pAAAB associated with phoneNumber +918295525360
+2025-08-16T13:01:08.696Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-16T13:01:11.073Z info: GET /t/travelhistory/+918295525360 - 200
+2025-08-16T13:01:34.904Z info: GET /map/getdistanceandcoordinate?origin=H9F7%20P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-16T13:01:59.496Z info: GET /map/getdistanceandcoordinate?origin=H9F7%20P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-16T13:02:00.596Z info: GET /map/getdistanceandcoordinate?origin=H9F7%20P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-16T13:04:16.834Z info: Client disconnected: GQZFAcc2WFHQHK1pAAAB
+2025-08-16T13:04:16.889Z info: Socket ID cleared for phoneNumber +918295525360
+2025-08-16T13:04:23.611Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-16T13:04:23.616Z info: A new client connected: n8mtaBTKZpRZ1EZGAAAD
+2025-08-16T13:04:23.654Z info: Socket ID n8mtaBTKZpRZ1EZGAAAD associated with phoneNumber +918295525360
+2025-08-16T13:04:23.672Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-16T13:04:27.702Z info: GET /t/travelhistory/+918295525360 - 200
+2025-08-16T13:04:37.896Z info: GET /t/travelhistory/+918295525360 - 200
+2025-08-16T13:05:36.143Z info: GET /t/travelhistory/+918295525360 - 200
+2025-08-16T13:05:46.051Z info: GET /t/travelhistory/+918295525360 - 200
+2025-08-16T13:06:01.179Z info: GET /t/travelhistory/+918295525360 - 200
+2025-08-16T13:06:10.663Z info: GET /t/travelhistory/+918295525360 - 200
+2025-08-16T13:06:48.745Z info: GET /t/travelhistory/+918295525360 - 200
+2025-08-16T13:07:10.366Z info: GET /map/getdistanceandcoordinate?origin=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001&destination=H9F7%20P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073 - 200
+2025-08-16T13:07:19.294Z info: GET /address/getaddress/+918295525360 - 200
+2025-08-16T13:07:20.508Z info: GET /api/location?going=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073 - 200
+2025-08-16T13:07:20.670Z info: GET /address/getaddress/+918295525360 - 200
+2025-08-16T13:07:21.746Z info: GET /api/location?going=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073&leaving=Danapur+Nizamat,+Mithapur,+Patna,+Bihar+-+800001 - 200
+2025-08-16T13:07:22.290Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-16T13:07:44.002Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-16T13:07:46.357Z info: POST /t/creates?Leavinglocation=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&Goinglocation=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-16T13:07:49.448Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-16T13:07:49.508Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-16T13:07:50.943Z info: GET /t/travelhistory/+918295525360 - 200
+2025-08-16T13:09:34.275Z info: GET /t/travelhistory/+918295525360 - 200
+2025-08-16T13:11:17.610Z info: GET /address/getaddress/+918295525360 - 200
+2025-08-16T13:11:18.634Z info: GET /api/location?going=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073 - 200
+2025-08-16T13:11:18.791Z info: GET /address/getaddress/+918295525360 - 200
+2025-08-16T13:11:21.038Z info: GET /api/location?going=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073&leaving=Netaji+Subhash+Place,+Shakurpur,+North+West+Delhi,+Delhi+-+110034 - 200
+2025-08-16T13:11:26.500Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Netaji%20Subhash%20Place,%20Shakurpur,%20North%20West%20Delhi,%20Delhi%20-%20110034 - 200
+2025-08-16T13:12:39.686Z info: GET /t/travelhistory/+918295525360 - 200
+2025-08-16T13:12:51.815Z info: GET /t/travelhistory/+918295525360 - 200
+2025-08-16T13:13:25.186Z info: GET /t/travelhistory/+918295525360 - 200
+2025-08-16T13:13:36.357Z info: Client disconnected: n8mtaBTKZpRZ1EZGAAAD
+2025-08-16T13:13:36.403Z info: Socket ID cleared for phoneNumber +918295525360
+2025-08-16T13:13:48.837Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-16T13:13:48.866Z info: A new client connected: B-s1UUj6Yc82quPTAAAF
+2025-08-16T13:13:48.904Z info: Socket ID B-s1UUj6Yc82quPTAAAF associated with phoneNumber +918295525360
+2025-08-16T13:13:48.920Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-16T13:14:35.207Z info: GET /t/travelhistory/+918295525360 - 200
+2025-08-16T13:20:45.547Z info: GET /t/travelhistory/+918295525360 - 200
+2025-08-16T13:21:48.340Z info: Client disconnected: B-s1UUj6Yc82quPTAAAF
+2025-08-16T13:21:48.394Z info: Socket ID cleared for phoneNumber +918295525360
+2025-08-16T13:22:01.151Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-16T13:22:01.173Z info: A new client connected: cyre1lYtOl2qkQFlAAAH
+2025-08-16T13:22:01.219Z info: Socket ID cyre1lYtOl2qkQFlAAAH associated with phoneNumber +918295525360
+2025-08-16T13:22:01.222Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-16T13:32:53.435Z info: GET /address/getaddress/+918295525360 - 200
+2025-08-16T13:32:55.885Z info: GET /api/location?going=Netaji+Subhash+Place,+Shakurpur,+North+West+Delhi,+Delhi+-+110034 - 200
+2025-08-16T13:32:56.118Z info: GET /address/getaddress/+918295525360 - 200
+2025-08-16T13:32:59.193Z info: GET /api/location?going=Netaji+Subhash+Place,+Shakurpur,+North+West+Delhi,+Delhi+-+110034&leaving=IIITM+Campus,+Gwalior,+Madhya+Pradesh+-+474015 - 200
+2025-08-16T13:32:59.966Z info: GET /map/getdistanceandcoordinate?origin=Netaji%20Subhash%20Place,%20Shakurpur,%20North%20West%20Delhi,%20Delhi%20-%20110034&destination=IIITM%20Campus,%20Gwalior,%20Madhya%20Pradesh%20-%20474015 - 200
+2025-08-16T14:00:00.905Z info: Client disconnected: cyre1lYtOl2qkQFlAAAH
+2025-08-16T15:54:58.659Z error: Error clearing socketId for +918295525360: getaddrinfo ENOTFOUND cluster0-shard-00-00.i288h.mongodb.net
+2025-08-18T15:31:06.631Z info: Server is running on port 5002
+2025-08-18T15:31:06.636Z info: Socket.IO connection status: Connected
+2025-08-18T15:31:07.572Z info: MongoDB connected
+2025-08-18T15:32:05.358Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T15:32:05.401Z info: A new client connected: uVhmYDgAjZEQ4MIQAAAB
+2025-08-18T15:32:05.450Z info: Socket ID uVhmYDgAjZEQ4MIQAAAB associated with phoneNumber +918295525360
+2025-08-18T15:32:05.464Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T15:32:07.977Z info: GET /address/getaddress/+918295525360 - 200
+2025-08-18T15:32:09.403Z info: GET /api/location?going=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073 - 200
+2025-08-18T15:32:09.577Z info: GET /address/getaddress/+918295525360 - 200
+2025-08-18T15:32:10.751Z info: GET /api/location?going=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073&leaving=Danapur+Nizamat,+Mithapur,+Patna,+Bihar+-+800001 - 200
+2025-08-18T15:32:13.940Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T15:32:42.215Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T15:33:57.190Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T15:34:01.530Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T15:34:02.699Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T15:38:56.132Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T15:40:52.907Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T15:40:57.088Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T15:41:02.301Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T15:41:25.240Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T15:42:08.816Z info: Server is running on port 5002
+2025-08-18T15:42:08.818Z info: Socket.IO connection status: Connected
+2025-08-18T15:42:09.029Z info: A new client connected: -fmUDZEy6zIqnGwDAAAB
+2025-08-18T15:42:09.674Z info: MongoDB connected
+2025-08-18T15:42:10.138Z info: Socket ID -fmUDZEy6zIqnGwDAAAB associated with phoneNumber +918295525360
+2025-08-18T15:42:16.648Z info: Server is running on port 5002
+2025-08-18T15:42:16.650Z info: Socket.IO connection status: Connected
+2025-08-18T15:42:17.178Z info: MongoDB connected
+2025-08-18T15:42:18.240Z info: A new client connected: 5nxtGqYtAaybIpvxAAAB
+2025-08-18T15:42:18.293Z info: Socket ID 5nxtGqYtAaybIpvxAAAB associated with phoneNumber +918295525360
+2025-08-18T15:42:24.057Z info: Server is running on port 5002
+2025-08-18T15:42:24.058Z info: Socket.IO connection status: Connected
+2025-08-18T15:42:24.403Z info: A new client connected: 0NkuR5C8SMBTkDKsAAAB
+2025-08-18T15:42:24.640Z info: MongoDB connected
+2025-08-18T15:42:25.071Z info: Socket ID 0NkuR5C8SMBTkDKsAAAB associated with phoneNumber +918295525360
+2025-08-18T15:42:30.364Z info: Server is running on port 5002
+2025-08-18T15:42:30.368Z info: Socket.IO connection status: Connected
+2025-08-18T15:42:30.832Z info: MongoDB connected
+2025-08-18T15:42:32.353Z info: A new client connected: H7yk0oDMPu2j2kG2AAAB
+2025-08-18T15:42:32.405Z info: Socket ID H7yk0oDMPu2j2kG2AAAB associated with phoneNumber +918295525360
+2025-08-18T15:42:40.392Z info: Server is running on port 5002
+2025-08-18T15:42:40.393Z info: Socket.IO connection status: Connected
+2025-08-18T15:42:40.822Z info: MongoDB connected
+2025-08-18T15:42:41.905Z info: A new client connected: 9nFb6H4ja80KzUawAAAB
+2025-08-18T15:42:41.947Z info: Socket ID 9nFb6H4ja80KzUawAAAB associated with phoneNumber +918295525360
+2025-08-18T15:42:50.602Z info: Server is running on port 5002
+2025-08-18T15:42:50.603Z info: Socket.IO connection status: Connected
+2025-08-18T15:42:51.076Z info: MongoDB connected
+2025-08-18T15:42:52.545Z info: A new client connected: MsBL1DAl2TqJyXzqAAAB
+2025-08-18T15:42:52.598Z info: Socket ID MsBL1DAl2TqJyXzqAAAB associated with phoneNumber +918295525360
+2025-08-18T15:42:58.347Z info: POST /t/creates?Leavinglocation=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&Goinglocation=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T15:49:23.936Z info: Server is running on port 5002
+2025-08-18T15:49:23.937Z info: Socket.IO connection status: Connected
+2025-08-18T15:49:24.644Z info: MongoDB connected
+2025-08-18T15:49:25.165Z info: A new client connected: TJmVs2DJ4ww_URm5AAAB
+2025-08-18T15:49:25.228Z info: Socket ID TJmVs2DJ4ww_URm5AAAB associated with phoneNumber +918295525360
+2025-08-18T15:49:27.694Z info: Server is running on port 5002
+2025-08-18T15:49:27.695Z info: Socket.IO connection status: Connected
+2025-08-18T15:49:28.088Z info: MongoDB connected
+2025-08-18T15:49:28.359Z info: A new client connected: APSznHnz-1QZzzC1AAAB
+2025-08-18T15:49:28.500Z info: Socket ID APSznHnz-1QZzzC1AAAB associated with phoneNumber +918295525360
+2025-08-18T15:49:35.650Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T15:49:36.570Z info: POST /t/creates?Leavinglocation=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&Goinglocation=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T15:49:52.718Z info: Server is running on port 5002
+2025-08-18T15:49:52.720Z info: Socket.IO connection status: Connected
+2025-08-18T15:49:53.194Z info: MongoDB connected
+2025-08-18T15:49:53.466Z info: POST /t/creates?Leavinglocation=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&Goinglocation=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T15:49:54.101Z info: A new client connected: DrVvDqFBtkxet47IAAAB
+2025-08-18T15:49:54.149Z info: Socket ID DrVvDqFBtkxet47IAAAB associated with phoneNumber +918295525360
+2025-08-18T15:49:56.773Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T15:49:56.843Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T15:49:59.726Z info: GET /t/travelhistory/+918295525360 - 200
+2025-08-18T15:51:37.453Z info: GET /t/travelhistory/+918295525360 - 200
+2025-08-18T15:51:40.515Z info: GET /t/travelhistory/+918295525360 - 200
+2025-08-18T15:51:41.890Z info: GET /t/travelhistory/+918295525360 - 200
+2025-08-18T15:51:51.097Z info: GET /t/travelhistory/+918295525360 - 200
+2025-08-18T15:52:45.781Z info: GET /t/travelhistory/+918295525360 - 200
+2025-08-18T15:52:56.302Z info: GET /t/travelhistory/+918295525360 - 200
+2025-08-18T15:54:38.172Z info: GET /t/travelhistory/+918295525360 - 200
+2025-08-18T15:54:40.089Z info: GET /t/travelhistory/+918295525360 - 200
+2025-08-18T15:57:56.994Z info: GET /t/travelhistory/+918295525360 - 200
+2025-08-18T15:58:14.758Z info: GET /t/travelhistory/+918295525360 - 200
+2025-08-18T15:58:26.954Z info: GET /t/travelhistory/+918295525360 - 200
+2025-08-18T15:58:42.289Z info: GET /t/travelhistory/+918295525360 - 200
+2025-08-18T16:00:54.763Z info: GET /map/getdistanceandcoordinate?origin=H9F7%20P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:01:10.913Z info: GET /address/getaddress/+918295525360 - 200
+2025-08-18T16:01:13.478Z info: GET /api/location?going=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073 - 200
+2025-08-18T16:01:13.689Z info: GET /address/getaddress/+918295525360 - 200
+2025-08-18T16:01:15.074Z info: GET /api/location?going=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073&leaving=Danapur+Nizamat,+Mithapur,+Patna,+Bihar+-+800001 - 200
+2025-08-18T16:01:17.564Z info: GET /map/getdistanceandcoordinate?origin=12,%20H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=12,%20Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:01:56.243Z info: GET /map/getdistanceandcoordinate?origin=12,%20H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=12,%20Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:03:39.831Z info: GET /api/location?going=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073&leaving=Danapur+Nizamat,+Mithapur,+Patna,+Bihar+-+800001 - 200
+2025-08-18T16:03:39.836Z info: GET /api/location?going=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073&leaving=Danapur+Nizamat,+Mithapur,+Patna,+Bihar+-+800001 - 200
+2025-08-18T16:04:00.843Z info: GET /api/location?going=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073&leaving=Danapur+Nizamat,+Mithapur,+Patna,+Bihar+-+800001 - 200
+2025-08-18T16:04:00.847Z info: GET /api/location?going=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073&leaving=Danapur+Nizamat,+Mithapur,+Patna,+Bihar+-+800001 - 200
+2025-08-18T16:04:09.960Z info: GET /api/location?going=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073&leaving=Danapur+Nizamat,+Mithapur,+Patna,+Bihar+-+800001 - 200
+2025-08-18T16:04:09.963Z info: GET /api/location?going=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073&leaving=Danapur+Nizamat,+Mithapur,+Patna,+Bihar+-+800001 - 200
+2025-08-18T16:04:10.688Z info: GET /api/location?going=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073&leaving=Danapur+Nizamat,+Mithapur,+Patna,+Bihar+-+800001 - 200
+2025-08-18T16:04:10.690Z info: GET /api/location?going=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073&leaving=Danapur+Nizamat,+Mithapur,+Patna,+Bihar+-+800001 - 200
+2025-08-18T16:04:28.568Z info: GET /api/location?going=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073&leaving=Danapur+Nizamat,+Mithapur,+Patna,+Bihar+-+800001 - 200
+2025-08-18T16:04:28.572Z info: GET /api/location?going=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073&leaving=Danapur+Nizamat,+Mithapur,+Patna,+Bihar+-+800001 - 200
+2025-08-18T16:04:29.811Z info: GET /api/location?going=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073&leaving=Danapur+Nizamat,+Mithapur,+Patna,+Bihar+-+800001 - 200
+2025-08-18T16:04:29.813Z info: GET /api/location?going=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073&leaving=Danapur+Nizamat,+Mithapur,+Patna,+Bihar+-+800001 - 200
+2025-08-18T16:04:43.698Z info: GET /api/location?going=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073&leaving=Danapur+Nizamat,+Mithapur,+Patna,+Bihar+-+800001 - 200
+2025-08-18T16:04:43.701Z info: GET /api/location?going=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073&leaving=Danapur+Nizamat,+Mithapur,+Patna,+Bihar+-+800001 - 200
+2025-08-18T16:04:51.090Z info: GET /map/getdistanceandcoordinate?origin=12,%20H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=12,%20Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:05:45.170Z info: GET /map/getdistanceandcoordinate?origin=12,%20H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=12,%20Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:05:50.215Z info: GET /map/getdistanceandcoordinate?origin=12,%20H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=12,%20Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:06:26.627Z info: GET /map/getdistanceandcoordinate?origin=12,%20H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=12,%20Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:06:37.216Z info: GET /map/getdistanceandcoordinate?origin=12,%20H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=12,%20Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:06:49.868Z info: GET /map/getdistanceandcoordinate?origin=12,%20H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=12,%20Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:06:52.817Z info: GET /map/getdistanceandcoordinate?origin=12,%20H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=12,%20Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:07:45.137Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:09:36.484Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:09:41.505Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:10:00.172Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:10:44.086Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:11:11.369Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:14:42.883Z info: Server is running on port 5002
+2025-08-18T16:14:42.884Z info: Socket.IO connection status: Connected
+2025-08-18T16:14:43.527Z info: MongoDB connected
+2025-08-18T16:14:43.648Z info: A new client connected: td-3YNre9pF88bGlAAAB
+2025-08-18T16:14:44.162Z info: Socket ID td-3YNre9pF88bGlAAAB associated with phoneNumber +918295525360
+2025-08-18T16:14:55.813Z info: Client disconnected: td-3YNre9pF88bGlAAAB
+2025-08-18T16:14:55.847Z info: Socket ID cleared for phoneNumber +918295525360
+2025-08-18T16:15:23.030Z info: A new client connected: P31rZiPezZP4bAZbAAAD
+2025-08-18T16:15:23.070Z info: Socket ID P31rZiPezZP4bAZbAAAD associated with phoneNumber 1234567890
+2025-08-18T16:16:35.553Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T16:16:35.710Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T16:17:04.209Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T16:17:04.295Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T16:17:07.391Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T16:17:07.434Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T16:17:08.262Z info: GET /address/getaddress/+918295525360 - 200
+2025-08-18T16:17:09.415Z info: GET /api/location?going=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073 - 200
+2025-08-18T16:17:10.539Z info: GET /address/getaddress/+918295525360 - 200
+2025-08-18T16:17:11.876Z info: GET /api/location?going=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073&leaving=Danapur+Nizamat,+Mithapur,+Patna,+Bihar+-+800001 - 200
+2025-08-18T16:17:13.463Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:17:16.738Z info: GET /map/getdistanceandcoordinate?origin=12,%20H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=12,%20Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:17:46.067Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:17:52.869Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:18:44.649Z info: Client disconnected: P31rZiPezZP4bAZbAAAD
+2025-08-18T16:18:44.707Z info: Socket ID cleared for phoneNumber 1234567890
+2025-08-18T16:19:32.193Z info: A new client connected: WdqpRxnmIm9_VlHGAAAF
+2025-08-18T16:19:32.201Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T16:19:32.236Z info: Socket ID WdqpRxnmIm9_VlHGAAAF associated with phoneNumber +918295525360
+2025-08-18T16:19:32.265Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T16:30:50.453Z info: GET /address/getaddress/+918295525360 - 200
+2025-08-18T16:30:51.641Z info: GET /api/location?going=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073 - 200
+2025-08-18T16:30:51.823Z info: GET /address/getaddress/+918295525360 - 200
+2025-08-18T16:30:53.095Z info: GET /api/location?going=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073&leaving=Danapur+Nizamat,+Mithapur,+Patna,+Bihar+-+800001 - 200
+2025-08-18T16:30:55.094Z info: GET /map/getdistanceandcoordinate?origin=12,%20H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=12,%20Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:31:24.668Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:31:27.856Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:32:56.810Z info: Client disconnected: WdqpRxnmIm9_VlHGAAAF
+2025-08-18T16:32:56.856Z info: Socket ID cleared for phoneNumber +918295525360
+2025-08-18T16:33:01.816Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T16:33:01.850Z info: A new client connected: mNOZW4Tg25oSgaXyAAAH
+2025-08-18T16:33:01.902Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T16:33:01.911Z info: Socket ID mNOZW4Tg25oSgaXyAAAH associated with phoneNumber +918295525360
+2025-08-18T16:34:05.469Z info: GET /address/getaddress/+918295525360 - 200
+2025-08-18T16:34:07.343Z info: GET /address/getaddress/+918295525360 - 200
+2025-08-18T16:34:08.435Z info: GET /api/location?going=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073 - 200
+2025-08-18T16:34:08.974Z info: GET /address/getaddress/+918295525360 - 200
+2025-08-18T16:34:10.068Z info: GET /api/location?going=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073&leaving=Danapur+Nizamat,+Mithapur,+Patna,+Bihar+-+800001 - 200
+2025-08-18T16:34:11.428Z info: GET /map/getdistanceandcoordinate?origin=12,%20H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=12,%20Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:34:33.565Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:34:33.573Z info: Client disconnected: mNOZW4Tg25oSgaXyAAAH
+2025-08-18T16:34:33.613Z info: Socket ID cleared for phoneNumber +918295525360
+2025-08-18T16:35:17.634Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T16:35:17.733Z info: A new client connected: aPhJZ2RFBf4cB55-AAAJ
+2025-08-18T16:35:17.740Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T16:35:17.794Z info: Socket ID aPhJZ2RFBf4cB55-AAAJ associated with phoneNumber +918295525360
+2025-08-18T16:35:26.934Z info: GET /address/getaddress/+918295525360 - 200
+2025-08-18T16:35:28.020Z info: GET /api/location?going=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073 - 200
+2025-08-18T16:35:28.743Z info: GET /address/getaddress/+918295525360 - 200
+2025-08-18T16:35:29.757Z info: GET /api/location?going=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073&leaving=Danapur+Nizamat,+Mithapur,+Patna,+Bihar+-+800001 - 200
+2025-08-18T16:35:30.145Z info: GET /map/getdistanceandcoordinate?origin=12,%20H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=12,%20Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:35:46.993Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:35:47.058Z info: Client disconnected: aPhJZ2RFBf4cB55-AAAJ
+2025-08-18T16:35:47.094Z info: Socket ID cleared for phoneNumber +918295525360
+2025-08-18T16:36:12.456Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T16:36:12.508Z info: A new client connected: ZGFvOIA5ewNLRBbNAAAL
+2025-08-18T16:36:12.535Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T16:36:12.544Z info: Socket ID ZGFvOIA5ewNLRBbNAAAL associated with phoneNumber +918295525360
+2025-08-18T16:37:13.001Z info: GET /address/getaddress/+918295525360 - 200
+2025-08-18T16:37:14.079Z info: GET /api/location?going=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073 - 200
+2025-08-18T16:37:14.259Z info: GET /address/getaddress/+918295525360 - 200
+2025-08-18T16:37:15.765Z info: GET /api/location?going=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073&leaving=Danapur+Nizamat,+Mithapur,+Patna,+Bihar+-+800001 - 200
+2025-08-18T16:37:16.048Z info: GET /map/getdistanceandcoordinate?origin=12,%20H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=12,%20Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:37:54.065Z info: GET /map/getdistanceandcoordinate?origin=12,%20H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=12,%20Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:38:14.926Z info: GET /map/getdistanceandcoordinate?origin=12,%20H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=12,%20Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:39:13.915Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:39:16.389Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:40:23.575Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:41:03.086Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:41:22.652Z info: Server is running on port 5002
+2025-08-18T16:41:22.653Z info: Socket.IO connection status: Connected
+2025-08-18T16:41:23.206Z info: MongoDB connected
+2025-08-18T16:41:26.607Z info: Server is running on port 5002
+2025-08-18T16:41:26.609Z info: Socket.IO connection status: Connected
+2025-08-18T16:41:26.670Z info: A new client connected: HkT5W4VIt3yJ-gbqAAAB
+2025-08-18T16:41:27.162Z info: MongoDB connected
+2025-08-18T16:41:27.633Z info: Socket ID HkT5W4VIt3yJ-gbqAAAB associated with phoneNumber +918295525360
+2025-08-18T16:41:39.336Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:41:42.791Z info: POST /api/consignment - 200
+2025-08-18T16:45:08.579Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:45:15.383Z info: Server is running on port 5002
+2025-08-18T16:45:15.384Z info: Socket.IO connection status: Connected
+2025-08-18T16:45:16.021Z info: POST /api/consignment - 200
+2025-08-18T16:45:16.046Z info: MongoDB connected
+2025-08-18T16:45:19.188Z info: A new client connected: Wl1-jCcaJJwMYra2AAAB
+2025-08-18T16:45:19.237Z info: Socket ID Wl1-jCcaJJwMYra2AAAB associated with phoneNumber +918295525360
+2025-08-18T16:45:19.716Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T16:45:19.789Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T16:45:21.931Z info: GET /api/history/+918295525360 - 200
+2025-08-18T16:45:23.796Z info: GET /map/getdistanceandcoordinate?origin=H9F7%2BP4Q%2C%20Calcutta%20University%2C%20College%20Square%2C%20Kolkata%2C%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat%2C%20Mithapur%2C%20Patna%2C%20Bihar%20-%20800001 - 200
+2025-08-18T16:45:23.802Z info: GET /api/consignment/3d4321ce-2a64-41c2-9819-c6f97c2ef823 - 200
+2025-08-18T16:45:23.802Z info: GET /api/getall/+918295525360?phoneNumber=%2B918295525360 - 200
+2025-08-18T16:48:16.872Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T16:48:16.962Z info: A new client connected: Xzi4H7xtdxk-uZZLAAAD
+2025-08-18T16:48:17.006Z info: Socket ID Xzi4H7xtdxk-uZZLAAAD associated with phoneNumber +916351446468
+2025-08-18T16:48:17.030Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-18T16:48:27.279Z info: GET /address/getaddress/+916351446468 - 200
+2025-08-18T16:48:29.400Z info: GET /api/location?going=87%2F1,+College+St,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073 - 200
+2025-08-18T16:48:30.760Z info: GET /address/getaddress/+916351446468 - 200
+2025-08-18T16:48:34.025Z info: GET /api/location?going=87%2F1,+College+St,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073&leaving=Danapur+Nizamat,+Mithapur,+Patna,+Bihar+-+800001 - 200
+2025-08-18T16:48:35.602Z info: GET /map/getdistanceandcoordinate?origin=87/1,%20College%20St,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:49:02.603Z info: GET /map/getdistanceandcoordinate?origin=87/1,%20College%20St,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:49:08.699Z info: POST /t/creates?Leavinglocation=87/1,%20College%20St,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&Goinglocation=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:49:12.433Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T16:49:12.509Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-18T16:49:18.817Z info: GET /api/location?going=Ca - 200
+2025-08-18T16:49:19.963Z info: GET /api/location?going=Cal - 200
+2025-08-18T16:49:22.976Z info: GET /api/location?going=Calcutta+university - 200
+2025-08-18T16:49:25.828Z info: GET /api/location?going=Calcutta+University,+college - 200
+2025-08-18T16:49:27.335Z info: GET /api/location?going=Calcutta+University,+College+Squ... - 200
+2025-08-18T16:49:32.867Z info: GET /api/location?going=Calcutta+University,+College+Squ...&leaving=Danapur - 200
+2025-08-18T16:49:34.311Z info: GET /api/location?going=Calcutta+University,+College+Squ...&leaving=Danapur,+ni - 200
+2025-08-18T16:49:35.360Z info: GET /api/location?going=Calcutta+University,+College+Squ...&leaving=Danapur,+niza - 200
+2025-08-18T16:49:40.833Z info: GET /api/getdetails?leavingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&goingLocation=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar,%20India&date=2025-08-18&phoneNumber=+916351446468&userTimezone=Asia/Calcutta&timezoneOffset=-330 - 200
+2025-08-18T16:49:40.837Z info: GET /api/getdetails?leavingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&goingLocation=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar,%20India&date=2025-08-18&phoneNumber=+916351446468&userTimezone=Asia/Calcutta&timezoneOffset=-330 - 200
+2025-08-18T16:49:45.051Z info: GET /api/getdetails?leavingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&goingLocation=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar,%20India&date=2025-08-18&phoneNumber=+916351446468&userTimezone=Asia/Calcutta&timezoneOffset=-330 - 200
+2025-08-18T16:49:57.699Z info: GET /api/consignment/3d4321ce-2a64-41c2-9819-c6f97c2ef823 - 200
+2025-08-18T16:49:57.701Z info: GET /map/getdistanceandcoordinate?origin=H9F7%2BP4Q%2C%20Calcutta%20University%2C%20College%20Square%2C%20Kolkata%2C%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat%2C%20Mithapur%2C%20Patna%2C%20Bihar%20-%20800001 - 200
+2025-08-18T16:49:57.704Z info: GET /api/getall/+918295525360?phoneNumber=%2B918295525360 - 200
+2025-08-18T16:51:20.545Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T16:51:20.607Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T16:51:27.915Z info: GET /api/location?going=Calcutta+ - 200
+2025-08-18T16:51:30.109Z info: GET /api/location?going=Calcutta+university - 200
+2025-08-18T16:51:31.950Z info: GET /api/location?going=Calcutta+University,+C... - 200
+2025-08-18T16:51:35.478Z info: GET /api/location?going=Calcutta+University,+C...&leaving=Danapur+nizam - 200
+2025-08-18T16:51:38.183Z info: GET /t/search-rides?leavingLocation=Calcutta+University,+College+Square,+Kolkata,+West+Bengal,+India&goingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&date=2025-08-18&travelMode=train&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-18T16:52:20.073Z info: GET /t/search-rides?leavingLocation=Calcutta+University,+College+Square,+Kolkata,+West+Bengal,+India&goingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&date=2025-08-18&travelMode=train&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-18T16:52:20.075Z info: GET /t/search-rides?leavingLocation=Calcutta+University,+College+Square,+Kolkata,+West+Bengal,+India&goingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&date=2025-08-18&travelMode=train&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-18T16:52:20.079Z info: GET /t/search-rides?leavingLocation=Calcutta+University,+College+Square,+Kolkata,+West+Bengal,+India&goingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&date=2025-08-18&travelMode=train&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-18T16:52:25.547Z info: GET /map/getdistanceandcoordinate?origin=87/1,%20College%20St,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:52:55.570Z info: GET /map/getdistanceandcoordinate?origin=87/1,%20College%20St,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:52:57.100Z info: GET /map/getdistanceandcoordinate?origin=87/1,%20College%20St,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:53:00.161Z info: GET /map/getdistanceandcoordinate?origin=87/1,%20College%20St,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:53:11.790Z info: GET /map/getdistanceandcoordinate?origin=87/1,%20College%20St,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:53:17.281Z info: GET /map/getdistanceandcoordinate?origin=87/1,%20College%20St,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:53:25.762Z info: GET /map/getdistanceandcoordinate?origin=87/1,%20College%20St,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:53:29.236Z info: GET /map/getdistanceandcoordinate?origin=87/1,%20College%20St,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:53:35.152Z info: GET /map/getdistanceandcoordinate?origin=87/1,%20College%20St,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:53:37.962Z info: GET /map/getdistanceandcoordinate?origin=87/1,%20College%20St,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:54:07.158Z info: POST /t/booking-request - 200
+2025-08-18T16:54:09.992Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T16:54:10.050Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T16:54:11.988Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T16:54:12.254Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-18T16:54:14.229Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T16:54:16.319Z info: GET /t/request/+916351446468 - 200
+2025-08-18T16:54:19.451Z info: GET /api/consignment/3d4321ce-2a64-41c2-9819-c6f97c2ef823 - 200
+2025-08-18T16:54:32.111Z info: POST /order/respondto?travelId=638811261&consignmentId=3d4321ce-2a64-41c2-9819-c6f97c2ef823 - 200
+2025-08-18T16:54:34.938Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T16:54:38.115Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T16:54:38.962Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T16:54:41.711Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:54:48.983Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:55:17.246Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:55:20.228Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:56:00.635Z info: GET /t/request/+916351446468 - 200
+2025-08-18T16:56:03.720Z info: GET /api/consignment/3d4321ce-2a64-41c2-9819-c6f97c2ef823 - 200
+2025-08-18T16:56:29.041Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:56:56.478Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:57:09.926Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:58:19.144Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:58:47.802Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:59:01.512Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:59:38.583Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T16:59:52.587Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T17:00:15.093Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T17:00:35.053Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T17:01:53.346Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T17:02:07.668Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T17:02:21.725Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T17:02:37.758Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T17:02:51.765Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T17:03:00.614Z info: Client disconnected: Wl1-jCcaJJwMYra2AAAB
+2025-08-18T17:03:00.678Z info: Socket ID cleared for phoneNumber +918295525360
+2025-08-18T17:25:29.764Z info: Client disconnected: Xzi4H7xtdxk-uZZLAAAD
+2025-08-18T17:25:29.812Z info: Socket ID cleared for phoneNumber +916351446468
+2025-08-18T17:47:49.241Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T17:47:49.291Z info: A new client connected: MDxRbBE7sBE6hkIsAAAF
+2025-08-18T17:47:49.346Z info: Socket ID MDxRbBE7sBE6hkIsAAAF associated with phoneNumber +916351446468
+2025-08-18T17:47:49.449Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-18T17:48:03.246Z info: A new client connected: tcwOUlnHjyahD8D4AAAH
+2025-08-18T17:48:03.283Z info: Socket ID tcwOUlnHjyahD8D4AAAH associated with phoneNumber +918295525360
+2025-08-18T17:48:03.290Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T17:48:03.399Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T17:48:12.330Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T17:48:13.666Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T17:48:14.963Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T17:48:28.692Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T17:48:28.789Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T17:48:30.802Z info: GET /t/travelhistory/+918295525360 - 200
+2025-08-18T17:52:38.458Z info: Client disconnected: tcwOUlnHjyahD8D4AAAH
+2025-08-18T17:52:38.501Z info: Socket ID cleared for phoneNumber +918295525360
+2025-08-18T17:53:58.959Z info: A new client connected: G26wpVEC-m6aSS39AAAJ
+2025-08-18T17:53:58.998Z info: Socket ID G26wpVEC-m6aSS39AAAJ associated with phoneNumber +918295525360
+2025-08-18T17:57:14.118Z info: GET /map/getdistanceandcoordinate?origin=H9F7%20P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T17:57:17.483Z info: GET /map/getdistanceandcoordinate?origin=H9F7%20P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T17:57:21.447Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T17:57:21.505Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T17:57:22.336Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T17:57:23.149Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T17:57:24.406Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T17:57:36.877Z info: GET /t/travelhistory/+916351446468 - 200
+2025-08-18T17:59:46.051Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T17:59:51.534Z info: Client disconnected: G26wpVEC-m6aSS39AAAJ
+2025-08-18T17:59:51.596Z info: Socket ID cleared for phoneNumber +918295525360
+2025-08-18T17:59:52.297Z info: Client disconnected: MDxRbBE7sBE6hkIsAAAF
+2025-08-18T17:59:52.338Z info: Socket ID cleared for phoneNumber +916351446468
+2025-08-18T17:59:59.400Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T17:59:59.410Z info: A new client connected: IZy0jgspYwm5F5bdAAAL
+2025-08-18T17:59:59.442Z info: Socket ID IZy0jgspYwm5F5bdAAAL associated with phoneNumber +918295525360
+2025-08-18T17:59:59.452Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T18:00:01.998Z info: A new client connected: IFyEDRYFArKWRXygAAAN
+2025-08-18T18:00:02.036Z info: Socket ID IFyEDRYFArKWRXygAAAN associated with phoneNumber +916351446468
+2025-08-18T18:00:02.040Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T18:00:02.227Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-18T18:00:34.651Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T18:00:35.855Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T18:00:40.238Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T18:01:02.207Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T18:01:51.793Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T18:02:55.675Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T18:03:09.696Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T18:03:28.228Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T18:03:32.745Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T18:03:38.550Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T18:03:44.309Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T18:03:46.958Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T18:03:49.924Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T18:04:22.879Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T18:04:50.137Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T18:05:02.550Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T18:05:13.975Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T18:05:29.355Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T18:05:42.881Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T18:06:04.154Z info: POST /p/create-order - 200
+2025-08-18T18:06:38.151Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T18:06:40.487Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-18T18:06:41.241Z info: POST /p/verify-payment - 200
+2025-08-18T18:06:41.636Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T18:06:42.915Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T18:06:48.991Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T18:06:54.521Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T18:06:54.682Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-18T18:07:05.837Z info: GET /earn/earning?phoneNumber=%2B916351446468 - 200
+2025-08-18T18:07:37.489Z info: GET /address/getaddress/+916351446468 - 200
+2025-08-18T18:07:39.268Z info: GET /api/location?going=Danapur+Nizamat,+Mithapur,+Patna,+Bihar+-+800001 - 200
+2025-08-18T18:07:40.114Z info: GET /address/getaddress/+916351446468 - 200
+2025-08-18T18:07:42.087Z info: GET /api/location?going=Danapur+Nizamat,+Mithapur,+Patna,+Bihar+-+800001&leaving=87%2F1,+College+St,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073 - 200
+2025-08-18T18:07:48.934Z info: GET /map/getdistanceandcoordinate?origin=12,%20Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001&destination=12,%2087/1,%20College%20St,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073 - 200
+2025-08-18T18:08:23.950Z info: GET /map/getdistanceandcoordinate?origin=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001&destination=87/1,%20College%20St,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073 - 200
+2025-08-18T18:10:36.142Z info: A new client connected: DFlpJyIU6RAgvkVfAAAP
+2025-08-18T18:10:36.191Z info: Socket ID DFlpJyIU6RAgvkVfAAAP associated with phoneNumber +918295525360
+2025-08-18T18:10:38.766Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T18:10:38.839Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T18:10:43.954Z info: GET /address/getaddress/+918295525360 - 200
+2025-08-18T18:10:45.517Z info: GET /api/location?going=Danapur+Nizamat,+Mithapur,+Patna,+Bihar+-+800001 - 200
+2025-08-18T18:10:46.558Z info: GET /address/getaddress/+918295525360 - 200
+2025-08-18T18:10:47.811Z info: GET /api/location?going=Danapur+Nizamat,+Mithapur,+Patna,+Bihar+-+800001&leaving=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073 - 200
+2025-08-18T18:10:51.036Z info: Client disconnected: IZy0jgspYwm5F5bdAAAL
+2025-08-18T18:10:51.077Z info: Socket ID cleared for phoneNumber +918295525360
+2025-08-18T18:10:51.138Z info: GET /map/getdistanceandcoordinate?origin=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001&destination=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073 - 200
+2025-08-18T18:11:36.755Z info: GET /map/getdistanceandcoordinate?origin=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001&destination=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073 - 200
+2025-08-18T18:12:09.543Z info: POST /t/creates?Leavinglocation=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001&Goinglocation=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073 - 200
+2025-08-18T18:12:12.831Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T18:12:12.924Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T18:12:59.835Z info: GET /map/getdistanceandcoordinate?origin=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001&destination=87/1,%20College%20St,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073 - 200
+2025-08-18T18:13:03.923Z info: GET /map/getdistanceandcoordinate?origin=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001&destination=87/1,%20College%20St,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073 - 200
+2025-08-18T18:13:08.417Z info: GET /map/getdistanceandcoordinate?origin=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001&destination=87/1,%20College%20St,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073 - 200
+2025-08-18T18:13:13.091Z info: POST /api/consignment - 200
+2025-08-18T18:13:16.388Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T18:13:16.552Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-18T18:13:28.197Z info: GET /api/history/+916351446468 - 200
+2025-08-18T18:13:30.413Z info: GET /map/getdistanceandcoordinate?origin=Danapur%20Nizamat%2C%20Mithapur%2C%20Patna%2C%20Bihar%20-%20800001&destination=87%2F1%2C%20College%20St%2C%20Calcutta%20University%2C%20College%20Square%2C%20Kolkata%2C%20West%20Bengal%20-%20700073 - 200
+2025-08-18T18:13:30.434Z info: GET /api/consignment/d123e536-9da8-44cc-bcef-f74cca13323b - 200
+2025-08-18T18:13:30.453Z info: GET /api/getall/+916351446468?phoneNumber=%2B916351446468 - 200
+2025-08-18T18:13:39.821Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T18:13:39.876Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T18:13:43.256Z info: GET /api/location?going=Dana - 200
+2025-08-18T18:13:44.516Z info: GET /api/location?going=Danap - 200
+2025-08-18T18:13:45.355Z info: GET /api/location?going=Danapur+ - 200
+2025-08-18T18:13:46.656Z info: GET /api/location?going=Danapur+nizama - 200
+2025-08-18T18:13:48.627Z info: GET /api/location?going=Danapur+Nizamat,+Mitha... - 200
+2025-08-18T18:13:52.726Z info: GET /api/location?going=Danapur+Nizamat,+Mitha...&leaving=C - 200
+2025-08-18T18:13:53.643Z info: GET /api/location?going=Danapur+Nizamat,+Mitha...&leaving=Calcu - 200
+2025-08-18T18:13:59.195Z info: GET /api/getdetails?leavingLocation=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar,%20India&goingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&date=2025-08-20&phoneNumber=+918295525360&userTimezone=Asia/Kolkata&timezoneOffset=-330 - 200
+2025-08-18T18:13:59.198Z info: GET /api/getdetails?leavingLocation=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar,%20India&goingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&date=2025-08-20&phoneNumber=+918295525360&userTimezone=Asia/Kolkata&timezoneOffset=-330 - 200
+2025-08-18T18:14:02.240Z info: GET /api/getdetails?leavingLocation=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar,%20India&goingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&date=2025-08-20&phoneNumber=+918295525360&userTimezone=Asia/Kolkata&timezoneOffset=-330 - 200
+2025-08-18T18:14:20.332Z info: POST /api/getearning - 200
+2025-08-18T18:14:23.131Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T18:14:23.189Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T18:14:28.464Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T18:14:28.637Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-18T18:14:30.585Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T18:18:57.619Z info: Client disconnected: DFlpJyIU6RAgvkVfAAAP
+2025-08-18T18:18:57.664Z info: Socket ID cleared for phoneNumber +918295525360
+2025-08-18T18:44:23.558Z info: Client disconnected: IFyEDRYFArKWRXygAAAN
+2025-08-18T18:44:23.618Z info: Socket ID cleared for phoneNumber +916351446468
+2025-08-18T18:57:29.094Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T18:57:29.101Z info: A new client connected: e4XQewdtWdg9a8EiAAAR
+2025-08-18T18:57:29.147Z info: Socket ID e4XQewdtWdg9a8EiAAAR associated with phoneNumber +918295525360
+2025-08-18T18:57:29.182Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T18:57:30.249Z info: Client disconnected: e4XQewdtWdg9a8EiAAAR
+2025-08-18T18:57:30.277Z info: Socket ID cleared for phoneNumber +918295525360
+2025-08-18T18:57:36.479Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T18:57:36.485Z info: A new client connected: VUchhG3hxzNnwgLeAAAT
+2025-08-18T18:57:36.516Z info: Socket ID VUchhG3hxzNnwgLeAAAT associated with phoneNumber +918295525360
+2025-08-18T18:57:36.635Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T18:57:46.307Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T18:57:46.358Z info: A new client connected: y-rhnPbz7amvBgBGAAAV
+2025-08-18T18:57:46.388Z info: Socket ID y-rhnPbz7amvBgBGAAAV associated with phoneNumber +916351446468
+2025-08-18T18:57:46.433Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-18T18:57:49.124Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T18:57:50.562Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-18T18:57:52.511Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T18:57:54.016Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T18:57:54.063Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-18T18:57:56.850Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T18:57:57.983Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T18:57:59.064Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T18:57:59.126Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T18:58:00.850Z info: GET /t/travelhistory/+918295525360 - 200
+2025-08-18T18:58:15.636Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T18:58:15.685Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T18:58:21.760Z info: GET /api/location?going=Danpur - 200
+2025-08-18T18:58:24.464Z info: GET /api/location?going=Danpur+niz - 200
+2025-08-18T18:58:24.826Z info: GET /api/location?going=Danpur+nizM - 200
+2025-08-18T18:58:26.114Z info: GET /api/location?going=Danapur+Nizamat,+Mitha... - 200
+2025-08-18T18:58:29.100Z info: GET /api/location?going=Danapur+Nizamat,+Mitha...&leaving=Calcul - 200
+2025-08-18T18:58:30.651Z info: GET /api/location?going=Danapur+Nizamat,+Mitha...&leaving=Calcu - 200
+2025-08-18T18:58:31.660Z info: GET /api/location?going=Danapur+Nizamat,+Mitha...&leaving=Calcutta+ - 200
+2025-08-18T18:58:36.285Z info: GET /api/getdetails?leavingLocation=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar,%20India&goingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&date=2025-08-20&phoneNumber=+918295525360&userTimezone=Asia/Kolkata&timezoneOffset=-330 - 200
+2025-08-18T18:58:36.287Z info: GET /api/getdetails?leavingLocation=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar,%20India&goingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&date=2025-08-20&phoneNumber=+918295525360&userTimezone=Asia/Kolkata&timezoneOffset=-330 - 200
+2025-08-18T18:58:37.788Z info: GET /api/getdetails?leavingLocation=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar,%20India&goingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&date=2025-08-20&phoneNumber=+918295525360&userTimezone=Asia/Kolkata&timezoneOffset=-330 - 200
+2025-08-18T18:58:47.861Z info: POST /api/getearning - 200
+2025-08-18T18:58:50.455Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T18:58:50.518Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T18:58:52.770Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T18:59:21.348Z info: POST /order/respond?travelId=607801135&consignmentId=d123e536-9da8-44cc-bcef-f74cca13323b - 200
+2025-08-18T18:59:22.058Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T18:59:25.609Z info: GET /map/getdistanceandcoordinate?origin=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar,%20India - 200
+2025-08-18T18:59:34.760Z info: GET /t/travelhistory/+918295525360 - 200
+2025-08-18T18:59:40.022Z info: GET /t/travelhistory/+918295525360 - 200
+2025-08-18T18:59:43.098Z info: GET /map/getdistanceandcoordinate?origin=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001&destination=H9F7%20P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073 - 200
+2025-08-18T18:59:57.600Z info: POST /p/create-order - 200
+2025-08-18T19:00:01.766Z info: GET /earn/earning?phoneNumber=%2B918295525360 - 200
+2025-08-18T19:00:26.532Z info: POST /p/verify-payment - 200
+2025-08-18T19:00:27.197Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T19:00:32.297Z info: GET /earn/earning?phoneNumber=%2B918295525360 - 200
+2025-08-18T19:00:38.472Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T19:00:38.529Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T19:00:39.356Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T19:00:40.137Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T19:00:46.808Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-18T19:00:48.108Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T19:01:26.540Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-18T19:01:45.625Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T19:01:46.398Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T19:01:48.084Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T19:03:21.961Z info: POST /p/create-order - 200
+2025-08-18T19:03:33.556Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T19:03:33.795Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-18T19:03:36.779Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T19:03:40.458Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-18T19:03:41.961Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T19:03:42.182Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-18T19:03:45.763Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T19:03:47.533Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-18T19:03:55.482Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-18T19:03:55.632Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T19:03:59.038Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T19:04:05.646Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-18T19:04:07.158Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T19:04:09.460Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T19:04:09.655Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-18T19:04:11.954Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T19:04:13.583Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T19:04:14.934Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T19:04:17.881Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T19:04:25.799Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T19:04:29.012Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T19:04:42.386Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T19:05:02.226Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T19:05:04.709Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T19:05:09.959Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T19:05:16.652Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-18T19:05:18.402Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T19:05:18.450Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-18T19:05:54.418Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T19:05:59.995Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T19:06:00.555Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-18T19:06:01.287Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T19:06:05.847Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T19:06:06.972Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-18T19:06:08.390Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T19:06:39.880Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T19:06:40.270Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T19:06:43.729Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T19:06:43.777Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T19:06:54.238Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-18T19:06:55.615Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T19:06:56.368Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T19:06:57.023Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T19:08:03.004Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T19:08:03.307Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T19:09:49.598Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T19:09:49.710Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T19:10:04.555Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T19:10:04.664Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T19:10:23.318Z info: Client disconnected: VUchhG3hxzNnwgLeAAAT
+2025-08-18T19:10:23.360Z info: Socket ID cleared for phoneNumber +918295525360
+2025-08-18T19:10:24.003Z info: Client disconnected: y-rhnPbz7amvBgBGAAAV
+2025-08-18T19:10:24.035Z info: Socket ID cleared for phoneNumber +916351446468
+2025-08-18T19:10:30.633Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T19:10:30.637Z info: A new client connected: tR-rLSp3jX7eB-jBAAAX
+2025-08-18T19:10:30.673Z info: Socket ID tR-rLSp3jX7eB-jBAAAX associated with phoneNumber +918295525360
+2025-08-18T19:10:30.700Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T19:10:34.601Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T19:10:34.982Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T19:10:35.065Z info: A new client connected: FstDKk9WxXOzmQO3AAAZ
+2025-08-18T19:10:35.098Z info: Socket ID FstDKk9WxXOzmQO3AAAZ associated with phoneNumber +916351446468
+2025-08-18T19:10:35.153Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-18T19:10:35.420Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T19:10:39.342Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T19:10:40.787Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-18T19:10:41.717Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T19:10:51.961Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T19:10:52.038Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T19:11:34.256Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T19:11:34.386Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T19:11:38.896Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-18T19:11:41.055Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T19:11:41.248Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-18T19:12:01.585Z info: GET /address/getaddress/+916351446468 - 200
+2025-08-18T19:12:04.005Z info: GET /api/location?going=87%2F1,+College+St,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073 - 200
+2025-08-18T19:12:04.818Z info: GET /address/getaddress/+916351446468 - 200
+2025-08-18T19:12:06.674Z info: GET /api/location?going=87%2F1,+College+St,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073&leaving=Danapur+Nizamat,+Mithapur,+Patna,+Bihar+-+800001 - 200
+2025-08-18T19:12:10.988Z info: GET /map/getdistanceandcoordinate?origin=87/1,%20College%20St,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T19:12:27.686Z info: GET /map/getdistanceandcoordinate?origin=87/1,%20College%20St,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T19:12:33.271Z info: POST /t/creates?Leavinglocation=87/1,%20College%20St,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&Goinglocation=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T19:12:33.650Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T19:12:33.714Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T19:12:35.297Z info: GET /address/getaddress/+918295525360 - 200
+2025-08-18T19:12:36.513Z info: GET /api/location?going=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073 - 200
+2025-08-18T19:12:36.685Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T19:12:36.847Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-18T19:12:37.674Z info: GET /address/getaddress/+918295525360 - 200
+2025-08-18T19:12:38.883Z info: GET /api/location?going=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073&leaving=Danapur+Nizamat,+Mithapur,+Patna,+Bihar+-+800001 - 200
+2025-08-18T19:12:40.683Z info: GET /map/getdistanceandcoordinate?origin=12,%20H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=12,%20Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T19:12:59.240Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T19:13:00.427Z info: POST /api/consignment - 200
+2025-08-18T19:13:03.698Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T19:13:03.748Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T19:13:11.470Z info: GET /api/location?going=Da - 200
+2025-08-18T19:13:12.030Z info: GET /api/location?going=Dana - 200
+2025-08-18T19:13:12.423Z info: GET /api/location?going=Danap - 200
+2025-08-18T19:13:12.964Z info: GET /api/location?going=Danapur - 200
+2025-08-18T19:13:13.406Z info: GET /api/location?going=Danapur+ - 200
+2025-08-18T19:13:14.380Z info: GET /api/location?going=Danapur+niz - 200
+2025-08-18T19:13:15.417Z info: GET /api/location?going=Danapur+Nizamat,+Mitha... - 200
+2025-08-18T19:13:18.992Z info: GET /api/location?going=Danapur+Nizamat,+Mitha...&leaving=Calcutta - 200
+2025-08-18T19:13:23.827Z info: GET /t/search-rides?leavingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&goingLocation=Calcutta+University,+College+Square,+Kolkata,+West+Bengal,+India&date=2025-08-28&travelMode=train&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-18T19:13:26.967Z info: GET /t/search-rides?leavingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&goingLocation=Calcutta+University,+College+Square,+Kolkata,+West+Bengal,+India&date=2025-08-28&travelMode=car&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-18T19:13:26.979Z info: GET /t/search-rides?leavingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&goingLocation=Calcutta+University,+College+Square,+Kolkata,+West+Bengal,+India&date=2025-08-28&travelMode=car&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-18T19:13:26.985Z info: GET /t/search-rides?leavingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&goingLocation=Calcutta+University,+College+Square,+Kolkata,+West+Bengal,+India&date=2025-08-28&travelMode=car&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-18T19:13:35.672Z info: GET /t/travelhistory/+916351446468 - 200
+2025-08-18T19:13:40.596Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T19:13:40.644Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T19:13:42.230Z info: GET /api/history/+918295525360 - 200
+2025-08-18T19:13:46.050Z info: GET /api/history/+918295525360 - 200
+2025-08-18T19:13:48.265Z info: GET /api/consignment/12a85c20-34e6-47ec-a190-ec0a5a99b5b3 - 200
+2025-08-18T19:13:48.268Z info: GET /map/getdistanceandcoordinate?origin=H9F7%2BP4Q%2C%20Calcutta%20University%2C%20College%20Square%2C%20Kolkata%2C%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat%2C%20Mithapur%2C%20Patna%2C%20Bihar%20-%20800001 - 200
+2025-08-18T19:13:48.276Z info: GET /api/getall/+918295525360?phoneNumber=%2B918295525360 - 200
+2025-08-18T19:13:51.809Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T19:13:51.869Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T19:13:53.478Z info: GET /api/location?going=Danapur+Nizamat,+Mitha..&leaving=Calcutta+University,+C... - 200
+2025-08-18T19:13:54.472Z info: GET /api/location?going=.&leaving=Calcutta+University,+C... - 200
+2025-08-18T19:13:56.224Z info: GET /api/location?going=Calcutta.&leaving=Calcutta+University,+C... - 200
+2025-08-18T19:13:59.095Z info: GET /api/location?going=Calcutta&leaving=Calcutta+University,+C... - 200
+2025-08-18T19:14:00.833Z info: GET /api/location?going=Calcutta+&leaving=Calcutta+University,+C... - 200
+2025-08-18T19:14:01.651Z info: GET /api/location?going=Calcutta+uni&leaving=Calcutta+University,+C... - 200
+2025-08-18T19:14:02.604Z info: GET /api/location?going=Calcutta+univers&leaving=Calcutta+University,+C... - 200
+2025-08-18T19:14:03.310Z info: GET /api/location?going=Calcutta+university&leaving=Calcutta+University,+C... - 200
+2025-08-18T19:14:06.970Z info: GET /api/location?going=Calcutta+university&leaving=Calcutta+University,+C.. - 200
+2025-08-18T19:14:07.938Z info: GET /api/location?going=Calcutta+university - 200
+2025-08-18T19:14:10.880Z info: GET /api/location?going=Calcutta+university&leaving=Danap - 200
+2025-08-18T19:14:11.600Z info: GET /api/location?going=Calcutta+university&leaving=Danapur - 200
+2025-08-18T19:14:13.479Z info: GET /api/location?going=Calcutta+university&leaving=Danapur+niza. - 200
+2025-08-18T19:14:14.499Z info: GET /api/location?going=Calcutta+university&leaving=Danapur+niza - 200
+2025-08-18T19:14:15.801Z info: GET /api/location?going=Calcutta+university&leaving=Danapur+Nizamat,+Mitha... - 200
+2025-08-18T19:14:19.460Z info: GET /t/search-rides?leavingLocation=Calcutta+University,+College+Square,+Kolkata,+West+Bengal,+India&goingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&date=2025-08-28&travelMode=train&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-18T19:14:25.886Z info: GET /t/search-rides?leavingLocation=Calcutta+University,+College+Square,+Kolkata,+West+Bengal,+India&goingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&date=2025-08-28&travelMode=car&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-18T19:14:25.890Z info: GET /t/search-rides?leavingLocation=Calcutta+University,+College+Square,+Kolkata,+West+Bengal,+India&goingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&date=2025-08-28&travelMode=car&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-18T19:14:25.893Z info: GET /t/search-rides?leavingLocation=Calcutta+University,+College+Square,+Kolkata,+West+Bengal,+India&goingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&date=2025-08-28&travelMode=car&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-18T19:14:29.818Z info: GET /map/getdistanceandcoordinate?origin=87/1,%20College%20St,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T19:14:36.408Z info: POST /t/booking-request - 200
+2025-08-18T19:14:39.112Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T19:14:39.169Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T19:14:42.798Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T19:14:42.969Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-18T19:14:44.692Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T19:14:47.060Z info: GET /t/request/+916351446468 - 200
+2025-08-18T19:14:48.853Z info: GET /api/consignment/12a85c20-34e6-47ec-a190-ec0a5a99b5b3 - 200
+2025-08-18T19:14:51.386Z info: POST /order/respondto?travelId=278135495&consignmentId=12a85c20-34e6-47ec-a190-ec0a5a99b5b3 - 200
+2025-08-18T19:14:54.125Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T19:14:55.071Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T19:14:56.024Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T19:15:01.957Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T19:15:09.845Z info: POST /p/create-order - 200
+2025-08-18T19:15:19.085Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T19:15:19.299Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-18T19:15:44.447Z info: POST /p/verify-payment - 200
+2025-08-18T19:15:44.929Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T19:15:46.204Z info: GET /earn/earning?phoneNumber=%2B916351446468 - 200
+2025-08-18T19:15:48.487Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T19:15:53.179Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T19:15:58.190Z info: POST /api/decline-consignment/+918295525360 - 200
+2025-08-18T19:15:58.371Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T19:16:10.753Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T19:16:10.918Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-18T19:16:12.341Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T19:16:15.105Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-18T19:16:16.362Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T19:17:01.035Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T19:17:01.234Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-18T19:17:05.171Z info: GET /t/travelhistory/+916351446468 - 200
+2025-08-18T19:17:17.912Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T19:17:18.439Z info: GET /map/getdistanceandcoordinate?origin=Netaji%20Subhash%20Place,%20Shakurpur,%20North%20West%20Delhi,%20Delhi%20-%20110034&destination=IIITM%20Campus,%20Gwalior,%20Madhya%20Pradesh%20-%20474015 - 200
+2025-08-18T19:17:26.561Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T19:17:26.613Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T19:17:28.048Z info: GET /api/history/+918295525360 - 200
+2025-08-18T19:17:31.499Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T19:17:31.785Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-18T19:17:46.019Z info: GET /address/getaddress/+916351446468 - 200
+2025-08-18T19:17:48.790Z info: GET /api/location?going=87%2F1,+College+St,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073 - 200
+2025-08-18T19:17:50.315Z info: GET /address/getaddress/+916351446468 - 200
+2025-08-18T19:17:52.738Z info: GET /api/location?going=87%2F1,+College+St,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073&leaving=Danapur+Nizamat,+Mithapur,+Patna,+Bihar+-+800001 - 200
+2025-08-18T19:17:57.061Z info: GET /map/getdistanceandcoordinate?origin=87/1,%20College%20St,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T19:18:11.529Z info: GET /map/getdistanceandcoordinate?origin=87/1,%20College%20St,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T19:18:14.343Z info: POST /t/creates?Leavinglocation=87/1,%20College%20St,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&Goinglocation=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T19:18:18.184Z info: GET /address/getaddress/+918295525360 - 200
+2025-08-18T19:18:18.268Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T19:18:18.580Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-18T19:18:19.382Z info: GET /api/location?going=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073 - 200
+2025-08-18T19:18:19.841Z info: GET /address/getaddress/+918295525360 - 200
+2025-08-18T19:18:20.898Z info: GET /api/location?going=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073&leaving=Danapur+Nizamat,+Mithapur,+Patna,+Bihar+-+800001 - 200
+2025-08-18T19:18:21.258Z info: GET /map/getdistanceandcoordinate?origin=12,%20H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=12,%20Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T19:18:41.318Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T19:18:43.784Z info: POST /api/consignment - 200
+2025-08-18T19:18:47.118Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T19:18:47.181Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T19:18:52.659Z info: GET /api/location?going=c - 200
+2025-08-18T19:18:53.169Z info: GET /api/location?going=cal - 200
+2025-08-18T19:18:54.583Z info: GET /api/location?going=calcutaa - 200
+2025-08-18T19:18:55.249Z info: GET /api/location?going=calcutta - 200
+2025-08-18T19:18:58.926Z info: Client disconnected: tR-rLSp3jX7eB-jBAAAX
+2025-08-18T19:18:58.963Z info: Socket ID cleared for phoneNumber +918295525360
+2025-08-18T19:18:59.691Z info: Client disconnected: FstDKk9WxXOzmQO3AAAZ
+2025-08-18T19:18:59.724Z info: Socket ID cleared for phoneNumber +916351446468
+2025-08-18T19:19:05.274Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T19:19:05.295Z info: A new client connected: lhe9vTYz0UQxyb6yAAAb
+2025-08-18T19:19:05.329Z info: Socket ID lhe9vTYz0UQxyb6yAAAb associated with phoneNumber +918295525360
+2025-08-18T19:19:05.331Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T19:19:11.354Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T19:19:11.421Z info: A new client connected: 39Wnfm7HhvSFa06pAAAd
+2025-08-18T19:19:11.453Z info: Socket ID 39Wnfm7HhvSFa06pAAAd associated with phoneNumber +916351446468
+2025-08-18T19:19:11.512Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-18T19:19:16.494Z info: GET /api/location?going=Calcutta - 200
+2025-08-18T19:19:19.745Z info: GET /api/location?going=Calcutta+uni - 200
+2025-08-18T19:19:21.791Z info: GET /api/location?going=Calcutta+University,+College+Squ... - 200
+2025-08-18T19:19:23.964Z info: GET /api/location?going=Calcutta+University,+College+Squ...&leaving=Danapur - 200
+2025-08-18T19:19:24.769Z info: GET /api/location?going=Calcutta+University,+College+Squ...&leaving=Danapur,+ - 200
+2025-08-18T19:19:25.363Z info: GET /api/location?going=Calcutta+University,+College+Squ...&leaving=Danapur,+niz - 200
+2025-08-18T19:19:26.030Z info: GET /api/location?going=Calcutta+University,+College+Squ...&leaving=Danapur,+nizama - 200
+2025-08-18T19:19:29.931Z info: GET /api/getdetails?leavingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&goingLocation=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar,%20India&date=2025-08-19&phoneNumber=+916351446468&userTimezone=Asia/Calcutta&timezoneOffset=-330 - 200
+2025-08-18T19:19:29.935Z info: GET /api/getdetails?leavingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&goingLocation=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar,%20India&date=2025-08-19&phoneNumber=+916351446468&userTimezone=Asia/Calcutta&timezoneOffset=-330 - 200
+2025-08-18T19:19:33.071Z info: GET /api/getdetails?leavingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&goingLocation=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar,%20India&date=2025-08-19&phoneNumber=+916351446468&userTimezone=Asia/Calcutta&timezoneOffset=-330 - 200
+2025-08-18T19:19:36.804Z info: POST /api/getearning - 200
+2025-08-18T19:19:39.608Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T19:19:39.749Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T19:19:39.915Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-18T19:19:40.261Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T19:19:41.212Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T19:22:35.602Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T19:22:36.728Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T19:23:35.614Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T19:23:37.935Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T19:26:58.568Z info: GET /api/riderequest/+916351446468 - 200
+2025-08-18T19:28:05.808Z info: POST /order/respond?travelId=469342498&consignmentId=938e93dd-3748-4081-bbdb-3aa52482348f - 200
+2025-08-18T19:28:06.415Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T19:28:11.353Z info: GET /map/getdistanceandcoordinate?origin=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar,%20India - 200
+2025-08-18T19:29:36.609Z info: GET /map/getdistanceandcoordinate?origin=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar,%20India - 200
+2025-08-18T19:29:43.712Z info: GET /t/travel/469342498 - 200
+2025-08-18T19:29:43.731Z info: GET /map/getdistanceandcoordinate?origin=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar,%20India - 200
+2025-08-18T19:30:19.326Z info: GET /t/travel/469342498 - 200
+2025-08-18T19:30:19.330Z info: GET /map/getdistanceandcoordinate?origin=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar,%20India - 200
+2025-08-18T19:31:18.062Z info: GET /t/travel/469342498 - 200
+2025-08-18T19:31:18.091Z info: GET /map/getdistanceandcoordinate?origin=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar,%20India - 200
+2025-08-18T19:31:23.649Z info: GET /t/travel/469342498 - 200
+2025-08-18T19:31:23.668Z info: GET /map/getdistanceandcoordinate?origin=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar,%20India - 200
+2025-08-18T19:31:29.628Z info: GET /t/travel/469342498 - 200
+2025-08-18T19:31:29.651Z info: GET /map/getdistanceandcoordinate?origin=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar,%20India - 200
+2025-08-18T19:31:32.490Z info: GET /t/travel/469342498 - 200
+2025-08-18T19:31:32.552Z info: GET /map/getdistanceandcoordinate?origin=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar,%20India - 200
+2025-08-18T19:31:35.386Z info: GET /t/travel/469342498 - 200
+2025-08-18T19:31:35.432Z info: GET /map/getdistanceandcoordinate?origin=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar,%20India - 200
+2025-08-18T19:31:38.778Z info: GET /map/getdistanceandcoordinate?origin=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar,%20India - 200
+2025-08-18T19:31:38.785Z info: GET /t/travel/469342498 - 200
+2025-08-18T19:31:40.720Z info: GET /t/travel/469342498 - 200
+2025-08-18T19:31:40.743Z info: GET /map/getdistanceandcoordinate?origin=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar,%20India - 200
+2025-08-18T19:32:04.098Z info: POST /p/create-order - 200
+2025-08-18T19:32:29.002Z info: POST /p/verify-payment - 200
+2025-08-18T19:32:37.239Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T19:32:37.417Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T19:32:45.953Z info: GET /earn/earning?phoneNumber=%2B916351446468 - 200
+2025-08-18T19:33:03.951Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-18T19:33:05.351Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-18T19:33:09.300Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T19:33:10.576Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T19:33:15.975Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T19:33:18.652Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T19:33:22.374Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T19:33:23.023Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T19:33:23.172Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T19:33:24.450Z info: GET /api/history/+918295525360 - 200
+2025-08-18T19:33:26.087Z info: GET /api/consignment/938e93dd-3748-4081-bbdb-3aa52482348f - 200
+2025-08-18T19:33:26.091Z info: GET /map/getdistanceandcoordinate?origin=H9F7%2BP4Q%2C%20Calcutta%20University%2C%20College%20Square%2C%20Kolkata%2C%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat%2C%20Mithapur%2C%20Patna%2C%20Bihar%20-%20800001 - 200
+2025-08-18T19:33:26.097Z info: GET /api/getall/+918295525360?phoneNumber=%2B918295525360 - 200
+2025-08-18T19:33:56.231Z info: Client disconnected: 39Wnfm7HhvSFa06pAAAd
+2025-08-18T19:33:56.272Z info: Socket ID cleared for phoneNumber +916351446468

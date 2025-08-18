@@ -321,7 +321,7 @@ exports.getAutoCompleteAndCreateBooking = async (req, res) => {
     });
 
     const travelRecord = await Traveldetails.create(travelDetails);
-    console.log("Created travel record:", travelRecord);
+    console.log("Created travel record:", travelDetails);
 
     const now = moment();
     let Status = "UPCOMING";
