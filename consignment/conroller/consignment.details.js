@@ -3,6 +3,7 @@ const Consignment = require('../../consignment/model/contraveldetails');
 const mapservice = require('../../service/mapservice');
 const userprofiles = require('../../user/model/Profile');
 const imagekit = require('../../user/controller/imagekit');
+const moment = require('moment-timezone');
 
 const Traveldetails = require('../../user/model/traveldetails');
 const fare = require('../../service/price.service');
@@ -85,50 +86,46 @@ module.exports = {
       
       console.log(req.body)
       
-      // Handle timezone-aware date parsing
+      // Handle timezone-aware date parsing using TimezoneService
       let sendingDate;
-      if (userTimezone && timezoneOffset) {
-        // Check if dateOfSending is already a Date object (from validation middleware)
+      try {
+        const TimezoneService = require('../../service/timezoneService');
+        
+        // Set default timezone if not provided
+        const timezone = userTimezone || 'Asia/Kolkata';
+        
+        // Handle both Date objects and string formats
+        let dateString;
         if (dateOfSending instanceof Date) {
-          // Use the Date object directly
-          sendingDate = new Date(dateOfSending);
-          
-          // Adjust for timezone offset
-          const offsetMinutes = parseInt(timezoneOffset);
-          sendingDate.setMinutes(sendingDate.getMinutes() - offsetMinutes);
-          
-          console.log('Timezone-aware date parsing (Date object):', {
-            originalDate: dateOfSending,
-            userTimezone,
-            timezoneOffset,
-            parsedDate: sendingDate,
-            parsedDateISO: sendingDate.toISOString()
-          });
+          dateString = dateOfSending.toISOString().split('T')[0]; // Convert to YYYY-MM-DD
         } else {
-          // Handle string format
-          const [year, month, day] = dateOfSending.split('-').map(Number);
-          sendingDate = new Date(year, month - 1, day);
-          
-          // Adjust for timezone offset
-          const offsetMinutes = parseInt(timezoneOffset);
-          sendingDate.setMinutes(sendingDate.getMinutes() - offsetMinutes);
-          
-          console.log('Timezone-aware date parsing (string):', {
-            originalDate: dateOfSending,
-            userTimezone,
-            timezoneOffset,
-            parsedDate: sendingDate,
-            parsedDateISO: sendingDate.toISOString()
-          });
+          dateString = dateOfSending;
         }
-      } else {
-        // Fallback to simple date parsing
-        sendingDate = new Date(dateOfSending);
+        
+        // Validate and normalize the date
+        const normalizedDate = TimezoneService.validateAndNormalizeDate(dateString, timezone);
+        sendingDate = normalizedDate.dateObj;
+        
+        console.log('Timezone-aware date parsing:', {
+          originalDate: dateOfSending,
+          userTimezone: timezone,
+          normalizedDate: normalizedDate.date,
+          parsedDate: sendingDate,
+          parsedDateISO: sendingDate.toISOString()
+        });
+        
+      } catch (error) {
+        console.error("Date parsing error:", error);
+        return res.status(400).json({ message: "Invalid date format. Please provide a valid date." });
       }
       
-      const currentDate = new Date();
-      if (sendingDate < currentDate.setHours(0, 0, 0, 0)) {
-        return res.status(400).json({ message: "please put the valid date " });
+      // Check if date is in the past using timezone-aware comparison
+      const timezone = userTimezone || 'Asia/Kolkata';
+      const currentDate = moment().tz(timezone).startOf('day');
+      const sendingDateMoment = moment.tz(sendingDate, timezone);
+      
+      if (sendingDateMoment.isBefore(currentDate)) {
+        return res.status(400).json({ message: "Please provide a valid future date." });
       }
 
       const user = await userprofiles.findOne({ phoneNumber });
@@ -413,57 +410,118 @@ module.exports.getConsignmentsByDate = async (req, res) => {
       return res.status(404).json({ message: "User not found" });
     }
 
-    // Handle timezone-aware date parsing for search
+    // Handle timezone-aware date parsing for search using TimezoneService
     let searchDate;
-    if (userTimezone && timezoneOffset) {
-      // Create date in user's timezone
-      const [year, month, day] = date.split('-').map(Number);
-      searchDate = new Date(year, month - 1, day);
+    let timezone;
+    let searchMoment;
+    
+    try {
+      const TimezoneService = require('../../service/timezoneService');
       
-      // Adjust for timezone offset
-      const offsetMinutes = parseInt(timezoneOffset);
-      searchDate.setMinutes(searchDate.getMinutes() - offsetMinutes);
+      // Set default timezone if not provided
+      timezone = userTimezone || 'Asia/Kolkata';
+      
+      // Create moment object in user's timezone
+      searchMoment = moment.tz(date, timezone);
+      searchDate = searchMoment.toDate();
+      
+      if (!searchMoment.isValid()) {
+        return res.status(400).json({ message: "Invalid date format. Use YYYY-MM-DD." });
+      }
       
       console.log('Timezone-aware search date parsing:', {
         originalDate: date,
-        userTimezone,
-        timezoneOffset,
-        parsedDate: searchDate,
-        parsedDateISO: searchDate.toISOString()
+        userTimezone: timezone,
+        parsedDate: searchMoment.format(),
+        parsedDateISO: searchMoment.utc().toISOString()
       });
-    } else {
-      // Fallback to simple date parsing
-      searchDate = new Date(date);
+      
+    } catch (error) {
+      console.error("Date parsing error:", error);
+      return res.status(400).json({ message: "Invalid date format. Use YYYY-MM-DD." });
     }
-    
-    const today = new Date();
 
     console.log('searchdate', searchDate)
 
     if (isNaN(searchDate.getTime())) {
       return res.status(400).json({ message: "Invalid date format. Use YYYY-MM-DD." });
     }
-    if (searchDate < today.setHours(0, 0, 0, 0)) {
-      return res.status(404).json({ message: "No consignments available the dates." });
+    
+    // Check if date is in the past using timezone-aware comparison
+    const currentDate = moment().tz(timezone).startOf('day');
+    
+    if (searchMoment.isBefore(currentDate)) {
+      return res.status(404).json({ message: "No consignments available for past dates." });
     }
 
-    // Create date range for search (avoid modifying the original searchDate)
-    const startOfDay = new Date(searchDate);
-    startOfDay.setHours(0, 0, 0, 0);
-    const endOfDay = new Date(searchDate);
-    endOfDay.setHours(23, 59, 59, 999);
-
+    // Create date range for search using proper timezone handling
+    // For IST (UTC+5:30), we need to ensure we cover the full day in the user's timezone
+    const startOfDay = moment.tz(date, timezone).startOf('day').utc().toDate();
+    
+    // Calculate end of day properly to cover the full day in user's timezone
+    // We need to add 1 day to the start and subtract 1 millisecond to get the end of the current day
+    const endOfDay = moment.tz(date, timezone).add(1, 'day').startOf('day').subtract(1, 'millisecond').utc().toDate();
+    
+    // Debug: Verify the date range covers the correct day
+    console.log('Date range verification:', {
+      inputDate: date,
+      timezone: timezone,
+      startOfDayUTC: startOfDay.toISOString(),
+      endOfDayUTC: endOfDay.toISOString(),
+      startOfDayLocal: moment.utc(startOfDay).tz(timezone).format('YYYY-MM-DD HH:mm:ss'),
+      endOfDayLocal: moment.utc(endOfDay).tz(timezone).format('YYYY-MM-DD HH:mm:ss'),
+      coversCorrectDay: moment.utc(startOfDay).tz(timezone).format('YYYY-MM-DD') === date && 
+                       moment.utc(endOfDay).tz(timezone).format('YYYY-MM-DD') === date,
+      fullDayCoverage: moment.utc(startOfDay).tz(timezone).format('HH:mm:ss') === '00:00:00' &&
+                      moment.utc(endOfDay).tz(timezone).format('HH:mm:ss') === '23:59:59'
+    });
+    
+    console.log('Date range for search:', {
+      originalDate: date,
+      timezone: timezone,
+      startOfDay: startOfDay.toISOString(),
+      endOfDay: endOfDay.toISOString(),
+      startOfDayLocal: searchMoment.startOf('day').format(),
+      endOfDayLocal: searchMoment.endOf('day').format()
+    });
     // Search for user's travel on the specified date
-    const userTravel = await Traveldetails.findOne({
+    // First try to find by travelDate (string) and expectedStartTime range
+    const normalizedDate = moment.tz(date, timezone).format('YYYY-MM-DD');
+    let userTravel = await Traveldetails.findOne({
       phoneNumber: normalizedPhoneNumber,
-      travelDate: {
-        $gte: startOfDay,
-        $lt: endOfDay
-      }
+      travelDate: normalizedDate
     }).sort({ updatedAt: -1 });
-    console.log("userTravel", userTravel)
+    
+    // If not found by travelDate, try by expectedStartTime range
     if (!userTravel) {
-      return res.status(404).json({ message: "No travel found for the specified date. Please publish your travel first." });
+      userTravel = await Traveldetails.findOne({
+        phoneNumber: normalizedPhoneNumber,
+        expectedStartTime: {
+          $gte: startOfDay.toISOString(),
+          $lt: endOfDay.toISOString()
+        }
+      }).sort({ updatedAt: -1 });
+    }
+    console.log("userTravel", userTravel);
+    console.log("Travel search details:", {
+      searchDate: date,
+      normalizedDate: normalizedDate,
+      startOfDayISO: startOfDay.toISOString(),
+      endOfDayISO: endOfDay.toISOString(),
+      phoneNumber: normalizedPhoneNumber
+    });
+    
+    if (!userTravel) {
+      return res.status(404).json({ 
+        message: "No travel found for the specified date. Please publish your travel first.",
+        searchDetails: {
+          date: date,
+          timezone: timezone,
+          normalizedDate: normalizedDate,
+          startOfDay: startOfDay.toISOString(),
+          endOfDay: endOfDay.toISOString()
+        }
+      });
     }
 
     // Validate travel mode and map roadways to car for price calculation
@@ -618,6 +676,17 @@ module.exports.getConsignmentsByDate = async (req, res) => {
     } else {
       console.log("Using exact coordinate matches, skipping distance filtering");
     }
+
+    // Filter out consignments that are already accepted/booked
+    const acceptedConsignmentIds = await riderequest.find({ status: "Accepted" }).distinct('consignmentId');
+    filteredConsignments = filteredConsignments.filter(consignment => !acceptedConsignmentIds.includes(consignment.consignmentId));
+    console.log("Available consignments after filtering accepted ones:", filteredConsignments.length);
+
+    // Filter out consignments with certain statuses
+    filteredConsignments = filteredConsignments.filter(consignment => 
+      !consignment.status || !["Accepted", "Rejected", "Expired", "Completed"].includes(consignment.status)
+    );
+    console.log("Available consignments after filtering by status:", filteredConsignments.length);
 
     console.log("Available consignments after filtering:", filteredConsignments.length);
     
@@ -880,6 +949,20 @@ module.exports.getconsignment = async (req, res) => {
     if (!con) {
       return res.status(404).json({ message: "Consignment not found" });
     }
+
+    // Check if consignment is already accepted by another traveler
+    const existingAcceptedRequest = await riderequest.findOne({
+      consignmentId,
+      status: "Accepted",
+    });
+    if (existingAcceptedRequest) {
+      return res.status(400).json({ message: "Consignment has already been accepted by another traveler." });
+    }
+
+    // Check if consignment status is already set to accepted/rejected/expired/completed
+    if (con.status && ["Accepted", "Rejected", "Expired", "Completed"].includes(con.status)) {
+      return res.status(400).json({ message: `Consignment is already ${con.status.toLowerCase()}.` });
+    }
     const Ride = await Traveldetails.findOne({ phoneNumber }).sort({ updatedAt: -1 });
 
     if (!Ride) {
@@ -1068,6 +1151,20 @@ module.exports.getearning = async (req, res) => {
       return res.status(404).json({ message: "Consignment not found" });
     }
 
+    // Check if consignment is already accepted by another traveler
+    const existingAcceptedRequest2 = await riderequest.findOne({
+      consignmentId,
+      status: "Accepted",
+    });
+    if (existingAcceptedRequest2) {
+      return res.status(400).json({ message: "Consignment has already been accepted by another traveler." });
+    }
+
+    // Check if consignment status is already set to accepted/rejected/expired/completed
+    if (con.status && ["Accepted", "Rejected", "Expired", "Completed"].includes(con.status)) {
+      return res.status(400).json({ message: `Consignment is already ${con.status.toLowerCase()}.` });
+    }
+
     const Ride = await Traveldetails.findOne({ phoneNumber }).sort({ updatedAt: -1 });
     if (!Ride) {
       return res.status(404).json({ message: "Ride not found" });
@@ -1132,11 +1229,11 @@ module.exports.getearning = async (req, res) => {
     // }
 
     // Check if consignment is already accepted by another traveler
-    const existingRequest = await riderequest.findOne({
+    const existingAcceptedRequest3 = await riderequest.findOne({
       consignmentId,
       status: "Accepted",
     });
-    if (existingRequest) {
+    if (existingAcceptedRequest3) {
       return res.status(400).json({ message: "Consignment has already been accepted by another traveler." });
     }
 

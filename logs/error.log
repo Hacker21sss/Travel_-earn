@@ -837,3 +837,8 @@
 2025-08-12T12:08:18.916Z error: Error clearing socketId for +919798695233: connection 5 to 159.41.197.67:27017 closed
 2025-08-13T18:31:19.488Z error: Error clearing socketId for +918295525360: getaddrinfo ENOTFOUND cluster0-shard-00-00.i288h.mongodb.net
 2025-08-16T15:54:58.659Z error: Error clearing socketId for +918295525360: getaddrinfo ENOTFOUND cluster0-shard-00-00.i288h.mongodb.net
+2025-08-19T10:06:52.805Z error: MongoDB connection error: querySrv ESERVFAIL _mongodb._tcp.cluster0.i288h.mongodb.net
+2025-08-19T10:07:03.317Z error: Error updating socketId for +918295525360: Operation `userprofiles.findOneAndUpdate()` buffering timed out after 10000ms
+2025-08-19T10:07:12.065Z error: Error clearing socketId for +918295525360: Operation `userprofiles.findOneAndUpdate()` buffering timed out after 10000ms
+2025-08-19T10:23:16.759Z error: MongoDB connection error: queryTxt ESERVFAIL cluster0.i288h.mongodb.net
+2025-08-19T21:50:17.028Z error: Error clearing socketId for +916351446468: getaddrinfo ENOTFOUND cluster0-shard-00-00.i288h.mongodb.net

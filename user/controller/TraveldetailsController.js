@@ -6,10 +6,11 @@ const { v4: uuidv4 } = require('uuid');
 const consignmentData = require('../../consignment/model/contraveldetails');
 const Request = require('../../user/model/requestforcarry');
 const travelhistory = require("../../user/model/travel.history");
-const moment = require("moment");
+const moment = require("moment-timezone");
 const { getIO, sendMessageToSocketId } = require('../../socket');
 const Notification = require('../../user/model/notification')
 const datetime = require('../../service/getcurrentdatetime')
+const TimezoneService = require('../../service/timezoneService');
 const User = require('../model/User');
 const con = require('../../consignment/model/conhistory')
 
@@ -29,9 +30,14 @@ function getBoundingBox(center, radiusInMeters) {
 }
 
 
+
 exports.getAutoCompleteAndCreateBooking = async (req, res) => {
-  let { phoneNumber, travelDate, vehicleType, stayDays, stayHours, endDate, travelmode_number, travelMode, expectedStartTime, expectedEndTime, weight, fullFrom, fullTo, userTimezone, timezoneOffset } = req.body;
+  let { phoneNumber, travelDate, vehicleType, stayDays, stayHours, endDate, travelmode_number, travelMode, expectedStartTime, expectedEndTime, weight, fullFrom, fullTo, userTimezone } = req.body;
   const { Leavinglocation, Goinglocation } = req.query;
+  
+  // Set default timezone if not provided
+  userTimezone = userTimezone || 'Asia/Kolkata';
+  
   const user = await userprofiles.findOne({ phoneNumber });
   console.log("Fetched User:", user);
   if (!user) {
@@ -42,63 +48,33 @@ exports.getAutoCompleteAndCreateBooking = async (req, res) => {
     return res.status(400).json({ message: "Leaving and Going locations are required" });
   }
 
-  // Validate and normalize date formats with timezone handling
-  const currentDate = new Date();
-  let sendingDate;
-  
-  console.log("Date validation debug - Input:", { travelDate, endDate, userTimezone, timezoneOffset });
+  // Validate and normalize dates with timezone handling
+  let normalizedTravelDate, normalizedEndDate;
   
   try {
-    // Handle timezone-aware date parsing
-    if (userTimezone && timezoneOffset) {
-      // Create date in user's timezone
-      const [year, month, day] = travelDate.split('-').map(Number);
-      sendingDate = new Date(year, month - 1, day);
-      
-      // Adjust for timezone offset
-      const offsetMinutes = parseInt(timezoneOffset);
-      sendingDate.setMinutes(sendingDate.getMinutes() - offsetMinutes);
-      
-      console.log("Timezone-aware date parsing:", {
-        originalDate: travelDate,
-        userTimezone,
-        timezoneOffset,
-        parsedDate: sendingDate,
-        parsedDateISO: sendingDate.toISOString()
-      });
-    } else {
-      // Fallback to existing logic
-      if (travelDate.includes('T')) {
-        // ISO string format
-        sendingDate = new Date(travelDate);
-      } else {
-        // Simple date format - convert to ISO
-        sendingDate = new Date(travelDate + 'T00:00:00');
-      }
-    }
+    normalizedTravelDate = TimezoneService.validateAndNormalizeDate(travelDate, userTimezone);
+    normalizedEndDate = TimezoneService.validateAndNormalizeDate(endDate, userTimezone);
     
-    console.log("Date validation debug - Parsed travelDate:", {
-      original: travelDate,
-      parsed: sendingDate,
-      parsedISO: sendingDate.toISOString(),
-      parsedLocal: sendingDate.toLocaleDateString()
+    console.log("Date validation:", {
+      original: { travelDate, endDate },
+      normalized: {
+        travelDate: normalizedTravelDate,
+        endDate: normalizedEndDate
+      }
     });
     
-    if (isNaN(sendingDate.getTime())) {
-      return res.status(400).json({ message: "Invalid travel date format" });
+    // Check if travel date is in the past
+    const currentDate = moment().tz(userTimezone).startOf('day');
+    if (normalizedTravelDate.dateObj < currentDate.toDate()) {
+      return res.status(400).json({ message: "Travel date cannot be in the past" });
     }
-    
-    if (sendingDate < currentDate.setHours(0, 0, 0, 0)) {
-      return res.status(400).json({ message: "Please put a valid date" });
-    }
-    
-    // Keep the original date format instead of converting to ISO
-    // This prevents timezone conversion issues
-    travelDate = travelDate; // Keep original format
     
   } catch (error) {
-    console.error("Date validation error:", error);
-    return res.status(400).json({ message: "Invalid date format" });
+    return res.status(400).json({ 
+      message: "Invalid date format", 
+      error: error.message,
+      expectedFormat: "YYYY-MM-DD"
+    });
   }
 
   try {
@@ -127,176 +103,65 @@ exports.getAutoCompleteAndCreateBooking = async (req, res) => {
       return res.status(400).json({ message: "Invalid distance received from map service" });
     }
 
-    // const price = await fare.calculateFare(weightValue, distanceValue, travelMode);
-    // Validate endDate format with timezone handling
-    let endDateObj;
-    try {
-      // Handle timezone-aware endDate parsing
-      if (userTimezone && timezoneOffset) {
-        // Create date in user's timezone
-        const [year, month, day] = endDate.split('-').map(Number);
-        endDateObj = new Date(year, month - 1, day);
-        
-        // Adjust for timezone offset
-        const offsetMinutes = parseInt(timezoneOffset);
-        endDateObj.setMinutes(endDateObj.getMinutes() - offsetMinutes);
-        
-        console.log("Timezone-aware endDate parsing:", {
-          originalDate: endDate,
-          userTimezone,
-          timezoneOffset,
-          parsedDate: endDateObj,
-          parsedDateISO: endDateObj.toISOString()
-        });
-      } else {
-        // Fallback to existing logic
-        if (endDate.includes('T')) {
-          endDateObj = new Date(endDate);
-        } else {
-          endDateObj = new Date(endDate + 'T00:00:00');
-        }
-      }
-      
-      console.log("Date validation debug - Parsed endDate:", {
-        original: endDate,
-        parsed: endDateObj,
-        parsedISO: endDateObj.toISOString(),
-        parsedLocal: endDateObj.toLocaleDateString()
-      });
-      
-      if (isNaN(endDateObj.getTime())) {
-        return res.status(400).json({ message: "Invalid end date format" });
-      }
-      
-      // Keep the original date format instead of converting to ISO
-      // This prevents timezone conversion issues
-      endDate = endDate; // Keep original format
-      
-    } catch (error) {
-      console.error("End date validation error:", error);
-      return res.status(400).json({ message: "Invalid end date format" });
-    }
-
     const rideId = uuidv4();
     const travelId = Math.floor(100000000 + Math.random() * 900000000).toString();
 
-    // Parse time strings and create proper ISO dates without timezone issues
-    const parseTimeToISO = (dateString, timeString) => {
-      try {
-        // Handle different date formats
-        let dateObj;
-        if (dateString.includes('T')) {
-          // ISO string format (e.g., "2025-08-17T00:00:00.000Z")
-          dateObj = new Date(dateString);
-        } else {
-          // Simple date format (e.g., "2025-08-17")
-          // Create date in local timezone to avoid conversion issues
-          const [year, month, day] = dateString.split('-').map(Number);
-          dateObj = new Date(year, month - 1, day); // month is 0-indexed
-        }
-        
-        // Validate date
-        if (isNaN(dateObj.getTime())) {
-          throw new Error(`Invalid date format: ${dateString}`);
-        }
-        
-        const timeMatch = timeString.match(/(\d+):(\d+)\s*(AM|PM)/i);
-        
-        if (!timeMatch) {
-          throw new Error(`Invalid time format: ${timeString}. Expected format: "hh:mm AM/PM"`);
-        }
-        
-        const [, hours, minutes, period] = timeMatch;
-        let hour = parseInt(hours);
-        const minute = parseInt(minutes);
-        const isPM = period.toUpperCase() === 'PM';
-        
-        // Validate time components
-        if (hour < 1 || hour > 12 || minute < 0 || minute > 59) {
-          throw new Error(`Invalid time values: ${timeString}`);
-        }
-        
-        // Convert 12-hour format to 24-hour format
-        if (isPM && hour !== 12) hour += 12;
-        if (!isPM && hour === 12) hour = 0;
-        
-        // Create date in local timezone to avoid timezone conversion issues
-        const resultDate = new Date(
-          dateObj.getFullYear(),
-          dateObj.getMonth(),
-          dateObj.getDate(),
-          hour,
-          minute
-        );
-        
-        // Validate final date
-        if (isNaN(resultDate.getTime())) {
-          throw new Error(`Failed to create valid date from ${dateString} ${timeString}`);
-        }
-        
-        return resultDate.toISOString();
-      } catch (error) {
-        console.error("Date parsing error:", error.message);
-        throw new Error(`Date parsing failed: ${error.message}`);
-      }
-    };
-
+    // Parse expected start and end times with proper timezone handling
     let expectedStart, expectedEnd;
     
     try {
-      expectedStart = parseTimeToISO(travelDate, expectedStartTime);
-      expectedEnd = parseTimeToISO(endDate, expectedEndTime);
+      expectedStart = TimezoneService.parseDateTimeWithTimezone(normalizedTravelDate.date, expectedStartTime, userTimezone);
+      expectedEnd = TimezoneService.parseDateTimeWithTimezone(normalizedEndDate.date, expectedEndTime, userTimezone);
       
-          // Debug logging for date parsing
-    console.log("Date parsing debug:", {
-      input: {
-        travelDate,
-        expectedStartTime,
-        endDate,
-        expectedEndTime
-      },
-      output: {
-        expectedStart,
-        expectedEnd,
-        expectedStartLocal: new Date(expectedStart).toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' }),
-        expectedEndLocal: new Date(expectedEnd).toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' }),
-        expectedStartUTC: new Date(expectedStart).toISOString(),
-        expectedEndUTC: new Date(expectedEnd).toISOString()
-      },
-      timezoneInfo: {
-        serverTimezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
-        serverOffset: new Date().getTimezoneOffset(),
-        expectedStartOffset: new Date(expectedStart).getTimezoneOffset(),
-        expectedEndOffset: new Date(expectedEnd).getTimezoneOffset()
+      console.log("Time parsing results:", {
+        input: {
+          travelDate: normalizedTravelDate.date,
+          expectedStartTime,
+          endDate: normalizedEndDate.date,
+          expectedEndTime,
+          userTimezone
+        },
+        output: {
+          expectedStart,
+          expectedEnd,
+          expectedStartLocal: moment.utc(expectedStart).tz(userTimezone).format(),
+          expectedEndLocal: moment.utc(expectedEnd).tz(userTimezone).format()
+        }
+      });
+      
+      // Validate that end time is after start time
+      if (moment.utc(expectedEnd).isSameOrBefore(moment.utc(expectedStart))) {
+        return res.status(400).json({ 
+          message: "Expected end time must be after expected start time" 
+        });
       }
-    });
+      
     } catch (error) {
-      console.error("Date parsing failed:", error.message);
+      console.error("Time parsing failed:", error.message);
       return res.status(400).json({ 
-        message: "Invalid date or time format", 
+        message: "Invalid time format", 
         error: error.message,
-        expectedFormat: "Date: YYYY-MM-DD, Time: hh:mm AM/PM"
+        expectedFormat: "hh:mm AM/PM"
       });
     }
 
+    // Create travel details object
     let travelDetails = {
       stayDays,
       stayHours,
       vehicleType,
-      endDate,
+      endDate: normalizedEndDate.date, // Store as date string
       phoneNumber,
       username,
       Leavinglocation,
       Goinglocation,
       fullFrom,
       fullTo,
-      travelDate,
+      travelDate: normalizedTravelDate.date, // Store as date string
       travelmode_number,
       travelMode,
-      expectedStartTime: expectedStart,
-      expectedEndTime: expectedEnd,
-      // expectedearning: price,
-      // payableAmount: price,
+      expectedStartTime: expectedStart, // Store as UTC ISO string
+      expectedEndTime: expectedEnd, // Store as UTC ISO string
       distance: distanceText,
       duration: durationText,
       userrating,
@@ -312,25 +177,29 @@ exports.getAutoCompleteAndCreateBooking = async (req, res) => {
         lng: GoingCoordinates.lng
       }
     };
-    console.log("travelDetails", travelDetails);
-    console.log("Final date values being stored:", {
+    
+    console.log("Final travel details:", {
       travelDate: travelDetails.travelDate,
       endDate: travelDetails.endDate,
       expectedStartTime: travelDetails.expectedStartTime,
-      expectedEndTime: travelDetails.expectedEndTime
+      expectedEndTime: travelDetails.expectedEndTime,
+      userTimezone
     });
 
     const travelRecord = await Traveldetails.create(travelDetails);
-    console.log("Created travel record:", travelDetails);
+    console.log("Created travel record:", travelRecord);
 
-    const now = moment();
+    // Determine travel status based on current time
+    const now = moment().utc();
     let Status = "UPCOMING";
-    if (now.isBetween(moment(expectedStart), moment(expectedEnd))) {
+    if (now.isBetween(moment.utc(expectedStart), moment.utc(expectedEnd))) {
       Status = "Ongoing";
-    } else if (now.isAfter(moment(expectedEnd))) {
+    } else if (now.isAfter(moment.utc(expectedEnd))) {
       Status = "EXPIRED";
     }
-    console.log("Status", Status)
+    
+    console.log("Travel status:", Status);
+    
     const history = new travelhistory({
       phoneNumber,
       vehicleType: vehicleType,
@@ -344,36 +213,11 @@ exports.getAutoCompleteAndCreateBooking = async (req, res) => {
       drop: Goinglocation,
       expectedStartTime: expectedStart,
       expectedendtime: expectedEnd,
-      // liveLocation: {
-      //   lat: LeavingCoordinates.ltd,
-      //   lng: LeavingCoordinates.lng
-      // },
-      // GoingCoordinates: {
-      //   ltd: GoingCoordinates.ltd,
-      //   lng: GoingCoordinates.lng
-      // },
       status: Status
     });
 
     await history.save();
     console.log("Created history record:", history);
-
-    // Verify the data was stored correctly
-    const verifyTravel = await Traveldetails.findOne({ travelId });
-    const verifyHistory = await travelhistory.findOne({ travelId });
-    console.log("Verification - Travel Record:", {
-      leavingCoords: verifyTravel.LeavingCoordinates,
-      goingCoords: verifyTravel.GoingCoordinates,
-      travelMode: verifyTravel.travelMode,
-      travelDate: verifyTravel.travelDate
-    });
-    console.log("Verification - History Record:", {
-      leavingCoords: verifyHistory.LeavingCoordinates,
-      goingCoords: verifyHistory.GoingCoordinates,
-      travelMode: verifyHistory.travelMode,
-      travelDate: verifyHistory.expectedStartTime
-    });
-    console.log("Verification done")
 
     return res.status(201).json({
       message: "Travel detail created successfully",
@@ -381,11 +225,17 @@ exports.getAutoCompleteAndCreateBooking = async (req, res) => {
         ...travelRecord._doc,
         distance,
         duration,
-        // payableAmount: price,
         travelId,
+        // Include timezone info for client
+        timezoneInfo: {
+          userTimezone,
+          expectedStartLocal: moment.utc(expectedStart).tz(userTimezone).format(),
+          expectedEndLocal: moment.utc(expectedEnd).tz(userTimezone).format()
+        }
       },
     });
   } catch (error) {
+    console.error("Error creating travel:", error);
     return res.status(500).json({ message: "Internal server error", error: error.message });
   }
 };
@@ -495,17 +345,22 @@ exports.getAutoCompleteAndCreateBooking = async (req, res) => {
 
 exports.searchRides = async (req, res) => {
   try {
-    const { leavingLocation, goingLocation, date, travelMode: originalTravelMode, phoneNumber, userTimezone, timezoneOffset } = req.query;
-    console.log("Received search query:", { leavingLocation, goingLocation, date, travelMode: originalTravelMode, userTimezone, timezoneOffset });
+    const { leavingLocation, goingLocation, date, travelMode: originalTravelMode, phoneNumber, userTimezone } = req.query;
+    console.log("Received search query:", { leavingLocation, goingLocation, date, travelMode: originalTravelMode, userTimezone });
+    
+    // Set default timezone if not provided
+    const timezone = userTimezone || 'Asia/Kolkata';
     
     // Convert travel mode: car -> roadways
     let travelMode = originalTravelMode;
+    console.log("Original travel mode:", originalTravelMode);
     if (travelMode === "car") {
       travelMode = "roadways";
     }
     if (!travelMode) {
       travelMode = "roadways"; // Default to roadways instead of car
     }
+    console.log("Processed travel mode:", travelMode);
     if (!leavingLocation || !goingLocation || !date) {
       return res.status(400).json({ message: "Leaving location, going location, and date are required" });
     }
@@ -517,32 +372,43 @@ exports.searchRides = async (req, res) => {
 
     // Handle timezone-aware date parsing for search
     let searchDate;
-    if (userTimezone && timezoneOffset) {
-      // Create date in user's timezone
-      const [year, month, day] = date.split('-').map(Number);
-      searchDate = new Date(year, month - 1, day);
+    try {
+      // Create moment object in user's timezone
+      searchDate = moment.tz(date, timezone);
       
-      // Adjust for timezone offset
-      const offsetMinutes = parseInt(timezoneOffset);
-      searchDate.setMinutes(searchDate.getMinutes() - offsetMinutes);
+      if (!searchDate.isValid()) {
+        return res.status(400).json({ message: "Invalid date format. Use YYYY-MM-DD." });
+      }
       
       console.log("Timezone-aware search date parsing:", {
         originalDate: date,
-        userTimezone,
-        timezoneOffset,
-        parsedDate: searchDate,
-        parsedDateISO: searchDate.toISOString()
+        userTimezone: timezone,
+        parsedDate: searchDate.format(),
+        parsedDateISO: searchDate.utc().toISOString()
       });
-    } else {
-      // Fallback to simple date parsing
-      searchDate = new Date(date + 'T00:00:00.000Z');
+    } catch (error) {
+      console.error("Date parsing error:", error);
+      return res.status(400).json({ message: "Invalid date format. Use YYYY-MM-DD." });
     }
 
     // Convert the input date to start and end of day in UTC
-    const startOfDay = new Date(searchDate);
-    const endOfDay = new Date(searchDate.getTime() + 24 * 60 * 60 * 1000 - 1);
+    // For proper timezone handling, we need to ensure we get the correct start and end of day
+    const startOfDay = moment.tz(date, timezone).startOf('day').utc().toDate();
+    
+    // Calculate end of day properly to cover the full day in user's timezone
+    // We need to add 1 day to the start and subtract 1 millisecond to get the end of the current day
+    const endOfDay = moment.tz(date, timezone).add(1, 'day').startOf('day').subtract(1, 'millisecond').utc().toDate();
 
-    console.log("Date range for search:", { startOfDay, endOfDay });
+    // Create normalized date for travel search (since travelDate is stored as YYYY-MM-DD string)
+    const normalizedDate = moment.tz(date, timezone).format('YYYY-MM-DD');
+
+    console.log("Date range for search:", { 
+      startOfDay: startOfDay.toISOString(), 
+      endOfDay: endOfDay.toISOString(),
+      startOfDayLocal: moment.utc(startOfDay).tz(timezone).format('YYYY-MM-DD HH:mm:ss'),
+      endOfDayLocal: moment.utc(endOfDay).tz(timezone).format('YYYY-MM-DD HH:mm:ss'),
+      normalizedDate: normalizedDate
+    });
 
     const { distance } = await mapservice.getDistanceTime(leavingLocation, goingLocation);
     if (!distance || !distance.text) {
@@ -596,12 +462,13 @@ exports.searchRides = async (req, res) => {
     // });
 
     // First try exact coordinate matching
+    // Since travelDate is now stored as YYYY-MM-DD string, we need to search by the normalized date
     const exactQuery = {
       "LeavingCoordinates.ltd": leavingCoords.ltd,
       "LeavingCoordinates.lng": leavingCoords.lng,
       "GoingCoordinates.ltd": goingCoords.ltd,
       "GoingCoordinates.lng": goingCoords.lng,
-      travelDate: { $gte: startOfDay, $lt: endOfDay },
+      travelDate: normalizedDate,
       phoneNumber: { $ne: phoneNumber }
     };
 
@@ -611,7 +478,7 @@ exports.searchRides = async (req, res) => {
     // If no exact matches, try 10km radius matching
     if (exactRides.length === 0) {
       const radiusQuery = {
-        travelDate: { $gte: startOfDay, $lt: endOfDay },
+        travelDate: normalizedDate,
         phoneNumber: { $ne: phoneNumber }
       };
 
@@ -641,7 +508,7 @@ exports.searchRides = async (req, res) => {
       "LeavingCoordinates.lng": { $gte: leavingBoundingBox.minLng, $lte: leavingBoundingBox.maxLng },
       "GoingCoordinates.ltd": { $gte: goingBoundingBox.minLat, $lte: goingBoundingBox.maxLat },
       "GoingCoordinates.lng": { $gte: goingBoundingBox.minLng, $lte: goingBoundingBox.maxLng },
-      travelDate: { $gte: startOfDay, $lt: endOfDay },
+      travelDate: normalizedDate,
       phoneNumber: { $ne: phoneNumber }
     };
 
@@ -659,20 +526,36 @@ exports.searchRides = async (req, res) => {
           }
         : baseQuery;
 
+      console.log("Database query for travel mode:", travelMode);
+      console.log("Full query:", JSON.stringify(query, null, 2));
       availableRides = await Traveldetails.find(query).lean();
+      console.log("Rides found with travel mode filter:", availableRides.length);
     } else {
       // Filter exact rides by travel mode if specified
       if (travelMode && travelMode.trim() !== "") {
+        console.log("Filtering exact rides by travel mode:", travelMode);
         availableRides = exactRides.filter(ride => 
           ride.travelMode === travelMode || ride.vehicleType === travelMode
         );
+        console.log("Exact rides after travel mode filtering:", availableRides.length);
       }
     }
+
+    // Filter out rides that are already booked/accepted
+    const bookedRideIds = await Request.find({ status: "Accepted" }).distinct('travelId');
+    availableRides = availableRides.filter(ride => !bookedRideIds.includes(ride.travelId));
+    console.log("Available rides after filtering booked rides:", availableRides.length);
+
+    // Filter out rides with certain statuses
+    availableRides = availableRides.filter(ride => 
+      !ride.status || !["Accepted", "Completed", "Cancelled"].includes(ride.status)
+    );
+    console.log("Available rides after filtering by status:", availableRides.length);
     console.log("Found rides before distance filtering:", availableRides.length);
     
     // Debug: Check all rides for the date without location filtering
     const allRidesForDate = await Traveldetails.find({
-      travelDate: { $gte: startOfDay, $lt: endOfDay },
+      travelDate: normalizedDate,
       phoneNumber: { $ne: phoneNumber }
     }).lean();
     console.log("Total rides for the date (without location filter):", allRidesForDate.length);
@@ -684,8 +567,15 @@ exports.searchRides = async (req, res) => {
         goingLocation: ride.Goinglocation,
         leavingCoords: ride.LeavingCoordinates,
         goingCoords: ride.GoingCoordinates,
-        travelMode: ride.travelMode
+        travelMode: ride.travelMode,
+        vehicleType: ride.vehicleType
       })));
+      
+      // Debug: Show all unique travel modes in the database for this date
+      const uniqueTravelModes = [...new Set(allRidesForDate.map(ride => ride.travelMode).filter(Boolean))];
+      const uniqueVehicleTypes = [...new Set(allRidesForDate.map(ride => ride.vehicleType).filter(Boolean))];
+      console.log("Unique travel modes in database for this date:", uniqueTravelModes);
+      console.log("Unique vehicle types in database for this date:", uniqueVehicleTypes);
     }
 
     // Apply precise distance filtering (skip if we have exact matches)
@@ -728,6 +618,14 @@ exports.searchRides = async (req, res) => {
       console.log("No rides found with coordinate matching, trying location name matching as fallback...");
       
       const alternativeRides = allRidesForDate.filter(ride => {
+        // First check travel mode if specified
+        if (travelMode && travelMode.trim() !== "") {
+          const travelModeMatch = ride.travelMode === travelMode || ride.vehicleType === travelMode;
+          if (!travelModeMatch) {
+            return false;
+          }
+        }
+        
         // Clean and normalize location strings for better matching
         const normalizeLocation = (location) => {
           return location.toLowerCase()
@@ -775,6 +673,9 @@ exports.searchRides = async (req, res) => {
           rideGoing: ride.Goinglocation,
           searchLeaving: leavingLocation,
           searchGoing: goingLocation,
+          rideTravelMode: ride.travelMode,
+          rideVehicleType: ride.vehicleType,
+          searchTravelMode: travelMode,
           normalizedRideLeaving,
           normalizedRideGoing,
           normalizedSearchLeaving,
@@ -910,6 +811,18 @@ exports.searchRides = async (req, res) => {
       calculatedPrice = estimatedFare;
     }
 
+    // Debug: Log final results
+    console.log("Final results - Number of rides found:", ridesWithProfile.length);
+    if (ridesWithProfile.length > 0) {
+      console.log("Sample final rides:", ridesWithProfile.slice(0, 3).map(ride => ({
+        rideId: ride.rideId,
+        leavingLocation: ride.Leavinglocation,
+        goingLocation: ride.Goinglocation,
+        travelMode: ride.travelMode,
+        vehicleType: ride.vehicleType
+      })));
+    }
+    
     res.status(200).json({
       availableRides: ridesWithProfile,
       estimatedFare,
@@ -1074,9 +987,37 @@ module.exports.booking = async (req, res) => {
       });
     }
 
+    // Check if consignment is already accepted by another traveler
+    const existingRequest = await Request.findOne({
+      consignmentId: con.consignmentId,
+      status: "Accepted",
+    });
+    if (existingRequest) {
+      return res.status(400).json({ message: "Consignment has already been accepted by another traveler." });
+    }
+
+    // Check if consignment status is already set to accepted/rejected/expired/completed
+    if (con.status && ["Accepted", "Rejected", "Expired", "Completed"].includes(con.status)) {
+      return res.status(400).json({ message: `Consignment is already ${con.status.toLowerCase()}.` });
+    }
+
     const ride = await Traveldetails.findOne({ rideId });
     if (!ride) {
       return res.status(404).json({ message: "Ride not found" });
+    }
+
+    // Check if ride status is already set to accepted/completed/cancelled
+    if (ride.status && ["Accepted", "Completed", "Cancelled"].includes(ride.status)) {
+      return res.status(400).json({ message: `Ride is already ${ride.status.toLowerCase()}.` });
+    }
+
+    // Check if ride is already accepted by another consignment
+    const existingRideRequest = await Request.findOne({
+      travelId: ride.travelId,
+      status: "Accepted",
+    });
+    if (existingRideRequest) {
+      return res.status(400).json({ message: "This ride has already been booked by another user." });
     }
 
     const locationThreshold = 10.00;

@@ -50,6 +50,20 @@ module.exports.respondToRideRequest = async (req, res) => {
       return res.status(404).json({ message: "Consignment not found" });
     }
 
+    // Check if consignment is already accepted by another traveler
+    const existingAcceptedRequest = await RideRequest.findOne({
+      consignmentId,
+      status: "Accepted",
+    });
+    if (existingAcceptedRequest && existingAcceptedRequest.travelId !== travelId) {
+      return res.status(400).json({ message: "Consignment has already been accepted by another traveler." });
+    }
+
+    // Check if consignment status is already set to accepted/rejected/expired/completed
+    if (consignment.status && ["Accepted", "Rejected", "Expired", "Completed"].includes(consignment.status)) {
+      return res.status(400).json({ message: `Consignment is already ${consignment.status.toLowerCase()}.` });
+    }
+
     const rideRequest = await RideRequest.findOne({ travelId });
     if (!rideRequest) {
       return res.status(404).json({ message: "Ride request not found" });
@@ -62,6 +76,12 @@ module.exports.respondToRideRequest = async (req, res) => {
       return res
         .status(400)
         .json({ message: `Ride already ${rideRequest.status.toLowerCase()}` });
+    }
+
+    // Check if the travel itself is already accepted/completed/cancelled
+    const travel = await Travel.findOne({ travelId });
+    if (travel && travel.status && ["Accepted", "Completed", "Cancelled"].includes(travel.status)) {
+      return res.status(400).json({ message: `Travel is already ${travel.status.toLowerCase()}.` });
     }
    
     // Check if consignmentId already exists in TravelHistory
@@ -355,6 +375,29 @@ module.exports.respondToConsignmentRequest = async (req, res) => {
     if (travelHistory) return res.status(400).json({message:" consignment is already accepted"});
     if (!travelHistoryBasic)
       return res.status(404).json({ message: "Travel  not found for the given travelId" });
+
+    // Check if travel status is already set to accepted/completed/cancelled
+    if (travelHistoryBasic.status && ["Accepted", "Completed", "Cancelled"].includes(travelHistoryBasic.status)) {
+      return res.status(400).json({ message: `Travel is already ${travelHistoryBasic.status.toLowerCase()}.` });
+    }
+
+    // Check if consignment is already accepted by another traveler
+    const existingAcceptedRequest = await RequestForCarry.findOne({
+      consignmentId,
+      status: "Accepted",
+    });
+    if (existingAcceptedRequest && existingAcceptedRequest.travelId !== travelId) {
+      return res.status(400).json({ message: "Consignment has already been accepted by another traveler." });
+    }
+
+    // Check if travel is already booked by another consignment
+    const existingTravelRequest = await RequestForCarry.findOne({
+      travelId,
+      status: "Accepted",
+    });
+    if (existingTravelRequest && existingTravelRequest.consignmentId !== consignmentId) {
+      return res.status(400).json({ message: "This travel has already been booked by another consignment." });
+    }
 
     if (
       ["Accepted", "Rejected", "Expired"].includes(book.status) ||

@@ -20474,3 +20474,1381 @@
 2025-08-18T19:33:26.097Z info: GET /api/getall/+918295525360?phoneNumber=%2B918295525360 - 200
 2025-08-18T19:33:56.231Z info: Client disconnected: 39Wnfm7HhvSFa06pAAAd
 2025-08-18T19:33:56.272Z info: Socket ID cleared for phoneNumber +916351446468
+2025-08-18T19:34:18.942Z info: Server is running on port 5002
+2025-08-18T19:34:18.945Z info: Socket.IO connection status: Connected
+2025-08-18T19:34:19.619Z info: MongoDB connected
+2025-08-18T19:34:24.948Z info: A new client connected: dfY2NnqoCPTNALMfAAAB
+2025-08-18T19:34:25.062Z info: Socket ID dfY2NnqoCPTNALMfAAAB associated with phoneNumber +918295525360
+2025-08-18T19:35:25.299Z info: Client disconnected: dfY2NnqoCPTNALMfAAAB
+2025-08-18T19:35:25.334Z info: Socket ID cleared for phoneNumber +918295525360
+2025-08-18T19:35:46.428Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-18T19:35:46.436Z info: A new client connected: DOjF6KjZopMLZ5P2AAAD
+2025-08-18T19:35:46.489Z info: Socket ID DOjF6KjZopMLZ5P2AAAD associated with phoneNumber +918295525360
+2025-08-18T19:35:46.617Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-18T19:35:51.209Z info: Client disconnected: DOjF6KjZopMLZ5P2AAAD
+2025-08-18T19:35:51.248Z info: Socket ID cleared for phoneNumber +918295525360
+2025-08-18T19:45:07.577Z info: Server is running on port 5002
+2025-08-18T19:45:07.581Z info: Socket.IO connection status: Connected
+2025-08-18T19:45:13.497Z info: Server is running on port 5002
+2025-08-18T19:45:13.499Z info: Socket.IO connection status: Connected
+2025-08-18T19:45:15.136Z info: MongoDB connected
+2025-08-18T19:45:15.484Z info: POST /t/creates?Leavinglocation=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&Goinglocation=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-18T19:45:57.755Z info: Server is running on port 5002
+2025-08-18T19:45:57.757Z info: Socket.IO connection status: Connected
+2025-08-18T19:45:58.233Z info: MongoDB connected
+2025-08-18T19:46:04.920Z info: Server is running on port 5002
+2025-08-18T19:46:04.923Z info: Socket.IO connection status: Connected
+2025-08-18T19:46:09.757Z info: Server is running on port 5002
+2025-08-18T19:46:09.760Z info: Socket.IO connection status: Connected
+2025-08-18T19:46:10.232Z info: MongoDB connected
+2025-08-18T19:46:17.013Z info: Server is running on port 5002
+2025-08-18T19:46:17.014Z info: Socket.IO connection status: Connected
+2025-08-18T19:46:17.769Z info: MongoDB connected
+2025-08-18T19:46:22.999Z info: Server is running on port 5002
+2025-08-18T19:46:23.001Z info: Socket.IO connection status: Connected
+2025-08-18T19:46:23.407Z info: MongoDB connected
+2025-08-19T09:45:25.759Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T09:45:25.781Z info: A new client connected: 6ZfD85ckQZaNvfCEAAAB
+2025-08-19T09:45:26.161Z info: Socket ID 6ZfD85ckQZaNvfCEAAAB associated with phoneNumber +918295525360
+2025-08-19T09:45:26.507Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T09:45:28.046Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T09:45:28.163Z info: A new client connected: qmrP6x0-tmrOoo8dAAAD
+2025-08-19T09:45:28.206Z info: Socket ID qmrP6x0-tmrOoo8dAAAD associated with phoneNumber +916351446468
+2025-08-19T09:45:28.256Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-19T09:45:41.153Z info: Server is running on port 5002
+2025-08-19T09:45:41.155Z info: Socket.IO connection status: Connected
+2025-08-19T09:45:41.658Z info: MongoDB connected
+2025-08-19T09:45:44.243Z info: Server is running on port 5002
+2025-08-19T09:45:44.246Z info: Socket.IO connection status: Connected
+2025-08-19T09:45:44.691Z info: MongoDB connected
+2025-08-19T09:45:45.913Z info: A new client connected: sUfYxhzJvK6iRlGxAAAB
+2025-08-19T09:45:45.956Z info: Socket ID sUfYxhzJvK6iRlGxAAAB associated with phoneNumber +918295525360
+2025-08-19T09:45:48.824Z info: Server is running on port 5002
+2025-08-19T09:45:48.826Z info: Socket.IO connection status: Connected
+2025-08-19T09:45:49.223Z info: A new client connected: -WbeiziBQqGa0IfgAAAB
+2025-08-19T09:45:49.286Z info: MongoDB connected
+2025-08-19T09:45:49.659Z info: Socket ID -WbeiziBQqGa0IfgAAAB associated with phoneNumber +918295525360
+2025-08-19T09:45:50.063Z info: A new client connected: ZQM9mVQ7OoQf9G9RAAAD
+2025-08-19T09:45:50.348Z info: Socket ID ZQM9mVQ7OoQf9G9RAAAD associated with phoneNumber +916351446468
+2025-08-19T09:45:52.602Z info: GET /address/getaddress/+918295525360 - 200
+2025-08-19T09:45:53.704Z info: GET /api/location?going=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073 - 200
+2025-08-19T09:45:54.193Z info: GET /address/getaddress/+918295525360 - 200
+2025-08-19T09:45:55.186Z info: GET /api/location?going=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073&leaving=Danapur+Nizamat,+Mithapur,+Patna,+Bihar+-+800001 - 200
+2025-08-19T09:45:59.585Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-19T09:46:10.958Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-19T09:46:49.207Z info: POST /t/creates?Leavinglocation=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&Goinglocation=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-19T09:48:41.123Z info: Server is running on port 5002
+2025-08-19T09:48:41.125Z info: Socket.IO connection status: Connected
+2025-08-19T09:48:41.321Z info: A new client connected: me8LJ_eI9kAYe6MwAAAB
+2025-08-19T09:48:44.121Z info: Server is running on port 5002
+2025-08-19T09:48:44.122Z info: Socket.IO connection status: Connected
+2025-08-19T09:48:44.457Z info: POST /t/creates?Leavinglocation=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&Goinglocation=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-19T09:48:44.555Z info: MongoDB connected
+2025-08-19T09:48:45.586Z info: A new client connected: M8qSJaHPg_Gsoo-FAAAB
+2025-08-19T09:48:45.625Z info: Socket ID M8qSJaHPg_Gsoo-FAAAB associated with phoneNumber +918295525360
+2025-08-19T09:48:48.179Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T09:48:48.329Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T09:48:51.589Z info: A new client connected: gA08AyfSV5EZwUEaAAAD
+2025-08-19T09:48:51.625Z info: Socket ID gA08AyfSV5EZwUEaAAAD associated with phoneNumber +916351446468
+2025-08-19T09:48:56.445Z info: GET /t/travelhistory/+918295525360 - 200
+2025-08-19T09:51:19.728Z info: Client disconnected: gA08AyfSV5EZwUEaAAAD
+2025-08-19T09:51:19.768Z info: Socket ID cleared for phoneNumber +916351446468
+2025-08-19T09:52:49.920Z info: Client disconnected: M8qSJaHPg_Gsoo-FAAAB
+2025-08-19T09:52:49.950Z info: Socket ID cleared for phoneNumber +918295525360
+2025-08-19T09:52:51.985Z info: A new client connected: ypg2n9lLtDYD0cdaAAAF
+2025-08-19T09:52:52.033Z info: Socket ID ypg2n9lLtDYD0cdaAAAF associated with phoneNumber +918295525360
+2025-08-19T09:55:43.829Z info: Server is running on port 5002
+2025-08-19T09:55:43.830Z info: Socket.IO connection status: Connected
+2025-08-19T09:55:44.452Z info: MongoDB connected
+2025-08-19T09:55:45.748Z info: A new client connected: fH1936X5hsCDpSHaAAAB
+2025-08-19T09:55:45.791Z info: Socket ID fH1936X5hsCDpSHaAAAB associated with phoneNumber +918295525360
+2025-08-19T09:56:19.937Z info: Server is running on port 5002
+2025-08-19T09:56:19.938Z info: Socket.IO connection status: Connected
+2025-08-19T09:56:20.389Z info: MongoDB connected
+2025-08-19T09:56:21.661Z info: A new client connected: BhBKRXbuZ3OagLbhAAAB
+2025-08-19T09:56:21.706Z info: Socket ID BhBKRXbuZ3OagLbhAAAB associated with phoneNumber +918295525360
+2025-08-19T09:56:30.968Z info: Server is running on port 5002
+2025-08-19T09:56:30.969Z info: Socket.IO connection status: Connected
+2025-08-19T09:56:31.407Z info: MongoDB connected
+2025-08-19T09:56:32.888Z info: A new client connected: mL_QlRn642J84F5HAAAB
+2025-08-19T09:56:32.930Z info: Socket ID mL_QlRn642J84F5HAAAB associated with phoneNumber +918295525360
+2025-08-19T09:56:41.828Z info: Server is running on port 5002
+2025-08-19T09:56:41.830Z info: Socket.IO connection status: Connected
+2025-08-19T09:56:42.410Z info: MongoDB connected
+2025-08-19T09:56:43.028Z info: A new client connected: EvsuKy1kAgUXdPfBAAAB
+2025-08-19T09:56:43.074Z info: Socket ID EvsuKy1kAgUXdPfBAAAB associated with phoneNumber +918295525360
+2025-08-19T09:56:53.215Z info: Server is running on port 5002
+2025-08-19T09:56:53.217Z info: Socket.IO connection status: Connected
+2025-08-19T09:56:53.833Z info: MongoDB connected
+2025-08-19T09:56:55.131Z info: A new client connected: 24wKkLhS0sTfcc3PAAAB
+2025-08-19T09:56:55.191Z info: Socket ID 24wKkLhS0sTfcc3PAAAB associated with phoneNumber +918295525360
+2025-08-19T09:57:07.693Z info: Server is running on port 5002
+2025-08-19T09:57:07.695Z info: Socket.IO connection status: Connected
+2025-08-19T09:57:08.258Z info: MongoDB connected
+2025-08-19T09:57:09.180Z info: A new client connected: 72bKbxs4UuXEq6nsAAAB
+2025-08-19T09:57:09.254Z info: Socket ID 72bKbxs4UuXEq6nsAAAB associated with phoneNumber +918295525360
+2025-08-19T09:59:25.689Z info: Server is running on port 5002
+2025-08-19T09:59:25.691Z info: Socket.IO connection status: Connected
+2025-08-19T09:59:25.817Z info: A new client connected: ti61D838w2Zw4L1aAAAB
+2025-08-19T09:59:26.861Z info: MongoDB connected
+2025-08-19T09:59:27.299Z info: Socket ID ti61D838w2Zw4L1aAAAB associated with phoneNumber +918295525360
+2025-08-19T09:59:39.818Z info: Server is running on port 5002
+2025-08-19T09:59:39.819Z info: Socket.IO connection status: Connected
+2025-08-19T09:59:40.267Z info: MongoDB connected
+2025-08-19T09:59:41.590Z info: A new client connected: mGHlVmJCd5-CAPcQAAAB
+2025-08-19T09:59:41.643Z info: Socket ID mGHlVmJCd5-CAPcQAAAB associated with phoneNumber +918295525360
+2025-08-19T10:00:17.917Z info: Server is running on port 5002
+2025-08-19T10:00:17.922Z info: Socket.IO connection status: Connected
+2025-08-19T10:00:18.541Z info: MongoDB connected
+2025-08-19T10:00:23.538Z info: A new client connected: q4uDwCS-9lj9IWMQAAAB
+2025-08-19T10:00:23.596Z info: Socket ID q4uDwCS-9lj9IWMQAAAB associated with phoneNumber +918295525360
+2025-08-19T10:01:57.660Z info: Client disconnected: q4uDwCS-9lj9IWMQAAAB
+2025-08-19T10:02:27.482Z info: Socket ID cleared for phoneNumber +918295525360
+2025-08-19T10:02:30.954Z info: A new client connected: DDbvdkhLeJRj-Z_UAAAD
+2025-08-19T10:02:30.990Z info: Socket ID DDbvdkhLeJRj-Z_UAAAD associated with phoneNumber +918295525360
+2025-08-19T10:03:19.537Z info: Server is running on port 5002
+2025-08-19T10:03:19.539Z info: Socket.IO connection status: Connected
+2025-08-19T10:03:20.335Z info: A new client connected: ki6e8Va0NdqwnS0GAAAB
+2025-08-19T10:03:20.362Z info: MongoDB connected
+2025-08-19T10:03:20.745Z info: Socket ID ki6e8Va0NdqwnS0GAAAB associated with phoneNumber +918295525360
+2025-08-19T10:03:33.882Z info: Server is running on port 5002
+2025-08-19T10:03:33.883Z info: Socket.IO connection status: Connected
+2025-08-19T10:03:34.786Z info: A new client connected: z1W2M6__0qx1MhSlAAAB
+2025-08-19T10:03:34.828Z info: MongoDB connected
+2025-08-19T10:03:35.229Z info: Socket ID z1W2M6__0qx1MhSlAAAB associated with phoneNumber +918295525360
+2025-08-19T10:06:52.800Z info: Server is running on port 5002
+2025-08-19T10:06:52.802Z info: Socket.IO connection status: Connected
+2025-08-19T10:06:52.805Z error: MongoDB connection error: querySrv ESERVFAIL _mongodb._tcp.cluster0.i288h.mongodb.net
+2025-08-19T10:06:53.305Z info: A new client connected: t0Q6mO761haCX5ZoAAAB
+2025-08-19T10:07:02.054Z info: Client disconnected: t0Q6mO761haCX5ZoAAAB
+2025-08-19T10:07:03.317Z error: Error updating socketId for +918295525360: Operation `userprofiles.findOneAndUpdate()` buffering timed out after 10000ms
+2025-08-19T10:07:12.065Z error: Error clearing socketId for +918295525360: Operation `userprofiles.findOneAndUpdate()` buffering timed out after 10000ms
+2025-08-19T10:23:14.576Z info: Server is running on port 5002
+2025-08-19T10:23:14.577Z info: Socket.IO connection status: Connected
+2025-08-19T10:23:16.759Z error: MongoDB connection error: queryTxt ESERVFAIL cluster0.i288h.mongodb.net
+2025-08-19T10:23:37.559Z info: Server is running on port 5002
+2025-08-19T10:23:37.561Z info: Socket.IO connection status: Connected
+2025-08-19T10:23:42.300Z info: MongoDB connected
+2025-08-19T10:23:50.876Z info: Server is running on port 5002
+2025-08-19T10:23:50.878Z info: Socket.IO connection status: Connected
+2025-08-19T10:23:55.219Z info: MongoDB connected
+2025-08-19T10:24:10.823Z info: Server is running on port 5002
+2025-08-19T10:24:10.827Z info: Socket.IO connection status: Connected
+2025-08-19T10:24:15.218Z info: MongoDB connected
+2025-08-19T10:24:24.628Z info: Server is running on port 5002
+2025-08-19T10:24:24.629Z info: Socket.IO connection status: Connected
+2025-08-19T10:24:41.221Z info: MongoDB connected
+2025-08-19T10:25:08.462Z info: Server is running on port 5002
+2025-08-19T10:25:08.463Z info: Socket.IO connection status: Connected
+2025-08-19T10:25:13.314Z info: MongoDB connected
+2025-08-19T10:30:53.577Z info: Server is running on port 5002
+2025-08-19T10:30:53.579Z info: Socket.IO connection status: Connected
+2025-08-19T10:31:00.570Z info: MongoDB connected
+2025-08-19T10:33:25.563Z info: Server is running on port 5002
+2025-08-19T10:33:25.570Z info: Socket.IO connection status: Connected
+2025-08-19T10:33:30.498Z info: MongoDB connected
+2025-08-19T10:33:37.631Z info: Server is running on port 5002
+2025-08-19T10:33:37.635Z info: Socket.IO connection status: Connected
+2025-08-19T10:33:43.761Z info: MongoDB connected
+2025-08-19T10:33:51.891Z info: Server is running on port 5002
+2025-08-19T10:33:51.894Z info: Socket.IO connection status: Connected
+2025-08-19T10:33:56.330Z info: MongoDB connected
+2025-08-19T10:34:02.734Z info: Server is running on port 5002
+2025-08-19T10:34:02.736Z info: Socket.IO connection status: Connected
+2025-08-19T10:34:07.598Z info: MongoDB connected
+2025-08-19T10:34:14.743Z info: Server is running on port 5002
+2025-08-19T10:34:14.745Z info: Socket.IO connection status: Connected
+2025-08-19T10:34:19.547Z info: MongoDB connected
+2025-08-19T10:42:50.948Z info: Server is running on port 5002
+2025-08-19T10:42:50.949Z info: Socket.IO connection status: Connected
+2025-08-19T10:42:55.849Z info: MongoDB connected
+2025-08-19T10:43:16.300Z info: Server is running on port 5002
+2025-08-19T10:43:16.302Z info: Socket.IO connection status: Connected
+2025-08-19T10:43:17.007Z info: MongoDB connected
+2025-08-19T10:43:24.021Z info: Server is running on port 5002
+2025-08-19T10:43:24.023Z info: Socket.IO connection status: Connected
+2025-08-19T10:43:24.549Z info: MongoDB connected
+2025-08-19T10:43:28.107Z info: Server is running on port 5002
+2025-08-19T10:43:28.108Z info: Socket.IO connection status: Connected
+2025-08-19T10:43:28.544Z info: MongoDB connected
+2025-08-19T10:43:37.587Z info: Server is running on port 5002
+2025-08-19T10:43:37.589Z info: Socket.IO connection status: Connected
+2025-08-19T10:43:38.069Z info: MongoDB connected
+2025-08-19T10:44:09.877Z info: Server is running on port 5002
+2025-08-19T10:44:09.879Z info: Socket.IO connection status: Connected
+2025-08-19T10:44:10.329Z info: MongoDB connected
+2025-08-19T10:44:21.237Z info: Server is running on port 5002
+2025-08-19T10:44:21.239Z info: Socket.IO connection status: Connected
+2025-08-19T10:44:23.352Z info: MongoDB connected
+2025-08-19T10:44:31.119Z info: Server is running on port 5002
+2025-08-19T10:44:31.121Z info: Socket.IO connection status: Connected
+2025-08-19T10:44:31.745Z info: MongoDB connected
+2025-08-19T10:44:50.396Z info: Server is running on port 5002
+2025-08-19T10:44:50.397Z info: Socket.IO connection status: Connected
+2025-08-19T10:44:50.853Z info: MongoDB connected
+2025-08-19T10:45:05.422Z info: Server is running on port 5002
+2025-08-19T10:45:05.423Z info: Socket.IO connection status: Connected
+2025-08-19T10:45:05.857Z info: MongoDB connected
+2025-08-19T10:45:41.263Z info: Server is running on port 5002
+2025-08-19T10:45:41.264Z info: Socket.IO connection status: Connected
+2025-08-19T10:45:41.890Z info: MongoDB connected
+2025-08-19T10:45:53.957Z info: Server is running on port 5002
+2025-08-19T10:45:53.962Z info: Socket.IO connection status: Connected
+2025-08-19T10:45:54.498Z info: MongoDB connected
+2025-08-19T10:46:04.384Z info: Server is running on port 5002
+2025-08-19T10:46:04.388Z info: Socket.IO connection status: Connected
+2025-08-19T10:46:04.928Z info: MongoDB connected
+2025-08-19T10:46:17.031Z info: Server is running on port 5002
+2025-08-19T10:46:17.033Z info: Socket.IO connection status: Connected
+2025-08-19T10:46:17.569Z info: MongoDB connected
+2025-08-19T10:46:26.194Z info: Server is running on port 5002
+2025-08-19T10:46:26.196Z info: Socket.IO connection status: Connected
+2025-08-19T10:46:26.735Z info: MongoDB connected
+2025-08-19T10:46:55.666Z info: Server is running on port 5002
+2025-08-19T10:46:55.670Z info: Socket.IO connection status: Connected
+2025-08-19T10:46:56.286Z info: MongoDB connected
+2025-08-19T10:47:24.092Z info: Server is running on port 5002
+2025-08-19T10:47:24.094Z info: Socket.IO connection status: Connected
+2025-08-19T10:47:24.519Z info: MongoDB connected
+2025-08-19T10:51:25.210Z info: Server is running on port 5002
+2025-08-19T10:51:25.212Z info: Socket.IO connection status: Connected
+2025-08-19T10:51:25.917Z info: MongoDB connected
+2025-08-19T10:52:17.312Z info: Server is running on port 5002
+2025-08-19T10:52:17.313Z info: Socket.IO connection status: Connected
+2025-08-19T10:52:17.759Z info: MongoDB connected
+2025-08-19T10:52:38.676Z info: Server is running on port 5002
+2025-08-19T10:52:38.677Z info: Socket.IO connection status: Connected
+2025-08-19T10:52:39.095Z info: MongoDB connected
+2025-08-19T10:54:23.942Z info: Server is running on port 5002
+2025-08-19T10:54:23.943Z info: Socket.IO connection status: Connected
+2025-08-19T10:54:24.427Z info: MongoDB connected
+2025-08-19T10:54:40.201Z info: Server is running on port 5002
+2025-08-19T10:54:40.203Z info: Socket.IO connection status: Connected
+2025-08-19T10:54:40.976Z info: MongoDB connected
+2025-08-19T10:54:58.807Z info: Server is running on port 5002
+2025-08-19T10:54:58.810Z info: Socket.IO connection status: Connected
+2025-08-19T10:54:59.324Z info: MongoDB connected
+2025-08-19T10:55:08.513Z info: Server is running on port 5002
+2025-08-19T10:55:08.515Z info: Socket.IO connection status: Connected
+2025-08-19T10:55:09.442Z info: MongoDB connected
+2025-08-19T10:55:12.277Z info: Server is running on port 5002
+2025-08-19T10:55:12.279Z info: Socket.IO connection status: Connected
+2025-08-19T10:55:13.777Z info: MongoDB connected
+2025-08-19T11:00:00.469Z info: GET /address/getaddress/+918295525360 - 200
+2025-08-19T11:00:01.499Z info: GET /api/location?going=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073 - 200
+2025-08-19T11:00:02.018Z info: GET /address/getaddress/+918295525360 - 200
+2025-08-19T11:00:04.283Z info: GET /api/location?going=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073&leaving=Netaji+Subhash+Place,+Shakurpur,+North+West+Delhi,+Delhi+-+110034 - 200
+2025-08-19T11:00:05.580Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Netaji%20Subhash%20Place,%20Shakurpur,%20North%20West%20Delhi,%20Delhi%20-%20110034 - 200
+2025-08-19T11:00:16.901Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Netaji%20Subhash%20Place,%20Shakurpur,%20North%20West%20Delhi,%20Delhi%20-%20110034 - 200
+2025-08-19T11:00:19.336Z info: POST /t/creates?Leavinglocation=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&Goinglocation=Netaji%20Subhash%20Place,%20Shakurpur,%20North%20West%20Delhi,%20Delhi%20-%20110034 - 200
+2025-08-19T11:00:22.474Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T11:00:22.744Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T11:00:24.967Z info: GET /t/travelhistory/+918295525360 - 200
+2025-08-19T11:00:40.584Z info: Server is running on port 5002
+2025-08-19T11:00:40.587Z info: Socket.IO connection status: Connected
+2025-08-19T11:00:41.236Z info: MongoDB connected
+2025-08-19T11:01:09.078Z info: Server is running on port 5002
+2025-08-19T11:01:09.081Z info: Socket.IO connection status: Connected
+2025-08-19T11:01:09.738Z info: MongoDB connected
+2025-08-19T11:01:19.110Z info: Server is running on port 5002
+2025-08-19T11:01:19.111Z info: Socket.IO connection status: Connected
+2025-08-19T11:01:19.558Z info: MongoDB connected
+2025-08-19T11:01:29.984Z info: Server is running on port 5002
+2025-08-19T11:01:29.986Z info: Socket.IO connection status: Connected
+2025-08-19T11:01:30.579Z info: MongoDB connected
+2025-08-19T11:02:06.969Z info: Server is running on port 5002
+2025-08-19T11:02:06.971Z info: Socket.IO connection status: Connected
+2025-08-19T11:02:07.510Z info: MongoDB connected
+2025-08-19T11:02:23.967Z info: Server is running on port 5002
+2025-08-19T11:02:23.971Z info: Socket.IO connection status: Connected
+2025-08-19T11:02:24.520Z info: MongoDB connected
+2025-08-19T11:02:45.902Z info: Server is running on port 5002
+2025-08-19T11:02:45.903Z info: Socket.IO connection status: Connected
+2025-08-19T11:02:46.413Z info: MongoDB connected
+2025-08-19T11:03:01.266Z info: Server is running on port 5002
+2025-08-19T11:03:01.268Z info: Socket.IO connection status: Connected
+2025-08-19T11:03:01.734Z info: MongoDB connected
+2025-08-19T11:03:18.494Z info: Server is running on port 5002
+2025-08-19T11:03:18.497Z info: Socket.IO connection status: Connected
+2025-08-19T11:03:18.974Z info: MongoDB connected
+2025-08-19T11:03:44.401Z info: Server is running on port 5002
+2025-08-19T11:03:44.404Z info: Socket.IO connection status: Connected
+2025-08-19T11:03:46.964Z info: Server is running on port 5002
+2025-08-19T11:03:46.966Z info: Socket.IO connection status: Connected
+2025-08-19T11:03:47.494Z info: MongoDB connected
+2025-08-19T11:04:21.628Z info: Server is running on port 5002
+2025-08-19T11:04:21.632Z info: Socket.IO connection status: Connected
+2025-08-19T11:04:22.193Z info: MongoDB connected
+2025-08-19T11:04:59.084Z info: Server is running on port 5002
+2025-08-19T11:04:59.086Z info: Socket.IO connection status: Connected
+2025-08-19T11:04:59.653Z info: MongoDB connected
+2025-08-19T11:05:03.714Z info: Server is running on port 5002
+2025-08-19T11:05:03.717Z info: Socket.IO connection status: Connected
+2025-08-19T11:05:04.269Z info: MongoDB connected
+2025-08-19T11:05:14.803Z info: Server is running on port 5002
+2025-08-19T11:05:14.804Z info: Socket.IO connection status: Connected
+2025-08-19T11:05:15.220Z info: MongoDB connected
+2025-08-19T11:05:28.197Z info: Server is running on port 5002
+2025-08-19T11:05:28.199Z info: Socket.IO connection status: Connected
+2025-08-19T11:05:28.658Z info: MongoDB connected
+2025-08-19T11:05:34.074Z info: Server is running on port 5002
+2025-08-19T11:05:34.076Z info: Socket.IO connection status: Connected
+2025-08-19T11:05:34.498Z info: MongoDB connected
+2025-08-19T11:05:43.067Z info: Server is running on port 5002
+2025-08-19T11:05:43.068Z info: Socket.IO connection status: Connected
+2025-08-19T11:05:43.488Z info: MongoDB connected
+2025-08-19T11:05:44.627Z info: GET /address/getaddress/+918295525360 - 200
+2025-08-19T11:05:45.753Z info: GET /api/location?going=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073 - 200
+2025-08-19T11:05:46.483Z info: GET /address/getaddress/+918295525360 - 200
+2025-08-19T11:05:48.223Z info: GET /api/location?going=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073&leaving=Netaji+Subhash+Place,+Shakurpur,+North+West+Delhi,+Delhi+-+110034 - 200
+2025-08-19T11:05:49.349Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Netaji%20Subhash%20Place,%20Shakurpur,%20North%20West%20Delhi,%20Delhi%20-%20110034 - 200
+2025-08-19T11:05:58.228Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Netaji%20Subhash%20Place,%20Shakurpur,%20North%20West%20Delhi,%20Delhi%20-%20110034 - 200
+2025-08-19T11:06:11.603Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Netaji%20Subhash%20Place,%20Shakurpur,%20North%20West%20Delhi,%20Delhi%20-%20110034 - 200
+2025-08-19T11:06:11.609Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Netaji%20Subhash%20Place,%20Shakurpur,%20North%20West%20Delhi,%20Delhi%20-%20110034 - 200
+2025-08-19T11:06:11.669Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Netaji%20Subhash%20Place,%20Shakurpur,%20North%20West%20Delhi,%20Delhi%20-%20110034 - 200
+2025-08-19T11:06:13.340Z info: POST /t/creates?Leavinglocation=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&Goinglocation=Netaji%20Subhash%20Place,%20Shakurpur,%20North%20West%20Delhi,%20Delhi%20-%20110034 - 200
+2025-08-19T11:07:44.503Z info: Server is running on port 5002
+2025-08-19T11:07:44.504Z info: Socket.IO connection status: Connected
+2025-08-19T11:07:45.139Z info: MongoDB connected
+2025-08-19T11:07:48.536Z info: Server is running on port 5002
+2025-08-19T11:07:48.538Z info: Socket.IO connection status: Connected
+2025-08-19T11:07:48.979Z info: MongoDB connected
+2025-08-19T11:07:54.898Z info: Server is running on port 5002
+2025-08-19T11:07:54.899Z info: Socket.IO connection status: Connected
+2025-08-19T11:07:55.312Z info: MongoDB connected
+2025-08-19T11:08:04.785Z info: Server is running on port 5002
+2025-08-19T11:08:04.786Z info: Socket.IO connection status: Connected
+2025-08-19T11:08:05.209Z info: MongoDB connected
+2025-08-19T11:08:05.809Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Netaji%20Subhash%20Place,%20Shakurpur,%20North%20West%20Delhi,%20Delhi%20-%20110034 - 200
+2025-08-19T11:08:05.829Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Netaji%20Subhash%20Place,%20Shakurpur,%20North%20West%20Delhi,%20Delhi%20-%20110034 - 200
+2025-08-19T11:08:05.835Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Netaji%20Subhash%20Place,%20Shakurpur,%20North%20West%20Delhi,%20Delhi%20-%20110034 - 200
+2025-08-19T11:08:06.853Z info: POST /t/creates?Leavinglocation=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&Goinglocation=Netaji%20Subhash%20Place,%20Shakurpur,%20North%20West%20Delhi,%20Delhi%20-%20110034 - 200
+2025-08-19T11:08:09.812Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T11:08:09.969Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T11:08:18.120Z info: GET /t/travelhistory/+918295525360 - 200
+2025-08-19T11:08:53.839Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T11:08:53.934Z info: A new client connected: 8Ur3c2tnspyi6ax1AAAB
+2025-08-19T11:08:53.975Z info: Socket ID 8Ur3c2tnspyi6ax1AAAB associated with phoneNumber +916351446468
+2025-08-19T11:08:54.068Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-19T11:08:58.919Z info: GET /address/getaddress/+916351446468 - 200
+2025-08-19T11:09:02.591Z info: GET /t/travelhistory/+918295525360 - 200
+2025-08-19T11:09:07.545Z info: GET /api/location?going=87%2F1,+College+St,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073 - 200
+2025-08-19T11:09:08.774Z info: GET /address/getaddress/+916351446468 - 200
+2025-08-19T11:09:14.303Z info: GET /api/location?going=87%2F1,+College+St,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073&leaving=987+pocket,+25,+Netaji+Subhash+Place,+Shakurpur,+New+Delhi,+North+West+Delhi,+Delhi+-+110034 - 200
+2025-08-19T11:09:16.101Z info: GET /map/getdistanceandcoordinate?origin=12,%2087/1,%20College%20St,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Flat,%20987%20pocket,%2025,%20Netaji%20Subhash%20Place,%20Shakurpur,%20New%20Delhi,%20North%20West%20Delhi,%20Delhi%20-%20110034 - 200
+2025-08-19T11:09:56.383Z info: GET /map/getdistanceandcoordinate?origin=87/1,%20College%20St,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=987%20pocket,%2025,%20Netaji%20Subhash%20Place,%20Shakurpur,%20New%20Delhi,%20North%20West%20Delhi,%20Delhi%20-%20110034 - 200
+2025-08-19T11:10:01.671Z info: POST /api/consignment - 200
+2025-08-19T11:10:05.156Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T11:10:05.349Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-19T11:10:08.305Z info: GET /api/history/+916351446468 - 200
+2025-08-19T11:10:10.820Z info: GET /map/getdistanceandcoordinate?origin=87%2F1%2C%20College%20St%2C%20Calcutta%20University%2C%20College%20Square%2C%20Kolkata%2C%20West%20Bengal%20-%20700073&destination=987%20pocket%2C%2025%2C%20Netaji%20Subhash%20Place%2C%20Shakurpur%2C%20New%20Delhi%2C%20North%20West%20Delhi%2C%20Delhi%20-%20110034 - 200
+2025-08-19T11:10:10.852Z info: GET /api/consignment/3b79c31e-64b1-49e6-85a7-649223dc1df8 - 200
+2025-08-19T11:10:10.931Z info: GET /api/getall/+916351446468?phoneNumber=%2B916351446468 - 200
+2025-08-19T11:10:16.498Z info: GET /map/getdistanceandcoordinate?origin=H9F7%20P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Netaji%20Subhash%20Place,%20Shakurpur,%20North%20West%20Delhi,%20Delhi%20-%20110034 - 200
+2025-08-19T11:10:18.451Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T11:10:18.911Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T11:10:25.862Z info: GET /api/location?going=Calcutta+university - 200
+2025-08-19T11:10:27.242Z info: GET /api/location?going=Calcutta+University,+C... - 200
+2025-08-19T11:10:31.006Z info: GET /api/location?going=Calcutta+University,+C...&leaving=Netaji+subhash - 200
+2025-08-19T11:10:33.831Z info: GET /api/getdetails?leavingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&goingLocation=Netaji%20Subhash%20Place,%20Shakurpur,%20Delhi,%20India&date=2025-08-19&phoneNumber=+918295525360&userTimezone=Asia/Kolkata&timezoneOffset=-330 - 200
+2025-08-19T11:10:33.835Z info: GET /api/getdetails?leavingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&goingLocation=Netaji%20Subhash%20Place,%20Shakurpur,%20Delhi,%20India&date=2025-08-19&phoneNumber=+918295525360&userTimezone=Asia/Kolkata&timezoneOffset=-330 - 200
+2025-08-19T11:14:05.303Z info: Server is running on port 5002
+2025-08-19T11:14:05.305Z info: Socket.IO connection status: Connected
+2025-08-19T11:14:05.850Z info: MongoDB connected
+2025-08-19T11:14:14.785Z info: A new client connected: bBRyceftf9NcgGeRAAAB
+2025-08-19T11:14:14.837Z info: Socket ID bBRyceftf9NcgGeRAAAB associated with phoneNumber +916351446468
+2025-08-19T11:14:38.371Z info: Server is running on port 5002
+2025-08-19T11:14:38.372Z info: Socket.IO connection status: Connected
+2025-08-19T11:14:39.167Z info: MongoDB connected
+2025-08-19T11:14:41.301Z info: GET /api/getdetails?leavingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&goingLocation=Netaji%20Subhash%20Place,%20Shakurpur,%20Delhi,%20India&date=2025-08-19&phoneNumber=+918295525360&userTimezone=Asia/Kolkata&timezoneOffset=-330 - 200
+2025-08-19T11:14:43.657Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T11:14:43.824Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T11:14:45.588Z info: GET /api/getdetails?leavingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&goingLocation=Netaji%20Subhash%20Place,%20Shakurpur,%20Delhi,%20India&date=2025-08-19&phoneNumber=+918295525360&userTimezone=Asia/Kolkata&timezoneOffset=-330 - 200
+2025-08-19T11:14:45.593Z info: GET /api/getdetails?leavingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&goingLocation=Netaji%20Subhash%20Place,%20Shakurpur,%20Delhi,%20India&date=2025-08-19&phoneNumber=+918295525360&userTimezone=Asia/Kolkata&timezoneOffset=-330 - 200
+2025-08-19T11:14:46.768Z info: A new client connected: GDKpOhZMH0aKG4SqAAAB
+2025-08-19T11:14:46.806Z info: Socket ID GDKpOhZMH0aKG4SqAAAB associated with phoneNumber +916351446468
+2025-08-19T11:14:51.552Z info: GET /api/getdetails?leavingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&goingLocation=Netaji%20Subhash%20Place,%20Shakurpur,%20Delhi,%20India&date=2025-08-19&phoneNumber=+918295525360&userTimezone=Asia/Kolkata&timezoneOffset=-330 - 200
+2025-08-19T11:14:55.841Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T11:14:55.985Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T11:14:57.594Z info: GET /t/travelhistory/+918295525360 - 200
+2025-08-19T11:15:30.717Z info: Server is running on port 5002
+2025-08-19T11:15:30.719Z info: Socket.IO connection status: Connected
+2025-08-19T11:15:31.260Z info: MongoDB connected
+2025-08-19T11:15:31.413Z info: GET /api/getdetails?leavingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&goingLocation=Netaji%20Subhash%20Place,%20Shakurpur,%20Delhi,%20India&date=2025-08-19&phoneNumber=+918295525360&userTimezone=Asia/Kolkata&timezoneOffset=-330 - 200
+2025-08-19T11:15:31.426Z info: GET /api/getdetails?leavingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&goingLocation=Netaji%20Subhash%20Place,%20Shakurpur,%20Delhi,%20India&date=2025-08-19&phoneNumber=+918295525360&userTimezone=Asia/Kolkata&timezoneOffset=-330 - 200
+2025-08-19T11:15:32.486Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T11:15:32.667Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T11:15:33.186Z info: A new client connected: C3hJaKPP_xVZUHW2AAAB
+2025-08-19T11:15:33.230Z info: Socket ID C3hJaKPP_xVZUHW2AAAB associated with phoneNumber +916351446468
+2025-08-19T11:15:41.392Z info: GET /api/getdetails?leavingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&goingLocation=Netaji%20Subhash%20Place,%20Shakurpur,%20Delhi,%20India&date=2025-08-19&phoneNumber=+918295525360&userTimezone=Asia/Kolkata&timezoneOffset=-330 - 200
+2025-08-19T11:17:23.261Z info: Server is running on port 5002
+2025-08-19T11:17:23.264Z info: Socket.IO connection status: Connected
+2025-08-19T11:17:23.977Z info: MongoDB connected
+2025-08-19T11:17:24.013Z info: GET /api/getdetails?leavingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&goingLocation=Netaji%20Subhash%20Place,%20Shakurpur,%20Delhi,%20India&date=2025-08-19&phoneNumber=+918295525360&userTimezone=Asia/Kolkata&timezoneOffset=-330 - 200
+2025-08-19T11:17:24.017Z info: GET /api/getdetails?leavingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&goingLocation=Netaji%20Subhash%20Place,%20Shakurpur,%20Delhi,%20India&date=2025-08-19&phoneNumber=+918295525360&userTimezone=Asia/Kolkata&timezoneOffset=-330 - 200
+2025-08-19T11:17:25.545Z info: A new client connected: SObb87eCsej5vg3nAAAB
+2025-08-19T11:17:25.584Z info: Socket ID SObb87eCsej5vg3nAAAB associated with phoneNumber +916351446468
+2025-08-19T11:17:26.022Z info: GET /api/getdetails?leavingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&goingLocation=Netaji%20Subhash%20Place,%20Shakurpur,%20Delhi,%20India&date=2025-08-19&phoneNumber=+918295525360&userTimezone=Asia/Kolkata&timezoneOffset=-330 - 200
+2025-08-19T11:17:30.629Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T11:17:35.088Z info: Server is running on port 5002
+2025-08-19T11:17:35.090Z info: Socket.IO connection status: Connected
+2025-08-19T11:17:35.654Z info: MongoDB connected
+2025-08-19T11:17:43.853Z info: A new client connected: djYaqhxbmHfVN2ZrAAAB
+2025-08-19T11:17:43.918Z info: Socket ID djYaqhxbmHfVN2ZrAAAB associated with phoneNumber +916351446468
+2025-08-19T11:17:55.819Z info: Server is running on port 5002
+2025-08-19T11:17:55.822Z info: Socket.IO connection status: Connected
+2025-08-19T11:17:56.363Z info: MongoDB connected
+2025-08-19T11:18:08.256Z info: Server is running on port 5002
+2025-08-19T11:18:08.259Z info: Socket.IO connection status: Connected
+2025-08-19T11:18:08.810Z info: MongoDB connected
+2025-08-19T11:18:20.556Z info: A new client connected: vo23ug23nQKSNm8sAAAB
+2025-08-19T11:18:20.760Z info: Socket ID vo23ug23nQKSNm8sAAAB associated with phoneNumber +916351446468
+2025-08-19T11:18:25.455Z info: Server is running on port 5002
+2025-08-19T11:18:25.457Z info: Socket.IO connection status: Connected
+2025-08-19T11:18:26.087Z info: MongoDB connected
+2025-08-19T11:18:35.489Z info: A new client connected: eBxZui532pW3aObKAAAB
+2025-08-19T11:18:35.560Z info: Socket ID eBxZui532pW3aObKAAAB associated with phoneNumber +916351446468
+2025-08-19T11:18:47.733Z info: Server is running on port 5002
+2025-08-19T11:18:47.737Z info: Socket.IO connection status: Connected
+2025-08-19T11:18:48.312Z info: MongoDB connected
+2025-08-19T11:18:56.323Z info: A new client connected: AXGrODzrnpdb2o7UAAAB
+2025-08-19T11:18:56.394Z info: Socket ID AXGrODzrnpdb2o7UAAAB associated with phoneNumber +916351446468
+2025-08-19T11:19:10.256Z info: Server is running on port 5002
+2025-08-19T11:19:10.258Z info: Socket.IO connection status: Connected
+2025-08-19T11:19:10.783Z info: MongoDB connected
+2025-08-19T11:19:14.575Z info: A new client connected: 7c2FZPj9AXdk_nVBAAAB
+2025-08-19T11:19:14.625Z info: Socket ID 7c2FZPj9AXdk_nVBAAAB associated with phoneNumber +916351446468
+2025-08-19T11:19:57.377Z info: Server is running on port 5002
+2025-08-19T11:19:57.380Z info: Socket.IO connection status: Connected
+2025-08-19T11:19:58.003Z info: MongoDB connected
+2025-08-19T11:20:07.981Z info: Server is running on port 5002
+2025-08-19T11:20:07.986Z info: Socket.IO connection status: Connected
+2025-08-19T11:20:08.199Z info: A new client connected: 3EcsfvXpuT2_QgvDAAAB
+2025-08-19T11:20:08.685Z info: MongoDB connected
+2025-08-19T11:20:09.069Z info: Socket ID 3EcsfvXpuT2_QgvDAAAB associated with phoneNumber +916351446468
+2025-08-19T11:20:31.624Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T11:20:31.638Z info: A new client connected: xxc5mCPJkbwJFKNMAAAD
+2025-08-19T11:20:31.677Z info: Socket ID xxc5mCPJkbwJFKNMAAAD associated with phoneNumber +918295525360
+2025-08-19T11:20:31.839Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T11:20:37.278Z info: GET /api/location?going=Cal - 200
+2025-08-19T11:20:38.310Z info: GET /api/location?going=Calcutta - 200
+2025-08-19T11:20:40.262Z info: GET /api/location?going=Calcutta+University,+C... - 200
+2025-08-19T11:20:41.662Z info: GET /t/travelhistory/+918295525360 - 200
+2025-08-19T11:20:46.778Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T11:20:46.921Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T11:20:49.988Z info: GET /api/location?going=Calcutta+University,+C...&leaving=N - 200
+2025-08-19T11:20:50.523Z info: GET /api/location?going=Calcutta+University,+C...&leaving=Ne - 200
+2025-08-19T11:20:50.884Z info: GET /api/location?going=Calcutta+University,+C...&leaving=Net - 200
+2025-08-19T11:20:51.292Z info: GET /api/location?going=Calcutta+University,+C...&leaving=Neta - 200
+2025-08-19T11:20:54.777Z info: GET /t/search-rides?leavingLocation=Calcutta+University,+College+Square,+Kolkata,+West+Bengal,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-19&travelMode=train&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-19T11:21:02.280Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T11:21:02.426Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T11:21:05.352Z info: GET /api/getdetails?leavingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&goingLocation=Netaji%20Subhash%20Place,%20Shakurpur,%20Delhi,%20India&date=2025-08-19&phoneNumber=+918295525360&userTimezone=Asia/Kolkata&timezoneOffset=-330 - 200
+2025-08-19T11:21:05.360Z info: GET /api/getdetails?leavingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&goingLocation=Netaji%20Subhash%20Place,%20Shakurpur,%20Delhi,%20India&date=2025-08-19&phoneNumber=+918295525360&userTimezone=Asia/Kolkata&timezoneOffset=-330 - 200
+2025-08-19T11:22:01.407Z info: Server is running on port 5002
+2025-08-19T11:22:01.410Z info: Socket.IO connection status: Connected
+2025-08-19T11:22:02.223Z info: MongoDB connected
+2025-08-19T11:22:02.657Z info: A new client connected: FlB-aRXvyLmWNPWvAAAB
+2025-08-19T11:22:02.729Z info: Socket ID FlB-aRXvyLmWNPWvAAAB associated with phoneNumber +918295525360
+2025-08-19T11:22:13.787Z info: A new client connected: rGKdC471yMl3GJteAAAD
+2025-08-19T11:22:13.837Z info: Socket ID rGKdC471yMl3GJteAAAD associated with phoneNumber +916351446468
+2025-08-19T11:22:27.067Z info: Server is running on port 5002
+2025-08-19T11:22:27.069Z info: Socket.IO connection status: Connected
+2025-08-19T11:22:27.591Z info: MongoDB connected
+2025-08-19T11:22:31.258Z info: A new client connected: P7vHTVsvI-giwu5CAAAB
+2025-08-19T11:22:31.332Z info: Socket ID P7vHTVsvI-giwu5CAAAB associated with phoneNumber +918295525360
+2025-08-19T11:22:36.347Z info: A new client connected: r038Q_TX-ZnFaXylAAAD
+2025-08-19T11:22:36.382Z info: Socket ID r038Q_TX-ZnFaXylAAAD associated with phoneNumber +916351446468
+2025-08-19T11:23:04.086Z info: Server is running on port 5002
+2025-08-19T11:23:04.088Z info: Socket.IO connection status: Connected
+2025-08-19T11:23:05.013Z info: MongoDB connected
+2025-08-19T11:23:06.138Z info: A new client connected: XPMaGEHowD_n--vZAAAB
+2025-08-19T11:23:06.204Z info: Socket ID XPMaGEHowD_n--vZAAAB associated with phoneNumber +918295525360
+2025-08-19T11:23:07.124Z info: A new client connected: tTeQYQZ20S7W09QQAAAD
+2025-08-19T11:23:07.160Z info: Socket ID tTeQYQZ20S7W09QQAAAD associated with phoneNumber +916351446468
+2025-08-19T11:23:37.389Z info: GET /api/getdetails?leavingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&goingLocation=Netaji%20Subhash%20Place,%20Shakurpur,%20Delhi,%20India&date=2025-08-19&phoneNumber=+918295525360&userTimezone=Asia/Kolkata&timezoneOffset=-330 - 200
+2025-08-19T11:26:15.322Z info: Server is running on port 5002
+2025-08-19T11:26:15.324Z info: Socket.IO connection status: Connected
+2025-08-19T11:26:15.700Z info: A new client connected: JjYFtDEFfLX3ew6uAAAB
+2025-08-19T11:26:16.192Z info: MongoDB connected
+2025-08-19T11:26:16.583Z info: Socket ID JjYFtDEFfLX3ew6uAAAB associated with phoneNumber +918295525360
+2025-08-19T11:26:19.817Z info: A new client connected: kgfXfWT5RXTtCSWGAAAD
+2025-08-19T11:26:20.102Z info: Socket ID kgfXfWT5RXTtCSWGAAAD associated with phoneNumber +916351446468
+2025-08-19T11:26:24.894Z info: Server is running on port 5002
+2025-08-19T11:26:24.896Z info: Socket.IO connection status: Connected
+2025-08-19T11:26:25.345Z info: MongoDB connected
+2025-08-19T11:26:25.739Z info: A new client connected: fIWYtxoBU9wAQ9JZAAAB
+2025-08-19T11:26:25.791Z info: Socket ID fIWYtxoBU9wAQ9JZAAAB associated with phoneNumber +918295525360
+2025-08-19T11:26:35.336Z info: A new client connected: p3Zser0BzfRnY43LAAAD
+2025-08-19T11:26:35.380Z info: Socket ID p3Zser0BzfRnY43LAAAD associated with phoneNumber +916351446468
+2025-08-19T11:27:00.297Z info: Server is running on port 5002
+2025-08-19T11:27:00.300Z info: Socket.IO connection status: Connected
+2025-08-19T11:27:00.860Z info: MongoDB connected
+2025-08-19T11:27:03.846Z info: A new client connected: dayw9HkUbAQzkSVuAAAB
+2025-08-19T11:27:03.913Z info: Socket ID dayw9HkUbAQzkSVuAAAB associated with phoneNumber +918295525360
+2025-08-19T11:27:08.372Z info: A new client connected: fdki0cZaAMUgUp5sAAAD
+2025-08-19T11:27:08.419Z info: Socket ID fdki0cZaAMUgUp5sAAAD associated with phoneNumber +916351446468
+2025-08-19T11:27:30.999Z info: Server is running on port 5002
+2025-08-19T11:27:31.004Z info: Socket.IO connection status: Connected
+2025-08-19T11:27:31.346Z info: A new client connected: JkJJ_FNXZpqqdlmGAAAB
+2025-08-19T11:27:31.884Z info: MongoDB connected
+2025-08-19T11:27:32.320Z info: Socket ID JkJJ_FNXZpqqdlmGAAAB associated with phoneNumber +918295525360
+2025-08-19T11:27:39.217Z info: A new client connected: IvEeJY3FdmEnNeBWAAAD
+2025-08-19T11:27:39.260Z info: Socket ID IvEeJY3FdmEnNeBWAAAD associated with phoneNumber +916351446468
+2025-08-19T11:27:46.980Z info: Server is running on port 5002
+2025-08-19T11:27:46.983Z info: Socket.IO connection status: Connected
+2025-08-19T11:27:47.528Z info: MongoDB connected
+2025-08-19T11:27:50.398Z info: A new client connected: _HyE8TERPr6k0i37AAAB
+2025-08-19T11:27:50.477Z info: Socket ID _HyE8TERPr6k0i37AAAB associated with phoneNumber +918295525360
+2025-08-19T11:27:58.393Z info: Server is running on port 5002
+2025-08-19T11:27:58.395Z info: Socket.IO connection status: Connected
+2025-08-19T11:27:59.262Z info: MongoDB connected
+2025-08-19T11:28:03.619Z info: Server is running on port 5002
+2025-08-19T11:28:03.621Z info: Socket.IO connection status: Connected
+2025-08-19T11:28:04.120Z info: MongoDB connected
+2025-08-19T11:28:06.349Z info: A new client connected: W4lnzdnhDQYZcac0AAAB
+2025-08-19T11:28:06.453Z info: Socket ID W4lnzdnhDQYZcac0AAAB associated with phoneNumber +918295525360
+2025-08-19T11:28:08.837Z info: A new client connected: i_-w2j5fR6FdWuC7AAAD
+2025-08-19T11:28:08.880Z info: Socket ID i_-w2j5fR6FdWuC7AAAD associated with phoneNumber +916351446468
+2025-08-19T11:28:27.719Z info: Server is running on port 5002
+2025-08-19T11:28:27.723Z info: Socket.IO connection status: Connected
+2025-08-19T11:28:28.244Z info: MongoDB connected
+2025-08-19T11:28:30.873Z info: A new client connected: kwLVekQoKkqjq_xnAAAB
+2025-08-19T11:28:30.937Z info: Socket ID kwLVekQoKkqjq_xnAAAB associated with phoneNumber +918295525360
+2025-08-19T11:28:36.089Z info: A new client connected: UDHbSjOW6jCNlOqRAAAD
+2025-08-19T11:28:36.381Z info: Socket ID UDHbSjOW6jCNlOqRAAAD associated with phoneNumber +916351446468
+2025-08-19T11:28:41.698Z info: Server is running on port 5002
+2025-08-19T11:28:41.703Z info: Socket.IO connection status: Connected
+2025-08-19T11:28:42.179Z info: A new client connected: DNS-ovxGbL3V7LKkAAAB
+2025-08-19T11:28:42.629Z info: MongoDB connected
+2025-08-19T11:28:43.064Z info: Socket ID DNS-ovxGbL3V7LKkAAAB associated with phoneNumber +918295525360
+2025-08-19T11:28:51.729Z info: A new client connected: C1IhZpx3W17zGuWwAAAD
+2025-08-19T11:28:51.772Z info: Socket ID C1IhZpx3W17zGuWwAAAD associated with phoneNumber +916351446468
+2025-08-19T11:28:59.146Z info: Server is running on port 5002
+2025-08-19T11:28:59.149Z info: Socket.IO connection status: Connected
+2025-08-19T11:28:59.681Z info: MongoDB connected
+2025-08-19T11:29:02.427Z info: A new client connected: 10LUtKFy7jz8sro4AAAB
+2025-08-19T11:29:02.477Z info: Socket ID 10LUtKFy7jz8sro4AAAB associated with phoneNumber +918295525360
+2025-08-19T11:29:07.119Z info: A new client connected: AQUHf2ZO8qKt3lExAAAD
+2025-08-19T11:29:07.243Z info: Socket ID AQUHf2ZO8qKt3lExAAAD associated with phoneNumber +916351446468
+2025-08-19T11:29:13.160Z info: Server is running on port 5002
+2025-08-19T11:29:13.168Z info: Socket.IO connection status: Connected
+2025-08-19T11:29:13.379Z info: A new client connected: LFPQEg1pxY8k2Cl_AAAB
+2025-08-19T11:29:13.845Z info: MongoDB connected
+2025-08-19T11:29:14.286Z info: Socket ID LFPQEg1pxY8k2Cl_AAAB associated with phoneNumber +918295525360
+2025-08-19T11:29:22.861Z info: A new client connected: v3LgVgDryarOc1g4AAAD
+2025-08-19T11:29:22.900Z info: Socket ID v3LgVgDryarOc1g4AAAD associated with phoneNumber +916351446468
+2025-08-19T11:29:35.436Z info: Server is running on port 5002
+2025-08-19T11:29:35.441Z info: Socket.IO connection status: Connected
+2025-08-19T11:29:36.006Z info: MongoDB connected
+2025-08-19T11:29:36.403Z info: A new client connected: 8hShjr1zf0Z3kQ-6AAAB
+2025-08-19T11:29:36.493Z info: Socket ID 8hShjr1zf0Z3kQ-6AAAB associated with phoneNumber +918295525360
+2025-08-19T11:29:40.890Z info: A new client connected: eiXA4mkzVoSwPuwMAAAD
+2025-08-19T11:29:40.930Z info: Socket ID eiXA4mkzVoSwPuwMAAAD associated with phoneNumber +916351446468
+2025-08-19T11:30:09.892Z info: Server is running on port 5002
+2025-08-19T11:30:09.895Z info: Socket.IO connection status: Connected
+2025-08-19T11:30:10.425Z info: MongoDB connected
+2025-08-19T11:30:10.461Z info: A new client connected: Qm17lJZJSfwhJKIyAAAB
+2025-08-19T11:30:10.801Z info: Socket ID Qm17lJZJSfwhJKIyAAAB associated with phoneNumber +918295525360
+2025-08-19T11:30:15.961Z info: A new client connected: FuROyIPn-y-KLy2OAAAD
+2025-08-19T11:30:15.996Z info: Socket ID FuROyIPn-y-KLy2OAAAD associated with phoneNumber +916351446468
+2025-08-19T11:30:31.106Z info: Server is running on port 5002
+2025-08-19T11:30:31.110Z info: Socket.IO connection status: Connected
+2025-08-19T11:30:31.709Z info: MongoDB connected
+2025-08-19T11:30:35.033Z info: A new client connected: p_b4Dql7g6IBIDFnAAAB
+2025-08-19T11:30:35.107Z info: Socket ID p_b4Dql7g6IBIDFnAAAB associated with phoneNumber +918295525360
+2025-08-19T11:30:39.785Z info: A new client connected: jQG8PTK5Z_0b47O1AAAD
+2025-08-19T11:30:40.154Z info: Socket ID jQG8PTK5Z_0b47O1AAAD associated with phoneNumber +916351446468
+2025-08-19T11:30:58.651Z info: Server is running on port 5002
+2025-08-19T11:30:58.655Z info: Socket.IO connection status: Connected
+2025-08-19T11:30:59.477Z info: MongoDB connected
+2025-08-19T11:31:02.674Z info: A new client connected: tFHIN_oC4aptrZfIAAAB
+2025-08-19T11:31:02.739Z info: Socket ID tFHIN_oC4aptrZfIAAAB associated with phoneNumber +918295525360
+2025-08-19T11:31:08.498Z info: A new client connected: lK10lUzKizrvJPR9AAAD
+2025-08-19T11:31:08.871Z info: Socket ID lK10lUzKizrvJPR9AAAD associated with phoneNumber +916351446468
+2025-08-19T11:31:08.958Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T11:31:09.228Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T11:31:11.930Z info: GET /api/getdetails?leavingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&goingLocation=Netaji%20Subhash%20Place,%20Shakurpur,%20Delhi,%20India&date=2025-08-19&phoneNumber=+918295525360&userTimezone=Asia/Kolkata&timezoneOffset=-330 - 200
+2025-08-19T11:31:11.937Z info: GET /api/getdetails?leavingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&goingLocation=Netaji%20Subhash%20Place,%20Shakurpur,%20Delhi,%20India&date=2025-08-19&phoneNumber=+918295525360&userTimezone=Asia/Kolkata&timezoneOffset=-330 - 200
+2025-08-19T11:31:17.005Z info: Server is running on port 5002
+2025-08-19T11:31:17.008Z info: Socket.IO connection status: Connected
+2025-08-19T11:31:17.169Z info: A new client connected: H6HhCfcyj8w55ND8AAAB
+2025-08-19T11:31:17.566Z info: MongoDB connected
+2025-08-19T11:31:17.963Z info: Socket ID H6HhCfcyj8w55ND8AAAB associated with phoneNumber +918295525360
+2025-08-19T11:31:20.550Z info: GET /api/getdetails?leavingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&goingLocation=Netaji%20Subhash%20Place,%20Shakurpur,%20Delhi,%20India&date=2025-08-19&phoneNumber=+918295525360&userTimezone=Asia/Kolkata&timezoneOffset=-330 - 200
+2025-08-19T11:31:27.441Z info: A new client connected: LX1y4XLPnXL5LuuQAAAD
+2025-08-19T11:31:27.474Z info: Socket ID LX1y4XLPnXL5LuuQAAAD associated with phoneNumber +916351446468
+2025-08-19T11:31:36.700Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T11:31:36.998Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-19T11:31:39.899Z info: GET /api/location?going=Calcu - 200
+2025-08-19T11:31:41.108Z info: GET /api/location?going=Calcutta+ - 200
+2025-08-19T11:31:42.177Z info: GET /api/location?going=Calcutta+univer - 200
+2025-08-19T11:31:44.035Z info: GET /api/location?going=Calcutta+University,+College+Squ... - 200
+2025-08-19T11:31:49.744Z info: GET /api/location?going=Calcutta+University,+College+Squ...&leaving=n - 200
+2025-08-19T11:31:50.849Z info: GET /api/location?going=Calcutta+University,+College+Squ...&leaving=ne - 200
+2025-08-19T11:31:51.287Z info: GET /api/location?going=Calcutta+University,+College+Squ...&leaving=net - 200
+2025-08-19T11:31:51.981Z info: GET /api/location?going=Calcutta+University,+College+Squ...&leaving=netsji - 200
+2025-08-19T11:31:56.692Z info: GET /t/search-rides?leavingLocation=Calcutta+University,+College+Square,+Kolkata,+West+Bengal,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-19&travelMode=train&phoneNumber=%2B916351446468&userTimezone=Asia%2FCalcutta&timezoneOffset=-330 - 200
+2025-08-19T11:32:11.900Z info: GET /t/search-rides?leavingLocation=Calcutta+University,+College+Square,+Kolkata,+West+Bengal,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-19&travelMode=train&phoneNumber=%2B916351446468&userTimezone=Asia%2FCalcutta&timezoneOffset=-330 - 200
+2025-08-19T11:32:11.932Z info: GET /t/search-rides?leavingLocation=Calcutta+University,+College+Square,+Kolkata,+West+Bengal,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-19&travelMode=train&phoneNumber=%2B916351446468&userTimezone=Asia%2FCalcutta&timezoneOffset=-330 - 200
+2025-08-19T11:32:12.045Z info: GET /t/search-rides?leavingLocation=Calcutta+University,+College+Square,+Kolkata,+West+Bengal,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-19&travelMode=train&phoneNumber=%2B916351446468&userTimezone=Asia%2FCalcutta&timezoneOffset=-330 - 200
+2025-08-19T11:32:24.088Z info: Server is running on port 5002
+2025-08-19T11:32:24.089Z info: Socket.IO connection status: Connected
+2025-08-19T11:32:24.299Z info: A new client connected: xeE6Lq5PhpNM6GvFAAAB
+2025-08-19T11:32:24.798Z info: MongoDB connected
+2025-08-19T11:32:25.160Z info: Socket ID xeE6Lq5PhpNM6GvFAAAB associated with phoneNumber +916351446468
+2025-08-19T11:32:25.856Z info: A new client connected: yuFg65tU1fi04tKWAAAD
+2025-08-19T11:32:25.888Z info: Socket ID yuFg65tU1fi04tKWAAAD associated with phoneNumber +918295525360
+2025-08-19T11:32:31.211Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T11:32:31.446Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T11:32:33.025Z info: GET /t/travelhistory/+918295525360 - 200
+2025-08-19T11:34:20.744Z info: Server is running on port 5002
+2025-08-19T11:34:20.745Z info: Socket.IO connection status: Connected
+2025-08-19T11:34:20.897Z info: A new client connected: VNcI38NeKktCQGIrAAAB
+2025-08-19T11:34:21.176Z info: A new client connected: SkwbsIbnpbVb86lJAAAD
+2025-08-19T11:34:21.453Z info: MongoDB connected
+2025-08-19T11:34:21.837Z info: Socket ID VNcI38NeKktCQGIrAAAB associated with phoneNumber +918295525360
+2025-08-19T11:34:22.025Z info: Socket ID SkwbsIbnpbVb86lJAAAD associated with phoneNumber +916351446468
+2025-08-19T11:34:44.620Z info: Server is running on port 5002
+2025-08-19T11:34:44.621Z info: Socket.IO connection status: Connected
+2025-08-19T11:34:45.026Z info: MongoDB connected
+2025-08-19T11:34:46.536Z info: A new client connected: kDRdzekh_UKAywLHAAAB
+2025-08-19T11:34:46.578Z info: Socket ID kDRdzekh_UKAywLHAAAB associated with phoneNumber +918295525360
+2025-08-19T11:34:54.107Z info: A new client connected: 5IpIesyW101nW93DAAAD
+2025-08-19T11:34:54.145Z info: Socket ID 5IpIesyW101nW93DAAAD associated with phoneNumber +916351446468
+2025-08-19T11:34:54.165Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T11:34:54.404Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T11:34:58.221Z info: Server is running on port 5002
+2025-08-19T11:34:58.223Z info: Socket.IO connection status: Connected
+2025-08-19T11:34:58.524Z info: A new client connected: gjX0eIJOgrgfqIi-AAAB
+2025-08-19T11:34:58.631Z info: MongoDB connected
+2025-08-19T11:34:58.696Z info: GET /api/getdetails?leavingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&goingLocation=Netaji%20Subhash%20Place,%20Shakurpur,%20Delhi,%20India&date=2025-08-19&phoneNumber=+918295525360&userTimezone=Asia/Kolkata&timezoneOffset=-330 - 200
+2025-08-19T11:34:58.779Z info: GET /api/getdetails?leavingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&goingLocation=Netaji%20Subhash%20Place,%20Shakurpur,%20Delhi,%20India&date=2025-08-19&phoneNumber=+918295525360&userTimezone=Asia/Kolkata&timezoneOffset=-330 - 200
+2025-08-19T11:34:59.058Z info: Socket ID gjX0eIJOgrgfqIi-AAAB associated with phoneNumber +916351446468
+2025-08-19T11:34:59.352Z info: GET /api/getdetails?leavingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&goingLocation=Netaji%20Subhash%20Place,%20Shakurpur,%20Delhi,%20India&date=2025-08-19&phoneNumber=+918295525360&userTimezone=Asia/Kolkata&timezoneOffset=-330 - 200
+2025-08-19T11:34:59.863Z info: A new client connected: -5Z3lUwIpjoOxQQHAAAD
+2025-08-19T11:34:59.895Z info: Socket ID -5Z3lUwIpjoOxQQHAAAD associated with phoneNumber +918295525360
+2025-08-19T11:35:12.546Z info: Server is running on port 5002
+2025-08-19T11:35:12.547Z info: Socket.IO connection status: Connected
+2025-08-19T11:35:12.819Z info: A new client connected: mmaekuCgRleOa4F9AAAB
+2025-08-19T11:35:13.058Z info: MongoDB connected
+2025-08-19T11:35:13.454Z info: Socket ID mmaekuCgRleOa4F9AAAB associated with phoneNumber +916351446468
+2025-08-19T11:35:13.956Z info: A new client connected: 8Up3IiVVH9xOZmeBAAAD
+2025-08-19T11:35:13.991Z info: Socket ID 8Up3IiVVH9xOZmeBAAAD associated with phoneNumber +918295525360
+2025-08-19T11:35:34.833Z info: Server is running on port 5002
+2025-08-19T11:35:34.839Z info: Socket.IO connection status: Connected
+2025-08-19T11:35:35.522Z info: MongoDB connected
+2025-08-19T11:35:36.847Z info: A new client connected: m_6H0_ZZcYiqiqogAAAB
+2025-08-19T11:35:36.993Z info: Socket ID m_6H0_ZZcYiqiqogAAAB associated with phoneNumber +918295525360
+2025-08-19T11:35:37.192Z info: A new client connected: FR-foDZP-Xhb9E7VAAAD
+2025-08-19T11:35:37.330Z info: Socket ID FR-foDZP-Xhb9E7VAAAD associated with phoneNumber +916351446468
+2025-08-19T11:35:47.202Z info: Server is running on port 5002
+2025-08-19T11:35:47.207Z info: Socket.IO connection status: Connected
+2025-08-19T11:35:47.721Z info: MongoDB connected
+2025-08-19T11:35:47.884Z info: A new client connected: s9oPOiceAYeVEhuYAAAB
+2025-08-19T11:35:48.714Z info: Socket ID s9oPOiceAYeVEhuYAAAB associated with phoneNumber +918295525360
+2025-08-19T11:35:51.629Z info: A new client connected: tUyL_m8DNXyuLchVAAAD
+2025-08-19T11:35:51.678Z info: Socket ID tUyL_m8DNXyuLchVAAAD associated with phoneNumber +916351446468
+2025-08-19T11:36:17.637Z info: Server is running on port 5002
+2025-08-19T11:36:17.638Z info: Socket.IO connection status: Connected
+2025-08-19T11:36:18.080Z info: MongoDB connected
+2025-08-19T11:36:21.895Z info: A new client connected: H0cNH62AmfOahPoLAAAB
+2025-08-19T11:36:21.949Z info: Socket ID H0cNH62AmfOahPoLAAAB associated with phoneNumber +918295525360
+2025-08-19T11:36:24.728Z info: A new client connected: p7EweAWdRvkY0annAAAD
+2025-08-19T11:36:24.762Z info: Socket ID p7EweAWdRvkY0annAAAD associated with phoneNumber +916351446468
+2025-08-19T11:36:46.131Z info: Server is running on port 5002
+2025-08-19T11:36:46.134Z info: Socket.IO connection status: Connected
+2025-08-19T11:36:48.483Z info: Server is running on port 5002
+2025-08-19T11:36:48.484Z info: Socket.IO connection status: Connected
+2025-08-19T11:36:48.900Z info: MongoDB connected
+2025-08-19T11:36:51.087Z info: A new client connected: 0iT5QvT-Y1ZVTu0jAAAB
+2025-08-19T11:36:51.142Z info: Socket ID 0iT5QvT-Y1ZVTu0jAAAB associated with phoneNumber +916351446468
+2025-08-19T11:37:38.708Z info: Server is running on port 5002
+2025-08-19T11:37:38.709Z info: Socket.IO connection status: Connected
+2025-08-19T11:37:39.263Z info: MongoDB connected
+2025-08-19T11:37:47.896Z info: A new client connected: iZC5LleBhixTtbGyAAAB
+2025-08-19T11:37:47.941Z info: Socket ID iZC5LleBhixTtbGyAAAB associated with phoneNumber +916351446468
+2025-08-19T11:37:48.560Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T11:37:49.079Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-19T11:37:52.330Z info: GET /t/search-rides?leavingLocation=Calcutta+University,+College+Square,+Kolkata,+West+Bengal,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-19&travelMode=train&phoneNumber=%2B916351446468&userTimezone=Asia%2FCalcutta&timezoneOffset=-330 - 200
+2025-08-19T11:37:55.077Z info: Server is running on port 5002
+2025-08-19T11:37:55.078Z info: Socket.IO connection status: Connected
+2025-08-19T11:37:55.327Z info: A new client connected: cU7fcIeQoIJT1NcPAAAB
+2025-08-19T11:37:55.515Z info: MongoDB connected
+2025-08-19T11:37:56.081Z info: Socket ID cU7fcIeQoIJT1NcPAAAB associated with phoneNumber +916351446468
+2025-08-19T11:38:04.833Z info: GET /t/search-rides?leavingLocation=Calcutta+University,+College+Square,+Kolkata,+West+Bengal,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-19&travelMode=train&phoneNumber=%2B916351446468&userTimezone=Asia%2FCalcutta&timezoneOffset=-330 - 200
+2025-08-19T11:38:04.865Z info: GET /t/search-rides?leavingLocation=Calcutta+University,+College+Square,+Kolkata,+West+Bengal,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-19&travelMode=train&phoneNumber=%2B916351446468&userTimezone=Asia%2FCalcutta&timezoneOffset=-330 - 200
+2025-08-19T11:38:04.889Z info: GET /t/search-rides?leavingLocation=Calcutta+University,+College+Square,+Kolkata,+West+Bengal,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-19&travelMode=train&phoneNumber=%2B916351446468&userTimezone=Asia%2FCalcutta&timezoneOffset=-330 - 200
+2025-08-19T11:38:15.469Z info: A new client connected: 7GBkRWxvSKvxTpsQAAAD
+2025-08-19T11:38:15.502Z info: Socket ID 7GBkRWxvSKvxTpsQAAAD associated with phoneNumber +918295525360
+2025-08-19T11:38:17.000Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T11:38:17.264Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T11:38:19.698Z info: GET /t/travelhistory/+918295525360 - 200
+2025-08-19T11:38:24.990Z info: GET /map/getdistanceandcoordinate?origin=H9F7%20P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Netaji%20Subhash%20Place,%20Shakurpur,%20North%20West%20Delhi,%20Delhi%20-%20110034 - 200
+2025-08-19T11:38:36.056Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T11:38:36.481Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-19T11:38:39.285Z info: GET /t/search-rides?leavingLocation=Calcutta+University,+College+Square,+Kolkata,+West+Bengal,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-19&travelMode=train&phoneNumber=%2B916351446468&userTimezone=Asia%2FCalcutta&timezoneOffset=-330 - 200
+2025-08-19T11:41:21.912Z info: Server is running on port 5002
+2025-08-19T11:41:21.913Z info: Socket.IO connection status: Connected
+2025-08-19T11:41:22.531Z info: MongoDB connected
+2025-08-19T11:41:22.945Z info: A new client connected: 5TP92NtZFgrE-OESAAAB
+2025-08-19T11:41:22.992Z info: Socket ID 5TP92NtZFgrE-OESAAAB associated with phoneNumber +918295525360
+2025-08-19T11:41:28.738Z info: A new client connected: oaGJW8lnkRmsGBazAAAD
+2025-08-19T11:41:28.771Z info: Socket ID oaGJW8lnkRmsGBazAAAD associated with phoneNumber +916351446468
+2025-08-19T11:41:52.028Z info: Server is running on port 5002
+2025-08-19T11:41:52.030Z info: Socket.IO connection status: Connected
+2025-08-19T11:41:52.372Z info: A new client connected: yOqUiZAcCeDo52EdAAAB
+2025-08-19T11:41:52.472Z info: MongoDB connected
+2025-08-19T11:41:53.067Z info: Socket ID yOqUiZAcCeDo52EdAAAB associated with phoneNumber +916351446468
+2025-08-19T11:41:53.844Z info: A new client connected: N8uISx9rRcM39Pp_AAAD
+2025-08-19T11:41:53.877Z info: Socket ID N8uISx9rRcM39Pp_AAAD associated with phoneNumber +918295525360
+2025-08-19T11:42:14.674Z info: Server is running on port 5002
+2025-08-19T11:42:14.676Z info: Socket.IO connection status: Connected
+2025-08-19T11:42:15.133Z info: MongoDB connected
+2025-08-19T11:42:17.212Z info: A new client connected: xl4HColoSuZO2XIFAAAB
+2025-08-19T11:42:17.265Z info: Socket ID xl4HColoSuZO2XIFAAAB associated with phoneNumber +918295525360
+2025-08-19T11:42:22.936Z info: A new client connected: -h3Ai9pPj0TxffrGAAAD
+2025-08-19T11:42:22.970Z info: Socket ID -h3Ai9pPj0TxffrGAAAD associated with phoneNumber +916351446468
+2025-08-19T11:42:29.463Z info: Server is running on port 5002
+2025-08-19T11:42:29.464Z info: Socket.IO connection status: Connected
+2025-08-19T11:42:29.663Z info: A new client connected: VsRf69x-iQqnjZ12AAAB
+2025-08-19T11:42:29.850Z info: A new client connected: viljdATiJ_So7oupAAAD
+2025-08-19T11:42:29.883Z info: MongoDB connected
+2025-08-19T11:42:30.287Z info: Socket ID viljdATiJ_So7oupAAAD associated with phoneNumber +918295525360
+2025-08-19T11:42:30.444Z info: Socket ID VsRf69x-iQqnjZ12AAAB associated with phoneNumber +916351446468
+2025-08-19T11:42:31.701Z info: GET /t/search-rides?leavingLocation=Calcutta+University,+College+Square,+Kolkata,+West+Bengal,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-19&travelMode=train&phoneNumber=%2B916351446468&userTimezone=Asia%2FCalcutta&timezoneOffset=-330 - 200
+2025-08-19T11:42:31.730Z info: GET /t/search-rides?leavingLocation=Calcutta+University,+College+Square,+Kolkata,+West+Bengal,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-19&travelMode=train&phoneNumber=%2B916351446468&userTimezone=Asia%2FCalcutta&timezoneOffset=-330 - 200
+2025-08-19T11:42:31.848Z info: GET /t/search-rides?leavingLocation=Calcutta+University,+College+Square,+Kolkata,+West+Bengal,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-19&travelMode=train&phoneNumber=%2B916351446468&userTimezone=Asia%2FCalcutta&timezoneOffset=-330 - 200
+2025-08-19T11:42:39.351Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T11:42:39.624Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T11:42:41.252Z info: GET /api/getdetails?leavingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&goingLocation=Netaji%20Subhash%20Place,%20Shakurpur,%20Delhi,%20India&date=2025-08-19&phoneNumber=+918295525360&userTimezone=Asia/Kolkata&timezoneOffset=-330 - 200
+2025-08-19T11:42:41.260Z info: GET /api/getdetails?leavingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&goingLocation=Netaji%20Subhash%20Place,%20Shakurpur,%20Delhi,%20India&date=2025-08-19&phoneNumber=+918295525360&userTimezone=Asia/Kolkata&timezoneOffset=-330 - 200
+2025-08-19T11:42:42.418Z info: GET /api/getdetails?leavingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&goingLocation=Netaji%20Subhash%20Place,%20Shakurpur,%20Delhi,%20India&date=2025-08-19&phoneNumber=+918295525360&userTimezone=Asia/Kolkata&timezoneOffset=-330 - 200
+2025-08-19T11:42:48.591Z info: GET /map/getdistanceandcoordinate?origin=H9F7%20P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Netaji%20Subhash%20Place,%20Shakurpur,%20North%20West%20Delhi,%20Delhi%20-%20110034 - 200
+2025-08-19T11:42:56.991Z info: POST /t/booking-request - 200
+2025-08-19T11:42:59.749Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T11:42:59.981Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T11:43:00.358Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T11:43:00.616Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-19T11:43:03.819Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T11:43:09.218Z info: GET /t/request/+918295525360 - 200
+2025-08-19T11:43:11.778Z info: GET /api/consignment/3b79c31e-64b1-49e6-85a7-649223dc1df8 - 200
+2025-08-19T11:43:17.985Z info: POST /order/respondto?travelId=886392895&consignmentId=3b79c31e-64b1-49e6-85a7-649223dc1df8 - 200
+2025-08-19T11:43:20.617Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T11:43:25.572Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T11:43:28.272Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-19T11:43:31.888Z info: GET /t/travel/886392895 - 200
+2025-08-19T11:43:32.151Z info: GET /map/getdistanceandcoordinate?origin=87/1,%20College%20St,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=987%20pocket,%2025,%20Netaji%20Subhash%20Place,%20Shakurpur,%20New%20Delhi,%20North%20West%20Delhi,%20Delhi%20-%20110034 - 200
+2025-08-19T11:43:39.495Z info: POST /p/create-order - 200
+2025-08-19T11:44:09.260Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T11:44:09.411Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T11:44:12.981Z info: POST /p/verify-payment - 200
+2025-08-19T11:44:13.137Z info: GET /earn/earning?phoneNumber=%2B918295525360 - 200
+2025-08-19T11:44:14.392Z info: Client disconnected: VsRf69x-iQqnjZ12AAAB
+2025-08-19T11:44:14.427Z info: Socket ID cleared for phoneNumber +916351446468
+2025-08-19T11:44:14.576Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T11:44:15.394Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-19T11:45:16.946Z info: Client disconnected: viljdATiJ_So7oupAAAD
+2025-08-19T11:45:16.991Z info: Socket ID cleared for phoneNumber +918295525360
+2025-08-19T11:45:24.170Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T11:45:24.224Z info: A new client connected: w_8ZAwCao2yt0xe7AAAF
+2025-08-19T11:45:24.264Z info: Socket ID w_8ZAwCao2yt0xe7AAAF associated with phoneNumber +918295525360
+2025-08-19T11:45:24.337Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T11:45:41.033Z info: GET /address/getaddress/+918295525360 - 200
+2025-08-19T11:45:42.304Z info: GET /api/location?going=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073 - 200
+2025-08-19T11:45:42.647Z info: GET /address/getaddress/+918295525360 - 200
+2025-08-19T11:45:43.695Z info: GET /api/location?going=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073&leaving=Danapur+Nizamat,+Mithapur,+Patna,+Bihar+-+800001 - 200
+2025-08-19T11:45:46.672Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-19T11:46:01.071Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-19T11:46:05.090Z info: POST /t/creates?Leavinglocation=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&Goinglocation=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-19T11:46:08.186Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T11:46:08.495Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T11:46:10.224Z info: GET /t/travelhistory/+918295525360 - 200
+2025-08-19T11:46:15.270Z info: GET /map/getdistanceandcoordinate?origin=H9F7%20P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-19T11:47:39.080Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T11:47:39.190Z info: A new client connected: j4swOkEQJsAXd_b7AAAH
+2025-08-19T11:47:39.246Z info: Socket ID j4swOkEQJsAXd_b7AAAH associated with phoneNumber +916351446468
+2025-08-19T11:47:39.282Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-19T11:47:43.577Z info: GET /address/getaddress/+916351446468 - 200
+2025-08-19T11:47:45.604Z info: GET /api/location?going=87%2F1,+College+St,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073 - 200
+2025-08-19T11:47:46.367Z info: GET /address/getaddress/+916351446468 - 200
+2025-08-19T11:47:49.496Z info: GET /api/location?going=87%2F1,+College+St,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073&leaving=Danapur+Nizamat,+Mithapur,+Patna,+Bihar+-+800001 - 200
+2025-08-19T11:47:55.041Z info: GET /map/getdistanceandcoordinate?origin=12,%2087/1,%20College%20St,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=12,%20Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-19T11:48:32.993Z info: GET /map/getdistanceandcoordinate?origin=87/1,%20College%20St,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-19T11:48:39.743Z info: POST /api/consignment - 200
+2025-08-19T11:48:43.085Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T11:48:43.339Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-19T11:48:47.024Z info: GET /api/location?going=Cal - 200
+2025-08-19T11:48:48.212Z info: GET /api/location?going=Calcutta - 200
+2025-08-19T11:48:50.576Z info: GET /api/location?going=Calcutta+University,+College+Squ... - 200
+2025-08-19T11:48:52.334Z info: GET /api/location?going=Calcutta+University,+College+Squ...&leaving=Dam - 200
+2025-08-19T11:48:53.511Z info: GET /api/location?going=Calcutta+University,+College+Squ...&leaving=Da - 200
+2025-08-19T11:48:54.651Z info: GET /api/location?going=Calcutta+University,+College+Squ...&leaving=Danap - 200
+2025-08-19T11:48:55.045Z info: GET /api/location?going=Calcutta+University,+College+Squ...&leaving=Danapur - 200
+2025-08-19T11:48:56.019Z info: GET /api/location?going=Calcutta+University,+College+Squ...&leaving=Danapur+ni - 200
+2025-08-19T11:48:56.354Z info: GET /api/location?going=Calcutta+University,+College+Squ...&leaving=Danapur+niz - 200
+2025-08-19T11:48:56.962Z info: GET /api/location?going=Calcutta+University,+College+Squ...&leaving=Danapur+nizama - 200
+2025-08-19T11:49:04.639Z info: GET /t/search-rides?leavingLocation=Calcutta+University,+College+Square,+Kolkata,+West+Bengal,+India&goingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&date=2025-08-20&travelMode=train&phoneNumber=%2B916351446468&userTimezone=Asia%2FCalcutta&timezoneOffset=-330 - 200
+2025-08-19T11:49:10.856Z info: GET /t/search-rides?leavingLocation=Calcutta+University,+College+Square,+Kolkata,+West+Bengal,+India&goingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&date=2025-08-20&travelMode=car&phoneNumber=%2B916351446468&userTimezone=Asia%2FCalcutta&timezoneOffset=-330 - 200
+2025-08-19T11:49:10.862Z info: GET /t/search-rides?leavingLocation=Calcutta+University,+College+Square,+Kolkata,+West+Bengal,+India&goingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&date=2025-08-20&travelMode=car&phoneNumber=%2B916351446468&userTimezone=Asia%2FCalcutta&timezoneOffset=-330 - 200
+2025-08-19T11:49:10.884Z info: GET /t/search-rides?leavingLocation=Calcutta+University,+College+Square,+Kolkata,+West+Bengal,+India&goingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&date=2025-08-20&travelMode=car&phoneNumber=%2B916351446468&userTimezone=Asia%2FCalcutta&timezoneOffset=-330 - 200
+2025-08-19T11:49:15.679Z info: GET /map/getdistanceandcoordinate?origin=H9F7%20P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-19T11:49:22.722Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T11:49:22.905Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T11:49:26.191Z info: GET /api/location?going=Cal - 200
+2025-08-19T11:49:27.324Z info: GET /api/location?going=Calcutta - 200
+2025-08-19T11:49:29.343Z info: GET /api/location?going=Calcutta+University,+C... - 200
+2025-08-19T11:49:32.986Z info: GET /api/location?going=Calcutta+University,+C...&leaving=Danap - 200
+2025-08-19T11:49:33.467Z info: GET /api/location?going=Calcutta+University,+C...&leaving=Danapur - 200
+2025-08-19T11:49:34.355Z info: GET /api/location?going=Calcutta+University,+C...&leaving=Danapur+ - 200
+2025-08-19T11:49:35.417Z info: GET /api/location?going=Calcutta+University,+C...&leaving=Danapur+nizma - 200
+2025-08-19T11:49:39.086Z info: GET /api/getdetails?leavingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&goingLocation=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar,%20India&date=2025-08-20&phoneNumber=+918295525360&userTimezone=Asia/Kolkata&timezoneOffset=-330 - 200
+2025-08-19T11:49:39.089Z info: GET /api/getdetails?leavingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&goingLocation=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar,%20India&date=2025-08-20&phoneNumber=+918295525360&userTimezone=Asia/Kolkata&timezoneOffset=-330 - 200
+2025-08-19T11:49:40.519Z info: GET /api/getdetails?leavingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&goingLocation=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar,%20India&date=2025-08-20&phoneNumber=+918295525360&userTimezone=Asia/Kolkata&timezoneOffset=-330 - 200
+2025-08-19T11:49:55.366Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T11:49:55.562Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-19T11:49:59.298Z info: GET /api/history/+916351446468 - 200
+2025-08-19T11:50:04.735Z info: GET /map/getdistanceandcoordinate?origin=87%2F1%2C%20College%20St%2C%20Calcutta%20University%2C%20College%20Square%2C%20Kolkata%2C%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat%2C%20Mithapur%2C%20Patna%2C%20Bihar%20-%20800001 - 200
+2025-08-19T11:50:04.812Z info: GET /api/consignment/997b8e80-4d3d-4837-86a5-360a80a9b636 - 200
+2025-08-19T11:50:04.824Z info: GET /api/getall/+916351446468?phoneNumber=%2B916351446468 - 200
+2025-08-19T11:50:10.624Z info: GET /api/consignment/3b79c31e-64b1-49e6-85a7-649223dc1df8 - 200
+2025-08-19T11:50:10.667Z info: GET /map/getdistanceandcoordinate?origin=87%2F1%2C%20College%20St%2C%20Calcutta%20University%2C%20College%20Square%2C%20Kolkata%2C%20West%20Bengal%20-%20700073&destination=987%20pocket%2C%2025%2C%20Netaji%20Subhash%20Place%2C%20Shakurpur%2C%20New%20Delhi%2C%20North%20West%20Delhi%2C%20Delhi%20-%20110034 - 200
+2025-08-19T11:50:15.057Z info: POST /api/getearning - 200
+2025-08-19T11:50:17.727Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T11:50:18.236Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T11:50:23.674Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T11:50:23.858Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-19T11:50:25.938Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T11:50:27.533Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-19T11:50:29.852Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T11:50:31.700Z info: GET /api/riderequest/+918295525360 - 200
+2025-08-19T11:50:36.395Z info: POST /order/respond?travelId=601210993&consignmentId=3b79c31e-64b1-49e6-85a7-649223dc1df8 - 200
+2025-08-19T11:50:37.350Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T11:50:40.734Z info: GET /t/travel/601210993 - 200
+2025-08-19T11:50:41.024Z info: GET /map/getdistanceandcoordinate?origin=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar,%20India - 200
+2025-08-19T11:50:44.794Z info: POST /p/create-order - 200
+2025-08-19T11:50:49.914Z info: GET /earn/earning?phoneNumber=%2B918295525360 - 200
+2025-08-19T11:51:13.242Z info: GET /t/travelhistory/+918295525360 - 200
+2025-08-19T11:51:26.010Z info: GET /map/getdistanceandcoordinate?origin=H9F7%20P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-19T11:52:02.982Z info: POST /p/verify-payment - 200
+2025-08-19T11:52:04.074Z info: Client disconnected: j4swOkEQJsAXd_b7AAAH
+2025-08-19T11:52:04.110Z info: Socket ID cleared for phoneNumber +916351446468
+2025-08-19T11:52:04.180Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T11:52:04.632Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-19T11:52:26.837Z info: GET /earn/earning?phoneNumber=%2B918295525360 - 200
+2025-08-19T11:52:31.713Z info: GET /api/history/+918295525360 - 200
+2025-08-19T11:52:35.254Z info: GET /t/travelhistory/+918295525360 - 200
+2025-08-19T11:52:41.691Z info: GET /map/getdistanceandcoordinate?origin=H9F7%20P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-19T11:52:46.649Z info: GET /map/getdistanceandcoordinate?origin=H9F7%20P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Netaji%20Subhash%20Place,%20Shakurpur,%20North%20West%20Delhi,%20Delhi%20-%20110034 - 200
+2025-08-19T11:54:03.176Z info: GET /address/getaddress/+918295525360 - 200
+2025-08-19T11:54:04.852Z info: GET /api/location?going=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073 - 200
+2025-08-19T11:54:05.111Z info: GET /address/getaddress/+918295525360 - 200
+2025-08-19T11:54:08.356Z info: GET /api/location?going=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073&leaving=IIITM+Campus,+Gwalior,+Madhya+Pradesh+-+474015 - 200
+2025-08-19T11:54:17.664Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=IIITM%20Campus,%20Gwalior,%20Madhya%20Pradesh%20-%20474015 - 200
+2025-08-19T11:54:22.109Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=IIITM%20Campus,%20Gwalior,%20Madhya%20Pradesh%20-%20474015 - 200
+2025-08-19T11:54:26.070Z info: POST /t/creates?Leavinglocation=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&Goinglocation=IIITM%20Campus,%20Gwalior,%20Madhya%20Pradesh%20-%20474015 - 200
+2025-08-19T11:54:29.202Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T11:54:29.415Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T11:54:31.074Z info: GET /t/travelhistory/+918295525360 - 200
+2025-08-19T11:54:49.160Z info: Client disconnected: w_8ZAwCao2yt0xe7AAAF
+2025-08-19T11:54:49.200Z info: Socket ID cleared for phoneNumber +918295525360
+2025-08-19T11:54:55.252Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T11:54:55.282Z info: A new client connected: ay_rv0CjO661Lr81AAAJ
+2025-08-19T11:54:55.362Z info: Socket ID ay_rv0CjO661Lr81AAAJ associated with phoneNumber +918295525360
+2025-08-19T11:54:55.544Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T11:55:13.749Z info: Client disconnected: ay_rv0CjO661Lr81AAAJ
+2025-08-19T11:55:13.787Z info: Socket ID cleared for phoneNumber +918295525360
+2025-08-19T11:55:19.586Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T11:55:19.607Z info: A new client connected: YpBwPfLLBCDWjGr1AAAL
+2025-08-19T11:55:19.640Z info: Socket ID YpBwPfLLBCDWjGr1AAAL associated with phoneNumber +918295525360
+2025-08-19T11:55:19.754Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T11:56:25.758Z info: Client disconnected: YpBwPfLLBCDWjGr1AAAL
+2025-08-19T11:56:25.795Z info: Socket ID cleared for phoneNumber +918295525360
+2025-08-19T11:56:32.700Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T11:56:32.740Z info: A new client connected: MKq7JBMzwF8vAfBfAAAN
+2025-08-19T11:56:32.780Z info: Socket ID MKq7JBMzwF8vAfBfAAAN associated with phoneNumber +918295525360
+2025-08-19T11:56:32.877Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T11:56:35.847Z info: Client disconnected: MKq7JBMzwF8vAfBfAAAN
+2025-08-19T11:56:35.881Z info: Socket ID cleared for phoneNumber +918295525360
+2025-08-19T11:56:41.814Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T11:56:41.826Z info: A new client connected: G3aP53NOkk32GnbLAAAP
+2025-08-19T11:56:41.862Z info: Socket ID G3aP53NOkk32GnbLAAAP associated with phoneNumber +918295525360
+2025-08-19T11:56:42.030Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T11:57:19.577Z info: Client disconnected: G3aP53NOkk32GnbLAAAP
+2025-08-19T11:57:19.612Z info: Socket ID cleared for phoneNumber +918295525360
+2025-08-19T11:57:26.674Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T11:57:26.709Z info: A new client connected: MFSQNgRp59uOBp2yAAAR
+2025-08-19T11:57:26.741Z info: Socket ID MFSQNgRp59uOBp2yAAAR associated with phoneNumber +918295525360
+2025-08-19T11:57:26.835Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T11:57:32.538Z info: GET /t/travelhistory/+918295525360 - 200
+2025-08-19T11:57:37.810Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T11:57:37.943Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T11:58:19.311Z info: GET /t/travelhistory/+918295525360 - 200
+2025-08-19T11:58:28.773Z info: GET /map/getdistanceandcoordinate?origin=H9F7%20P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Netaji%20Subhash%20Place,%20Shakurpur,%20North%20West%20Delhi,%20Delhi%20-%20110034 - 200
+2025-08-19T11:58:37.033Z info: GET /map/getdistanceandcoordinate?origin=H9F7%20P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001 - 200
+2025-08-19T11:59:10.988Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T11:59:11.098Z info: A new client connected: 7caBv5z56m4G7gcXAAAT
+2025-08-19T11:59:11.139Z info: Socket ID 7caBv5z56m4G7gcXAAAT associated with phoneNumber +916351446468
+2025-08-19T11:59:11.227Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-19T11:59:16.895Z info: GET /address/getaddress/+916351446468 - 200
+2025-08-19T11:59:23.405Z info: GET /api/location?going=87%2F1,+College+St,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073 - 200
+2025-08-19T11:59:24.320Z info: GET /address/getaddress/+916351446468 - 200
+2025-08-19T11:59:27.782Z info: GET /api/location?going=87%2F1,+College+St,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073&leaving=IIITM+Campus,+Gwalior,+Madhya+Pradesh+-+474015 - 200
+2025-08-19T11:59:34.903Z info: GET /map/getdistanceandcoordinate?origin=12,%2087/1,%20College%20St,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Campus,%20IIITM%20Campus,%20Gwalior,%20Madhya%20Pradesh%20-%20474015 - 200
+2025-08-19T12:00:09.463Z info: GET /map/getdistanceandcoordinate?origin=87/1,%20College%20St,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=IIITM%20Campus,%20Gwalior,%20Madhya%20Pradesh%20-%20474015 - 200
+2025-08-19T12:00:15.720Z info: POST /api/consignment - 200
+2025-08-19T12:00:19.023Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T12:00:19.223Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-19T12:00:20.291Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T12:00:20.600Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T12:00:25.555Z info: GET /api/location?going=Cal - 200
+2025-08-19T12:00:26.349Z info: GET /api/location?going=Calcutt - 200
+2025-08-19T12:00:28.117Z info: GET /api/location?going=Calcutta+University,+C... - 200
+2025-08-19T12:00:30.144Z info: GET /api/location?going=Calcutta+University,+C...&leaving=Iiitm - 200
+2025-08-19T12:00:34.099Z info: GET /api/getdetails?leavingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&goingLocation=IIITM%20Campus,%20Gwalior,%20Madhya%20Pradesh,%20India&date=2025-08-31&phoneNumber=+918295525360&userTimezone=Asia/Kolkata&timezoneOffset=-330 - 200
+2025-08-19T12:00:34.101Z info: GET /api/getdetails?leavingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&goingLocation=IIITM%20Campus,%20Gwalior,%20Madhya%20Pradesh,%20India&date=2025-08-31&phoneNumber=+918295525360&userTimezone=Asia/Kolkata&timezoneOffset=-330 - 200
+2025-08-19T12:00:35.347Z info: GET /api/getdetails?leavingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&goingLocation=IIITM%20Campus,%20Gwalior,%20Madhya%20Pradesh,%20India&date=2025-08-31&phoneNumber=+918295525360&userTimezone=Asia/Kolkata&timezoneOffset=-330 - 200
+2025-08-19T12:00:43.440Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T12:00:43.609Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T12:00:44.741Z info: GET /api/getdetails?leavingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&goingLocation=IIITM%20Campus,%20Gwalior,%20Madhya%20Pradesh,%20India&date=2025-08-31&phoneNumber=+918295525360&userTimezone=Asia/Kolkata&timezoneOffset=-330 - 200
+2025-08-19T12:00:44.778Z info: GET /api/getdetails?leavingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&goingLocation=IIITM%20Campus,%20Gwalior,%20Madhya%20Pradesh,%20India&date=2025-08-31&phoneNumber=+918295525360&userTimezone=Asia/Kolkata&timezoneOffset=-330 - 200
+2025-08-19T12:00:45.864Z info: GET /api/getdetails?leavingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&goingLocation=IIITM%20Campus,%20Gwalior,%20Madhya%20Pradesh,%20India&date=2025-08-31&phoneNumber=+918295525360&userTimezone=Asia/Kolkata&timezoneOffset=-330 - 200
+2025-08-19T12:00:53.543Z info: GET /api/location?going=Cac - 200
+2025-08-19T12:00:54.996Z info: GET /api/location?going=Calcutat - 200
+2025-08-19T12:00:55.835Z info: GET /api/location?going=Calcutta - 200
+2025-08-19T12:00:57.983Z info: GET /api/location?going=Calcutta+University,+College+Squ... - 200
+2025-08-19T12:01:01.613Z info: GET /api/location?going=Calcutta+University,+College+Squ...&leaving=IIITM - 200
+2025-08-19T12:01:08.335Z info: GET /t/search-rides?leavingLocation=Calcutta+University,+College+Square,+Kolkata,+West+Bengal,+India&goingLocation=IIITM+Campus,+Gwalior,+Madhya+Pradesh,+India&date=2025-08-31&travelMode=train&phoneNumber=%2B916351446468&userTimezone=Asia%2FCalcutta&timezoneOffset=-330 - 200
+2025-08-19T12:01:14.365Z info: GET /t/search-rides?leavingLocation=Calcutta+University,+College+Square,+Kolkata,+West+Bengal,+India&goingLocation=IIITM+Campus,+Gwalior,+Madhya+Pradesh,+India&date=2025-08-31&travelMode=car&phoneNumber=%2B916351446468&userTimezone=Asia%2FCalcutta&timezoneOffset=-330 - 200
+2025-08-19T12:01:14.369Z info: GET /t/search-rides?leavingLocation=Calcutta+University,+College+Square,+Kolkata,+West+Bengal,+India&goingLocation=IIITM+Campus,+Gwalior,+Madhya+Pradesh,+India&date=2025-08-31&travelMode=car&phoneNumber=%2B916351446468&userTimezone=Asia%2FCalcutta&timezoneOffset=-330 - 200
+2025-08-19T12:01:14.383Z info: GET /t/search-rides?leavingLocation=Calcutta+University,+College+Square,+Kolkata,+West+Bengal,+India&goingLocation=IIITM+Campus,+Gwalior,+Madhya+Pradesh,+India&date=2025-08-31&travelMode=car&phoneNumber=%2B916351446468&userTimezone=Asia%2FCalcutta&timezoneOffset=-330 - 200
+2025-08-19T12:01:28.811Z info: GET /map/getdistanceandcoordinate?origin=H9F7%20P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=IIITM%20Campus,%20Gwalior,%20Madhya%20Pradesh%20-%20474015 - 200
+2025-08-19T12:01:40.327Z info: POST /api/getearning - 200
+2025-08-19T12:01:42.965Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T12:01:43.137Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T12:01:47.907Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T12:01:48.198Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-19T12:01:51.818Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T12:01:54.257Z info: GET /api/riderequest/+918295525360 - 200
+2025-08-19T12:01:59.126Z info: POST /order/respond?travelId=200777971&consignmentId=28ce08da-5b58-491d-aca2-e36df9a53be1 - 200
+2025-08-19T12:02:00.048Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T12:02:03.284Z info: GET /t/travel/200777971 - 200
+2025-08-19T12:02:03.372Z info: GET /map/getdistanceandcoordinate?origin=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&destination=IIITM%20Campus,%20Gwalior,%20Madhya%20Pradesh,%20India - 200
+2025-08-19T12:02:08.377Z info: POST /p/create-order - 200
+2025-08-19T12:02:36.950Z info: POST /p/verify-payment - 200
+2025-08-19T12:02:38.038Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T12:02:38.451Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-19T12:02:42.434Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T12:02:43.006Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T12:02:44.527Z info: GET /earn/earning?phoneNumber=%2B918295525360 - 200
+2025-08-19T12:02:53.406Z info: GET /address/getaddress/+918295525360 - 200
+2025-08-19T12:02:55.399Z info: GET /address/getaddress/+918295525360 - 200
+2025-08-19T12:03:00.172Z info: GET /address/getaddress/+918295525360 - 200
+2025-08-19T12:03:02.942Z info: GET /api/location?going=Danapur+Nizamat,+Mithapur,+Patna,+Bihar+-+800001 - 200
+2025-08-19T12:03:03.487Z info: GET /address/getaddress/+918295525360 - 200
+2025-08-19T12:03:05.234Z info: GET /api/location?going=Danapur+Nizamat,+Mithapur,+Patna,+Bihar+-+800001&leaving=Netaji+Subhash+Place,+Shakurpur,+North+West+Delhi,+Delhi+-+110034 - 200
+2025-08-19T12:03:08.079Z info: GET /map/getdistanceandcoordinate?origin=12,%20Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001&destination=12,%20Netaji%20Subhash%20Place,%20Shakurpur,%20North%20West%20Delhi,%20Delhi%20-%20110034 - 200
+2025-08-19T12:03:21.338Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T12:03:23.676Z info: GET /api/riderequest/+918295525360 - 200
+2025-08-19T12:05:38.076Z info: GET /map/getdistanceandcoordinate?origin=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001&destination=Netaji%20Subhash%20Place,%20Shakurpur,%20North%20West%20Delhi,%20Delhi%20-%20110034 - 200
+2025-08-19T12:05:47.298Z info: GET /map/getdistanceandcoordinate?origin=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001&destination=Netaji%20Subhash%20Place,%20Shakurpur,%20North%20West%20Delhi,%20Delhi%20-%20110034 - 200
+2025-08-19T12:05:49.396Z info: POST /api/consignment - 200
+2025-08-19T12:05:52.199Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T12:05:52.371Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T12:09:56.321Z info: Client disconnected: MFSQNgRp59uOBp2yAAAR
+2025-08-19T12:09:56.376Z info: Socket ID cleared for phoneNumber +918295525360
+2025-08-19T12:10:56.101Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T14:54:45.395Z info: Client disconnected: 7caBv5z56m4G7gcXAAAT
+2025-08-19T21:50:17.028Z error: Error clearing socketId for +916351446468: getaddrinfo ENOTFOUND cluster0-shard-00-00.i288h.mongodb.net
+2025-08-19T21:52:40.385Z info: Server is running on port 5002
+2025-08-19T21:52:40.387Z info: Socket.IO connection status: Connected
+2025-08-19T21:52:41.065Z info: MongoDB connected
+2025-08-19T21:53:30.100Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T21:53:30.134Z info: A new client connected: 72Ull5buglJZX0CCAAAB
+2025-08-19T21:53:30.171Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T21:53:30.184Z info: Socket ID 72Ull5buglJZX0CCAAAB associated with phoneNumber +918295525360
+2025-08-19T21:53:35.924Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T21:53:36.015Z info: A new client connected: q0R3bT6dUVPudxe1AAAD
+2025-08-19T21:53:36.049Z info: Socket ID q0R3bT6dUVPudxe1AAAD associated with phoneNumber +916351446468
+2025-08-19T21:53:36.075Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-19T21:53:38.011Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T21:53:39.493Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-19T21:53:41.627Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T21:53:43.102Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T21:53:43.196Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-19T21:53:49.180Z info: GET /api/history/+916351446468 - 200
+2025-08-19T21:53:52.121Z info: GET /map/getdistanceandcoordinate?origin=87%2F1%2C%20College%20St%2C%20Calcutta%20University%2C%20College%20Square%2C%20Kolkata%2C%20West%20Bengal%20-%20700073&destination=IIITM%20Campus%2C%20Gwalior%2C%20Madhya%20Pradesh%20-%20474015 - 200
+2025-08-19T21:53:52.142Z info: GET /api/consignment/28ce08da-5b58-491d-aca2-e36df9a53be1 - 200
+2025-08-19T21:53:57.717Z info: GET /map/getdistanceandcoordinate?origin=87%2F1%2C%20College%20St%2C%20Calcutta%20University%2C%20College%20Square%2C%20Kolkata%2C%20West%20Bengal%20-%20700073&destination=Danapur%20Nizamat%2C%20Mithapur%2C%20Patna%2C%20Bihar%20-%20800001 - 200
+2025-08-19T21:53:57.748Z info: GET /api/getall/+916351446468?phoneNumber=%2B916351446468 - 200
+2025-08-19T21:53:57.756Z info: GET /api/consignment/997b8e80-4d3d-4837-86a5-360a80a9b636 - 200
+2025-08-19T21:54:03.078Z info: GET /t/travelhistory/+918295525360 - 200
+2025-08-19T21:54:20.993Z info: GET /address/getaddress/+918295525360 - 200
+2025-08-19T21:54:23.061Z info: GET /api/location?going=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073 - 200
+2025-08-19T21:54:23.761Z info: GET /address/getaddress/+918295525360 - 200
+2025-08-19T21:54:25.467Z info: GET /api/location?going=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073&leaving=Netaji+Subhash+Place,+Shakurpur,+North+West+Delhi,+Delhi+-+110034 - 200
+2025-08-19T21:54:28.399Z info: GET /map/getdistanceandcoordinate?origin=12,%20H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=12,%20Netaji%20Subhash%20Place,%20Shakurpur,%20North%20West%20Delhi,%20Delhi%20-%20110034 - 200
+2025-08-19T21:54:50.661Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Netaji%20Subhash%20Place,%20Shakurpur,%20North%20West%20Delhi,%20Delhi%20-%20110034 - 200
+2025-08-19T21:54:54.248Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Netaji%20Subhash%20Place,%20Shakurpur,%20North%20West%20Delhi,%20Delhi%20-%20110034 - 200
+2025-08-19T21:54:59.447Z info: POST /api/consignment - 200
+2025-08-19T21:55:02.827Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T21:55:02.882Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T21:55:06.789Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T21:55:06.862Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-19T21:55:09.976Z info: GET /address/getaddress/+916351446468 - 200
+2025-08-19T21:55:12.162Z info: GET /api/location?going=87%2F1,+College+St,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073 - 200
+2025-08-19T21:55:13.357Z info: GET /api/history/+918295525360 - 200
+2025-08-19T21:55:17.232Z info: GET /address/getaddress/+916351446468 - 200
+2025-08-19T21:55:21.208Z info: GET /api/location?going=87%2F1,+College+St,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073&leaving=Netaji+Subhash+Place,+Shakurpur,+North+West+Delhi,+Delhi+-+110034 - 200
+2025-08-19T21:55:26.242Z info: GET /map/getdistanceandcoordinate?origin=87/1,%20College%20St,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=Netaji%20Subhash%20Place,%20Shakurpur,%20North%20West%20Delhi,%20Delhi%20-%20110034 - 200
+2025-08-19T21:55:37.120Z info: Client disconnected: 72Ull5buglJZX0CCAAAB
+2025-08-19T21:55:37.152Z info: Socket ID cleared for phoneNumber +918295525360
+2025-08-19T21:55:43.433Z info: Client disconnected: q0R3bT6dUVPudxe1AAAD
+2025-08-19T21:55:43.465Z info: Socket ID cleared for phoneNumber +916351446468
+2025-08-19T21:55:43.738Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T21:55:43.769Z info: A new client connected: w77IE9CgDMm1CqLhAAAF
+2025-08-19T21:55:43.803Z info: Socket ID w77IE9CgDMm1CqLhAAAF associated with phoneNumber +918295525360
+2025-08-19T21:55:43.809Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T21:56:25.099Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T21:56:25.227Z info: A new client connected: bp51ewvN5aP0G8QgAAAH
+2025-08-19T21:56:25.260Z info: Socket ID bp51ewvN5aP0G8QgAAAH associated with phoneNumber +916351446468
+2025-08-19T21:56:25.299Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-19T21:56:29.878Z info: GET /api/history/+918295525360 - 200
+2025-08-19T21:56:31.579Z info: GET /address/getaddress/+916351446468 - 200
+2025-08-19T21:56:33.854Z info: GET /api/location?going=87%2F1,+College+St,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073 - 200
+2025-08-19T21:56:35.593Z info: GET /address/getaddress/+916351446468 - 200
+2025-08-19T21:56:39.184Z info: GET /api/location?going=87%2F1,+College+St,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073&leaving=987+pocket,+25,+Netaji+Subhash+Place,+Shakurpur,+New+Delhi,+North+West+Delhi,+Delhi+-+110034 - 200
+2025-08-19T21:56:40.366Z info: GET /api/consignment/c5fa0f2a-2629-4a80-9d45-37340b8cb62c - 200
+2025-08-19T21:56:40.370Z info: GET /map/getdistanceandcoordinate?origin=H9F7%2BP4Q%2C%20Calcutta%20University%2C%20College%20Square%2C%20Kolkata%2C%20West%20Bengal%20-%20700073&destination=Netaji%20Subhash%20Place%2C%20Shakurpur%2C%20North%20West%20Delhi%2C%20Delhi%20-%20110034 - 200
+2025-08-19T21:56:40.373Z info: GET /api/getall/+918295525360?phoneNumber=%2B918295525360 - 200
+2025-08-19T21:56:46.104Z info: GET /map/getdistanceandcoordinate?origin=87/1,%20College%20St,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=987%20pocket,%2025,%20Netaji%20Subhash%20Place,%20Shakurpur,%20New%20Delhi,%20North%20West%20Delhi,%20Delhi%20-%20110034 - 200
+2025-08-19T21:57:02.947Z info: GET /map/getdistanceandcoordinate?origin=87/1,%20College%20St,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=987%20pocket,%2025,%20Netaji%20Subhash%20Place,%20Shakurpur,%20New%20Delhi,%20North%20West%20Delhi,%20Delhi%20-%20110034 - 200
+2025-08-19T21:57:07.186Z info: POST /t/creates?Leavinglocation=87/1,%20College%20St,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&Goinglocation=987%20pocket,%2025,%20Netaji%20Subhash%20Place,%20Shakurpur,%20New%20Delhi,%20North%20West%20Delhi,%20Delhi%20-%20110034 - 200
+2025-08-19T21:57:10.451Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T21:57:10.578Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-19T21:57:12.716Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T21:57:12.769Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T21:57:18.862Z info: GET /api/location?going=Calcutta - 200
+2025-08-19T21:57:21.528Z info: GET /api/location?going=Calcutta+University,+C... - 200
+2025-08-19T21:57:24.607Z info: GET /api/location?going=Calcutta+University,+C...&leaving=Neta - 200
+2025-08-19T21:57:25.258Z info: GET /api/location?going=Calcutta+University,+C...&leaving=Netaji+ - 200
+2025-08-19T21:57:28.345Z info: Client disconnected: w77IE9CgDMm1CqLhAAAF
+2025-08-19T21:57:28.373Z info: Socket ID cleared for phoneNumber +918295525360
+2025-08-19T21:57:57.274Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T21:57:57.278Z info: A new client connected: HqYCd1NuCQumFH_sAAAJ
+2025-08-19T21:57:57.309Z info: Socket ID HqYCd1NuCQumFH_sAAAJ associated with phoneNumber +918295525360
+2025-08-19T21:57:57.342Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T21:58:03.223Z info: GET /api/location?going=Calcutaa - 200
+2025-08-19T21:58:05.449Z info: GET /api/location?going=Calcutta+University,+C... - 200
+2025-08-19T21:58:07.725Z info: GET /api/location?going=Calcutta+University,+C...&leaving=Ne - 200
+2025-08-19T21:58:09.500Z info: GET /api/location?going=Calcutta+University,+C...&leaving=Netaji+subah - 200
+2025-08-19T21:58:13.240Z info: GET /t/search-rides?leavingLocation=Calcutta+University,+College+Square,+Kolkata,+West+Bengal,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-22&travelMode=train&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-19T21:58:17.442Z info: GET /t/search-rides?leavingLocation=Calcutta+University,+College+Square,+Kolkata,+West+Bengal,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-22&travelMode=car&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-19T21:58:17.447Z info: GET /t/search-rides?leavingLocation=Calcutta+University,+College+Square,+Kolkata,+West+Bengal,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-22&travelMode=car&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-19T21:58:17.449Z info: GET /t/search-rides?leavingLocation=Calcutta+University,+College+Square,+Kolkata,+West+Bengal,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-22&travelMode=car&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-19T21:58:23.611Z info: GET /map/getdistanceandcoordinate?origin=87/1,%20College%20St,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=987%20pocket,%2025,%20Netaji%20Subhash%20Place,%20Shakurpur,%20New%20Delhi,%20North%20West%20Delhi,%20Delhi%20-%20110034 - 200
+2025-08-19T21:58:34.878Z info: GET /t/travelhistory/+916351446468 - 200
+2025-08-19T21:59:08.882Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T21:59:08.965Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-19T21:59:15.587Z info: GET /api/location?going=Calc - 200
+2025-08-19T21:59:16.492Z info: GET /api/location?going=Calcuta - 200
+2025-08-19T21:59:18.976Z info: GET /api/location?going=Calcutta+University,+College+Squ... - 200
+2025-08-19T21:59:21.559Z info: GET /api/location?going=Calcutta+University,+College+Squ...&leaving=Ne - 200
+2025-08-19T21:59:22.875Z info: GET /api/location?going=Calcutta+University,+College+Squ...&leaving=Netaji+suh - 200
+2025-08-19T21:59:24.035Z info: GET /api/location?going=Calcutta+University,+College+Squ...&leaving=Netaji+subhash - 200
+2025-08-19T21:59:33.568Z info: GET /api/getdetails?leavingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&goingLocation=Netaji%20Subhash%20Place,%20Shakurpur,%20Delhi,%20India&date=2025-08-22&phoneNumber=+916351446468&userTimezone=Asia/Calcutta&timezoneOffset=-330 - 200
+2025-08-19T21:59:33.572Z info: GET /api/getdetails?leavingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&goingLocation=Netaji%20Subhash%20Place,%20Shakurpur,%20Delhi,%20India&date=2025-08-22&phoneNumber=+916351446468&userTimezone=Asia/Calcutta&timezoneOffset=-330 - 200
+2025-08-19T21:59:37.295Z info: GET /api/getdetails?leavingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&goingLocation=Netaji%20Subhash%20Place,%20Shakurpur,%20Delhi,%20India&date=2025-08-22&phoneNumber=+916351446468&userTimezone=Asia/Calcutta&timezoneOffset=-330 - 200
+2025-08-19T21:59:52.658Z info: POST /api/getearning - 200
+2025-08-19T21:59:55.668Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T21:59:55.806Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-19T21:59:56.424Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T21:59:56.558Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T21:59:57.792Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T21:59:59.013Z info: GET /api/riderequest/+916351446468 - 200
+2025-08-19T22:00:01.003Z info: POST /order/respond?travelId=316674164&consignmentId=c5fa0f2a-2629-4a80-9d45-37340b8cb62c - 200
+2025-08-19T22:00:01.603Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T22:00:07.240Z info: GET /t/travel/316674164 - 200
+2025-08-19T22:00:07.276Z info: GET /map/getdistanceandcoordinate?origin=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&destination=Netaji%20Subhash%20Place,%20Shakurpur,%20Delhi,%20India - 200
+2025-08-19T22:00:15.386Z info: POST /p/create-order - 200
+2025-08-19T22:00:43.930Z info: POST /p/verify-payment - 200
+2025-08-19T22:00:44.243Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T22:00:44.390Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T22:00:48.935Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T22:00:50.630Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-19T22:00:54.091Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T22:00:54.178Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-19T22:00:58.497Z info: GET /earn/earning?phoneNumber=%2B916351446468 - 200
+2025-08-19T22:01:07.245Z info: GET /address/getaddress/+916351446468 - 200
+2025-08-19T22:01:09.803Z info: GET /api/location?going=Danapur+Nizamat,+Mithapur,+Patna,+Bihar+-+800001 - 200
+2025-08-19T22:01:11.381Z info: GET /address/getaddress/+916351446468 - 200
+2025-08-19T22:01:14.839Z info: GET /api/location?going=Danapur+Nizamat,+Mithapur,+Patna,+Bihar+-+800001&leaving=987+pocket,+25,+Netaji+Subhash+Place,+Shakurpur,+New+Delhi,+North+West+Delhi,+Delhi+-+110034 - 200
+2025-08-19T22:01:22.089Z info: GET /map/getdistanceandcoordinate?origin=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001&destination=987%20pocket,%2025,%20Netaji%20Subhash%20Place,%20Shakurpur,%20New%20Delhi,%20North%20West%20Delhi,%20Delhi%20-%20110034 - 200
+2025-08-19T22:01:56.384Z info: GET /map/getdistanceandcoordinate?origin=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001&destination=987%20pocket,%2025,%20Netaji%20Subhash%20Place,%20Shakurpur,%20New%20Delhi,%20North%20West%20Delhi,%20Delhi%20-%20110034 - 200
+2025-08-19T22:02:04.609Z info: POST /t/creates?Leavinglocation=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001&Goinglocation=987%20pocket,%2025,%20Netaji%20Subhash%20Place,%20Shakurpur,%20New%20Delhi,%20North%20West%20Delhi,%20Delhi%20-%20110034 - 200
+2025-08-19T22:02:07.541Z info: GET /address/getaddress/+918295525360 - 200
+2025-08-19T22:02:08.630Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T22:02:08.724Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-19T22:02:09.385Z info: GET /address/getaddress/+918295525360 - 200
+2025-08-19T22:02:10.977Z info: GET /api/location?going=Danapur+Nizamat,+Mithapur,+Patna,+Bihar+-+800001 - 200
+2025-08-19T22:02:12.184Z info: GET /address/getaddress/+918295525360 - 200
+2025-08-19T22:02:14.061Z info: GET /api/location?going=Danapur+Nizamat,+Mithapur,+Patna,+Bihar+-+800001&leaving=Netaji+Subhash+Place,+Shakurpur,+North+West+Delhi,+Delhi+-+110034 - 200
+2025-08-19T22:02:17.581Z info: GET /map/getdistanceandcoordinate?origin=12,%20Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001&destination=12,%20Netaji%20Subhash%20Place,%20Shakurpur,%20North%20West%20Delhi,%20Delhi%20-%20110034 - 200
+2025-08-19T22:02:56.321Z info: GET /map/getdistanceandcoordinate?origin=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001&destination=Netaji%20Subhash%20Place,%20Shakurpur,%20North%20West%20Delhi,%20Delhi%20-%20110034 - 200
+2025-08-19T22:02:59.233Z info: POST /api/consignment - 200
+2025-08-19T22:03:02.141Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T22:03:02.339Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T22:03:08.620Z info: GET /api/location?going=danapur - 200
+2025-08-19T22:03:09.565Z info: GET /api/location?going=Danapur+ - 200
+2025-08-19T22:03:11.543Z info: GET /api/location?going=Danapur+nizamat - 200
+2025-08-19T22:03:13.103Z info: GET /api/location?going=Danapur+Nizamat,+Mithapur,+Patna... - 200
+2025-08-19T22:03:17.919Z info: GET /api/location?going=Danapur+Nizamat,+Mithapur,+Patna...&leaving=Netaji+subhas - 200
+2025-08-19T22:03:27.364Z info: GET /api/getdetails?leavingLocation=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar,%20India&goingLocation=Netaji%20Subhash%20Place,%20Shakurpur,%20Delhi,%20India&date=2025-08-23&phoneNumber=+916351446468&userTimezone=Asia/Calcutta&timezoneOffset=-330 - 200
+2025-08-19T22:03:27.368Z info: GET /api/getdetails?leavingLocation=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar,%20India&goingLocation=Netaji%20Subhash%20Place,%20Shakurpur,%20Delhi,%20India&date=2025-08-23&phoneNumber=+916351446468&userTimezone=Asia/Calcutta&timezoneOffset=-330 - 200
+2025-08-19T22:03:34.068Z info: GET /api/getdetails?leavingLocation=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar,%20India&goingLocation=Netaji%20Subhash%20Place,%20Shakurpur,%20Delhi,%20India&date=2025-08-23&phoneNumber=+916351446468&userTimezone=Asia/Calcutta&timezoneOffset=-330 - 200
+2025-08-19T22:03:50.175Z info: GET /api/getdetails?leavingLocation=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar,%20India&goingLocation=Netaji%20Subhash%20Place,%20Shakurpur,%20Delhi,%20India&date=23/08/2025&phoneNumber=+916351446468&userTimezone=Asia/Calcutta&timezoneOffset=-330 - 200
+2025-08-19T22:03:50.177Z info: GET /api/getdetails?leavingLocation=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar,%20India&goingLocation=Netaji%20Subhash%20Place,%20Shakurpur,%20Delhi,%20India&date=2025-08-23&phoneNumber=+916351446468&userTimezone=Asia/Calcutta&timezoneOffset=-330 - 200
+2025-08-19T22:03:53.473Z info: GET /api/getdetails?leavingLocation=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar,%20India&goingLocation=Netaji%20Subhash%20Place,%20Shakurpur,%20Delhi,%20India&date=24/08/2025&phoneNumber=+916351446468&userTimezone=Asia/Calcutta&timezoneOffset=-330 - 200
+2025-08-19T22:03:53.478Z info: GET /api/getdetails?leavingLocation=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar,%20India&goingLocation=Netaji%20Subhash%20Place,%20Shakurpur,%20Delhi,%20India&date=2025-08-24&phoneNumber=+916351446468&userTimezone=Asia/Calcutta&timezoneOffset=-330 - 200
+2025-08-19T22:04:31.513Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T22:04:31.870Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-19T22:04:35.514Z info: GET /api/getdetails?leavingLocation=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar,%20India&goingLocation=Netaji%20Subhash%20Place,%20Shakurpur,%20Delhi,%20India&date=2025-08-23&phoneNumber=+916351446468&userTimezone=Asia/Calcutta&timezoneOffset=-330 - 200
+2025-08-19T22:04:35.517Z info: GET /api/getdetails?leavingLocation=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar,%20India&goingLocation=Netaji%20Subhash%20Place,%20Shakurpur,%20Delhi,%20India&date=2025-08-23&phoneNumber=+916351446468&userTimezone=Asia/Calcutta&timezoneOffset=-330 - 200
+2025-08-19T22:06:10.761Z info: GET /api/getdetails?leavingLocation=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar,%20India&goingLocation=Netaji%20Subhash%20Place,%20Shakurpur,%20Delhi,%20India&date=2025-08-23&phoneNumber=+916351446468&userTimezone=Asia/Calcutta&timezoneOffset=-330 - 200
+2025-08-19T22:07:54.954Z info: Server is running on port 5002
+2025-08-19T22:07:54.957Z info: Socket.IO connection status: Connected
+2025-08-19T22:07:55.713Z info: MongoDB connected
+2025-08-19T22:07:55.889Z info: A new client connected: S4094cVPMFkA14FBAAAB
+2025-08-19T22:07:55.979Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T22:07:56.317Z info: Socket ID S4094cVPMFkA14FBAAAB associated with phoneNumber +918295525360
+2025-08-19T22:07:57.900Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T22:07:59.041Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T22:08:00.725Z info: A new client connected: GoUgE4ArIfIf0UBzAAAD
+2025-08-19T22:08:00.757Z info: Socket ID GoUgE4ArIfIf0UBzAAAD associated with phoneNumber +916351446468
+2025-08-19T22:08:01.089Z info: GET /api/riderequest/+916351446468 - 200
+2025-08-19T22:08:04.166Z info: Server is running on port 5002
+2025-08-19T22:08:04.167Z info: Socket.IO connection status: Connected
+2025-08-19T22:08:04.270Z info: A new client connected: 3COZJTmqqmDlT2MEAAAB
+2025-08-19T22:08:04.581Z info: MongoDB connected
+2025-08-19T22:08:04.951Z info: Socket ID 3COZJTmqqmDlT2MEAAAB associated with phoneNumber +916351446468
+2025-08-19T22:08:05.659Z info: A new client connected: aPxK4yGuAEcsSTkDAAAD
+2025-08-19T22:08:05.941Z info: Socket ID aPxK4yGuAEcsSTkDAAAD associated with phoneNumber +918295525360
+2025-08-19T22:08:06.448Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T22:08:08.883Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T22:08:09.753Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T22:08:09.913Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T22:08:16.827Z info: Server is running on port 5002
+2025-08-19T22:08:16.828Z info: Socket.IO connection status: Connected
+2025-08-19T22:08:17.252Z info: MongoDB connected
+2025-08-19T22:08:18.556Z info: A new client connected: 1HeypkQQvFZBMTdWAAAB
+2025-08-19T22:08:18.609Z info: Socket ID 1HeypkQQvFZBMTdWAAAB associated with phoneNumber +918295525360
+2025-08-19T22:08:26.298Z info: A new client connected: uK3b9h-AAXVIYrlRAAAD
+2025-08-19T22:08:26.331Z info: Socket ID uK3b9h-AAXVIYrlRAAAD associated with phoneNumber +916351446468
+2025-08-19T22:09:27.636Z info: Server is running on port 5002
+2025-08-19T22:09:27.638Z info: Socket.IO connection status: Connected
+2025-08-19T22:09:28.062Z info: A new client connected: uQFtb2DVGaByeSPQAAAB
+2025-08-19T22:09:28.327Z info: MongoDB connected
+2025-08-19T22:09:28.479Z info: A new client connected: pgwUDgyUrCp2BYIUAAAD
+2025-08-19T22:09:28.690Z info: Socket ID uQFtb2DVGaByeSPQAAAB associated with phoneNumber +916351446468
+2025-08-19T22:09:28.876Z info: Socket ID pgwUDgyUrCp2BYIUAAAD associated with phoneNumber +918295525360
+2025-08-19T22:09:29.025Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T22:09:29.335Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-19T22:09:33.048Z info: GET /api/getdetails?leavingLocation=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar,%20India&goingLocation=Netaji%20Subhash%20Place,%20Shakurpur,%20Delhi,%20India&date=2025-08-23&phoneNumber=+916351446468&userTimezone=Asia/Calcutta&timezoneOffset=-330 - 200
+2025-08-19T22:09:33.053Z info: GET /api/getdetails?leavingLocation=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar,%20India&goingLocation=Netaji%20Subhash%20Place,%20Shakurpur,%20Delhi,%20India&date=2025-08-23&phoneNumber=+916351446468&userTimezone=Asia/Calcutta&timezoneOffset=-330 - 200
+2025-08-19T22:09:36.189Z info: GET /api/getdetails?leavingLocation=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar,%20India&goingLocation=Netaji%20Subhash%20Place,%20Shakurpur,%20Delhi,%20India&date=2025-08-23&phoneNumber=+916351446468&userTimezone=Asia/Calcutta&timezoneOffset=-330 - 200
+2025-08-19T22:09:51.141Z info: GET /api/location?going=Danapur+nizMa - 200
+2025-08-19T22:09:52.864Z info: GET /api/location?going=Danapur+Nizamat,+Mitha... - 200
+2025-08-19T22:09:55.020Z info: GET /api/location?going=Danapur+Nizamat,+Mitha...&leaving=Ne - 200
+2025-08-19T22:09:56.944Z info: GET /api/location?going=Danapur+Nizamat,+Mitha...&leaving=Netaji+subhash - 200
+2025-08-19T22:10:01.421Z info: GET /t/search-rides?leavingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-23&travelMode=train&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-19T22:10:04.900Z info: GET /t/search-rides?leavingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-23&travelMode=train&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-19T22:10:04.904Z info: GET /t/search-rides?leavingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-23&travelMode=train&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-19T22:10:04.980Z info: GET /t/search-rides?leavingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-23&travelMode=train&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-19T22:10:08.744Z info: GET /map/getdistanceandcoordinate?origin=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001&destination=987%20pocket,%2025,%20Netaji%20Subhash%20Place,%20Shakurpur,%20New%20Delhi,%20North%20West%20Delhi,%20Delhi%20-%20110034 - 200
+2025-08-19T22:10:12.010Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T22:10:12.198Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T22:10:13.527Z info: GET /t/search-rides?leavingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-23&travelMode=train&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-19T22:10:17.515Z info: GET /t/search-rides?leavingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-23&travelMode=train&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-19T22:10:17.517Z info: GET /t/search-rides?leavingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-23&travelMode=train&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-19T22:10:17.519Z info: GET /t/search-rides?leavingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-23&travelMode=train&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-19T22:10:22.214Z info: GET /map/getdistanceandcoordinate?origin=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001&destination=987%20pocket,%2025,%20Netaji%20Subhash%20Place,%20Shakurpur,%20New%20Delhi,%20North%20West%20Delhi,%20Delhi%20-%20110034 - 200
+2025-08-19T22:10:27.527Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T22:10:27.682Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T22:10:28.775Z info: GET /t/search-rides?leavingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-23&travelMode=train&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-19T22:10:31.183Z info: GET /t/search-rides?leavingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-23&travelMode=car&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-19T22:10:31.186Z info: GET /t/search-rides?leavingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-23&travelMode=car&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-19T22:10:31.189Z info: GET /t/search-rides?leavingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-23&travelMode=car&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-19T22:12:01.560Z info: GET /map/getdistanceandcoordinate?origin=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001&destination=987%20pocket,%2025,%20Netaji%20Subhash%20Place,%20Shakurpur,%20New%20Delhi,%20North%20West%20Delhi,%20Delhi%20-%20110034 - 200
+2025-08-19T22:12:20.809Z info: GET /map/getdistanceandcoordinate?origin=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001&destination=987%20pocket,%2025,%20Netaji%20Subhash%20Place,%20Shakurpur,%20New%20Delhi,%20North%20West%20Delhi,%20Delhi%20-%20110034 - 200
+2025-08-19T22:12:23.334Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T22:12:23.474Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T22:12:24.548Z info: GET /t/search-rides?leavingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-23&travelMode=train&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-19T22:12:45.281Z info: GET /t/search-rides?leavingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-23&travelMode=train&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-19T22:12:45.285Z info: GET /t/search-rides?leavingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-23&travelMode=train&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-19T22:12:45.290Z info: GET /t/search-rides?leavingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-23&travelMode=train&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-19T22:12:53.100Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T22:12:53.287Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T22:12:54.634Z info: GET /t/search-rides?leavingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-23&travelMode=train&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-19T22:12:57.944Z info: GET /t/search-rides?leavingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-23&travelMode=airplane&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-19T22:12:57.948Z info: GET /t/search-rides?leavingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-23&travelMode=airplane&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-19T22:12:57.951Z info: GET /t/search-rides?leavingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-23&travelMode=airplane&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-19T22:13:07.589Z info: GET /map/getdistanceandcoordinate?origin=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001&destination=987%20pocket,%2025,%20Netaji%20Subhash%20Place,%20Shakurpur,%20New%20Delhi,%20North%20West%20Delhi,%20Delhi%20-%20110034 - 200
+2025-08-19T22:14:00.267Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T22:14:00.417Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T22:14:01.386Z info: GET /t/search-rides?leavingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-23&travelMode=train&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-19T22:14:28.742Z info: GET /t/search-rides?leavingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-23&travelMode=car&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-19T22:14:28.754Z info: GET /t/search-rides?leavingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-23&travelMode=car&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-19T22:14:28.764Z info: GET /t/search-rides?leavingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-23&travelMode=car&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-19T22:14:35.558Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T22:14:35.779Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T22:15:35.860Z info: Server is running on port 5002
+2025-08-19T22:15:35.863Z info: Socket.IO connection status: Connected
+2025-08-19T22:15:36.774Z info: MongoDB connected
+2025-08-19T22:15:37.496Z info: A new client connected: DAP75zzHv-k33eSZAAAB
+2025-08-19T22:15:37.567Z info: Socket ID DAP75zzHv-k33eSZAAAB associated with phoneNumber +918295525360
+2025-08-19T22:15:44.406Z info: Server is running on port 5002
+2025-08-19T22:15:44.408Z info: Socket.IO connection status: Connected
+2025-08-19T22:15:44.513Z info: A new client connected: UJLUBSATi_GaK6ZpAAAB
+2025-08-19T22:15:44.870Z info: MongoDB connected
+2025-08-19T22:15:45.266Z info: Socket ID UJLUBSATi_GaK6ZpAAAB associated with phoneNumber +918295525360
+2025-08-19T22:15:54.304Z info: Server is running on port 5002
+2025-08-19T22:15:54.306Z info: Socket.IO connection status: Connected
+2025-08-19T22:15:54.470Z info: A new client connected: Q42h-D3tecYpobOsAAAB
+2025-08-19T22:15:55.052Z info: A new client connected: F-vdJ3a-NSr-bdd9AAAD
+2025-08-19T22:15:55.332Z info: MongoDB connected
+2025-08-19T22:15:55.921Z info: Socket ID Q42h-D3tecYpobOsAAAB associated with phoneNumber +918295525360
+2025-08-19T22:15:55.923Z info: Socket ID F-vdJ3a-NSr-bdd9AAAD associated with phoneNumber +916351446468
+2025-08-19T22:16:17.230Z info: Server is running on port 5002
+2025-08-19T22:16:17.233Z info: Socket.IO connection status: Connected
+2025-08-19T22:16:17.668Z info: A new client connected: R_mY35r13FPod26cAAAB
+2025-08-19T22:16:17.730Z info: MongoDB connected
+2025-08-19T22:16:18.138Z info: Socket ID R_mY35r13FPod26cAAAB associated with phoneNumber +916351446468
+2025-08-19T22:16:18.370Z info: A new client connected: tPYc1PkU2_b02JEkAAAD
+2025-08-19T22:16:18.410Z info: Socket ID tPYc1PkU2_b02JEkAAAD associated with phoneNumber +918295525360
+2025-08-19T22:16:35.913Z info: Server is running on port 5002
+2025-08-19T22:16:35.916Z info: Socket.IO connection status: Connected
+2025-08-19T22:16:37.073Z info: MongoDB connected
+2025-08-19T22:16:39.156Z info: A new client connected: OWiX2x9L6Y4MoKg2AAAB
+2025-08-19T22:16:39.213Z info: Socket ID OWiX2x9L6Y4MoKg2AAAB associated with phoneNumber +918295525360
+2025-08-19T22:16:43.565Z info: A new client connected: hHZ0N3EBvWYFwbn4AAAD
+2025-08-19T22:16:43.604Z info: Socket ID hHZ0N3EBvWYFwbn4AAAD associated with phoneNumber +916351446468
+2025-08-19T22:17:08.536Z info: Server is running on port 5002
+2025-08-19T22:17:08.537Z info: Socket.IO connection status: Connected
+2025-08-19T22:17:08.784Z info: A new client connected: LFey6XKBkrII1Qt6AAAB
+2025-08-19T22:17:09.039Z info: MongoDB connected
+2025-08-19T22:17:09.618Z info: Socket ID LFey6XKBkrII1Qt6AAAB associated with phoneNumber +916351446468
+2025-08-19T22:17:10.113Z info: A new client connected: LNuAdU3t-Jyul4a2AAAD
+2025-08-19T22:17:10.147Z info: Socket ID LNuAdU3t-Jyul4a2AAAD associated with phoneNumber +918295525360
+2025-08-19T22:17:26.986Z info: GET /t/search-rides?leavingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-23&travelMode=train&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-19T22:17:31.561Z info: GET /t/search-rides?leavingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-23&travelMode=car&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-19T22:17:31.565Z info: GET /t/search-rides?leavingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-23&travelMode=car&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-19T22:17:31.569Z info: GET /t/search-rides?leavingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-23&travelMode=car&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-19T22:17:33.367Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T22:17:33.523Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T22:17:34.781Z info: GET /t/search-rides?leavingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-23&travelMode=train&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-19T22:17:38.210Z info: GET /t/search-rides?leavingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-23&travelMode=train&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-19T22:17:38.221Z info: GET /t/search-rides?leavingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-23&travelMode=train&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-19T22:17:38.225Z info: GET /t/search-rides?leavingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-23&travelMode=train&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-19T22:17:39.808Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T22:17:39.981Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T22:17:41.228Z info: GET /t/search-rides?leavingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-23&travelMode=train&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-19T22:17:43.913Z info: GET /t/search-rides?leavingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-23&travelMode=airplane&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-19T22:17:43.941Z info: GET /t/search-rides?leavingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-23&travelMode=airplane&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-19T22:17:43.950Z info: GET /t/search-rides?leavingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-23&travelMode=airplane&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-19T22:18:00.975Z info: GET /map/getdistanceandcoordinate?origin=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001&destination=987%20pocket,%2025,%20Netaji%20Subhash%20Place,%20Shakurpur,%20New%20Delhi,%20North%20West%20Delhi,%20Delhi%20-%20110034 - 200
+2025-08-19T22:18:07.519Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T22:18:07.725Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T22:18:09.660Z info: GET /t/search-rides?leavingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-23&travelMode=train&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-19T22:18:17.618Z info: GET /t/search-rides?leavingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-23&travelMode=airplane&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-19T22:18:17.621Z info: GET /t/search-rides?leavingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-23&travelMode=airplane&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-19T22:18:17.624Z info: GET /t/search-rides?leavingLocation=Danapur+Nizamat,+Mithapur,+Patna,+Bihar,+India&goingLocation=Netaji+Subhash+Place,+Shakurpur,+Delhi,+India&date=2025-08-23&travelMode=airplane&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-19T22:18:22.628Z info: GET /map/getdistanceandcoordinate?origin=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001&destination=987%20pocket,%2025,%20Netaji%20Subhash%20Place,%20Shakurpur,%20New%20Delhi,%20North%20West%20Delhi,%20Delhi%20-%20110034 - 200
+2025-08-19T22:18:38.440Z info: POST /t/booking-request - 200
+2025-08-19T22:18:41.112Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T22:18:41.269Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T22:18:46.566Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T22:18:46.758Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-19T22:18:49.459Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T22:18:51.792Z info: GET /t/request/+916351446468 - 200
+2025-08-19T22:18:55.467Z info: GET /api/consignment/abccc59f-8794-4a0c-b2ec-4875b0746382 - 200
+2025-08-19T22:18:58.659Z info: POST /order/respondto?travelId=244899602&consignmentId=abccc59f-8794-4a0c-b2ec-4875b0746382 - 200
+2025-08-19T22:19:02.959Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T22:19:13.202Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T22:19:17.685Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T22:19:18.020Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-19T22:19:20.005Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T22:19:21.562Z info: GET /t/travel/244899602 - 200
+2025-08-19T22:19:21.587Z info: GET /map/getdistanceandcoordinate?origin=Danapur%20Nizamat,%20Mithapur,%20Patna,%20Bihar%20-%20800001&destination=Netaji%20Subhash%20Place,%20Shakurpur,%20North%20West%20Delhi,%20Delhi%20-%20110034 - 200
+2025-08-19T22:19:25.059Z info: POST /p/create-order - 200
+2025-08-19T22:19:44.861Z info: GET /earn/earning?phoneNumber=%2B916351446468 - 200
+2025-08-19T22:19:49.401Z info: POST /p/verify-payment - 200
+2025-08-19T22:19:49.798Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T22:19:50.063Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T22:19:52.955Z info: GET /earn/earning?phoneNumber=%2B916351446468 - 200
+2025-08-19T22:20:07.302Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T22:20:07.579Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-19T22:20:18.378Z info: Server is running on port 5002
+2025-08-19T22:20:18.379Z info: Socket.IO connection status: Connected
+2025-08-19T22:20:19.069Z info: MongoDB connected
+2025-08-19T22:20:21.603Z info: A new client connected: -ZBrZ6LhpfEREtgIAAAB
+2025-08-19T22:20:21.652Z info: Socket ID -ZBrZ6LhpfEREtgIAAAB associated with phoneNumber +918295525360
+2025-08-19T22:20:34.448Z info: A new client connected: dA9lVHdJlNS7oqAuAAAD
+2025-08-19T22:20:34.481Z info: Socket ID dA9lVHdJlNS7oqAuAAAD associated with phoneNumber +916351446468
+2025-08-19T22:21:18.878Z info: Client disconnected: dA9lVHdJlNS7oqAuAAAD
+2025-08-19T22:21:18.910Z info: Socket ID cleared for phoneNumber +916351446468
+2025-08-19T22:24:09.700Z info: Server is running on port 5002
+2025-08-19T22:24:09.702Z info: Socket.IO connection status: Connected
+2025-08-19T22:24:10.445Z info: MongoDB connected
+2025-08-19T22:24:11.289Z info: A new client connected: AWCphI0Af-_jf5ykAAAB
+2025-08-19T22:24:11.329Z info: Socket ID AWCphI0Af-_jf5ykAAAB associated with phoneNumber +918295525360
+2025-08-19T22:24:24.510Z info: Server is running on port 5002
+2025-08-19T22:24:24.511Z info: Socket.IO connection status: Connected
+2025-08-19T22:24:24.915Z info: MongoDB connected
+2025-08-19T22:24:25.474Z info: A new client connected: GC7GRgOoZMCBPpk9AAAB
+2025-08-19T22:24:25.528Z info: Socket ID GC7GRgOoZMCBPpk9AAAB associated with phoneNumber +918295525360
+2025-08-19T22:24:37.825Z info: Server is running on port 5002
+2025-08-19T22:24:37.827Z info: Socket.IO connection status: Connected
+2025-08-19T22:24:38.293Z info: MongoDB connected
+2025-08-19T22:24:39.559Z info: A new client connected: x0bTshP0xnPa-2bXAAAB
+2025-08-19T22:24:39.613Z info: Socket ID x0bTshP0xnPa-2bXAAAB associated with phoneNumber +918295525360
+2025-08-19T22:24:54.694Z info: Server is running on port 5002
+2025-08-19T22:24:54.699Z info: Socket.IO connection status: Connected
+2025-08-19T22:24:55.162Z info: MongoDB connected
+2025-08-19T22:24:55.645Z info: A new client connected: MvaGOBR_uXVNznMLAAAB
+2025-08-19T22:24:55.712Z info: Socket ID MvaGOBR_uXVNznMLAAAB associated with phoneNumber +918295525360
+2025-08-19T22:26:30.759Z info: Server is running on port 5002
+2025-08-19T22:26:30.761Z info: Socket.IO connection status: Connected
+2025-08-19T22:26:31.504Z info: MongoDB connected
+2025-08-19T22:26:44.718Z info: Server is running on port 5002
+2025-08-19T22:26:44.720Z info: Socket.IO connection status: Connected
+2025-08-19T22:26:45.201Z info: MongoDB connected
+2025-08-19T22:26:57.040Z info: Server is running on port 5002
+2025-08-19T22:26:57.042Z info: Socket.IO connection status: Connected
+2025-08-19T22:26:57.503Z info: MongoDB connected
+2025-08-19T22:28:00.813Z info: Server is running on port 5002
+2025-08-19T22:28:00.815Z info: Socket.IO connection status: Connected
+2025-08-19T22:28:03.303Z info: MongoDB connected
+2025-08-19T22:28:13.886Z info: Server is running on port 5002
+2025-08-19T22:28:13.888Z info: Socket.IO connection status: Connected
+2025-08-19T22:28:14.317Z info: MongoDB connected
+2025-08-19T22:28:36.375Z info: Server is running on port 5002
+2025-08-19T22:28:36.377Z info: Socket.IO connection status: Connected
+2025-08-19T22:28:36.808Z info: MongoDB connected
+2025-08-19T22:28:47.204Z info: Server is running on port 5002
+2025-08-19T22:28:47.205Z info: Socket.IO connection status: Connected
+2025-08-19T22:28:47.602Z info: MongoDB connected
+2025-08-19T22:28:57.896Z info: Server is running on port 5002
+2025-08-19T22:28:57.898Z info: Socket.IO connection status: Connected
+2025-08-19T22:28:58.664Z info: MongoDB connected
+2025-08-19T22:29:10.885Z info: Server is running on port 5002
+2025-08-19T22:29:10.887Z info: Socket.IO connection status: Connected
+2025-08-19T22:29:11.609Z info: MongoDB connected
+2025-08-19T22:29:23.288Z info: Server is running on port 5002
+2025-08-19T22:29:23.292Z info: Socket.IO connection status: Connected
+2025-08-19T22:29:23.733Z info: MongoDB connected
+2025-08-19T22:29:36.224Z info: Server is running on port 5002
+2025-08-19T22:29:36.228Z info: Socket.IO connection status: Connected
+2025-08-19T22:29:36.674Z info: MongoDB connected
+2025-08-19T22:29:46.040Z info: Server is running on port 5002
+2025-08-19T22:29:46.042Z info: Socket.IO connection status: Connected
+2025-08-19T22:29:46.454Z info: MongoDB connected

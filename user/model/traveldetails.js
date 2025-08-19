@@ -27,15 +27,15 @@ const TraveldetailsSchema = new mongoose.Schema({
   duration:{type:String},
   travelMode: { type: String},
   travelmode_number:{type:String},
-  travelDate: { type: Date, required: true },
-  expectedStartTime: { type: String },
-  expectedEndTime: { type: String },
+  travelDate: { type: String, required: true }, // Store as YYYY-MM-DD string
+  expectedStartTime: { type: String }, // Store as UTC ISO string
+  expectedEndTime: { type: String }, // Store as UTC ISO string
   rideId:{type:String},
   expectedearning:{type:earningSchema},
   stayDays: {type: String},
   stayHours: {type: String},
   vehicleType: {type: String},
-  endDate: {type: Date, required: true},
+  endDate: {type: String, required: true}, // Store as YYYY-MM-DD string
  
   weight:{type:String},
   TE:{type:String},
