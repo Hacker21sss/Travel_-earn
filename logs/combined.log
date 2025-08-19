@@ -21852,3 +21852,155 @@
 2025-08-19T22:29:46.040Z info: Server is running on port 5002
 2025-08-19T22:29:46.042Z info: Socket.IO connection status: Connected
 2025-08-19T22:29:46.454Z info: MongoDB connected
+2025-08-19T23:03:02.545Z info: Server is running on port 5002
+2025-08-19T23:03:02.546Z info: Socket.IO connection status: Connected
+2025-08-19T23:03:03.160Z info: MongoDB connected
+2025-08-19T23:03:17.305Z info: POST /api/getearning - 200
+2025-08-19T23:04:16.696Z info: Server is running on port 5002
+2025-08-19T23:04:16.697Z info: Socket.IO connection status: Connected
+2025-08-19T23:04:16.822Z info: POST /api/getearning - 200
+2025-08-19T23:04:17.404Z info: MongoDB connected
+2025-08-19T23:05:17.481Z info: GET /api/riderequest/+916351446468 - 200
+2025-08-19T23:05:24.014Z info: GET /t/request/+918295525360 - 200
+2025-08-19T23:05:41.602Z info: GET /t/request/+918295525360 - 200
+2025-08-19T23:05:47.442Z info: GET /t/request/+918295525360 - 200
+2025-08-19T23:05:56.672Z info: GET /api/riderequest/+916351446468 - 200
+2025-08-19T23:05:58.812Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T23:06:04.411Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T23:06:04.794Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-19T23:06:06.512Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T23:06:08.707Z info: GET /t/request/+916351446468 - 200
+2025-08-19T23:06:17.696Z info: GET /api/consignment/7c4e1044-0d46-465f-bb19-d393b22a41fe - 200
+2025-08-19T23:06:26.847Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T23:06:27.001Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T23:06:28.342Z info: GET /api/history/+918295525360 - 200
+2025-08-19T23:06:29.850Z info: GET /api/consignment/7c4e1044-0d46-465f-bb19-d393b22a41fe - 200
+2025-08-19T23:06:29.856Z info: GET /map/getdistanceandcoordinate?origin=IIITM%20Campus%2C%20Gwalior%2C%20Madhya%20Pradesh%20-%20474015&destination=H9F7%2BP4Q%2C%20Calcutta%20University%2C%20College%20Square%2C%20Kolkata%2C%20West%20Bengal%20-%20700073 - 200
+2025-08-19T23:06:29.871Z info: GET /api/getall/+918295525360?phoneNumber=%2B918295525360 - 200
+2025-08-19T23:06:39.136Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T23:06:39.495Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-19T23:07:23.897Z info: Server is running on port 5002
+2025-08-19T23:07:23.898Z info: Socket.IO connection status: Connected
+2025-08-19T23:07:27.458Z info: MongoDB connected
+2025-08-19T23:07:49.422Z info: Server is running on port 5002
+2025-08-19T23:07:49.423Z info: Socket.IO connection status: Connected
+2025-08-19T23:07:49.827Z info: MongoDB connected
+2025-08-19T23:08:00.166Z info: Server is running on port 5002
+2025-08-19T23:08:00.168Z info: Socket.IO connection status: Connected
+2025-08-19T23:08:00.583Z info: MongoDB connected
+2025-08-19T23:08:09.201Z info: Server is running on port 5002
+2025-08-19T23:08:09.203Z info: Socket.IO connection status: Connected
+2025-08-19T23:08:09.584Z info: MongoDB connected
+2025-08-19T23:08:18.184Z info: GET /api/getdetails?leavingLocation=IIITM%20Campus,%20Gwalior,%20Madhya%20Pradesh,%20India&goingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&date=2025-08-21&phoneNumber=+916351446468&userTimezone=Asia/Calcutta&timezoneOffset=-330 - 200
+2025-08-19T23:08:18.196Z info: GET /api/getdetails?leavingLocation=IIITM%20Campus,%20Gwalior,%20Madhya%20Pradesh,%20India&goingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&date=2025-08-21&phoneNumber=+916351446468&userTimezone=Asia/Calcutta&timezoneOffset=-330 - 200
+2025-08-19T23:08:19.885Z info: GET /api/getdetails?leavingLocation=IIITM%20Campus,%20Gwalior,%20Madhya%20Pradesh,%20India&goingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&date=2025-08-21&phoneNumber=+916351446468&userTimezone=Asia/Calcutta&timezoneOffset=-330 - 200
+2025-08-19T23:09:01.739Z info: Server is running on port 5002
+2025-08-19T23:09:01.742Z info: Socket.IO connection status: Connected
+2025-08-19T23:09:02.657Z info: MongoDB connected
+2025-08-19T23:09:08.491Z info: Server is running on port 5002
+2025-08-19T23:09:08.492Z info: Socket.IO connection status: Connected
+2025-08-19T23:09:08.918Z info: MongoDB connected
+2025-08-19T23:09:39.979Z info: Server is running on port 5002
+2025-08-19T23:09:39.981Z info: Socket.IO connection status: Connected
+2025-08-19T23:09:40.444Z info: MongoDB connected
+2025-08-19T23:10:58.602Z info: Server is running on port 5002
+2025-08-19T23:10:58.604Z info: Socket.IO connection status: Connected
+2025-08-19T23:10:59.243Z info: MongoDB connected
+2025-08-19T23:11:00.797Z info: POST /api/getearning - 200
+2025-08-19T23:11:03.866Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T23:11:04.126Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-19T23:11:07.255Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T23:11:07.453Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T23:11:08.526Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T23:11:09.801Z info: GET /api/riderequest/+916351446468 - 200
+2025-08-19T23:11:25.405Z info: POST /order/respond?travelId=793514830&consignmentId=7c4e1044-0d46-465f-bb19-d393b22a41fe - 200
+2025-08-19T23:12:29.293Z info: Server is running on port 5002
+2025-08-19T23:12:29.294Z info: Socket.IO connection status: Connected
+2025-08-19T23:12:29.919Z info: MongoDB connected
+2025-08-19T23:13:03.076Z info: POST /order/respond?travelId=793514830&consignmentId=7c4e1044-0d46-465f-bb19-d393b22a41fe - 200
+2025-08-19T23:13:03.567Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T23:13:06.129Z info: GET /api/riderequest/+916351446468 - 200
+2025-08-19T23:13:14.368Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T23:13:17.239Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T23:13:21.739Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T23:13:25.480Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-19T23:13:32.185Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T23:13:32.457Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-19T23:13:51.967Z info: GET /address/getaddress/+916351446468 - 200
+2025-08-19T23:13:56.696Z info: GET /api/location?going=87%2F1,+College+St,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073 - 200
+2025-08-19T23:13:57.562Z info: GET /address/getaddress/+916351446468 - 200
+2025-08-19T23:14:01.881Z info: GET /api/location?going=87%2F1,+College+St,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073&leaving=IIITM+Campus,+Gwalior,+Madhya+Pradesh+-+474015 - 200
+2025-08-19T23:14:08.137Z info: GET /map/getdistanceandcoordinate?origin=87/1,%20College%20St,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=IIITM%20Campus,%20Gwalior,%20Madhya%20Pradesh%20-%20474015 - 200
+2025-08-19T23:14:37.677Z info: GET /map/getdistanceandcoordinate?origin=87/1,%20College%20St,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=IIITM%20Campus,%20Gwalior,%20Madhya%20Pradesh%20-%20474015 - 200
+2025-08-19T23:15:42.983Z info: GET /map/getdistanceandcoordinate?origin=87/1,%20College%20St,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=IIITM%20Campus,%20Gwalior,%20Madhya%20Pradesh%20-%20474015 - 200
+2025-08-19T23:16:40.264Z info: GET /map/getdistanceandcoordinate?origin=87/1,%20College%20St,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=IIITM%20Campus,%20Gwalior,%20Madhya%20Pradesh%20-%20474015 - 200
+2025-08-19T23:16:43.026Z info: POST /t/creates?Leavinglocation=87/1,%20College%20St,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&Goinglocation=IIITM%20Campus,%20Gwalior,%20Madhya%20Pradesh%20-%20474015 - 200
+2025-08-19T23:16:46.718Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T23:16:46.885Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-19T23:16:47.861Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T23:16:48.042Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T23:16:49.861Z info: GET /address/getaddress/+918295525360 - 200
+2025-08-19T23:16:51.211Z info: GET /api/location?going=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073 - 200
+2025-08-19T23:16:52.000Z info: GET /address/getaddress/+918295525360 - 200
+2025-08-19T23:16:55.549Z info: GET /api/location?going=H9F7%2BP4Q,+Calcutta+University,+College+Square,+Kolkata,+West+Bengal+-+700073&leaving=IIITM+Campus,+Gwalior,+Madhya+Pradesh+-+474015 - 200
+2025-08-19T23:16:57.343Z info: GET /map/getdistanceandcoordinate?origin=12,%20H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=12,%20IIITM%20Campus,%20Gwalior,%20Madhya%20Pradesh%20-%20474015 - 200
+2025-08-19T23:17:32.062Z info: GET /map/getdistanceandcoordinate?origin=H9F7+P4Q,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=IIITM%20Campus,%20Gwalior,%20Madhya%20Pradesh%20-%20474015 - 200
+2025-08-19T23:17:35.565Z info: POST /api/consignment - 200
+2025-08-19T23:17:39.818Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T23:17:39.959Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T23:17:50.794Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T23:17:56.612Z info: GET /api/riderequest/+916351446468 - 200
+2025-08-19T23:18:17.133Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T23:18:17.355Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T23:18:36.258Z info: GET /api/location?going=Cal - 200
+2025-08-19T23:18:36.948Z info: GET /api/location?going=Calcutt - 200
+2025-08-19T23:18:39.612Z info: GET /api/location?going=Calcutta+University,+C... - 200
+2025-08-19T23:18:42.817Z info: GET /api/location?going=Calcutta+University,+C...&leaving=Iii - 200
+2025-08-19T23:18:43.493Z info: GET /api/location?going=Calcutta+University,+C...&leaving=Iiitm - 200
+2025-08-19T23:19:08.444Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T23:19:08.477Z info: A new client connected: y7OkuDtgnCQaI5EyAAAB
+2025-08-19T23:19:08.514Z info: Socket ID y7OkuDtgnCQaI5EyAAAB associated with phoneNumber +918295525360
+2025-08-19T23:19:08.645Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T23:19:12.186Z info: GET /api/location?going=Calcutta - 200
+2025-08-19T23:19:14.054Z info: GET /api/location?going=Calcutta+University,+C... - 200
+2025-08-19T23:19:17.487Z info: GET /api/location?going=Calcutta+University,+C...&leaving=Iii - 200
+2025-08-19T23:19:17.939Z info: GET /api/location?going=Calcutta+University,+C...&leaving=Iiitm - 200
+2025-08-19T23:19:22.416Z info: GET /t/search-rides?leavingLocation=Calcutta+University,+College+Square,+Kolkata,+West+Bengal,+India&goingLocation=IIITM+Campus,+Gwalior,+Madhya+Pradesh,+India&date=2025-08-31&travelMode=train&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-19T23:19:25.637Z info: GET /t/search-rides?leavingLocation=Calcutta+University,+College+Square,+Kolkata,+West+Bengal,+India&goingLocation=IIITM+Campus,+Gwalior,+Madhya+Pradesh,+India&date=2025-08-31&travelMode=car&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-19T23:19:25.640Z info: GET /t/search-rides?leavingLocation=Calcutta+University,+College+Square,+Kolkata,+West+Bengal,+India&goingLocation=IIITM+Campus,+Gwalior,+Madhya+Pradesh,+India&date=2025-08-31&travelMode=car&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-19T23:19:25.643Z info: GET /t/search-rides?leavingLocation=Calcutta+University,+College+Square,+Kolkata,+West+Bengal,+India&goingLocation=IIITM+Campus,+Gwalior,+Madhya+Pradesh,+India&date=2025-08-31&travelMode=car&phoneNumber=%2B918295525360&userTimezone=Asia%2FKolkata&timezoneOffset=-330 - 200
+2025-08-19T23:19:29.916Z info: GET /map/getdistanceandcoordinate?origin=87/1,%20College%20St,%20Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal%20-%20700073&destination=IIITM%20Campus,%20Gwalior,%20Madhya%20Pradesh%20-%20474015 - 200
+2025-08-19T23:22:03.820Z info: Client disconnected: y7OkuDtgnCQaI5EyAAAB
+2025-08-19T23:22:03.863Z info: Socket ID cleared for phoneNumber +918295525360
+2025-08-19T23:23:26.199Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T23:23:26.286Z info: A new client connected: pZleRP0jHaEBAPjtAAAD
+2025-08-19T23:23:26.320Z info: Socket ID pZleRP0jHaEBAPjtAAAD associated with phoneNumber +916351446468
+2025-08-19T23:23:26.439Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-19T23:23:44.023Z info: A new client connected: EUGWLtPoX_FOJninAAAF
+2025-08-19T23:23:44.054Z info: Socket ID EUGWLtPoX_FOJninAAAF associated with phoneNumber +918295525360
+2025-08-19T23:23:51.268Z info: GET /api/location?going=calc - 200
+2025-08-19T23:23:52.225Z info: GET /api/location?going=calcuta - 200
+2025-08-19T23:23:54.402Z info: GET /api/location?going=Calcutta+University,+College+Squ... - 200
+2025-08-19T23:23:58.034Z info: GET /api/location?going=Calcutta+University,+College+Squ...&leaving=IIITM - 200
+2025-08-19T23:24:08.432Z info: GET /api/getdetails?leavingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&goingLocation=IIITM%20Campus,%20Gwalior,%20Madhya%20Pradesh,%20India&date=2025-08-31&phoneNumber=+916351446468&userTimezone=Asia/Calcutta&timezoneOffset=-330 - 200
+2025-08-19T23:24:08.440Z info: GET /api/getdetails?leavingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&goingLocation=IIITM%20Campus,%20Gwalior,%20Madhya%20Pradesh,%20India&date=2025-08-31&phoneNumber=+916351446468&userTimezone=Asia/Calcutta&timezoneOffset=-330 - 200
+2025-08-19T23:24:10.785Z info: GET /api/getdetails?leavingLocation=Calcutta%20University,%20College%20Square,%20Kolkata,%20West%20Bengal,%20India&goingLocation=IIITM%20Campus,%20Gwalior,%20Madhya%20Pradesh,%20India&date=2025-08-31&phoneNumber=+916351446468&userTimezone=Asia/Calcutta&timezoneOffset=-330 - 200
+2025-08-19T23:24:24.621Z info: POST /t/booking-request - 200
+2025-08-19T23:24:27.182Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T23:24:27.323Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T23:24:31.172Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T23:24:31.492Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-19T23:24:33.070Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T23:24:35.682Z info: GET /t/request/+916351446468 - 200
+2025-08-19T23:24:39.586Z info: GET /api/consignment/a2febd7b-b511-4177-a8cc-c70fee496c41 - 200
+2025-08-19T23:24:46.461Z info: POST /order/respondto?travelId=958309968&consignmentId=a2febd7b-b511-4177-a8cc-c70fee496c41 - 200
+2025-08-19T23:24:49.076Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T23:24:51.960Z info: GET /t/request/+916351446468 - 200
+2025-08-19T23:24:54.475Z info: GET /api/consignment/a2febd7b-b511-4177-a8cc-c70fee496c41 - 200
+2025-08-19T23:25:02.781Z info: GET /n/getnotification/travel/+916351446468 - 200
+2025-08-19T23:25:03.038Z info: GET /n/getnotification/consignment/+916351446468 - 200
+2025-08-19T23:25:04.649Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T23:25:07.325Z info: GET /n/getnotification/consignment/+918295525360 - 200
+2025-08-19T23:25:15.579Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T23:25:16.388Z info: GET /n/getnotification/travel/+918295525360 - 200
+2025-08-19T23:25:16.552Z info: GET /n/getnotification/consignment/+918295525360 - 200

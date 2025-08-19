@@ -1161,7 +1161,7 @@ module.exports.getearning = async (req, res) => {
     }
 
     // Check if consignment status is already set to accepted/rejected/expired/completed
-    if (con.status && ["Accepted", "Rejected", "Expired", "Completed"].includes(con.status)) {
+    if (con.status && ["Accepted", "Expired", "Completed"].includes(con.status)) {
       return res.status(400).json({ message: `Consignment is already ${con.status.toLowerCase()}.` });
     }
 

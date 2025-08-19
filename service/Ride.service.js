@@ -60,9 +60,9 @@ module.exports.respondToRideRequest = async (req, res) => {
     }
 
     // Check if consignment status is already set to accepted/rejected/expired/completed
-    if (consignment.status && ["Accepted", "Rejected", "Expired", "Completed"].includes(consignment.status)) {
-      return res.status(400).json({ message: `Consignment is already ${consignment.status.toLowerCase()}.` });
-    }
+    // if (consignment.status && ["Accepted", "Rejected", "Expired", "Completed"].includes(consignment.status)) {
+    //   return res.status(400).json({ message: `Consignment is already ${consignment.status.toLowerCase()}.` });
+    // }
 
     const rideRequest = await RideRequest.findOne({ travelId });
     if (!rideRequest) {
