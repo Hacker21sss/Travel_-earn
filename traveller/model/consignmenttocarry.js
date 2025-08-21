@@ -1,6 +1,10 @@
 const mongoose = require('mongoose');
 const Travel=require('../../user/model/traveldetails')
 
+const earningSchema = new mongoose.Schema({
+    senderTotalPay: Number,
+    totalFare: Number,
+  });
 const consignmentToCarrySchema = new mongoose.Schema({
     consignmentId: {
         type: String
@@ -30,7 +34,7 @@ const consignmentToCarrySchema = new mongoose.Schema({
     },
     senderphone:{type:String},
     receiverphone:{type:String},
-    earning:{type:String},
+    earning:{type:earningSchema},
     status: {
         type: String,
         enum: ['Yet to Collect', 'Collected', 'In Transit', 'Delivered'],
