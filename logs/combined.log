@@ -27102,3 +27102,6 @@
 2025-08-25T03:48:00.079Z info: Socket ID Zv-GicJQkf63IDmzAAAD associated with phoneNumber +918295525360
 2025-08-25T03:48:01.455Z info: GET /track-rider/116200355/+918295525360 - 200
 2025-08-25T03:48:01.619Z info: GET /track-rider/116200355/+918295525360 - 200
+2025-08-25T17:21:49.657Z info: Server is running on port 5002
+2025-08-25T17:21:49.658Z info: Socket.IO connection status: Connected
+2025-08-25T17:21:50.267Z info: MongoDB connected

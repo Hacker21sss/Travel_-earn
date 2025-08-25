@@ -604,11 +604,114 @@ exports.searchRides = async (req, res) => {
       console.log("Unique vehicle types in database for this date:", uniqueVehicleTypes);
     }
 
-    // Apply precise distance filtering (skip if we have exact matches)
-    let filteredRides = availableRides;
+    // Apply precise distance filtering (ALWAYS apply distance filtering)
+    let filteredRides = availableRides.filter(ride => {
+      const leavingDistance = geolib.getDistance(
+        { latitude: leavingCoords.ltd, longitude: leavingCoords.lng },
+        { latitude: ride.LeavingCoordinates.ltd, longitude: ride.LeavingCoordinates.lng }
+      );
+
+      const goingDistance = geolib.getDistance(
+        { latitude: goingCoords.ltd, longitude: goingCoords.lng },
+        { latitude: ride.GoingCoordinates.ltd, longitude: ride.GoingCoordinates.lng }
+      );
+
+      console.log("Distance check for ride:", {
+        rideId: ride._id,
+        leavingDistance: Math.round(leavingDistance / 1000) + "km",
+        goingDistance: Math.round(goingDistance / 1000) + "km",
+        leavingCoords: ride.LeavingCoordinates,
+        goingCoords: ride.GoingCoordinates,
+        searchLeavingCoords: leavingCoords,
+        searchGoingCoords: goingCoords
+      });
+
+      // Use a reasonable radius for precise matching (10km)
+      const preciseRadiusInMeters = 10 * 1000; // 10km
+      const distanceMatch = leavingDistance <= preciseRadiusInMeters && goingDistance <= preciseRadiusInMeters;
+      
+      // Add direction validation - ensure ride direction matches search direction
+      const normalizeLocation = (location) => {
+        return location.toLowerCase()
+          .replace(/[^a-z0-9\s]/g, ' ') // Remove special characters except spaces
+          .replace(/\s+/g, ' ') // Replace multiple spaces with single space
+          .trim();
+      };
+      
+      const normalizedSearchLeaving = normalizeLocation(leavingLocation);
+      const normalizedSearchGoing = normalizeLocation(goingLocation);
+      const normalizedRideLeaving = normalizeLocation(ride.Leavinglocation);
+      const normalizedRideGoing = normalizeLocation(ride.Goinglocation);
+      
+      // Extract key location words (cities, states, etc.)
+      const extractKeyWords = (location) => {
+        const words = location.split(' ').filter(word => word.length > 2);
+        return words;
+      };
+      
+      const searchLeavingWords = extractKeyWords(normalizedSearchLeaving);
+      const searchGoingWords = extractKeyWords(normalizedSearchGoing);
+      const rideLeavingWords = extractKeyWords(normalizedRideLeaving);
+      const rideGoingWords = extractKeyWords(normalizedRideGoing);
+      
+      // Check for word overlap (more flexible matching)
+      const hasWordOverlap = (words1, words2) => {
+        return words1.some(word1 => 
+          words2.some(word2 => 
+            word1.includes(word2) || word2.includes(word1)
+          )
+        );
+      };
+      
+      // Direction validation: ride starting location should match search leaving location
+      // AND ride going location should match search going location
+      const startingLocationMatch = hasWordOverlap(searchLeavingWords, rideLeavingWords) ||
+                                  normalizedRideLeaving.includes(normalizedSearchLeaving) ||
+                                  normalizedSearchLeaving.includes(normalizedRideLeaving);
+      
+      const goingLocationMatch = hasWordOverlap(searchGoingWords, rideGoingWords) ||
+                               normalizedRideGoing.includes(normalizedSearchGoing) ||
+                               normalizedSearchGoing.includes(normalizedRideGoing);
+      
+      const directionMatch = startingLocationMatch && goingLocationMatch;
+      
+      console.log("Distance and direction check for ride:", {
+        rideId: ride._id,
+        rideDirection: `${ride.Leavinglocation} -> ${ride.Goinglocation}`,
+        searchDirection: `${leavingLocation} -> ${goingLocation}`,
+        leavingDistance: Math.round(leavingDistance / 1000) + "km",
+        goingDistance: Math.round(goingDistance / 1000) + "km",
+        distanceMatch,
+        directionMatch,
+        normalizedRideLeaving,
+        normalizedRideGoing,
+        normalizedSearchLeaving,
+        normalizedSearchGoing,
+        rideLeavingWords,
+        rideGoingWords,
+        searchLeavingWords,
+        searchGoingWords,
+        startingLocationMatch,
+        goingLocationMatch,
+        leavingCoords: ride.LeavingCoordinates,
+        goingCoords: ride.GoingCoordinates,
+        searchLeavingCoords: leavingCoords,
+        searchGoingCoords: goingCoords
+      });
+      
+      return distanceMatch && directionMatch;
+    });
     
-    if (exactRides.length === 0) {
-      filteredRides = availableRides.filter(ride => {
+    console.log("Rides after distance filtering:", filteredRides.length);
+
+    console.log("Available rides after filtering:", filteredRides.length);
+
+    // Only try location name matching if coordinate matching found no results
+    if (filteredRides.length === 0) {
+      console.log("No rides found with coordinate matching, trying location name matching as fallback...");
+      
+      const alternativeRides = allRidesForDate.filter(ride => {
+        // First apply distance filtering
         const leavingDistance = geolib.getDistance(
           { latitude: leavingCoords.ltd, longitude: leavingCoords.lng },
           { latitude: ride.LeavingCoordinates.ltd, longitude: ride.LeavingCoordinates.lng }
@@ -619,100 +722,10 @@ exports.searchRides = async (req, res) => {
           { latitude: ride.GoingCoordinates.ltd, longitude: ride.GoingCoordinates.lng }
         );
 
-        console.log("Distance check for ride:", {
-          rideId: ride._id,
-          leavingDistance: Math.round(leavingDistance / 1000) + "km",
-          goingDistance: Math.round(goingDistance / 1000) + "km",
-          leavingCoords: ride.LeavingCoordinates,
-          goingCoords: ride.GoingCoordinates,
-          searchLeavingCoords: leavingCoords,
-          searchGoingCoords: goingCoords
-        });
-
         // Use a reasonable radius for precise matching (10km)
         const preciseRadiusInMeters = 10 * 1000; // 10km
         const distanceMatch = leavingDistance <= preciseRadiusInMeters && goingDistance <= preciseRadiusInMeters;
         
-        // Add direction validation - ensure ride direction matches search direction
-        const normalizeLocation = (location) => {
-          return location.toLowerCase()
-            .replace(/[^a-z0-9\s]/g, ' ') // Remove special characters except spaces
-            .replace(/\s+/g, ' ') // Replace multiple spaces with single space
-            .trim();
-        };
-        
-        const normalizedSearchLeaving = normalizeLocation(leavingLocation);
-        const normalizedSearchGoing = normalizeLocation(goingLocation);
-        const normalizedRideLeaving = normalizeLocation(ride.Leavinglocation);
-        const normalizedRideGoing = normalizeLocation(ride.Goinglocation);
-        
-        // Extract key location words (cities, states, etc.)
-        const extractKeyWords = (location) => {
-          const words = location.split(' ').filter(word => word.length > 2);
-          return words;
-        };
-        
-        const searchLeavingWords = extractKeyWords(normalizedSearchLeaving);
-        const searchGoingWords = extractKeyWords(normalizedSearchGoing);
-        const rideLeavingWords = extractKeyWords(normalizedRideLeaving);
-        const rideGoingWords = extractKeyWords(normalizedRideGoing);
-        
-        // Check for word overlap (more flexible matching)
-        const hasWordOverlap = (words1, words2) => {
-          return words1.some(word1 => 
-            words2.some(word2 => 
-              word1.includes(word2) || word2.includes(word1)
-            )
-          );
-        };
-        
-        // Direction validation: ride starting location should match search leaving location
-        // AND ride going location should match search going location
-        const startingLocationMatch = hasWordOverlap(searchLeavingWords, rideLeavingWords) ||
-                                    normalizedRideLeaving.includes(normalizedSearchLeaving) ||
-                                    normalizedSearchLeaving.includes(normalizedRideLeaving);
-        
-        const goingLocationMatch = hasWordOverlap(searchGoingWords, rideGoingWords) ||
-                                 normalizedRideGoing.includes(normalizedSearchGoing) ||
-                                 normalizedSearchGoing.includes(normalizedRideGoing);
-        
-        const directionMatch = startingLocationMatch && goingLocationMatch;
-        
-        console.log("Distance and direction check for ride:", {
-          rideId: ride._id,
-          rideDirection: `${ride.Leavinglocation} -> ${ride.Goinglocation}`,
-          searchDirection: `${leavingLocation} -> ${goingLocation}`,
-          normalizedRideLeaving,
-          normalizedRideGoing,
-          normalizedSearchLeaving,
-          normalizedSearchGoing,
-          rideLeavingWords,
-          rideGoingWords,
-          searchLeavingWords,
-          searchGoingWords,
-          startingLocationMatch,
-          goingLocationMatch,
-          distanceMatch,
-          directionMatch,
-          leavingCoords: ride.LeavingCoordinates,
-          goingCoords: ride.GoingCoordinates,
-          searchLeavingCoords: leavingCoords,
-          searchGoingCoords: goingCoords
-        });
-        
-        return distanceMatch && directionMatch;
-      });
-    } else {
-      console.log("Using exact coordinate matches, skipping distance filtering");
-    }
-
-    console.log("Available rides after filtering:", filteredRides.length);
-
-    // Only try location name matching if coordinate matching found no results
-    if (filteredRides.length === 0) {
-      console.log("No rides found with coordinate matching, trying location name matching as fallback...");
-      
-      const alternativeRides = allRidesForDate.filter(ride => {
         // First check travel mode if specified
         if (travelMode && travelMode.trim() !== "") {
           // More flexible travel mode matching
@@ -787,6 +800,9 @@ exports.searchRides = async (req, res) => {
           rideGoing: ride.Goinglocation,
           searchLeaving: leavingLocation,
           searchGoing: goingLocation,
+          leavingDistance: Math.round(leavingDistance / 1000) + "km",
+          goingDistance: Math.round(goingDistance / 1000) + "km",
+          distanceMatch,
           rideTravelMode: ride.travelMode,
           rideVehicleType: ride.vehicleType,
           searchTravelMode: travelMode,
@@ -802,7 +818,7 @@ exports.searchRides = async (req, res) => {
           goingMatch
         });
         
-        return leavingMatch && goingMatch;
+        return distanceMatch && leavingMatch && goingMatch;
       });
       
       if (alternativeRides.length > 0) {

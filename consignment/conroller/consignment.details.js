@@ -649,98 +649,96 @@ module.exports.getConsignmentsByDate = async (req, res) => {
       })));
     }
 
-    // Apply precise distance filtering and direction validation (skip if we have exact matches)
-    let filteredConsignments = availableConsignments;
-    
-    if (exactConsignments.length === 0) {
-      filteredConsignments = availableConsignments.filter(consignment => {
-        const leavingDistance = geolib.getDistance(
-          { latitude: searchLeavingCoords.ltd, longitude: searchLeavingCoords.lng },
-          { latitude: consignment.LeavingCoordinates.latitude, longitude: consignment.LeavingCoordinates.longitude }
+    // Apply precise distance filtering and direction validation (ALWAYS apply distance filtering)
+    let filteredConsignments = availableConsignments.filter(consignment => {
+      const leavingDistance = geolib.getDistance(
+        { latitude: searchLeavingCoords.ltd, longitude: searchLeavingCoords.lng },
+        { latitude: consignment.LeavingCoordinates.latitude, longitude: consignment.LeavingCoordinates.longitude }
+      );
+
+      const goingDistance = geolib.getDistance(
+        { latitude: searchGoingCoords.ltd, longitude: searchGoingCoords.lng },
+        { latitude: consignment.GoingCoordinates.latitude, longitude: consignment.GoingCoordinates.longitude }
+      );
+
+      // Use a reasonable radius for precise matching (10km)
+      const preciseRadiusInMeters = 10 * 1000; // 10km
+      const distanceMatch = leavingDistance <= preciseRadiusInMeters && goingDistance <= preciseRadiusInMeters;
+      
+      // Add direction validation - ensure consignment direction matches search direction
+      // Compare the actual location names to ensure direction matches
+      const normalizeLocation = (location) => {
+        return location.toLowerCase()
+          .replace(/[^a-z0-9\s]/g, ' ') // Remove special characters except spaces
+          .replace(/\s+/g, ' ') // Replace multiple spaces with single space
+          .trim();
+      };
+      
+      const normalizedSearchLeaving = normalizeLocation(leavingLocation);
+      const normalizedSearchGoing = normalizeLocation(goingLocation);
+      const normalizedConsignmentStarting = normalizeLocation(consignment.startinglocation);
+      const normalizedConsignmentGoing = normalizeLocation(consignment.goinglocation);
+      
+      // Extract key location words (cities, states, etc.)
+      const extractKeyWords = (location) => {
+        const words = location.split(' ').filter(word => word.length > 2);
+        return words;
+      };
+      
+      const searchLeavingWords = extractKeyWords(normalizedSearchLeaving);
+      const searchGoingWords = extractKeyWords(normalizedSearchGoing);
+      const consignmentStartingWords = extractKeyWords(normalizedConsignmentStarting);
+      const consignmentGoingWords = extractKeyWords(normalizedConsignmentGoing);
+      
+      // Check for word overlap (more flexible matching)
+      const hasWordOverlap = (words1, words2) => {
+        return words1.some(word1 => 
+          words2.some(word2 => 
+            word1.includes(word2) || word2.includes(word1)
+          )
         );
-
-        const goingDistance = geolib.getDistance(
-          { latitude: searchGoingCoords.ltd, longitude: searchGoingCoords.lng },
-          { latitude: consignment.GoingCoordinates.latitude, longitude: consignment.GoingCoordinates.longitude }
-        );
-
-        // Use a reasonable radius for precise matching (10km)
-        const preciseRadiusInMeters = 10 * 1000; // 10km
-        const distanceMatch = leavingDistance <= preciseRadiusInMeters && goingDistance <= preciseRadiusInMeters;
-        
-        // Add direction validation - ensure consignment direction matches search direction
-        // Compare the actual location names to ensure direction matches
-        const normalizeLocation = (location) => {
-          return location.toLowerCase()
-            .replace(/[^a-z0-9\s]/g, ' ') // Remove special characters except spaces
-            .replace(/\s+/g, ' ') // Replace multiple spaces with single space
-            .trim();
-        };
-        
-        const normalizedSearchLeaving = normalizeLocation(leavingLocation);
-        const normalizedSearchGoing = normalizeLocation(goingLocation);
-        const normalizedConsignmentStarting = normalizeLocation(consignment.startinglocation);
-        const normalizedConsignmentGoing = normalizeLocation(consignment.goinglocation);
-        
-        // Extract key location words (cities, states, etc.)
-        const extractKeyWords = (location) => {
-          const words = location.split(' ').filter(word => word.length > 2);
-          return words;
-        };
-        
-        const searchLeavingWords = extractKeyWords(normalizedSearchLeaving);
-        const searchGoingWords = extractKeyWords(normalizedSearchGoing);
-        const consignmentStartingWords = extractKeyWords(normalizedConsignmentStarting);
-        const consignmentGoingWords = extractKeyWords(normalizedConsignmentGoing);
-        
-        // Check for word overlap (more flexible matching)
-        const hasWordOverlap = (words1, words2) => {
-          return words1.some(word1 => 
-            words2.some(word2 => 
-              word1.includes(word2) || word2.includes(word1)
-            )
-          );
-        };
-        
-        // Direction validation: consignment starting location should match search leaving location
-        // AND consignment going location should match search going location
-        const startingLocationMatch = hasWordOverlap(searchLeavingWords, consignmentStartingWords) ||
-                                    normalizedConsignmentStarting.includes(normalizedSearchLeaving) ||
-                                    normalizedSearchLeaving.includes(normalizedConsignmentStarting);
-        
-        const goingLocationMatch = hasWordOverlap(searchGoingWords, consignmentGoingWords) ||
-                                 normalizedConsignmentGoing.includes(normalizedSearchGoing) ||
-                                 normalizedSearchGoing.includes(normalizedConsignmentGoing);
-        
-        const directionMatch = startingLocationMatch && goingLocationMatch;
-        
-        console.log("Distance and direction check for consignment:", {
-          consignmentId: consignment.consignmentId,
-          consignmentDirection: `${consignment.startinglocation} -> ${consignment.goinglocation}`,
-          searchDirection: `${leavingLocation} -> ${goingLocation}`,
-          normalizedConsignmentStarting,
-          normalizedConsignmentGoing,
-          normalizedSearchLeaving,
-          normalizedSearchGoing,
-          consignmentStartingWords,
-          consignmentGoingWords,
-          searchLeavingWords,
-          searchGoingWords,
-          startingLocationMatch,
-          goingLocationMatch,
-          distanceMatch,
-          directionMatch,
-          leavingCoords: consignment.LeavingCoordinates,
-          goingCoords: consignment.GoingCoordinates,
-          searchLeavingCoords: searchLeavingCoords,
-          searchGoingCoords: searchGoingCoords
-        });
-
-        return distanceMatch && directionMatch;
+      };
+      
+      // Direction validation: consignment starting location should match search leaving location
+      // AND consignment going location should match search going location
+      const startingLocationMatch = hasWordOverlap(searchLeavingWords, consignmentStartingWords) ||
+                                  normalizedConsignmentStarting.includes(normalizedSearchLeaving) ||
+                                  normalizedSearchLeaving.includes(normalizedConsignmentStarting);
+      
+      const goingLocationMatch = hasWordOverlap(searchGoingWords, consignmentGoingWords) ||
+                               normalizedConsignmentGoing.includes(normalizedSearchGoing) ||
+                               normalizedSearchGoing.includes(normalizedConsignmentGoing);
+      
+      const directionMatch = startingLocationMatch && goingLocationMatch;
+      
+      console.log("Distance and direction check for consignment:", {
+        consignmentId: consignment.consignmentId,
+        consignmentDirection: `${consignment.startinglocation} -> ${consignment.goinglocation}`,
+        searchDirection: `${leavingLocation} -> ${goingLocation}`,
+        leavingDistance: Math.round(leavingDistance / 1000) + "km",
+        goingDistance: Math.round(goingDistance / 1000) + "km",
+        distanceMatch,
+        directionMatch,
+        normalizedConsignmentStarting,
+        normalizedConsignmentGoing,
+        normalizedSearchLeaving,
+        normalizedSearchGoing,
+        consignmentStartingWords,
+        consignmentGoingWords,
+        searchLeavingWords,
+        searchGoingWords,
+        startingLocationMatch,
+        goingLocationMatch,
+        leavingCoords: consignment.LeavingCoordinates,
+        goingCoords: consignment.GoingCoordinates,
+        searchLeavingCoords: searchLeavingCoords,
+        searchGoingCoords: searchGoingCoords
       });
-    } else {
-      console.log("Using exact coordinate matches, skipping distance filtering");
-    }
+
+      return distanceMatch && directionMatch;
+    });
+    
+    console.log("Consignments after distance filtering:", filteredConsignments.length);
 
     // Filter out consignments that are already accepted/booked
     const acceptedConsignmentIds = await riderequest.find({ status: "Accepted" }).distinct('consignmentId');
@@ -785,6 +783,21 @@ module.exports.getConsignmentsByDate = async (req, res) => {
       console.log("No consignments found with coordinate matching, trying location name matching...");
       
       const alternativeConsignments = allConsignmentsForDate.filter(consignment => {
+        // First apply distance filtering
+        const leavingDistance = geolib.getDistance(
+          { latitude: searchLeavingCoords.ltd, longitude: searchLeavingCoords.lng },
+          { latitude: consignment.LeavingCoordinates.latitude, longitude: consignment.LeavingCoordinates.longitude }
+        );
+
+        const goingDistance = geolib.getDistance(
+          { latitude: searchGoingCoords.ltd, longitude: searchGoingCoords.lng },
+          { latitude: consignment.GoingCoordinates.latitude, longitude: consignment.GoingCoordinates.longitude }
+        );
+
+        // Use a reasonable radius for precise matching (10km)
+        const preciseRadiusInMeters = 10 * 1000; // 10km
+        const distanceMatch = leavingDistance <= preciseRadiusInMeters && goingDistance <= preciseRadiusInMeters;
+        
         // Clean and normalize location strings for better matching
         const normalizeLocation = (location) => {
           return location.toLowerCase()
@@ -836,6 +849,10 @@ module.exports.getConsignmentsByDate = async (req, res) => {
           consignmentGoing: consignment.goinglocation,
           searchLeaving: leavingLocation,
           searchGoing: goingLocation,
+          leavingDistance: Math.round(leavingDistance / 1000) + "km",
+          goingDistance: Math.round(goingDistance / 1000) + "km",
+          distanceMatch,
+          directionMatch,
           normalizedConsignmentStarting,
           normalizedConsignmentGoing,
           normalizedSearchLeaving,
@@ -848,7 +865,7 @@ module.exports.getConsignmentsByDate = async (req, res) => {
           goingMatch
         });
         
-        return directionMatch;
+        return distanceMatch && directionMatch;
       });
       
       // Filter out accepted consignments from alternative consignments as well
