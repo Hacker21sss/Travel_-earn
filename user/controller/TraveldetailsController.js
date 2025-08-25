@@ -908,12 +908,103 @@ exports.searchRides = async (req, res) => {
     
     if (phoneNumber) {
       try {
-        // Search for all valid consignments created on the given date
-        userConsignments = await consignmentData.find({
+        // Search for consignments with location matching
+        const locationQuery = {
           phoneNumber: phoneNumber,
           dateOfSending: { $gte: startOfDay, $lt: endOfDay },
           status: { $nin: ["Accepted", "Rejected", "Expired", "Completed"] } // Only get valid consignments
-        }).sort({ createdAt: -1 });
+        };
+
+        // Add location filtering based on coordinates
+        if (leavingCoords && goingCoords) {
+          // Define radius for location matching (10km)
+          const radiusInMeters = 10 * 1000;
+          
+          // Helper function to get bounding box
+          const getBoundingBox = (center, radius) => {
+            const latDelta = radius / 111320; // 1 degree latitude = 111.32 km
+            const lngDelta = radius / (111320 * Math.cos(center.latitude * Math.PI / 180));
+            
+            return {
+              minLat: center.latitude - latDelta,
+              maxLat: center.latitude + latDelta,
+              minLng: center.longitude - lngDelta,
+              maxLng: center.longitude + lngDelta
+            };
+          };
+
+          // Get bounding boxes for search locations
+          const leavingBoundingBox = getBoundingBox(
+            { latitude: leavingCoords.ltd, longitude: leavingCoords.lng },
+            radiusInMeters
+          );
+
+          const goingBoundingBox = getBoundingBox(
+            { latitude: goingCoords.ltd, longitude: goingCoords.lng },
+            radiusInMeters
+          );
+
+          // Add coordinate-based location filtering
+          locationQuery.$and = [
+            {
+              "LeavingCoordinates.latitude": { $gte: leavingBoundingBox.minLat, $lte: leavingBoundingBox.maxLat },
+              "LeavingCoordinates.longitude": { $gte: leavingBoundingBox.minLng, $lte: leavingBoundingBox.maxLng }
+            },
+            {
+              "GoingCoordinates.latitude": { $gte: goingBoundingBox.minLat, $lte: goingBoundingBox.maxLat },
+              "GoingCoordinates.longitude": { $gte: goingBoundingBox.minLng, $lte: goingBoundingBox.maxLng }
+            }
+          ];
+
+          console.log("Location filtering applied:", {
+            leavingLocation,
+            goingLocation,
+            leavingCoords,
+            goingCoords,
+            leavingBoundingBox,
+            goingBoundingBox
+          });
+        }
+
+        userConsignments = await consignmentData.find(locationQuery).sort({ createdAt: -1 });
+
+        console.log("Found consignments with location filtering:", userConsignments.length);
+
+        // If no consignments found with coordinate matching, try location name matching as fallback
+        if (userConsignments.length === 0 && leavingLocation && goingLocation) {
+          console.log("No consignments found with coordinate matching, trying location name matching...");
+          
+          const nameLocationQuery = {
+            phoneNumber: phoneNumber,
+            dateOfSending: { $gte: startOfDay, $lt: endOfDay },
+            status: { $nin: ["Accepted", "Rejected", "Expired", "Completed"] }
+          };
+
+          // Normalize location names for comparison
+          const normalizeLocation = (location) => {
+            return location.toLowerCase().replace(/[^\w\s]/g, '').trim();
+          };
+
+          const normalizedLeavingLocation = normalizeLocation(leavingLocation);
+          const normalizedGoingLocation = normalizeLocation(goingLocation);
+
+          // Try to find consignments with similar location names
+          const fallbackConsignments = await consignmentData.find(nameLocationQuery).sort({ createdAt: -1 });
+          
+          userConsignments = fallbackConsignments.filter(consignment => {
+            const consignmentLeaving = normalizeLocation(consignment.startinglocation || '');
+            const consignmentGoing = normalizeLocation(consignment.goinglocation || '');
+            
+            const leavingMatch = consignmentLeaving.includes(normalizedLeavingLocation) || 
+                                normalizedLeavingLocation.includes(consignmentLeaving);
+            const goingMatch = consignmentGoing.includes(normalizedGoingLocation) || 
+                              normalizedGoingLocation.includes(consignmentGoing);
+            
+            return leavingMatch && goingMatch;
+          });
+
+          console.log("Found consignments with location name matching:", userConsignments.length);
+        }
 
         for(let i = 0; i < userConsignments.length; i++){
         console.log("Found user consignments:", userConsignments[i]);
