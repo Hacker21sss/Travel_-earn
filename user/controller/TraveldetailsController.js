@@ -11,8 +11,8 @@ const { getIO, sendMessageToSocketId } = require('../../socket');
 const Notification = require('../../user/model/notification')
 const datetime = require('../../service/getcurrentdatetime')
 const TimezoneService = require('../../service/timezoneService');
-const User = require('../model/User');
-const con = require('../../consignment/model/conhistory')
+// const User = require('../model/User');
+// const con = require('../../consignment/model/conhistory')
 
 const geolib = require("geolib");
 
@@ -351,9 +351,11 @@ exports.searchRides = async (req, res) => {
     // Set default timezone if not provided
     const timezone = userTimezone || 'Asia/Kolkata';
     
-    // Convert travel mode: car -> roadways
+    // Handle travel mode mapping
     let travelMode = originalTravelMode;
     console.log("Original travel mode:", originalTravelMode);
+    
+    // Map car to roadways for consistency
     if (travelMode === "car") {
       travelMode = "roadways";
     }
@@ -516,15 +518,32 @@ exports.searchRides = async (req, res) => {
     let availableRides = exactRides;
     
     if (exactRides.length === 0) {
-      const query = travelMode && travelMode.trim() !== ""
-        ? { 
-            ...baseQuery, 
-            $or: [
-              { travelMode },
-              { vehicleType: travelMode }
-            ]
-          }
-        : baseQuery;
+      // More flexible travel mode query
+      let query = baseQuery;
+      
+      if (travelMode && travelMode.trim() !== "") {
+        const searchTravelMode = travelMode.toLowerCase().trim();
+        
+        // Create flexible travel mode conditions
+        const travelModeConditions = [
+          { travelMode: searchTravelMode },
+          { vehicleType: searchTravelMode }
+        ];
+        
+        // Add mappings for car/roadways
+        if (searchTravelMode === "roadways") {
+          travelModeConditions.push({ travelMode: "car" });
+          travelModeConditions.push({ vehicleType: "car" });
+        } else if (searchTravelMode === "car") {
+          travelModeConditions.push({ travelMode: "roadways" });
+          travelModeConditions.push({ vehicleType: "roadways" });
+        }
+        
+        query = { 
+          ...baseQuery, 
+          $or: travelModeConditions
+        };
+      }
 
       console.log("Database query for travel mode:", travelMode);
       console.log("Full query:", JSON.stringify(query, null, 2));
@@ -534,21 +553,28 @@ exports.searchRides = async (req, res) => {
       // Filter exact rides by travel mode if specified
       if (travelMode && travelMode.trim() !== "") {
         console.log("Filtering exact rides by travel mode:", travelMode);
-        availableRides = exactRides.filter(ride => 
-          ride.travelMode === travelMode || ride.vehicleType === travelMode
-        );
+        const searchTravelMode = travelMode.toLowerCase().trim();
+        
+        availableRides = exactRides.filter(ride => {
+          const rideTravelMode = ride.travelMode ? ride.travelMode.toLowerCase().trim() : "";
+          const rideVehicleType = ride.vehicleType ? ride.vehicleType.toLowerCase().trim() : "";
+          
+          return rideTravelMode === searchTravelMode ||
+                 rideVehicleType === searchTravelMode ||
+                 (searchTravelMode === "roadways" && (rideTravelMode === "car" || rideVehicleType === "car")) ||
+                 (searchTravelMode === "car" && (rideTravelMode === "roadways" || rideVehicleType === "roadways"));
+        });
         console.log("Exact rides after travel mode filtering:", availableRides.length);
       }
     }
 
-    // Filter out rides that are already booked/accepted
-    const bookedRideIds = await Request.find({ status: "Accepted" }).distinct('travelId');
-    availableRides = availableRides.filter(ride => !bookedRideIds.includes(ride.travelId));
-    console.log("Available rides after filtering booked rides:", availableRides.length);
+    // Note: Removed the "booked rides" filtering logic since rides can now accept multiple consignments
+    // The multi-consignment acceptance is handled in the booking process itself
+    console.log("Available rides after coordinate/travel mode filtering:", availableRides.length);
 
-    // Filter out rides with certain statuses
+    // Filter out rides with certain statuses (but allow Accepted rides to accept more consignments)
     availableRides = availableRides.filter(ride => 
-      !ride.status || !["Accepted", "Completed", "Cancelled"].includes(ride.status)
+      !ride.status || !["Completed", "Cancelled"].includes(ride.status)
     );
     console.log("Available rides after filtering by status:", availableRides.length);
     console.log("Found rides before distance filtering:", availableRides.length);
@@ -605,7 +631,76 @@ exports.searchRides = async (req, res) => {
 
         // Use a reasonable radius for precise matching (10km)
         const preciseRadiusInMeters = 10 * 1000; // 10km
-        return leavingDistance <= preciseRadiusInMeters && goingDistance <= preciseRadiusInMeters;
+        const distanceMatch = leavingDistance <= preciseRadiusInMeters && goingDistance <= preciseRadiusInMeters;
+        
+        // Add direction validation - ensure ride direction matches search direction
+        const normalizeLocation = (location) => {
+          return location.toLowerCase()
+            .replace(/[^a-z0-9\s]/g, ' ') // Remove special characters except spaces
+            .replace(/\s+/g, ' ') // Replace multiple spaces with single space
+            .trim();
+        };
+        
+        const normalizedSearchLeaving = normalizeLocation(leavingLocation);
+        const normalizedSearchGoing = normalizeLocation(goingLocation);
+        const normalizedRideLeaving = normalizeLocation(ride.Leavinglocation);
+        const normalizedRideGoing = normalizeLocation(ride.Goinglocation);
+        
+        // Extract key location words (cities, states, etc.)
+        const extractKeyWords = (location) => {
+          const words = location.split(' ').filter(word => word.length > 2);
+          return words;
+        };
+        
+        const searchLeavingWords = extractKeyWords(normalizedSearchLeaving);
+        const searchGoingWords = extractKeyWords(normalizedSearchGoing);
+        const rideLeavingWords = extractKeyWords(normalizedRideLeaving);
+        const rideGoingWords = extractKeyWords(normalizedRideGoing);
+        
+        // Check for word overlap (more flexible matching)
+        const hasWordOverlap = (words1, words2) => {
+          return words1.some(word1 => 
+            words2.some(word2 => 
+              word1.includes(word2) || word2.includes(word1)
+            )
+          );
+        };
+        
+        // Direction validation: ride starting location should match search leaving location
+        // AND ride going location should match search going location
+        const startingLocationMatch = hasWordOverlap(searchLeavingWords, rideLeavingWords) ||
+                                    normalizedRideLeaving.includes(normalizedSearchLeaving) ||
+                                    normalizedSearchLeaving.includes(normalizedRideLeaving);
+        
+        const goingLocationMatch = hasWordOverlap(searchGoingWords, rideGoingWords) ||
+                                 normalizedRideGoing.includes(normalizedSearchGoing) ||
+                                 normalizedSearchGoing.includes(normalizedRideGoing);
+        
+        const directionMatch = startingLocationMatch && goingLocationMatch;
+        
+        console.log("Distance and direction check for ride:", {
+          rideId: ride._id,
+          rideDirection: `${ride.Leavinglocation} -> ${ride.Goinglocation}`,
+          searchDirection: `${leavingLocation} -> ${goingLocation}`,
+          normalizedRideLeaving,
+          normalizedRideGoing,
+          normalizedSearchLeaving,
+          normalizedSearchGoing,
+          rideLeavingWords,
+          rideGoingWords,
+          searchLeavingWords,
+          searchGoingWords,
+          startingLocationMatch,
+          goingLocationMatch,
+          distanceMatch,
+          directionMatch,
+          leavingCoords: ride.LeavingCoordinates,
+          goingCoords: ride.GoingCoordinates,
+          searchLeavingCoords: leavingCoords,
+          searchGoingCoords: goingCoords
+        });
+        
+        return distanceMatch && directionMatch;
       });
     } else {
       console.log("Using exact coordinate matches, skipping distance filtering");
@@ -620,7 +715,26 @@ exports.searchRides = async (req, res) => {
       const alternativeRides = allRidesForDate.filter(ride => {
         // First check travel mode if specified
         if (travelMode && travelMode.trim() !== "") {
-          const travelModeMatch = ride.travelMode === travelMode || ride.vehicleType === travelMode;
+          // More flexible travel mode matching
+          const rideTravelMode = ride.travelMode ? ride.travelMode.toLowerCase().trim() : "";
+          const rideVehicleType = ride.vehicleType ? ride.vehicleType.toLowerCase().trim() : "";
+          const searchTravelMode = travelMode.toLowerCase().trim();
+          
+          // Check for exact matches and mappings
+          const travelModeMatch = 
+            rideTravelMode === searchTravelMode ||
+            rideVehicleType === searchTravelMode ||
+            (searchTravelMode === "roadways" && (rideTravelMode === "car" || rideVehicleType === "car")) ||
+            (searchTravelMode === "car" && (rideTravelMode === "roadways" || rideVehicleType === "roadways"));
+          
+          console.log("Travel mode matching:", {
+            rideId: ride.rideId,
+            rideTravelMode,
+            rideVehicleType,
+            searchTravelMode,
+            travelModeMatch
+          });
+          
           if (!travelModeMatch) {
             return false;
           }
@@ -693,7 +807,34 @@ exports.searchRides = async (req, res) => {
       
       if (alternativeRides.length > 0) {
         console.log("Found rides using location name matching (fallback):", alternativeRides.length);
-        filteredRides = alternativeRides;
+        
+        // Note: Removed the "booked rides" filtering logic since rides can now accept multiple consignments
+        // The multi-consignment acceptance is handled in the booking process itself
+        const filteredAlternativeRides = alternativeRides;
+        
+        // Also filter out rides with certain statuses (but allow Accepted rides to accept more consignments)
+        const finalAlternativeRides = filteredAlternativeRides.filter(ride => 
+          !ride.status || !["Completed", "Cancelled"].includes(ride.status)
+        );
+        
+        console.log("Alternative rides after filtering accepted ones:", finalAlternativeRides.length);
+        
+        if (finalAlternativeRides.length > 0) {
+          filteredRides = finalAlternativeRides;
+        } else {
+          console.log("No rides found with any matching method after filtering");
+          return res.status(200).json({
+            message: "No rides found",
+            searchParams: {
+              leavingLocation,
+              goingLocation,
+              date,
+              travelMode,
+              leavingCoords,
+              goingCoords
+            }
+          });
+        }
       } else {
         console.log("No rides found with any matching method");
         return res.status(200).json({
@@ -745,70 +886,140 @@ exports.searchRides = async (req, res) => {
     }
     console.log("Estimated fare:", estimatedFare);
 
-    // Search for user's consignment to calculate correct price
-    let userConsignment = null;
-    let calculatedPrice = null;
+    // Search for user's consignments to calculate correct prices
+    let userConsignments = [];
+    let calculatedPrices = [];
     
     if (phoneNumber) {
       try {
-        // Search for consignment created on the given date
-        userConsignment = await consignmentData.findOne({
+        // Search for all valid consignments created on the given date
+        userConsignments = await consignmentData.find({
           phoneNumber: phoneNumber,
-          dateOfSending: { $gte: startOfDay, $lt: endOfDay }
+          dateOfSending: { $gte: startOfDay, $lt: endOfDay },
+          status: { $nin: ["Accepted", "Rejected", "Expired", "Completed"] } // Only get valid consignments
         }).sort({ createdAt: -1 });
 
-        if (userConsignment) {
-          console.log("Found user consignment:", {
-            consignmentId: userConsignment?.consignmentId,
-            weight: userConsignment?.weight,
-            dimensions: userConsignment?.dimensions,
-            distance: userConsignment?.distance,
-            leavingCoordinates: userConsignment?.LeavingCoordinates,
-            goingCoordinates: userConsignment?.GoingCoordinates
-          });
+        for(let i = 0; i < userConsignments.length; i++){
+        console.log("Found user consignments:", userConsignments[i]);
+        }
+        if (userConsignments.length > 0) {
+          // Calculate prices for each consignment
+          calculatedPrices = await Promise.all(userConsignments.map(async (consignment) => {
+            try {
+              console.log("Processing consignment:", {
+                consignmentId: consignment?.consignmentId,
+                weight: consignment?.weight,
+                dimensions: consignment?.dimensions,
+                distance: consignment?.distance,
+                leavingCoordinates: consignment?.LeavingCoordinates,
+                goingCoordinates: consignment?.GoingCoordinates
+              });
 
-          // Extract weight and distance from consignment
-          const weight = parseFloat(userConsignment.weight?.toString().replace(/[^\d.]/g, ""));
-          const consignmentDistance = parseFloat(userConsignment.distance?.toString().replace(/[^\d.]/g, ""));
+              // Extract weight and distance from consignment
+              const weight = parseFloat(consignment.weight?.toString().replace(/[^\d.]/g, ""));
+              const consignmentDistance = parseFloat(consignment.distance?.toString().replace(/[^\d.]/g, ""));
 
-          if (!isNaN(weight) && !isNaN(consignmentDistance)) {
-            // Extract dimensions if available
-            const dimensions = userConsignment.dimensions;
-            const length = dimensions?.length ? parseFloat(dimensions.length) : null;
-            const height = dimensions?.height ? parseFloat(dimensions.height) : null;
-            const breadth = dimensions?.breadth ? parseFloat(dimensions.breadth) : null;
+              if (!isNaN(weight) && !isNaN(consignmentDistance)) {
+                // Extract dimensions if available
+                const dimensions = consignment.dimensions;
+                const length = dimensions?.length ? parseFloat(dimensions.length) : null;
+                const height = dimensions?.height ? parseFloat(dimensions.height) : null;
+                const breadth = dimensions?.breadth ? parseFloat(dimensions.breadth) : null;
 
-            // Calculate fare using the fare service with consignment data
-            calculatedPrice = await fare.calculateFare(
-              weight, 
-              consignmentDistance, 
-              fareTravelMode, 
-              length, 
-              height, 
-              breadth
-            );
+                // Calculate fare using the fare service with consignment data
+                const calculatedPrice = await fare.calculateFare(
+                  weight, 
+                  consignmentDistance, 
+                  fareTravelMode, 
+                  length, 
+                  height, 
+                  breadth
+                );
 
-            console.log("Calculated price from consignment:", {
-              weight,
-              distance: consignmentDistance,
-              travelMode: fareTravelMode,
-              dimensions: { length, height, breadth },
-              calculatedPrice
-            });
-          } else {
-            console.log("Invalid weight or distance in consignment, using estimated fare");
-            calculatedPrice = estimatedFare;
-          }
+                console.log("Calculated price from consignment:", {
+                  consignmentId: consignment.consignmentId,
+                  weight,
+                  distance: consignmentDistance,
+                  travelMode: fareTravelMode,
+                  dimensions: { length, height, breadth },
+                  calculatedPrice
+                });
+
+                return {
+                  consignmentId: consignment.consignmentId,
+                  weight: consignment.weight,
+                  dimensions: consignment.dimensions,
+                  distance: consignment.distance,
+                  dateOfSending: consignment.dateOfSending,
+                  calculatedPrice,
+                  status: consignment.status
+                };
+              } else {
+                console.log("Invalid weight or distance in consignment, using estimated fare");
+                return {
+                  consignmentId: consignment.consignmentId,
+                  weight: consignment.weight,
+                  dimensions: consignment.dimensions,
+                  distance: consignment.distance,
+                  dateOfSending: consignment.dateOfSending,
+                  calculatedPrice: estimatedFare,
+                  status: consignment.status,
+                  priceError: "Invalid weight or distance"
+                };
+              }
+            } catch (error) {
+              console.error(`Error calculating price for consignment ${consignment.consignmentId}:`, error);
+              return {
+                consignmentId: consignment.consignmentId,
+                weight: consignment.weight,
+                dimensions: consignment.dimensions,
+                distance: consignment.distance,
+                dateOfSending: consignment.dateOfSending,
+                calculatedPrice: estimatedFare,
+                status: consignment.status,
+                priceError: error.message
+              };
+            }
+          }));
+
+          console.log("Calculated prices for all consignments:", calculatedPrices.length);
         } else {
-          console.log("No consignment found for user on the given date, using estimated fare");
-          calculatedPrice = estimatedFare;
+          console.log("No valid consignments found for user on the given date, using estimated fare");
+          calculatedPrices = [{
+            consignmentId: null,
+            weight: null,
+            dimensions: null,
+            distance: null,
+            dateOfSending: null,
+            calculatedPrice: estimatedFare,
+            status: null,
+            priceError: "No valid consignments found"
+          }];
         }
       } catch (error) {
-        console.error("Error calculating price from consignment:", error);
-        calculatedPrice = estimatedFare;
+        console.error("Error calculating prices from consignments:", error);
+        calculatedPrices = [{
+          consignmentId: null,
+          weight: null,
+          dimensions: null,
+          distance: null,
+          dateOfSending: null,
+          calculatedPrice: estimatedFare,
+          status: null,
+          priceError: error.message
+        }];
       }
     } else {
-      calculatedPrice = estimatedFare;
+      calculatedPrices = [{
+        consignmentId: null,
+        weight: null,
+        dimensions: null,
+        distance: null,
+        dateOfSending: null,
+        calculatedPrice: estimatedFare,
+        status: null,
+        priceError: "No phone number provided"
+      }];
     }
 
     // Debug: Log final results
@@ -826,14 +1037,15 @@ exports.searchRides = async (req, res) => {
     res.status(200).json({
       availableRides: ridesWithProfile,
       estimatedFare,
-      calculatedPrice,
-      userConsignment: userConsignment ? {
-        consignmentId: userConsignment.consignmentId,
-        weight: userConsignment.weight,
-        dimensions: userConsignment.dimensions,
-        distance: userConsignment.distance,
-        dateOfSending: userConsignment.dateOfSending
-      } : null,
+      calculatedPrices,
+      userConsignments: userConsignments.map(consignment => ({
+        consignmentId: consignment.consignmentId,
+        weight: consignment.weight,
+        dimensions: consignment.dimensions,
+        distance: consignment.distance,
+        dateOfSending: consignment.dateOfSending,
+        status: consignment.status
+      })),
       searchParams: {
         leavingLocation,
         goingLocation,
@@ -965,26 +1177,61 @@ exports.searchRides = async (req, res) => {
 
 
 module.exports.booking = async (req, res) => {
-  const { phoneNumber, rideId } = req.body;
+  const { phoneNumber, rideId, consignmentId, travelMode, calculatedPrice, weight, distance } = req.body;
+  
+  // Add detailed logging for debugging
+  console.log("=== BOOKING REQUEST DEBUG ===");
+  console.log("Received payload:", req.body);
+  console.log("Consignment ID:", consignmentId);
+  console.log("Travel Mode:", travelMode);
+  console.log("Pre-calculated Price:", calculatedPrice);
+  console.log("Weight:", weight);
+  console.log("Distance:", distance);
+  
   try {
+    // Validate that required pricing data is present
+    if (!calculatedPrice || !calculatedPrice.totalFare) {
+      return res.status(400).json({ 
+        message: "Pre-calculated pricing is required. Please ensure travel option is selected." 
+      });
+    }
+
+    // Validate travel mode is present
+    if (!travelMode) {
+      return res.status(400).json({ 
+        message: "Travel mode is required." 
+      });
+    }
+
     const now = new Date();
     now.setHours(0, 0, 0, 0);
     const endOfDay = new Date(now);
     endOfDay.setHours(23, 59, 59, 999);
 
-    // Check for consignment created on the current date
-    const con = await consignmentData
-      .findOne({
-        phoneNumber,
-        createdAt: { $gte: now, $lte: endOfDay }
-      })
-      .sort({ createdAt: -1 })
-      .exec();
+    // Check for consignment - use consignmentId if provided, otherwise fallback to current date logic
+    let con;
+    if (consignmentId) {
+      con = await consignmentData.findOne({ consignmentId });
+      if (!con) {
+        return res.status(404).json({
+          message: "Consignment not found with the provided ID."
+        });
+      }
+    } else {
+      // Fallback to current date logic
+      con = await consignmentData
+        .findOne({
+          phoneNumber,
+          createdAt: { $gte: now, $lte: endOfDay }
+        })
+        .sort({ createdAt: -1 })
+        .exec();
 
-    if (!con) {
-      return res.status(404).json({
-        message: "No consignment found for today. Please publish a consignment first."
-      });
+      if (!con) {
+        return res.status(404).json({
+          message: "No consignment found for today. Please publish a consignment first."
+        });
+      }
     }
 
     // Check if consignment is already accepted by another traveler
@@ -1006,18 +1253,19 @@ module.exports.booking = async (req, res) => {
       return res.status(404).json({ message: "Ride not found" });
     }
 
-    // Check if ride status is already set to accepted/completed/cancelled
-    if (ride.status && ["Accepted", "Completed", "Cancelled"].includes(ride.status)) {
+    // Check if ride status is completed or cancelled (but allow Accepted rides to accept more consignments)
+    if (ride.status && ["Completed", "Cancelled"].includes(ride.status)) {
       return res.status(400).json({ message: `Ride is already ${ride.status.toLowerCase()}.` });
     }
 
-    // Check if ride is already accepted by another consignment
+    // Check if this specific consignment is already accepted by this ride
     const existingRideRequest = await Request.findOne({
       travelId: ride.travelId,
+      consignmentId: con.consignmentId,
       status: "Accepted",
     });
     if (existingRideRequest) {
-      return res.status(400).json({ message: "This ride has already been booked by another user." });
+      return res.status(400).json({ message: "This consignment has already been accepted by this ride." });
     }
 
     const locationThreshold = 10.00;
@@ -1035,25 +1283,44 @@ module.exports.booking = async (req, res) => {
     }
 
     const validModes = ["train", "airplane", "car", "roadways"];
-    const travelMode = ride.travelMode ? ride.travelMode === "roadways" ? "car" : ride.travelMode.toLowerCase().trim() : null;
+    const rideTravelMode = ride.travelMode ? ride.travelMode : null;
 
-    if (!validModes.includes(travelMode)) {
-      return res.status(400).json({ message: "Invalid Travel Mode! Please enter 'train' or 'airplane'." });
+    if (!validModes.includes(rideTravelMode)) {
+      return res.status(400).json({ message: "Invalid Travel Mode! Please enter 'train', 'airplane', 'car', or 'roadways'." });
     }
 
-    const weight = con.weight ? parseFloat(con.weight.toString().replace(/[^\d.]/g, "")) : NaN;
-    const distance = con.distance ? parseFloat(con.distance.toString().replace(/[^\d.]/g, "")) : NaN;
-
-    if (isNaN(weight) || isNaN(distance)) {
-      return res.status(400).json({ message: "Invalid Weight or Distance! Please provide valid numbers." });
+    // Validate that the travel mode from frontend matches the ride's travel mode
+    const frontendTravelMode = travelMode ? travelMode.toLowerCase().trim() : null;
+    if (frontendTravelMode && frontendTravelMode !== rideTravelMode) {
+      console.log("Travel mode mismatch - Frontend:", frontendTravelMode, "Ride:", rideTravelMode);
+      return res.status(400).json({ 
+        message: "Travel mode mismatch. The selected travel mode does not match the ride's travel mode." 
+      });
     }
 
-    if (typeof fare.calculateFare !== "function") {
-      return res.status(500).json({ message: "Fare calculation function is missing or not defined." });
+    // Use pre-calculated price from frontend if available
+    let fareResult;
+    if (calculatedPrice && calculatedPrice.totalFare) {
+      // Use the pre-calculated price from frontend
+      fareResult = calculatedPrice;
+      console.log("Using pre-calculated price from frontend:", fareResult);
+    } else {
+      // Fallback to backend calculation only if frontend price is not available
+      const conWeight = con.weight ? parseFloat(con.weight.toString().replace(/[^\d.]/g, "")) : NaN;
+      const conDistance = con.distance ? parseFloat(con.distance.toString().replace(/[^\d.]/g, "")) : NaN;
+
+      if (isNaN(conWeight) || isNaN(conDistance)) {
+        return res.status(400).json({ message: "Invalid Weight or Distance! Please provide valid numbers." });
+      }
+
+      if (typeof fare.calculateFare !== "function") {
+        return res.status(500).json({ message: "Fare calculation function is missing or not defined." });
+      }
+
+      fareResult = await fare.calculateFare(conWeight, conDistance, rideTravelMode);
+      console.log("Using backend calculated price:", fareResult);
     }
 
-    // Calculate fare and await the result
-    const fareResult = await fare.calculateFare(weight, distance, travelMode);
     if (!fareResult) {
       return res.status(500).json({ message: "Error calculating fare amount." });
     }
@@ -1113,8 +1380,12 @@ module.exports.booking = async (req, res) => {
       booking: {
         phoneNumber,
         rideId,
+        consignmentId: con.consignmentId,
         expectedEarning,
-        travelId: ride.travelId
+        travelId: ride.travelId,
+        travelMode: ride.travelMode,
+        vehicleType: ride.vehicleType,
+        usedPreCalculatedPrice: !!(calculatedPrice && calculatedPrice.totalFare)
       },
     });
 

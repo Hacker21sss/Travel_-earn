@@ -64,9 +64,9 @@ module.exports.respondToRideRequest = async (req, res) => {
     //   return res.status(400).json({ message: `Consignment is already ${consignment.status.toLowerCase()}.` });
     // }
 
-    const rideRequest = await RideRequest.findOne({ travelId });
+    const rideRequest = await RideRequest.findOne({ travelId, consignmentId });
     if (!rideRequest) {
-      return res.status(404).json({ message: "Ride request not found" });
+      return res.status(404).json({ message: "Ride request not found for this travel and consignment" });
     }
     console.log(rideRequest)
     if (
@@ -78,9 +78,9 @@ module.exports.respondToRideRequest = async (req, res) => {
         .json({ message: `Ride already ${rideRequest.status.toLowerCase()}` });
     }
 
-    // Check if the travel itself is already accepted/completed/cancelled
+    // Check if the travel itself is completed or cancelled (but allow Accepted travels to accept more consignments)
     const travel = await Travel.findOne({ travelId });
-    if (travel && travel.status && ["Accepted", "Completed", "Cancelled"].includes(travel.status)) {
+    if (travel && travel.status && ["Completed", "Cancelled"].includes(travel.status)) {
       return res.status(400).json({ message: `Travel is already ${travel.status.toLowerCase()}.` });
     }
    
@@ -189,7 +189,13 @@ const userprofile=await User.findOne({phoneNumber: rideRequest.requestedby})
         Travel.updateOne({ travelId }, { $set: { status: "Accepted" } }),
         Consignment.updateOne(
           { consignmentId },
-          { $set: { sotp: senderOtp, rotp: receiverOtp } }
+          { 
+            $set: { 
+              status: "Accepted",
+              sotp: senderOtp, 
+              rotp: receiverOtp 
+            } 
+          }
         ),
         new consignmentToCarry({
           phoneNumber: rideRequest.phoneNumber,
@@ -231,7 +237,7 @@ const userprofile=await User.findOne({phoneNumber: rideRequest.requestedby})
           { upsert: true }
         ),
         RideRequest.updateOne(
-          { consignmentId },
+          { travelId: rideRequest.travelId, consignmentId },
           { $set: { status: "Accepted" } }
         ),
         TravelHistory.updateOne(
@@ -328,7 +334,7 @@ const userprofile=await User.findOne({phoneNumber: rideRequest.requestedby})
       ]);
       
       await RideRequest.updateOne(
-          { consignmentId },
+          { travelId: rideRequest.travelId, consignmentId },
           { $set: { status: "Rejected" } }
       );
 
@@ -376,8 +382,8 @@ module.exports.respondToConsignmentRequest = async (req, res) => {
     if (!travelHistoryBasic)
       return res.status(404).json({ message: "Travel  not found for the given travelId" });
 
-    // Check if travel status is already set to accepted/completed/cancelled
-    if (travelHistoryBasic.status && ["Accepted", "Completed", "Cancelled"].includes(travelHistoryBasic.status)) {
+    // Check if travel status is completed or cancelled (but allow Accepted travels to accept more consignments)
+    if (travelHistoryBasic.status && ["Completed", "Cancelled"].includes(travelHistoryBasic.status)) {
       return res.status(400).json({ message: `Travel is already ${travelHistoryBasic.status.toLowerCase()}.` });
     }
 
@@ -390,13 +396,14 @@ module.exports.respondToConsignmentRequest = async (req, res) => {
       return res.status(400).json({ message: "Consignment has already been accepted by another traveler." });
     }
 
-    // Check if travel is already booked by another consignment
+    // Check if this specific consignment is already accepted by this travel
     const existingTravelRequest = await RequestForCarry.findOne({
       travelId,
+      consignmentId,
       status: "Accepted",
     });
-    if (existingTravelRequest && existingTravelRequest.consignmentId !== consignmentId) {
-      return res.status(400).json({ message: "This travel has already been booked by another consignment." });
+    if (existingTravelRequest) {
+      return res.status(400).json({ message: "This consignment has already been accepted by this travel." });
     }
 
     if (
@@ -513,7 +520,7 @@ const userprofile=await User.findOne({phoneNumber:travelHistoryBasic.phoneNumber
           { consignmentId },
           {
             $set: {
-              status: "Yet to Collect",
+              status: "Accepted",
               sotp: senderOtp,
               rotp: receiverOtp,
             },

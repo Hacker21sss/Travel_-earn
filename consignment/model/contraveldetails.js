@@ -62,6 +62,11 @@ const DriverSchema = new mongoose.Schema({
     enum: ["Pending", "Not Started", "In Progress", "Completed", "Rejected","Accepted", "Expired"], 
     default: "Pending" 
   },
+  paymentStatus: {
+    type: String,
+    enum: ["pending", "successful", "declined"],
+    default: "pending"
+  },
   sotp:{type:String},
   rotp:{type:String},
  

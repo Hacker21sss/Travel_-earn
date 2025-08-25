@@ -274,40 +274,67 @@ exports.getUserProfileByPhoneNumber = async (req, res) => {
   }
 };
 
+
+
 exports.updateUserProfile = async (req, res) => {
   try {
     const { phoneNumber } = req.params;
-    const { firstName, lastName, email } = req.body;
+    const { firstName, lastName, email, isVerified } = req.body;
     const updateFields = {};
 
     if (firstName) updateFields.firstName = firstName;
     if (lastName) updateFields.lastName = lastName;
     if (email) updateFields.email = email;
+    if (isVerified !== undefined) updateFields.isVerified = isVerified;
 
     // Handle profile picture upload with ImageKit if file is provided
     if (req.file) {
       try {
         const fileBuffer = req.file.buffer;
 
-        // Upload the image to ImageKit
+        // Validate file buffer
+        if (!fileBuffer || fileBuffer.length === 0) {
+          return res.status(400).json({
+            message: "Invalid file data received",
+          });
+        }
+
+        // Upload the image to ImageKit with better error handling
         const uploadResponse = await imagekit.upload({
           file: fileBuffer,
-          fileName: `${phoneNumber}_profile_picture`,
+          fileName: `${phoneNumber}_profile_picture_${Date.now()}`,
           useUniqueFileName: true,
+          folder: '/profile-pictures', // Organize files in a folder
         });
 
         // Set the ImageKit URL as the profile picture
         updateFields.profilePicture = uploadResponse.url;
+
+        console.log("Image uploaded successfully:", uploadResponse.url);
       } catch (uploadError) {
-        console.error("File upload error:", uploadError);
+        console.error("Image upload error:", uploadError);
+
+        // Provide more specific error messages
+        let errorMessage = "Failed to upload profile picture";
+
+        if (uploadError.message.includes("Network request failed")) {
+          errorMessage = "Network error: Unable to connect to image upload service. Please check your internet connection and try again.";
+        } else if (uploadError.message.includes("authentication")) {
+          errorMessage = "Authentication error: Invalid image upload credentials.";
+        } else if (uploadError.message.includes("file size")) {
+          errorMessage = "File too large: Please upload an image smaller than 5MB.";
+        } else {
+          errorMessage = `Upload failed: ${uploadError.message}`;
+        }
+
         return res.status(400).json({
-          message: "Error uploading profile picture",
+          message: errorMessage,
           error: uploadError.message,
         });
       }
     }
 
-    console.log("updated fields : " ,updateFields)
+    console.log("updated fields : ", updateFields)
     const updatedUser = await userprofiles.findOneAndUpdate(
       { phoneNumber },
       { $set: updateFields },

@@ -1,7 +1,8 @@
 const razorpayInstance = require("../config/payment.config");
 const crypto = require("crypto");
 const Earning = require('../../traveller/model/Earning');
-const notification = require('../../user/model/notification')
+const notification = require('../../user/model/notification');
+const Consignment = require('../../consignment/model/contraveldetails');
 
 
 
@@ -64,6 +65,7 @@ const verifyOrder = async (req, res) => {
       totalFare,
       senderTotalPay,
       travelId,
+      consignmentId, // Add consignmentId to identify which consignment is being paid for
       title = "Ride Payment",
     } = req.body;
 
@@ -151,12 +153,45 @@ const verifyOrder = async (req, res) => {
       await session.commitTransaction();
       return res.status(400).json({ success: false, message: "Invalid payment signature" });
     }
-    const note = await notification.updateMany(
-      { travelId },
-      {
-        $set: { "paymentstatus": "successful" }
-      }
-    )
+    // Update payment status for the specific consignment notification and consignment
+    // Use consignmentId to ensure we update the correct notification and consignment
+    let note;
+    let consignmentUpdate;
+    
+    if (consignmentId) {
+      // If consignmentId is provided, update the specific notification and consignment
+      [note, consignmentUpdate] = await Promise.all([
+        notification.updateOne(
+          { 
+            travelId,
+            consignmentId,
+            notificationType: { $in: ["ride_accept", "consignment_accept"] },
+            paymentstatus: { $ne: "successful" }
+          },
+          {
+            $set: { "paymentstatus": "successful" }
+          }
+        ),
+        Consignment.updateOne(
+          { consignmentId },
+          { $set: { "paymentStatus": "successful" } }
+        )
+      ]);
+    } else {
+      // Fallback: Update the most recent unpaid consignment notification for this travel
+      // This ensures backward compatibility if consignmentId is not provided
+      note = await notification.updateOne(
+        { 
+          travelId,
+          notificationType: { $in: ["ride_accept", "consignment_accept"] },
+          paymentstatus: { $ne: "successful" }
+        },
+        {
+          $set: { "paymentstatus": "successful" }
+        },
+        { sort: { createdAt: -1 } }
+      );
+    }
 
     console.log(note);
     const completedUpdate = await Earning.updateOne(

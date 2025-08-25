@@ -157,7 +157,7 @@ module.exports.calculateFare = async (weight, distance, travelMode, length, heig
         }
 
         if(distance > 200){
-            const distanceSlabs = Math.ceil((distance - 200)/300);
+            const distanceSlabs = Math.ceil((distance - 200)/500);
             distanceFare = distanceSlabs*fareConfig.distanceRateTrain;
         }
         console.log("Distance Fare:", distanceFare);
@@ -201,9 +201,9 @@ module.exports.calculateFare = async (weight, distance, travelMode, length, heig
     console.log(`Total Fare Before Extra Charges: ${totalFare} rupees`);
 
     let senderTotalPay = (totalFare + TE) * (1 + margin);
-    console.log(`Final Amount (Sender Pays): ${senderTotalPay.toFixed(2)} rupees`);
+    console.log(`Final Amount (Sender Pays): ${Math.round(senderTotalPay).toString()} rupees`);
 
-    return {senderTotalPay: senderTotalPay.toFixed(2), totalFare: totalFare.toFixed(2)};
+    return {senderTotalPay: Math.round(senderTotalPay).toString(), totalFare: Math.round(totalFare).toString()};
 };
 
 
