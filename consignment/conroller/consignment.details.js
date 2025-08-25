@@ -527,8 +527,161 @@ module.exports.getConsignmentsByDate = async (req, res) => {
       });
     }
 
-    // Use the first travel for coordinate matching (assuming all travels have similar routes)
-    const userTravel = userTravels[0];
+    // IMPORTANT FIX: Filter user travels based on search parameters (starting and ending location)
+    // Only consider user travels that match the search direction
+    const filterUserTravels = async () => {
+      const filteredResults = [];
+      
+      for (const travel of userTravels) {
+      // Normalize location strings for comparison
+      const normalizeLocation = (location) => {
+        return location.toLowerCase()
+          .replace(/[^a-z0-9\s]/g, ' ') // Remove special characters except spaces
+          .replace(/\s+/g, ' ') // Replace multiple spaces with single space
+          .trim();
+      };
+      
+      const normalizedSearchLeaving = normalizeLocation(leavingLocation);
+      const normalizedSearchGoing = normalizeLocation(goingLocation);
+      const normalizedTravelLeaving = normalizeLocation(travel.Leavinglocation);
+      const normalizedTravelGoing = normalizeLocation(travel.Goinglocation);
+      
+      // Extract key location words (cities, states, etc.)
+      const extractKeyWords = (location) => {
+        const words = location.split(' ').filter(word => word.length > 2);
+        return words;
+      };
+      
+      const searchLeavingWords = extractKeyWords(normalizedSearchLeaving);
+      const searchGoingWords = extractKeyWords(normalizedSearchGoing);
+      const travelLeavingWords = extractKeyWords(normalizedTravelLeaving);
+      const travelGoingWords = extractKeyWords(normalizedTravelGoing);
+      
+      // Check for word overlap (more flexible matching)
+      const hasWordOverlap = (words1, words2) => {
+        return words1.some(word1 => 
+          words2.some(word2 => 
+            word1.includes(word2) || word2.includes(word1)
+          )
+        );
+      };
+      
+      // Location name matching for starting location
+      const leavingLocationNameMatch = hasWordOverlap(searchLeavingWords, travelLeavingWords) ||
+                                    normalizedTravelLeaving.includes(normalizedSearchLeaving) ||
+                                    normalizedSearchLeaving.includes(normalizedTravelLeaving);
+      
+      // Location name matching for ending location
+      const goingLocationNameMatch = hasWordOverlap(searchGoingWords, travelGoingWords) ||
+                                  normalizedTravelGoing.includes(normalizedSearchGoing) ||
+                                  normalizedSearchGoing.includes(normalizedTravelGoing);
+      
+      // Coordinate matching for starting location (if coordinates are available)
+      let leavingCoordinateMatch = true; // Default to true if no coordinates
+      if (travel.LeavingCoordinates && travel.LeavingCoordinates.ltd && travel.LeavingCoordinates.lng) {
+        // Get search coordinates for starting location
+        const searchLeavingCoords = await mapservice.getAddressCoordinate(leavingLocation);
+        if (searchLeavingCoords) {
+          const leavingDistance = geolib.getDistance(
+            { latitude: searchLeavingCoords.ltd, longitude: searchLeavingCoords.lng },
+            { latitude: travel.LeavingCoordinates.ltd, longitude: travel.LeavingCoordinates.lng }
+          );
+          const maxDistanceMeters = 10 * 1000; // 10km
+          leavingCoordinateMatch = leavingDistance <= maxDistanceMeters;
+          
+          console.log("Starting location coordinate matching:", {
+            searchLeaving: leavingLocation,
+            travelLeaving: travel.Leavinglocation,
+            searchCoords: searchLeavingCoords,
+            travelCoords: travel.LeavingCoordinates,
+            distance: Math.round(leavingDistance / 1000) + "km",
+            maxDistance: "10km",
+            leavingCoordinateMatch
+          });
+        }
+      }
+      
+      // Coordinate matching for ending location (if coordinates are available)
+      let goingCoordinateMatch = true; // Default to true if no coordinates
+      if (travel.GoingCoordinates && travel.GoingCoordinates.ltd && travel.GoingCoordinates.lng) {
+        // Get search coordinates for ending location
+        const searchGoingCoords = await mapservice.getAddressCoordinate(goingLocation);
+        if (searchGoingCoords) {
+          const goingDistance = geolib.getDistance(
+            { latitude: searchGoingCoords.ltd, longitude: searchGoingCoords.lng },
+            { latitude: travel.GoingCoordinates.ltd, longitude: travel.GoingCoordinates.lng }
+          );
+          const maxDistanceMeters = 10 * 1000; // 10km
+          goingCoordinateMatch = goingDistance <= maxDistanceMeters;
+          
+          console.log("Ending location coordinate matching:", {
+            searchGoing: goingLocation,
+            travelGoing: travel.Goinglocation,
+            searchCoords: searchGoingCoords,
+            travelCoords: travel.GoingCoordinates,
+            distance: Math.round(goingDistance / 1000) + "km",
+            maxDistance: "10km",
+            goingCoordinateMatch
+          });
+        }
+      }
+      
+      // STRICT AND CONDITION: BOTH starting AND ending locations must match (name AND coordinates)
+      const startingLocationMatch = leavingLocationNameMatch && leavingCoordinateMatch;
+      const endingLocationMatch = goingLocationNameMatch && goingCoordinateMatch;
+      const directionMatch = startingLocationMatch && endingLocationMatch;
+      
+        console.log("User travel direction matching:", {
+          travelId: travel.travelId,
+          travelDirection: `${travel.Leavinglocation} -> ${travel.Goinglocation}`,
+          searchDirection: `${leavingLocation} -> ${goingLocation}`,
+          normalizedTravelLeaving,
+          normalizedTravelGoing,
+          normalizedSearchLeaving,
+          normalizedSearchGoing,
+          travelLeavingWords,
+          travelGoingWords,
+          searchLeavingWords,
+          searchGoingWords,
+          leavingLocationNameMatch,
+          goingLocationNameMatch,
+          leavingCoordinateMatch,
+          goingCoordinateMatch,
+          startingLocationMatch,
+          endingLocationMatch,
+          directionMatch
+        });
+        
+        if (directionMatch) {
+          filteredResults.push(travel);
+        }
+      }
+      
+      return filteredResults;
+    };
+    
+    const filteredUserTravels = await filterUserTravels();
+    
+    console.log("User travels after direction filtering:", filteredUserTravels.length);
+    
+    if (filteredUserTravels.length === 0) {
+      return res.status(404).json({ 
+        message: "No user travels found that match the search direction. Please check your travel route or search parameters.",
+        searchDetails: {
+          searchLeavingLocation: leavingLocation,
+          searchGoingLocation: goingLocation,
+          availableUserTravels: userTravels.map(travel => ({
+            travelId: travel.travelId,
+            travelDirection: `${travel.Leavinglocation} -> ${travel.Goinglocation}`,
+            travelMode: travel.travelMode,
+            vehicleType: travel.vehicleType
+          }))
+        }
+      });
+    }
+
+    // Use the first matching travel for coordinate matching
+    const userTravel = filteredUserTravels[0];
 
     // Validate travel mode and map roadways to car for price calculation
     const validModes = ["train", "airplane", "car", "roadways"];
@@ -663,7 +816,9 @@ module.exports.getConsignmentsByDate = async (req, res) => {
 
       // Use a reasonable radius for precise matching (10km)
       const preciseRadiusInMeters = 10 * 1000; // 10km
-      const distanceMatch = leavingDistance <= preciseRadiusInMeters && goingDistance <= preciseRadiusInMeters;
+      const leavingDistanceMatch = leavingDistance <= preciseRadiusInMeters;
+      const goingDistanceMatch = goingDistance <= preciseRadiusInMeters;
+      const distanceMatch = leavingDistanceMatch && goingDistanceMatch; // STRICT AND CONDITION
       
       // Add direction validation - ensure consignment direction matches USER TRAVEL direction
       // Compare the actual location names to ensure direction matches
@@ -699,17 +854,20 @@ module.exports.getConsignmentsByDate = async (req, res) => {
         );
       };
       
-      // Direction validation: consignment starting location should match user travel leaving location
-      // AND consignment going location should match user travel going location
-      const startingLocationMatch = hasWordOverlap(userTravelLeavingWords, consignmentStartingWords) ||
-                                  normalizedConsignmentStarting.includes(normalizedUserTravelLeaving) ||
-                                  normalizedUserTravelLeaving.includes(normalizedConsignmentStarting);
+      // Location name matching for starting location
+      const startingLocationNameMatch = hasWordOverlap(userTravelLeavingWords, consignmentStartingWords) ||
+                                      normalizedConsignmentStarting.includes(normalizedUserTravelLeaving) ||
+                                      normalizedUserTravelLeaving.includes(normalizedConsignmentStarting);
       
-      const goingLocationMatch = hasWordOverlap(userTravelGoingWords, consignmentGoingWords) ||
-                               normalizedConsignmentGoing.includes(normalizedUserTravelGoing) ||
-                               normalizedUserTravelGoing.includes(normalizedConsignmentGoing);
+      // Location name matching for ending location
+      const goingLocationNameMatch = hasWordOverlap(userTravelGoingWords, consignmentGoingWords) ||
+                                   normalizedConsignmentGoing.includes(normalizedUserTravelGoing) ||
+                                   normalizedUserTravelGoing.includes(normalizedConsignmentGoing);
       
-      const directionMatch = startingLocationMatch && goingLocationMatch;
+      // STRICT AND CONDITION: BOTH starting AND ending locations must match (distance AND name)
+      const startingLocationMatch = leavingDistanceMatch && startingLocationNameMatch;
+      const endingLocationMatch = goingDistanceMatch && goingLocationNameMatch;
+      const directionMatch = startingLocationMatch && endingLocationMatch;
       
       console.log("Distance and direction check for consignment:", {
         consignmentId: consignment.consignmentId,
@@ -717,7 +875,13 @@ module.exports.getConsignmentsByDate = async (req, res) => {
         userTravelDirection: `${userTravel.Leavinglocation} -> ${userTravel.Goinglocation}`,
         leavingDistance: Math.round(leavingDistance / 1000) + "km",
         goingDistance: Math.round(goingDistance / 1000) + "km",
+        leavingDistanceMatch,
+        goingDistanceMatch,
         distanceMatch,
+        startingLocationNameMatch,
+        goingLocationNameMatch,
+        startingLocationMatch,
+        endingLocationMatch,
         directionMatch,
         normalizedConsignmentStarting,
         normalizedConsignmentGoing,
@@ -727,8 +891,6 @@ module.exports.getConsignmentsByDate = async (req, res) => {
         consignmentGoingWords,
         userTravelLeavingWords,
         userTravelGoingWords,
-        startingLocationMatch,
-        goingLocationMatch,
         leavingCoords: consignment.LeavingCoordinates,
         goingCoords: consignment.GoingCoordinates,
         userTravelLeavingCoords: userTravelLeavingCoords,
@@ -796,7 +958,9 @@ module.exports.getConsignmentsByDate = async (req, res) => {
 
         // Use a reasonable radius for precise matching (10km)
         const preciseRadiusInMeters = 10 * 1000; // 10km
-        const distanceMatch = leavingDistance <= preciseRadiusInMeters && goingDistance <= preciseRadiusInMeters;
+        const leavingDistanceMatch = leavingDistance <= preciseRadiusInMeters;
+        const goingDistanceMatch = goingDistance <= preciseRadiusInMeters;
+        const distanceMatch = leavingDistanceMatch && goingDistanceMatch; // STRICT AND CONDITION
         
         // Clean and normalize location strings for better matching
         const normalizeLocation = (location) => {
@@ -831,17 +995,20 @@ module.exports.getConsignmentsByDate = async (req, res) => {
           );
         };
         
-        const leavingMatch = hasWordOverlap(userTravelLeavingWords, consignmentStartingWords) ||
-                           normalizedConsignmentStarting.includes(normalizedUserTravelLeaving) ||
-                           normalizedUserTravelLeaving.includes(normalizedConsignmentStarting);
+        // Location name matching for starting location
+        const startingLocationNameMatch = hasWordOverlap(userTravelLeavingWords, consignmentStartingWords) ||
+                                        normalizedConsignmentStarting.includes(normalizedUserTravelLeaving) ||
+                                        normalizedUserTravelLeaving.includes(normalizedConsignmentStarting);
         
-        const goingMatch = hasWordOverlap(userTravelGoingWords, consignmentGoingWords) ||
-                          normalizedConsignmentGoing.includes(normalizedUserTravelGoing) ||
-                          normalizedUserTravelGoing.includes(normalizedConsignmentGoing);
+        // Location name matching for ending location
+        const goingLocationNameMatch = hasWordOverlap(userTravelGoingWords, consignmentGoingWords) ||
+                                     normalizedConsignmentGoing.includes(normalizedUserTravelGoing) ||
+                                     normalizedUserTravelGoing.includes(normalizedConsignmentGoing);
         
-        // Additional direction validation for alternative matching
-        // Ensure the consignment direction matches the user travel direction
-        const directionMatch = leavingMatch && goingMatch;
+        // STRICT AND CONDITION: BOTH starting AND ending locations must match (distance AND name)
+        const startingLocationMatch = leavingDistanceMatch && startingLocationNameMatch;
+        const endingLocationMatch = goingDistanceMatch && goingLocationNameMatch;
+        const directionMatch = startingLocationMatch && endingLocationMatch;
         
         console.log("Alternative matching for consignment:", {
           consignmentId: consignment.consignmentId,
@@ -851,7 +1018,13 @@ module.exports.getConsignmentsByDate = async (req, res) => {
           userTravelGoing: userTravel.Goinglocation,
           leavingDistance: Math.round(leavingDistance / 1000) + "km",
           goingDistance: Math.round(goingDistance / 1000) + "km",
+          leavingDistanceMatch,
+          goingDistanceMatch,
           distanceMatch,
+          startingLocationNameMatch,
+          goingLocationNameMatch,
+          startingLocationMatch,
+          endingLocationMatch,
           directionMatch,
           normalizedConsignmentStarting,
           normalizedConsignmentGoing,
@@ -860,9 +1033,7 @@ module.exports.getConsignmentsByDate = async (req, res) => {
           consignmentStartingWords,
           consignmentGoingWords,
           userTravelLeavingWords,
-          userTravelGoingWords,
-          leavingMatch,
-          goingMatch
+          userTravelGoingWords
         });
         
         return distanceMatch && directionMatch;
@@ -890,20 +1061,20 @@ module.exports.getConsignmentsByDate = async (req, res) => {
             const distance = parseFloat(consignment.distance?.toString().replace(/[^\d.]/g, ""));
 
             if (isNaN(weight) || isNaN(distance)) {
-              return {
-                ...consignment,
-                availableTravels: userTravels.map(travel => ({
-                  travelId: travel.travelId,
-                  travelMode: travel.travelMode,
-                  vehicleType: travel.vehicleType,
-                  expectedStartTime: travel.expectedStartTime,
-                  expectedEndTime: travel.expectedEndTime,
-                  status: travel.status,
-                  calculatedPrice: null,
-                  priceError: "Invalid weight or distance"
-                })),
-                matchType: "location_name"
-              };
+                          return {
+              ...consignment,
+              availableTravels: filteredUserTravels.map(travel => ({
+                travelId: travel.travelId,
+                travelMode: travel.travelMode,
+                vehicleType: travel.vehicleType,
+                expectedStartTime: travel.expectedStartTime,
+                expectedEndTime: travel.expectedEndTime,
+                status: travel.status,
+                calculatedPrice: null,
+                priceError: "Invalid weight or distance"
+              })),
+              matchType: "location_name"
+            };
             }
 
             const dimensions = consignment.dimensions;
@@ -911,8 +1082,8 @@ module.exports.getConsignmentsByDate = async (req, res) => {
             const height = dimensions?.height;
             const breadth = dimensions?.breadth;
 
-            // Calculate prices for each travel mode separately
-            const availableTravelsWithPrices = await Promise.all(userTravels.map(async (travel) => {
+            // Calculate prices for each travel mode separately (using filtered user travels)
+            const availableTravelsWithPrices = await Promise.all(filteredUserTravels.map(async (travel) => {
               try {
                 // Validate travel mode for each travel
                 const validModes = ["train", "airplane", "car", "roadways"];
@@ -993,7 +1164,7 @@ module.exports.getConsignmentsByDate = async (req, res) => {
             console.error(`Error calculating price for consignment ${consignment.consignmentId}:`, error);
             return {
               ...consignment,
-              availableTravels: userTravels.map(travel => ({
+              availableTravels: filteredUserTravels.map(travel => ({
                 travelId: travel.travelId,
                 travelMode: travel.travelMode,
                 vehicleType: travel.vehicleType,
@@ -1011,7 +1182,7 @@ module.exports.getConsignmentsByDate = async (req, res) => {
         return res.status(200).json({
           message: "Consignments found with location name matching",
           consignments: alternativeConsignmentsWithPrice,
-          userTravels: userTravels.map(travel => ({
+          userTravels: filteredUserTravels.map(travel => ({
             travelId: travel.travelId,
             travelMode: travel.travelMode,
             vehicleType: travel.vehicleType,
@@ -1071,8 +1242,8 @@ module.exports.getConsignmentsByDate = async (req, res) => {
         const height = dimensions?.height;
         const breadth = dimensions?.breadth;
 
-        // Calculate prices for each travel mode separately
-        const availableTravelsWithPrices = await Promise.all(userTravels.map(async (travel) => {
+        // Calculate prices for each travel mode separately (using filtered user travels)
+        const availableTravelsWithPrices = await Promise.all(filteredUserTravels.map(async (travel) => {
           try {
             // Validate travel mode for each travel
             const validModes = ["train", "airplane", "car", "roadways"];
@@ -1152,7 +1323,7 @@ module.exports.getConsignmentsByDate = async (req, res) => {
         console.error(`Error calculating price for consignment ${consignment.consignmentId}:`, error);
         return {
           ...consignment,
-          availableTravels: userTravels.map(travel => ({
+          availableTravels: filteredUserTravels.map(travel => ({
             travelId: travel.travelId,
             travelMode: travel.travelMode,
             vehicleType: travel.vehicleType,
@@ -1166,11 +1337,11 @@ module.exports.getConsignmentsByDate = async (req, res) => {
       }
     }));
 
-    // Return consignments with calculated prices and all user travels
+    // Return consignments with calculated prices and filtered user travels
     res.status(200).json({
       message: "Consignments found with calculated prices",
       consignments: consignmentsWithPrice,
-      userTravels: userTravels.map(travel => ({
+      userTravels: filteredUserTravels.map(travel => ({
         travelId: travel.travelId,
         travelMode: travel.travelMode,
         vehicleType: travel.vehicleType,
